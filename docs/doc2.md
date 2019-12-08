@@ -92,16 +92,16 @@ Below is presented table with general description of what can be found in each s
 
 ### 1.2 Configuration Menu
 
-![Main Menu Tab](/assets/Main_Menu_Tab.png)
+![Main Menu Tab](assets/Main_Menu_Tab.png)
 
-At the right-hand side of the system there are three drop-down menus. First one marked with the icon![Config Icon](/assets/Config_Icon.png)  is settings menu available only for admin accounts. This section is described in Administration Setting paragraph. Second drop-down menu marked with is ![Info Icon](/assets/Info_Icon.png) available for all users. Things that can be found in this section are :
+At the right-hand side of the system there are three drop-down menus. First one marked with the icon![Config Icon](assets/Config_Icon.png)  is settings menu available only for admin accounts. This section is described in Administration Setting paragraph. Second drop-down menu marked with is ![Info Icon](assets/Info_Icon.png) available for all users. Things that can be found in this section are :
 
 - License Info,
 
 - User Guide,
 - About. 
 
-License  will be automatically downloaded on the user computer as pdf files.User guide will redirect user to the documentation stored on the system. About section system will take user to general web page with information about  [FlowControl](https://www.passus.com/produkty/flowcontrol-xn). ![User Icon](/assets/User_Icon.png)Third drop down menu, available for all users, allows to logout from the system. 
+License  will be automatically downloaded on the user computer as pdf files.User guide will redirect user to the documentation stored on the system. About section system will take user to general web page with information about  [FlowControl](https://www.passus.com/produkty/flowcontrol-xn). ![User Icon](assets/User_Icon.png)Third drop down menu, available for all users, allows to logout from the system. 
 
 
 
@@ -115,7 +115,7 @@ Administrator can change and personalize various aspects of FlowControl environm
 
 In the **Alerts** section user can manage and configure customized alerts based on specified metrics threshold.
 
-![Alert Configuration](/assets/Alert_Configuration.png)
+![Alert Configuration](assets/Alert_Configuration.png)
 
 Configuration of the specific alert consists of three main parts:
 
@@ -125,7 +125,7 @@ Configuration of the specific alert consists of three main parts:
 
 System presents all the alerts in a list form where each individual alert can be enabled/disabled, modified or eliminated.
 
-![Alert_list](/assets/Alert_List.png)
+![Alert_list](assets/Alert_List.png)
 
 
 
@@ -133,7 +133,7 @@ System presents all the alerts in a list form where each individual alert can be
 
 In the **Config** section user can configure main system aspects. Options available here are: 
 
-![Config Tab](/assets/Config_Tab.png) 
+![Config Tab](assets/Config_Tab.png) 
 
 - SYSTEM  -  Basic network configuration: Hostname, DNS and IP,
 
@@ -161,13 +161,13 @@ In the **Security** section system allows review and manage security rules creat
 
 
 
-![ATT&CK use cases](/assets/ATT&CK_use_Cases.png)
+![ATT&CK use cases](assets/ATT&CK_use_Cases.png)
 
 Source: [Mitre](https://attack.mitre.org/)
 
  Configuration of the security ruleset is based on three sections:
 
-![Threat Menu](/assets/Threat_menu.png)
+![Threat Menu](assets/Threat_menu.png)
 
 - THREAT DETECTION - Identification of different threats patterns based on proprietary Passus created rules (section allow rule set modification but no rule adding),
 
@@ -177,7 +177,7 @@ Source: [Mitre](https://attack.mitre.org/)
 
   Alert configuration requires several options to be filled according to MITRE methodology.
 
-![Alert Configuration](/assets/Alert_Configuration.png)
+![Alert Configuration](assets/Alert_Configuration.png)
 
 ### 1.3.4 Mapping
 
@@ -215,11 +215,11 @@ System is preconfigured with four templates of the reports which can be enabled/
 - Interface Utilization -  Top interfaces and threshold violations,
 - Application Servers - View on the mostly used application servers, 
 
-![Reports Setting](/assets/Reports_Setting.png)
+![Reports Setting](assets/Reports_Setting.png)
 
  Reports are run on a daily basis and the outcome is saved and visible in a list form from the UI.
 
-![Reports List](/assets/Reports_List.png)
+![Reports List](assets/Reports_List.png)
 
 
 
@@ -235,7 +235,7 @@ Important element of the UI is the data range Tab at the top of the page, that s
 
 
 
-![Date Filter Tab](/assets/Date_Filter_Tab.png)
+![Date Filter Tab](assets/Date_Filter_Tab.png)
 
 
 
@@ -257,17 +257,17 @@ Important element of the UI is the data range Tab at the top of the page, that s
 
  
 
-###2.2 Data Specific Selection Tab
+### 2.2 Data Specific Selection Tab
 
 When creating any selections output of such configuraiton will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  ![x](assets/x.png) button on the tab.
 
-![Filters Adding](/assets/Filter_Adding.png) 
+![Filters Adding](assets/Filter_Adding.png) 
 
 
 
 ![Smart search ](assets/Smart%20search%20.png)**Smart search** - clicking this option will pop up type in section, where any phrase can be typed in that is being looked for. System automatically suggest options while typing.
 
-![Google Search](/assets/Google_Search.png)
+![Google Search](assets/Google_Search.png)
 
 
 
@@ -285,7 +285,7 @@ System will present the data, metrics and outcome of configured rule set in diff
 
 
 
-![goodchart-xlarge-1200x630](/assets/goodchart-xlarge-1200x630.jpg)
+![goodchart-xlarge-1200x630](assets/goodchart-xlarge-1200x630.jpg)
 
 
 
@@ -295,7 +295,7 @@ System will present the data, metrics and outcome of configured rule set in diff
 
 Depending on specific dashboard and widget choosen system allow different drill down options.Universal method is clicking over any chart, graph or table where the user will be prompted for:
 
-![Interface Graph](/assets/Interface_Graph.png)
+![Interface Graph](assets/Interface_Graph.png)
 
 - **Take snapshot** - allows user to take a snapshot of chosen widget. 
 
@@ -303,7 +303,7 @@ Depending on specific dashboard and widget choosen system allow different drill 
 
 
 
-![Graph Menu](/assets/Graph_Menu.png)
+![Graph Menu](assets/Graph_Menu.png)
 
 
 
@@ -319,11 +319,11 @@ Depending on specific dashboard and widget choosen system allow different drill 
 
     
 
-![Grouping Dashboard](/assets/Grouping_Dashboard.png)
+![Grouping Dashboard](assets/Grouping_Dashboard.png)
 
 In some sections, there is possibility to select data by choosing from drop down menus:
 
-<img src="/assets/Zrzut%20ekranu%202019-10-24%20o%2015.36.42.png" alt="Zrzut ekranu 2019-10-24 o 15.36.42" style="zoom: 200%;" /> 
+<img src="assets/Zrzut%20ekranu%202019-10-24%20o%2015.36.42.png" alt="Zrzut ekranu 2019-10-24 o 15.36.42" style="zoom: 200%;" /> 
 
  
 
@@ -335,27 +335,27 @@ System allows user to type in searched phrase or select it from drop down menu. 
 
 The first thing to notice when working with  charts is that when you hover your mouse over any bar/data point it will show more details regarding that specific data. 
 
- ![Detail Graph Data](/assets/Detail_Graph_Data.png)
+ ![Detail Graph Data](assets/Detail_Graph_Data.png)
 
 
 
 When clicking on bars, they will be selected. You can click on multiple bars in order to view only them on the chart. In order to confirm the selection, please press the green button on the top right corner. If data is presented on multiple elements of the dashboards user selection on one plot will impact data presentation on others accordingly to the selection made.
 
-![Click Graph Selection](/assets/Click_Graph_Selection.png)
+![Click Graph Selection](assets/Click_Graph_Selection.png)
 
 System does have drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also lasso selection option available in the top right corner ![lasso](assets/lasso.png)This allows user to draw a line which, when passing through data it will select it accordingly.
 
-![Line Graph Selection](/assets/Line_Graph_Selection.png)
+![Line Graph Selection](assets/Line_Graph_Selection.png)
 
 Data from graphs can be selected by clicking and dragging just below the x axis, i.e. vertically, to select narrowed, e.g. period of time.
 
-![Graph Selection](/assets/Graph_Selection.png)
+![Graph Selection](assets/Graph_Selection.png)
 
 
 
 Data can also be selected by clicking and dragging just by the y axis, i.e. horizontally. This will allow to check for the details of highest data used.
 
-![Lasso Selection](/assets/Lasso_Selection.png)
+![Lasso Selection](assets/Lasso_Selection.png)
 
 
 
@@ -363,7 +363,7 @@ Data can also be selected by clicking and dragging just by the y axis, i.e. hori
 
  Tables are the most precise way of presenting data gathered becasue it shows exact values and measures.
 
- ![Data Table Selection](/assets/Data_Table_Selection.png)
+ ![Data Table Selection](assets/Data_Table_Selection.png)
 
  
 
@@ -381,7 +381,7 @@ System provides information about its curent status and performance. Those infor
 
 Sytem actively counts number of raw and deduplicated flows giving the user overview on the current network load of the system. Those information are very useful for proper license sizing of the solution.
 
- ![Flow stats](/assets/Flow_Stats.png)
+ ![Flow stats](assets/Flow_Stats.png)
 
 
 
@@ -397,7 +397,7 @@ Sytem in real time monitors disk space of the application which is crucial for s
 
  
 
-![System Resources](/assets/Systemdisks.png)
+![System Resources](assets/Systemdisks.png)
 
 
 
