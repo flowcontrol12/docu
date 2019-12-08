@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "Installation Guide": ["doc1"],
+    "Getting started Guide": ["doc2"],
+    "Security": ["doc4"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
