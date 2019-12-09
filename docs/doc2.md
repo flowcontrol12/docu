@@ -42,7 +42,7 @@ Main and currently the only option to configure the solution is the web UI. The 
 
 ### 1.1. Main Menu
 
-Menu on the left consists of three sections: XN, XNS (optional) and SYS. Each section consists of subsections where you can find desired information about collected data and system configuration. Menu works in hide/reveal mode. In order to show full names of the menu components, please click on the three stripes icon ![Menu](assets/menu.png) located at the top left corner. In order to hide menu, same procedure is applied with only exception of the different icon used. ![Close](assets/Close.png)
+Menu on the left consists of three sections: XN, XNS (optional) and SYS. Each section consists of subsections where you can find desired information about collected data and system configuration. Menu works in hide/reveal mode. In order to show full names of the menu components,please click on the three stripes icon ![Menu](assets/menu.png) located at the top left corner. In order to hide menu, same procedure is applied with only exception of the different icon used. ![Close](assets/Close.png)
 
  
 
@@ -275,7 +275,8 @@ When creating any selections output of such configuraiton will be shown in a for
 
 ![Step forward ](assets/Step%20forward%20.png)**Step forward** - clicking this will take a step forward in data selections.
 
-![Clear all selections ](assets/Clear%20all%20selections%20.png)**Clear all selections** - clicking this will clear every data selection made.
+
+<img src="assets/Clear%20all%20selections%20.png" alt="Clear Selections" style="zoom: 50%;" />  Clear all selections - clicking this will clear every data selection made.
 
 
 
@@ -323,9 +324,9 @@ Depending on specific dashboard and widget choosen system allow different drill 
 
 In some sections, there is possibility to select data by choosing from drop down menus:
 
-<img src="assets/Zrzut%20ekranu%202019-10-24%20o%2015.36.42.png" alt="Zrzut ekranu 2019-10-24 o 15.36.42" style="zoom: 200%;" /> 
+<img src="assets/Search_Listbox.png" alt="Search_Listbox" style="zoom: 200%;" /> 
 
- 
+ <img src="assets/Step%20back%20.png" alt="Search_Listbox" style="zoom: 30%;" /> 
 
 System allows user to type in searched phrase or select it from drop down menu. Please remember that depending on the data chosen fields will change color according to the data availability suggesting user which data is alligned with previously.
 
