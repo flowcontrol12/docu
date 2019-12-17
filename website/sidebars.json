@@ -1,10 +1,8 @@
 {
   "docs": {
     "Installation Guide": ["doc1"],
-    "Getting started Guide": ["doc2"],
-    "Security": ["doc3"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Getting Started Guide": ["doc2"],
+    "Security Guide": ["doc3"]
+  
   }
 }

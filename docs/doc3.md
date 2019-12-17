@@ -1,12 +1,12 @@
 
 
-![LogoMale](KBFlowControlADSArchiwumImages/LogoMale-1574941098492.png)
+![LogoMale](assets/LogoMale-1574941098492.png)
 
 
 
 
 
- ![Logo_Dlugo](KBFlowControlADSArchiwumImages/Logo_Dlugo.png)
+ ![Logo_Dlugo](assets/Logo_Dlugo.png)
 
 # FlowControl XNS - Security Module Guide
 
@@ -48,7 +48,7 @@ The FlowControl XNS generates security alerts in context of tactic and technique
 
 > MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 >
-> ![image-20191128145424723](KBFlowControlADSArchiwumImages/image-20191128145424723.png)
+> ![image-20191128145424723](assets/image-20191128145424723.png)
 
 Full MITRE ATT&CK Matrice available on the [MITRE ATT&CK] website. MITRE ATT&CK Matrice contains about 200 techniques  grouped into 12 tactics.
 
@@ -108,7 +108,7 @@ The system supports the following flow protocol data sources:
 
 According to the RFC3964 FlowControl solution works as a Flow Collector (both hardware and software version is available) which collects, analysies and visualize the collected flows. Metrics are presented and examined from two perspectives : Network and Security giving the operator valuable input into network/application problems analysis as well as security threats hunting. 
 
-![Architecture](KBFlowControlADSArchiwumImages/Architecture.png)
+![Architecture](assets/Architecture.png)
 
 FlowControl XNS consist of two modules: 
 
@@ -372,7 +372,7 @@ To modify the Threat Intelligence module, you must be logged in to the system ad
 
   
 
-![image-20191129135800950](KBFlowControlADSArchiwumImages/image-20191129135800950.png)
+![image-20191129135800950](assets/image-20191129135800950.png)
 
 *External Threat Intelligence*
 
@@ -382,23 +382,23 @@ The External Threat Intelligence rules contain attributes that are described in 
 
 | Attribute          | Description                                                  | Possible Values                                              | Modifiable                                                   |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="KBFlowControlADSArchiwumImages/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
-| Alert Name         | The  attribute indicating the name of the rule.              | Connection  with a Suspicious IP,    Connection with a Suspicious Country, Connection with Open Proxy,  Connection with TOR | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| Feed Id            | The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute. |                                                              | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040605736.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| Data Type          | The  attribute indicating the type of collected data for each feed. | IP, Country                                                  | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040834633.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| Threat  Category   | The  attribute indicating the category of feed related to type of security  threats. | Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040615564.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| MITRE Tactic       | The  attribute indicating the MITRE Tactic related to a security rule. | Initial  Access,  Execution, Persistence, Privilege Escalation,    Defense Evasion,  Credential Access     Discovery, Lateral Movement     Collection, Command and Control,    Exfiltration, Impact | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040809231.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| MITRE  Technique   | The  attribute indicating the MITRE Technique related to a security rule.  There is about about 200 techniques - more details https://attack.mitre.org/matrices/enterprise/. |                                                              | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040798605.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| Score              | Attribute  indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | <img src="KBFlowControlADSArchiwumImages/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
-| Refresh  Interval  | Attribute  indicating the time interval, how often (in minutes) the feed should be  updated. | {0..32767}                                                   | <img src="KBFlowControlADSArchiwumImages/OK_S-1575040723161.png" alt="OK_S" style="zoom:50%;" /> |
-| Last Refresh  Time | Attribute  indicating the last feed update in format YYYYMMDDhhmm. |                                                              | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040765552.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| Alert  Description | Attribute  indicating the description of the feed.           |                                                              | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040686111.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| Alert Name         | The  attribute indicating the name of the rule.              | Connection  with a Suspicious IP,    Connection with a Suspicious Country, Connection with Open Proxy,  Connection with TOR | <img src="assets/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| Feed Id            | The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute. |                                                              | <img src="assets/NOT_OK_S-1575040605736.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| Data Type          | The  attribute indicating the type of collected data for each feed. | IP, Country                                                  | <img src="assets/NOT_OK_S-1575040834633.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| Threat  Category   | The  attribute indicating the category of feed related to type of security  threats. | Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus | <img src="assets/NOT_OK_S-1575040615564.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| MITRE Tactic       | The  attribute indicating the MITRE Tactic related to a security rule. | Initial  Access,  Execution, Persistence, Privilege Escalation,    Defense Evasion,  Credential Access     Discovery, Lateral Movement     Collection, Command and Control,    Exfiltration, Impact | <img src="assets/NOT_OK_S-1575040809231.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| MITRE  Technique   | The  attribute indicating the MITRE Technique related to a security rule.  There is about about 200 techniques - more details https://attack.mitre.org/matrices/enterprise/. |                                                              | <img src="assets/NOT_OK_S-1575040798605.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| Score              | Attribute  indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
+| Refresh  Interval  | Attribute  indicating the time interval, how often (in minutes) the feed should be  updated. | {0..32767}                                                   | <img src="assets/OK_S-1575040723161.png" alt="OK_S" style="zoom:50%;" /> |
+| Last Refresh  Time | Attribute  indicating the last feed update in format YYYYMMDDhhmm. |                                                              | <img src="assets/NOT_OK_S-1575040765552.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| Alert  Description | Attribute  indicating the description of the feed.           |                                                              | <img src="assets/NOT_OK_S-1575040686111.png" alt="NOT_OK_S" style="zoom:50%;" /> |
 
 *External Threat Intelligence Feeds Attributes*
 
 
 
-![image-20191129165932145](KBFlowControlADSArchiwumImages/image-20191129165932145.png)
+![image-20191129165932145](assets/image-20191129165932145.png)
 
 *Example of Internal Threat Intelligence Feed [Dan_TOR]*
 
@@ -408,22 +408,22 @@ The Internal Threat Intelligence engine correlates custom feeds in context of ne
 
 | Attribute          | Description                                                  | Possible Values                                              | Modifiable                                                   |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="KBFlowControlADSArchiwumImages/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
-| Alert Name         | The  attribute indicating the name of the rule. The attribute can be set only once when creating a new custom feed. |                                                              | <img src="KBFlowControlADSArchiwumImages/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| Feed Id            | The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute. |                                                              | <img src="KBFlowControlADSArchiwumImages/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
-| Data Type          | The  attribute indicating the type of collected data for each feed. | IP, Country                                                  | <img src="KBFlowControlADSArchiwumImages/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
-| Threat  Category   | The  attribute indicating the category of feed related to type of security  threats. | Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus | <img src="KBFlowControlADSArchiwumImages/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
-| MITRE Tactic       | The  attribute indicating the MITRE Tactic related to a security rule. | Initial  Access,  Execution, Persistence, Privilege Escalation,    Defense Evasion,  Credential Access     Discovery, Lateral Movement     Collection, Command and Control,    Exfiltration, Impact | <img src="KBFlowControlADSArchiwumImages/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
-| MITRE  Technique   | The  attribute indicating the MITRE Technique related to a security rule.  There is about about 200 techniques - more details https://attack.mitre.org/matrices/enterprise/. |                                                              | <img src="KBFlowControlADSArchiwumImages/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
-| Score              | Attribute  indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | <img src="KBFlowControlADSArchiwumImages/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
-| Alert  Description | Attribute  indicating the description of the feed.           |                                                              | <img src="KBFlowControlADSArchiwumImages/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
-| Feed Data List     | Attribute indicating the values of custom feed (IP address or Country), one value per line. |                                                              | <img src="KBFlowControlADSArchiwumImages/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
+| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| Alert Name         | The  attribute indicating the name of the rule. The attribute can be set only once when creating a new custom feed. |                                                              | <img src="assets/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /> |
+| Feed Id            | The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute. |                                                              | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| Data Type          | The  attribute indicating the type of collected data for each feed. | IP, Country                                                  | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| Threat  Category   | The  attribute indicating the category of feed related to type of security  threats. | Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| MITRE Tactic       | The  attribute indicating the MITRE Tactic related to a security rule. | Initial  Access,  Execution, Persistence, Privilege Escalation,    Defense Evasion,  Credential Access     Discovery, Lateral Movement     Collection, Command and Control,    Exfiltration, Impact | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
+| MITRE  Technique   | The  attribute indicating the MITRE Technique related to a security rule.  There is about about 200 techniques - more details https://attack.mitre.org/matrices/enterprise/. |                                                              | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
+| Score              | Attribute  indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
+| Alert  Description | Attribute  indicating the description of the feed.           |                                                              | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
+| Feed Data List     | Attribute indicating the values of custom feed (IP address or Country), one value per line. |                                                              | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
 
 *Internal Threat Intelligence Feeds Attributes*
 
 
 
-![image-20191129165740175](KBFlowControlADSArchiwumImages/image-20191129165740175.png)
+![image-20191129165740175](assets/image-20191129165740175.png)
 
 *Example of Internal Threat Intelligence Feed [OpenDNS_custom]*
 
@@ -433,7 +433,7 @@ The Internal Threat Intelligence engine correlates custom feeds in context of ne
 
 1) In the **Settings -> Security -> Internal Threat Intelligence** click **ADD NEW** option.
 
-![image-20191129170553111](KBFlowControlADSArchiwumImages/image-20191129170553111.png)
+![image-20191129170553111](assets/image-20191129170553111.png)
 
 
 
@@ -441,7 +441,7 @@ The Internal Threat Intelligence engine correlates custom feeds in context of ne
 
 
 
-![image-20191129171309425](KBFlowControlADSArchiwumImages/image-20191129171309425.png)
+![image-20191129171309425](assets/image-20191129171309425.png)
 
 *Internal Threat Intelligence Alert Configuration*
 
@@ -453,13 +453,13 @@ The Internal Threat Intelligence engine correlates custom feeds in context of ne
 
 1) In the **Settings -> Security -> Internal Threat Intelligence** choose the WhitelistIP_whitelist feed
 
-![image-20191202122845526](KBFlowControlADSArchiwumImages/image-20191202122845526.png)
+![image-20191202122845526](assets/image-20191202122845526.png)
 
 2) Edit the feed and add list of IPs which should be ignored by Threat Intelligence module into the Feed Data List area.
 
 
 
-![image-20191202124013806](KBFlowControlADSArchiwumImages/image-20191202124013806.png)
+![image-20191202124013806](assets/image-20191202124013806.png)
 
 
 
@@ -487,7 +487,7 @@ Security alerts generated by the TI module are presented in the following tabs:
 
   (along with alerts from the Threat Detection module). If you want to analyze only alerts from the TI module, use the Threat Intelligence tab.
 
-  ![image-20191202125753872](KBFlowControlADSArchiwumImages/image-20191202125753872.png)
+  ![image-20191202125753872](assets/image-20191202125753872.png)
 
   
 
@@ -503,7 +503,7 @@ In this chapter only TI dashboards have been described.
 
  **The Alerts Drilldown** view allows for analyzing security alerts grouped by such attributes as Severity, Threat Category, Alert Name, Feed ID, Direction, Source Host, Source Country, Destination Host and Destination Country. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.
 
-![image-20191202150025449](KBFlowControlADSArchiwumImages/image-20191202150025449.png)
+![image-20191202150025449](assets/image-20191202150025449.png)
 
 *TI Alerts Drilldown*
 
@@ -511,37 +511,37 @@ In this chapter only TI dashboards have been described.
 
 Information about the country associated with the threat is very useful for the security module to know which countries are involved in this type of security threat. To better visualize the situational view of this case, use the **Suspicious Country** view.
 
-![image-20191202151057182](KBFlowControlADSArchiwumImages/image-20191202151057182.png)
+![image-20191202151057182](assets/image-20191202151057182.png)
 
 *TI Suspicious Countries*
 
 Another view showing interesting statistics on the number of unique IP addresses in the context of alert names and categories is **the Alert Statistcs** view.
 
-![image-20191202162718581](KBFlowControlADSArchiwumImages/image-20191202162718581.png)
+![image-20191202162718581](assets/image-20191202162718581.png)
 
 *TI Alerts Statistics*
 
 **The TOPs** view shows information about the most common feeds, alert names, threat categories, as well as IP address pairs in the context of all TI threats. The view is ideally suited as the first starting point for analysis to detect repetitive attacks and ignore False Positives.
 
-![image-20191202162905259](KBFlowControlADSArchiwumImages/image-20191202162905259.png)
+![image-20191202162905259](assets/image-20191202162905259.png)
 
 *TI TOPs*
 
 Another view on TI threats is provided by the **IPs Correlation** graph, which graphically presents source and destination IP addresses in the context of specific threats. A quick look at this view enables the network and security analyst to analyze security anomalies. It enables the presentation of security anomalies from the perspective of the entire organization, and can also be considered as a reason to make a decision about tuning security rules.
 
-![image-20191202162949925](KBFlowControlADSArchiwumImages/image-20191202162949925.png)
+![image-20191202162949925](assets/image-20191202162949925.png)
 
 *TI IPs Correlations*
 
 **The Maps** view shows suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of unique security alerts.
 
-![image-20191202163103564](KBFlowControlADSArchiwumImages/image-20191202163103564.png)
+![image-20191202163103564](assets/image-20191202163103564.png)
 
 *TI Maps*
 
 A quick look at the basic information about attacks detected by TI engine is provided by the **Alerts** tab.
 
-![image-20191202163202604](KBFlowControlADSArchiwumImages/image-20191202163202604.png)
+![image-20191202163202604](assets/image-20191202163202604.png)
 
 *TI Alerts*
 
