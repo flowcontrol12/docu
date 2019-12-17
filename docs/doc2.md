@@ -224,7 +224,7 @@ System is preconfigured with four templates of the reports which can be enabled/
 
 
 
-### 2 Dashboards
+## 2 Dashboards
 
 This section will cover various aspects of working with selected data. We will divide this section into different aspects that FlowControl uses to interpret data from the network. This will include various graphs, charts and tables as well as best practices how to work with the data. 
 
