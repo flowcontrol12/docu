@@ -1,3 +1,9 @@
+---
+id: doc3
+title: FlowControl - XNS Configuration Guide
+idebar_label: XNS Guide
+---
+
 
 
 ![LogoMale](assets/LogoMale-1574941098492.png)

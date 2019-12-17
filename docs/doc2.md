@@ -1,6 +1,7 @@
 ---
 id: doc2
 title: FlowControl - Getting started guide
+idebar_label: User Guide
 ---
 
 
