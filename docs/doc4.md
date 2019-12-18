@@ -32,6 +32,5 @@ Below you will find hardware requirements, in Tab.1, for desired flow limits.
 > **Attention**: 
 >
 > 1. System drive should be located on the SSD partition.
-> 2. Archive drive size depends on the amount of data.
-> 3. Supported Hypervisor VMware ESXi 6.5+.
-> 4. Please note that all vCPUs should be divided between 2 sockets, e.g for option with 60k FPS, that has 16 vCPUs, there will be 8 vCPUs per socket.
+> 2. Supported Hypervisor VMware ESXi 6.5+.
+> 3. Please note that all vCPUs should be divided between 2 sockets, e.g for option with 60k FPS, that has 16 vCPUs, there will be 8 vCPUs per socket.
