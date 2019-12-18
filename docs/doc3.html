@@ -1,0 +1,435 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>XNS Guide · FlowControl Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="In this document you will find information about most important options available in FlowControl XNS module. The Guide include information how to configure security rules, operate with data, graphs, charts as well as general description of options available in the Security Module."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="XNS Guide · FlowControl Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://flowcontrol12.github.io/docu/"/><meta property="og:description" content="In this document you will find information about most important options available in FlowControl XNS module. The Guide include information how to configure security rules, operate with data, graphs, charts as well as general description of options available in the Security Module."/><meta property="og:image" content="https://flowcontrol12.github.io/docu/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://flowcontrol12.github.io/docu/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docu/img/flowcontrol_xn.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/theme-live-codeblock.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docu/js/scrollSpy.js"></script><link rel="stylesheet" href="/docu/css/main.css"/><script src="/docu/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docu/"><img class="logo" src="/docu/img/flowcontrol_xn.png" alt="FlowControl Documentation"/><h2 class="headerTitleWithLogo">FlowControl Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docu/docs/doc1" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Security Guide</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docu/docs/doc1">ESXi Installation Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docu/docs/doc2">User Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Security Guide</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docu/docs/doc3">XNS Guide</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">XNS Guide</h1></header><article><div><span><p>In this document you will find information about most important options available in FlowControl XNS module. The Guide include information how to configure security rules, operate with data, graphs, charts as well as general description of options available in the Security Module.</p>
+<h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>FlowControl XNS analyzes and detects anomaly in network based on network flows from network devices. Thanks to the built-in security rules, the system is able to detect network anomaly issues, as well as security threats.</p>
+<p>Key product features:</p>
+<ul>
+<li>Detects security threats based on network flows</li>
+<li>Groups security threats according to the <strong>ATT&amp;CK MITRE</strong> framework</li>
+<li>Facilitates security processes (e.g. Network Forensics, Incident Handling, Threat Hunting)</li>
+<li>It is an essential system in every SOC/CSIRT and NOC because improves visibility of network &amp; security anomalies from the entire organization</li>
+<li>Correlates network artifacts indicating on abnormal activities</li>
+<li>Improves the MTTD KPI through appropriate designed views (e.g. dashboards for SOC/NOC Teams) and effective security rules</li>
+<li>Enriches data by adding valuable information to flows (e.g. ASN, Geolocation, IoC)</li>
+<li>Helps meet regulatory requierements (e.g. CIS Critical Security Controls, ATT&amp;CK MITRE, UoKSC)</li>
+<li>Improves network and security troubleshooting</li>
+<li>Helps to measure KPIs through the Cockpit Manager dashboard</li>
+<li>Integrates with SIEM enabling cross-system correlations.</li>
+</ul>
+<hr>
+<p>Mean time to detect (MTTD) - amount of time it takes the Security Team to discover a potential security incident.</p>
+<p>CIS Critical Security Controls - <a href="https://www.cisecurity.org/controls/cis-controls-list/">https://www.cisecurity.org/controls/cis-controls-list/</a></p>
+<p>UoKSC (Ustawa o Krajowym Systemie Cyberbezpieczeństwa) <a href="http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20180001560/T/D20181560L.pdf">http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20180001560/T/D20181560L.pdf</a></p>
+<p>The FlowControl XNS generates security alerts in context of tactic and techniques of MITRE ATT&amp;CK methodology. Below is a brief description of this methodology.</p>
+<blockquote>
+<p>MITRE ATT&amp;CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.</p>
+<p><img src="/docu/docs/assets/image-20191128145424723.png" alt="image-20191128145424723"></p>
+</blockquote>
+<p>Full MITRE ATT&amp;CK Matrice available on the [MITRE ATT&amp;CK] website. MITRE ATT&amp;CK Matrice contains about 200 techniques  grouped into 12 tactics.</p>
+<p>MITRE ATT&amp;CK Tactics:</p>
+<ul>
+<li>Initial Access</li>
+<li>Execution</li>
+<li>Persistence</li>
+<li>Privilege Escalation</li>
+<li>Defense Evasion</li>
+<li>Credential Access</li>
+<li>Discovery</li>
+<li>Lateral Movement</li>
+<li>Collection</li>
+<li>Command and Control</li>
+<li>Exfiltration</li>
+<li>Impact.</li>
+</ul>
+<p>Source: <a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a></p>
+<p>Examples of security threats and anomalies detected by the FlowControl XNS:</p>
+<ul>
+<li>D/DoS</li>
+<li>Malicious Communication (e.g. Malware, C2, Botnet)</li>
+<li>Security Policy Violations (e.g. TOR, Open Proxy, Open DNS, Connections to Unauthorized Services, Using Cleartext Applications)</li>
+<li>Brute Force Attacks</li>
+<li>Network scans (Horizontal and Vertical)</li>
+<li>Network Anomaly (Using Suspicious Ports, Abnormal Flows Traffic between Hosts, Large Size Protocol )</li>
+<li>Virus Outbreak.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="1-overview"></a><a href="#1-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Overview</h2>
+<p>Flow Control XNS analyze network flows to detect suspicious activity.</p>
+<blockquote>
+<p>A flow is defined as a unidirectional sequence of packets with some common properties that pass through a network device.  These collected flows are exported to an external device, the NetFlow collector.  Network flows are highly granular; for example, flow records include details such as IP addresses, packet and byte counts,timestamps, Type of Service (ToS), application ports, input and output interfaces, etc.</p>
+</blockquote>
+<p>Source: <a href="https://www.ietf.org/rfc/rfc3954.txt">RFC3954</a></p>
+<p>The system supports the following flow protocol data sources:</p>
+<ul>
+<li>NetFlow v5</li>
+<li>NetFlow v9</li>
+<li>sFlow</li>
+<li>IPFIX</li>
+<li>NSEL.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong>Specific options such as NSEL (Cisco ASA) or different sampling multilpiers per device must be additionally configured. System uses SNMP v1/2/3 to query devices.</p>
+</blockquote>
+<p>According to the RFC3964 FlowControl solution works as a Flow Collector (both hardware and software version is available) which collects, analysies and visualize the collected flows. Metrics are presented and examined from two perspectives : Network and Security giving the operator valuable input into network/application problems analysis as well as security threats hunting.</p>
+<p><img src="/docu/docs/assets/Architecture.png" alt="Architecture"></p>
+<p>FlowControl XNS consist of two modules:</p>
+<ul>
+<li><p>Threat Detection</p></li>
+<li><p>Threat Intelligence.</p></li>
+</ul>
+<p>More details about them you can find in the next chapters.</p>
+<h3><a class="anchor" aria-hidden="true" id="11-security-summary-dashboard"></a><a href="#11-security-summary-dashboard" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1. Security Summary Dashboard</h3>
+<p>Security Summary Dashboard concerns security alerts from both engines (TI and TD). It concists of five views.</p>
+<table>
+<thead>
+<tr><th>Views of Security Summary Dashboard</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Alerts Graph</td><td>A graph showing relationships between some attributes, such as Tactic, Technique, Alert Name, Source and Destination Host of security alerts.</td></tr>
+<tr><td>Alerts</td><td>A table with all security alerts.</td></tr>
+<tr><td>Alerts Drilldown</td><td>A view allowing for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Threat Category, Alert Name, Source Host, Destination Host, Application, Direction, Source Group, Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.</td></tr>
+<tr><td>Alerts Statistics</td><td>A set of charts displaying statistics on detected security threats, such as number of alerts per severity or number of alerts per security module.</td></tr>
+<tr><td>TOP Suspicious IPs</td><td>A view that displays the most suspected hosts in the organization.</td></tr>
+</tbody>
+</table>
+<p><em>[Views of Security Summary Dashboard]</em></p>
+<p><img src="/docu/docs/assets/image-20191209111130010.png" alt="image-20191209111130010"></p>
+<p><em>[Security Dashboard - Alerts Graph]</em></p>
+<p><img src="/docu/docs/assets/image-20191209111502539.png" alt="image-20191209111502539"></p>
+<p><em>[Security Dashboard - Alerts]</em></p>
+<p><img src="/docu/docs/assets/image-20191209111735685.png" alt="image-20191209111735685"></p>
+<p><em>Security Dashboard - Alerts Drilldown</em></p>
+<p><img src="/docu/docs/assets/image-20191209110348452.png" alt="image-20191209110348452"></p>
+<p><em>[Security Dashboards - TOP Suspicious IPs]</em></p>
+<p><img src="/docu/docs/assets/image-20191209110607174.png" alt="image-20191209110607174"></p>
+<p><em>[Security Dashboards - Alerts Statistics]</em></p>
+<h3><a class="anchor" aria-hidden="true" id="12-manager-cockpit"></a><a href="#12-manager-cockpit" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2. Manager Cockpit</h3>
+<p>The cockpit show number of alerts per severity and set of KPIs shown in the below table.</p>
+<table>
+<thead>
+<tr><th>KPI</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>%High and Critical Alerts</td><td>An indicator showing the percentage of high and critical alerts relative to all alerts in the last week.</td></tr>
+<tr><td>%Security Module</td><td>An indicator showing the percentage of TI and TD alerts in the last week.</td></tr>
+<tr><td>Internal Suspicious Src IPs</td><td>An indicator showing the number of suspicious IPs</td></tr>
+<tr><td>Internal Suspicious Dst IPs</td><td>An indicator showing the number of all internal suspicious hosts and hosts having at least one high category alert.</td></tr>
+</tbody>
+</table>
+<p><em>[Manager Cockpit - KPIs]</em></p>
+<p><img src="/docu/docs/assets/image-20191209135530202.png" alt="image-20191209135530202"></p>
+<h3><a class="anchor" aria-hidden="true" id="13-security-dashboards"></a><a href="#13-security-dashboards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3. Security Dashboards</h3>
+<p>Security Summary Dashboard show all security alerts in many context allowing for quick and effective analysing security alerts.</p>
+<table>
+<thead>
+<tr><th>Views of Security Dashboard</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>TOPs</td><td>A view showing statistics of security alerts, such as for example Unique SrcIP per Alerts or TOP Source Countries.</td></tr>
+<tr><td>IPs Correlations</td><td>A view showing relationships between alerts and IP addresses in the context of detected threats.</td></tr>
+<tr><td>Scatter Plot IP-Alerts</td><td>A scatter plot showing number of IPs related to security alerts.</td></tr>
+<tr><td>Diagram</td><td>A view allowing for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Threat Category, Alert Name, Source Host, Destination Host, Application, Direction, Source Group, Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.</td></tr>
+<tr><td>Groups Correlations</td><td>A view showing relationships between threat categories and groups in the context of detected threats.</td></tr>
+<tr><td>Groups Correlations</td><td>A set of charts displaying statistics on detected security threats, such as number of alerts per severity or number of alerts per security module.</td></tr>
+<tr><td>Maps</td><td>A view showing suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of Bytes.</td></tr>
+<tr><td>TOP IPs</td><td>A view that displays charts regarding TOP Source IPs, TOP Destination IPs and TOP Src-Dst IP Pairs.</td></tr>
+</tbody>
+</table>
+<p><em>[Views of Security Summary Dashboard]</em></p>
+<p><img src="/docu/docs/assets/image-20191211172725796.png" alt="image-20191211172725796"></p>
+<p><em>[Security Dashboard - TOPs]</em></p>
+<p><img src="/docu/docs/assets/image-20191211143749082.png" alt="image-20191211143749082"></p>
+<p><em>[Security Dashboard - IPs Correlations]</em></p>
+<p><img src="/docu/docs/assets/image-20191211173131157.png" alt="image-20191211173131157"></p>
+<p><em>[Security Dashboard - Scatter Plot IP]</em></p>
+<p><img src="/docu/docs/assets/image-20191211173252848.png" alt="image-20191211173252848"></p>
+<p><em>[Security Dashboard - Diagram]</em></p>
+<p><img src="/docu/docs/assets/image-20191211173553882.png" alt="image-20191211173553882"></p>
+<p><em>[Security Dashboard - Groups Correlations]</em></p>
+<p><img src="/docu/docs/assets/image-20191211174042804.png" alt="image-20191211174042804"></p>
+<p><em>[Security Dashboard - Maps]</em></p>
+<p><img src="/docu/docs/assets/image-20191211174117412.png" alt="image-20191211174117412"></p>
+<p><em>[Security Dashboard - TOP IPs]</em></p>
+<h2><a class="anchor" aria-hidden="true" id="2-threat-detection"></a><a href="#2-threat-detection" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Threat Detection</h2>
+<p>The Threat Detection module generates alerts based on correlations of relevant attributes sent in network flows which indicate on a potential security issue. The engine has 38 security rules for seven tactics and twelve techniques of ATT&amp;CK MITRE.</p>
+<h3><a class="anchor" aria-hidden="true" id="21-initial-configuration"></a><a href="#21-initial-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1. Initial Configuration</h3>
+<p>All Threat Detection rules are disabled by default to reduce the number of False Positives. At the initial stage of implementation FCXNS, you should tune security rules in the field of configurable attributes, groups and whitelists.</p>
+<h3><a class="anchor" aria-hidden="true" id="22-security-rules"></a><a href="#22-security-rules" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2. Security Rules</h3>
+<table>
+<thead>
+<tr><th>Name</th><th>Score</th><th>Description</th><th>MITRE Tactic</th><th>MITRE Technique</th></tr>
+</thead>
+<tbody>
+<tr><td>Connection to a Clear Text Application between External hosts</td><td>4</td><td>A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from External to External host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups.</td><td>Command  And Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>Connection to a Clear Text Application from External to Internal  host</td><td>4</td><td>A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from External to Internal host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups.</td><td>Command  And Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>Connection to a Clear Text Application from Internal to External  host</td><td>4</td><td>A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from Internal to External host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups.</td><td>Command  And Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>Connection to a Clear Text Application between Internal hosts</td><td>4</td><td>A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from Internal to Internal host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups.</td><td>Command  And Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>Activity on a Suspisious Port - Blacklist</td><td>4</td><td>A  rule detects traffic to a single host on suspicious ports. Suspicious ports  are all ports defined in Suspicious Ports list. This activity may indicate on  presence threat actors in an organization. For the rule to work correctly,  update the list of Suspicious Ports and configure Flow Count and Whitelist  attributes.</td><td>Command  And Control</td><td>Uncommonly  Used Port</td></tr>
+<tr><td>Activity on a Suspisious Port - Whitelist</td><td>4</td><td>A  rule detects traffic to a single host on suspicious ports. Suspicious ports  are all ports not defined on the Permitted Ports list. For the rule to work  correctly, update the list of permitted ports and configure Flow Count and  Whitelist attributes.</td><td>Command  And Control</td><td>Uncommonly  Used Port</td></tr>
+<tr><td>Brute Force Attack</td><td>5</td><td>A rule  detects a brute force/dictionary attack on specific applications (FTP, HTTPS,  HTTP, IMAP, RDP, SSH, IMAP3, LDAP, LDAPS, MYSQL, POP3, POP3S, POSTGRESQL,  SMTP, TELNET, TFTP, ASTERISK, VNC, SNMP, MSSQL, SMB, ICQ, NNTP, PCANYWHERE,  ORACLELISTENER, SVN, XMPP, SIP, RADMIN2, REXEC, RLOGIN, WS - Management and  PowerShell remoting via HTTP, WS - Management and PowerShell remoting via  HTTPS, RPCAP, NetBIOS, Kerberos). For the rule to work correctly, configure  the Port Threshold List in the format Flows_Threshold\</td><td>Port\</td><td>Service_Name, and  Whitelist groups.</td><td>Credential  Access</td><td>Brute  Force</td></tr>
+<tr><td>Unauthorized LLMNR/NetBIOS Connection</td><td>5</td><td>A  rule detects unauthorized LLMNR/NetBIOS traffic.;Link-Local Multicast Name  Resolution (LLMNR) and NetBIOS Name Service (NBT-NS) are Microsoft Windows  components that serve as alternate methods of host identification. Attacker  may spoof an authoritative source for name resolution on a victim network by  responding to LLMNR (UDP 5355)/NBT-NS (UDP 137) traffic as if they know the  identity of the requested host, effectively poisoning the service so that the  victims will communicate with the adversary controlled system. More details:  MITRE T1171. For the rule to work correctly, configure the LLMNRAndNetBIOS  Group.</td><td>Credential  Access</td><td>LLMNR/NBT-NS  Poisoning and Relay</td></tr>
+<tr><td>Abnormal flows ratios between two IPs</td><td>4</td><td>A rule  detects abnormal number of flows per Source &amp; Destination IPs pairs  within 1 minute. The reasons for this activity can be worms, scans or network  abuses. For the rule to work correctly, configure the Flow Count attribute  and Whitelist groups.</td><td>Discovery</td><td>System  Network Configuration Discovery</td></tr>
+<tr><td>Horizontal Scan</td><td>4</td><td>A  rule detects a Horizontal Scan attack. The Horizontal Scan is a scan against  a group of IPs for a single port. For the rule to work correctly, configure a  Port Threshold List in a format Flows_Threshold\</td><td>Port\</td><td>Service and Whitelist  groups.</td><td>Discovery</td><td>Network  Service Scanning</td></tr>
+<tr><td>Access to Internet from non-permitted group</td><td>4</td><td>A  rule detects access to Internet from non-permitted group based on definied  zones. This type of activity may indicate on a security policy violation. For  the rule to work correctly, configure the Permitted Groups.</td><td>Discovery</td><td>Permission  Groups Discovery</td></tr>
+<tr><td>Traffic from unauthorized DHCP server</td><td>4</td><td>A  rule detects traffic from unauthorized DHCP server. Unauthorized DHCP servers  can cause many network issues by allocating incorrect configurations to  client. From the security point of view, this type of activity may indicate  presence a rogue DHCP server. For the rule to work correctly, configure the  DHCP SERVERS groups.</td><td>Discovery</td><td>System  Network Configuration Discovery</td></tr>
+<tr><td>Traffic to unauthorized DNS server</td><td>4</td><td>A  rule detects traffic from unauthorized DNS server. This type of activity may  indicate on unauthorized changes of DNS settings on infected host. For the  rule to work correctly, configure the DNS SERVERS groups.</td><td>Discovery</td><td>System  Network Configuration Discovery</td></tr>
+<tr><td>Vertical Scan Detected</td><td>4</td><td>A  rule detects a Vertical Scan attack. A Vertical Scan is a scan against a  single IP for multiple ports. The number of ports is configurable in the  &quot;# of ports scanned threshold&quot; parameter. For the rule to work  correctly configure the Whitelist groups as well.</td><td>Discovery</td><td>Network  Service Scanning</td></tr>
+<tr><td>Traffic to unauthorized Mail Server</td><td>4</td><td>A  rule detects traffic from unauthorized Mail Server. This type of activity may  indicate on a security policy violation. For the rule to work correctly,  configure the Mail Servers Whitelist groups.</td><td>Discovery</td><td>System  Network Configuration Discovery</td></tr>
+<tr><td>Virus Outbreak</td><td>4</td><td>A  rule detects a potential virus outbreak based on abnormal activity between  hosts from Workstation group. This activity may indicate on virus outbreak in  the organization. For the rule to work correctly, configure the following  attributes: Uniqe Hosts Count and Workstation group. For the rule to work  correctly, configure the Port Threshold List in the format  Flows_Threshold\</td><td>Port\</td><td>Service_Name, and Whitelist groups.</td><td>Discovery</td><td>Network  Service Scanning</td></tr>
+<tr><td>Abnormal DNS Query Limit</td><td>5</td><td>A  rule detects anomaly in DNS protocol regarding abnormal query volume traffic.  This rule will be triggered after detecting many DNS queries from the same  IP. This activity may indicate on connections to C2 master severs. For the  rule to work correctly, configure the Query Limit and Whitelist groups.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>Abnormal DNS Response Limit</td><td>5</td><td>A  rule detects anomaly in DNS protocol regarding abnormal response volume  traffic. This rule will be triggered after detecting many DNS queries to the  same IP. This activity may indicate on malware activity over DNS. For the  rule to work correctly, configure the Response Limit and Whitelist groups.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>DNS Transfer Limit</td><td>5</td><td>A  rule detects anomaly in DNS protocol regarding abnormal query volume traffic.  This activity may indicate on connections to C2 master severs. For the rule  to work correctly, configure the Transfer Limit and Whitelist groups.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>High Data Transfer Rate from Internal to External Host</td><td>5</td><td>A  rule detects a high data transfer from internal to external host within 1  minute. This type of activity may indicate on a security policy violation,  e.g. exfitration sensitive data. For the rule work correctly, configure the  Low and High Thresholds, which are given in Megabytes.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>High Data Transfer Rate from External to Internal Host</td><td>5</td><td>A  rule detects a high data transfer from external to internal host within 1  minute. This type of activity may indicate on a security policy violation.  For the rule to work correctly, configure the Low and High Thresholds, which  are given in Megabytes.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>High Data Transfer Rate Between Internal Hosts</td><td>5</td><td>A  rule detects a high data transfer from internal to internal host within 1  min. This type of activity may indicate on a security policy violation. For  the rule to work correctly, configure the Thresholds which are given in  Megabytes.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>Unusually High Data Transfer Rate from Internal to External Host</td><td>5</td><td>A  rule detects a high data transfer from internal to external host within 1  minute. A reasons for this type of activity may be unauthorized data  exfiltration outside the organization. For the rule work correctly, configure  the Low Threshold which is given in Megabytes.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>Unusually High Data Transfer Rate from External to Internal Host</td><td>5</td><td>A  rule detects a high data transfer from external to internal host within 1  minute. This type of activity may indicate on a security policy violation.  For the rule work correctly, configure the Low Threshold which is given in  Megabytes.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>Large Size Protocol Anomaly</td><td>5</td><td>A  rule detects packets of known protocols (ICMP, UDP, TCP) with large size  which may indicate on protocol attacks. For the rule to work correctly,  configure the following attributes: Flow Count, and BPF (Bytes per Flow) for  each IP Protocol.</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>External to Internal SPAM</td><td>5</td><td>A  rule detects a SPAM traffic from External to Internal host. An external host  is sending excessive email traffic to the organization. For the rule to work  correctly, configure the following attributes: Flow Count, PPF (Packets per  Flow).</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>External to External SPAM</td><td>5</td><td>A  rule detects a SPAM traffic between External hosts. An external host is  sending excessive email traffic to the organization. For the rule to work  correctly, configure the following attributes: Flow Count, PPF (Packets per  Flow).</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>Internal to External SPAM</td><td>5</td><td>A  rule detects a SPAM traffic from Internal to External host. An internal host  may be infected with a spam malware. For the rule to work correctly,  configure the following attributes: Flow Count, PPF (Packets per Flow).</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>Exfiltration: Internal to Internal SPAM</td><td>5</td><td>A  rule detects a SPAM traffic between Internal hosts. An internal host may be  infected with a spam malware. For the rule to work correctly, configure the  following attributes: Flow Count, PPF (Packets per Flow).</td><td>Exfiltration</td><td>Data  Transfer Size Limits</td></tr>
+<tr><td>DDoS Attack Detected</td><td>8</td><td>A rule  detects DDoS attack based on traffic volume from multiple IP addresses to a  single destination IP on the same port. The attack involves saturating  network resources causing disruption of normal traffic on the target server.  For the rule to work correctly, configure the Counter Threshold and Whitelist  groups.</td><td>Impact</td><td>Endpoint  Denial of Service</td></tr>
+<tr><td>D/DoS Attack Detected - Signature 2</td><td>8</td><td>A rule  detects anomalies in network traffic based on a comparison of specific  indicators over a 60-minute interval. The D/DoS attack against a server is  detected based on many attributes. For the rule to work correctly configure  the Groups Threshold in a format:  Group,Unique_ASNs,Unique_IPs,Unique_Internal_IPs,Unique_Public_IPs,Flows,Packets,Bytes,PPF,BPP,BPF,Flows_Limit,Bytes_Limit,Unique_IPs_Limit,Indicators_Limit.  The first 10 attributes are behaviorally computable, and the configured value  means a multiplier (e.g. 2 means 2 times). The next 4 attributes are static.</td><td>Impact</td><td>Endpoint  Denial of Service</td></tr>
+<tr><td>DDoS DNS Amplification Attack - Signature 1</td><td>8</td><td>A rule  detects DDoS DNS Amplification Attack based on network traffic statistics  (Signature 1). To create heavy traffic, an attacker send a request in a way  that generates the largest possible response from DNS name resolution  services. As a result, the target receives reinforcement of the initial  attacker's traffic, and their network is clogged with false traffic, which  causes denial of service. For the rule to work correctly, configure the  following attributes: Flow Count and PPF (Packets Per Flow).</td><td>Impact</td><td>Endpoint  Denial of Service</td></tr>
+<tr><td>DoS Attack Detected</td><td>8</td><td>A  rule detects DoS attack based on traffic volume from one IP address to single  IP on specific port. For the rule to work correctly, configure the Port  Threshold List in a format: Flows_Threshold\</td><td>Port\</td><td>Service and Whitelist  groups.</td><td>Impact</td><td>Endpoint  Denial of Service</td></tr>
+<tr><td>DoS - ICMP Flood</td><td>8</td><td>A  rule detects the DoS ICMP attack. An attacker can send a large number of ICMP  packets to consume all available bandwidth of an victim's host. For the rule  to work correctly, configure the following attributes: Flow Count, PPF  (Packets per Flow), PPM (Packets Per Minute) and Whitelist groups.</td><td>Impact</td><td>Endpoint  Denial of Service</td></tr>
+<tr><td>DoS - TCP Flood</td><td>8</td><td>A  rule detects TCP DoS attack. An attacker can send a large number of TCP  packets to one or several ports of the victim, which eventually renders the  attacked host unable to process the incoming packets. For the rule to work  correctly, configure the following attributes: Flow Count, PPF (Packets per  Flow), PPM (Packets Per Minute) and Whitelist groups.</td><td>Impact</td><td>Endpoint  Denial of Service</td></tr>
+<tr><td>DoS - UDP Flood</td><td>8</td><td>A  rule detects the DoS UDP attack. An attacker can send a large number of UDP  packets to consume all available bandwidth of the victim's host. For the rule  to work correctly, configure the following attributes: Flow Count, PPF  (Packets per Flow), PPM (Packets Per Minute) and Whitelist groups.</td><td>Impact</td><td>Endpoint  Denial of Service</td></tr>
+<tr><td>P2P Activity</td><td>2</td><td>A  rule detects P2P traffic based on port analysis. This activity may indicate  on a policy violation. For the rule to work correctly, configure the P2P Port  Ranges in a format StartPort,EndPort,protocol,P2P_Name,Description and a  Whitelist groups.</td><td>Initial  Access</td><td>Drive-by  Compromise</td></tr>
+<tr><td>Unauthorized RDP Connection</td><td>6</td><td>A  rule detects unauthorized RDP connection attempts from outside the  organization. An attacker may connect to a remote system over RDP to expand  access if the service is enabled. For the rule to work correctly, configure  the Authorized RDP Servers groups.</td><td>Lateral  Movement</td><td>Remote  Desktop Protocol</td></tr>
+</tbody>
+</table>
+<p><em>Threat Detection Rules</em></p>
+<h2><a class="anchor" aria-hidden="true" id="3-threat-intelligence"></a><a href="#3-threat-intelligence" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Threat Intelligence</h2>
+<p>Threat Intelligence module generates information about suspicious connections based on correlations with blacklists of malicious IP addresses and suspicious countries.</p>
+<p>This module is divided into two parts:</p>
+<ul>
+<li>External Threat Intelligence, which uses automatically updated feeds downloaded from the Internet</li>
+<li>Internal Threat Intelligence, which uses manually created and updated feeds.</li>
+</ul>
+<p>The External Security Module generates the following alerts:</p>
+<ul>
+<li>Connection with Suspicious IP</li>
+<li>Connection with Suspicious Country</li>
+<li>Connection with Open Proxy</li>
+<li>Connection with Open DNS</li>
+<li>Connection with TOR.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="31-initial-configuration"></a><a href="#31-initial-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1. Initial Configuration</h3>
+<p>FlowControl XNS requires access to the URLs listed in the table [External Threat Intelligence - ACL] to be able to automatically update security feeds. If your firewall is not able to create ACL for URLs, you may use IP addresses, but please remember to checks them before installation the system (Some IPs can be changed dynamically for these URLs).</p>
+<p>If you would to add a new External Feed, please contact the Support Team.</p>
+<p>FlowControl XNS includes update regularly more than 30 external reputation databases.</p>
+<h3><a class="anchor" aria-hidden="true" id="31-threat-intelligence---security-rules"></a><a href="#31-threat-intelligence---security-rules" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1. Threat Intelligence - Security Rules</h3>
+<p>The External Security Module generates the following alerts:</p>
+<ul>
+<li>Connection with Suspicious IP</li>
+<li>Connection with Suspicious Country</li>
+<li>Connection with Open Proxy</li>
+<li>Connection with Open DNS</li>
+<li>Connection with TOR.</li>
+</ul>
+<p>External Threat Intelligence Feeds contains more 30 security feeds.</p>
+<table>
+<thead>
+<tr><th>Feed Id</th><th>Name</th><th>Category</th><th>Score</th><th>Description</th><th>MITRE Tactic</th><th>MITRE Technique</th></tr>
+</thead>
+<tbody>
+<tr><td>Niebezpiecznik_custom</td><td>Connection with  Suspicious IP</td><td>Malicious</td><td>9</td><td>Custom Feed -  Niebezpiecznik.</td><td>Command And  Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>ThreatIntelligence_custom</td><td>Connection with  Suspicious IP</td><td>C2</td><td>2</td><td>Internal Threat  Intelligence - Custom Feed.</td><td>Command And  Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>OpenDNS_custom</td><td>Connection with  Open DNS</td><td>Open DNS</td><td>3</td><td>Open DNS - Custom  feed created manually.</td><td>Command And  Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>WhitelistIP_whitelist</td><td>Exception</td><td>Exception</td><td>4</td><td>IP Whitelist</td><td>Command And  Control</td><td>Standard  Application Layer Protocol</td></tr>
+<tr><td>Country_custom</td><td>Connection with  Suspicious Country</td><td>Botnet</td><td>6</td><td>The Worst Botnet  Countries based on custom list.</td><td>Command And  Control</td><td>Standard  Application Layer Protocol</td></tr>
+</tbody>
+</table>
+<p><em>Internal Threat Intelligence Feeds</em></p>
+<p>*You must purchase a feed license before using the feed</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="32-configuring-threat-intelligence-ti"></a><a href="#32-configuring-threat-intelligence-ti" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2. Configuring Threat Intelligence (TI)</h3>
+<p>To modify the Threat Intelligence module, you must be logged in to the system admin account, then enter the <strong>Settings</strong> tab. After clicking the <strong>Security</strong> option, all security modules will be displayed. Click on the selected security module to edit or modify it. In the case of the TI module there are two tabs [External Threat Intelligence]:</p>
+<ul>
+<li><p>External Threat Intelligence</p></li>
+<li><p>Internal Threat Intelligence.</p></li>
+</ul>
+<p><img src="/docu/docs/assets/image-20191129135800950.png" alt="image-20191129135800950"></p>
+<p><em>External Threat Intelligence</em></p>
+<p>The External Threat Intelligence rules contain attributes that are described in Table [External Threat Intelligence Feeds Attributes].</p>
+<table>
+<thead>
+<tr><th>Attribute</th><th>Description</th><th>Possible Values</th><th>Modifiable</th></tr>
+</thead>
+<tbody>
+<tr><td>Enabled</td><td>The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts.</td><td>Enabled     Disabled</td><td><img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Alert Name</td><td>The  attribute indicating the name of the rule.</td><td>Connection  with a Suspicious IP,    Connection with a Suspicious Country, Connection with Open Proxy,  Connection with TOR</td><td><img src="assets/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Feed Id</td><td>The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute.</td><td></td><td><img src="assets/NOT_OK_S-1575040605736.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Data Type</td><td>The  attribute indicating the type of collected data for each feed.</td><td>IP, Country</td><td><img src="assets/NOT_OK_S-1575040834633.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Threat  Category</td><td>The  attribute indicating the category of feed related to type of security  threats.</td><td>Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus</td><td><img src="assets/NOT_OK_S-1575040615564.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>MITRE Tactic</td><td>The  attribute indicating the MITRE Tactic related to a security rule.</td><td>Initial  Access,  Execution, Persistence, Privilege Escalation,    Defense Evasion,  Credential Access     Discovery, Lateral Movement     Collection, Command and Control,    Exfiltration, Impact</td><td><img src="assets/NOT_OK_S-1575040809231.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>MITRE  Technique</td><td>The  attribute indicating the MITRE Technique related to a security rule.  There is about about 200 techniques - more details <a href="https://attack.mitre.org/matrices/enterprise/">https://attack.mitre.org/matrices/enterprise/</a>.</td><td></td><td><img src="assets/NOT_OK_S-1575040798605.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Score</td><td>Attribute  indicating the importance of the feed on a scale of 1 to 10.</td><td>{1..10}</td><td><img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Refresh  Interval</td><td>Attribute  indicating the time interval, how often (in minutes) the feed should be  updated.</td><td>{0..32767}</td><td><img src="assets/OK_S-1575040723161.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Last Refresh  Time</td><td>Attribute  indicating the last feed update in format YYYYMMDDhhmm.</td><td></td><td><img src="assets/NOT_OK_S-1575040765552.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Alert  Description</td><td>Attribute  indicating the description of the feed.</td><td></td><td><img src="assets/NOT_OK_S-1575040686111.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+</tbody>
+</table>
+<p><em>External Threat Intelligence Feeds Attributes</em></p>
+<p><img src="/docu/docs/assets/image-20191129165932145.png" alt="image-20191129165932145"></p>
+<p><em>Example of Internal Threat Intelligence Feed [Dan_TOR]</em></p>
+<p>The Internal Threat Intelligence engine correlates custom feeds in context of network flow. All attributes except Alert Name can be modified in it.</p>
+<table>
+<thead>
+<tr><th>Attribute</th><th>Description</th><th>Possible Values</th><th>Modifiable</th></tr>
+</thead>
+<tbody>
+<tr><td>Enabled</td><td>The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts.</td><td>Enabled     Disabled</td><td><img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Alert Name</td><td>The  attribute indicating the name of the rule. The attribute can be set only once when creating a new custom feed.</td><td></td><td><img src="assets/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Feed Id</td><td>The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute.</td><td></td><td><img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Data Type</td><td>The  attribute indicating the type of collected data for each feed.</td><td>IP, Country</td><td><img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Threat  Category</td><td>The  attribute indicating the category of feed related to type of security  threats.</td><td>Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus</td><td><img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>MITRE Tactic</td><td>The  attribute indicating the MITRE Tactic related to a security rule.</td><td>Initial  Access,  Execution, Persistence, Privilege Escalation,    Defense Evasion,  Credential Access     Discovery, Lateral Movement     Collection, Command and Control,    Exfiltration, Impact</td><td><img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>MITRE  Technique</td><td>The  attribute indicating the MITRE Technique related to a security rule.  There is about about 200 techniques - more details <a href="https://attack.mitre.org/matrices/enterprise/">https://attack.mitre.org/matrices/enterprise/</a>.</td><td></td><td><img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Score</td><td>Attribute  indicating the importance of the feed on a scale of 1 to 10.</td><td>{1..10}</td><td><img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Alert  Description</td><td>Attribute  indicating the description of the feed.</td><td></td><td><img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+<tr><td>Feed Data List</td><td>Attribute indicating the values of custom feed (IP address or Country), one value per line.</td><td></td><td><img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /></td></tr>
+</tbody>
+</table>
+<p><em>Internal Threat Intelligence Feeds Attributes</em></p>
+<p><img src="/docu/docs/assets/image-20191129165740175.png" alt="image-20191129165740175"></p>
+<p><em>Example of Internal Threat Intelligence Feed [OpenDNS_custom]</em></p>
+<h4><a class="anchor" aria-hidden="true" id="how-to-create-a-new-custom-feed"></a><a href="#how-to-create-a-new-custom-feed" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to create a new custom feed?</h4>
+<ol>
+<li>In the <strong>Settings -&gt; Security -&gt; Internal Threat Intelligence</strong> click <strong>ADD NEW</strong> option.</li>
+</ol>
+<p><img src="/docu/docs/assets/image-20191129170553111.png" alt="image-20191129170553111"></p>
+<ol start="2">
+<li>Fill in the attributes of the new feed and click apply.</li>
+</ol>
+<p><img src="/docu/docs/assets/image-20191129171309425.png" alt="image-20191129171309425"></p>
+<p><em>Internal Threat Intelligence Alert Configuration</em></p>
+<ol start="3">
+<li>Please remember that only enabled rules will generate alerts.</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="how-to-whitelist-ip-from-threat-intelligence-rules"></a><a href="#how-to-whitelist-ip-from-threat-intelligence-rules" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>How to whitelist IP from Threat Intelligence rules?</strong></h4>
+<ol>
+<li>In the <strong>Settings -&gt; Security -&gt; Internal Threat Intelligence</strong> choose the WhitelistIP_whitelist feed</li>
+</ol>
+<p><img src="/docu/docs/assets/image-20191202122845526.png" alt="image-20191202122845526"></p>
+<ol start="2">
+<li>Edit the feed and add list of IPs which should be ignored by Threat Intelligence module into the Feed Data List area.</li>
+</ol>
+<p><img src="/docu/docs/assets/image-20191202124013806.png" alt="image-20191202124013806"></p>
+<h3><a class="anchor" aria-hidden="true" id="32-security-dashboards"></a><a href="#32-security-dashboards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2. Security Dashboards</h3>
+<p>Security alerts generated by the TI module are presented in the following tabs:</p>
+<ul>
+<li><p>Security Summary</p></li>
+<li><p>Cockpit Manager</p></li>
+<li><p>Security Dashboards</p></li>
+<li><p>Threat Intelligence</p></li>
+<li><p>Threat Detection.</p>
+<p>For the first three views,  Threat Intelligence alerts are presented together with Threat Detection.</p>
+<p>(along with alerts from the Threat Detection module). If you want to analyze only alerts from the TI module, use the Threat Intelligence tab.</p>
+<p><img src="/docu/docs/assets/image-20191202125753872.png" alt="image-20191202125753872"></p></li>
+</ul>
+<p>In this chapter only TI dashboards have been described.</p>
+<p>3.2.1 Security Summary</p>
+<p>3.2.2 Cockpit Manager</p>
+<p>3.2.3 Security Dashboards</p>
+<h4><a class="anchor" aria-hidden="true" id="324-threat-intelligence"></a><a href="#324-threat-intelligence" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2.4 Threat Intelligence</h4>
+<p><strong>The Alerts Drilldown</strong> view allows for analyzing security alerts grouped by such attributes as Severity, Threat Category, Alert Name, Feed ID, Direction, Source Host, Source Country, Destination Host and Destination Country. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.</p>
+<p><img src="/docu/docs/assets/image-20191202150025449.png" alt="image-20191202150025449"></p>
+<p><em>TI Alerts Drilldown</em></p>
+<p>Information about the country associated with the threat is very useful for the security module to know which countries are involved in this type of security threat. To better visualize the situational view of this case, use the <strong>Suspicious Country</strong> view.</p>
+<p><img src="/docu/docs/assets/image-20191202151057182.png" alt="image-20191202151057182"></p>
+<p><em>TI Suspicious Countries</em></p>
+<p>Another view showing interesting statistics on the number of unique IP addresses in the context of alert names and categories is <strong>the Alert Statistcs</strong> view.</p>
+<p><img src="/docu/docs/assets/image-20191202162718581.png" alt="image-20191202162718581"></p>
+<p><em>TI Alerts Statistics</em></p>
+<p><strong>The TOPs</strong> view shows information about the most common feeds, alert names, threat categories, as well as IP address pairs in the context of all TI threats. The view is ideally suited as the first starting point for analysis to detect repetitive attacks and ignore False Positives.</p>
+<p><img src="/docu/docs/assets/image-20191202162905259.png" alt="image-20191202162905259"></p>
+<p><em>TI TOPs</em></p>
+<p>Another view on TI threats is provided by the <strong>IPs Correlation</strong> graph, which graphically presents source and destination IP addresses in the context of specific threats. A quick look at this view enables the network and security analyst to analyze security anomalies. It enables the presentation of security anomalies from the perspective of the entire organization, and can also be considered as a reason to make a decision about tuning security rules.</p>
+<p><img src="/docu/docs/assets/image-20191202162949925.png" alt="image-20191202162949925"></p>
+<p><em>TI IPs Correlations</em></p>
+<p><strong>The Maps</strong> view shows suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of unique security alerts.</p>
+<p><img src="/docu/docs/assets/image-20191202163103564.png" alt="image-20191202163103564"></p>
+<p><em>TI Maps</em></p>
+<p>A quick look at the basic information about attacks detected by TI engine is provided by the <strong>Alerts</strong> tab.</p>
+<p><img src="/docu/docs/assets/image-20191202163202604.png" alt="image-20191202163202604"></p>
+<p><em>TI Alerts</em></p>
+<h4><a class="anchor" aria-hidden="true" id="325-threat-detection"></a><a href="#325-threat-detection" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2.5 Threat Detection</h4>
+<p><strong>The Alerts Drilldown</strong> view allows for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Alert Name, Source Host, Destination Host, Direction, Source Group and Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.</p>
+<p><img src="/docu/docs/assets/image-20191206163717723.png" alt="image-20191206163717723"></p>
+<p><em>TD Alerts Drilldown</em></p>
+<p>Information about the country associated with the threat is very useful for the security module to know which countries are involved in this type of security threat. To better visualize the situational view of this case, use the <strong>Suspicious Country</strong> view.</p>
+<p><img src="/docu/docs/assets/image-20191206165028037.png" alt="image-20191206165028037"></p>
+<p><em>TD Suspicious Countries</em></p>
+<p>Another view showing interesting statistics on the number of unique IP addresses in the context of alert names and categories is <strong>the Alert Statistcs</strong> view.</p>
+<p><img src="/docu/docs/assets/image-20191206165205582.png" alt="image-20191206165205582"></p>
+<p><em>TD Alerts Statistics</em></p>
+<p><strong>The TOPs</strong> view shows information about the most common feeds, alert names, threat categories, as well as IP address pairs in the context of all TD threats. The view is ideally suited as the first starting point for analysis to detect repetitive attacks and ignore False Positives.</p>
+<p><img src="/docu/docs/assets/image-20191206165318843.png" alt="image-20191206165318843"></p>
+<p><em>TD TOPs</em></p>
+<p>Another view on TD threats is provided by the <strong>IPs Correlation</strong> graph, which graphically presents source and destination IP addresses in the context of specific threats. A quick look at this view enables the network and security analyst to analyze security anomalies. It enables the presentation of security anomalies from the perspective of the entire organization, and can also be considered as a reason to make a decision about tuning security rules.</p>
+<p><img src="/docu/docs/assets/image-20191206165437848.png" alt="image-20191206165437848"></p>
+<p><em>TD IPs Correlations</em></p>
+<p><strong>The Maps</strong> view shows suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of GBs sent by source country.</p>
+<p><img src="/docu/docs/assets/image-20191206175842010.png" alt="image-20191206175842010"></p>
+<p><em>TD Maps</em></p>
+<p>A quick look at the basic information about attacks detected by TD engine is provided by the <strong>Alerts</strong> tab.</p>
+<p><img src="/docu/docs/assets/image-20191206180639664.png" alt="image-20191206180639664"></p>
+<p><em>TD Alerts</em></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docu/docs/doc2"><span class="arrow-prev">← </span><span>User Guide</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#1-overview">1. Overview</a><ul class="toc-headings"><li><a href="#11-security-summary-dashboard">1.1. Security Summary Dashboard</a></li><li><a href="#12-manager-cockpit">1.2. Manager Cockpit</a></li><li><a href="#13-security-dashboards">1.3. Security Dashboards</a></li></ul></li><li><a href="#2-threat-detection">2. Threat Detection</a><ul class="toc-headings"><li><a href="#21-initial-configuration">2.1. Initial Configuration</a></li><li><a href="#22-security-rules">2.2. Security Rules</a></li></ul></li><li><a href="#3-threat-intelligence">3. Threat Intelligence</a><ul class="toc-headings"><li><a href="#31-initial-configuration">3.1. Initial Configuration</a></li><li><a href="#31-threat-intelligence---security-rules">3.1. Threat Intelligence - Security Rules</a></li><li><a href="#32-configuring-threat-intelligence-ti">3.2. Configuring Threat Intelligence (TI)</a></li><li><a href="#32-security-dashboards">3.2. Security Dashboards</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docu/" class="nav-home"><img src="/docu/img/passus.png" alt="FlowControl Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docu/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docu/docs/en/doc2.html">Guides (or other categories)</a><a href="/docu/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docu/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/docu/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docu/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Passus</section></footer></div></body></html>
