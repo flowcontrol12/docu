@@ -96,7 +96,7 @@ Below is presented table with general description of what can be found in each s
 
 ![Main Menu Tab](assets/Main_Menu_Tab.png)
 
-At the right-hand side of the system there are three drop-down menus. First one marked with the icon <img src="assets/Config_Icon.png" alt="System" style="zoom: 50%;" />   is settings menu available only for admin accounts. This section is described in Administration Setting paragraph. Second drop-down menu marked with is <img src="assets/Info_Icon.png" alt="System" style="zoom: 50%;" />  available for all users. Things that can be found in this section are :
+At the right-hand side of the system there are three drop-down menus. First one marked with the icon <img src="assets/Config_Icon.png" alt="System" style="zoom: 50%;" /> is settings menu available only for admin accounts. This section is described in Administration Setting paragraph. Second drop-down menu marked with is <img src="assets/Info_Icon.png" alt="System" style="zoom: 50%;" />  available for all users. Things that can be found in this section are :
 
 - License Info,
 
@@ -268,7 +268,7 @@ When creating any selections output of such configuraiton will be shown in a for
 
 
 
-<img src="assets/Smart%20search%20.png" alt="Step back" style="zoom: 50%;" />  <b> Smart search </b> clicking this option will pop up type in section, where any phrase can be typed in that is being looked for. System automatically suggest options while typing.
+<img src="assets/Smart%20search%20.png" alt="Smart search" style="zoom: 50%;" />  <b> Smart search </b> clicking this option will pop up type in section, where any phrase can be typed in that is being looked for. System automatically suggest options while typing.
 
 ![Google Search](assets/Google_Search.png)
 
