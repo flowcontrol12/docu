@@ -1,7 +1,7 @@
 ---
 id: doc4
-title: Software Requirements
-sidebar_label: Software Requirements
+title: Model Specifications
+sidebar_label: S
 ---
 
 
@@ -9,7 +9,7 @@ sidebar_label: Software Requirements
 
 
 
-# FlowControl Software Requirements
+## 1. FlowControl Software Specifications
 
 
 
@@ -34,3 +34,7 @@ Below you will find hardware requirements, in Tab.1, for desired flow limits.
 > 1. System drive should be located on the SSD partition.
 > 2. Supported Hypervisor VMware ESXi 6.5+.
 > 3. Please note that all vCPUs should be divided between 2 sockets, e.g for option with 60k FPS, that has 16 vCPUs, there will be 8 vCPUs per socket.
+
+
+
+## 2. FlowControl Hardware Specifications
