@@ -4,6 +4,7 @@ title: FlowControl - Getting started guide
 idebar_label: User Guide
 ---
 
+## Introduction
 
 In this document you will find information about most important options available in FlowControl XN and FlowControl XNS. How to operate with data, graphs and charts as well as general description of options available in the system. 
 

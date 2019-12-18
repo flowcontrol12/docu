@@ -6,16 +6,6 @@ idebar_label: XNS Guide
 
 
 
-![LogoMale](assets/LogoMale-1574941098492.png)
-
-
-
-
-
- ![Logo_Dlugo](assets/Logo_Dlugo.png)
-
-# FlowControl XNS - Security Module Guide
-
 In this document you will find information about most important options available in FlowControl XNS module. The Guide include information how to configure security rules, operate with data, graphs, charts as well as general description of options available in the Security Module.
 
 
@@ -144,31 +134,31 @@ Security Summary Dashboard concerns security alerts from both engines (TI and TD
 
 
 
-![image-20191209111130010](Images/image-20191209111130010.png)
+![image-20191209111130010](assets/image-20191209111130010.png)
 
 *[Security Dashboard - Alerts Graph]*
 
 
 
-![image-20191209111502539](Images/image-20191209111502539.png)
+![image-20191209111502539](assets/image-20191209111502539.png)
 
 *[Security Dashboard - Alerts]*
 
 
 
-![image-20191209111735685](Images/image-20191209111735685.png)
+![image-20191209111735685](assets/image-20191209111735685.png)
 
 *Security Dashboard - Alerts Drilldown*
 
 
 
-![image-20191209110348452](Images/image-20191209110348452.png)
+![image-20191209110348452](assets/image-20191209110348452.png)
 
 *[Security Dashboards - TOP Suspicious IPs]*
 
 
 
-![image-20191209110607174](Images/image-20191209110607174.png)
+![image-20191209110607174](assets/image-20191209110607174.png)
 
 *[Security Dashboards - Alerts Statistics]*
 
@@ -189,7 +179,7 @@ The cockpit show number of alerts per severity and set of KPIs shown in the belo
 
 
 
-![image-20191209135530202](Images/image-20191209135530202.png)
+![image-20191209135530202](assets/image-20191209135530202.png)
 
 
 
@@ -212,43 +202,43 @@ Security Summary Dashboard show all security alerts in many context allowing for
 
 
 
-![image-20191211172725796](Images/image-20191211172725796.png)
+![image-20191211172725796](assets/image-20191211172725796.png)
 
 *[Security Dashboard - TOPs]*
 
 
 
-![image-20191211143749082](Images/image-20191211143749082.png)
+![image-20191211143749082](assets/image-20191211143749082.png)
 
 *[Security Dashboard - IPs Correlations]*
 
 
 
-![image-20191211173131157](Images/image-20191211173131157.png)
+![image-20191211173131157](assets/image-20191211173131157.png)
 
 *[Security Dashboard - Scatter Plot IP]*
 
 
 
-![image-20191211173252848](Images/image-20191211173252848.png)
+![image-20191211173252848](assets/image-20191211173252848.png)
 
 *[Security Dashboard - Diagram]*
 
 
 
-![image-20191211173553882](Images/image-20191211173553882.png)
+![image-20191211173553882](assets/image-20191211173553882.png)
 
 *[Security Dashboard - Groups Correlations]*
 
 
 
-![image-20191211174042804](Images/image-20191211174042804.png)
+![image-20191211174042804](assets/image-20191211174042804.png)
 
 *[Security Dashboard - Maps]*
 
 
 
-![image-20191211174117412](Images/image-20191211174117412.png)
+![image-20191211174117412](assets/image-20191211174117412.png)
 
 *[Security Dashboard - TOP IPs]*
 
@@ -557,7 +547,7 @@ A quick look at the basic information about attacks detected by TI engine is pro
 
  **The Alerts Drilldown** view allows for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Alert Name, Source Host, Destination Host, Direction, Source Group and Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.
 
-![image-20191206163717723](Images/image-20191206163717723.png)
+![image-20191206163717723](assets/image-20191206163717723.png)
 
 *TD Alerts Drilldown*
 
@@ -565,37 +555,37 @@ A quick look at the basic information about attacks detected by TI engine is pro
 
 Information about the country associated with the threat is very useful for the security module to know which countries are involved in this type of security threat. To better visualize the situational view of this case, use the **Suspicious Country** view.
 
-![image-20191206165028037](Images/image-20191206165028037.png)
+![image-20191206165028037](assets/image-20191206165028037.png)
 
 *TD Suspicious Countries*
 
 Another view showing interesting statistics on the number of unique IP addresses in the context of alert names and categories is **the Alert Statistcs** view.
 
-![image-20191206165205582](Images/image-20191206165205582.png)
+![image-20191206165205582](assets/image-20191206165205582.png)
 
 *TD Alerts Statistics*
 
 **The TOPs** view shows information about the most common feeds, alert names, threat categories, as well as IP address pairs in the context of all TD threats. The view is ideally suited as the first starting point for analysis to detect repetitive attacks and ignore False Positives.
 
-![image-20191206165318843](Images/image-20191206165318843.png)
+![image-20191206165318843](assets/image-20191206165318843.png)
 
 *TD TOPs*
 
 Another view on TD threats is provided by the **IPs Correlation** graph, which graphically presents source and destination IP addresses in the context of specific threats. A quick look at this view enables the network and security analyst to analyze security anomalies. It enables the presentation of security anomalies from the perspective of the entire organization, and can also be considered as a reason to make a decision about tuning security rules.
 
-![image-20191206165437848](Images/image-20191206165437848.png)
+![image-20191206165437848](assets/image-20191206165437848.png)
 
 *TD IPs Correlations*
 
 **The Maps** view shows suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of GBs sent by source country.
 
-![image-20191206175842010](Images/image-20191206175842010.png)
+![image-20191206175842010](assets/image-20191206175842010.png)
 
 *TD Maps*
 
 A quick look at the basic information about attacks detected by TD engine is provided by the **Alerts** tab.
 
-![image-20191206180639664](Images/image-20191206180639664.png)
+![image-20191206180639664](assets/image-20191206180639664.png)
 
 *TD Alerts*
 
