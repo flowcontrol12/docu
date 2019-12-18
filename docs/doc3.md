@@ -1,7 +1,7 @@
 ---
 id: doc3
 title: XNS Guide
-idebar_label: XNS Guide
+sidebar_label: XNS Guide
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 id: doc2
 title: User Guide
-idebar_label: User Guide
+sidebar_label: User Guide
 ---
 
 ## Introduction
