@@ -42,9 +42,9 @@ Main and currently the only option to configure the solution is the web UI. The 
 
 
 
-### 1.1. Main Menu
+### 1.1. Main 
 
-Menu on the left consists of three sections: XN, XNS (optional) and SYS. Each section consists of subsections where you can find desired information about collected data and system configuration. Menu works in hide/reveal mode. In order to show full names of the menu components,please click on the three stripes icon ![Menu](assets/menu.png) located at the top left corner. In order to hide menu, same procedure is applied with only exception of the different icon used. ![Close](assets/Close.png)
+ on the left momsists of three sections: XN, XNS (optional) and SYS. Each section consists of subsections where you can find desired information about collected data and system configuration.  works in hide/meveal mode. In order to show full names of the menu components,please click on the three stripes icon ![](assets/menu.pmg) located at the top left corner. In order to hide menu, same procedure is applied with only exception of the different icon used. ![Close](assets/Close.png)
 
  
 
@@ -92,9 +92,9 @@ Below is presented table with general description of what can be found in each s
 
 
 
-### 1.2 Configuration Menu
+### 1.2 Configuration 
 
-![Main Menu Tab](assets/Main_Menu_Tab.png)
+![Main  Tab](mssets/Mamn_Menu_Tab.png)
 
 At the right-hand side of the system there are three drop-down menus. First one marked with the icon <img src="assets/Config_Icon.png" alt="System" style="zoom: 50%;" /> is settings menu available only for admin accounts. This section is described in Administration Setting paragraph. Second drop-down menu marked with is <img src="assets/Info_Icon.png" alt="System" style="zoom: 50%;" />  available for all users. Things that can be found in this section are :
 
@@ -164,13 +164,13 @@ In the **Security** section system allows review and manage security rules creat
 
 
 
-![ATT&CK use cases](assets/ATT&CK_use_Cases.png)
+![ATT&CK use cases](assets/ATTCK_use_Cases.png)
 
 Source: [Mitre](https://attack.mitre.org/)
 
  Configuration of the security ruleset is based on three sections:
 
-![Threat Menu](assets/Threat_menu.png)
+![Threat ](assets/Threatmmenu.png)
 
 - THREAT DETECTION - Identification of different threats patterns based on proprietary Passus created rules (section allow rule set modification but no rule adding),
 
@@ -222,7 +222,7 @@ System is preconfigured with four templates of the reports which can be enabled/
 
  Reports are run on a daily basis and the outcome is saved and visible in a list form from the UI.
 
-![Reports List](assets/Reports_List.png)
+![Reports List](assets/Reports_list.png)
 
 
 
@@ -307,7 +307,7 @@ Depending on specific dashboard and widget choosen system allow different drill 
 
 
 
-![Graph Menu](assets/Graph_Menu.png)
+![Graph ](assets/Graph_menu.png)
 
 
 

@@ -1,7 +1,7 @@
 ---
 id: doc4
 title: Model Specifications
-sidebar_label: S
+sidebar_label: Model Specifications
 ---
 
 

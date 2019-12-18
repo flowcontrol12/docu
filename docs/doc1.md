@@ -7,7 +7,7 @@ sidebar_label: ESXi Installation Procedure
 ## Introduction
 
 
-FlowControlXN^TM^ is an application responsible for monitoring network bandwidth and network traffic analysis. This document describes step by step installation and configuration process of FlowControlXN^TM^ on VMWare ESXi version 6.5+.
+FlowControlXN is an application responsible for monitoring network bandwidth and network traffic analysis. This document describes step by step installation and configuration process of FlowControlXN on VMWare ESXi version 6.5+.
 
 ## Additional Resources
 
@@ -99,13 +99,13 @@ In order to configure the application please type "config" into console and pres
 
 ### 2.2 Network Configuration
 
-ENABLING DHCP
+#### 2.2.1 Enabling DHCP
 
 ![](assets/image9.png)
 
 After enabling DHCP server will restart all components and it will give you an information of address which you can enter through web browser in order to access the FlowControlXN^TM^. Press **Enter** to continue.
 
-DISABLING DHCP
+#### 2.2.2 Disabling DHCP
 
 ![](assets/image7.png)
 
