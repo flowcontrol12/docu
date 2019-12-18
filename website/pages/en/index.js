@@ -28,7 +28,18 @@ class HomeSplash extends React.Component {
         </div>
       </div>
     );
-
+    const Block = props => (
+      <Container
+        padding={['bottom', 'top']}
+        id={props.id}
+        background={props.background}>
+        <GridBlock
+          align="center"
+          contents={props.children}
+          layout={props.layout}
+        />
+      </Container>
+    );
     const Logo = props => (
       <div className="projectLogo">
         <img src={props.img_src} alt="Project Logo" />
@@ -37,7 +48,6 @@ class HomeSplash extends React.Component {
 
     const ProjectTitle = () => (
       <h2 className="projectTitle">
-        {siteConfig.title}
         <small>{siteConfig.tagline}</small>
       </h2>
     );
@@ -57,17 +67,47 @@ class HomeSplash extends React.Component {
         </a>
       </div>
     );
-
+    const Features1 = () => (
+      <Block layout="twoColumn">
+        {[
+          {
+            image: `${baseUrl}img/Index1.png`,
+            imageAlign: 'left',
+          },
+          {
+            image: `${baseUrl}img/Index2.png`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+      
+    );
+    const Features2 = () => (
+      <Block layout="twoColumn">
+        {[
+          {
+            image: `${baseUrl}img/Index3.png`,
+            imageAlign: 'left',
+          },
+          {
+            image: `${baseUrl}img/Index4.png`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    )
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        
         <div className="inner">
+        <Features1 />
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
             <Button href={docUrl('doc3.html')}>Install</Button>
             <Button href={docUrl('doc2.html')}>Use</Button>
             <Button href={docUrl('doc3.html')}>Config</Button>
           </PromoSection>
+          <Features2 />
         </div>
       </SplashContainer>
     );
@@ -91,16 +131,30 @@ class Index extends React.Component {
         />
       </Container>
     );
-
-    const TryOut = () => (
-      <Block id="try">
+    const Features1 = () => (
+      <Block layout="twoColumn">
         {[
           {
-            
-          image: `${baseUrl}img/background_web.png`,
-          imageAlign: 'center',
-          image
-            
+            image: `${baseUrl}img/Index1.png`,
+            imageAlign: 'left',
+          },
+          {
+            image: `${baseUrl}img/Index2.png`,
+            imageAlign: 'right',
+          },
+        ]}
+      </Block>
+    );
+    const Features2 = () => (
+      <Block layout="twoColumn">
+        {[
+          {
+            image: `${baseUrl}img/Index3.png`,
+            imageAlign: 'left',
+          },
+          {
+            image: `${baseUrl}img/Index4.png`,
+            imageAlign: 'right',
           },
         ]}
       </Block>
@@ -109,8 +163,6 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <TryOut />
-
         </div>
       </div>
     );
