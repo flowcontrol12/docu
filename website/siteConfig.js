@@ -25,7 +25,7 @@ const siteConfig = {
   tagline: 'Software written by Engineers for Engineers',
   url: 'https://flowcontrol12.github.io', // Your website URL
   baseUrl: '/docu/', // Base URL for your project */
-  organizationName: 'flowcontrol12'
+  organizationName: 'flowcontrol12',
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
