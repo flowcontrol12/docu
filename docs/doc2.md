@@ -1,6 +1,6 @@
 ---
 id: doc2
-title: FlowControl - Getting started guide
+title: User Guide
 idebar_label: User Guide
 ---
 
@@ -56,18 +56,18 @@ Below is presented table with general description of what can be found in each s
 
 | **FlowControl XN**                                           | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **TOPs** ![tops](assets/tops.png)   | Information about  top talkers in the network.               |
-| **Traffic**   ![traffic](assets/traffic.png) | Detailed information  about  traffic in the network.         |
-| **Applications**   ![applications](assets/applications.png) | Provides the information on applications and its traffic utilization. |
-| **Raw Data**  ![raw data](assets/raw%20data.png) | Extensive  information about every flow in the traffic.      |
-| **ASA Devices**  ![ASA devices](assets/ASA%20devices.png) | Detailed information about flows from ASA Devices.           |
-| **Geolocation**   ![geolocations](assets/geolocations.png) | Maps with various  geolocations.                             |
-| **Groups**  ![groups](assets/groups.png) | Flows organized into various groups, e.g business roles, location. |
-| **AS Names**   ![as names](assets/as%20names.png) | Flows organized  according to AS Names.                      |
-| **Alerts**   ![alerts](assets/alerts.png) | Information and  details about alerts that occured in the network. |
-| **Last Day** ![last day](assets/last%20day.png) | Aggregated data from  last day.                              |
-| **Last Week**  ­ ![last week](assets/last%20week.png) | Aggregated data from  last week.                             |
-| **Last Month**  ![last month](assets/last%20month.png) | Aggregate data from  last month.                             |
+| <img src="assets/tops.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> TOPs </b>  | Information about  top talkers in the network.               |
+|   <img src="assets/traffic.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Traffic </b> | Detailed information  about  traffic in the network.         |
+|  <img src="assets/applications.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Applications </b>| Provides the information on applications and its traffic utilization. |
+| <img src="assets/raw%20data.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Raw Data | Extensive  information about every flow in the traffic.      |
+|   <img src="assets/ASA%20devices.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> ASA Devices </b>| Detailed information about flows from ASA Devices.           |
+|  <img src="assets/geolocations.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Geolocation  | Maps with various  geolocations.                             |
+| <img src="assets/groups.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Groups </b>| Flows organized into various groups, e.g business roles, location. |
+|   <img src="assets/as%20names.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> AS Names </b>| Flows organized  according to AS Names.                      |
+|  <img src="assets/alerts.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Alerts  </b>| Information and  details about alerts that occured in the network. |
+| <img src="assets/last%20day.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Last Day </b>| Aggregated data from  last day.                              |
+|  ­ <img src="assets/last%20week.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Last Week </b>| Aggregated data from  last week.                             |
+|   <img src="assets/last%20month.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Last Month </b>| Aggregate data from  last month.                             |
 
 
 
@@ -77,18 +77,18 @@ Below is presented table with general description of what can be found in each s
 
 | **FlowControl XNS**                                          | Description                                           |
 | ------------------------------------------------------------ | ----------------------------------------------------- |
-| **Security Summary**  ![security summary](assets/security%20summary.png) | General overview of security aspects of  the network. |
-| **Cockpit Manager**  ![Cockpit Manager](assets/Cockpit%20Manager.png) | General overview of the basic values of alerts.       |
-| **Security Dashboards**    ![Security Dashboards](assets/Security%20Dashboards.png) | Information about alerts and threats in network.      |
-| **Threat Intelligence **   ![Threat Intelligence](assets/Threat%20Intelligence.png) | Alerts in threat intelligence security  module.       |
-| **Threat Detection**    ![Threat Detection](assets/Threat%20Detection.png) | Alerts in threat detection security module.           |
+|   <img src="assets/security%20summary.png" alt="Security Summary" style="zoom: 50%;" />  <b> Security Summary </b>| General overview of security aspects of  the network. |
+|  <img src="assets/Cockpit%20Manager.png" alt="ockpit Manager" style="zoom: 50%;" />  <b> Cockpit Manager </b>| General overview of the basic values of alerts.       |
+|    <img src="assets/Security%20Dashboards.png" alt="Security Dashboards" style="zoom: 50%;" />  <b> Security Dashboards </b>| Information about alerts and threats in network.      |
+|   <img src="assets/Threat%20Intelligence.png" alt="Threat Intelligence" style="zoom: 50%;" />  <b> Threat Intelligence  </b>| Alerts in threat intelligence security  module.       |
+|    <img src="assets/Threat%20Detection.png" alt="Threat Detection" style="zoom: 50%;" />  <b> Threat Detection </b>| Alerts in threat detection security module.           |
 
  
 
 | **System Section**                                           | Description                                         |
 | ------------------------------------------------------------ | --------------------------------------------------- |
-| **Flow  Stats**  ![Flow Stats](assets/Flow%20Stats.png) | General statistics  about raw and aggregated flows. |
-| **System**  ![System](assets/System.png) | Disk utilization information.                       |
+|   <img src="assets/Flow%20Stats.png" alt=" Flow  Stats" style="zoom: 50%;" />  <b> Flow  Stats </b>| General statistics  about raw and aggregated flows. |
+| <img src="assets/System.png" alt="System" style="zoom: 50%;" />  <b> System  </b>| Disk utilization information.                       |
 
 
 
@@ -96,14 +96,15 @@ Below is presented table with general description of what can be found in each s
 
 ![Main Menu Tab](assets/Main_Menu_Tab.png)
 
-At the right-hand side of the system there are three drop-down menus. First one marked with the icon![Config Icon](assets/Config_Icon.png)  is settings menu available only for admin accounts. This section is described in Administration Setting paragraph. Second drop-down menu marked with is ![Info Icon](assets/Info_Icon.png) available for all users. Things that can be found in this section are :
+At the right-hand side of the system there are three drop-down menus. First one marked with the icon <img src="assets/Config_Icon.png" alt="System" style="zoom: 50%;" />   is settings menu available only for admin accounts. This section is described in Administration Setting paragraph. Second drop-down menu marked with is <img src="assets/Info_Icon.png" alt="System" style="zoom: 50%;" />  available for all users. Things that can be found in this section are :
 
 - License Info,
 
 - User Guide,
 - About. 
 
-License  will be automatically downloaded on the user computer as pdf files.User guide will redirect user to the documentation stored on the system. About section system will take user to general web page with information about  [FlowControl](https://www.passus.com/produkty/flowcontrol-xn). ![User Icon](assets/User_Icon.png)Third drop down menu, available for all users, allows to logout from the system. 
+License  will be automatically downloaded on the user computer as pdf files.User guide will redirect user to the documentation stored on the system. About section system will take user to general web page with information about  [FlowControl](https://www.passus.com/produkty/flowcontrol-xn). 
+<img src="assets/User_Icon.png" alt="System" style="zoom: 50%;" /> Third drop down menu, available for all users, allows to logout from the system. 
 
 
 
@@ -261,24 +262,24 @@ Important element of the UI is the data range Tab at the top of the page, that s
 
 ### 2.2 Data Specific Selection Tab
 
-When creating any selections output of such configuraiton will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  ![x](assets/x.png) button on the tab.
+When creating any selections output of such configuraiton will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  <img src="assets/x.png" alt="Step back" style="zoom: 50%;" />   button on the tab.
 
 ![Filters Adding](assets/Filter_Adding.png) 
 
 
 
-![Smart search ](assets/Smart%20search%20.png)**Smart search** - clicking this option will pop up type in section, where any phrase can be typed in that is being looked for. System automatically suggest options while typing.
+<img src="assets/Smart%20search%20.png" alt="Step back" style="zoom: 50%;" />  <b> Smart search </b> clicking this option will pop up type in section, where any phrase can be typed in that is being looked for. System automatically suggest options while typing.
 
 ![Google Search](assets/Google_Search.png)
 
 
 
-![Step back ](assets/Step%20back%20.png)**Step back** - clicking this will take a step back in data selections.
+<img src="assets/Step%20back%20.png" alt="Step back" style="zoom: 50%;" />  <b> Step back </b> - clicking this option will take a step back in data selections.
 
-![Step forward ](assets/Step%20forward%20.png)**Step forward** - clicking this will take a step forward in data selections.
+<img src="assets/Step%20forward%20.png" alt="Step forward" style="zoom: 50%;" />  <b>Step forward </b> -  clicking this option will take a step forward in data selections.
 
 
-<img src="assets/Clear%20all%20selections%20.png" alt="Clear Selections" style="zoom: 50%;" />  Clear all selections - clicking this will clear every data selection made.
+<img src="assets/Clear%20all%20selections%20.png" alt="Clear Selections" style="zoom: 50%;" />  <b> Clear all selections </b> - this option will clear every data selection made.
 
 
 
@@ -328,13 +329,12 @@ In some sections, there is possibility to select data by choosing from drop down
 
 <img src="assets/Search_Listbox.png" alt="Search_Listbox" style="zoom: 200%;" /> 
 
- <img src="assets/Step%20back%20.png" alt="Search_Listbox" style="zoom: 30%;" /> 
 
 System allows user to type in searched phrase or select it from drop down menu. Please remember that depending on the data chosen fields will change color according to the data availability suggesting user which data is alligned with previously.
 
 
 
-###2.4.2 Visual Data Extraction
+### 2.4.2 Visual Data Extraction
 
 The first thing to notice when working with  charts is that when you hover your mouse over any bar/data point it will show more details regarding that specific data. 
 
@@ -346,7 +346,7 @@ When clicking on bars, they will be selected. You can click on multiple bars in 
 
 ![Click Graph Selection](assets/Click_Graph_Selection.png)
 
-System does have drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also lasso selection option available in the top right corner ![lasso](assets/lasso.png)This allows user to draw a line which, when passing through data it will select it accordingly.
+System does have drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also lasso selection option available in the top right corner  <img src="assets/lasso.png " alt="Search_Listbox" style="zoom: 50%;"/>  This allows user to draw a line which, when passing through data it will select it accordingly.
 
 ![Line Graph Selection](assets/Line_Graph_Selection.png)
 

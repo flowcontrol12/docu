@@ -1,6 +1,6 @@
 ---
 id: doc3
-title: FlowControl - XNS Configuration Guide
+title: XNS Guide
 idebar_label: XNS Guide
 ---
 
