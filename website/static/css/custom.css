@@ -22,6 +22,20 @@
     --ifm-color-primary-lightest: rgb(146, 224, 208);
 
 
+    .homeContainer .homeWrapper .main_logo img {
+      max-width: 100%;
+      height: 200px;
+    
+    }
+    
+    .homeContainer .logo_big img {
+      width: 1500px;
+      height: 100px;
+      background: $primaryColor;
+    
+    }
+
+
 /* Main dropdown wrapper */
 .algolia-autocomplete .ds-dropdown-menu {
   width: 500px;
