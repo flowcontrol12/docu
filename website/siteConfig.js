@@ -44,6 +44,13 @@ const siteConfig = {
     // {page: 'help', label: 'Help'},
     // {blog: true, label: 'Blog'},
   ],
+  algolia: {
+    apiKey: '7b969c492579575af2e774554cd0210e',
+    indexName: 'flowcontrol12',
+    algoliaOptions: {
+      facetFilters: [ "language:LANGUAGE", "version:VERSION" ]
+    } // Optional, if provided by Algolia
+  },
 
   // If you have users set above, you add it here:
   users,
