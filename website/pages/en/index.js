@@ -6,13 +6,14 @@
  */
 
 /* import InnerBgImg from "assets/Passus_strona-06.png"; */
- const React = require('react');
+const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
+
 
 class HomeSplash extends React.Component {
   render() {
@@ -24,8 +25,7 @@ class HomeSplash extends React.Component {
 
     const SplashContainer = props => (
       <div className="homeContainer">
-        <div className="homeSplashFade">
-        
+        <div className="homeSplashFade" >
             <div className="wrapper homeWrapper">{props.children}</div>
         </div>
       </div>
@@ -84,6 +84,16 @@ class HomeSplash extends React.Component {
       </Block>
       
     );
+    const Features3 = () => (
+      <Block layout="twoColumn">
+        {[
+          {
+            image: `${baseUrl}img/Index1.png`,
+          },
+        ]}
+      </Block>
+      
+    );
     const Features2 = () => (
       <Block layout="twoColumn">
         {[
@@ -102,6 +112,7 @@ class HomeSplash extends React.Component {
       <SplashContainer>
         
         <div className="inner">
+        <Features3 />
         <Features1 />
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
