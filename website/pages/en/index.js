@@ -25,6 +25,9 @@ class HomeSplash extends React.Component {
 
     const SplashContainer = props => (
       <div className="homeContainer">
+        <div className="logo_big">
+          <div><img src="img/Passus_strona-06.png" /></div> 
+        </div>
         <div className="homeSplashFade" >
             <div className="wrapper homeWrapper">{props.children}</div>
         </div>
@@ -70,57 +73,44 @@ class HomeSplash extends React.Component {
         </a>
       </div>
     );
-    const Features1 = () => (
-      <Block layout="twoColumn">
-        {[
-          {
-            image: `${baseUrl}img/Index1.png`,
-            imageAlign: 'left',
-          },
-          {
-            image: `${baseUrl}img/Index2.png`,
-            imageAlign: 'right',
-          },
-        ]}
-      </Block>
-      
+    const Features1 = props => (
+      <div className="main_logo">
+      <div><img src="img/main_logo.png" /></div> 
+    </div>
     );
-    const Features3 = () => (
-      <Block>
-        {[
-          {
-            align="center"
-            image: `${baseUrl}img/Passus_strona-06.png`,
-          },
-        ]}
-      </Block>
-      
-    );
+
     const Features2 = () => (
-      <Block layout="twoColumn">
+      <Block layout="fourColumn">
         {[
           {
             image: `${baseUrl}img/Index3.png`,
-            imageAlign: 'left',
+            
           },
           {
             image: `${baseUrl}img/Index4.png`,
-            imageAlign: 'right',
+            
+          },
+          {
+            image: `${baseUrl}img/Index1.png`,
+            
+          },
+          {
+            image: `${baseUrl}img/Index2.png`,
+            
           },
         ]}
       </Block>
     )
     return (
+      
       <SplashContainer>
-        
         <div className="inner">
-        <Features3 />
         <Features1 />
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
             <Button href={docUrl('doc3.html')}>Install</Button>
             <Button href={docUrl('doc2.html')}>Use</Button>
-            <Button href={docUrl('doc3.html')}>Config</Button>
+            <Button href={docUrl('doc3.html')}>Configure</Button>
           </PromoSection>
           <Features2 />
         </div>

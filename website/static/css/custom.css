@@ -54,3 +54,14 @@
 .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
   color: blue;
 }
+.homeContainer .logo_big img2{
+  align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
+    padding: 2em 100px 4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

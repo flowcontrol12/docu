@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: '', // Title for your website.
-  tagline: 'Software written by Engineers for Engineers',
+  tagline: 'Software written By Engineers, For Engineers',
   url: 'https://flowcontrol12.github.io', // Your website URL
   baseUrl: '/docu/', // Base URL for your project */
   
@@ -56,8 +56,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/flowcontrol_xn.png',
-  footerIcon: 'img/passus.png',
+  headerIcon: 'img/flowcontrol_logo-07.png',
+  footerIcon: 'img/Logo-Passus-white-png.png' ,
   favicon: 'img/flowcontrol_xn.png',
 
   /* Colors for website */
