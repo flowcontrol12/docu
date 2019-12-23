@@ -48,6 +48,7 @@ class HomeSplash extends React.Component {
       </div>
     );
 
+
     const ProjectTitle = () => (
       <h2 className="projectTitle">
         <small>{siteConfig.tagline}</small>
@@ -85,10 +86,11 @@ class HomeSplash extends React.Component {
       
     );
     const Features3 = () => (
-      <Block layout="twoColumn">
+      <Block>
         {[
           {
-            image: `${baseUrl}img/Index1.png`,
+            align="center"
+            image: `${baseUrl}img/Passus_strona-06.png`,
           },
         ]}
       </Block>

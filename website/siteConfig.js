@@ -62,13 +62,11 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '##FFFFFF',
+    primaryColor: '#737373',
     secondaryColor: '#0B5394',
   },
 
-  .bgimg {
-    background-image: url('../assests/Passus_strona-06.png');
-  }
+ 
   /* Custom fonts for website */
   /*
   fonts: {
