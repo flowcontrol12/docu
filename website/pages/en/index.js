@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import InnerBgImg from "assets/";
+/* import InnerBgImg from "assets/Passus_strona-06.png"; */
  const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
@@ -25,7 +25,8 @@ class HomeSplash extends React.Component {
     const SplashContainer = props => (
       <div className="homeContainer">
         <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
+        <ImageBackground source={"assets/Passus_strona-06.png"} style={{width: '100%', height: '100%'}}></ImageBackground>
+            <div className="wrapper homeWrapper">{props.children}</div>
         </div>
       </div>
     );
