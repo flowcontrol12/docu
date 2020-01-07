@@ -2,7 +2,6 @@
 id: doc3
 title: XNS Guide
 sidebar_label: XNS Guide
-
 ---
 
 
