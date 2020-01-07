@@ -12,7 +12,9 @@
     "docusaurus": "^1.14.3"
   },
   "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.40",
     "@docusaurus/theme-classic": "^2.0.0-alpha.37",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.39"
+    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.39",
+    "algoliasearch": "^3.35.1"
   }
 }
