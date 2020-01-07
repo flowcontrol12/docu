@@ -2,24 +2,25 @@
 id: doc3
 title: XNS Guide
 sidebar_label: XNS Guide
+
 ---
 
 
 
-In this document you will find information about most important options available in FlowControl XNS module. The Guide include information how to configure security rules, operate with data, graphs, charts as well as general description of options available in the Security Module.
+In this document you will find information about most important options available in the FlowControl Security (XNS). The Guide include information how to configure security rules, operate with data, graphs, charts as well as general description of options available in the system.
 
 
 
 ## Introduction 
 
-FlowControl XNS analyzes and detects anomaly in network based on network flows from network devices. Thanks to the built-in security rules, the system is able to detect network anomaly issues, as well as security threats.
+FlowControl XNS analyzes and detects network anomaly based on flows from network devices. Thanks to the built-in security rules, the system is able to detect abnormal activities, as well as security threats.
 
 Key product features:
 
 * Detects security threats based on network flows
 * Groups security threats according to the **ATT&CK MITRE** framework
 * Facilitates security processes (e.g. Network Forensics, Incident Handling, Threat Hunting)
-* It is an essential system in every SOC/CSIRT and NOC because improves visibility of network & security anomalies from the entire organization
+* It is an essential system in every SOC/CSIRT/NOC because improves visibility of network & security anomalies from the entire organization
 * Correlates network artifacts indicating on abnormal activities 
 * Improves the MTTD KPI through appropriate designed views (e.g. dashboards for SOC/NOC Teams) and effective security rules
 * Enriches data by adding valuable information to flows (e.g. ASN, Geolocation, IoC)
@@ -40,7 +41,7 @@ UoKSC (Ustawa o Krajowym Systemie Cyberbezpieczeństwa) http://prawo.sejm.gov.pl
 
 
 
-The FlowControl XNS generates security alerts in context of tactic and techniques of MITRE ATT&CK methodology. Below is a brief description of this methodology.
+The FlowControl XNS generates security alerts grouped by tactics and techniques of MITRE ATT&CK methodology. Below is a brief description of this methodology.
 
 > MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 >
@@ -69,12 +70,12 @@ Source: [MITRE ATT&CK]( https://attack.mitre.org/ )
 
 Examples of security threats and anomalies detected by the FlowControl XNS:
 
-* D/DoS 
+* D/DoS Attacks
 * Malicious Communication (e.g. Malware, C2, Botnet)
 * Security Policy Violations (e.g. TOR, Open Proxy, Open DNS, Connections to Unauthorized Services, Using Cleartext Applications)
 * Brute Force Attacks
 * Network scans (Horizontal and Vertical)
-* Network Anomaly (Using Suspicious Ports, Abnormal Flows Traffic between Hosts, Large Size Protocol )
+* Network Anomaly (Activity on Suspicious Ports, Abnormal Flows Traffic between Hosts, Large Size Protocol )
 * Virus Outbreak.
 
 
@@ -108,27 +109,27 @@ According to the RFC3964 FlowControl solution works as a Flow Collector (both ha
 
 FlowControl XNS consist of two modules: 
 
-* Threat Detection
+* Threat Detection (TD)
 
-* Threat Intelligence. 
+* Threat Intelligence (TI). 
 
-  
+The Threat Intelligence Engine analyze flows in context of reputation databses to detect malicious or illegal activity. However, The Threat Detection analyze many attributes within a specified period of time to detect network anomalies and security threats. 
 
-More details about them you can find in the next chapters.
-
+The FlowControl has many extensive views to help detect and analyze security incidents.
+More details about them you can find in the following sections.
 
 
 ### 1.1. Security Summary Dashboard
 
-Security Summary Dashboard concerns security alerts from both engines (TI and TD). It concists of five views.
+The Security Summary Dashboard concerns security alerts from both engines (TI and TD). It concists of five views.
 
-| Views of Security Summary Dashboard | Description                                                  |
-| ----------------------------------- | ------------------------------------------------------------ |
-| Alerts Graph                        | A graph showing relationships between some attributes, such as Tactic, Technique, Alert Name, Source and Destination Host of security alerts. |
-| Alerts                              | A table with all security alerts.                            |
-| Alerts Drilldown                    | A view allowing for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Threat Category, Alert Name, Source Host, Destination Host, Application, Direction, Source Group, Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks. |
-| Alerts Statistics                   | A set of charts displaying statistics on detected security threats, such as number of alerts per severity or number of alerts per security module. |
-| TOP Suspicious IPs                  | A view that displays the most suspected hosts in the organization. |
+| View Name          | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| Alerts Graph       | A graph showing relationships between some attributes, such as Tactic, Technique, Alert Name, Source and Destination Host of security alerts. |
+| Alerts             | A table with all security alerts.                            |
+| Alerts Drilldown   | A view allowing for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Threat Category, Alert Name, Source Host, Destination Host, Application, Direction, Source Group, Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks. |
+| Alerts Statistics  | A set of charts displaying statistics on detected security threats, such as number of alerts per severity or number of alerts per security module. |
+| TOP Suspicious IPs | A view that displays the most suspected hosts in the organization. |
 
 *[Views of Security Summary Dashboard]*
 
@@ -172,8 +173,8 @@ The cockpit show number of alerts per severity and set of KPIs shown in the belo
 | --------------------------- | ------------------------------------------------------------ |
 | %High and Critical Alerts   | An indicator showing the percentage of high and critical alerts relative to all alerts in the last week. |
 | %Security Module            | An indicator showing the percentage of TI and TD alerts in the last week. |
-| Internal Suspicious Src IPs | An indicator showing the number of suspicious IPs            |
-| Internal Suspicious Dst IPs | An indicator showing the number of all internal suspicious hosts and hosts having at least one high category alert. |
+| Internal Suspicious Src IPs | An indicator showing the number of unique suspicious IPs.    |
+| Internal Suspicious Dst IPs | An indicator showing the number of unique internal suspicious hosts in compariston to hosts having at least one high category alert in the analyzed time period. |
 
 *[Manager Cockpit - KPIs]*
 
@@ -187,16 +188,15 @@ The cockpit show number of alerts per severity and set of KPIs shown in the belo
 
 Security Summary Dashboard show all security alerts in many context allowing for quick and effective analysing security alerts.
 
-| Views of Security Dashboard | Description                                                  |
-| --------------------------- | ------------------------------------------------------------ |
-| TOPs                        | A view showing statistics of security alerts, such as for example Unique SrcIP per Alerts or TOP Source Countries. |
-| IPs Correlations            | A view showing relationships between alerts and IP addresses in the context of detected threats. |
-| Scatter Plot IP-Alerts      | A scatter plot showing number of IPs related to security alerts. |
-| Diagram                     | A view allowing for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Threat Category, Alert Name, Source Host, Destination Host, Application, Direction, Source Group, Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks. |
-| Groups Correlations         | A view showing relationships between threat categories and groups in the context of detected threats. |
-| Groups Correlations         | A set of charts displaying statistics on detected security threats, such as number of alerts per severity or number of alerts per security module. |
-| Maps                        | A view showing suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of Bytes. |
-| TOP IPs                     | A view that displays charts regarding TOP Source IPs, TOP Destination IPs and TOP Src-Dst IP Pairs. |
+| View                   | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ |
+| TOPs                   | A view showing statistics of security alerts, such as for example Unique SrcIP per Alerts or TOP Source Countries. |
+| IPs Correlations       | A view showing relationships between alerts and IP addresses in the context of detected threats. |
+| Scatter Plot IP-Alerts | A scatter plot showing number of IPs related to security alerts. |
+| Diagram                | A view allowing for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Threat Category, Alert Name, Source Host, Destination Host, Application, Direction, Source Group, Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks. |
+| Groups Correlations    | A view showing relationships between threat categories and groups in the context of detected threats. |
+| Maps                   | A view showing suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of Bytes. |
+| TOP IPs                | A view that displays charts regarding TOP Source IPs, TOP Destination IPs and TOP Src-Dst IP Pairs. |
 
 *[Views of Security Summary Dashboard]*
 
@@ -244,20 +244,23 @@ Security Summary Dashboard show all security alerts in many context allowing for
 
 ## 2. Threat Detection 
 
-The Threat Detection module generates alerts based on correlations of relevant attributes sent in network flows which indicate on a potential security issue. The engine has 38 security rules for seven tactics and twelve techniques of ATT&CK MITRE.
+The Threat Detection module generates alerts based on correlations of relevant attributes sent in network flows indicating on a potential security issues. The TD engine has 38 security rules for seven tactics and twelve techniques of MITRE ATT&CK.
 
 ### 2.1. Initial Configuration
 
-All Threat Detection rules are disabled by default to reduce the number of False Positives. At the initial stage of implementation FCXNS, you should tune security rules in the field of configurable attributes, groups and whitelists.
+All Threat Detection rules are disabled by default to reduce the number of False Positives. At the initial stage of implementation FCXNS module, you should tune security rules in the field of configurable attributes, groups and whitelists.
 
-### 2.2. Security Rules
+### 2.2. Threat Detection Rules
+
+This section describes all the rules triggered by the TD engine.
+
 
 | Name                                                         | Score | Description                                                  | MITRE Tactic         | MITRE Technique                         |
 | ------------------------------------------------------------ | ----- | ------------------------------------------------------------ | -------------------- | --------------------------------------- |
-| Connection to a Clear Text Application between External hosts | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from External to External host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
-| Connection to a Clear Text Application from External to Internal  host | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from External to Internal host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
-| Connection to a Clear Text Application from Internal to External  host | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from Internal to External host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
-| Connection to a Clear Text Application between Internal hosts | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP) from Internal to Internal host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
+| Connection to a Clear Text Application between External hosts | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP from External to External host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
+| Connection to a Clear Text Application from External to Internal  host | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP from External to Internal host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
+| Connection to a Clear Text Application from Internal to External  host | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP from Internal to External host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
+| Connection to a Clear Text Application between Internal hosts | 4     | A rule  detects connection to a clear text application such as for example FTP,  Telnet, POP3, IMAP, SMTP, IMAP, HTTP from Internal to Internal host. Many  regulations, such as for example EU's General Data Protection Regulation  (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive  (e.g. passwords, credit card numbers, health records, personal information  and business secrets data) in plain text or unencrypted protocols. For the  rule to work correctly, configure the Whitelist groups. | Command  And Control | Standard  Application Layer Protocol    |
 | Activity on a Suspisious Port - Blacklist                    | 4     | A  rule detects traffic to a single host on suspicious ports. Suspicious ports  are all ports defined in Suspicious Ports list. This activity may indicate on  presence threat actors in an organization. For the rule to work correctly,  update the list of Suspicious Ports and configure Flow Count and Whitelist  attributes. | Command  And Control | Uncommonly  Used Port                   |
 | Activity on a Suspisious Port - Whitelist                    | 4     | A  rule detects traffic to a single host on suspicious ports. Suspicious ports  are all ports not defined on the Permitted Ports list. For the rule to work  correctly, update the list of permitted ports and configure Flow Count and  Whitelist attributes. | Command  And Control | Uncommonly  Used Port                   |
 | Brute Force Attack                                           | 5     | A rule  detects a brute force/dictionary attack on specific applications (FTP, HTTPS,  HTTP, IMAP, RDP, SSH, IMAP3, LDAP, LDAPS, MYSQL, POP3, POP3S, POSTGRESQL,  SMTP, TELNET, TFTP, ASTERISK, VNC, SNMP, MSSQL, SMB, ICQ, NNTP, PCANYWHERE,  ORACLELISTENER, SVN, XMPP, SIP, RADMIN2, REXEC, RLOGIN, WS - Management and  PowerShell remoting via HTTP, WS - Management and PowerShell remoting via  HTTPS, RPCAP, NetBIOS, Kerberos). For the rule to work correctly, configure  the Port Threshold List in the format Flows_Threshold\|Port\|Service_Name, and  Whitelist groups. | Credential  Access   | Brute  Force                            |
@@ -293,20 +296,67 @@ All Threat Detection rules are disabled by default to reduce the number of False
 | P2P Activity                                                 | 2     | A  rule detects P2P traffic based on port analysis. This activity may indicate  on a policy violation. For the rule to work correctly, configure the P2P Port  Ranges in a format StartPort,EndPort,protocol,P2P_Name,Description and a  Whitelist groups. | Initial  Access      | Drive-by  Compromise                    |
 | Unauthorized RDP Connection                                  | 6     | A  rule detects unauthorized RDP connection attempts from outside the  organization. An attacker may connect to a remote system over RDP to expand  access if the service is enabled. For the rule to work correctly, configure  the Authorized RDP Servers groups. | Lateral  Movement    | Remote  Desktop Protocol                |
 
-*Threat Detection Rules*
+*List of Threat Detection Rules*
 
+### 2.3. Threat Detection Dashboards
+
+
+ **The Alerts Drilldown** view allows for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Alert Name, Source Host, Destination Host, Direction, Source Group and Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.
+
+![image-20191206163717723](assets/image-20191206163717723.png)
+
+*TD Alerts Drilldown*
+
+
+
+Information about the country associated with the threat is very useful for the security module to know which countries are involved in this type of security threat. To better visualize the situational view of this case, use the **Suspicious Country** view.
+
+![image-20191206165028037](assets/image-20191206165028037.png)
+
+*TD Suspicious Countries*
+
+Another view showing interesting statistics on the number of unique IP addresses in the context of alert names and categories is **the Alert Statistcs** view.
+
+![image-20191206165205582](assets/image-20191206165205582.png)
+
+*TD Alerts Statistics*
+
+**The TOPs** view shows information about the most common feeds, alert names, threat categories, as well as IP address pairs in the context of all TD threats. The view is ideally suited as the first starting point for analysis to detect repetitive attacks and ignore False Positives.
+
+![image-20191206165318843](assets/image-20191206165318843.png)
+
+*TD TOPs*
+
+Another view on TD threats is provided by the **IPs Correlation** graph, which graphically presents source and destination IP addresses in the context of specific threats. A quick look at this view enables the network and security analyst to analyze security anomalies. It enables the presentation of security anomalies from the perspective of the entire organization, and can also be considered as a reason to make a decision about tuning security rules.
+
+![image-20191206165437848](assets/image-20191206165437848.png)
+
+*TD IPs Correlations*
+
+**The Maps** view shows suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of GBs sent by source country.
+
+![image-20191206175842010](assets/image-20191206175842010.png)
+
+*TD Maps*
+
+A quick look at the basic information about attacks detected by TD engine is provided by the **Alerts** tab.
+
+![image-20191206180639664](assets/image-20191206180639664.png)
+
+*TD Alerts*
 
 
 ## 3. Threat Intelligence
 
+FlowControl XNS includes update regularly more than 30 external reputation databases.
 Threat Intelligence module generates information about suspicious connections based on correlations with blacklists of malicious IP addresses and suspicious countries. 
 
 This module is divided into two parts: 
 
-* External Threat Intelligence, which uses automatically updated feeds downloaded from the Internet
+* External Threat Intelligence, which uses automatically updated feeds downloaded from Internet
 * Internal Threat Intelligence, which uses manually created and updated feeds.
 
-The External Security Module generates the following alerts:
+The TI Module generates the following alerts:
 
 * Connection with Suspicious IP
 * Connection with Suspicious Country
@@ -314,31 +364,7 @@ The External Security Module generates the following alerts:
 * Connection with Open DNS
 * Connection with TOR.
 
-### 3.1. Initial Configuration
-
-FlowControl XNS requires access to the URLs listed in the table [External Threat Intelligence - ACL] to be able to automatically update security feeds. If your firewall is not able to create ACL for URLs, you may use IP addresses, but please remember to checks them before installation the system (Some IPs can be changed dynamically for these URLs).
-
-If you would to add a new External Feed, please contact the Support Team. 
-
-FlowControl XNS includes update regularly more than 30 external reputation databases.
-
-
-
-### 3.1. Threat Intelligence - Security Rules
-
-The External Security Module generates the following alerts:
-
-* Connection with Suspicious IP
-* Connection with Suspicious Country
-* Connection with Open Proxy
-* Connection with Open DNS
-* Connection with TOR.
-
-
-
-External Threat Intelligence Feeds contains more 30 security feeds.
-
-
+A system admin can create and modify the Internal TI feeds.
 
 | Feed Id                   | Name                                | Category  | Score | Description                                       | MITRE Tactic         | MITRE Technique                      |
 | ------------------------- | ----------------------------------- | --------- | ----- | ------------------------------------------------- | -------------------- | ------------------------------------ |
@@ -350,12 +376,9 @@ External Threat Intelligence Feeds contains more 30 security feeds.
 
 *Internal Threat Intelligence Feeds*
 
+### 3.1. Initial Configuration
 
-
-*You must purchase a feed license before using the feed 
-
-------
-
+FlowControl XNS requires access to the Feeds URLs. Please contact the Support Team during configuring the module.
 
 
 ### 3.2. Configuring Threat Intelligence (TI)
@@ -378,7 +401,7 @@ The External Threat Intelligence rules contain attributes that are described in 
 
 | Attribute          | Description                                                  | Possible Values                                              | Modifiable                                                   |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" />   |
 | Alert Name         | The  attribute indicating the name of the rule.              | Connection  with a Suspicious IP,    Connection with a Suspicious Country, Connection with Open Proxy,  Connection with TOR | <img src="assets/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /> |
 | Feed Id            | The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute. |                                                              | <img src="assets/NOT_OK_S-1575040605736.png" alt="NOT_OK_S" style="zoom:50%;" /> |
 | Data Type          | The  attribute indicating the type of collected data for each feed. | IP, Country                                                  | <img src="assets/NOT_OK_S-1575040834633.png" alt="NOT_OK_S" style="zoom:50%;" /> |
@@ -404,11 +427,11 @@ The Internal Threat Intelligence engine correlates custom feeds in context of ne
 
 | Attribute          | Description                                                  | Possible Values                                              | Modifiable                                                   |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| Enabled            | The  attribute indicates the status of the rule. Disabled rules do not generate  security alerts. | Enabled     Disabled                                         | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" />   |
 | Alert Name         | The  attribute indicating the name of the rule. The attribute can be set only once when creating a new custom feed. |                                                              | <img src="assets/NOT_OK_S-1575040599817.png" alt="NOT_OK_S" style="zoom:50%;" /> |
-| Feed Id            | The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute. |                                                              | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
-| Data Type          | The  attribute indicating the type of collected data for each feed. | IP, Country                                                  | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
-| Threat  Category   | The  attribute indicating the category of feed related to type of security  threats. | Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" /> |
+| Feed Id            | The  attribute indicating the Feed Id for each rule. Each rule has a unique value  of the Feed Id attribute. |                                                              | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" />   |
+| Data Type          | The  attribute indicating the type of collected data for each feed. | IP, Country                                                  | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" />   |
+| Threat  Category   | The  attribute indicating the category of feed related to type of security  threats. | Bot, Botnet, C2, Feodo, Malicious     Malware, Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL,  Telnet BL, TOR, Zeus | <img src="assets/OK_S.png" alt="OK_S" style="zoom:50%;" />   |
 | MITRE Tactic       | The  attribute indicating the MITRE Tactic related to a security rule. | Initial  Access,  Execution, Persistence, Privilege Escalation,    Defense Evasion,  Credential Access     Discovery, Lateral Movement     Collection, Command and Control,    Exfiltration, Impact | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
 | MITRE  Technique   | The  attribute indicating the MITRE Technique related to a security rule.  There is about about 200 techniques - more details https://attack.mitre.org/matrices/enterprise/. |                                                              | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
 | Score              | Attribute  indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | <img src="assets/OK_S-1575040785975.png" alt="OK_S" style="zoom:50%;" /> |
@@ -454,48 +477,9 @@ The Internal Threat Intelligence engine correlates custom feeds in context of ne
 2) Edit the feed and add list of IPs which should be ignored by Threat Intelligence module into the Feed Data List area.
 
 
-
 ![image-20191202124013806](assets/image-20191202124013806.png)
 
-
-
-
-
-
-
-
-
-### 3.2. Security Dashboards
-
-Security alerts generated by the TI module are presented in the following tabs:
-
-* Security Summary 
-
-* Cockpit Manager
-
-* Security Dashboards
-
-* Threat Intelligence
-
-* Threat Detection.
-
-  For the first three views,  Threat Intelligence alerts are presented together with Threat Detection.
-
-  (along with alerts from the Threat Detection module). If you want to analyze only alerts from the TI module, use the Threat Intelligence tab.
-
-  ![image-20191202125753872](assets/image-20191202125753872.png)
-
-  
-
-In this chapter only TI dashboards have been described.
-
-3.2.1 Security Summary
-
-3.2.2 Cockpit Manager
-
-3.2.3 Security Dashboards
-
-#### 3.2.4 Threat Intelligence
+#### 3.2.3 Threat Intelligence Dashboards
 
  **The Alerts Drilldown** view allows for analyzing security alerts grouped by such attributes as Severity, Threat Category, Alert Name, Feed ID, Direction, Source Host, Source Country, Destination Host and Destination Country. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.
 
@@ -542,50 +526,4 @@ A quick look at the basic information about attacks detected by TI engine is pro
 *TI Alerts*
 
 
-
-#### 3.2.5 Threat Detection
-
- **The Alerts Drilldown** view allows for analyzing security alerts grouped by such attributes as Severity, Tactic, Technique, Alert Name, Source Host, Destination Host, Direction, Source Group and Destination Group. Presenting threats in the context of these attributes facilitates an effective review of organizational security risks.
-
-![image-20191206163717723](assets/image-20191206163717723.png)
-
-*TD Alerts Drilldown*
-
-
-
-Information about the country associated with the threat is very useful for the security module to know which countries are involved in this type of security threat. To better visualize the situational view of this case, use the **Suspicious Country** view.
-
-![image-20191206165028037](assets/image-20191206165028037.png)
-
-*TD Suspicious Countries*
-
-Another view showing interesting statistics on the number of unique IP addresses in the context of alert names and categories is **the Alert Statistcs** view.
-
-![image-20191206165205582](assets/image-20191206165205582.png)
-
-*TD Alerts Statistics*
-
-**The TOPs** view shows information about the most common feeds, alert names, threat categories, as well as IP address pairs in the context of all TD threats. The view is ideally suited as the first starting point for analysis to detect repetitive attacks and ignore False Positives.
-
-![image-20191206165318843](assets/image-20191206165318843.png)
-
-*TD TOPs*
-
-Another view on TD threats is provided by the **IPs Correlation** graph, which graphically presents source and destination IP addresses in the context of specific threats. A quick look at this view enables the network and security analyst to analyze security anomalies. It enables the presentation of security anomalies from the perspective of the entire organization, and can also be considered as a reason to make a decision about tuning security rules.
-
-![image-20191206165437848](assets/image-20191206165437848.png)
-
-*TD IPs Correlations*
-
-**The Maps** view shows suspicious activities detected by FlowControl in the context of public IP addresses on the world map. For the readability of the graph, the blue dot specifies the number of GBs sent by source country.
-
-![image-20191206175842010](assets/image-20191206175842010.png)
-
-*TD Maps*
-
-A quick look at the basic information about attacks detected by TD engine is provided by the **Alerts** tab.
-
-![image-20191206180639664](assets/image-20191206180639664.png)
-
-*TD Alerts*
 
