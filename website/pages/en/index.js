@@ -25,9 +25,6 @@ class HomeSplash extends React.Component {
 
     const SplashContainer = props => (
       <div className="homeContainer">
-        <div className="logo_big">
-          <div><img src="img/Passus_strona-06.png" /></div> 
-        </div>
         <div className="homeSplashFade" >
             <div className="wrapper homeWrapper">{props.children}</div>
         </div>
