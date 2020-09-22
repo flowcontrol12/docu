@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>XN module · </title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Introduction"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="XN module · "/><meta property="og:type" content="website"/><meta property="og:url" content="https://flowcontrol12.github.io/docu/"/><meta property="og:description" content="## Introduction"/><meta property="og:image" content="https://flowcontrol12.github.io/docu/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://flowcontrol12.github.io/docu/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docu/img/flowcontrol_xn.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/theme-live-codeblock.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docu/js/scrollSpy.js"></script><link rel="stylesheet" href="/docu/css/main.css"/><script src="/docu/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docu/"><img class="logo" src="/docu/img/flowcontrol_logo-07.png" alt=""/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docu/docs/XN" target="_self">Documentation</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>XN module</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">XN module</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docu/docs/XN">XN User Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">XNS module</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docu/docs/XNS">XNS User Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">XND module</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docu/docs/XND">XND User Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Command Line Interface</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docu/docs/CLI">CLI commands</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">System Requirements</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docu/docs/Req">Requirements</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Release NNote</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docu/docs/Rel">Release notes</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">XN module</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>In this document you will find information about most important options available in FlowControl System. How to operate with data, graphs and charts as well as general description of options available in the system.</p>
+<h2><a class="anchor" aria-hidden="true" id="system-architecture"></a><a href="#system-architecture" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>System Architecture</h2>
+<blockquote>
+<p>A flow is defined as a unidirectional sequence of packets with some common properties that pass through a network device.  These collected flows are exported to an external device, the NetFlow collector.  Network flows are highly granular e.g.: flow records include details such as IP addresses, packet and byte counts, timestamps, Type of Service (ToS), application ports, input and output interfaces, etc.</p>
+</blockquote>
+<p>Source: <a href="https://www.ietf.org/rfc/rfc3954.txt">RFC3954</a></p>
+<p>According to the RFC3964 FlowControl solution works as a Flow Collector  which collects, analyzes and visualize the collected flows. Metrics are presented and examined from two perspectives : Network and Security giving the operator valuable input into network/application problems analysis as well as security threats hunting.</p>
+<p><img src="/docu/docs/assets/schemat_nf_04.png" alt="schemat_nf_04"></p>
+<p>FlowControl supports following flow protocol data sources:</p>
+<ul>
+<li><p>NetFlow</p></li>
+<li><p>sFlow,</p></li>
+<li><p>IPFIX,</p></li>
+<li><p>NSEL.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Specific options such as NSEL (Cisco ASA) or different sampling multipliers per device must be additionally configured. System uses SNMP v1/2/3 to query devices.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="1-overview"></a><a href="#1-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Overview</h2>
+<p>Main option to configure the solution is the web GUI. The most important things to notice when working with FlowControl System are menus on the left-hand side (<strong>XN, XNS, XND, SYS</strong>) and the icons in the top right corner <img src="assets/Config_Icon.png" alt="System" style="zoom: 50%;" />(<strong>Configuration options</strong>). They are all vital components for working with system, effective problem identification and data mining.</p>
+<h3><a class="anchor" aria-hidden="true" id="11-main"></a><a href="#11-main" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1. Main</h3>
+<p>On the left side there are four main sections: XN, XNS, XND and SYS. Each section consists of menu where find desired information about collected data and system configuration.  Main sections works in hide/reveal mode. In order to show full names of the menu components, minority and majority please click on minority sign icons ( &lt; )  located at the top left corner. In order to hide menu, please click minority sign icons ( &gt; ).</p>
+<p><img src="assets/image-20200917180758285.png" alt="image-20200917180758285" style="zoom:300%;" /></p>
+<p>Below is presented table with general description of what can be found in each section:</p>
+<table>
+<thead>
+<tr><th><strong>FlowControl XN</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="assets/tops.png" alt="Search_Listbox" style="zoom: 50%;" />  <u><b> TOPs </b></u></td><td>Information about  top talkers in the network.</td></tr>
+<tr><td><img src="/docu/docs/assets/image-20200911120410391.png" alt="image-20200911120410391">  <u><b> RAW Flows </b></u></td><td>Detailed information  about  traffic in the</td></tr>
+<tr><td><img src="assets/raw%20data.png" alt="Search_Listbox" style="zoom: 50%;" />   <strong>Raw Data</strong></td><td>Extensive  information about every flow in the traffic.</td></tr>
+<tr><td><img src="assets/ASA%20devices.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> ASA Devices </b></td><td>Detailed information about flows from ASA Devices.</td></tr>
+<tr><td><img src="/docu/docs/assets/image-20200911120535728.png" alt="image-20200911120535728">   <u><strong>Deduplicated Flows</strong></u></td><td>Information about deduplicated flows.</td></tr>
+<tr><td><img src="assets/traffic.png" alt="Search_Listbox" style="zoom: 50%;" />   <strong>Traffic</strong></td><td>Network traffic based on deduplicated flows.</td></tr>
+<tr><td><strong><img src="/docu/docs/assets/image-20200911120312792.png" alt="image-20200911120312792">   Applications</strong></td><td>Network traffic analysis in view of application based on deduplicated flows.</td></tr>
+<tr><td><img src="assets/geolocations.png" alt="Search_Listbox" style="zoom: 50%;" />  <strong>Geolocalization</strong></td><td>Maps with various  geolocations.</td></tr>
+<tr><td><img src="assets/groups.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Groups </b></td><td>Flows organized into various groups, e.g. business roles, location.</td></tr>
+<tr><td><img src="assets/as%20names.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> AS Names </b></td><td>Flows organized  according to AS Names.</td></tr>
+<tr><td><img src="/docu/docs/assets/image-20200911120656376.png" alt="image-20200911120656376">   <u><strong>Long Term Data</strong></u></td><td>Aggregated date from previous time periods.</td></tr>
+<tr><td><img src="assets/last%20day.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Last Day </b></td><td>Aggregated data from  last day.</td></tr>
+<tr><td><img src="assets/last%20week.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Last Week </b></td><td>Aggregated data from  last week.</td></tr>
+<tr><td><img src="assets/last%20month.png" alt="Search_Listbox" style="zoom: 50%;" />  <b> Last Month </b></td><td>Aggregate data from  last month.</td></tr>
+<tr><td><img src="assets/alerts.png" alt="Search_Listbox" style="zoom: 50%;" />  <u><b> Alerts  </b></u></td><td>Information and  details about alerts that occurred in the network.</td></tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> All views but <strong>Raw Data</strong> uses deduplicated traffic. In order to see unique information about flows that may change on flow path, e.g. QoS tags – please use <strong>Raw Data</strong> views.</p>
+</blockquote>
+<hr>
+<table>
+<thead>
+<tr><th><strong>FlowControl XNS</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="assets/security%20summary.png" alt="Security Summary" style="zoom: 50%;" />  <u><b> SOC </b></u></td><td>General overview of security aspects of  the network.</td></tr>
+<tr><td><img src="assets/Cockpit%20Manager.png" alt="ockpit Manager" style="zoom: 50%;" />  <u><b> KPIs </b></u></td><td>General overview of the basic values of alerts.</td></tr>
+<tr><td><img src="/docu/docs/assets/image-20200911121159510.png" alt="image-20200911121159510">   <u><strong>Use Cases</strong></u></td><td>Monitoring scenarios of IT security threat.</td></tr>
+<tr><td><img src="assets/Security%20Dashboards.png" alt="Security Dashboards" style="zoom: 50%;" />  <b> Threat Analysis </b></td><td>Information on all threats.</td></tr>
+<tr><td><img src="assets/Threat%20Intelligence.png" alt="Threat Intelligence" style="zoom: 50%;" />  <b> External Threats</b></td><td>Information on threats outside customer network.</td></tr>
+<tr><td><img src="assets/Threat%20Detection.png" alt="Threat Detection" style="zoom: 50%;" />  <b> Internal  Threats</b></td><td>Information on threats inside customer network.</td></tr>
+<tr><td><img src="assets/alerts.png" alt="Search_Listbox" style="zoom: 50%;" /><u><b> Alerts  </b></u></td><td>Table with all information about alarms in the system.</td></tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr><th><strong>FlowControl XND</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="/docu/docs/assets/image-20200911121401384.png" alt="image-20200911121401384"> <u><b> DDOS </b></u></td><td>Information about DDoS attacks.</td></tr>
+<tr><td><img src="/docu/docs/assets/image-20200911121159510.png" alt="image-20200911121159510"> <u><b> Protocols</b></u></td><td>Network traffic characteristics in the context of DDoS attacks.</td></tr>
+<tr><td><img src="/docu/docs/assets/image-20200911121401384.png" alt="image-20200911121401384"><b> Overview </b></td><td>Network traffic characteristics in the context of protocols.</td></tr>
+<tr><td><img src="/docu/docs/assets/image-20200911121401384.png" alt="image-20200911121401384"><strong>Details</strong></td><td>DDoS details  information about DDoS attacks.</td></tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr><th><strong>System Section</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="assets/Flow%20Stats.png" alt=" Flow  Stats" style="zoom: 50%;" />  <b> Flow  Stats </b></td><td>General statistics  about raw and aggregated flows.</td></tr>
+<tr><td><img src="assets/System.png" alt="System" style="zoom: 50%;" />  <b> System  </b></td><td>Disk utilization information.</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="12-configuration"></a><a href="#12-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2 Configuration</h3>
+<p>At the right-hand side of the system there are three drop-down menus. First one marked with the icon <img src="assets/Config_Icon.png" alt="System" style="zoom: 50%;" /> is settings menu available only for admin accounts. This section is described in <em>Administration Setting</em> paragraph. Second drop-down menu marked with is <img src="assets/Info_Icon.png" alt="System" style="zoom: 50%;" />  available for all users. Things that can be found in this section are :</p>
+<ul>
+<li>License Info,</li>
+<li>User Guide,</li>
+<li>Documentation,</li>
+<li>About.</li>
+</ul>
+<p>The license is delivered as the text file . To activate license the text from delivered file must be copied into  to the field “Add License” [settings menu/config/license] as below.</p>
+<p><img src="/docu/docs/assets/image-20200922103024066.png" alt="image-20200922103024066"></p>
+<blockquote>
+<p><strong>Important note:</strong></p>
+<p><strong>The standard license include one administrator account and two user accounts.</strong></p>
+</blockquote>
+<p>User guide will redirect user to the documentation stored on the system. About section system will take user to general web page with information about  <a href="https://www.passus.com/produkty/flowcontrol-xn">FlowControl</a>.</p>
+<p><img src="assets/User_Icon.png" alt="System" style="zoom: 50%;" /> Third drop down menu, available for all users. In this menu following things can be found:</p>
+<ul>
+<li><p>Profile</p>
+<ul>
+<li>User Settings</li>
+<li>Change Password</li>
+<li>User Time Zone</li>
+</ul></li>
+<li><p>Logout</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="13-administration-settings"></a><a href="#13-administration-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3 Administration Settings</h3>
+<p>Administrator can change and personalize various aspects of FlowControl environment. Configuration options that can be set up in this menu are the options required to properly configure and maintain the FlowControl system.</p>
+<h3><a class="anchor" aria-hidden="true" id="131-alerts"></a><a href="#131-alerts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.1 Alerts</h3>
+<p>In the <strong>Alerts</strong> section user can manage and configure customized alerts based on specified metrics threshold.</p>
+<p><img src="/docu/docs/assets/Alert_Configuration.png" alt="Alert Configuration"></p>
+<p>Configuration of the specific alert consists of three main parts:</p>
+<ul>
+<li>GENERAL -  input Name and Description ,</li>
+<li>FILTERS - specify logical conditions when the alert is triggered,</li>
+<li>NOTIFICATION -  define what would be the alert delivery mechanism (LOG/SYSLOG/SNMP TRAP or E-MAIL)</li>
+</ul>
+<p>System presents all the alerts in a list form where each individual alert can be enabled/disabled, modified or eliminated.</p>
+<p><img src="/docu/docs/assets/Alert_List.png" alt="Alert_list"></p>
+<h3><a class="anchor" aria-hidden="true" id="132-config"></a><a href="#132-config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2 Config</h3>
+<p>In the <strong>Config</strong> section user can configure main system aspects. Options available here are:</p>
+<p><img src="/docu/docs/assets/image-20200901113534991.png" alt="image-20200901113534991"></p>
+<ul>
+<li>SYSTEM  -  Basic network configuration: Hostname, DNS and IP address, DHCP and Gateway.</li>
+<li>TIME  - Manual or NTP server configuration.</li>
+<li>USERS  - System user configuration and role assignment.</li>
+<li>NOTIFICATIONS - Email, Syslog and SNMP trap configuration.</li>
+<li>SNMP - SNMP pooling configuration (supported options v1/v2c/v3).</li>
+<li>NETFLOW - Configuration of NetFlow, sFlow, IPFIX,NSEL parameters.</li>
+<li>LICENSE - License management</li>
+<li>OPERATIONS - Application and system restart/shutdown options .</li>
+<li>UPDATE - System update.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="133-ddos"></a><a href="#133-ddos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.3 DDoS</h3>
+<p><img src="/docu/docs/assets/image-20200901114148898.png" alt="image-20200901114148898"></p>
+<ul>
+<li>BASIC CONFIGURATION</li>
+<li>ENGINE PARAMETERS</li>
+<li>FLOWSPEC BGP</li>
+<li>ACTIVEATTACKS</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="134-security"></a><a href="#134-security" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.4 Security</h3>
+<p>In the <strong>Security</strong> section system allows review and manage security rules created according to the MITRE ATT&amp;CK methodology.</p>
+<blockquote>
+<p>MITRE ATT&amp;CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.</p>
+</blockquote>
+<p><img src="/docu/docs/assets/ATTCK_use_Cases.png" alt="ATT&amp;CK use cases"></p>
+<p>Source: <a href="https://attack.mitre.org/">Mitre</a></p>
+<p>Configuration of the security ruleset is based on three sections:</p>
+<ul>
+<li>THREAT DETECTION - Identification of different threats patterns based on proprietary Passus created rules (section allow rule set modification but no rule adding),</li>
+</ul>
+<p><img src="/docu/docs/assets/image-20200901114346418.png" alt="image-20200901114346418"></p>
+<ul>
+<li><p>EXTERNAL THREAT INTELLIGENCE - Identification of different threats patterns utilizing several external threat feeds  (section allow rule set modification but no rule adding),</p>
+<p><img src="/docu/docs/assets/image-20200901114724155.png" alt="image-20200901114724155"></p></li>
+<li><p>INTERNAL THREAT INTELLIGENCE - Identification of the custom threats patterns configured by user.</p>
+<p><img src="/docu/docs/assets/image-20200901114921371.png" alt="image-20200901114921371"></p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="135-mapping"></a><a href="#135-mapping" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.5 Mapping</h3>
+<p>System allows mapping between internal networks into a more comprehensive convention which is then used in data presentation. There are three main sections of the mapping configuration:</p>
+<ul>
+<li>NAMES - we can assign names to the following data objects:
+<ul>
+<li>Devices - Rule defines NAME for the IP,</li>
+<li>INTERFACES - Rule defines several aspects of the Device Interface  (Device IP: Interface ID,Interface Name/Description,Interface Speed),</li>
+<li>HOSTS/SERVERS - Rule defines NAME for Server/HOST IP,</li>
+<li>APPLICATIONS - Rule defines Name for the custom APPLICATIONS (Protocol/Port Number,Name).</li>
+</ul></li>
+</ul>
+<p><img src="/docu/docs/assets/image-20200901115154565.png" alt="image-20200901115154565"></p>
+<blockquote>
+<p><strong>Note:</strong> Please remember that in case the NAME or any other parameter exists already and is predefined in the system ex. Application Definitions, mapping will override those values with the user defined ones.</p>
+</blockquote>
+<ul>
+<li>GROUPS - user can assign names to the internal networks utilizing three grouping sets :
+<ul>
+<li><p>LOCATION - grouping based on NETWORK location (CIDR,Name,Description),</p>
+<p><img src="/docu/docs/assets/image-20200901120218786.png" alt="image-20200901120218786"></p></li>
+<li><p>FUNCTION - grouping based on NETWORK logical function (CIDR,Name,Description),</p>
+<p><img src="/docu/docs/assets/image-20200901121021138.png" alt="image-20200901121021138"></p></li>
+<li><p>BUSINESS ROLE - grouping based on NETWORK business role in Organization (CIDR,Name,Description).</p>
+<p><img src="/docu/docs/assets/image-20200901121057260.png" alt="image-20200901121057260"></p></li>
+<li><p>INTERNAL  - grouping based on internal  Classless Inter-Domain Routing  (CIDR)</p>
+<p><img src="/docu/docs/assets/image-20200901121201261.png" alt="image-20200901121201261"></p></li>
+</ul></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Grouping is very useful for presentation purposes as well as for verification of implementation of widely used security zone segmentation concept utilized for both traffic filtering and risk mitigation.</p>
+</blockquote>
+<ul>
+<li><p>Locations - user can assign geographic coordinates to following data objects:</p>
+<ul>
+<li><p>DEVICES - Rule defines coordinates to DEVICE IP (Device IP,Longitude,Attitude,City,Country,Country Code),</p>
+<p><img src="/docu/docs/assets/image-20200901120625026.png" alt="image-20200901120625026"></p></li>
+<li><p>HOST/SERVERS - Rule defines coordinates to HOST/SERVER IP (Host/Server IP,Longitude, Attitude, City, Country,Country Code).</p>
+<p><img src="/docu/docs/assets/image-20200901120728481.png" alt="image-20200901120728481"></p></li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="136-reports"></a><a href="#136-reports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.6 Reports</h3>
+<p>System is preconfigured with four templates of the reports which can be enabled/disabled on request:</p>
+<ul>
+<li>Security Summary - Summary of detected security threats from last day,</li>
+<li>Network Traffic Report - Overview of top talkers and devices,</li>
+<li>Interface Utilization -  Top interfaces and threshold violations,</li>
+<li>Application Servers - View on the mostly used application servers,</li>
+</ul>
+<p><img src="/docu/docs/assets/image-20200901121613247.png" alt="image-20200901121613247"></p>
+<p>Reports are run on a daily basis and the outcome is saved and visible in a list form from the UI.</p>
+<p><img src="/docu/docs/assets/image-20200901121800007.png" alt="image-20200901121800007"></p>
+<h2><a class="anchor" aria-hidden="true" id="2-dashboards"></a><a href="#2-dashboards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2 Dashboards</h2>
+<p>This section will cover various aspects of working with selected data. We will divide this section into different aspects that FlowControl uses to interpret data from the network. This will include various graphs, charts and tables as well as best practices how to work with the data.</p>
+<h3><a class="anchor" aria-hidden="true" id="21-date-range-tab"></a><a href="#21-date-range-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1 Date Range Tab</h3>
+<p>Important element of the UI is the data range Tab at the top of the page, that stays with the user at all times in both XN, XNS and XND tabs. By default system shows data and statistics for the last 15 minutes after initial login. When starting working on FlowControl it is crucial to remember to change that time range accordingly. In order to make such a change data range tab can be used.</p>
+<p><img src="/docu/docs/assets/image-20200901122011827.png" alt="image-20200901122011827"></p>
+<p>●   <strong>Keep filters</strong> – switching this option on, allows user to keep the filters and selections while switching between different sections. By default, this option is turned off therefore switching to different section will reset all filters and selections. When enabled filters in different subsection views will be preserved.</p>
+<p>●   <strong>Start date/End date</strong> - choose time slot for which network traffic will be shown. Increasing time slot might influence time of loading data and statistics.</p>
+<p>●   <strong>Last</strong> - this option will change displayed network traffic to the one from chosen time period.</p>
+<p>●   <strong>Resolution</strong> – choose for what period of time data will be merged.</p>
+<p>●   <strong>Top flows</strong> - choose how many top flows will be shown. By default, it is 10 000 flows. Increasing flows might influence time of showing data and statistics.</p>
+<p>●   <strong>Search</strong> - specific IPv4 address can be searched for. Every widget will be automatically adjusted to show information only regarding searched IPv4 address.</p>
+<blockquote>
+<p><strong>Note:</strong> In order to save our preferences, please click <strong>APPLY</strong> button available at right-hand side.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="22-data-specific-selection-tab"></a><a href="#22-data-specific-selection-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2 Data Specific Selection Tab</h3>
+<p>When creating any selections output of such configuration will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  <img src="assets/x.png" alt="Step back" style="zoom: 50%;" />   button on the tab.</p>
+<p><img src="/docu/docs/assets/image-20200901122523399.png" alt="image-20200901122523399"></p>
+<p><img src="assets/Smart%20search%20.png" alt="Smart search" style="zoom: 50%;" />  <b> Smart search </b> clicking this option will pop up type in section, where any phrase can be typed in that is being looked for. System automatically suggest options while typing.</p>
+<p><img src="/docu/docs/assets/Google_Search.png" alt="Google Search"></p>
+<p><img src="assets/Step%20back%20.png" alt="Step back" style="zoom: 50%;" />  <b> Step back </b> - clicking this option will take a step back in data selections.</p>
+<p><img src="assets/Step%20forward%20.png" alt="Step forward" style="zoom: 50%;" />  <b>Step forward </b> -  clicking this option will take a step forward in data selections.</p>
+<p><img src="assets/Clear%20all%20selections%20.png" alt="Clear Selections" style="zoom: 50%;" />  <b> Clear all selections </b> - this option will clear every data selection made.</p>
+<p><img src="/docu/docs/assets/image-20200902084116851.png" alt="image-20200902084116851">- <strong>Bookmark</strong> - this option is an shortcut to user filter parameters</p>
+<h3><a class="anchor" aria-hidden="true" id="23-visualization-options"></a><a href="#23-visualization-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3 Visualization Options</h3>
+<p>System will present the data, metrics and outcome of configured rule set in different graphical form according to the data granularity and metric structure. Presentation layer is configured according to the best practices in the data presentation techniques.</p>
+<p><img src="/docu/docs/assets/goodchart-xlarge-1200x630.jpg" alt="goodchart-xlarge-1200x630"></p>
+<h3><a class="anchor" aria-hidden="true" id="24-visualization-drill-down"></a><a href="#24-visualization-drill-down" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4 Visualization Drill Down</h3>
+<h3><a class="anchor" aria-hidden="true" id="241-drill-down-options"></a><a href="#241-drill-down-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.1 Drill Down Options</h3>
+<p>Depending on specific dashboard and widget chosen system allow different drill down options. Universal method is clicking over any chart, graph or table where the user will be prompted for:</p>
+<p><img src="/docu/docs/assets/Interface_Graph.png" alt="Interface Graph"></p>
+<ul>
+<li><p><strong>Take snapshot</strong> - allows user to take a snapshot of chosen widget.</p></li>
+<li><p><strong>Exploration menu</strong> - clicking this option will pop up an exploration menu. This is the place where user can adjust  graph, table or chart to their own needs. Options available to change there are as follows: data to be shown, way of sorting data, presentation of given graph, chart or table, colors and legend.</p></li>
+</ul>
+<p><img src="/docu/docs/assets/Graph_menu.png" alt="Graph "></p>
+<ul>
+<li><p><strong>Full screen</strong> - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press when in full screen mode.</p></li>
+<li><p><strong>Export</strong> - Preconfigured export options:</p>
+<ul>
+<li><p>Export as an image,</p></li>
+<li><p>Export to PDF,</p></li>
+<li><p>Export data.</p></li>
+</ul></li>
+</ul>
+<p><img src="/docu/docs/assets/Grouping_Dashboard.png" alt="Grouping Dashboard"></p>
+<p>In some sections, there is possibility to select data by choosing from drop down menus:</p>
+<p><img src="assets/Search_Listbox.png" alt="Search_Listbox" style="zoom: 200%;" /></p>
+<p>System allows user to type in searched phrase or select it from drop down menu. Please remember that depending on the data chosen fields will change color according to the data availability suggesting user which data is alligned with previously.</p>
+<h3><a class="anchor" aria-hidden="true" id="242-visual-data-extraction"></a><a href="#242-visual-data-extraction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.2 Visual Data Extraction</h3>
+<p>The first thing to notice when working with  charts is that when you hover your mouse over any bar/data point it will show more details regarding that specific data.</p>
+<p><img src="/docu/docs/assets/Detail_Graph_Data.png" alt="Detail Graph Data"></p>
+<p>When clicking on bars, they will be selected. You can click on multiple bars in order to view only them on the chart. In order to confirm the selection, please press the green button on the top right corner. If data is presented on multiple elements of the dashboards user selection on one plot will impact data presentation on others accordingly to the selection made.</p>
+<p><img src="/docu/docs/assets/Click_Graph_Selection.png" alt="Click Graph Selection"></p>
+<p>System does have drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also lasso selection option available in the top right corner  <img src="assets/lasso.png " alt="Search_Listbox" style="zoom: 50%;"/>  This allows user to draw a line which, when passing through data it will select it accordingly.</p>
+<p><img src="/docu/docs/assets/Line_Graph_Selection.png" alt="Line Graph Selection"></p>
+<p>Data from graphs can be selected by clicking and dragging just below the x axis, i.e. vertically, to select narrowed, e.g. period of time.</p>
+<p><img src="/docu/docs/assets/Graph_Selection.png" alt="Graph Selection"></p>
+<p>Data can also be selected by clicking and dragging just by the y axis, i.e. horizontally. This will allow to check for the details of highest data used.</p>
+<p><img src="/docu/docs/assets/Lasso_Selection.png" alt="Lasso Selection"></p>
+<h3><a class="anchor" aria-hidden="true" id="243-exact-values-search"></a><a href="#243-exact-values-search" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.3 Exact Values Search</h3>
+<p>Tables are the most precise way of presenting data gathered because it shows exact values and measures.</p>
+<p><img src="/docu/docs/assets/Data_Table_Selection.png" alt="Data Table Selection"></p>
+<p>There are two ways of selecting data in tables. First one is by clicking on magnifier icon next to a chosen heading, e.g. Source Host. Drop down menu will pop up where you can either search for desired source host or by simply scrolling down and looking for it manually, then by clicking it. In order to accept the selection, press green button. After making selection, all data will be adjusted. Second option is simply by clicking on desired data in the table.</p>
+<h1><a class="anchor" aria-hidden="true" id="3-system-status"></a><a href="#3-system-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. System Status</h1>
+<p>System provides information about its current status and performance. Those information are divided in two main sections Flows and System Statistics.</p>
+<h2><a class="anchor" aria-hidden="true" id="31-flows-stats"></a><a href="#31-flows-stats" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1 Flows Stats</h2>
+<p>FlowControl actively counts number of raw and deduplicated flows giving the user overview on the current network load of the system. Those information are very useful for proper license sizing of the solution.</p>
+<p><img src="/docu/docs/assets/Flow_Stats.png" alt="Flow stats"></p>
+<h2><a class="anchor" aria-hidden="true" id="32-system-status"></a><a href="#32-system-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2 System Status</h2>
+<p>System in real time monitors disk space of the application which is crucial for sizing and maintenance of the solution.  Monitored disk space is divided into 3 functional sections:</p>
+<ul>
+<li>Disks Utilization.</li>
+<li>Actual Free Disc Space.</li>
+<li>Free space on Cache Partition.</li>
+<li>Free space on Database Partition.</li>
+<li>Free space on System Partition.</li>
+</ul>
+<p><img src="/docu/docs/assets/image-20200901123342718.png" alt="image-20200901123342718"></p>
+<p>​</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docu/docs/XNS"><span>XNS User Guide</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#system-architecture">System Architecture</a></li><li><a href="#1-overview">1. Overview</a><ul class="toc-headings"><li><a href="#11-main">1.1. Main</a></li><li><a href="#12-configuration">1.2 Configuration</a></li><li><a href="#13-administration-settings">1.3 Administration Settings</a></li><li><a href="#131-alerts">1.3.1 Alerts</a></li><li><a href="#132-config">1.3.2 Config</a></li><li><a href="#133-ddos">1.3.3 DDoS</a></li><li><a href="#134-security">1.3.4 Security</a></li><li><a href="#135-mapping">1.3.5 Mapping</a></li><li><a href="#136-reports">1.3.6 Reports</a></li></ul></li><li><a href="#2-dashboards">2 Dashboards</a><ul class="toc-headings"><li><a href="#21-date-range-tab">2.1 Date Range Tab</a></li><li><a href="#22-data-specific-selection-tab">2.2 Data Specific Selection Tab</a></li><li><a href="#23-visualization-options">2.3 Visualization Options</a></li><li><a href="#24-visualization-drill-down">2.4 Visualization Drill Down</a></li><li><a href="#241-drill-down-options">2.4.1 Drill Down Options</a></li><li><a href="#242-visual-data-extraction">2.4.2 Visual Data Extraction</a></li><li><a href="#243-exact-values-search">2.4.3 Exact Values Search</a></li></ul></li><li><a href="#31-flows-stats">3.1 Flows Stats</a></li><li><a href="#32-system-status">3.2 System Status</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docu/" class="nav-home"></a><div><h5>Docs</h5><a href="/docu/docs/en/XN.html">Install</a><a href="/docu/docs/en/XN.html">Use</a><a href="/docu/docs/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2020 Passus</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '7b969c492579575af2e774554cd0210e',
+                indexName: 'flowcontrol12',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

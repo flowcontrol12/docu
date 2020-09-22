@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>FlowControl - Installation guide · </title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;!-- ver. 1.5.0 - nie gotowe--&gt;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="FlowControl - Installation guide · "/><meta property="og:type" content="website"/><meta property="og:url" content="https://flowcontrol12.github.io/docu/"/><meta property="og:description" content="&lt;!-- ver. 1.5.0 - nie gotowe--&gt;"/><meta property="og:image" content="https://flowcontrol12.github.io/docu/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://flowcontrol12.github.io/docu/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docu/img/flowcontrol_xn.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/theme-live-codeblock.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docu/js/scrollSpy.js"></script><link rel="stylesheet" href="/docu/css/main.css"/><script src="/docu/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docu/"><img class="logo" src="/docu/img/flowcontrol_logo-07.png" alt=""/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docu/docs/XN" target="_self">Documentation</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">FlowControl - Installation guide</h1></header><article><div><span><!-- ver. 1.5.0 - nie gotowe-->
+<p>==<strong>UWAGA! 15-09-20 DOKUMENT wersja wczesna alfa na bazie istniejących materiałów</strong>==</p>
+<h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>FlowControl is an application responsible for monitoring network bandwidth and network traffic analysis. This document describes step by step installation and configuration process of FlowControl on VMWare ESXi version 6.5+.</p>
+<h2><a class="anchor" aria-hidden="true" id="additional-resources"></a><a href="#additional-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Additional Resources</h2>
+<p>For additional resources and information, please visit Sycope LLC website at <strong>XXX</strong>. You may find there:</p>
+<ul>
+<li><strong>Documentation:</strong> Documentation and descriptions of our products, available to download in a pdf form, from respective product sites.</li>
+<li><strong>Other ! Sycope LLC solutions:</strong> For more solutions available from Sycope LLC, visit our homepage and hover the mouse over products drop down menu to view full offer.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="contact-details"></a><a href="#contact-details" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contact Details</h2>
+<p>Available ways of contacting Sycope LLC SA:</p>
+<ul>
+<li><strong>Internet:</strong> To find more products and information please visit our site <strong>XXX</strong></li>
+<li><strong>Phone</strong>: In order to contact us via phone we are available under following number: <strong>XXX wpisać nr</strong>.</li>
+<li><strong>E-mail:</strong> For any queries, please email us at: <strong>XXX wpisać mail</strong></li>
+<li><strong>Fax:</strong> Fax available under following number: <strong>XXX wpisać fax</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="1-installation"></a><a href="#1-installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Installation</h2>
+<p>This chapter will focus on following aspects of installation process:</p>
+<ul>
+<li><p><strong>Preparation</strong>: Information found here is about what is required to install the virtual machine.</p></li>
+<li><p><strong>Deployment</strong>: Step by step walkthrough of installation and deployment process of virtual appliance.</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="11-preparation"></a><a href="#11-preparation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1 Preparation</h3>
+<p>With purchase of FlowControl, you receive OVA file required for deployment of the software. Please ensure that the file is available for installation process.</p>
+<p><strong>Disclaimer:</strong> FlowControlXN is supporting <strong>ESXi 6.5+</strong> version. For the exact software requriements please review Software Requirements section .</p>
+<blockquote>
+<p><strong>Attention</strong>: Please note that all CPUs should be divided between 2 sockets, e.g for option with 60k FPS, that has 16 CPUs, there will be 8 CPUs per socket.</p>
+<p>It can be check from CLI witch [<strong>status</strong>] command</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="12-deployment"></a><a href="#12-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2 Deployment</h3>
+<p>In order to perform the successful installation, please <strong>follow below steps</strong>:</p>
+<ol>
+<li><p>Log in to VMWare ESXi.</p>
+<p><img src="/docu/docs/assets/image-20200921092527989.png" alt="image-20200921092527989"></p></li>
+<li><p>From <strong>Navigator Menu</strong> go to <strong>Virtual Machines</strong>. Click on <strong>Create / Register VM</strong>. Pop up window will show up with few steps to be completed.</p></li>
+<li><p>Select <strong>Deploy a virtual machine from OVF or OVA file</strong>, and then click <strong>Next</strong>.</p></li>
+</ol>
+<p><img src="/docu/docs/assets/image11.png" alt=""></p>
+<ol start="4">
+<li>Enter a name of virtual appliance you want to create. Browse the OVA file by clicking on blue parallelogram or drag and drop on it. Click <strong>Next</strong></li>
+</ol>
+<p><img src="/docu/docs/assets/image3.png" alt=""></p>
+<ol start="5">
+<li>Choose desired datastore that will hold the FlowControlXN files. Click <strong>Next</strong>.</li>
+</ol>
+<p><img src="/docu/docs/assets/image12.png" alt=""></p>
+<ol start="6">
+<li>Select data provisioning options depending on your requirements. Make sure that the <strong>Power on automatically</strong> option is deselected. Click <strong>Next</strong>.</li>
+</ol>
+<p><img src="/docu/docs/assets/image6.png" alt=""></p>
+<ol start="7">
+<li>After completing all previous steps, pop up window will show up, summarizing all information about the virtual machine that has been created. Click <strong>Finish</strong> in order to start a deployment process.</li>
+</ol>
+<p><img src="/docu/docs/assets/image8.png" alt=""></p>
+<p>When the deployment process finishes, please give a system 3 - 5 minutes, for it to configure itself. Up till that time it will be unavailable to access.</p>
+<p><img src="/docu/docs/assets/image-20200921093101461.png" alt="image-20200921093101461"></p>
+<ol start="8">
+<li>In order to add second HDD to the virtual machine please go to <strong>Edit settings</strong>. Click on <strong>Add hard disk</strong> drop down menu and choose <strong>New hard disk</strong> from available options.</li>
+</ol>
+<p><img src="/docu/docs/assets/image1.png" alt=""></p>
+<ol start="9">
+<li>Choosing this option will show window with information to fill in regarding new HDD. Please choose all suitable options for your new hard disk as storage, data provisioning option, etc. Click <strong>Finish</strong> in order to deploy the second HDD.</li>
+</ol>
+<p><img src="/docu/docs/assets/image4.png" alt=""></p>
+<p>If the installation and deployment have been successfully completed, configuration process can be applied. Run the virtual machine that has been created. In order to access the configuration panel press <strong>Left Shift</strong> button 5 times. Cmd console will pop up, there will be command line asking for a password.</p>
+<p><img src="/docu/docs/assets/image2.png" alt=""></p>
+<p>For Admin account, default password is: <strong>FcxN12#$</strong> (It is strongly recommended to change password later in GUI). Network configuration status and list of <strong>CLI</strong> commands will be displayed after successful login.</p>
+<!-- wrzucic info o aut. wylogowaniu -->
+<p><img src="/docu/docs/assets/image-20200921102409182.png" alt="image-20200921102409182"></p>
+<p><img src="/docu/docs/assets/image-20200921102430774.png" alt="image-20200921102430774"></p>
+<p><img src="/docu/docs/assets/image-20200921102459604.png" alt="image-20200921102459604"></p>
+<p><img src="/docu/docs/assets/image-20200921102515946.png" alt="image-20200921102515946"></p>
+<p><img src="/docu/docs/assets/image-20200921102551041.png" alt="image-20200921102551041"></p>
+<p><img src="/docu/docs/assets/image-20200921102629688.png" alt="image-20200921102629688"></p>
+<p><img src="/docu/docs/assets/image-20200921103047559.png" alt="image-20200921103047559"></p>
+<p><img src="/docu/docs/assets/image-20200921103112525.png" alt="image-20200921103112525"></p>
+<p><img src="/docu/docs/assets/image-20200921103131883.png" alt="image-20200921103131883"></p>
+<p><img src="/docu/docs/assets/image-20200921103140159.png" alt="image-20200921103140159"></p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#additional-resources">Additional Resources</a></li><li><a href="#contact-details">Contact Details</a></li><li><a href="#1-installation">1. Installation</a><ul class="toc-headings"><li><a href="#11-preparation">1.1 Preparation</a></li><li><a href="#12-deployment">1.2 Deployment</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docu/" class="nav-home"></a><div><h5>Docs</h5><a href="/docu/docs/en/XN.html">Install</a><a href="/docu/docs/en/XN.html">Use</a><a href="/docu/docs/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2020 Passus</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '7b969c492579575af2e774554cd0210e',
+                indexName: 'flowcontrol12',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
