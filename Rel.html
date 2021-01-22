@@ -55,6 +55,86 @@
               }
             });
         </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="release-notes"></a><a href="#release-notes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Release notes</h2>
+<h3><a class="anchor" aria-hidden="true" id="flowcontrol-ver-152"></a><a href="#flowcontrol-ver-152" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FlowControl ver. 1.5.2</h3>
+<ol>
+<li>Added new submenus to menu Configuaration with commands: Update, Backup, Restore and Logs.</li>
+<li>Added a new Total Packtes/s metric on the tab Traffic Overview in the Traffic submenu .</li>
+<li>Separated application in context of TCP and UDP protocols in the Mapping configuration.</li>
+<li>Unified the syslog notification format for XN, XNS, and XND modules.</li>
+</ol>
+<p><strong>CLI</strong></p>
+<ol start="6">
+<li><p>Added new commands:</p>
+<ul>
+<li>backup database,
+<ul>
+<li>open share | close share,</li>
+</ul></li>
+<li>restore defaults,
+<ul>
+<li>erase user cache,</li>
+<li>erase user data,</li>
+<li>erase app data,</li>
+<li>erase database,</li>
+</ul></li>
+</ul></li>
+<li><p>modified the following commands:</p>
+<ul>
+<li>logs,
+<ul>
+<li>collect,</li>
+<li>close,</li>
+<li>clean.</li>
+</ul></li>
+</ul></li>
+</ol>
+<p><strong>XNS and XND modules</strong></p>
+<ol start="8">
+<li><p>Improved Threat Detection type rules (fixing the problem with whitelisting groups)</p>
+<ul>
+<li>High Data Transfer (Int-&gt;Ext)</li>
+<li>High Data Transfer (Ext-&gt;Int)</li>
+<li>High Data Transfer (Int-&gt;Int)</li>
+<li>Unusually High Data Transfer (Int-&gt;Ext)</li>
+<li>Unusually High Data Transfer (Ext-&gt;Int)</li>
+</ul></li>
+<li><p>Changed the interval of external feeds refreshing to one hour.</p></li>
+<li><p>Fixed incorrectly designed feeds.</p></li>
+<li><p>Added new rules to Sunburst backdoor detection</p></li>
+<li><p>Fixed bug in KPIs</p></li>
+<li><p>Changed the XNS/Alerts dashboard - in addition to the list of alerts, there is also a histogram showing the number of threats in a specific range by threat category</p></li>
+<li><p>ATT&amp;CK MITRE fixes implemented:</p>
+<ul>
+<li>updated categories and techniques for parts of the security rules</li>
+<li>fixed bug that prevented linking Alert Name to MITRE ID</li>
+</ul></li>
+<li><p>Improved recognition of default ports.</p></li>
+<li><p>Fixed bugs in the GUI.</p></li>
+<li><p>Fixed a bug in displaying XNS data in other than administrator account.</p></li>
+<li><p>Fixed a bug with incorrect data display in XNS/External Alerts and XNS/Internal Alerts views.</p></li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="flowcontrol-ver-151"></a><a href="#flowcontrol-ver-151" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FlowControl ver. 1.5.1</h3>
+<ol>
+<li>A new method for entering permissions for users has been added. When creating or modifying user account, it is possible to select the &quot;Show advanced view&quot; to  assign permissions to individual dashboards.</li>
+<li>A possibility of hiding the date selection and reload bar by clicking on the filter icon on the top right or in the profile settings has been added.</li>
+<li>Added the functionality of using advanced filters in the Search field.</li>
+<li>Extention a Drill-Down option for each graph/table.</li>
+<li>New Audit Logs menu with information on user activity in the system has been added.</li>
+<li>Added popup showing how long the data was loaded.</li>
+<li>Added a new unit on graphs - packets/s.</li>
+<li>Added new dashboard in Raw Data submenu named Throughput based on Utilization database.</li>
+</ol>
+<p><strong>XNS module</strong>:</p>
+<ol start="9">
+<li>Improved the Unauthorized DHCP Server Activity rule.</li>
+<li>Improved the Unauthorized DNS Server Activity rule.</li>
+<li>Extention of Suspicious Port BL rule  - detection of a wider range of threats i.a. cryptomining has been added.</li>
+</ol>
+<p><strong>XND module</strong>:</p>
+<ol start="12">
+<li>Extension of DDoS dashboards i.a. added Ratios unit to DDoS Deep Analysis dashboard.</li>
+<li>Added new feature to mitigate DDoS - RTBH (Remotely Triggered Black Hole).</li>
+</ol>
 <h3><a class="anchor" aria-hidden="true" id="flowcontrol-ver-15"></a><a href="#flowcontrol-ver-15" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FlowControl ver. 1.5</h3>
 <ol>
 <li><p>New improved engine.</p></li>
@@ -74,7 +154,7 @@
 <li><p>Extension of Graphical User Interface (GUI) options:</p>
 <p>6.1.1. Filtering extensions for network prefix usage, additional to already implemented regex style filtering). Available for IP address tables with /16 to /29 range</p>
 <p>6.1.2. New metric available for most charts: bits/s</p>
-<p>6.1.3.Automatic unit change for bytes, bits and bits/s added, e.g. kB, kb, kB/s, MB, Mb, Mb/s, GB, Gb, Gb/s, TB, Tb etc.</p></li>
+<p>6.1.3. Automatic unit change for bytes, bits and bits/s added, e.g. kB, kb, kB/s, MB, Mb, Mb/s, GB, Gb, Gb/s, TB, Tb etc.</p></li>
 </ol>
 <p><strong>XN module</strong>:</p>
 <ol start="7">
@@ -97,29 +177,7 @@
 <p>10.4. There have been extended tabs allowing correlations with real traffic, e.g. displaying information about attackers in the context of IP, countries and ASN.</p>
 <p>10.5. Additional tabs for more precise analysis of DDoS attacks added, including presentation of source host data in the context of IP, Country or ASN.</p></li>
 </ol>
-<h3><a class="anchor" aria-hidden="true" id="flowcontrol-ver-151"></a><a href="#flowcontrol-ver-151" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FlowControl ver. 1.5.1</h3>
-<ol>
-<li>A new method for entering permissions for users has been added. When creating or modifying user account, it is possible to select the &quot;Show advanced view&quot; to  assign permissions to individual dashboards.</li>
-<li>A possibility of hiding the date selection and reload bar by clicking on the filter icon on the top right or in the profile settings has been added.</li>
-<li>Added the functionality of using advanced filters in the Search field.</li>
-<li>Extention a Drill-Down option for each graph/table.</li>
-<li>New Audit Logs menu with information on user activity in the system has been added.</li>
-<li>Added popup showing how long the data was loaded.</li>
-<li>Added a new unit on graphs - packets/s.</li>
-<li>Added new dashboard in Raw Data submenu named Throughput based on Utilization database.</li>
-</ol>
-<p><strong>XNS module</strong>:</p>
-<ol start="9">
-<li>Unauthorized DHCP Server Activity rule has been improved.</li>
-<li>Unauthorized DNS Server Activity rule has been improved.</li>
-<li>Extention of Suspicious Port BL rule  - detection of a wider range of threats i.a. cryptomining has been added.</li>
-</ol>
-<p><strong>XND module</strong>:</p>
-<ol start="12">
-<li>Extension of DDoS dashboards i.a. added Ratios unit to DDoS Deep Analysis dashboard.</li>
-<li>Added new feature to mitigate DDoS - RTBH (Remotely Triggered Black Hole).</li>
-</ol>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Req"><span class="arrow-prev">← </span><span>Requirements</span></a><a class="docs-next button" href="/Feedy"><span>Third party software component</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#release-notes">Release notes</a><ul class="toc-headings"><li><a href="#flowcontrol-ver-15">FlowControl ver. 1.5</a></li><li><a href="#flowcontrol-ver-151">FlowControl ver. 1.5.1</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/en/XN.html">Install</a><a href="/en/XN.html">Use</a><a href="/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2020 Sycope</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Req"><span class="arrow-prev">← </span><span>Requirements</span></a><a class="docs-next button" href="/Feedy"><span>Third party software component</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#release-notes">Release notes</a><ul class="toc-headings"><li><a href="#flowcontrol-ver-152">FlowControl ver. 1.5.2</a></li><li><a href="#flowcontrol-ver-151">FlowControl ver. 1.5.1</a></li><li><a href="#flowcontrol-ver-15">FlowControl ver. 1.5</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/en/XN.html">Install</a><a href="/en/XN.html">Use</a><a href="/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2021 Sycope</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
