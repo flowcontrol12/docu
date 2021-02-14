@@ -55,14 +55,14 @@
               }
             });
         </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="1-performance"></a><a href="#1-performance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Performance</h2>
-<p>DDoS attacks (Distributed Denial of Service) are currently among the most popular and most simple attacks used by cybercriminals. Their goal is to disrupt  the network infrastructure or the running application – “the victim of the attack”, by sending massive amounts of data packets. This threat effects all service sectors on the internet. Modern attacks of DDoS require the use of thousands of devices organized into so-called botnets. DDoS attacks usually result in financial and image losses.</p>
+<p>DDoS attacks (Distributed Denial of Service) are currently among the most popular and most simple attacks used by cybercriminals. Their goal is to disrupt the network infrastructure or the running application – “the victim of the attack”, by sending massive amounts of data packets. This threat affects all service sectors on the internet. Modern attacks of DDoS require the use of thousands of devices organized into so-called botnets. DDoS attacks usually result in financial and image losses.</p>
 <p>Thanks to an efficient algorithm using many network parameters, the FlowControl XND module is able to detect various types of DDoS attacks. This is due to the implemented ability to flexibly change network parameters depending on needs. <em>Table 1.1</em> contains examples of what parameter is important to detect a specific type of DDoS attack. All attributes are related to data for 1 minute, e.g. Bytes parameter means de facto BPM (Bytes per Minute).</p>
 <table>
 <thead>
 <tr><th><strong>DDoS Attack Type</strong></th><th><strong>Description</strong></th><th><strong>Important FlowControl  paramaters</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Volume attack</strong></td><td>An attack saturating the victims link capacity.</td><td>●     Bytes    ●     Bytes_Limit  (In case of  UDP Flood attacks, the following parameters should also be considered: IP, IP  Ex, ASN, BPF.)</td></tr>
+<tr><td><strong>Volume attack</strong></td><td>An attack saturating the victims link capacity.</td><td>●     Bytes <br />●     Bytes_Limit  (In case of UDP Flood attacks, the following parameters should also be considered: IP, IP Ex, ASN, BPF.)</td></tr>
 <tr><td><strong>Protocol attack</strong></td><td>An attack consuming actual server resources or  intermediate communication equipment such as firewall, IDS, or switch.</td><td>●     Packets</td></tr>
 <tr><td><strong>Application layer  attack</strong></td><td>An attack causing the web server to crash.</td><td>●     Flows</td></tr>
 </tbody>
@@ -70,24 +70,24 @@
 <p><em>Table 1.1 Examples of</em> <em>XND module parameter control</em></p>
 <h2><a class="anchor" aria-hidden="true" id="2-flowcontrol-xnd-module"></a><a href="#2-flowcontrol-xnd-module" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. FlowControl XND Module</h2>
 <h3><a class="anchor" aria-hidden="true" id="21-introduction-to-xnd-module"></a><a href="#21-introduction-to-xnd-module" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1 Introduction to XND Module</h3>
-<p>​   The FC XND module uses aggregated NetFlow, sFlow, NSEL data. Based on this data and parameters entered by the user, the algorithm calculates a set of data defining the target together with the attacked service and can then take action to limit the effects of the attack. DDoS attacks are detected by the XND module algorithm based on the parameters : static thresholds and dynamic thresholds.</p>
+<p>​   The FC XND module uses aggregated NetFlow, sFlow, NSEL data. Based on this data and parameters entered by the user, the algorithm calculates a set of data defining the target together with the attacked service and can then take action to limit the effects of the attack. DDoS attacks are detected by the XND module algorithm based on the parameters: static thresholds and dynamic thresholds.</p>
 <p><strong>Static thresholds</strong> are used to optimize and reduce the number of False Positives by filtering network traffic that do not meet quantitative parameters such as: bytes limit, packet limit or unique source IP addresses. All static threshold parameters have to be exceeded in order for the algorithm to start the next step, i.e. calculation of dynamic threshold parameters.</p>
-<p><strong>Dynamic thresholds (behavioral)</strong> are used to compare current network traffic characteristics with the previous sample (baseline). By default, a baseline is created for 15 minutes before the attack. The dynamic threshold parameters are configured in the XND module as a so-called multiplier, which means that’s multiple of a given indicator cannot be exceeded. The indicator parameter specifies the number of dynamic thresholds that must be exceeded for an attack to be confirmed from the behavioral analysis point of view.</p>
+<p><strong>Dynamic thresholds (behavioral)</strong> are used to compare current network traffic characteristics with the previous sample (baseline). By default, a baseline is created for 15 minutes before the attack. The dynamic threshold parameters are configured in the XND module as a so-called multiplier, which means that multiple of a given indicator cannot be exceeded. The indicator parameter specifies the number of dynamic thresholds that must be exceeded for an attack to be confirmed from the behavioral analysis point of view.</p>
 <p>​   The DDoS mechanism also uses two types of whitelists: <strong>ASN whitelist</strong> and <strong>service whitelist</strong> <strong>– monitoring mode</strong>. The first one is used to define source ASNs to be ignored from the XND module algorithm calculation. The service whitelist, on the other hand, is used to define the services for which only DDoS alerts will be generated, and blocking will not be triggered for them using the BGP FlowSpec protocol or RTBH (Remote Triggered Black Hole Routing).</p>
 <p>​   All parameters of the DDoS detection algorithm are configured in relation to the <strong>function group (Settings/Mapping/Groups/Function),</strong>  <em>Fig. 2.1.1.</em> Here the resources subject to the procedure contained in the XND module are configured, thus it is possible to fine-tune the XND module mechanism.</p>
-<p><img src="/assets/image-20201112123813503.png" alt="image-20201112123813503"></p>
+<p><img src="assets/image-20201112123813503.png" alt="image-20201112123813503" style="zoom:67%;" /></p>
 <p><em>Fig. 2.1.1 XND groups configuration parameters</em></p>
 <h3><a class="anchor" aria-hidden="true" id="22-xdn-module-operation-diagram"></a><a href="#22-xdn-module-operation-diagram" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2 XDN module operation diagram</h3>
 <p>The <em>Fig. 2.2.1</em> shows the operating principle and the individual analysis steps contained in the FlowControl XND module as a diagram.</p>
 <p><img src="/assets/image-20201112124555675.png" alt="image-20201112124555675"></p>
 <p><em>Fig. 2.2.1 Concept of the DDoS algorithm implemented in XND module</em></p>
 <h3><a class="anchor" aria-hidden="true" id="23-data-filtering"></a><a href="#23-data-filtering" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3 Data filtering</h3>
-<p>​   One of the first operations performed by the XND module on input data strings is pre-filtering. Its task is to filtered out redundant motion for the analysis algorithm before the grouping process.</p>
+<p>​   One of the first operations performed by the XND module on input data strings is pre-filtering. Its task should be filter out redundant motion for the analysis algorithm before the grouping process.</p>
 <p>Pre-filtration includes:</p>
 <ol>
 <li>Target host filtering - filters the target IP addresses of monitored resources. These addresses are configured using function groups defined in the Engine Parameters.</li>
 <li>TCP client traffic filtering – used to filtering the incoming traffic to the monitored resource, which is a response to queries to external resources. This step is implemented in the FlowControl system engine.</li>
-<li>Source ASN filtering – defines ASNs that are excluded from analysis by the XND Module algorithm .</li>
+<li>Source ASN filtering – defines ASNs that are excluded from analysis by the XND Module algorithm.</li>
 </ol>
 <h3><a class="anchor" aria-hidden="true" id="24-data-grouping"></a><a href="#24-data-grouping" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4 Data Grouping</h3>
 <p>​   Another activity carried out by the XND module is the network traffic aggregation, i.e. data grouping. This operation is necessary to calculate a set of parameters that determine the target with the attacked service. In this process the following indicators are calculated:</p>
@@ -99,7 +99,7 @@
 <li>Flow counter</li>
 <li>Number of packets</li>
 <li>Number of bytes</li>
-<li>PPF (Pakets per Flow )</li>
+<li>PPF (Packets per Flow )</li>
 <li>BPP (Bytes per Packets)</li>
 <li>BPF (Bytes per Flow).</li>
 </ol>
@@ -112,8 +112,8 @@
 </thead>
 <tbody>
 <tr><td><strong>Flows Limit</strong></td><td>Minimum number of network flows related to DDA Id.</td></tr>
-<tr><td><strong>Bytes Limit</strong></td><td>Minimum number of   bytes related to DDA I expressed in [MB].</td></tr>
-<tr><td><strong>Unique IPs Limit</strong></td><td>Minimum number of unique source IP addresses related  to DDA Id.</td></tr>
+<tr><td><strong>Bytes Limit</strong></td><td>Minimum number of bytes related to DDA I expressed in [MB].</td></tr>
+<tr><td><strong>Unique IPs Limit</strong></td><td>Minimum number of unique source IP addresses related to DDA Id.</td></tr>
 </tbody>
 </table>
 <p><em>Table 2.5.1 Static threshold parameters.</em></p>
@@ -128,21 +128,21 @@
 </thead>
 <tbody>
 <tr><td><strong>Unique ASNs</strong></td><td>Number of unique ASNs related to DDA ID.</td></tr>
-<tr><td><strong>Unique IPs</strong></td><td>Number of all unique source IP addresses (external  and internal) related to DDA ID.</td></tr>
-<tr><td><strong>Unique Internal IPs</strong></td><td>Number of all unique source internal IP addresses related  to DDA Id. Internal (private) addresses are configured in the  Settings/Mapping/Groups/Internal tab.</td></tr>
-<tr><td><strong>Unique Public IPs</strong></td><td>Number of all unique source external IP addresses  related to DDA Id.</td></tr>
+<tr><td><strong>Unique IPs</strong></td><td>Number of all unique source IP addresses (external and internal) related to DDA ID.</td></tr>
+<tr><td><strong>Unique Internal IPs</strong></td><td>Number of all unique source internal IP addresses related to DDA Id. Internal (private) addresses are configured in the Settings/Mapping/Groups/Internal tab.</td></tr>
+<tr><td><strong>Unique Public IPs</strong></td><td>Number of all unique source external IP addresses related to DDA Id.</td></tr>
 <tr><td><strong>Flows</strong></td><td>Number of flows related to DDA ID.</td></tr>
 <tr><td><strong>Packets</strong></td><td>Number of packets related to DDA ID.</td></tr>
 <tr><td><strong>Bytes</strong></td><td>Number of bytes related to DDA ID.</td></tr>
-<tr><td><strong>PPF (Packets per Flow)</strong></td><td>Number of packets per network flows calculated as  sum of packets divided by sum of network flows in context of DDA ID.</td></tr>
-<tr><td><strong>BPP (Bytes per Packet)</strong></td><td>Number of bytes per packet calculated as sum of  bytes divided by sum of packets in context of DDA Id.</td></tr>
-<tr><td><strong>BPF (Bytes per Flow)</strong></td><td>Number of bytes per flows calculated as sum of bytes  divided by sum of the flows in context  of DDA Id.</td></tr>
-<tr><td><strong>Indicator Limit</strong></td><td>Threshold – specifies the number of threshold limit  parameters that must be exceeded for the algorithm to consider the analysis  to be positive.</td></tr>
+<tr><td><strong>PPF (Packets per Flow)</strong></td><td>Number of packets per network flows calculated as sum of packets divided by sum of network flows in context of DDA ID.</td></tr>
+<tr><td><strong>BPP (Bytes per Packet)</strong></td><td>Number of bytes per packet calculated as sum of bytes divided by sum of packets in context of DDA Id.</td></tr>
+<tr><td><strong>BPF (Bytes per Flow)</strong></td><td>Number of bytes per flows calculated as sum of bytes divided by sum of the flows in context of DDA Id.</td></tr>
+<tr><td><strong>Indicator Limit</strong></td><td>Threshold – specifies the number of threshold limit parameters that must be exceeded for the algorithm to consider the analysis to be positive.</td></tr>
 </tbody>
 </table>
 <p><em>Table 2.6.1 Dynamic threshold parameters</em></p>
-<p>The value of the <strong>Indicator Limit</strong> controls parameters determines how many dynamic parameters must be exceeded for the algorithm to consider the analysis to be positive.</p>
-<p><strong><em>Example:</em></strong>  <em>“Indicators limit = 2” - this means that only two out of ten parameters of the dynamic threshold limits listed in Table 2.6.1                      are exceeded for the algorithm to give a positive result.</em></p>
+<p>The value of the <strong>Indicator Limit</strong> controls parameters determining how many dynamic parameters must be exceeded for the algorithm to consider the analysis to be positive.</p>
+<p><strong><em>Example:</em></strong>  <em>“Indicators limit = 2” - this means that only two out of ten parameters of the dynamic threshold limits listed in Table 2.6.1 are exceeded for the algorithm to give a positive result.</em></p>
 <blockquote>
 <p><strong>Note</strong>: for the parameter “Indicators limit =0” the algorithm for dynamic analysis always gives a positive result!</p>
 </blockquote>
@@ -150,7 +150,7 @@
 <p><img src="/assets/image-20201112130232708.png" alt="image-20201112130232708"></p>
 <p><em>Fig. 2.6.1 Dynamic threshold parameters configuration</em></p>
 <p>​   Dynamic threshold parameters are calculated using analysis behavioral mechanism for defined function groups. This mechanism uses data from time intervals preceding the analyzed sample - so-called reference data. This is base data which is used to calculate average values for a set of metrics necessary to detect DDoS attacks. A reference data is data averaged from the last fifteen minutes preceding the analyzed sample. This is used in the comparison process with the analyzed data to calculate dynamic threshold parameters. <em>Fig. 2.6.2</em> shows time intervals used to calculate dynamic threshold parameters.</p>
-<p><img src="/assets/image-20201112130304664.png" alt="image-20201112130304664"></p>
+<p><img src="assets/image-20201112130304664.png" alt="image-20201112130304664" style="zoom:80%;" /></p>
 <p><em>Fig. 2.6.2 Time intervals for determining reference and analysed data</em></p>
 <p>The dynamic thresholds during an ongoing attack are calculated by the algorithm in a different way than at the beginning of the attack. In such a case the value of each dynamic threshold parameter exceeded must be less than half of the threshold value set by the user for it to be treated as an unexceeded parameter.</p>
 <h3><a class="anchor" aria-hidden="true" id="27-xnd-module-response-to-the-ddos-attacks"></a><a href="#27-xnd-module-response-to-the-ddos-attacks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.7 XND module response to the DDoS attacks</h3>
@@ -162,7 +162,7 @@
 <h2><a class="anchor" aria-hidden="true" id="3-ddos-mitigation"></a><a href="#3-ddos-mitigation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. DDoS Mitigation</h2>
 <p>​</p>
 <p>​   The FlowControl system in the XND module supports two features to mitigate DDoS attacks: FlowSpec and RTBH (Remotely Triggered Black Hole). Both require routers that support BGP protocol and optionally FlowSpec feature. When FlowControl detects an attack, it sends a command to the edge router(s) of the organization to block the offending traffic. Depending on the feature used, this command can be a filtering rule to place in an internal FlowSpec table or regular route to inject in the routing table. Both mechanisms work in similar way as depicted on the <em>Fig. 3.1</em>.</p>
-<p><img src="/assets/image-20201113144640591.png" alt="image-20201113144640591"></p>
+<p><img src="assets/image-20201113144640591.png" alt="image-20201113144640591" style="zoom:67%;" /></p>
 <p><em>Fig. 3.1 DDoS attacks mitigation diagram</em></p>
 <p>​</p>
 <p>​   The FlowControl system establishes BGP sessions with edge routers (green dotted arrows in the figure) that send Flow packets to FlowControl. Additionally, FlowSpec can be configured on routers that support this feature (see the following section for FlowSpec enabled router models). Depending on the feature used, FlowControl sends the following information to routers:</p>
@@ -482,12 +482,12 @@ Neighbor </span>   V      AS MsgRcvd MsgSent  TblVer InQ OutQ Up/Down State/PfxR
 <tr><th><strong>Rule Name</strong></th><th><strong>Description</strong></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>DDoS Attack Detected</strong></td><td>This rule detects DDoS Attacks based on  traffic volume from multiple IP addresses to a single destination IP on the  same port. The attack involves saturating network resources causing  disruption of normal traffic on the target server. For the rule to work  correctly, configure the Counter Threshold and Whitelist groups.</td></tr>
-<tr><td><strong>DDoS DNS Amplification Attack</strong></td><td>This rule detects DDoS DNS Amplification  Attacks based on network traffic statistics (Signature 1). To create heavy  traffic, an attacker sends a request in a way that generates the largest  possible response from DNS name resolution services. As a result, the target  receives reinforcement of the initial attacker's traffic, and their network  is clogged with false traffic, which causes denial of service. For the rule  to work correctly, configure the following attributes: Flow Count and PPF  (Packets Per Flow).</td></tr>
-<tr><td><strong>DoS Attack Detected</strong></td><td>This rule detects DoS Attacks based on  traffic volume from one IP address to single IPs on a specific port. For the  rule to work correctly, configure the Port Threshold List format as follows:  Flows_Threshold\</td><td>Port\</td><td>Service and Whitelist groups.</td></tr>
-<tr><td><strong>DoS - ICMP                                             Flood</strong></td><td>This rule detects DoS ICMP attacks. An  attacker can send a large number of ICMP packets to consume all available  bandwidth of an victim's host. For the rule to work correctly, configure the  following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per  Minute) and Whitelist groups.</td></tr>
-<tr><td><strong>DoS - TCP</strong>                                                              <strong>Flood</strong></td><td>This rule detects TCP DoS attacks. An  attacker can send a large number of TCP packets to one or several ports of  the victim, which eventually renders the attacked host unable to process the  incoming packets. For the rule to work correctly, configure the following  attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per Minute) and  Whitelist groups.</td></tr>
-<tr><td><strong>DoS - UDP</strong>                <strong>Flood</strong></td><td>This rule detects DoS UDP attacks. An  attacker can send a large number of UDP packets to consume all available  bandwidth of the victim's host. For the rule to work correctly, configure the  following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per  Minute) and Whitelist groups.</td></tr>
+<tr><td><strong>DDoS Attack Detected</strong></td><td>This rule detects DDoS Attacks based on traffic volume from multiple IP addresses to a single destination IP on the same port. The attack involves saturating network resources causing disruption of normal traffic on the target server. For the rule to work correctly, configure the Counter Threshold and Whitelist groups.</td></tr>
+<tr><td><strong>DDoS DNS Amplification Attack</strong></td><td>This rule detects DDoS DNS Amplification Attacks based on network traffic statistics (Signature 1). To create heavy traffic, an attacker sends a request in a way that generates the largest possible response from DNS name resolution services. As a result, the target receives reinforcement of the initial attacker's traffic, and their network is clogged with false traffic, which causes denial of service. For the rule to work correctly, configure the following attributes: Flow Count and PPF (Packets Per Flow).</td></tr>
+<tr><td><strong>DoS Attack Detected</strong></td><td>This rule detects DoS Attacks based on traffic volume from one IP address to single IPs on a specific port. For the  rule to work correctly, configure the Port Threshold List format as follows:  Flows_Threshold\</td><td>Port\</td><td>Service and Whitelist groups.</td></tr>
+<tr><td><strong>DoS - ICMP                                             Flood</strong></td><td>This rule detects DoS ICMP attacks. An attacker can send a large number of ICMP packets to consume all available bandwidth of a victim's host. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per Minute) and Whitelist groups.</td></tr>
+<tr><td><strong>DoS - TCP</strong>                                                              <strong>Flood</strong></td><td>This rule detects TCP DoS attacks. An attacker can send a large number of TCP packets to one or several ports of the victim, which eventually renders the attacked host unable to process the incoming packets. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per Minute) and Whitelist groups.</td></tr>
+<tr><td><strong>DoS - UDP</strong>                <strong>Flood</strong></td><td>This rule detects DoS UDP attacks. An attacker can send a large number of UDP packets to consume all available bandwidth of the victim's host. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per  Minute) and Whitelist groups.</td></tr>
 </tbody>
 </table>
 <p><em>Table 4.1.1 DDoS rules list in</em> <em>XNS module</em></p>
@@ -509,13 +509,13 @@ Neighbor </span>   V      AS MsgRcvd MsgSent  TblVer InQ OutQ Up/Down State/PfxR
 </thead>
 <tbody>
 <tr><td style="text-align:left">Enabled</td><td style="text-align:left">Determining whether the rule is enabled</td></tr>
-<tr><td style="text-align:left">Alert Name</td><td style="text-align:left">The name of the rule is “DDoS Attack Detected – XND”,  but the name of the alarms of this rule is &quot;START: DDoS Attack Detected  - XND&quot; and &quot;STOP: DDoS Attack Detected - XND&quot;.</td></tr>
-<tr><td style="text-align:left">Threat  Category</td><td style="text-align:left">Threat category according to FlowControl  nomenclature</td></tr>
-<tr><td style="text-align:left">Score</td><td style="text-align:left">Criticality of alarm on a scale: 10-9 Critical, 8-7  High, 6-4 Medium, 3-2 Low 1-10</td></tr>
-<tr><td style="text-align:left">MITRE Tactic</td><td style="text-align:left">Tactical name according to MITRE technique</td></tr>
-<tr><td style="text-align:left">MITRE  Technique</td><td style="text-align:left">Technique name according to MITRE technique</td></tr>
-<tr><td style="text-align:left">ASN  Whitelist</td><td style="text-align:left">Whitelist of source ASNs, i.e. ASNs to filtered out  of by XND module mechanism</td></tr>
-<tr><td style="text-align:left">Service  Whitelist</td><td style="text-align:left">List of services excluded from the attack mitigation  mechanism – alerts are still generated.  Examples of Whitelist records: <br /> (1)      (Destination_IP,Port)  – blocks the selected services for specified IP address <br /> (2)      (Destination_IP,*)  – blocks all services for the specified IP address<br /> (3)      (Subnet,Port)  – blocks the service for hosts in specified subnet<br />  * means all ports</td></tr>
+<tr><td style="text-align:left">Alert Name</td><td style="text-align:left">The name of the rule is “DDoS Attack Detected – XND”, but the name of the alarms of this rule are START: DDoS Attack Detected  - XND&quot; and &quot;STOP: DDoS Attack Detected - XND&quot;.</td></tr>
+<tr><td style="text-align:left">Threat  Category</td><td style="text-align:left">Threat category according to FlowControl nomenclature.</td></tr>
+<tr><td style="text-align:left">Score</td><td style="text-align:left">Criticality of alarm on a scale 1-10: 10-9 Critical, 8-7 High, 6-4 Medium, 3-2 Low.</td></tr>
+<tr><td style="text-align:left">MITRE Tactic</td><td style="text-align:left">Tactical name according to MITRE technique.</td></tr>
+<tr><td style="text-align:left">MITRE  Technique</td><td style="text-align:left">Technique name according to MITRE technique.</td></tr>
+<tr><td style="text-align:left">ASN  Whitelist</td><td style="text-align:left">Whitelist of source ASNs, i.e. ASNs to filtered out of by XND module mechanism.</td></tr>
+<tr><td style="text-align:left">Service  Whitelist</td><td style="text-align:left">List of services excluded from the attack mitigation mechanism – alerts are still generated. Examples of Whitelist records: <br /> (1)      (Destination_IP,Port)  – blocks the selected services for specified IP address <br /> (2)      (Destination_IP,*)  – blocks all services for the specified IP address<br /> (3)      (Subnet,Port)  – blocks the service for hosts in specified subnet<br />  * means all ports</td></tr>
 </tbody>
 </table>
 <p><em>Table 4.2.1 XND module DDoS basic configuration</em></p>
@@ -523,9 +523,9 @@ Neighbor </span>   V      AS MsgRcvd MsgSent  TblVer InQ OutQ Up/Down State/PfxR
 <li>Configure DDoS parameters for individual function groups (<em>Fig. 4.2.3, Fig. 4.2.4</em>)</li>
 </ol>
 <p><img src="/assets/image-20201112130508003.png" alt="image-20201112130508003"></p>
-<p><em>Fig. 4.2.3 Configuration of a</em> <em>DDoS parameters for monitored groups. configuration for individual function groups</em></p>
+<p><em>Fig. 4.2.3 Configuration of a DDoS parameters for monitored groups.</em></p>
 <p><img src="/assets/image-20201112130536345.png" alt="image-20201112130536345"></p>
-<p><em>Fig. 4.2.4 DDoS parameters configuration for selected function groups</em></p>
+<p><em>Fig. 4.2.4 DDoS parameters configuration for selected function groups</em>.</p>
 <ol start="4">
 <li>Configure DDoS Mitigation (<em>Fig. 4.2.5</em>)</li>
 </ol>
@@ -536,29 +536,29 @@ Neighbor </span>   V      AS MsgRcvd MsgSent  TblVer InQ OutQ Up/Down State/PfxR
 <tr><th style="text-align:left">Configuration  Attribute</th><th style="text-align:left">Description</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align:left">Enabled</td><td style="text-align:left">Enabled/Disabled  BGP support</td></tr>
-<tr><td style="text-align:left">FCXN  AS</td><td style="text-align:left">BGP ASN number of FCXN system</td></tr>
-<tr><td style="text-align:left">FCXN  BGP Port</td><td style="text-align:left">BGP port of FCXN system</td></tr>
-<tr><td style="text-align:left">FCXN  BGP ID</td><td style="text-align:left">BGP ID of FCXN system</td></tr>
-<tr><td style="text-align:left">Blackhole  IP (RTHB)</td><td style="text-align:left">Blackhole IP address. Static route must be  configured on the router that re-directs traffic destined to this IP to Null  or discard interface.</td></tr>
-<tr><td style="text-align:left">Neighbor  IP</td><td style="text-align:left">IP address of the neighboring router</td></tr>
-<tr><td style="text-align:left">Neighbor  AS</td><td style="text-align:left">BGP ASN number of the neighboring router</td></tr>
-<tr><td style="text-align:left">BGP  Hold Time</td><td style="text-align:left">BGP Hold Time interval  of FCXN system</td></tr>
+<tr><td style="text-align:left">Enabled</td><td style="text-align:left">Enabled/Disabled BGP support</td></tr>
+<tr><td style="text-align:left">FCXN AS</td><td style="text-align:left">BGP ASN number of FCXN system</td></tr>
+<tr><td style="text-align:left">FCXN BGP Port</td><td style="text-align:left">BGP port of FCXN system</td></tr>
+<tr><td style="text-align:left">FCXN BGP ID</td><td style="text-align:left">BGP ID of FCXN system</td></tr>
+<tr><td style="text-align:left">Blackhole IP (RTHB)</td><td style="text-align:left">Blackhole IP address. Static route must be configured on the router that re-directs traffic destined to this IP to Null or discard interface.</td></tr>
+<tr><td style="text-align:left">Neighbor IP</td><td style="text-align:left">IP address of the neighboring router</td></tr>
+<tr><td style="text-align:left">Neighbor AS</td><td style="text-align:left">BGP ASN number of the neighboring router</td></tr>
+<tr><td style="text-align:left">BGP Hold Time</td><td style="text-align:left">BGP Hold Time interval of FCXN system</td></tr>
 <tr><td style="text-align:left">Mode</td><td style="text-align:left">Mitigation type: FlowSpec or RTBH</td></tr>
-<tr><td style="text-align:left">Status</td><td style="text-align:left">BGP connection status:<br />    <u><em>Listening /  Waiting for connection</em></u> - System FCXN   waiting for BGP  connection to be initiated by the router.    Not  connected: remote AS different than expected (LocalAS) – disconnected  . ASN number given is different from  that configured on the router.    <br />   <u><em>Disconnected by neighbor</em></u> – BGP  connection was interrupted by the router. After a few seconds the status  should change to “Waiting for connection”. <br />   <u><em>Disconnected</em></u> – BGP connection was  interrupted by the FCXN system (e.g. after changing the settings). After a few seconds the status should change to  “Waiting for connection”.    <br /> <u> <em>Disconnected: other error (report to Tech  Support)</em></u> – BGP connection interrupted for other reasons. After a few seconds the status should change to  “Waiting for connection”.  <br />  <u><em>Connected</em></u> – BGP connection established  with the router. The field may  contain additional information:    <br /> * actual HoldTime different than expected – Hold  Time parameter give in the settings is different from that configured on the  router.  <br />  * not  sending IPv4/IPv6 AS paths – Path option is enabled, but the router is not  configured to send BGP ASN tracks.   <br /> * exported IPv4/IPv6 AS paths ignored – Router  is configured to send BGP ASN tracks, but Paths option is disabled. Paths are  ignored.   <br /> * no FlowSpec  IPv4/IPv6 support – FlowSpec option is enabled, but the router does not  support this protocol.   <br /> * FlowSpec  IPv4/IPv6 support can be turned off – Router supports FlowSpec, but in FCXN  settings this option is disabled. FlowSpec rules are not sent to the router.</td></tr>
+<tr><td style="text-align:left">Status</td><td style="text-align:left">BGP connection status:<br /><u><em>Listening /  Waiting for connection</em></u> - System FCXN waiting for BGP connection to be initiated by the router. Not  connected: remote AS different than expected (LocalAS) – disconnected. ASN number given is different from that configured on the router.    <br /><u><em>Disconnected by neighbor</em></u> – BGP connection was interrupted by the router. After a few seconds the status should change to “Waiting for connection”. <br /><u><em>Disconnected</em></u> – BGP connection was interrupted by the FCXN system (e.g. after changing the settings). After a few seconds the status should change to  “Waiting for connection”.    <br /><u><em>Disconnected: other error (report to Tech  Support)</em></u> – BGP connection interrupted for other reasons. After a few seconds the status should change to  “Waiting for connection”.  <br /><u><em>Connected</em></u> – BGP connection established with the router. The field may contain additional information:    <br />* actual HoldTime different than expected – Hold Time parameter give in the settings is different from that configured on the router.  <br />* not sending IPv4/IPv6 AS paths – Path option is enabled, but the router is not configured to send BGP ASN tracks.   <br />* exported IPv4/IPv6 AS paths ignored – Router is configured to send BGP ASN tracks, but Paths option is disabled. Paths are ignored.   <br />* no FlowSpec IPv4/IPv6 support – FlowSpec option is enabled, but the router does not support this protocol.   <br />* FlowSpec IPv4/IPv6 support can be turned off – Router supports FlowSpec, but in FCXN settings this option is disabled. FlowSpec rules are not sent to the router.</td></tr>
 </tbody>
 </table>
 <p><em>Table 4.2.2 BGP FlowSpec configuration parameters</em></p>
 <p><em>5)</em>   <em>Click the ADD NEW button and configure router</em></p>
-<p><img src="/assets/image-20201113150507633.png" alt="image-20201113150507633"></p>
+<p><img src="assets/image-20201113150507633.png" alt="image-20201113150507633" style="zoom:80%;" /></p>
 <table>
 <thead>
 <tr><th>Configuration  Attribute</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>Neighbor  IP</td><td>IP address of the neighboring router</td></tr>
-<tr><td>Neighbor  AS</td><td>BGP ASN number of the neighboring router</td></tr>
-<tr><td>BGP  Hold Time</td><td>BGP Hold Time  interval of FCXN system</td></tr>
+<tr><td>Neighbor IP</td><td>IP address of the neighboring router</td></tr>
+<tr><td>Neighbor AS</td><td>BGP ASN number of the neighboring router</td></tr>
+<tr><td>BGP Hold Time</td><td>BGP Hold Time interval of FCXN system</td></tr>
 <tr><td>Paths</td><td>(Not implemented  yet)</td></tr>
 <tr><td>Mode</td><td>Mitigation type: FlowSpec, RTBH or None</td></tr>
 </tbody>
@@ -575,11 +575,11 @@ Neighbor </span>   V      AS MsgRcvd MsgSent  TblVer InQ OutQ Up/Down State/PfxR
 <tr><th>Dashboard  Name</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td>Overview</td><td>Visualization of general statistics on DDoS attacks</td></tr>
-<tr><td>Alerts</td><td>Table of DDoS start and end alerts <br />START: DDoS Attack  Detected – XND – launch of the attack  <br />STOP: DDoS Attack  Detected – XND – end of the attack</td></tr>
-<tr><td>Deep  Analysis</td><td>Table of the DDoS parameters from every minute of  the attack  Exceeded threshold parameters are highlighted in  red. In the lower part of the view there is an auxiliary table with threshold  configurations per Group, to make it easier to monitor the causes of generated  alerts.</td></tr>
-<tr><td>Alerts Drilldown</td><td>Trends monitoring of DDoS attacks in the context of  monitored DDoS parameters from each minute of the attack in the form of a  graph on which you can select the DDoS attack parameter.</td></tr>
-<tr><td>Statistics</td><td>Trends monitoring of DDoS attacks in the context of  monitored DDoS parameters from each minute in the form of a series of graphs,  which facilitate the analysis of DDoS attacks.</td></tr>
+<tr><td>Overview</td><td>Visualization of general statistics on DDoS attacks.</td></tr>
+<tr><td>Alerts</td><td>Table of DDoS start and end alerts. <br />START: DDoS Attack Detected – XND – launch of the attack. <br />STOP: DDoS Attack Detected – XND – end of the attack.</td></tr>
+<tr><td>Deep  Analysis</td><td>Table of the DDoS parameters from every minute of the attack. Exceeded threshold parameters are highlighted in red. In the lower part of the view there is an auxiliary table with threshold configurations per Group, to make it easier to monitor the causes of generated alerts.</td></tr>
+<tr><td>Alerts Drilldown</td><td>Trends monitoring of DDoS attacks in the context of monitored DDoS parameters from each minute of the attack in the form of a graph on which you can select the DDoS attack parameter.</td></tr>
+<tr><td>Statistics</td><td>Trends monitoring of DDoS attacks in the context of monitored DDoS parameters from each minute in the form of a series of graphs, which facilitate the analysis of DDoS attacks.</td></tr>
 <tr><td>Details</td><td>Details information on DDoS attacks i.e. source IP address, destination IP address, geographical location.</td></tr>
 </tbody>
 </table>

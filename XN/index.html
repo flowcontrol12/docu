@@ -61,8 +61,8 @@
 <p>A flow is defined as a unidirectional sequence of packets with some common properties that pass through a network device.  These collected flows are exported to an external device, the NetFlow collector.  Network flows are highly granular e.g.: flow records include details such as IP addresses, packet and byte counts, timestamps, Type of Service (ToS), application ports, input and output interfaces, etc.</p>
 </blockquote>
 <p>Source: <a href="https://www.ietf.org/rfc/rfc3954.txt">RFC3954</a></p>
-<p>According to the RFC3964 FlowControl solution works as a Flow Collector  which collects, analyzes and visualize the collected flows. Metrics are presented and examined from two perspectives: Network and Security giving the operator valuable input into network/application problems analysis as well as security threats hunting.</p>
-<p><img src="/assets/sycope_flowcontrol_1_5.jpg" alt="sycope_flowcontrol_1_5"></p>
+<p>According to the RFC3964 FlowControl solution works as a Flow Collector which collects, analyzes and visualize the collected flows. Metrics are presented and examined from two perspectives: Network and Security giving the operator valuable input into network/application problems analysis as well as security threats hunting.</p>
+<p><img src="assets/sycope_flowcontrol_1_5.jpg" alt="sycope_flowcontrol_1_5" style="zoom: 67%;" /></p>
 <p>FlowControl supports the following flow protocol data sources:</p>
 <ul>
 <li><p>NetFlow</p></li>
@@ -74,11 +74,11 @@
 <p><strong>Note:</strong> Specific options such as NSEL (Cisco ASA) or different sampling multipliers per device must be additionally configured. System uses SNMP v1/2/3 to query devices.</p>
 </blockquote>
 <h2><a class="anchor" aria-hidden="true" id="1-overview"></a><a href="#1-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Overview</h2>
-<p>The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (<strong>XN, XNS, XND, SYS</strong>) and the icons in the top right corner <img src="/assets/image-20201004161928752.png" alt="image-20201004161928752"> (<strong>Configuration options</strong>). They are all vital components for working with the system, effective problem identification and data mining.</p>
-<h3><a class="anchor" aria-hidden="true" id="11-main"></a><a href="#11-main" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1. Main</h3>
-<p>On the left side there are four main sections: XN, XNS, XND and SYS. Each section consists of a menu where you will find desired information about collected data and system configuration. The main section works in hide/reveal mode. In order to show full names of the menu components, minority and majority please click on the minority sign icons ( &lt; ) located at the top left corner. In order to hide the menu, please click the minority sign icons ( &gt; ).</p>
-<p><img src="/assets/image-20201119102705940.png" alt="image-20201119102705940"></p>
-<p><img src="/assets/image-20201119103556952.png" alt="image-20201119103556952"></p>
+<p>The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (<strong>XN, XNS, XND, XNR, SYS</strong>) and the icons in the top right corner <img src="/assets/image-20201004161928752.png" alt="image-20201004161928752"> (<strong>Configuration options</strong>). They are all vital components for working with the system, effective problem identification and data mining.</p>
+<h3><a class="anchor" aria-hidden="true" id="11-main"></a><a href="#11-main" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1 Main</h3>
+<p>On the left side there are four main sections: XN, XNS, XND, XNRand SYS. Each section consists of a menu where you will find desired information about collected data and system configuration. The main section works in hide/reveal mode. In order to show full names of the menu components, minority and majority please click on the minority sign icons ( &lt; ) located at the top left corner. In order to hide the menu, please click the minority sign icons ( &gt; ).</p>
+<p><img src="assets/image-20201119102705940.png" alt="image-20201119102705940" style="zoom: 67%;" /></p>
+<p><img src="assets/image-20201119103556952.png" alt="image-20201119103556952" style="zoom: 80%;" /></p>
 <p>Below is presented table with general description of what can be found in each section. Elements of the main menu were emphasized, while elements of the submenu were written in plain text.</p>
 <table>
 <thead>
@@ -86,21 +86,21 @@
 </thead>
 <tbody>
 <tr><td><img src="/assets/image-20201031140331903.png" alt="image-20201031140331903">  <u><b> NOC </b></u></td><td>General overview of network infrastructure parameters</td></tr>
-<tr><td><img src="/assets/image-20201004125605987.png" alt="image-20201004125605987">  <u><b> TOPs </b></u></td><td>Information about  top talkers in the network.</td></tr>
-<tr><td><img src="/assets/image-20200911120410391.png" alt="image-20200911120410391">  <u><b> RAW Flows </b></u></td><td>Detailed information  about  traffic .</td></tr>
-<tr><td><img src="/assets/image-20201004153055808.png" alt="image-20201004153055808">   <strong>Raw Data</strong></td><td>Extensive  information about every flow in the traffic.</td></tr>
+<tr><td><img src="/assets/image-20201004125605987.png" alt="image-20201004125605987">  <u><b> TOPs </b></u></td><td>Information about top talkers in the network.</td></tr>
+<tr><td><img src="/assets/image-20200911120410391.png" alt="image-20200911120410391">  <u><b> RAW Flows </b></u></td><td>Detailed information about traffic.</td></tr>
+<tr><td><img src="/assets/image-20201004153055808.png" alt="image-20201004153055808">   <strong>Raw Data</strong></td><td>Extensive information about every flow in the traffic.</td></tr>
 <tr><td><img src="/assets/image-20201004153137592.png" alt="image-20201004153137592">   **ASA Devices **</td><td>Detailed information about flows from ASA Devices.</td></tr>
 <tr><td><img src="/assets/image-20200911120535728.png" alt="image-20200911120535728">   <u><strong>Deduplicated Flows</strong></u></td><td>Information about deduplicated flows.</td></tr>
 <tr><td><img src="/assets/image-20201004153258941.png" alt="image-20201004153258941">   <strong>Traffic</strong></td><td>Network traffic based on deduplicated flows.</td></tr>
 <tr><td><strong><img src="/assets/image-20200911120312792.png" alt="image-20200911120312792">   Applications</strong></td><td>Network traffic analysis in view of application based on deduplicated flows.</td></tr>
-<tr><td><img src="/assets/image-20201004153410486.png" alt="image-20201004153410486">  <strong>Geolocalization</strong></td><td>Maps with various  geolocations.</td></tr>
+<tr><td><img src="/assets/image-20201004153410486.png" alt="image-20201004153410486">  <strong>Geolocalization</strong></td><td>Maps with various geolocations.</td></tr>
 <tr><td><img src="/assets/image-20201004153449636.png" alt="image-20201004153449636"> <b> Groups </b></td><td>Flows organized into various groups, e.g. business roles, location.</td></tr>
-<tr><td><img src="/assets/image-20201004153533495-1601822806926.png" alt="image-20201004153533495">   <strong>AS Names</strong></td><td>Flows organized  according to AS Names.</td></tr>
+<tr><td><img src="/assets/image-20201004153533495-1601822806926.png" alt="image-20201004153533495">   <strong>AS Names</strong></td><td>Flows organized according to AS Names.</td></tr>
 <tr><td><img src="/assets/image-20200911120656376.png" alt="image-20200911120656376">   <u><strong>Long Term Data</strong></u></td><td>Aggregated date from previous time periods.</td></tr>
-<tr><td><img src="/assets/image-20201004153641952.png" alt="image-20201004153641952">  <strong>Last Day</strong></td><td>Aggregated data from  last day.</td></tr>
-<tr><td><img src="/assets/image-20201004153740964.png" alt="image-20201004153740964">  <strong>Last Week</strong></td><td>Aggregated data from  last week.</td></tr>
-<tr><td><img src="/assets/image-20201004153818558.png" alt="image-20201004153818558">  <strong>Last month</strong></td><td>Aggregate data from  last month</td></tr>
-<tr><td><img src="/assets/image-20201004154607022.png" alt="image-20201004154607022"><u><b>  Alerts  </b></u></td><td>Information and  details about alerts that occurred in the network.</td></tr>
+<tr><td><img src="/assets/image-20201004153641952.png" alt="image-20201004153641952">  <strong>Last Day</strong></td><td>Aggregated data from last day.</td></tr>
+<tr><td><img src="/assets/image-20201004153740964.png" alt="image-20201004153740964">  <strong>Last Week</strong></td><td>Aggregated data from last week.</td></tr>
+<tr><td><img src="/assets/image-20201004153818558.png" alt="image-20201004153818558">  <strong>Last month</strong></td><td>Aggregate data from last month</td></tr>
+<tr><td><img src="/assets/image-20201004154607022.png" alt="image-20201004154607022"><u><b>  Alerts  </b></u></td><td>Information and details about alerts that occurred in the network.</td></tr>
 </tbody>
 </table>
 <blockquote>
@@ -112,7 +112,7 @@
 <tr><th><strong>FlowControl XNS</strong></th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><img src="/assets/image-20201004154834424.png" alt="image-20201004154834424">  <u><b> SOC </b></u></td><td>General overview of security aspects of  the network.</td></tr>
+<tr><td><img src="/assets/image-20201004154834424.png" alt="image-20201004154834424">  <u><b> SOC </b></u></td><td>General overview of security aspects of the network.</td></tr>
 <tr><td><img src="/assets/image-20201004154911046.png" alt="image-20201004154911046">  <u><b> KPIs </b></u></td><td>General overview of the basic values of alerts.</td></tr>
 <tr><td><img src="/assets/image-20200911121159510.png" alt="image-20200911121159510">   <u><strong>Use Cases</strong></u></td><td>Monitoring scenarios of IT security threat.</td></tr>
 <tr><td><img src="/assets/image-20201004154940655.png" alt="image-20201004154940655">  <b> Threat Analysis </b></td><td>Information on all threats.</td></tr>
@@ -139,26 +139,35 @@
 <tr><th><strong>System Section</strong></th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><img src="/assets/image-20201119104559571.png" alt="image-20201119104559571"> <strong>Audit Logs</strong></td><td>Information on users logins</td></tr>
-<tr><td><img src="/assets/image-20201004155258797.png" alt="image-20201004155258797"><b> Flow  Stats </b></td><td>General statistics  about raw and aggregated flows.</td></tr>
+<tr><td><img src="/assets/image-20201119104559571.png" alt="image-20201119104559571"> <strong>Audit Logs</strong></td><td>Information on users logins.</td></tr>
+<tr><td><img src="/assets/image-20201004155258797.png" alt="image-20201004155258797"><b> Flow  Stats </b></td><td>General statistics about raw and aggregated flows.</td></tr>
 <tr><td><img src="/assets/image-20201004155339267.png" alt="image-20201004155339267"><b> System  </b></td><td>Disk utilization information.</td></tr>
 </tbody>
 </table>
 <h3><a class="anchor" aria-hidden="true" id="12-configuration"></a><a href="#12-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2 Configuration</h3>
-<p>On the right-hand side of the system there are three drop-down menus and one switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 80%;" />. The switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 80%;" /> is used to hide the date selection and overload bar. The first menu, marked with this icon  <img src="/assets/image-20201004161928752.png" alt="image-20201004161928752"> ,is the settings menu available only for admin accounts. This section is described in the <em>Administration Setting</em> paragraph. The second Second drop-down menu, marked with <img src="/assets/image-20201004162213351.png" alt="image-20201004162213351"> , is available for all users. Things that can be found in this section are :</p>
+<p>On the right-hand side of the system there are three drop-down menus and one switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 80%;" />. The switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 80%;" /> is used to hide the date selection and overload bar. The first menu, marked with this icon  <img src="/assets/image-20201004161928752.png" alt="image-20201004161928752">, is the settings menu available only for admin accounts. This section is described in the <em>Administration Settings</em> paragraph. The second drop-down menu, marked with <img src="/assets/image-20201004162213351.png" alt="image-20201004162213351">, is available for all users. Things that can be found in this section are :</p>
 <ul>
 <li>License Info,</li>
 <li>User Guide,</li>
 <li>Documentation,</li>
 <li>About.</li>
 </ul>
-<p>The license is delivered as a text file . To activate the license, the text from the delivered file must be copied into  to the field “Add License” [settings menu/config/license] as below.</p>
-<p><img src="/assets/image-20201031132708403.png" alt="image-20201031132708403"></p>
+<p>The license is delivered as a text file. To activate the license, the text from the delivered file must be copied into to the field “Add License” [settings menu/config/license] as below.</p>
+<p><img src="/assets/image-20210121134514856.png" alt="image-20210121134514856"></p>
 <blockquote>
 <p><strong>Important note:</strong></p>
 <p><strong>The standard license includes one administrator account and two user accounts.</strong></p>
 </blockquote>
-<p>The user guide will redirect users to the documentation stored on the system. The about section system will take users to the general web page with information about  <a href="https://www.passus.com/produkty/flowcontrol-xn">FlowControl</a>.</p>
+<blockquote>
+<p><strong>Notice:</strong></p>
+<p>If there is <strong>no license</strong> in the system it is not possible to:</p>
+<ul>
+<li>add user,</li>
+<li>update software,</li>
+<li>collect Netflow.</li>
+</ul>
+</blockquote>
+<p>The user guide will redirect users to the documentation stored on the system. The about section system will take users to the general web page with information about <a href="https://www.sycope.com/">https://www.sycope.com/</a>.</p>
 <p><img src="/assets/image-20201004162331465.png" alt="image-20201004162331465">The third drop down menu, available for all users. In this menu the following things can be found:</p>
 <ul>
 <li><p>Profile</p>
@@ -181,86 +190,238 @@
 <li>NOTIFICATION -  define what would be the alert delivery mechanism (LOG/SYSLOG/SNMP TRAP or E-MAIL)</li>
 </ul>
 <p>This system presents all the alerts in a list form where each individual alert can be enabled/disabled, modified or eliminated.</p>
-<p><img src="/assets/Alert_List.png" alt="Alert_list"></p>
+<p><img src="assets/image-20210121124334831.png" alt="image-20210121124334831" style="zoom:80%;" /></p>
 <h3><a class="anchor" aria-hidden="true" id="132-config"></a><a href="#132-config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2 Config</h3>
 <p>In the <strong>Config</strong> section users can configure main system aspects. Options available here are:</p>
-<p><img src="/assets/image-20201031133324939.png" alt="image-20201031133324939"></p>
+<p><img src="/assets/image-20210121125536344.png" alt="image-20210121125536344"></p>
 <ul>
-<li>SYSTEM  -  Basic network configuration: Hostname, DNS and IP address, DHCP and Gateway.</li>
-<li>TIME  - Manual or NTP server configuration.</li>
-<li>USERS  - System user configuration and role assignment.</li>
-<li>NOTIFICATIONS - Email, Syslog and SNMP trap configuration.</li>
-<li>SNMP - SNMP pooling configuration (supported options v1/v2c/v3).</li>
-<li>NETFLOW - Configuration of NetFlow, sFlow, IPFIX,NSEL parameters.</li>
-<li>LICENSE - License management</li>
-<li>OPERATIONS - Application and system restart/shutdown options .</li>
-<li>UPDATE - System update.</li>
+<li><p>SYSTEM  -  Basic network configuration: Hostname, DNS and IP address, DHCP and Gateway.</p></li>
+<li><p>TIME  - Manual or NTP server configuration.</p>
+<p><img src="/assets/image-20210121144709235.png" alt="image-20210121144709235"></p></li>
+</ul>
+<ul>
+<li><p>USERS  - System user configuration and role assignment.</p>
+<p><img src="/assets/image-20210121145153314.png" alt="image-20210121145153314"></p></li>
+</ul>
+<ul>
+<li><p>NOTIFICATIONS - Email, Syslog and SNMP trap configuration.</p>
+<p><img src="/assets/image-20210121145510157.png" alt="image-20210121145510157"></p></li>
+<li><p>SNMP - SNMP pooling configuration (supported options v1/v2c/v3).</p>
+<p><img src="/assets/image-20210121145554322.png" alt="image-20210121145554322"></p></li>
+</ul>
+<ul>
+<li><p>NETFLOW - Configuration of NetFlow, sFlow, IPFIX, NSEL parameters.</p>
+<p><img src="/assets/image-20210208115936392.png" alt="image-20210208115936392"></p></li>
+</ul>
+<ul>
+<li><p>LICENSE - License management.</p>
+<p><img src="/assets/image-20210208120104307.png" alt="image-20210208120104307"></p></li>
+</ul>
+<ul>
+<li><p>OPERATIONS - Application and system restart/shutdown options.</p>
+<p><img src="/assets/image-20210208115837704.png" alt="image-20210208115837704"></p></li>
+</ul>
+<ul>
+<li>ADMINISTRATION - System utilities such as update, backup, restore, logs.</li>
+</ul>
+<p>There are 4 processes: Update, Backup, Restore, and Logs. All processes are dependant. Only one process can be completed at a time and if one process executes it blocks the others. In case, the system support expires, these processes will be blocked.</p>
+<p>When you start the process, its status appears in the pane and when you refresh the browser during the process, you get a popup with a message about its status.</p>
+<ul>
+<li><p>ADMINISTRATION-UPDATE - This command is used to make an update to the latest version of the system.</p>
+<p><img src="/assets/image-20210121154437225.png" alt="image-20210121154437225"></p></li>
+</ul>
+<ul>
+<li><p>ADMINISTRATION-BACKUP - This command is used to generate backup.</p>
+<p><img src="/assets/image-20210121154517912.png" alt="image-20210121154517912"></p>
+<p><img src="/assets/image-20210209170741341.png" alt="image-20210209170741341"></p></li>
+</ul>
+<ul>
+<li><p>ADMINISTRATION-RESTORE - This command is used to restore the backup.</p>
+<p><img src="/assets/image-20210121154548488.png" alt="image-20210121154548488"><img src="/assets/image-20210209170209696.png" alt="image-20210209170209696"></p>
+<p>After loading the backup file, we get a list of elements we can restore.</p>
+<p><img src="/assets/image-20210209170406095.png" alt="image-20210209170406095"></p>
+<p>Backup restore also restores views, dashboards and bookmarks.</p></li>
+<li><p>ADMINISTRATION-LOGS - This command is used to generate logs.</p>
+<p><img src="/assets/image-20210121154847048.png" alt="image-20210121154847048"></p>
+<p>Two types of log collections can be generated: Basic and Support Logs. Basic type log is saved to a regular ZIP file used for basic diagnosis like: checking the execution of the backup, restore, logs, update commands or checking the logs engine. A file with the collected logs is available for download through the GUI as shown in the figure above.</p>
+<p>Support Logs option is used to generate logs for support team.</p></li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="133-ddos"></a><a href="#133-ddos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.3 DDoS</h3>
 <p><img src="/assets/image-20201031133439696.png" alt="image-20201031133439696"></p>
 <ul>
-<li>BASIC CONFIGURATION</li>
-<li>ENGINE PARAMETERS</li>
-<li>FLOWSPEC BGP</li>
-<li>ACTIVEATTACKS</li>
+<li>BASIC CONFIGURATION.</li>
+<li>ENGINE PARAMETERS.</li>
+<li>FLOWSPEC BGP.</li>
+<li>ACTIVE ATTACKS.</li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="134-security"></a><a href="#134-security" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.4 Security</h3>
 <p>In the <strong>Security</strong> section the system allows users to review and manage security rules created according to the MITRE ATT&amp;CK methodology.</p>
 <blockquote>
 <p>MITRE ATT&amp;CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.</p>
 </blockquote>
-<p><img src="/assets/ATTCK_use_Cases.png" alt="ATT&amp;CK use cases"></p>
+<p><img src="assets/image-20210208121517167.png" alt="image-20210208121517167" style="zoom: 50%;" /></p>
 <p>Source: <a href="https://attack.mitre.org/">Mitre</a></p>
 <p>Configuration of the security ruleset is based on three sections:</p>
 <ul>
-<li>THREAT DETECTION - Identification of different threat patterns based on proprietary Passus created rules (this section allows rule set modification but no rule adding),</li>
+<li>THREAT DETECTION - Identification of different threat patterns based on proprietary Sycope created rules (this section allows rule set modification but no rule adding).</li>
 </ul>
-<p><img src="assets/image-20201031133845493.png" alt="image-20201031133845493" style="zoom:200%;" /></p>
+<p><img src="/assets/image-20210209165334239.png" alt="image-20210209165334239"></p>
+<p>The table below includes all threat patterns based on proprietary Sycope created rules.</p>
+<table>
+<thead>
+<tr><th>NAME</th><th>SCORE</th><th>Description</th><th>MITRE TACTIC</th><th>MITRE Techniqe</th></tr>
+</thead>
+<tbody>
+<tr><td>mal flows ratios</td><td>4</td><td>A rule detects abnormal number of flows per Source &amp; Destination IPs pairs within 1 minute. The reasons for this activity can be worms, scans or network abuses. For the rule to work correctly, configure the Flow Count attribute and Whitelist groups.</td><td>Discovery</td><td>System Network Configuration Discovery</td></tr>
+<tr><td>Brute Force Attack</td><td>5</td><td>A rule detects a brute force/dictionary attack on specific applications (FTP, HTTPS, HTTP, IMAP, RDP, SSH, IMAP3, LDAP, LDAPS, MYSQL, POP3, POP3S, POSTGRESQL, SMTP, TELNET, TFTP, ASTERISK, VNC, SNMP, MSSQL, SMB, ICQ, NNTP, PCANYWHERE, ORACLELISTENER, SVN, XMPP, SIP, RADMIN2, REXEC, RLOGIN, WS - Management and PowerShell remoting via HTTP, WS - Management and PowerShell remoting via HTTPS, RPCAP, NetBIOS, Kerberos). For the rule to work correctly, configure the Port Threshold List in the format Flows_Threshold\</td><td>Port\</td><td>Service_Name, and Whitelist groups.</td><td>Credential Access</td><td>Brute Force</td></tr>
+<tr><td>Cleartext Application (Ext-&gt;Ext)</td><td>6</td><td>A rule detects connection to a clear text application such as for example FTP, Telnet, POP3, IMAP, SMTP, IMAP, HTTP from External to External host. Many regulations, such as for example EU's General Data Protection Regulation (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive (e.g. passwords, credit card numbers, health records, personal information and business secrets data) in plain text or unencrypted protocols. For the rule to work correctly, configure the Whitelist groups.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Cleartext Application (Ext-&gt;Int)</td><td>6</td><td>A rule detects connection to a clear text application such as for example FTP, Telnet, POP3, IMAP, SMTP, IMAP, HTTP from External to Internal host. Many regulations, such as for example EU's General Data Protection Regulation (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive (e.g. passwords, credit card numbers, health records, personal information and business secrets data) in plain text or unencrypted protocols. For the rule to work correctly, configure the Whitelist groups.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Cleartext Application (Int-&gt;Ext)</td><td>6</td><td>A rule detects connection to a clear text application such as for example FTP, Telnet, POP3, IMAP, SMTP, IMAP, HTTP from Internal to External host. Many regulations, such as for example EU's General Data Protection Regulation (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive (e.g. passwords, credit card numbers, health records, personal information and business secrets data) in plain text or unencrypted protocols. For the rule to work correctly, configure the Whitelist groups.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Cleartext Application (Int-&gt;Int)</td><td>6</td><td>A rule detects connection to a clear text application such as for example FTP, Telnet, POP3, IMAP, SMTP, IMAP, HTTP from Internal to Internal host. Many regulations, such as for example EU's General Data Protection Regulation (GDPR) or PCI Data Security Standard (PCI DSS) prohibit sending sensitive (e.g. passwords, credit card numbers, health records, personal information and business secrets data) in plain text or unencrypted protocols. For the rule to work correctly, configure the Whitelist groups.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>DDoS Attack Detected</td><td>9</td><td>A rule detects DDoS attack based on traffic volume from multiple IP addresses to a single destination IP on the same port. The attack involves saturating network resources causing disruption of normal traffic on the target server. For the rule to work correctly, configure the Counter Threshold and Whitelist groups.</td><td>Impact</td><td>Endpoint Denial of Service</td></tr>
+<tr><td>DDoS DNS Amplification Attack</td><td>9</td><td>A rule detects DDoS DNS Amplification Attack based on network traffic statistics (Signature 1). To create heavy traffic, an attacker send be sends a request in a way that generates the largest possible response from DNS name resolution services. As a result, the target receives reinforcement of the initial attacker's traffic, and their network is clogged with false traffic, which causes denial of service. For the rule to work correctly, configure the following attributes: Flow Count and PPF (Packets Per Flow).</td><td>Impact</td><td>Endpoint Denial of Service</td></tr>
+<tr><td>Horizontal Scan</td><td>4</td><td>A rule detects a Horizontal Scan attack. The Horizontal Scan is a scan against a group of IPs for a single port. For the rule to work correctly, configure a Port Threshold List in a format Flows_Threshold\</td><td>Port\</td><td>Service and Whitelist groups.</td><td>Discovery</td><td>Network Service Scanning</td></tr>
+<tr><td>Unauthorized Internet Access</td><td>4</td><td>A rule detects access to Internet from non-permitted group based on should be defined zones. This type of activity may indicate on security policy violation. For the rule to work correctly, configure the Permitted Groups.</td><td>Discovery</td><td>Permission Groups Discovery</td></tr>
+<tr><td>Unauthorized DHCP Activity</td><td>4</td><td>A rule detects traffic from unauthorized DHCP server. For the rule to work correctly, configure the DHCP SERVERS groups.</td><td>Discovery</td><td>System Network Configuration Discovery</td></tr>
+<tr><td>Unauthorized DNS Activity</td><td>4</td><td>A rule detects traffic from internal host to unauthorized DNS server. For the rule to work correctly, configure the DNS SERVERS groups.</td><td>Discovery</td><td>System Network Configuration Discovery</td></tr>
+<tr><td>Vertical Scan Detected</td><td>4</td><td>A rule detects a Vertical Scan attack. A Vertical Scan is a scan against a single IP for multiple ports. The number of ports is configurable in the &quot;# of ports scanned threshold&quot; parameter. For the rule to work correctly configure the Whitelist groups as well.</td><td>Discovery</td><td>Network Service Scanning</td></tr>
+<tr><td>DoS Attack Detected</td><td>10</td><td>A rule detects DoS attack based on traffic volume from one IP address to single IP on specific port. For the rule to work correctly, configure the Port Threshold List in a format: Flows_Threshold\</td><td>Port\</td><td>Service and Whitelist groups.</td><td>Impact</td><td>Endpoint Denial of Service</td></tr>
+<tr><td>DoS - ICMP Flood</td><td>10</td><td>A rule detects the DoS ICMP attack. An attacker can send a large number of ICMP packets to consume all available bandwidth of an victim's host.;For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per Minute) and Whitelist groups.</td><td>Impact</td><td>Endpoint Denial of Service</td></tr>
+<tr><td>DoS - TCP Flood</td><td>10</td><td>A rule detects TCP DoS attack. An attacker can send a large number of TCP packets to one or several ports of the victim, which eventually renders the attacked host unable to process the incoming packets. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per Minute) and Whitelist groups.</td><td>Impact</td><td>Endpoint Denial of Service</td></tr>
+<tr><td>DoS - UDP Flood</td><td>10</td><td>A rule detects the DoS UDP attack. An attacker can send a large number of UDP packets to consume all available bandwidth of the victim's host. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow), PPM (Packets Per Minute) and Whitelist groups.</td><td>Impact</td><td>Endpoint Denial of Service</td></tr>
+<tr><td>Abnormal DNS Query Limit</td><td>7</td><td>A rule detects anomaly in DNS protocol regarding abnormal query volume traffic. This rule will be triggered after detecting many DNS queries from the same IP. This activity may indicate on connections to C2 master severs. For the rule to work correctly, configure the Query Limit and Whitelist groups.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>Abnormal DNS Response Limit</td><td>7</td><td>A rule detects anomaly in DNS protocol regarding abnormal response volume traffic. This rule will be triggered after detecting many DNS queries to the same IP. This activity may indicate on malware activity over DNS. For the rule to work correctly, configure the Response Limit and Whitelist groups.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>DNS Transfer Limit</td><td>7</td><td>A rule detects anomaly in DNS protocol regarding abnormal query volume traffic. This activity may indicate on connections to C2 master severs. For the rule to work correctly, configure the Transfer Limit and Whitelist groups.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>High Data Transfer (Int-&gt;Ext)</td><td>7</td><td>A rule detects a high data transfer from internal to external host within 1 minute. For the rule work correctly, configure the Low and High Thresholds, which are given in Megabytes.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>High Data Transfer (Ext-&gt;Int)</td><td>7</td><td>A rule detects a high data transfer from external to internal host within 1 min. For the rule work correctly, configure the Low and High Thresholds, which are given in Megabytes.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>High Data Transfer (Int-&gt;Int)</td><td>7</td><td>A rule detects a high data transfer from internal to internal host within 1 min. Thresholds are given in Megabytes.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>Unusually High Data Transfer (Int-&gt;Ext)</td><td>7</td><td>A rule detects a high data transfer from internal to external host within 1 minute. A reasons for this type of activity may be unauthorized data exfiltration outside the organization. For the rule work correctly, configure the Low Threshold which is given in Megabytes.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>Unusually High Data Transfer (Ext-&gt;Int)</td><td>7</td><td>A rule detects a high data transfer from external to internal host within 1 minute. For the rule work correctly, configure the Low Threshold which is given in Megabytes.;</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>P2P Activity</td><td>2</td><td>A rule detects P2P traffic based on port analysis. This activity may indicate on policy violation. For the rule to work correctly, configure the P2P Port Ranges in a format StartPort,EndPort,protocol,P2P_Name,Description and a Whitelist groups.</td><td>Initial Access</td><td>Drive-by Compromise</td></tr>
+<tr><td>Large Size Protocol Anomaly</td><td>7</td><td>A rule detects packets of known protocols (ICMP, UDP, TCP) with large size which may indicate on protocol attacks.;For the rule to work correctly, configure the following attributes: Flow Count, and BPF (Bytes per Flow) for each IP Protocol.</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>SPAM (Ext-&gt;Int)</td><td>7</td><td>A rule detects a SPAM traffic from External to Internal host. An external host is sending excessive email traffic to the organization. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow).</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>SPAM (Ext-&gt;Ext)</td><td>7</td><td>A rule detects a SPAM traffic between External hosts.;For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow).</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>SPAM (Int-&gt;Ext)</td><td>7</td><td>A rule detects a SPAM traffic from Internal to External host. An internal host may be infected with a spam malware. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow).</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>SPAM (Int-&gt;Int)</td><td>7</td><td>A rule detects a SPAM traffic between Internal hosts. An internal host may be infected with a spam malware. For the rule to work correctly, configure the following attributes: Flow Count, PPF (Packets per Flow).</td><td>Exfiltration</td><td>Data Transfer Size Limits</td></tr>
+<tr><td>Suspicious Port BL</td><td>6</td><td>A rule detects traffic to a single host on suspicious ports. Suspicious ports are all ports defined in Suspicious Ports list. For the rule to work correctly, update the list of Suspicious Ports and configure Flow Count and Whitelist attributes.</td><td>Command And Control</td><td>Non-Standard Port</td></tr>
+<tr><td>Suspicious Port WL</td><td>6</td><td>A rule detects traffic to a single host on suspicious ports. Suspicious ports are all ports not defined on the Permitted Ports list. For the rule to work correctly, update the list of permitted ports and configure Flow Count and Whitelist attributes.</td><td>Command And Control</td><td>Non-Standard Port</td></tr>
+<tr><td>Unauthorized LLMNR/NetBIOS Activity</td><td>5</td><td>A rule detects unauthorized LLMNR/NetBIOS traffic.;Link-Local Multicast Name Resolution (LLMNR) and NetBIOS Name Service (NBT-NS) are Microsoft Windows components that serve as alternate methods of host identification. Attacker may spoof an authoritative source for name resolution on a victim network by responding to LLMNR (UDP 5355)/NBT-NS (UDP 137) traffic as if they know the identity of the requested host, effectively poisoning the service so that the victims will communicate with the adversary controlled system. More details: MITRE T1171. For the rule to work correctly, configure the LLMNRAndNetBIOS Group.</td><td>Credential Access</td><td>LLMNR/NBT-NS Poisoning and Relay</td></tr>
+<tr><td>Unauthorized MAIL Activity</td><td>4</td><td>A rule detects traffic from unauthorized Mail Server. For the rule to work correctly, configure the Mail Servers Whitelist groups.</td><td>Discovery</td><td>System Network Configuration Discovery</td></tr>
+<tr><td>Unauthorized RDP Connection</td><td>5</td><td>A rule detects unauthorized RDP connection attempts from outside the organization. An attacker may connect to a remote system over RDP to expand access if the service is enabled. For the rule to work correctly, configure the Authorized RDP Servers groups.</td><td>Lateral Movement</td><td>Remote Desktop Protocol</td></tr>
+<tr><td>Virus Outbreak</td><td>4</td><td>A rule detects a potential virus outbreak based on abnormal activity between hosts from Workstation group. For the rule to work correctly, configure the following attributes: Uniqe Hosts Count and Workstation group. For the rule to work correctly, configure the Port Threshold List in the format Flows_Threshold\</td><td>Port\</td><td>Service_Name, and Whitelist groups.</td><td>Discovery</td><td>Network Service Scanning</td></tr>
+</tbody>
+</table>
 <ul>
-<li><p>EXTERNAL THREAT INTELLIGENCE - Identification of different threat patterns utilizing several external threat feeds (this section allows rule set modification but no rule adding)</p>
-<p><img src="assets/image-20201031134014172.png" alt="image-20201031134014172" style="zoom:200%;" /></p></li>
-<li><p>INTERNAL THREAT INTELLIGENCE - Identification of the custom threat patterns configured by users.</p>
-<p><img src="assets/image-20201031134155829.png" alt="image-20201031134155829" style="zoom:200%;" /></p></li>
+<li>EXTERNAL THREAT INTELLIGENCE - Identification of different threat patterns utilizing several external threat feeds (this section allows rule set modification but no rule adding).</li>
 </ul>
+<p><img src="/assets/image-20210209165546899.png" alt="image-20210209165546899"></p>
+<p>The table below includes all threat patterns based on external threat feeds.</p>
+<table>
+<thead>
+<tr><th>Feed id</th><th>Name</th><th>Category</th><th>Score</th><th>Description</th><th>MITRE Tactic</th><th>MITRE Techniqe</th></tr>
+</thead>
+<tbody>
+<tr><td>Spys.me_Proxy</td><td>Proxy</td><td>Proxy</td><td>4</td><td>The alert is triggered as a result of detection traffic with Open Proxy IP based on Spys's feed.</td><td>Command And Control</td><td>Proxy</td></tr>
+<tr><td>SSLBL_Malicious</td><td>Suspicious IP</td><td>Malicious</td><td>4</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Abuse.ch's feed.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Feodotracker_Feodo</td><td>Suspicious IP</td><td>Feodo</td><td>5</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Abuse.ch's feed. Feodo also known as Cridex or Bugat is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Alienvault_Malware</td><td>Suspicious IP</td><td>Malware</td><td>8</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Alienvault's feed.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Badips_Malicious</td><td>Suspicious IP</td><td>Malicious</td><td>4</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Badips's feed. Badips.com is a community based IP blacklist service.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Blocklist.de_Malware</td><td>Suspicious IP</td><td>Malware</td><td>4</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Blocklist's feed. The <a href="http://www.blocklist.de">www.blocklist.de</a> is a free and voluntary service provided by a Fraud/Abuse-specialist, whose servers are often attacked via SSH-, Mail-Login-, FTP-, Webserver- and other services.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>CINS_Malicious</td><td>Suspicious IP</td><td>Malicious</td><td>6</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on CINS's feed. The CINS Army list consists of IP addresses that meet one of two basic criteria: 1) The IP's recent Rogue Packet score factor is very poor or 2) The IP has tripped a designated number of 'trusted' alerts across a given number of our Sentinels deployed around the world.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Charles_SSH</td><td>Suspicious IP</td><td>SSH BL</td><td>4</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Charles's feed. The feed contains IP addresses launching SSH dictionary attacks.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Cybercrime-tracker.net_Malware</td><td>Suspicious IP</td><td>Malware</td><td>5</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Cybercrime-tracker's feed.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>TI_Dan_TOR</td><td>TOR Activity</td><td>TOR</td><td>7</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Dan's feed.</td><td>Command And Control</td><td>Proxy</td></tr>
+<tr><td>COVID_03</td><td>Suspicious IP</td><td>Malware</td><td>7</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on MalwarePatrolExport's feed.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>COVID_02</td><td>Suspicious IP</td><td>Malware</td><td>7</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Managedsentinel's feed.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>COVID_01</td><td>Suspicious IP</td><td>Malware</td><td>7</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Parthdmaniar's feed.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>RogueDNS</td><td>Suspicious IP</td><td>Rogue DNS</td><td>5</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on RogueDNS's feed.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Talos_Intel</td><td>Suspicious IP</td><td>Malware</td><td>9</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Talos's sample feed. Talos's IP and Domain Data Center is the world's most comprehensive real-time threat detection network. The data is made up of daily security intelligence across millions of deployed web, email, firewall and IPS appliances. Talos detects and correlates threats in real time using the largest threat detection network in the world spanning web requests, emails, malware samples, open-source data sets, endpoint intelligence, and network intrusions. The free Talos feed contains an incomplete number of malicious IP addresses</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Torstatus.rueckgr.at_TOR</td><td>TOR Activity</td><td>TOR</td><td>7</td><td>The alert is triggered as a result of detection traffic with blacklisted IP based on Torstatus's feed.</td><td>Command And Control</td><td>Proxy</td></tr>
+<tr><td>Botscout_Bot</td><td>Suspicious IP</td><td>Bot</td><td>5</td><td>The alert is triggered as a result of detection traffic with suspicious IP based on Botscout's feed. BotScout helps prevent automated web scripts known as bots, from registering on forums, polluting databases, spreading spam, and abusing forms on web sites. They do this by tracking the names, IPs, and email addresses that bots use and logging them as unique signatures for future reference.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+</tbody>
+</table>
+<p>The system retrieves the feeds from the external sources at intervals of hour.</p>
+<ul>
+<li>INTERNAL THREAT INTELLIGENCE - Identification of the custom threat patterns configured by users.</li>
+</ul>
+<p><img src="/assets/image-20210209165653296.png" alt="image-20210209165653296"></p>
+<p>The table below includes examples of the custom threat patterns configured by users.</p>
+<table>
+<thead>
+<tr><th>Feed id</th><th>Name</th><th>Category</th><th>Score</th><th>Description</th><th>MITRE Tactic</th><th>MITRE Techniqe</th></tr>
+</thead>
+<tbody>
+<tr><td>ThreatIntelligence_custom</td><td>TEST</td><td>Impact</td><td>1</td><td>Internal Threat Intelligence - Custom Feed.</td><td>Initial Access</td><td>Drive-by Compromise</td></tr>
+<tr><td>OpenDNS_custom</td><td>Open DNS</td><td>C2</td><td>3</td><td>Open DNS - Custom feed created manually.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>WhitelistIP</td><td>Exception</td><td>C2</td><td>4</td><td>IP Whitelist</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Country_custom</td><td>Suspicious Country</td><td>Botnet</td><td>6</td><td>The Worst Botnet Countries based on custom list.</td><td>Command And Control</td><td>Application Layer Protocol</td></tr>
+<tr><td>Cryptomining</td><td>Cryptomining</td><td>Impact</td><td>6</td><td>The feed can help with prevention cryptomining in the browser or other apllication.</td><td>Impact</td><td>Resource Hijacking</td></tr>
+<tr><td>Sunburst</td><td>Suspicious IP - Sunburst</td><td>Lateral Movement</td><td>10</td><td>The feed contains part of hardcoded IPs which controls SUNBURST malware behaviour.</td><td>Lateral Movement</td><td>Remote Services</td></tr>
+<tr><td>Sunburst2</td><td>Suspicious IP - Sunburst (Sig2)</td><td>Lateral Movement</td><td>10</td><td>The feed includes malicious IPs regarding the Sunburst backdoor. Attacker leverages SolarWinds supply chain to compromise multiple global victims with this backdoor.</td><td>Lateral Movement</td><td>Remote Services</td></tr>
+</tbody>
+</table>
 <h3><a class="anchor" aria-hidden="true" id="135-mapping"></a><a href="#135-mapping" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.5 Mapping</h3>
 <p>This system allows mapping between internal networks into a more comprehensive convention which is then used in data presentation. There are three main sections of the mapping configuration:</p>
 <ul>
 <li>NAMES - we can assign names to the following data objects:
 <ul>
 <li>DEVICES - rule defines a name for the IP,</li>
-<li>INTERFACES - rule defines several aspects of the Device Interface  (Device IP: Interface ID,Interface Name/Description,Interface Speed),</li>
+<li>INTERFACES - rule defines several aspects of the Device Interface (Device IP: Interface ID,Interface Name/Description,Interface Speed),</li>
 <li>HOSTS/SERVERS - rule defines a name for the Server/HOST IP,</li>
 <li>APPLICATIONS - rule defines a name for the custom APPLICATIONS (Protocol/Port Number,Name).</li>
 </ul></li>
 </ul>
 <p><img src="assets/image-20201031134334714.png" alt="image-20201031134334714" style="zoom:150%;" /></p>
+<p><img src="/assets/image-20210209163323439.png" alt="image-20210209163323439"></p>
 <blockquote>
 <p><strong>Note:</strong> Please remember that in case a NAME or any other parameter exists already and is predefined in the system ex. Application Definitions, mapping will override those values with the user defined ones.</p>
 </blockquote>
+<p>For the system, the order of default applications is as follows:</p>
+<p>80,HTTP,TCP</p>
+<p>443,HTTPS,TCP</p>
+<p>445,SMB,TCP</p>
+<p>22,SSH,TCP</p>
+<p>23,TELNET,TCP</p>
+<p>25,SMTP,TCP</p>
+<p>110,POP3,TCP</p>
+<p>143,IMAP4,TCP</p>
+<p>20,FTP,TCP</p>
+<p>21,FTP,TCP</p>
+<p>1194,OPENVPN,TCP</p>
+<p>5432,PostgreSQL,TCP</p>
+<p>If you set up your applications in Mappings, the applications will be displayed first, and then the default applications that did not match with the Mappings applications.</p>
 <ul>
 <li>GROUPS - users can assign names to the internal networks utilizing three grouping sets :
 <ul>
-<li><p>LOCATION - grouping based on NETWORK location (CIDR,Name,Description),</p>
+<li><p>LOCATION - grouping based on NETWORK location (CIDR, Name, Description),</p>
 <p><img src="/assets/image-20201031134854249.png" alt="image-20201031134854249"></p></li>
-<li><p>FUNCTION - grouping based on NETWORK logical function (CIDR,Name,Description),</p>
-<p><img src="/assets/image-20201031135157269.png" alt="image-20201031135157269"></p></li>
-<li><p>BUSINESS ROLE - grouping based on NETWORK business role in Organization (CIDR,Name,Description).</p>
-<p><img src="/assets/image-20201031134643368.png" alt="image-20201031134643368"></p></li>
-<li><p>INTERNAL  - grouping based on internal  Classless Inter-Domain Routing  (CIDR)</p>
-<p><img src="/assets/image-20201031135050727.png" alt="image-20201031135050727"></p></li>
 </ul></li>
 </ul>
+<ul>
+<li><p>FUNCTION - grouping based on NETWORK logical function (CIDR, Name, Description),</p>
+<p><img src="/assets/image-20201031135157269.png" alt="image-20201031135157269"></p></li>
+</ul>
+<ul>
+<li><p>BUSINESS ROLE - grouping based on NETWORK business role in Organization (CIDR, Name, Description),</p>
+<p><img src="/assets/image-20201031134643368.png" alt="image-20201031134643368"></p></li>
+</ul>
+<ul>
+<li><p>INTERNAL  - grouping based on internal Classless Inter-Domain Routing  (CIDR),</p>
+<p><img src="/assets/image-20201031135050727.png" alt="image-20201031135050727"></p></li>
+</ul>
 <blockquote>
-<p><strong>Note:</strong> Grouping is very useful for presentation purposes as well as for implementation verification of widely used security zone segmentation concepts, utilized for both traffic filtering and risk mitigation..</p>
+<p><strong>Note:</strong> Grouping is very useful for presentation purposes as well as for implementation verification of widely used security zone segmentation concepts, utilized for both traffic filtering and risk mitigation.</p>
 </blockquote>
 <ul>
 <li><p>Locations - users can assign geographic coordinates to the following data objects:</p>
 <ul>
-<li><p>DEVICES - rule defines coordinates to the DEVICE IP (Device IP,Longitude,Attitude,City,Country,Country Code),</p>
+<li><p>DEVICES - rule defines coordinates to the DEVICE IP (Device IP, Longitude, Attitude, City, Country, Country Code).</p>
 <p><img src="/assets/image-20201031135344506.png" alt="image-20201031135344506"></p></li>
-<li><p>HOST/SERVERS - rule defines coordinates to the HOST/SERVER IP (Host/Server IP,Longitude, Attitude, City, Country,Country Code).</p>
-<p><img src="/assets/image-20201031135431392.png" alt="image-20201031135431392"></p></li>
 </ul></li>
+</ul>
+<ul>
+<li><p>HOST/SERVERS - rule defines coordinates to the HOST/SERVER IP (Host/Server IP, Longitude, Attitude, City, Country, Country Code).</p>
+<p><img src="/assets/image-20201031135431392.png" alt="image-20201031135431392"></p></li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="136-reports"></a><a href="#136-reports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.6 Reports</h3>
 <p>This system is preconfigured with four report templates which can be enabled/disabled on request:</p>
@@ -268,7 +429,7 @@
 <li>Security Summary - summary of detected security threats from the last day,</li>
 <li>Network Traffic Report - overview of top talkers and devices,</li>
 <li>Interface Utilization - top interfaces and threshold violations,</li>
-<li>Application Servers - view on the most used application servers .</li>
+<li>Application Servers - view on the most used application servers.</li>
 </ul>
 <p><img src="/assets/image-20201031135555251.png" alt="image-20201031135555251"></p>
 <p>Reports are run on a daily basis and the outcome is saved and visible in a list form from the UI.</p>
@@ -276,21 +437,21 @@
 <h2><a class="anchor" aria-hidden="true" id="2-dashboards"></a><a href="#2-dashboards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2 Dashboards</h2>
 <p>This section will cover various aspects of working with selected data. We will divide this section into different aspects that FlowControl uses to interpret data from the network. This will include various graphs, charts and tables as well as best practices on how to work with the data.</p>
 <h3><a class="anchor" aria-hidden="true" id="21-date-range-tab"></a><a href="#21-date-range-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1 Date Range Tab</h3>
-<p>An important element of the UI is the data range tab at the top of the page that stays with the user at all times in both XN, XNS and XND tabs. By default the system shows data and statistics for the last 15 minutes after initial login. When starting work on FlowControl it is crucial to remember to change the time range accordingly. Use the data range tab in order to make  the changes listed below:</p>
+<p>An important element of the UI is the data range tab at the top of the page that stays with the user at all times in both XN, XNS and XND tabs and XNR. By default the system shows data and statistics for the last 15 minutes after initial login. When starting work on FlowControl it is crucial to remember to change the time range accordingly. Use the data range tab in order to make  the changes listed below:</p>
 <p><img src="/assets/image-20200901122011827.png" alt="image-20200901122011827"></p>
 <p>●   <strong>Keep filters</strong> – switching this option on, allows users to keep the filters and selections while switching between a different sections. By default, this option is turned off therefore switching to different section will reset all filters and selections. When enabled filters in different subsection views will be preserved.</p>
 <p>●   <strong>Start date/End date</strong> - choose time slots for which network traffic will be shown. Increasing a time slot might influence loading time for data and statistics.</p>
 <p>●   <strong>Last</strong> - this option will change displayed network traffic to the one from the chosen time period.</p>
-<p>●   <strong>Resolution</strong> – choose for what period of time data will be merged.</p>
-<p>●   <strong>Top flows</strong> - - choose how many top flows will be shown. By default, it is 10,000 flows. Increasing flows might influence loading time for data and statistics.</p>
-<p>●   <strong>Search</strong> -specific IPv4 addresses can be searched for. Every widget will be automatically adjusted to show information regarding only the IPv4 address being searched for.</p>
+<p>●   <strong>Resolution</strong> - choose for what period of time data will be merged.</p>
+<p>●   <strong>Top flows</strong> - choose how many top flows will be shown. By default, it is 10,000 flows. Increasing flows might influence loading time for data and statistics.</p>
+<p>●   <strong>Search</strong> - specific IPv4 addresses can be searched for. Every widget will be automatically adjusted to show information regarding only the IPv4 address being searched for.</p>
 <blockquote>
 <p><strong>Note:</strong> In order to save your preferences, please click the <strong>APPLY</strong> button available on right-hand side.</p>
 </blockquote>
 <p>The FlowControl system allows advanced search with filters. The number of available filters depends on the selected database on which the filtering operation will be performed. The table below lists with a description all available filters for the given database.</p>
 <table>
 <thead>
-<tr><th>filter description</th><th>filer name</th><th>Database/<br />RAW flows</th><th>Database/ <br />Dedupplicated</th><th>Databese/ <br />Utilization</th><th>Database/ <br />Total traffic</th></tr>
+<tr><th>Filter description</th><th>Filer name</th><th>Database/<br />RAW flows</th><th>Database/ <br />Dedupplicated</th><th>Databese/ <br />Utilization</th><th>Database/ <br />Total traffic</th></tr>
 </thead>
 <tbody>
 <tr><td>time</td><td>unix_secs</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
@@ -318,7 +479,7 @@
 <p>The available filters can be chained together to create any complicated search. Examples of complex searches are presented below.</p>
 <p><u><strong>Example 1</strong></u></p>
 <p>Filter fold: unix_secs=202010261000,202010261001;</p>
-<p>Assuming that  <strong>X1</strong>=unix_secs , the filtration result is shown in the figure below.</p>
+<p>Assuming that  <strong>X1</strong>=unix_secs, the filtration result is shown in the figure below.</p>
 <p><img src="assets/image-20201118121705602.png" alt="image-20201118121705602" style="zoom: 50%;" /></p>
 <p><u><strong>Example 2</strong></u></p>
 <p><strong>Filter fold:</strong> unix_secs=202010261000,202010261001&amp;scraddr=1.1.1.1,2.2.2.2</p>
@@ -335,12 +496,11 @@
 <p><strong>X1</strong>= unix_secs</p>
 <p><strong>X2</strong> =srcaddr</p>
 <p><strong>X3</strong>=dstaddr</p>
-<p>than</p>
+<p>then</p>
 <p><strong>X1&amp;X2&amp;X3=X5</strong></p>
 <p>The filtration result is shown in the figure below.</p>
 <p><img src="assets/image-20201118121942468.png" alt="image-20201118121942468" style="zoom: 50%;" /></p>
 <p><u><strong>Example 4</strong></u></p>
-<p>składnia</p>
 <p><strong>Filter fold:</strong> unix_secs=202010261000,202010261001&amp;addr=1.1.1.1,2.2.2.2</p>
 <p>Assuming that :</p>
 <p><strong>X1</strong>= unix_secs</p>
@@ -348,7 +508,7 @@
 <p><strong>X3</strong>=dstaddr</p>
 <p>and</p>
 <p>addr=srcaddr or dstaddr  (see table above)</p>
-<p>than</p>
+<p>then</p>
 <p><strong>X1 &amp; (X2 or X3) = X5+X6+X7</strong>.</p>
 <p>The filtration result is shown in the figure below.</p>
 <p><img src="assets/image-20201118122146630.png" alt="image-20201118122146630" style="zoom: 50%;" /></p>
@@ -358,22 +518,21 @@
 <p><img src="/assets/image-20201004162912959.png" alt="image-20201004162912959">  <b>Smart search </b> clicking this option will pop up a type in section, where any phrase can be typed in that is being looked for. This system automatically suggests options while typing.</p>
 <p><img src="/assets/Google_Search.png" alt="Google Search"></p>
 <p><img src="/assets/image-20201004163033256.png" alt="image-20201004163033256"> <b> Step back </b> - clicking this option will take a step back in data selections.</p>
-<p><img src="/assets/image-20201004163059467.png" alt="image-20201004163059467">  <b>Step forward </b> -  clicking this option will take a step forward in data selections.</p>
+<p><img src="/assets/image-20201004163059467.png" alt="image-20201004163059467">  <b>Step forward </b> - clicking this option will take a step forward in data selections.</p>
 <p><img src="/assets/image-20201004163129997.png" alt="image-20201004163129997">  <b> Clear all selections </b> - this option will clear every data selection made.</p>
 <p><img src="/assets/image-20201004163218048.png" alt="image-20201004163218048"><strong>Bookmark</strong> - this option is a shortcut to the users filter parameters</p>
 <h3><a class="anchor" aria-hidden="true" id="23-visualization-options"></a><a href="#23-visualization-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3 Visualization Options</h3>
 <p>This system will present the data, metrics and outcome of a configured rule set in different graphical forms according to the data granularity and metric structure. The presentation layer is configured according to the best practice in the data presentation techniques.</p>
-<p><img src="/assets/goodchart-xlarge-1200x630.jpg" alt="goodchart-xlarge-1200x630"></p>
+<p><img src="assets/image-20210208122009230.png" alt="image-20210208122009230" style="zoom:67%;" /></p>
 <h3><a class="anchor" aria-hidden="true" id="24-visualization-drill-down"></a><a href="#24-visualization-drill-down" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4 Visualization Drill Down</h3>
 <h3><a class="anchor" aria-hidden="true" id="241-drill-down-options"></a><a href="#241-drill-down-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.1 Drill Down Options</h3>
 <p>Depending on the specific dashboard and widget chosen, this system allows different drill down options. The universal method is clicking over any chart, graph or table where the user will be prompted with:<img src="/assets/Interface_Graph.png" alt="Interface Graph"></p>
 <ul>
-<li><p><strong>Take snapshot</strong> - allows users to take a snapshot of a chosen widget.</p></li>
-<li><p><strong>Exploration menu</strong> - clicking this option will pop up an exploration menu. This is the place where users can adjust the graph, table or chart to their own needs. Options available for change are as follows: data to be shown, way of sorting data, presentation of given graph, chart or table, colors and legend.</p></li>
+<li><strong>Exploration menu</strong> - clicking this option will pop up an exploration menu. This is the place where users can adjust the graph, table or chart to their own needs. Options available for change are as follows: data to be shown, way of sorting data, presentation of given graph, chart or table, colors and legend.</li>
 </ul>
 <p><img src="/assets/Graph_menu.png" alt="Graph "></p>
 <ul>
-<li><p><strong>Full screen</strong> - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press when in full screen mode.</p></li>
+<li><p><strong>Full screen</strong> - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press<img src="assets/image-20210211181659481.png" alt="image-20210211181659481" style="zoom:50%;" />when in full screen mode.</p></li>
 <li><p><strong>Export</strong> - Preconfigured export options:</p>
 <ul>
 <li><p>Export as an image,</p></li>
@@ -396,7 +555,7 @@
 <h3><a class="anchor" aria-hidden="true" id="243-exact-values-search"></a><a href="#243-exact-values-search" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.3 Exact Values Search</h3>
 <p>Tables are the most precise way of presenting data gathered because it shows exact values and measures.</p>
 <p><img src="/assets/Data_Table_Selection.png" alt="Data Table Selection"></p>
-<p>There are two ways of selecting data in tables. The first one is by clicking on the magnifier icon next to a chosen heading, e.g. Source Host. The drop down menu will pop up where users can either search for a desired source host or by simply scrolling down and looking for it manually, then by clicking it. In order to accept the selection, press the green button. After making a selection, all data will be adjusted. The second option is simply by clicking on the desired data in the table.</p>
+<p>There are two ways of selecting data in tables. The first one is by clicking on the magnifier icon next to a chosen heading, e.g. Source Host. The drop down menu will pop up where users can either search for a desired source host or by simply scrolling down and looking for it manually, then by clicking it. In order to accept the selection, press the green button. After making a selection, all data will be adjusted. The second option is to simply click the desired data in the table.</p>
 <h2><a class="anchor" aria-hidden="true" id="3-system-status"></a><a href="#3-system-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. System Status</h2>
 <p>This system provides information about its current status and performance. This information is divided into two main sections, Flows and System Statistics.</p>
 <h3><a class="anchor" aria-hidden="true" id="31-flows-stats"></a><a href="#31-flows-stats" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1 Flows Stats</h3>
@@ -413,7 +572,7 @@
 </ul>
 <p><img src="/assets/image-20200901123342718.png" alt="image-20200901123342718"></p>
 <p>​</p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/XNS"><span>XNS User Guide</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#system-architecture">System Architecture</a></li><li><a href="#1-overview">1. Overview</a><ul class="toc-headings"><li><a href="#11-main">1.1. Main</a></li><li><a href="#12-configuration">1.2 Configuration</a></li><li><a href="#13-administration-settings">1.3 Administration Settings</a></li><li><a href="#131-alerts">1.3.1 Alerts</a></li><li><a href="#132-config">1.3.2 Config</a></li><li><a href="#133-ddos">1.3.3 DDoS</a></li><li><a href="#134-security">1.3.4 Security</a></li><li><a href="#135-mapping">1.3.5 Mapping</a></li><li><a href="#136-reports">1.3.6 Reports</a></li></ul></li><li><a href="#2-dashboards">2 Dashboards</a><ul class="toc-headings"><li><a href="#21-date-range-tab">2.1 Date Range Tab</a></li><li><a href="#22-data-specific-selection-tab">2.2 Data Specific Selection Tab</a></li><li><a href="#23-visualization-options">2.3 Visualization Options</a></li><li><a href="#24-visualization-drill-down">2.4 Visualization Drill Down</a></li><li><a href="#241-drill-down-options">2.4.1 Drill Down Options</a></li><li><a href="#242-visual-data-extraction">2.4.2 Visual Data Extraction</a></li><li><a href="#243-exact-values-search">2.4.3 Exact Values Search</a></li></ul></li><li><a href="#3-system-status">3. System Status</a><ul class="toc-headings"><li><a href="#31-flows-stats">3.1 Flows Stats</a></li><li><a href="#32-system-status">3.2 System Status</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/en/XN.html">Install</a><a href="/en/XN.html">Use</a><a href="/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2021 Sycope</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/XNS"><span>XNS User Guide</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#system-architecture">System Architecture</a></li><li><a href="#1-overview">1. Overview</a><ul class="toc-headings"><li><a href="#11-main">1.1 Main</a></li><li><a href="#12-configuration">1.2 Configuration</a></li><li><a href="#13-administration-settings">1.3 Administration Settings</a></li><li><a href="#131-alerts">1.3.1 Alerts</a></li><li><a href="#132-config">1.3.2 Config</a></li><li><a href="#133-ddos">1.3.3 DDoS</a></li><li><a href="#134-security">1.3.4 Security</a></li><li><a href="#135-mapping">1.3.5 Mapping</a></li><li><a href="#136-reports">1.3.6 Reports</a></li></ul></li><li><a href="#2-dashboards">2 Dashboards</a><ul class="toc-headings"><li><a href="#21-date-range-tab">2.1 Date Range Tab</a></li><li><a href="#22-data-specific-selection-tab">2.2 Data Specific Selection Tab</a></li><li><a href="#23-visualization-options">2.3 Visualization Options</a></li><li><a href="#24-visualization-drill-down">2.4 Visualization Drill Down</a></li><li><a href="#241-drill-down-options">2.4.1 Drill Down Options</a></li><li><a href="#242-visual-data-extraction">2.4.2 Visual Data Extraction</a></li><li><a href="#243-exact-values-search">2.4.3 Exact Values Search</a></li></ul></li><li><a href="#3-system-status">3. System Status</a><ul class="toc-headings"><li><a href="#31-flows-stats">3.1 Flows Stats</a></li><li><a href="#32-system-status">3.2 System Status</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/en/XN.html">Install</a><a href="/en/XN.html">Use</a><a href="/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2021 Sycope</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;

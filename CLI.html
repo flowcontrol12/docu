@@ -61,84 +61,84 @@
 </blockquote>
 <p>The system command root folder real terminal view is displayed. Some CLI commands are used to enter into the group of commands related to them.</p>
 <h2><a class="anchor" aria-hidden="true" id="2-flowcontrol-command-line-interface-cli-commands"></a><a href="#2-flowcontrol-command-line-interface-cli-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. FlowControl command line interface (CLI) commands</h2>
-<p>After login to CLI console the status of network configuration and the list of CLI commands will be display as seen in the figure below.</p>
+<p>After login to CLI console the status of network configuration and the list of CLI commands should be as seen in the figure below.</p>
 <hr>
 <blockquote>
 <p><strong>Important notice:</strong></p>
-<p>Users will be logged out automatically after 5 mins of inactivity.</p>
+<p>Users will be logged out automatically after 5 minutes of inactivity.</p>
 </blockquote>
 <hr>
-<p><img src="/assets/menu.bmp" alt=""></p>
+<p><img src="assets/image-20210204152917666.png" alt="image-20210204152917666" style="zoom: 50%;" /></p>
 <p>In the diagram below are the CLI commands structure tree related to real console view.</p>
-<p><img src="/assets/image-20200812111445440.png" alt="image-20200812111445440"></p>
+<p><img src="assets/image-20210204165400298.png" alt="image-20210204165400298" style="zoom:67%;" /></p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="status"></a><a href="#status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[status]</h3>
 <p>The command [<strong>status</strong>] is used to display actual status of most important system parameters as shown below .</p>
-<p><img src="/assets/image-20200906124526482.png" alt="image-20200906124526482"></p>
+<p><img src="assets/image-20200906124526482.png" alt="image-20200906124526482" style="zoom:67%;" /></p>
 <p>[<strong>status</strong>- CPU configuration status] - displays information if CPU configuration is correct and how many CPU’s the system actually uses. If not check ESX configuration.</p>
 <p>[<strong>status</strong>- CPU usage] - displays percentages of CPU’s usage.</p>
 <p>[<strong>status</strong>- Memory usage] - displays percentages and GB numbers of free Memory and total number of Memory in GB.</p>
-<p>[<strong>status</strong>- Drives status] - displays information on how physicals drives are configured related to free space. Status of drives are also shown here.</p>
+<p>[<strong>status</strong>- Drives status] - displays information on how physicals drives are configured related to free space. Status of status of drives is also shown here.</p>
 <p>[<strong>status</strong>- Flows configuration] - displays NetFlow, sFlow port configurations.</p>
 <p>[<strong>status</strong>- Flows status] - displays actual number of Total Packets, Total Flows, Analyzed Flows and Flow Type (NetFlows, sFlows)</p>
-<p>[<strong>status</strong>- System status] - displays information stating if most important system elements are work property.</p>
+<p>[<strong>status</strong>- System status] - displays information stating if most important system elements should be working property.</p>
 <p>The figure below shows the real CLI console view for [status] command.</p>
 <p><img src="/assets/image-20200818101412725.png" alt="image-20200818101412725"></p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="config"></a><a href="#config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[config]</h3>
 <p>The [<strong>config</strong>] command is used to enter the group of commands allowing changes to all of the most important system network parameters as shown below.</p>
-<p><img src="/assets/image-20200812111917338.png" alt="image-20200812111917338"></p>
-<p><img src="/assets/image-20200812133744015.png" alt="image-20200812133744015"></p>
-<hr>
+<p><img src="assets/image-20200812111917338.png" alt="image-20200812111917338" style="zoom: 67%;" /></p>
+<p><img src="assets/image-20200812133744015.png" alt="image-20200812133744015" style="zoom:67%;" /></p>
 <p>[<strong>config</strong>-interface] - The command  [config-interface] is used to configure IP addresses for any interfaces connected to the FC system.</p>
-<p><img src="/assets/image-20200812114626095.png" alt="image-20200812114626095"></p>
-<p><img src="/assets/image-20200812133929455.png" alt="image-20200812133929455"></p>
+<p><img src="assets/image-20200812114626095.png" alt="image-20200812114626095" style="zoom:67%;" /></p>
+<p><img src="assets/image-20200812133929455.png" alt="image-20200812133929455" style="zoom:80%;" /></p>
 <p>​</p>
-<p>​   [<strong>config</strong>-interface-show] - The command [<strong>config</strong>-interface-show] is used to show detailed information of any network interfaces connected to FC system.</p>
-<p><img src="/assets/image-20200812133840106.png" alt="image-20200812133840106"></p>
-<p>​       [<strong>config</strong>-interface-Ethernet0] -  The command [<strong>config</strong>-interface-Ethernet0] is used to configure network parameters of interface Ethernet0. Either DHCP or static IP address can be configured.</p>
-<p><img src="/assets/image-20200812134024868.png" alt="image-20200812134024868"></p>
-<p><img src="/assets/image-20200812133958504.png" alt="image-20200812133958504"></p>
+<p>[<strong>config</strong>-interface-show] - The command [<strong>config</strong>-interface-show] is used to show detailed information of any network interfaces connected to FC system.</p>
+<p><img src="assets/image-20200812133840106.png" alt="image-20200812133840106" style="zoom:80%;" /></p>
+<p>[<strong>config</strong>-interface-Ethernet0] -  The command [<strong>config</strong>-interface-Ethernet0] is used to configure network parameters of interface Ethernet0. Either DHCP or static IP address can be configured.</p>
+<p><img src="assets/image-20200812134024868.png" alt="image-20200812134024868" style="zoom:80%;" /></p>
+<p><img src="assets/image-20200812133958504.png" alt="image-20200812133958504" style="zoom:80%;" /></p>
 <p>​</p>
 <p>[<strong>config</strong>-interface-exit] - Exit to previous main menu.</p>
-<p>[<strong>config</strong>-netflow] -  The command [<strong>config</strong>-netflow] is used to enter groups of commands related  to NetFlow, IPFIX,ASA NSEL and sFlows protocols configuration and monitoring.</p>
-<p><img src="/assets/image-20200813134221840.png" alt="image-20200813134221840"></p>
+<p>[<strong>config</strong>-netflow] -  The command [<strong>config</strong>-netflow] is used to enter groups of commands related  to NetFlow, IPFIX, ASA NSEL and sFlows protocols configuration and monitoring.</p>
+<p><img src="assets/image-20200813134221840.png" alt="image-20200813134221840" style="zoom:67%;" /></p>
 <p><img src="/assets/image-20200812134046909.png" alt="image-20200812134046909"></p>
-<p>[<strong>config</strong>-netflow-show] -  The command [<strong>config</strong>-netflow-show] is used to show detailed information of NetFlow port configuration.</p>
+<p>[<strong>config</strong>-netflow-show] - The command [<strong>config</strong>-netflow-show] is used to show detailed information of NetFlow port configuration.</p>
 <p><img src="/assets/image-20200818102159776.png" alt="image-20200818102159776"></p>
 <p>[<strong>config</strong>-netflow- netflow] - The command [<strong>config</strong>-netflow-netflow] is used to configure NetFlow, IPFIX ports.</p>
-<p><img src="/assets/image-20200812134236808.png" alt="image-20200812134236808"></p>
-<p>[<strong>config</strong>-netflow- sflow] -The command [<strong>config</strong>-netflow-sflow] is used to configure sFlow  ports.</p>
-<p><img src="/assets/image-20200812134306939.png" alt="image-20200812134306939"></p>
-<p>[<strong>config</strong>-netflow- logs]-  The command [<strong>config</strong>-netflow-logs] is used to enter groups of commands related to NetFlow, NSEL, sFLow logs.</p>
-<p><img src="/assets/image-20200812112534309.png" alt="image-20200812112534309"></p>
-<p><img src="/assets/image-20200812134412961.png" alt="image-20200812134412961"></p>
-<p>​   [<strong>config</strong>-netflow-logs-logs] - The command [<strong>config</strong>-netflow-logs-logs] is used to show NetFlow, NSEL, sFlow engine logs.</p>
+<p><img src="assets/image-20200812134236808.png" alt="image-20200812134236808" style="zoom:80%;" /></p>
+<p>[<strong>config</strong>-netflow- sflow] - The command [<strong>config</strong>-netflow-sflow] is used to configure sFlow  ports.</p>
+<p><img src="assets/image-20200812134306939.png" alt="image-20200812134306939" style="zoom:80%;" /></p>
+<p>[<strong>config</strong>-netflow- logs] - The command [<strong>config</strong>-netflow-logs] is used to enter groups of commands related to NetFlow, NSEL, sFLow logs.</p>
+<p><img src="assets/image-20200812112534309.png" alt="image-20200812112534309" style="zoom: 67%;" /></p>
+<p><img src="assets/image-20200812134412961.png" alt="image-20200812134412961" style="zoom:80%;" /></p>
+<p>[<strong>config</strong>-netflow-logs-logs] - The command [<strong>config</strong>-netflow-logs-logs] is used to show NetFlow, NSEL, sFlow engine logs.</p>
 <p><img src="assets/image-20200812134546734.png" alt="image-20200812134546734" style="zoom:150%;" /></p>
-<p>​   [<strong>config</strong>-netflow-logs-stats] - The command [<strong>config</strong>-netflow-logs-stats] is used to show NetFlow, NSEL, sFlow total statistics.</p>
-<p><img src="/assets/image-20200812134444088.png" alt="image-20200812134444088"></p>
-<p>​   [<strong>config</strong>-netflow-logs-exit] - Exit to previous menu.</p>
-<p>[<strong>config</strong>-netflow-capture] -  The command [<strong>config</strong>-netflow-capture] is used to enter groups of commands related to NetFlow capture  packets.</p>
-<p><img src="/assets/image-20200812113134247.png" alt="image-20200812113134247"></p>
+<p>[<strong>config</strong>-netflow-logs-stats] - The command [<strong>config</strong>-netflow-logs-stats] is used to show NetFlow, NSEL, sFlow total statistics.</p>
+<p><img src="assets/image-20200812134444088.png" alt="image-20200812134444088" style="zoom:80%;" /></p>
+<p>[<strong>config</strong>-netflow-logs-exit] - Exit to previous menu.</p>
+<p>[<strong>config</strong>-netflow-capture] - The command [<strong>config</strong>-netflow-capture] is used to enter groups of commands related to NetFlow capture  packets.</p>
+<p><img src="assets/image-20200812113134247.png" alt="image-20200812113134247" style="zoom: 67%;" /></p>
 <p><img src="/assets/image-20200812134706885.png" alt="image-20200812134706885"></p>
-<p>​       [<strong>config</strong>-netflow-capture-capture [interval]] - The command [<strong>config</strong>-netflow-capture-capture [interval] ] is used  to start capture NetFlow packets.  The interval of capture must be  set in range of 1 to 600 sec.  All capture information is available in FlowControl share folder \\ <em>IP address\captures</em>.</p>
-<p>​       [<strong>config</strong>-netflow-capture-clear] - The command [<strong>config</strong>-netflow-capture-clear] is used to delete all capture files.</p>
-<p>​       [<strong>config</strong>-netflow-capture-close] - The command [<strong>config</strong>-netflow-capture-logs-close] is used to close share with capture files.</p>
-<p>​       [<strong>config</strong>-netflow-capture-exit] - Exit to previous menu.</p>
+<p>[<strong>config</strong>-netflow-capture-capture [interval]] - The command [<strong>config</strong>-netflow-capture-capture [interval] ] is used  to start capture NetFlow packets. The interval of capture must be set in range of 1 to 600 sec. All capture information is available in FlowControl share folder \\ <em>IP address\captures</em>.</p>
+<p>[<strong>config</strong>-netflow-capture-clear] - The command [<strong>config</strong>-netflow-capture-clear] is used to delete all capture files.</p>
+<p>[<strong>config</strong>-netflow-capture-close] - The command [<strong>config</strong>-netflow-capture-logs-close] is used to close share with capture files.</p>
+<p>[<strong>config</strong>-netflow-capture-exit] - Exit to previous menu.</p>
 <p>[<strong>config</strong>-netflow-exit] - Exit to previous menu.</p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="logs"></a><a href="#logs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[logs]</h3>
-<p>The command [<strong>logs</strong>] is used to enter groups of commands related to log collection management from the FlowControl System.</p>
-<p><img src="/assets/image-20200812114836252.png" alt="image-20200812114836252"></p>
+<p>The command [<strong>logs</strong>] is used to enter groups of commands related to log collection management from the FlowControl System</p>
+<p><img src="assets/image-20200812114836252.png" alt="image-20200812114836252" style="zoom:67%;" /></p>
 <p><img src="/assets/image-20200818102231826.png" alt="image-20200818102231826"></p>
-<p>​   [<strong>logs</strong>-collect] - The command [<strong>logs</strong>-collect] is used to start collecting system logs and writing them to disc drive</p>
+<p>​</p>
+<p>[<strong>logs</strong>-collect] - The command [<strong>logs</strong>-collect] is used to start collecting system logs and writing them to disc drive</p>
 <p>​   [<strong>logs</strong>-close] - The command [<strong>logs</strong>-close] is used to stop collecting logs.</p>
 <p>​   [<strong>logs</strong>-clean] - The command [<strong>logs</strong>-clean] is used to delete all logs/capture files.</p>
 <p>​   [<strong>logs</strong>-exit] - Exit to previous menu.</p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="update"></a><a href="#update" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[update]</h3>
 <p>The command [<strong>update</strong>] is used to enter groups of commands related  to FlowControl system update.</p>
-<p><img src="/assets/image-20200812115319103.png" alt="image-20200812115319103"></p>
+<p><img src="assets/image-20200812115319103.png" alt="image-20200812115319103" style="zoom:67%;" /></p>
 <p>[<strong>update</strong> - status] - The command [<strong>update</strong>-status] is used to show status of the system updating.</p>
 <p><img src="/assets/image-20200813132806219.png" alt="image-20200813132806219"></p>
 <p>[<strong>update</strong> - update] - The command [<strong>update</strong>-update] is used to start update process.</p>
@@ -147,45 +147,60 @@
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="diagnostic"></a><a href="#diagnostic" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[diagnostic]</h3>
 <p>The command [<strong>diagnostic</strong>] is used to enter groups of commands related  to FlowControl network connections diagnostics.</p>
-<p><img src="/assets/image-20200812133129117.png" alt="image-20200812133129117"></p>
-<p><img src="/assets/image-20200813132605621.png" alt="image-20200813132605621"></p>
+<p><img src="assets/image-20200812133129117.png" alt="image-20200812133129117" style="zoom:67%;" /></p>
+<p><img src="assets/image-20200813132605621.png" alt="image-20200813132605621" style="zoom:80%;" /></p>
 <p>[<strong>diagnostic</strong>-ping] - Run ping command.</p>
-<p><img src="/assets/image-20200813132550485.png" alt="image-20200813132550485"></p>
+<p><img src="assets/image-20200813132550485.png" alt="image-20200813132550485" style="zoom:80%;" /></p>
 <p>[<strong>diagnostic</strong>-tracert] - Run tracert command.</p>
-<p><img src="/assets/image-20200813132637681.png" alt="image-20200813132637681"></p>
+<p><img src="assets/image-20200813132637681.png" alt="image-20200813132637681" style="zoom:80%;" /></p>
 <p>[<strong>diagnostic</strong>-exit] - Exit to previous menu.</p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="firewall"></a><a href="#firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[firewall]</h3>
-<p>The command [<strong>firewall</strong>] is used to enter groups of commands related  to management of bloking/allowing  incoming communication from IP addresses.</p>
-<p><img src="/assets/image-20200813132318865.png" alt="image-20200813132318865"></p>
-<p><img src="/assets/image-20200812132845871.png" alt="  "></p>
-<p><img src="/assets/image-20200812135022447.png" alt="image-20200812135022447"></p>
+<p>The command [<strong>firewall</strong>] is used to enter groups of commands related  to management of blocking/allowing  incoming communication from IP addresses.</p>
+<p><img src="assets/image-20200812132845871.png" alt=" " style="zoom: 67%;" /></p>
+<p><img src="assets/image-20200812135022447.png" alt="image-20200812135022447" style="zoom:80%;" /></p>
 <p>[<strong>firewall</strong>- show] - The command [<strong>firewall</strong>-show] is used to enter actual blocked IP addresses.</p>
-<p><img src="/assets/image-20200813132318865.png" alt="image-20200813132318865"></p>
 <p>[<strong>firewall</strong>- add [RuleName] [IP]] - The command [<strong>firewall</strong>- add [RuleName] [IP]] is used to add rule to firewall</p>
 <p>[<strong>firewall</strong>- delete [RuleName]] - The command [<strong>firewall</strong>- delete [RuleName]] is used to delete rule on firewall</p>
 <p>[<strong>firewall</strong>- exit] - Exit to main menu.</p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="proxy"></a><a href="#proxy" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[proxy]</h3>
-<p>The command [<strong>proxy</strong>] is used to enter groups of commands related to configuratione of proxy server for FlowControl system.</p>
-<p><img src="/assets/image-20200812115353463.png" alt="image-20200812115353463"></p>
-<p><img src="/assets/image-20200812134911458.png" alt="image-20200812134911458"></p>
-<p><img src="/assets/image-20200812134947414.png" alt="image-20200812134947414"></p>
+<p>The command [<strong>proxy</strong>] is used to enter groups of commands related to configuration: of proxy server for FlowControl system.</p>
+<p><img src="assets/image-20200812115353463.png" alt="image-20200812115353463" style="zoom:67%;" /></p>
+<p><img src="assets/image-20200812134911458.png" alt="image-20200812134911458"  /></p>
 <p>[<strong>proxy</strong> - show] - Shows current proxy configuration</p>
-<p><img src="/assets/image-20200812134947414.png" alt="image-20200812134947414"></p>
+<p><img src="assets/image-20200812134947414.png" alt="image-20200812134947414" style="zoom:80%;" /></p>
 <p>[<strong>proxy</strong>-set] - The command [proxy-set] is used to set PROXY server and port.</p>
-<p>[<strong>proxy</strong>-test[URL]] - The command [proxy-test[RL]] is used to test PROXY server connection.</p>
+<p>[<strong>proxy</strong>-test[URL]] - The command [proxy-test[URL]] is used to test PROXY server connection.</p>
 <p>[<strong>proxy</strong>-exit] - Exit to main menu.</p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="drive"></a><a href="#drive" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[drive]</h3>
 <p>The command [ <strong>drive</strong>] is used to enter groups of commands related to memory drive add, configuration and monitoring.</p>
-<p><img src="/assets/image-20200812132922034.png" alt="image-20200812132922034"></p>
-<p><img src="/assets/image-20200813132505034.png" alt="image-20200813132505034"></p>
+<p><img src="assets/image-20200812132922034.png" alt="image-20200812132922034" style="zoom:67%;" /></p>
+<p><img src="assets/image-20200813132505034.png" alt="image-20200813132505034" style="zoom: 67%;" /></p>
 <p>[<strong>drive</strong>-show] - Show current drive configuration</p>
-<p><img src="/assets/image-20200812134846697.png" alt="image-20200812134846697"></p>
+<p><img src="assets/image-20200812134846697.png" alt="image-20200812134846697" style="zoom: 67%;" /></p>
 <p>[<strong>drive</strong>-add] - The command [<strong>drive</strong>-add] is used to add new drive to the system.</p>
 <p>[<strong>drive</strong>-extend] - The command [<strong>drive</strong>-extend] is used to extend already existing memory drive.</p>
 <p>[<strong>drive</strong>-exit] - Exit to main menu.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="backup-data"></a><a href="#backup-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[<strong>backup data</strong>]</h3>
+<p>The command [<strong>backup data</strong>] is used to copy the database with metrics to external storage media or to move the data to another Flowcontrol server. The command &quot;<strong>backup data</strong> can also be used to restore the database.</p>
+<p><img src="assets/image-20210204165556816.png" alt="image-20210204165556816" style="zoom: 33%;" /></p>
+<p><img src="assets/image-20210204153418870.png" alt="image-20210204153418870" style="zoom: 50%;" /></p>
+<p><img src="assets/image-20210204164711160.png" alt="image-20210204164711160" style="zoom: 50%;" /></p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="restore-defaults"></a><a href="#restore-defaults" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[<strong>restore defaults</strong>]</h3>
+<p>The command [<strong>restore defaults</strong>] is used to restore the databases to default settings.</p>
+<p><img src="assets/image-20210204170107797.png" alt="image-20210204170107797" style="zoom: 33%;" /></p>
+<p><img src="assets/image-20210204153648136.png" alt="image-20210204153648136" style="zoom: 50%;" /></p>
+<p>[<strong>restore defaults</strong>-erase user cache] - The command [<strong>restore defaults</strong>-erase user cache] is used to erase all users cache.</p>
+<p><img src="assets/image-20210204153816725.png" alt="image-20210204153816725" style="zoom: 50%;" /></p>
+<p>[<strong>restore defaults</strong>-erase user data] - The command [<strong>restore defaults</strong>-erase user data] is used to erase all user data like: users, mappings, groups, bookmarks, network alerts, notifications, SNMP, hostnames, license and reports.</p>
+<p><img src="assets/image-20210204153927393.png" alt="image-20210204153927393" style="zoom: 50%;" /></p>
+<p>[<strong>restore defaults</strong>-erase app data] - The command [<strong>restore defaults</strong>-erase app data] is used to erase all applications data including bookmarks.</p>
+<p><img src="assets/image-20210204154245941.png" alt="image-20210204154245941" style="zoom: 50%;" /></p>
+<p>[<strong>restore defaults</strong>-erase database] - The command [<strong>restore defaults</strong>-erase database] is used to erase all data/metrics both from database and cache.</p>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="restart-engine"></a><a href="#restart-engine" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[<strong>restart engine</strong>]</h3>
 <p>The command [<strong>restart engine</strong>] is used to restart FlowControl System engine.</p>
@@ -205,7 +220,7 @@
 <h3><a class="anchor" aria-hidden="true" id="shutdown-server"></a><a href="#shutdown-server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[<strong>shutdown server</strong>]</h3>
 <p>The command [<strong>shutdown server</strong>] is used to shutdown FlowControl System server.</p>
 <hr>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Inst_g"><span class="arrow-prev">← </span><span>Installation Procedure</span></a><a class="docs-next button" href="/Req"><span>Requirements</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-access-to-the-system-command-line-console-cli">1. Access to the system Command Line Console (CLI)</a></li><li><a href="#2-flowcontrol-command-line-interface-cli-commands">2. FlowControl command line interface (CLI) commands</a><ul class="toc-headings"><li><a href="#status">[status]</a></li><li><a href="#config">[config]</a></li><li><a href="#logs">[logs]</a></li><li><a href="#update">[update]</a></li><li><a href="#diagnostic">[diagnostic]</a></li><li><a href="#firewall">[firewall]</a></li><li><a href="#proxy">[proxy]</a></li><li><a href="#drive">[drive]</a></li><li><a href="#restart-engine">[<strong>restart engine</strong>]</a></li><li><a href="#restart-web-service">[<strong>restart web service</strong>]</a></li><li><a href="#restart-other-services">[<strong>restart other services</strong>]</a></li><li><a href="#restart-database">[<strong>restart database</strong>]</a></li><li><a href="#restart-server">[<strong>restart server</strong>]</a></li><li><a href="#shutdown-server">[<strong>shutdown server</strong>]</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/en/XN.html">Install</a><a href="/en/XN.html">Use</a><a href="/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2021 Sycope</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Inst_g"><span class="arrow-prev">← </span><span>Installation Procedure</span></a><a class="docs-next button" href="/Req"><span>Requirements</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-access-to-the-system-command-line-console-cli">1. Access to the system Command Line Console (CLI)</a></li><li><a href="#2-flowcontrol-command-line-interface-cli-commands">2. FlowControl command line interface (CLI) commands</a><ul class="toc-headings"><li><a href="#status">[status]</a></li><li><a href="#config">[config]</a></li><li><a href="#logs">[logs]</a></li><li><a href="#update">[update]</a></li><li><a href="#diagnostic">[diagnostic]</a></li><li><a href="#firewall">[firewall]</a></li><li><a href="#proxy">[proxy]</a></li><li><a href="#drive">[drive]</a></li><li><a href="#backup-data">[<strong>backup data</strong>]</a></li><li><a href="#restore-defaults">[<strong>restore defaults</strong>]</a></li><li><a href="#restart-engine">[<strong>restart engine</strong>]</a></li><li><a href="#restart-web-service">[<strong>restart web service</strong>]</a></li><li><a href="#restart-other-services">[<strong>restart other services</strong>]</a></li><li><a href="#restart-database">[<strong>restart database</strong>]</a></li><li><a href="#restart-server">[<strong>restart server</strong>]</a></li><li><a href="#shutdown-server">[<strong>shutdown server</strong>]</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/en/XN.html">Install</a><a href="/en/XN.html">Use</a><a href="/en/XN.html">Configure</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/" class="not-active">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://passus.com" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2021 Sycope</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
