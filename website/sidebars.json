@@ -1,8 +1,13 @@
 {
   "docs": {
-    "Installation Guide": ["doc1"],
-    "Getting Started Guide": ["doc2"],
-    "Security Guide": ["doc3"],
-    "Software Requirements": ["doc4"]
+    "Installation Guide": ["Inst_g"],
+	"XN module": ["XN"],
+    "XNS module": ["XNS"],
+    "XND module": ["XND"],
+    "Command Line Interface": ["CLI"],
+    "System Requirements": ["Req"],
+    "Release Note": ["Rel"],
+    "Third party software component": ["Feedy"]
+
   }
 }

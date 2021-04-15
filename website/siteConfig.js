@@ -24,8 +24,8 @@ const siteConfig = {
   title: '', // Title for your website.
   tagline: 'Software written By Engineers, For Engineers',
   url: 'https://flowcontrol12.github.io', // Your website URL
-  baseUrl: '/docu/', // Base URL for your project */
-  
+  baseUrl: '/', // Base URL for your project */
+
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -38,11 +38,12 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
+	//headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Documentation'},
-    // {doc: 'doc4', label: 'API'},
-    // {page: 'help', label: 'Help'},
-    // {blog: true, label: 'Blog'},
+   // {doc: 'XN', label: 'Documentation'},
+  //  {doc: 'doc4', label: 'API'},
+   // {page: 'help', label: 'Help'},
+  //  {blog: true, label: 'Blog'},
   ],
   algolia: {
     apiKey: '7b969c492579575af2e774554cd0210e',
@@ -55,7 +56,7 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/flowcontrol_logo-07.png',
-  footerIcon: 'img/Logo-Passus-white-png.png' ,
+/*  footerIcon: 'img/Logo-Passus-white-png.png' , */
   favicon: 'img/flowcontrol_xn.png',
 
   /* Colors for website */
@@ -64,7 +65,7 @@ const siteConfig = {
     secondaryColor: '#0B5394',
   },
 
- 
+
   /* Custom fonts for website */
   /*
   fonts: {
@@ -80,7 +81,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Passus`,
+  copyright: `Copyright © ${new Date().getFullYear()} Sycope`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -94,6 +95,12 @@ const siteConfig = {
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
+
+  //cname configuration
+  cname: 'https://documentation.sycope.com',
+
+  //no docs in the URLs
+  docsUrl: '',
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',

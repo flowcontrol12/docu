@@ -8,6 +8,16 @@
 const React = require('react');
 
 class Footer extends React.Component {
+  render() {
+    return null;
+  }
+}
+/*
+const React = require('react');
+
+
+
+class Footer extends React.Component {
   docUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
     const docsUrl = this.props.config.docsUrl;
@@ -18,10 +28,12 @@ class Footer extends React.Component {
 
   pageUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
-    return baseUrl + (language ? `${language}/` : '') + doc;
+   return baseUrl + doc;
+   //  return baseUrl + (language ? `${language}/` : '') + doc;
   }
 
-  render() {
+ 
+ 	render() {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
@@ -29,13 +41,13 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
+            <a href={this.docUrl('XN.html', this.props.language)}>
               Install
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
+            <a href={this.docUrl('XN.html', this.props.language)}>
               Use
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
+            <a href={this.docUrl('XN.html', this.props.language)}>
               Configure
             </a>
           </div>
@@ -105,5 +117,5 @@ class Footer extends React.Component {
     );
   }
 }
-
+*/
 module.exports = Footer;

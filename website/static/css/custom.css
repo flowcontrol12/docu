@@ -277,7 +277,7 @@ table td {
 }
 
 blockquote {
-  color: #6a737d;
+  color: #24292e;
   font-size: 16px;
   margin: 0;
   margin-bottom: 16px;
@@ -370,7 +370,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-@media only screen and (min-width: 736px) {
+@media only screen and (min-width: 200px) {
   body {
     display: flex;
     flex-direction: column;
@@ -394,14 +394,6 @@ article > :first-child {
 
 article > :last-child {
   margin-bottom: 0;
-}
-
-article p img,
-article iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
 }
 
 /* Links */
@@ -459,15 +451,15 @@ h4:hover .hash-link {
 
 /* Blockquotes */
 blockquote {
-  background-color: rgba(255, 229, 100, 0.3);
-  border-left: 8px solid #ffe564;
+  background-color: #adc5e2;
+  border-left: 8px solid #30065d;
   padding: 15px 30px 15px 15px;
 }
 
 /* Utils */
 .wrapper {
   margin: 0px auto;
-  max-width: 1100px;
+  max-width: 1400px;
   padding: 0 20px;
 }
 
@@ -487,13 +479,13 @@ blockquote {
 }
 
 .homeContainer .homeWrapper {
-  padding: 2em 10px;
+  padding: 2em 3px;
 }
 
 .homeContainer .homeWrapper .wrapper {
   margin: 0px auto;
-  max-width: 900px;
-  padding: 0 20px;
+  max-width: 1400px;
+  padding: 0 3px;
 }
 
 .homeContainer .homeWrapper .projectLogo img {
@@ -514,7 +506,18 @@ blockquote {
   line-height: 1em;
 }
 
-@media only screen and (min-width: 736px) {
+.homeContainer .homeWrapper .main_logo img {
+  max-width: 100%;
+  height: 200px;
+  }
+  .homeContainer .logo_big img {
+  width: 1700px;
+  max-height: 100px;
+  background: $primaryColor;
+  vertical-align: middle;
+  }
+
+@media only screen and (min-width: 200px) {
   .homeContainer .homeWrapper {
     position: relative;
   }
@@ -570,7 +573,7 @@ blockquote {
   }
 }
 
-@media only screen and (min-width: 736px) {
+@media only screen and (min-width: 200px) {
   .homeContainer .homeWrapper {
     position: relative;
   }
@@ -603,9 +606,9 @@ blockquote {
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1080px) {
   .homeContainer .homeWrapper #inner {
-    max-width: 1100px;
+    max-width: 1400px;
     padding-bottom: 40px;
     padding-top: 40px;
   }
@@ -620,7 +623,7 @@ blockquote {
 .mainContainer {
   flex: 1 1 0%;
   max-width: 100%;
-  padding: 40px 0;
+  padding: 1px 0;
 }
 
 .mainContainer .wrapper {
@@ -715,7 +718,7 @@ blockquote {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .mainContainer .wrapper .post {
     display: block;
   }
@@ -739,43 +742,8 @@ blockquote {
 /* End of Main Container */
 
 /* Navbar */
-.fixedHeaderContainer {
-  background: $primaryColor;
-  color: #fff;
-  min-height: 50px;
-  padding: 8px 0;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  transform: translate3d(0, 0, 0);
-}
-
-@media only screen and (min-width: 1024px) {
-  .fixedHeaderContainer {
-    flex-shrink: 0;
-  }
-}
-
-.fixedHeaderContainer a {
-  align-items: center;
-  border: 0;
-  color: #fff;
-  display: flex;
-  flex-flow: row nowrap;
-  height: 34px;
-  z-index: 10000;
-}
-
-.fixedHeaderContainer header {
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;
-  text-align: left;
-}
-
-.fixedHeaderContainer header img {
-  height: 100%;
-  margin-right: 10px;
+@media only screen and (min-width: 720px) {
+  .fixedHeaderContainer {flex-shrink: 1;}
 }
 
 .fixedHeaderContainer header .headerTitle {
@@ -868,31 +836,8 @@ input[type='search'] {
   top: 10px;
 }
 
-.navSearchWrapper:before {
-  border: 3px solid #e5e5e5;
-  border-radius: 50%;
-  content: ' ';
-  display: block;
-  height: 6px;
-  left: 15px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-58%);
-  width: 6px;
-  z-index: 1;
-}
-
-.navSearchWrapper:after {
-  background: #e5e5e5;
-  content: ' ';
-  height: 7px;
-  left: 24px;
-  position: absolute;
-  top: 55%;
-  transform: rotate(-45deg);
-  width: 3px;
-  z-index: 1;
-}
+.navSearchWrapper:before,
+.navSearchWrapper:after{display: none;}
 
 .navSearchWrapper .aa-dropdown-menu {
   background: #f9f9f9;
@@ -939,37 +884,6 @@ input[type='search'] {
   border-color: rgba(57, 57, 57, 0.3);
 }
 
-input#search_input_react {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: none;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  outline: none;
-  padding-left: 25px;
-  position: relative;
-  -webkit-transition: 0.5s width ease;
-  -moz-transition: 0.5s width ease;
-  -o-transition: 0.5s width ease;
-  transition: 0.5s width ease;
-  width: 170px;
-}
-
-.navSearchWrapper:before {
-  left: 24px;
-}
-
-.navSearchWrapper:after {
-  left: 35px;
-}
-
-input#search_input_react:focus,
-input#search_input_react:active {
-  color: #fff;
-  width: 220px;
-}
 .navigationSlider .slidingNav .navSearchWrapper .algolia-docsearch-footer a {
   height: auto;
 }
@@ -977,18 +891,6 @@ input#search_input_react:active {
   .navSearchWrapper {
     width: 40%;
   }
-}
-
-input::-webkit-input-placeholder {
-  color: #e5e5e5;
-}
-
-input::-moz-placeholder {
-  color: #e5e5e5;
-}
-
-input::placeholder {
-  color: #e5e5e5;
 }
 
 .hljs {
@@ -1009,19 +911,27 @@ input::placeholder {
 .gridBlock .threeByGridBlock img,
 .gridBlock .fourByGridBlock img {
   max-width: 100%;
+  -webkit-transition-property: width, height; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: width, height;
+  transition-duration: 2s;
 }
+
+.gridBlock .fourByGridBlock img:hover {
+  transform: scale(1.5);
+    }
 
 .gridBlock .gridClear {
   clear: both;
 }
 
-@media only screen and (max-width: 735px) {
-  .gridBlock .fourByGridBlock {
+@media only screen and (max-width: 1024px) {
+  .gridBlock .ByGridBlock {
     flex: 1 0 26%;
   }
 }
 
-@media only screen and (min-width: 736px) {
+@media only screen and (min-width: 300px) {
   .gridBlock {
     display: flex;
     flex-direction: row;
@@ -1029,7 +939,7 @@ input::placeholder {
   }
 
   .gridBlock > * {
-    margin: 0 12px;
+    margin: 0 0px;
   }
 
   .gridBlock > *:first-child {
@@ -1041,7 +951,7 @@ input::placeholder {
   }
 
   .gridBlock .twoByGridBlock {
-    flex: 1 0 40%;
+    flex: 1 0 50%;
   }
 
   .gridBlock .threeByGridBlock {
@@ -1057,11 +967,13 @@ input::placeholder {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 300px) {
   .gridBlock {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1079,22 +991,22 @@ input::placeholder {
 }
 
 .blockImage {
-  max-width: 730px;
+  max-width: 900px;
 }
 
 .imageAlignSide .blockImage {
   flex: 0 1 500px;
-  max-width: 500px;
+  max-width: 900px;
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 400px) {
   .imageAlignSide .blockImage {
     display: none;
   }
 }
 
 .imageAlignSide .blockContent {
-  flex: 1 1;
+  max-width: 0px;
 }
 
 .imageAlignBottom .blockImage {
@@ -1118,11 +1030,11 @@ input::placeholder {
 }
 
 .imageAlignRight .blockImage {
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .imageAlignLeft .blockImage {
-  margin-right: 40px;
+  margin-right: 0px;
 }
 /* End of GridBlock */
 
@@ -1142,7 +1054,7 @@ input::placeholder {
 .container .wrapper .imageAlignSide p {
   margin: 0;
   margin-bottom: 40px;
-  max-width: 560px;
+  max-width: 1100px;
 }
 
 .highlightBackground {
@@ -1196,7 +1108,7 @@ input::placeholder {
 }
 
 .container.paddingBottom {
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 
 .container.paddingLeft {
@@ -1208,12 +1120,12 @@ input::placeholder {
 }
 
 .container.paddingTop {
-  padding-top: 80px;
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 735px) {
   .container.paddingBottom {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 
   .container.paddingTop {
@@ -1264,13 +1176,13 @@ input::placeholder {
 }
 
 .navigationSlider .slidingNav ul {
-  background: $secondaryColor;
+  background: inherit;
   box-sizing: border-box;
   color: #fff;
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 0;
   width: 100%;
 }
@@ -1305,7 +1217,21 @@ input::placeholder {
 .navigationSlider .slidingNav ul li > a:hover,
 .navigationSlider .slidingNav ul li.siteNavItemActive > a,
 .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+background-color: inherit;
 }
+
+@media only screen and (max-width: 720px) {
+  .navigationSlider .slidingNav ul li a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .fixedHeaderContainer a {
+    transform: scale(0.5);
+  }
+}
+
+
 /* End of Navigation Slider */
 
 /* Languages Dropdown */
@@ -1342,7 +1268,7 @@ input::placeholder {
 .navPusher {
   left: 0;
   min-height: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
   z-index: 99;
 }
@@ -1364,7 +1290,7 @@ input::placeholder {
   width: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 720px) {
   .navPusher {
     display: flex;
     flex-direction: column;
@@ -1389,28 +1315,7 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 1024px) {
-  .reactNavSearchWrapper input#search_input_react {
-    background-color: rgba(242, 196, 178, 0.25);
-    border: none;
-    border-radius: 20px;
-    box-sizing: border-box;
-    color: #393939;
-    font-size: 14px;
-    line-height: 20px;
-    outline: none;
-    padding-left: 38px;
-    position: relative;
-    transition: background-color 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-      width 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.2s ease;
-    width: 100%;
-    height: 30px;
-  }
 
-  .reactNavSearchWrapper input#search_input_react:focus,
-  .reactNavSearchWrapper input#search_input_react:active {
-    background-color: $primaryColor;
-    color: #fff;
-  }
 
   .reactNavSearchWrapper .algolia-docsearch-suggestion--subcategory-inline {
     display: none;
@@ -1449,21 +1354,13 @@ input::placeholder {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .navSearchWrapper {
     padding-left: 10px;
     position: relative;
     right: auto;
     top: auto;
   }
-
-  .reactNavSearchWrapper input#search_input_react {
-    height: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 38px;
-  }
-
   .navSearchWrapper .algolia-autocomplete {
     display: block;
   }
@@ -1541,7 +1438,7 @@ input::placeholder {
   padding-top: 10px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .docMainWrapper {
     width: 100%;
   }
@@ -1668,7 +1565,7 @@ input::placeholder {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .docsNavContainer {
     flex: 0 0 240px;
     height: calc(100vh - 50px);
@@ -1703,7 +1600,7 @@ input::placeholder {
   padding: 0;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .docsNavContainer .toc .navBreadcrumb {
     display: none;
   }
@@ -1729,7 +1626,7 @@ input::placeholder {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .toc {
     padding: 40px 0;
   }
@@ -1958,7 +1855,7 @@ input::placeholder {
   content: '';
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .docMainWrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -1975,6 +1872,7 @@ input::placeholder {
 .onPageNav {
   display: none;
   margin-bottom: 40px;
+  position: sticky;
 }
 
 .onPageNav::-webkit-scrollbar {
@@ -2023,11 +1921,12 @@ input::placeholder {
   padding-bottom: 5px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 720px) {
   .toc section .navGroups {
     display: block;
     padding: 0px;
     padding-top: 8px;
+    position: sticky;
   }
 
   .navBreadcrumb h2 {
@@ -2063,10 +1962,12 @@ input::placeholder {
 
     .tocActive .onPageNav > .toc-headings {
       padding: 12px 0;
+      position: -webkit-sticky;
+      position: sticky;
     }
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 720px) {
     .separateOnPageNav .wrapper,
     .separateOnPageNav .headerWrapper.wrapper {
       max-width: 1400px;
@@ -2096,6 +1997,8 @@ input::placeholder {
     .onPageNav > .toc-headings {
       border-left: 1px solid #e0e0e0;
       padding: 10px 0 2px 15px;
+      position: -webkit-sticky;
+      position: sticky;
     }
 
     .tocToggler {
@@ -2204,7 +2107,7 @@ input::placeholder {
 }
 
 .productShowcaseSection.paddingBottom {
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 
 .productShowcaseSection h2 {
@@ -2281,6 +2184,16 @@ input::placeholder {
     width: 64px;
   }
 }
+
+.thumbnail:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999;
+}
 /* End of Showcase */
 
 /* Start of Footer */
@@ -2298,17 +2211,22 @@ input::placeholder {
   position: relative;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 400px) {
   .nav-footer {
-    flex-shrink: 0;
+    flex-shrink: 1;
   }
+}
+@media only screen and (max-width: 400px) {
+.nav-footer .sitemap .nav-home {
+display: none;
+}
 }
 
 .nav-footer .sitemap {
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   margin: 0 auto 3em;
-  max-width: 1080px;
+  max-width: 1280px;
 }
 
 .nav-footer .sitemap div {
@@ -2330,7 +2248,7 @@ input::placeholder {
   opacity: 1;
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 400px) {
   .nav-footer .sitemap {
     display: flex;
     flex-direction: column;
