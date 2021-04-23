@@ -742,6 +742,15 @@ blockquote {
 /* End of Main Container */
 
 /* Navbar */
+
+input#search_input_react { /* Style for searchbar in navbar */
+    background: white;
+    color: black;
+}
+input#search_input_react::placeholder, input#search_input_react:focus {
+    color: black;
+}
+
 @media only screen and (min-width: 720px) {
   .fixedHeaderContainer {flex-shrink: 1;}
 }
