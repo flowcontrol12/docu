@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '', // Title for your website.
+  title: 'Documentation', // Title for your website.
   tagline: 'Software written By Engineers, For Engineers',
   url: 'https://flowcontrol12.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -40,10 +40,10 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
 	//headerLinks: [],
   headerLinks: [
-   // {doc: 'XN', label: 'Documentation'},
   //  {doc: 'doc4', label: 'API'},
    // {page: 'help', label: 'Help'},
   //  {blog: true, label: 'Blog'},
+
   ],
   algolia: {
     apiKey: '7b969c492579575af2e774554cd0210e',
