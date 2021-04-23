@@ -9,7 +9,7 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "docusaurus": "^1.14.3"
+    "docusaurus": "^1.14.7"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.40",
@@ -17,7 +17,6 @@
     "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.39",
     "algoliasearch": "^3.35.1",
     "latest": "^0.2.0",
-    "n": "^7.1.0",
     "react-instantsearch": "^6.1.0",
     "react-native": "^0.61.5"
   }
