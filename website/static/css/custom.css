@@ -743,6 +743,10 @@ blockquote {
 
 /* Navbar */
 
+.fixedHeaderContainer a:hover {
+    text-decoration: none;
+}
+
 input#search_input_react { /* Style for searchbar in navbar */
     background: white;
     color: black;
@@ -751,8 +755,18 @@ input#search_input_react::placeholder, input#search_input_react:focus {
     color: black;
 }
 
+.reactNavSearchWrapper input#search_input_react {
+    padding-left: 20px;
+}
+
+
+
 @media only screen and (min-width: 720px) {
   .fixedHeaderContainer {flex-shrink: 1;}
+}
+
+.fixedHeaderContainer header .logo {
+    height: 50%;
 }
 
 .fixedHeaderContainer header .headerTitle {
@@ -770,6 +784,7 @@ input#search_input_react::placeholder, input#search_input_react:focus {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  color: white;
 }
 
 .fixedHeaderContainer header .headerTitleWithLogo:hover {
