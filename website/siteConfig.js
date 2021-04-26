@@ -57,7 +57,7 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/logo-sycope.svg',
 /*  footerIcon: 'img/Logo-Passus-white-png.png' , */
-  favicon: 'img/flowcontrol_xn.png',
+  favicon: 'img/logo-sycope.svg',
 
   /* Colors for website */
   colors: {
