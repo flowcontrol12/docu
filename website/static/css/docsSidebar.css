@@ -1,0 +1,318 @@
+.hide {
+    display: none;
+  }
+  
+  .collapsible {
+    cursor: pointer;
+  }
+  
+  .collapsible .arrow {
+    float: right;
+    margin-right: 8px;
+    margin-top: -4px;
+    transform: rotate(90deg);
+    transition: transform 200ms linear;
+  }
+  
+  .collapsible .arrow.rotate {
+    transform: rotate(180deg);
+  }
+  
+  @media only screen and (max-width: 1023px) {
+    .docsNavContainer {
+      background: #fff;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .docsNavContainer {
+      flex: 0 0 240px;
+      height: calc(100vh - 50px);
+      position: -webkit-sticky;
+      position: sticky;
+      overflow-y: auto;
+      top: 50px; /* Height of navbar */
+    }
+  }
+  
+  .docsSliderActive.docsNavContainer {
+    box-sizing: border-box;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 50px;
+  }
+  
+  .docsNavContainer .toc .navBreadcrumb {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 12px;
+    height: 48px;
+    overflow: hidden;
+    padding: 8px 20px;
+  }
+  
+  .docsNavContainer .toc .navWrapper {
+    padding: 0;
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .docsNavContainer .toc .navBreadcrumb {
+      display: none;
+    }
+  
+    .navBreadcrumb h2 {
+      padding: 0 10px;
+    }
+  
+    .separateOnPageNav .docsNavContainer {
+      flex: 0 0 240px;
+    }
+  }
+  
+  .navBreadcrumb a,
+  .navBreadcrumb span {
+    border: 0;
+    color: #393939;
+  }
+  
+  @media only screen and (max-width: 735px) {
+    .anchor {
+      top: -144px;
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .toc {
+      padding: 40px 0;
+    }
+  }
+  
+  .toc section {
+    padding: 0;
+    position: relative;
+  }
+  
+  .toc .toggleNav {
+    color: #393939;
+    position: relative;
+  }
+  
+  .toc .toggleNav .navToggle {
+    cursor: pointer;
+    height: 32px;
+    margin-right: 10px;
+    position: relative;
+    text-align: left;
+    width: 18px;
+  }
+  
+  .hamburger-menu {
+    position: absolute;
+    top: 6px;
+    width: 100%;
+  }
+  
+  .line1,
+  .line2,
+  .line3 {
+    width: 100%;
+    height: 3px;
+    background-color: #393939;
+    margin: 3px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+  
+  .docsSliderActive .hamburger-menu {
+    top: 12px;
+  }
+  
+  .docsSliderActive .line1 {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .docsSliderActive .line2 {
+    display: none;
+  }
+  .docsSliderActive .line3 {
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  
+  .toggleNav h2 i {
+    padding: 0 4px;
+  }
+  
+  .toc .toggleNav .navGroup {
+    margin-bottom: 16px;
+  }
+  
+  .toc .toggleNav .subNavGroup {
+    margin-bottom: 0;
+  }
+  
+  .toc .toggleNav .navGroup .navGroupCategoryTitle {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  
+  .toc .toggleNav .navGroup .navGroupSubcategoryTitle {
+    color: #393939;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 4px 0;
+  }
+  
+  .toc .toggleNav .navGroup .navListItem {
+    margin: 0;
+  }
+  
+  .toc .toggleNav .navGroup h3 i:not(:empty) {
+    box-sizing: border-box;
+    color: rgba(57, 57, 57, 0.5);
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+    text-align: center;
+    transition: color 0.2s;
+    width: 16px;
+  }
+  
+  .toc .toggleNav ul {
+    padding: 0 8px;
+  }
+  
+  .docsSliderActive .toc .toggleNav ul {
+    padding-left: 0; /* Remove indentation on mobile */
+  }
+  
+  .toc .toggleNav ul li {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .toc .toggleNav ul li a {
+    border: none;
+    color: #717171;
+    display: block;
+    font-size: 14px;
+    padding: 4px 0;
+    transition: color 0.3s;
+  }
+  
+  .docsSliderActive .toc .navBreadcrumb,
+  .tocActive .navBreadcrumb {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .toc .toggleNav .navBreadcrumb h2 {
+    border: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .docsSliderActive .toc section .navGroups {
+    display: block;
+    padding-top: 60px;
+  }
+  
+  .tocToggler {
+    cursor: pointer;
+    height: 32px;
+    line-height: 32px;
+    margin-right: -10px;
+    padding: 0 10px;
+  }
+  
+  .icon-toc {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: normal;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+  
+  .icon-toc,
+  .icon-toc:before,
+  .icon-toc:after {
+    background-color: currentColor;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 4px;
+    width: 4px;
+  }
+  
+  .icon-toc:before,
+  .icon-toc:after {
+    content: '';
+    position: absolute;
+  }
+  
+  .icon-toc:before {
+    left: -1px;
+    top: -7px;
+  }
+  
+  .icon-toc:after {
+    left: -1px;
+    top: 5px;
+  }
+  
+  .tocActive .icon-toc {
+    border-radius: 0;
+    height: 16px;
+    transform: rotate(45deg);
+    width: 3px;
+  }
+  
+  .tocActive .icon-toc:before {
+    border-radius: 0;
+    height: 3px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+  }
+  
+  .tocActive .icon-toc:after {
+    content: '';
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .docMainWrapper {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  
+    .docMainWrapper .wrapper {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }

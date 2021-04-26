@@ -1,0 +1,142 @@
+.homeContainer {
+    text-align: center;
+  }
+  
+  .homeContainer .homeWrapper {
+    padding: 2em 3px;
+  }
+  
+  .homeContainer .homeWrapper .wrapper {
+    margin: 0px auto;
+    max-width: 1400px;
+    padding: 0 3px;
+  }
+  
+  .homeContainer .homeWrapper .projectLogo img {
+    height: 100px;
+    margin-bottom: 0px;
+  }
+  
+  .homeContainer .homeWrapper #project_title {
+    font-size: 300%;
+    letter-spacing: -0.08em;
+    line-height: 1em;
+    margin-bottom: 80px;
+  }
+  
+  .homeContainer .homeWrapper #project_tagline {
+    font-size: 200%;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+  }
+  
+  .homeContainer .homeWrapper .main_logo img {
+    max-width: 100%;
+    height: 200px;
+  }
+  
+  .homeContainer .logo_big img {
+      width: 1700px;
+      max-height: 100px;
+      vertical-align: middle;
+  }
+  
+  @media only screen and (min-width: 200px) {
+    .homeContainer .homeWrapper {
+      position: relative;
+    }
+  
+    .homeContainer .homeWrapper #inner {
+      max-width: 600px;
+      padding-right: 40px;
+    }
+  }
+  
+  .projectLogo {
+    display: none;
+    pointer-events: none;
+  }
+  
+  .projectLogo img {
+    height: 100px;
+    margin-bottom: 0px;
+  }
+  
+  .projectIntro {
+    margin: 40px 0;
+  }
+  
+  .projectTitle {
+    font-size: 250%;
+    line-height: 1em;
+  }
+  
+  .projectTitle > small {
+    display: block;
+    font-weight: normal;
+    font-size: 50%;
+    line-height: 1em;
+    margin: 0.7em 0 1.3em;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .projectTitle {
+      font-size: 300%;
+      margin: 0.3em 0;
+    }
+  
+    .projectLogo img {
+      height: 200px;
+      margin-bottom: 10px;
+    }
+  
+    .homeContainer .homeWrapper {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 200px) {
+    .homeContainer .homeWrapper {
+      position: relative;
+    }
+  
+    .homeContainer .homeWrapper #inner {
+      max-width: 600px;
+      padding-right: 40px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .homeContainer .homeWrapper #inner {
+      max-width: 750px;
+    }
+  
+    .homeContainer .homeWrapper .projectLogo {
+      align-items: center;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      left: 0;
+      padding: 2em 100px 4em;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .homeContainer .homeWrapper .projectLogo img {
+      height: 100%;
+      max-height: 250px;
+    }
+  }
+  
+  @media only screen and (min-width: 1080px) {
+    .homeContainer .homeWrapper #inner {
+      max-width: 1400px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  
+    .wrapper {
+      max-width: 1400px;
+    }
+  }

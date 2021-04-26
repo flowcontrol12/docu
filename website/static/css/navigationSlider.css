@@ -1,0 +1,24 @@
+
+.navigationSlider {
+    display: flex;
+    align-items: center;
+}
+
+.navigationSlider .slidingNav ul li > a:focus,
+.navigationSlider .slidingNav ul li > a:hover,
+.navigationSlider .slidingNav ul li.siteNavItemActive > a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+background-color: inherit;
+}
+
+@media only screen and (max-width: 720px) {
+  .navigationSlider .slidingNav ul li a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .fixedHeaderContainer a {
+    transform: scale(0.5);
+  }
+}
+

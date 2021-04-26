@@ -1,0 +1,81 @@
+.blog .wrapper {
+    max-width: 1100px;
+  }
+  
+  .blogContainer .posts .post {
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .blogContainer .postHeader {
+    margin-bottom: 10px;
+  }
+  
+  .blogContainer .postHeaderTitle {
+    margin-top: 0;
+  }
+  
+  .blogContainer .postHeader p.post-meta {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  
+  .blogContainer .postHeader .authorBlock {
+    display: flex;
+  }
+  
+  .blogContainer .postHeader .post-authorName {
+    color: rgba(57, 57, 57, 0.7);
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .blogContainer .postHeader .authorPhoto {
+    border-radius: 50%;
+    height: 30px;
+    overflow: hidden;
+    width: 30px;
+  }
+  
+  .blogContainer .postHeader .authorPhoto.authorPhotoBig {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .blog-recent {
+    margin: 20px 0;
+  }
+  
+  .blog-recent > a {
+    float: left;
+  }
+  
+  @media only screen and (max-width: 735px) {
+    .blog-recent {
+      height: 40px;
+    }
+  }
+  
+  .blogSocialSection {
+    display: block;
+    padding: 36px 0;
+  }
+  
+  .blogSocialSection .blogSocialSectionItem {
+    padding-bottom: 5px;
+  }
+  
+  .fb-like {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }

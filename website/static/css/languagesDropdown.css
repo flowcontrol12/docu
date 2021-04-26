@@ -1,0 +1,117 @@
+.languages-icon {
+    width: 20px;
+  }
+  
+  #languages-dropdown {
+    /* positioning can block the main menu on mobile */
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #languages-dropdown.visible {
+    display: flex;
+  }
+  #languages-dropdown.hide {
+    display: none;
+  }
+  
+  #languages-dropdown-items {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+    pointer-events: all;
+  }
+  
+  #languages li {
+    display: block;
+  }
+
+  
+@media only screen and (max-width: 1024px) {
+    #languages-dropdown {
+      left: 0px;
+      top: 50px;
+    }
+  
+    #languages-dropdown-items {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .navPusher {
+    left: 0;
+    min-height: 100%;
+    padding-top: 50px;
+    position: relative;
+    z-index: 99;
+  }
+  
+  .singleRowMobileNav.navPusher {
+    padding-top: 50px;
+  }
+  
+  .navPusher:after {
+    background: rgba(0, 0, 0, 0.4);
+    content: '';
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    width: 0;
+  }
+  
+  @media screen and (min-width: 720px) {
+    .navPusher {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      min-height: calc(100vh - 50px);
+      padding-top: 50px;
+    }
+  
+    /* those make the footer sticky and work even in IE 11 */
+    .navPusher > :first-child {
+      flex-grow: 1;
+    }
+  }
+  
+  .sliderActive .navPusher:after {
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .reactNavSearchWrapper .algolia-docsearch-suggestion--subcategory-inline {
+      display: none;
+    }
+  
+    .reactNavSearchWrapper > span {
+      width: 100%;
+    }
+  
+    .reactNavSearchWrapper .aa-dropdown-menu {
+      font-size: 12px;
+      line-height: 2em;
+      padding: 0;
+      border-width: 1px;
+      min-width: 500px;
+    }
+    .reactNavSearchWrapper .algolia-docsearch-suggestion__secondary {
+      border-top: none;
+    }
+    .aa-suggestions {
+      min-height: 140px;
+      max-height: 60vh;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+    }
+  }

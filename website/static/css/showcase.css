@@ -1,0 +1,46 @@
+.showcaseSection {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .showcaseSection .prose h1 {
+    text-align: center;
+  }
+  
+  .showcaseSection .prose {
+    margin: 0 auto;
+    max-width: 560px;
+    text-align: center;
+  }
+  
+  .showcaseSection .logos {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .showcaseSection .logos img {
+    max-height: 128px;
+    padding: 20px;
+    width: 128px;
+  }
+  
+  @media only screen and (max-width: 735px) {
+    .showcaseSection .logos img {
+      max-height: 64px;
+      padding: 20px;
+      width: 64px;
+    }
+  }
+  
+  .thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+  }

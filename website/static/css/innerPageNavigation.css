@@ -1,0 +1,135 @@
+.onPageNav {
+    display: none;
+    margin-bottom: 40px;
+    position: sticky;
+  }
+  
+  .onPageNav::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  .onPageNav::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .onPageNav::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .onPageNav::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .onPageNav a {
+    color: #717171;
+  }
+  
+  .onPageNav .toc-headings > li > a.active,
+  .onPageNav .toc-headings > li > a.hover {
+    font-weight: 600;
+  }
+  
+  .onPageNav ul {
+    list-style: none;
+  }
+  
+  .onPageNav ul li {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 8px;
+  }
+  
+  .onPageNav ul ul {
+    padding: 8px 0 0 20px;
+  }
+  
+  .onPageNav ul ul li {
+    padding-bottom: 5px;
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .toc section .navGroups {
+      display: block;
+      padding: 0px;
+      padding-top: 8px;
+      position: sticky;
+    }
+  
+    .navBreadcrumb h2 {
+      padding: 0 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 1023px) {
+      .tocActive .onPageNav {
+        background: #fff;
+        bottom: 0;
+        display: block;
+        left: 0;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding: 0 20px;
+        position: fixed;
+        right: 0;
+        top: 148px;
+        z-index: 10;
+        margin-bottom: 0;
+      }
+  
+      .tocActive .singleRowMobileNav .onPageNav {
+        top: 98px;
+      }
+  
+      .tocActive .navToggle,
+      .tocActive .navBreadcrumb h2 {
+        visibility: hidden;
+      }
+  
+      .tocActive .onPageNav > .toc-headings {
+        padding: 12px 0;
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    }
+  
+    @media only screen and (min-width: 720px) {
+      .separateOnPageNav .wrapper,
+      .separateOnPageNav .headerWrapper.wrapper {
+        max-width: 1400px;
+      }
+  
+      .separateOnPageNav .toc {
+        width: auto;
+      }
+  
+      .separateOnPageNav.sideNavVisible .navPusher .mainContainer {
+        flex: 1 auto;
+        max-width: 100%;
+        min-width: 0;
+      }
+  
+      .onPageNav {
+        align-self: flex-start;
+        display: block;
+        flex: 0 0 240px;
+        max-height: calc(100vh - 90px); /* Sync with top */
+        overflow-y: auto;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 90px;
+      }
+  
+      .onPageNav > .toc-headings {
+        border-left: 1px solid #e0e0e0;
+        padding: 10px 0 2px 15px;
+        position: -webkit-sticky;
+        position: sticky;
+      }
+  
+      .tocToggler {
+        display: none;
+      }
+    }
+  

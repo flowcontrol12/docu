@@ -1,0 +1,118 @@
+.mainContainer {
+    flex: 1 1 0%;
+    max-width: 100%;
+    padding: 1px 0;
+  }
+  
+  .mainContainer .wrapper {
+    text-align: left;
+  }
+  
+  .mainContainer .wrapper .allShareBlock {
+    padding: 10px 0;
+  }
+  
+  .mainContainer .wrapper .allShareBlock .pluginBlock {
+    margin: 12px 0;
+    padding: 0;
+  }
+  
+  .mainContainer .wrapper .post {
+    position: relative;
+  }
+  
+  .mainContainer .wrapper .post.basicPost {
+    margin-top: 30px;
+  }
+  
+  .mainContainer .wrapper .post .postHeader {
+    margin-bottom: 16px;
+  }
+  
+  .mainContainer .wrapper .post .postHeaderTitle {
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .docsContainer .wrapper .post .postHeader:before,
+  .docsContainer .wrapper .post .postHeaderTitle:before {
+    content: '';
+    display: block;
+    height: 90px; /* fixed header height and empty space below it */
+    margin-top: -90px; /* negative fixed header height and empty space below it  */
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .mainContainer .wrapper .post .postSocialPlugins {
+    padding-top: 1em;
+  }
+  
+  .mainContainer .wrapper .post .docPagination {
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+  }
+  
+  .mainContainer .wrapper .post .docPagination .pager {
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .mainContainer .wrapper .post .docPagination .pagingNext {
+    float: right;
+    text-align: right;
+  }
+  
+  .mainContainer .wrapper .post .docPagination a {
+    border: none;
+    color: #fff;
+    display: block;
+    padding: 4px 12px;
+  }
+  
+  .mainContainer .wrapper .post .docPagination a:hover {
+    background-color: #f9f9f9;
+    color: #393939;
+  }
+  
+  .mainContainer .wrapper .post .docPagination a .pagerLabel {
+    display: inline;
+  }
+  
+  .mainContainer .wrapper .post .docPagination a .pagerTitle {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .mainContainer .wrapper .post .docPagination a .pagerLabel {
+      display: none;
+    }
+  
+    .mainContainer .wrapper .post .docPagination a .pagerTitle {
+      display: inline;
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .mainContainer .wrapper .post {
+      display: block;
+    }
+  
+    .mainContainer .wrapper .posts .post {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1023px) {
+    .docsContainer .wrapper .post .postHeader:before,
+    .docsContainer .wrapper .post .postHeaderTitle:before {
+      content: '';
+      display: block;
+      height: 200px; /* fixed header height and empty space below it */
+      margin-top: -200px; /* negative fixed header height and empty space below it  */
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }

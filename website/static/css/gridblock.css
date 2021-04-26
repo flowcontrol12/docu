@@ -1,0 +1,137 @@
+.gridBlock {
+    padding: 0;
+  }
+  
+  .gridBlock > * {
+    box-sizing: border-box;
+  }
+  
+  .gridBlock .twoByGridBlock img,
+  .gridBlock .threeByGridBlock img,
+  .gridBlock .fourByGridBlock img {
+    max-width: 100%;
+    -webkit-transition-property: width, height; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-property: width, height;
+    transition-duration: 2s;
+  }
+  
+  .gridBlock .fourByGridBlock img:hover {
+    transform: scale(1.5);
+      }
+  
+  .gridBlock .gridClear {
+    clear: both;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .gridBlock .ByGridBlock {
+      flex: 1 0 26%;
+    }
+  }
+  
+  @media only screen and (min-width: 300px) {
+    .gridBlock {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .gridBlock > * {
+      margin: 0 0px;
+    }
+  
+    .gridBlock > *:first-child {
+      margin-left: 0;
+    }
+  
+    .gridBlock > *:last-child {
+      margin-right: 0;
+    }
+  
+    .gridBlock .twoByGridBlock {
+      flex: 1 0 50%;
+    }
+  
+    .gridBlock .threeByGridBlock {
+      flex: 1 0 26%;
+    }
+  
+    .gridBlock .fourByGridBlock {
+      flex: 1 0 20%;
+    }
+  
+    h2 + .gridBlock {
+      padding-top: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 300px) {
+    .gridBlock {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .alignCenter {
+    text-align: center;
+  }
+  
+  .alignRight {
+    text-align: right;
+  }
+  
+  .imageAlignSide {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .blockImage {
+    max-width: 900px;
+  }
+  
+  .imageAlignSide .blockImage {
+    flex: 0 1 500px;
+    max-width: 900px;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .imageAlignSide .blockImage {
+      display: none;
+    }
+  }
+  
+  .imageAlignSide .blockContent {
+    max-width: 0px;
+  }
+  
+  .imageAlignBottom .blockImage {
+    margin: 0 auto 20px;
+    max-width: 730px;
+  }
+  
+  .imageAlignBottom.alignCenter .blockImage {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .imageAlignTop .blockImage {
+    margin-bottom: 20px;
+    max-width: 80px;
+  }
+  
+  .imageAlignTop.alignCenter .blockImage {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .imageAlignRight .blockImage {
+    margin-left: 0px;
+  }
+  
+  .imageAlignLeft .blockImage {
+    margin-right: 0px;
+  }
