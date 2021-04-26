@@ -127,12 +127,10 @@ i {
 }
 
 a {
-  color: $primaryColor;
   text-decoration: none;
 }
 
 a:hover {
-  color: $primaryColor;
   text-decoration: none;
 }
 
@@ -422,9 +420,7 @@ article > :last-child {
 
 /* Buttons */
 .button {
-  border: 1px solid $primaryColor;
   border-radius: 3px;
-  color: $primaryColor;
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -432,11 +428,9 @@ article > :last-child {
   padding: 10px;
   text-decoration: none !important;
   text-transform: uppercase;
-  transition: background 0.3s, color 0.3s;
 }
 
 .button:hover {
-  background: $primaryColor;
   color: #fff;
 }
 
@@ -509,13 +503,13 @@ blockquote {
 .homeContainer .homeWrapper .main_logo img {
   max-width: 100%;
   height: 200px;
-  }
-  .homeContainer .logo_big img {
-  width: 1700px;
-  max-height: 100px;
-  background: $primaryColor;
-  vertical-align: middle;
-  }
+}
+
+.homeContainer .logo_big img {
+    width: 1700px;
+    max-height: 100px;
+    vertical-align: middle;
+}
 
 @media only screen and (min-width: 200px) {
   .homeContainer .homeWrapper {
@@ -543,7 +537,6 @@ blockquote {
 }
 
 .projectTitle {
-  color: $primaryColor;
   font-size: 250%;
   line-height: 1em;
 }
@@ -671,7 +664,6 @@ blockquote {
 }
 
 .mainContainer .wrapper .post .docPagination {
-  background: $primaryColor;
   bottom: 0px;
   left: 0px;
   position: absolute;
@@ -756,13 +748,15 @@ input#search_input_react::placeholder, input#search_input_react:focus {
 }
 
 .reactNavSearchWrapper input#search_input_react {
-    padding-left: 20px;
+    padding: 5px 0 5px 16px;
 }
 
 
 
 @media only screen and (min-width: 720px) {
-  .fixedHeaderContainer {flex-shrink: 1;}
+  .fixedHeaderContainer {
+    flex-shrink: 1;
+    }
 }
 
 .fixedHeaderContainer header .logo {
@@ -881,7 +875,6 @@ input[type='search'] {
 .navSearchWrapper
   .aa-dropdown-menu
   .algolia-docsearch-suggestion--category-header {
-  background: $primaryColor;
   color: white;
   font-size: 14px;
   font-weight: 400;
@@ -891,19 +884,7 @@ input[type='search'] {
   .aa-dropdown-menu
   .algolia-docsearch-suggestion--category-header
   .algolia-docsearch-suggestion--highlight {
-  background-color: $primaryColor;
   color: #fff;
-}
-
-.navSearchWrapper
-  .aa-dropdown-menu
-  .algolia-docsearch-suggestion--title
-  .algolia-docsearch-suggestion--highlight,
-.navSearchWrapper
-  .aa-dropdown-menu
-  .algolia-docsearch-suggestion--subcategory-column
-  .algolia-docsearch-suggestion--highlight {
-  color: $primaryColor;
 }
 
 .navSearchWrapper .aa-dropdown-menu .algolia-docsearch-suggestion__secondary,
@@ -1230,7 +1211,6 @@ input[type='search'] {
 .navigationSlider .slidingNav ul li a {
   align-items: center;
   box-sizing: border-box;
-  color: $primaryColor;
   color: inherit;
   display: flex;
   font-size: 0.9em;
@@ -1239,7 +1219,6 @@ input[type='search'] {
   justify-content: center;
   margin: 0;
   padding: 10px;
-  transition: background-color 0.3s;
 }
 
 .navigationSlider .slidingNav ul li > a:focus,
@@ -1283,7 +1262,6 @@ background-color: inherit;
 }
 
 #languages-dropdown-items {
-  background-color: $primaryColor;
   display: flex;
   flex-direction: column;
   min-width: 120px;
@@ -1377,7 +1355,6 @@ background-color: inherit;
   }
 
   #languages-dropdown-items {
-    background-color: $primaryColor;
     display: flex;
     flex-direction: row;
   }
@@ -1788,15 +1765,6 @@ background-color: inherit;
   transition: color 0.3s;
 }
 
-.toc .toggleNav ul li a:hover,
-.toc .toggleNav ul li a:focus {
-  color: $primaryColor;
-}
-
-.toc .toggleNav ul li.navListItemActive a {
-  color: $primaryColor;
-}
-
 .docsSliderActive .toc .navBreadcrumb,
 .tocActive .navBreadcrumb {
   border-bottom: 1px solid #ccc;
@@ -1929,7 +1897,6 @@ background-color: inherit;
 .onPageNav .toc-headings > li > a.active,
 .onPageNav .toc-headings > li > a.hover {
   font-weight: 600;
-  color: $primaryColor;
 }
 
 .onPageNav ul {
@@ -2140,7 +2107,6 @@ background-color: inherit;
 }
 
 .productShowcaseSection h2 {
-  color: $primaryColor;
   font-size: 30px;
   line-height: 1em;
   margin-top: 20px;
@@ -2382,9 +2348,6 @@ display: none;
   cursor: pointer;
 }
 
-.tabs .nav-tabs > div.active {
-  border-bottom: 4px solid $primaryColor;
-}
 
 .tab-pane {
   display: none;
