@@ -1,3 +1,20 @@
 .reactNavSearchWrapper input#search_input_react {
     padding: 5px 0 5px 16px;
 }
+
+
+input#search_input_react { /* Style for searchbar in navbar */
+    background: white;
+    color: black;
+}
+input#search_input_react::placeholder, input#search_input_react:focus {
+    color: black;
+}
+
+@media only screen and (max-width: 1024px){
+    .reactNavSearchWrapper input#search_input_react,
+    .reactNavSearchWrapper input#search_input_react:focus, .reactNavSearchWrapper input#search_input_react:active {
+        background: white;
+        color: black;
+    }
+}

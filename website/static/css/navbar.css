@@ -4,13 +4,6 @@
     text-decoration: none;
 }
 
-input#search_input_react { /* Style for searchbar in navbar */
-    background: white;
-    color: black;
-}
-input#search_input_react::placeholder, input#search_input_react:focus {
-    color: black;
-}
 
 @media only screen and (min-width: 720px) {
   .fixedHeaderContainer {
@@ -44,13 +37,6 @@ input#search_input_react::placeholder, input#search_input_react:focus {
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .reactNavSearchWrapper input#search_input_react {
-        background: white;
-    }
-}
-
-
 .fixedHeaderContainer header .headerTitleWithLogo:hover {
     color: white;
 }
@@ -71,6 +57,10 @@ input#search_input_react::placeholder, input#search_input_react:focus {
   .headerTitleWithLogo {
     display: none !important;
   }
+}
+
+.navSearchWrapper:before, .navSearchWrapper:after {
+    display: none;
 }
 
 @media only screen and (min-width: 720px) {
