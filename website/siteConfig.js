@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Documentation', // Title for your website.
+  title: 'flowcontrol documentation', // Title for your website.
   tagline: 'Software written By Engineers, For Engineers',
   url: 'https://flowcontrol12.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */

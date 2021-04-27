@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 /* Reset */
 html,
 body,
@@ -763,6 +763,7 @@ blockquote {
   text-decoration: none;
 
   color: white;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .fixedHeaderContainer header h3 {
