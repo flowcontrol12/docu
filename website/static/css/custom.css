@@ -756,8 +756,13 @@ blockquote {
   font-size: 1.25em;
   line-height: 18px;
   margin: 0;
-  position: relative;
-  z-index: 9999;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+
+  color: white;
 }
 
 .fixedHeaderContainer header h3 {
@@ -777,6 +782,11 @@ blockquote {
     display: none !important;
   }
 }
+
+.fixedHeaderContainer header img {
+    height: 70%;
+}
+
 /* End of Navbar */
 
 /* Promo section */
@@ -820,6 +830,32 @@ blockquote {
 /* End of Promo Section */
 
 /* Search */
+@media only screen and (max-width: 1024px) {
+.reactNavSearchWrapper input#search_input_react,
+.reactNavSearchWrapper input#search_input_react:focus,
+.reactNavSearchWrapper input#search_input_react:active {
+    background: white;
+    color: black;
+    padding: 5px 0 5px 15px;
+}
+}
+input#search_input_react {
+    background: white;
+    color: black;
+
+    padding: 5px 0 5px 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .reactNavSearchWrapper input#search_input_react {
+        padding: 5px 0 5px 15px;
+    }
+}
+
+input#search_input_react::placeholder, input#search_input_react:focus {
+    color: black;
+}
+
 input[type='search'] {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1150,6 +1186,11 @@ input[type='search'] {
 /* End of Container */
 
 /* Navigation Slider */
+.navigationSlider {
+    display: flex;
+    align-items: center;
+}
+
 .navigationSlider .navSlideout {
   cursor: pointer;
   padding-top: 4px;
