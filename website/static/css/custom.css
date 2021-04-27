@@ -774,7 +774,7 @@ blockquote {
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .headerTitle {
     font-size: 17px;
   }
@@ -785,7 +785,7 @@ blockquote {
 }
 
 .fixedHeaderContainer header img {
-    height: 70%;
+    height: 23px;
 }
 
 /* End of Navbar */
@@ -1267,12 +1267,6 @@ background-color: inherit;
     display: none;
   }
 }
-@media only screen and (max-width: 524px) {
-  .fixedHeaderContainer a {
-    transform: scale(0.5);
-  }
-}
-
 
 /* End of Navigation Slider */
 
