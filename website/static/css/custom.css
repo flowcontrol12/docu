@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
- @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap?text=flowcontroldocumentation');
 /* Reset */
 html,
 body,
@@ -764,6 +764,7 @@ blockquote {
 
   color: white;
   font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
 }
 
 .fixedHeaderContainer header h3 {
