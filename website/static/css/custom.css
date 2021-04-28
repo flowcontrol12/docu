@@ -755,6 +755,11 @@ blockquote {
   font-family: 'Kumbh Sans', sans-serif;
   width: 100%;
   text-align: center;
+  color: white;
+}
+
+.fixedHeaderContainer header a {
+  width: 100%;
 }
 
 .fixedHeaderContainer header h3 {
