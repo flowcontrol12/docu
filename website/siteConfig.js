@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '', // Title for your website.
+  title: 'flowcontrol documentation', // Title for your website.
   tagline: 'Software written By Engineers, For Engineers',
   url: 'https://flowcontrol12.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -55,13 +55,13 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/flowcontrol_logo-07.png',
+  headerIcon: 'img/logo-sycope.svg',
 /*  footerIcon: 'img/Logo-Passus-white-png.png' , */
-  favicon: 'img/flowcontrol_xn.png',
+  favicon: 'img/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#737373',
+    primaryColor: '#0d0b20',
     secondaryColor: '#0B5394',
   },
 
