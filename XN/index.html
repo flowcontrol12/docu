@@ -508,10 +508,9 @@
 <p><img src="assets/image-20210604112023438.png" alt="image-20210604112023438" style="zoom:67%;" /></p>
 <p>It is possible to move the rows and swap positions by clicking and holding the left mouse button on the left side of the row.</p>
 <p>By adding more filters and logical operator users can create complex filter expressions ( done similarly to the alert wizard).</p>
-<p>Example filter rule:</p>
+<p><em>Example filter rule:</em></p>
 <p>FlowFilter rule = (EXPORTERIP MATCHES 172.16.40.1) NOT (SRCIP MATCHES 192.168.1.10)  NOT  (DSTIP MATCHES 10.10.10.10)</p>
-<pre><code class="hljs">                                                                                                                ![image-20210604112628594](/assets/image-20210604112628594.png)
-</code></pre>
+<p><img src="/assets/image-20210604112628594.png" alt="image-20210604112628594"></p>
 <ul>
 <li><strong>FLOW FORWARD</strong> - allows the NETFLOW stream to be forwarded to additional user-defined devices.</li>
 </ul>
@@ -582,8 +581,9 @@
 <li><p>RESTORE - This command is used to restore the backup.<img src="assets/image-20210610172617796.png" alt="image-20210610172617796" style="zoom:50%;" /></p></li>
 </ul></li>
 </ul>
-<pre><code class="hljs">After uploading the backup file, a list of elements that can be restored appears.&lt;img src=&quot;assets/image-20210610172733398.png&quot; alt=&quot;image-20210610172733398&quot; style=&quot;zoom: 67%;&quot; /&gt;   Backup restore command also restores views, dashboards and bookmarks. 
-</code></pre>
+<p>After uploading the backup file, a list of elements that can be restored appears.</p>
+<p><img src="assets/image-20210610172733398.png" alt="image-20210610172733398" style="zoom: 67%;" /></p>
+<p>Backup restore command also restores views, dashboards and bookmarks.</p>
 <ul>
 <li><p>LOGS - This command is used to generate logs.<img src="assets/image-20210427110121120.png" alt="image-20210427110121120" style="zoom:67%;" />Two types of log collections can be generated: Basic and Support Logs. Basic type log is saved to a regular ZIP file used for basic diagnosis like: checking the execution of the backup, restore, logs, update commands or checking the logs engine. A file with the collected logs is available for download through the GUI as shown in the figure above.</p>
 <p>Support Logs option is used to generate logs for support team.</p></li>
@@ -648,32 +648,26 @@
 <p><img src="assets/image-20210513124500624.png" alt="image-20210513124500624" style="zoom: 50%;" /></p></li>
 </ul></li>
 </ul>
-<pre><code class="hljs">&gt; **Note:** Please remember that in case a NAME or any other parameter exists already and is predefined in the system ex. Application Definitions, mapping will override those values with the user defined ones.
-
-For the system, the order of default applications is as follows:
-
-1. 80,HTTP,TCP
-2. 443,HTTPS,TCP
-
-3. 445,SMB,TCP
-
-4. 22,SSH,TCP
-
-5. 23,TELNET,TCP
-
-6. 25,SMTP,TCP
-7. 110,POP3,TCP
-
-8. 143,IMAP4,TCP
-9. 20,FTP,TCP
-
-10. 21,FTP,TCP
-11. 1194,OPENVPN,TCP
-
-12. 5432,PostgreSQL,TCP
-
-If you set up your applications in Mappings, the applications will be displayed first, and then the default applications that did not match with the Mappings applications.
-</code></pre>
+<blockquote>
+<p><strong>Note:</strong> Please remember that in case a NAME or any other parameter exists already and is predefined in the system ex. Application Definitions, mapping will override those values with the user defined ones.</p>
+</blockquote>
+<p>For the system, the order of default applications is as follows:</p>
+<ol>
+<li>80,HTTP,TCP</li>
+<li>443,HTTPS,TCP</li>
+<li>445,SMB,TCP</li>
+<li>22,SSH,TCP</li>
+<li>23,TELNET,TCP</li>
+<li>25,SMTP,TCP</li>
+<li>110,POP3,TCP</li>
+<li>143,IMAP4,TCP</li>
+<li>20,FTP,TCP</li>
+<li>21,FTP,TCP</li>
+<li>1194,OPENVPN,TCP</li>
+<li>5432,PostgreSQL,TCP</li>
+</ol>
+<p>If you set up your applications in Mappings, the applications will be displayed first, and then the default applications that did not match with the Mappings applications.</p>
+<p>​</p>
 <ul>
 <li><p>IP/AS NUMBER - rule defines ip address for the AS number.</p>
 <p><img src="assets/image-20210513124218687.png" alt="image-20210513124218687" style="zoom: 50%;" /></p></li>
