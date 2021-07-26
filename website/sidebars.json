@@ -1,13 +1,12 @@
 {
   "docs": {
     "Installation Guide": ["Inst_g"],
-	"XN module": ["XN"],
+  	"XN module": ["XN"],
     "XNS module": ["XNS"],
     "XND module": ["XND"],
     "Command Line Interface": ["CLI"],
     "System Requirements": ["Req"],
     "Release Note": ["Rel"],
     "Third party software component": ["Feedy"]
-
   }
 }
