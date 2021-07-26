@@ -1,6 +1,6 @@
 ---
 id: third-party
-title: Third party software component
+title: Third party
 hide_title: true
 ---
 
