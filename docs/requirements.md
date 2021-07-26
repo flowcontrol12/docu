@@ -1,8 +1,7 @@
 ---
-id: Req
-title: FlowControl System Requirements
-sidebar_label: Requirements
-hide_title: ver. 1.6.0 candidate
+id: requirements
+title: Requirements
+hide_title: true
 ---
 
 

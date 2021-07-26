@@ -1,8 +1,7 @@
 ---
-id: XNS
+id: xns
 title: XNS module
-sidebar_label: XNS User Guide
-hide_title: ver. 1.6 v1 final
+hide_title: true
 ---
 
 
@@ -59,7 +58,7 @@ MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and
 
 
 
-![image-20201218120633426](assets/image-20201218120633426.png)
+![image-20201218120633426](./assets/image-20201218120633426.png)
 
 *Fig.. I.1 MITRE ATT&CK Tactics. Source: [MITRE ATT&CK.]( https:/attack.mitre.org/ )*
 
@@ -107,7 +106,7 @@ According to the RFC3964, FlowControl solution works as a Flow Collector (both h
 
 
 
-![sycope_flowcontrol_1_5](assets/sycope_flowcontrol_1_5-1604661807668.jpg)
+![sycope_flowcontrol_1_5](./assets/sycope_flowcontrol_1_5-1604661807668.jpg)
 
 *Fig. I.2 Netflow Collector – logical architecture.*
 
@@ -123,7 +122,7 @@ FlowControl XNS contains four menus (*Fig. 1.1)* of views for effective analysis
 
 
 
-<img src="assets/2020-11-06_11-02-21.png" alt="2020-11-06_11-02-21" style="zoom: 80%;" />
+<img src={require('./assets/2020-11-06_11-02-21.png').default} alt="2020-11-06_11-02-21" style={{ zoom: '80%' }} />
 
 *Fig. 1.1 XNS menus*. 
 
@@ -162,17 +161,17 @@ The SOC dashboards are great for security departments like SOC who deal with 24/
 
 *Fig. 1.1.1-1.1.3* shows the individual dashboards of the SOC menu.
 
-![image-20201106105548242](assets/image-20201106105548242.png)
+![image-20201106105548242](./assets/image-20201106105548242.png)
 
  *Fig. 1.1.1 SOC menu Overview dashboard.*
 
- ![image-20201106105809517](assets/image-20201106105809517.png)
+ ![image-20201106105809517](./assets/image-20201106105809517.png)
 
  *Fig. 1.1.2 SOC menu TOP IPs dashboard.*
 
  
 
-![image-20201106111000101](assets/image-20201106111000101.png)
+![image-20201106111000101](./assets/image-20201106111000101.png)
 
   *Fig. 1.1.3 SOC menu TOPs dashboard.*
 
@@ -197,37 +196,37 @@ The indicators have been grouped into four categories: Severity, Host, Tactic an
 
 *Fig. 1.2.1-1.2.6* shows the individual dashboards of the KPIs menu.
 
-![image-20201106111155361](assets/image-20201106111155361.png)
+![image-20201106111155361](./assets/image-20201106111155361.png)
 
  *Fig. 1.2.1 KPIs menu Risk by Severity dashboard.*
 
  
 
-![image-20201106111230123](assets/image-20201106111230123.png)
+![image-20201106111230123](./assets/image-20201106111230123.png)
 
  *Fig. 1.2.2 KPIs menu Risk by Host dashboard.*
 
  
 
-![image-20201106111301518](assets/image-20201106111301518.png)
+![image-20201106111301518](./assets/image-20201106111301518.png)
 
  *Fig. 1.2.3  - KPIs menu Risk by Tactic / Tactic dashboard.*
 
  
 
-![image-20201106111325526](assets/image-20201106111325526.png)
+![image-20201106111325526](./assets/image-20201106111325526.png)
 
  *Fig. 1.2.4 KPIs menu Risk by Tactic/Technique dashboard.*
 
  
 
-![image-20201106111343859](assets/image-20201106111343859.png)
+![image-20201106111343859](./assets/image-20201106111343859.png)
 
  *Fig. 1.2.5 KPIs menu Risk by Tactic/Alerts dashboard.* 
 
 
 
-![image-20201106111405548](assets/image-20201106111405548.png)
+![image-20201106111405548](./assets/image-20201106111405548.png)
 
   *Fig. 1.2.6 KPIs menu Risk by Module dashboard.*
 
@@ -269,25 +268,25 @@ The Threat Analysis dashboards allow multi-level analysis of all security threat
 
  
 
-![image-20201106111538376](assets/image-20201106111538376.png)
+![image-20201106111538376](./assets/image-20201106111538376.png)
 
  *Fig. 1.3.1.1 Threat Analysis - Alerts Drilldown dashboard.*
 
  
 
-![image-20201106111600400](assets/image-20201106111600400.png)
+![image-20201106111600400](./assets/image-20201106111600400.png)
 
  *Fig. 1.3.1.2  Threat Analysis - TOP Suspicious IPs dashboard.*
 
  
 
-![image-20201106111650298](assets/image-20201106111650298.png)
+![image-20201106111650298](./assets/image-20201106111650298.png)
 
  *Fig. 1.3.1.3 Threat Analysis - IPs Correlation dashboard.*
 
  
 
-![image-20201106111709571](assets/image-20201106111709571.png)
+![image-20201106111709571](./assets/image-20201106111709571.png)
 
  *Fig. 1.3.1.4 Threat Analysis - Groups Correlation dashboard.*
 
@@ -297,13 +296,13 @@ The Threat Analysis dashboards allow multi-level analysis of all security threat
 
  *Fig. 1.3.1.5 Threat Analysis - Countries Correlation dashboard*
 
- ![image-20201106111928569](assets/image-20201106111928569.png)
+ ![image-20201106111928569](./assets/image-20201106111928569.png)
 
  *Fig. 1.3.1.6 Threat Analysis - BOTTOMs dashboard.*
 
  
 
-![image-20201106111953012](assets/image-20201106111953012.png)
+![image-20201106111953012](./assets/image-20201106111953012.png)
 
  *Fig. 1.3.1.7 Threat Analysis - Alerts Statistics dashboard*.
 
@@ -323,19 +322,19 @@ External Threats dashboards focus on presenting artifacts related to security th
 
  
 
-![image-20201106112051083](assets/image-20201106112051083.png)
+![image-20201106112051083](./assets/image-20201106112051083.png)
 
   *Fig. 1.3.2.1 External Threats - Alerts Drilldown dashboard.*
 
  
 
-![image-20201106112125535](assets/image-20201106112125535.png)
+![image-20201106112125535](./assets/image-20201106112125535.png)
 
  *Fig. 1.3.2.2 External Threats Alerts Data Size dashboard.*
 
  
 
-![image-20201106112159510](assets/image-20201106112159510.png)
+![image-20201106112159510](./assets/image-20201106112159510.png)
 
  *Fig. 1.3.2.3 External Threats Alerts Map dashboard.*
 
@@ -355,7 +354,7 @@ Internal Threats dashboards focus on presenting artifacts related to security th
 
 In the *Fig. 1.3.3.1* you can see Alerts Drilldown dashboard.
 
-<img src="assets/image-20210210104220918.png" alt="image-20210210104220918" style="zoom:150%;" />
+<img src={require('./assets/image-20210210104220918.png').default} alt="image-20210210104220918" style={{ zoom: '150%' }} />
 
  *Fig. 1.3.3.1 Internal Threats - Alerts Drilldown dashboard.*
 
@@ -373,13 +372,13 @@ The alert menu contains a list of detected alarms along with their occurrence ti
 *Tab. 1.4.1 Alerts menu dashboards description*.
 
 
-![image-20201106112402471](assets/image-20201106112402471.png)
+![image-20201106112402471](./assets/image-20201106112402471.png)
 
  *Fig. 1.4.1 Alerts Overview dashboards.*
 
  
 
-![image-20201106112445004](assets/image-20201106112445004.png)
+![image-20201106112445004](./assets/image-20201106112445004.png)
 
  *Fig. 1.4.2 Alerts MITRE KB dashboard.*
 
@@ -387,7 +386,7 @@ The alert menu contains a list of detected alarms along with their occurrence ti
 
 If you need a full description of a given technique, use the redirect function to the appropriate page using the right mouse click on the **Id** attribute on the Alerts/MITRE KB dashboard (*Fig. 1.4.3*).
 
-![image-20210210103933305](assets/image-20210210103933305.png)
+![image-20210210103933305](./assets/image-20210210103933305.png)
 
  *Fig. 1.4.3 MITRE KB - Right click function*.
 
@@ -449,7 +448,7 @@ This section describes all rules triggered by the Threat Detection engine.
 
 All Threat Detection rules are disabled by default to reduce the number of False Positives. In the initial rule configuration process, set rule parameters, such as groups or limits on specific attributes. Each rule has its own set of characteristics, so each of them must be configured separately. For example, in the *Abnormal flow ratios* rule, set the Flow Count, PPF and Whitelists Group parameters.
 
-![2020-11-06_11-57-46](assets/2020-11-06_11-57-46.png)
+![2020-11-06_11-57-46](./assets/2020-11-06_11-57-46.png)
 
  *Fig. 2.2.1 Security Alert Configuration*. 
 
@@ -529,7 +528,7 @@ Note: In order for external feeds to be constantly updated, it is necessary to a
 
  
 
-![2020-11-06_11-30-36](assets/2020-11-06_11-30-36.png)
+![2020-11-06_11-30-36](./assets/2020-11-06_11-30-36.png)
 
  *Fig. 3.2.1 XNS External Threat Intelligence*.
 
@@ -539,23 +538,23 @@ The External Threat Intelligence rules contain the following attributes: Enabled
 
 | Attribute         | Description                                                  | Possible Values                                              | Modifiable                                          |
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------- |
-| Enabled           | The attribute indicates the status of the rule. Disabled rules do not generate security alerts. | Enabled, Disabled                                            | ![](assets/clip_image057-1600346541178.png)         |
-| Alert Name        | The attribute indicating the name of the  rule.              | Connection with a Suspicious IP, Connection with a Suspicious Country, Connection with Open Proxy, Connection with TOR | ![](assets/clip_image058-1600346541178.png)         |
-| Feed Id           | The attribute indicating the Feed Id for each Threat Intelligence rule. Each rule has a unique value of the Feed Id attribute. |                                                              | ![](assets/clip_image058-1600346541178.png)         |
-| Data Type         | The attribute indicating the type of collected data for each feed. | IP, Country                                                  | ![](assets/clip_image058-1600346541178.png)         |
-| Threat Category   | The attribute indicating the category of feed related to types of security threats. | Bot, Botnet, C2, Feodo, Malicious Malware,  Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL, Telnet BL, TOR, Zeus | ![](assets/clip_image058-1600346541178.png)         |
-| MITRE Tactic      | The attribute indicating the tactic of MITRE ATT&CK related to a security rule. | Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access Discovery, Lateral  Movement Collection, Command and Control, Exfiltration, Impact | ![](assets/clip_image058-1600346541178.png)         |
-| MITRE Technique   | The attribute indicating the Technique of MITRE ATT&CK related to a security rule. There are about about 200  techniques - more details [ATT&CK MITRE](https://attack.mitre.org/matrices/enterprise/). |                                                              | ![](assets/clip_image058-1600346541178.png)         |
-| Score             | Attribute indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | ![](assets/clip_image057-1600346541178.png)         |
-| Refresh Interval  | Attribute indicating the time interval, how often (in minutes) a feed should be updated. | {0..32767}                                                   | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| Last Refresh Time | Attribute indicating the last feed update in format YYYYMMDDhhmm. |                                                              | ![NOT_OK_S](assets/clip_image058-1600346541178.png) |
-| Alert Description | Attribute indicating the description of the feed.            |                                                              | ![NOT_OK_S](assets/clip_image058-1600346541178.png) |
+| Enabled           | The attribute indicates the status of the rule. Disabled rules do not generate security alerts. | Enabled, Disabled                                            | ![](./assets/clip_image057-1600346541178.png)         |
+| Alert Name        | The attribute indicating the name of the  rule.              | Connection with a Suspicious IP, Connection with a Suspicious Country, Connection with Open Proxy, Connection with TOR | ![](./assets/clip_image058-1600346541178.png)         |
+| Feed Id           | The attribute indicating the Feed Id for each Threat Intelligence rule. Each rule has a unique value of the Feed Id attribute. |                                                              | ![](./assets/clip_image058-1600346541178.png)         |
+| Data Type         | The attribute indicating the type of collected data for each feed. | IP, Country                                                  | ![](./assets/clip_image058-1600346541178.png)         |
+| Threat Category   | The attribute indicating the category of feed related to types of security threats. | Bot, Botnet, C2, Feodo, Malicious Malware,  Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL, Telnet BL, TOR, Zeus | ![](./assets/clip_image058-1600346541178.png)         |
+| MITRE Tactic      | The attribute indicating the tactic of MITRE ATT&CK related to a security rule. | Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access Discovery, Lateral  Movement Collection, Command and Control, Exfiltration, Impact | ![](./assets/clip_image058-1600346541178.png)         |
+| MITRE Technique   | The attribute indicating the Technique of MITRE ATT&CK related to a security rule. There are about about 200  techniques - more details [ATT&CK MITRE](https://attack.mitre.org/matrices/enterprise/). |                                                              | ![](./assets/clip_image058-1600346541178.png)         |
+| Score             | Attribute indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | ![](./assets/clip_image057-1600346541178.png)         |
+| Refresh Interval  | Attribute indicating the time interval, how often (in minutes) a feed should be updated. | {0..32767}                                                   | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| Last Refresh Time | Attribute indicating the last feed update in format YYYYMMDDhhmm. |                                                              | ![NOT_OK_S](./assets/clip_image058-1600346541178.png) |
+| Alert Description | Attribute indicating the description of the feed.            |                                                              | ![NOT_OK_S](./assets/clip_image058-1600346541178.png) |
 
 *Tab. 3.2.1 External Threat Intelligence Feed Attributes*.
 
  
 
-![image-20201106113501294](assets/image-20201106113501294.png)
+![image-20201106113501294](./assets/image-20201106113501294.png)
 
  *Fig. 3.2.2 External Threat Intelligence Alert Configuration*.
 
@@ -567,22 +566,22 @@ The Internal Threat Intelligence engine correlates custom feeds with some attrib
 
 | Attribute         | Description                                                  | Possible Values                                              | Modifiable                                          |
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------- |
-| Enabled           | The attribute indicates the status of the rule. Disabled rules do not generate security alerts. | Enabled, Disabled                                            | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| Alert Name        | The attribute indicating the name of the rule. The attribute can be set only once when creating a new custom feed. |                                                              | ![NOT_OK_S](assets/clip_image058-1600346541178.png) |
-| Feed Id           | The attribute indicating the Feed Id for each rule. Each rule has a unique value of the Feed Id attribute. |                                                              | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| Data Type         | The attribute indicating the type of collected data for each feed. | IP, Country                                                  | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| Threat Category   | The attribute indicating the category of feed related to types of security threats. | Bot, Botnet, C2, Feodo, Malicious Malware,  Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL, Telnet BL, TOR, Zeus | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| MITRE Tactic      | The attribute indicating a Tactic of MITRE  ATT&CK related to a security rule. | Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access Discovery, Lateral  Movement Collection, Command and Control, Exfiltration, Impact | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| MITRE Technique   | The attribute indicating a Technique of MITRE ATT&CK related to a security rule. There are about about 200  techniques - more details [ATT&CK MITRE](https://attack.mitre.org/matrices/enterprise/). |                                                              | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| Score             | Attribute indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| Alert Description | Attribute indicating the description of the feed.            |                                                              | ![OK_S](assets/clip_image057-1600346541178.png)     |
-| Feed Data List    | Attribute indicating the values of custom feeds (IP address or Country), one value per line. |                                                              | ![OK_S](assets/clip_image057-1600346541178.png)     |
+| Enabled           | The attribute indicates the status of the rule. Disabled rules do not generate security alerts. | Enabled, Disabled                                            | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| Alert Name        | The attribute indicating the name of the rule. The attribute can be set only once when creating a new custom feed. |                                                              | ![NOT_OK_S](./assets/clip_image058-1600346541178.png) |
+| Feed Id           | The attribute indicating the Feed Id for each rule. Each rule has a unique value of the Feed Id attribute. |                                                              | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| Data Type         | The attribute indicating the type of collected data for each feed. | IP, Country                                                  | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| Threat Category   | The attribute indicating the category of feed related to types of security threats. | Bot, Botnet, C2, Feodo, Malicious Malware,  Open Proxy, Ransomware, Rogue DNS, SNMP BL, SSH BL, Telnet BL, TOR, Zeus | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| MITRE Tactic      | The attribute indicating a Tactic of MITRE  ATT&CK related to a security rule. | Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access Discovery, Lateral  Movement Collection, Command and Control, Exfiltration, Impact | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| MITRE Technique   | The attribute indicating a Technique of MITRE ATT&CK related to a security rule. There are about about 200  techniques - more details [ATT&CK MITRE](https://attack.mitre.org/matrices/enterprise/). |                                                              | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| Score             | Attribute indicating the importance of the feed on a scale of 1 to 10. | {1..10}                                                      | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| Alert Description | Attribute indicating the description of the feed.            |                                                              | ![OK_S](./assets/clip_image057-1600346541178.png)     |
+| Feed Data List    | Attribute indicating the values of custom feeds (IP address or Country), one value per line. |                                                              | ![OK_S](./assets/clip_image057-1600346541178.png)     |
 
 *Tab. 3.2.2 Internal Threat Intelligence Feed Attributes*.
 
  
 
-![image-20201106113620656](assets/image-20201106113620656.png)
+![image-20201106113620656](./assets/image-20201106113620656.png)
 
  *Fig. 3.2.3 Internal Threat Intelligence Alert Configuration*.
 
@@ -594,7 +593,7 @@ Below are the steps to create custom feeds:
 
 1) In the **Settings -> Security -> Internal Threat Intelligence** click **ADD NEW** option.
 
-![2020-11-06_11-37-25](assets/2020-11-06_11-37-25.png)
+![2020-11-06_11-37-25](./assets/2020-11-06_11-37-25.png)
 
 *Fig. 3.2.1.1  Creating a custom feed - step 1*.
 
@@ -604,7 +603,7 @@ Below are the steps to create custom feeds:
 
  
 
-![2020-11-06_11-48-26](assets/2020-11-06_11-48-26.png)
+![2020-11-06_11-48-26](./assets/2020-11-06_11-48-26.png)
 
  Fig. 3.2.1.2 *Creating a custom feed - step 2*.
 
@@ -620,7 +619,7 @@ Below are the steps of adding IP addresses to the Whitelist IP for Threat Intell
 
 1) In the **Settings -> Security -> Internal Threat Intelligence** choose the WhitelistIP_whitelist feed.
 
-![image-20201106115217466](assets/image-20201106115217466.png)
+![image-20201106115217466](./assets/image-20201106115217466.png)
 
  *Fig. 3.2.3.1 Adding IPs to the Whitelist - step 1*.
 
@@ -628,6 +627,6 @@ Below are the steps of adding IP addresses to the Whitelist IP for Threat Intell
 
 2) Edit the feed and add list of IPs which should be ignored by Threat Intelligence engine into the Feed Data List area.
 
-![image-20201106115547370](assets/image-20201106115547370.png)
+![image-20201106115547370](./assets/image-20201106115547370.png)
 
  *Fig. 3.2.3.2 Adding IPs to the Whitelist - step 2*.

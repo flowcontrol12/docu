@@ -1,8 +1,7 @@
 ---
-id: XN
-title:XN module
-sidebar_label:XN User Guide
-hide_title: ver.1.6.0 v.1 final
+id: xn
+title: XN module
+hide_title: true
 ---
 
 ## Introduction
@@ -21,7 +20,7 @@ According to the RFC3964 FlowControl solution works as a Flow Collector which co
 
 
 
-<img src="assets/sycope_flowcontrol_1_5.jpg" alt="sycope_flowcontrol_1_5" style="zoom: 67%;" />
+<img src={require('./assets/sycope_flowcontrol_1_5.jpg').default} alt="sycope_flowcontrol_1_5" style={{ zoom: '67%' }} />
 
 
 
@@ -44,7 +43,7 @@ FlowControl supports the following flow protocol data sources:
 
 ## 1. Overview
 
-The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (**XN, XNS, XND, XNR, SYS**) and the icons in the top right corner ![image-20201004161928752](assets/image-20201004161928752.png) (**Configuration options**). They are all vital components for working with the system, effective problem identification and data mining.
+The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (**XN, XNS, XND, XNR, SYS**) and the icons in the top right corner ![image-20201004161928752](./assets/image-20201004161928752.png) (**Configuration options**). They are all vital components for working with the system, effective problem identification and data mining.
 
 
 
@@ -70,22 +69,22 @@ Below is presented table with general description of what can be found in each s
 
 | **FlowControl XN**                                           | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20201031140331903](assets/image-20201031140331903.png)  <u><b> NOC </b></u> | General overview of network infrastructure parameters        |
-| ![image-20201004125605987](assets/image-20201004125605987.png)  <u><b> TOPs </b></u> | Information about top talkers in the network.                |
-| ![image-20200911120410391](assets/image-20200911120410391.png)  <u><b> RAW Flows </b></u> | Detailed information about traffic.                          |
-| ![image-20201004153055808](assets/image-20201004153055808.png)   **Raw Data** | Extensive information about every flow in the traffic.       |
-| ![image-20201004153137592](assets/image-20201004153137592.png)   **ASA Devices** | Detailed information about flows from ASA Devices.           |
-| ![image-20200911120535728](assets/image-20200911120535728.png)   <u>**Deduplicated Flows**</u> | Information about deduplicated flows.                        |
-| ![image-20201004153258941](assets/image-20201004153258941.png)   **Traffic** | Network traffic based on deduplicated flows.                 |
-| **![image-20200911120312792](assets/image-20200911120312792.png)   Applications** | Network traffic analysis in view of application based on deduplicated flows. |
-| ![image-20201004153410486](assets/image-20201004153410486.png)  **Geolocalization** | Maps with various geolocations.                              |
-| ![image-20201004153449636](assets/image-20201004153449636.png) <b> Groups </b> | Flows organized into various groups, e.g. business roles, location. |
-| ![image-20201004153533495](assets/image-20201004153533495-1601822806926.png)   **AS Names** | Flows organized according to AS Names.                       |
-| ![image-20200911120656376](assets/image-20200911120656376.png)   <u>**Long Term Data**</u> | Aggregated date from previous time periods.                  |
-| ![image-20201004153641952](assets/image-20201004153641952.png)  **Last Day** | Aggregated data from last day.                               |
-| ![image-20201004153740964](assets/image-20201004153740964.png)  **Last Week** | Aggregated data from last week.                              |
-| ![image-20201004153818558](assets/image-20201004153818558.png)  **Last month** | Aggregate data from last month                               |
-| ![image-20201004154607022](assets/image-20201004154607022.png)<u><b>  Alerts  </b></u> | Information and details about alerts that occurred in the network. |
+| ![image-20201031140331903](./assets/image-20201031140331903.png)  <u><b> NOC </b></u> | General overview of network infrastructure parameters        |
+| ![image-20201004125605987](./assets/image-20201004125605987.png)  <u><b> TOPs </b></u> | Information about top talkers in the network.                |
+| ![image-20200911120410391](./assets/image-20200911120410391.png)  <u><b> RAW Flows </b></u> | Detailed information about traffic.                          |
+| ![image-20201004153055808](./assets/image-20201004153055808.png)   **Raw Data** | Extensive information about every flow in the traffic.       |
+| ![image-20201004153137592](./assets/image-20201004153137592.png)   **ASA Devices** | Detailed information about flows from ASA Devices.           |
+| ![image-20200911120535728](./assets/image-20200911120535728.png)   <u>**Deduplicated Flows**</u> | Information about deduplicated flows.                        |
+| ![image-20201004153258941](./assets/image-20201004153258941.png)   **Traffic** | Network traffic based on deduplicated flows.                 |
+| **![image-20200911120312792](./assets/image-20200911120312792.png)   Applications** | Network traffic analysis in view of application based on deduplicated flows. |
+| ![image-20201004153410486](./assets/image-20201004153410486.png)  **Geolocalization** | Maps with various geolocations.                              |
+| ![image-20201004153449636](./assets/image-20201004153449636.png) <b> Groups </b> | Flows organized into various groups, e.g. business roles, location. |
+| ![image-20201004153533495](./assets/image-20201004153533495-1601822806926.png)   **AS Names** | Flows organized according to AS Names.                       |
+| ![image-20200911120656376](./assets/image-20200911120656376.png)   <u>**Long Term Data**</u> | Aggregated date from previous time periods.                  |
+| ![image-20201004153641952](./assets/image-20201004153641952.png)  **Last Day** | Aggregated data from last day.                               |
+| ![image-20201004153740964](./assets/image-20201004153740964.png)  **Last Week** | Aggregated data from last week.                              |
+| ![image-20201004153818558](./assets/image-20201004153818558.png)  **Last month** | Aggregate data from last month                               |
+| ![image-20201004154607022](./assets/image-20201004154607022.png)<u><b>  Alerts  </b></u> | Information and details about alerts that occurred in the network. |
 
 > **Note:** All views except **Raw Data** use deduplicated traffic. In order to see unique information about flows that may change on the flow path, e.g. QoS tags – please use **Raw Data** views. 
 
@@ -94,13 +93,13 @@ Below is presented table with general description of what can be found in each s
 
 | **FlowControl XNS**                                          | Description                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------ |
-| ![image-20201004154834424](assets/image-20201004154834424.png)  <u><b> SOC </b></u> | General overview of security aspects of the network.   |
-| ![image-20201004154911046](assets/image-20201004154911046.png)  <u><b> KPIs </b></u> | General overview of the basic values of alerts.        |
-| ![image-20200911121159510](assets/image-20200911121159510.png)   <u>**Use Cases**</u> | Monitoring scenarios of IT security threat.            |
-| ![image-20201004154940655](assets/image-20201004154940655.png)  <b> Threat Analysis </b> | Information on all threats.                            |
-| ![image-20201004155011543](assets/image-20201004155011543.png)  <b> External Threats</b> | Information on threats outside the customer network.   |
-| ![image-20201004155047164](assets/image-20201004155047164.png)  <b> Internal  Threats</b> | Information on threats inside the customer network.    |
-| ![image-20201004155110985](assets/image-20201004155110985.png)  <u><b> Alerts  </b></u> | Table with all information about alarms in the system. |
+| ![image-20201004154834424](./assets/image-20201004154834424.png)  <u><b> SOC </b></u> | General overview of security aspects of the network.   |
+| ![image-20201004154911046](./assets/image-20201004154911046.png)  <u><b> KPIs </b></u> | General overview of the basic values of alerts.        |
+| ![image-20200911121159510](./assets/image-20200911121159510.png)   <u>**Use Cases**</u> | Monitoring scenarios of IT security threat.            |
+| ![image-20201004154940655](./assets/image-20201004154940655.png)  <b> Threat Analysis </b> | Information on all threats.                            |
+| ![image-20201004155011543](./assets/image-20201004155011543.png)  <b> External Threats</b> | Information on threats outside the customer network.   |
+| ![image-20201004155047164](./assets/image-20201004155047164.png)  <b> Internal  Threats</b> | Information on threats inside the customer network.    |
+| ![image-20201004155110985](./assets/image-20201004155110985.png)  <u><b> Alerts  </b></u> | Table with all information about alarms in the system. |
 
 ---
 
@@ -108,10 +107,10 @@ Below is presented table with general description of what can be found in each s
 
 | **FlowControl XND**                                          | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20200911121401384](assets/image-20200911121401384.png) <u><b> DDOS </b></u> | Information about DDoS attacks.                              |
-| ![image-20200911121159510](assets/image-20200911121159510.png) <u><b> Protocols</b></u> | Network traffic characteristics in the context of DDoS attacks. |
-| ![image-20200911121401384](assets/image-20200911121401384.png)<b> Overview </b> | Network traffic characteristics in the context of protocols. |
-| ![image-20200911121401384](assets/image-20200911121401384.png) **Details** | Detailed information about DDoS attacks.                     |
+| ![image-20200911121401384](./assets/image-20200911121401384.png) <u><b> DDOS </b></u> | Information about DDoS attacks.                              |
+| ![image-20200911121159510](./assets/image-20200911121159510.png) <u><b> Protocols</b></u> | Network traffic characteristics in the context of DDoS attacks. |
+| ![image-20200911121401384](./assets/image-20200911121401384.png)<b> Overview </b> | Network traffic characteristics in the context of protocols. |
+| ![image-20200911121401384](./assets/image-20200911121401384.png) **Details** | Detailed information about DDoS attacks.                     |
 
 
 
@@ -121,9 +120,9 @@ Below is presented table with general description of what can be found in each s
 
 | **System Section**                                           | Description                                        |
 | ------------------------------------------------------------ | -------------------------------------------------- |
-| ![image-20201119104559571](assets/image-20201119104559571.png) **Audit Logs** | Information on users logins.                       |
-| ![image-20201004155258797](assets/image-20201004155258797.png)<b> Flow  Stats </b> | General statistics about raw and aggregated flows. |
-| ![image-20201004155339267](assets/image-20201004155339267.png)<b> System  </b> | Disk utilization information.                      |
+| ![image-20201119104559571](./assets/image-20201119104559571.png) **Audit Logs** | Information on users logins.                       |
+| ![image-20201004155258797](./assets/image-20201004155258797.png)<b> Flow  Stats </b> | General statistics about raw and aggregated flows. |
+| ![image-20201004155339267](./assets/image-20201004155339267.png)<b> System  </b> | Disk utilization information.                      |
 
 
 
@@ -186,7 +185,7 @@ Below is a list of all events/alerts that are indicated by the dot:
 
 ### 1.2 Configuration
 
-On the right-hand side of the system there are three drop-down menus and one switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 67%;" />. The switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 67%;" /> is used to hide the date selection and overload bar. The first menu, marked with this icon  ![image-20201004161928752](assets/image-20201004161928752.png), is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with ![image-20201004162213351](assets/image-20201004162213351.png), is available for all users. Things that can be found in this section are :
+On the right-hand side of the system there are three drop-down menus and one switch <img src={require('./assets/image-20201119105609453.png').default} alt="image-20201119105609453" style={{ zoom: '67%' }} />. The switch <img src={require('./assets/image-20201119105609453.png').default} alt="image-20201119105609453" style={{ zoom: '67%' }} /> is used to hide the date selection and overload bar. The first menu, marked with this icon  ![image-20201004161928752](./assets/image-20201004161928752.png), is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with ![image-20201004162213351](./assets/image-20201004162213351.png), is available for all users. Things that can be found in this section are :
 
 - License Info,
 - User Guide,
@@ -219,7 +218,7 @@ The license is delivered as a text file. To activate the license, the text from 
 
 The user guide will redirect users to the documentation stored on the system. The about section system will take users to the general web page with information about https://www.sycope.com/.
 
-![image-20201004162331465](assets/image-20201004162331465.png)The third drop down menu, available for all users. In this menu the following things can be found:
+![image-20201004162331465](./assets/image-20201004162331465.png)The third drop down menu, available for all users. In this menu the following things can be found:
 
  -   Profile
 
@@ -1076,7 +1075,7 @@ An important element of the UI is the data range tab at the top of the page that
 
 
 
-![image-20200901122011827](assets/image-20200901122011827.png)
+![image-20200901122011827](./assets/image-20200901122011827.png)
 
 
 
@@ -1137,7 +1136,7 @@ Assuming that  **X1**=unix_secs, the filtration result is shown in the figure be
 
 
 
-<img src="assets/image-20201118121705602.png" alt="image-20201118121705602" style="zoom: 50%;" />
+<img src={require('./assets/image-20201118121705602.png').default} alt="image-20201118121705602" style={{ zoom: '50%' }} />
 
 <u>**Example 2**</u>
 
@@ -1157,7 +1156,7 @@ The filtration result is shown in the figure below.
 
 
 
-<img src="assets/image-20201118121839207.png" alt="image-20201118121839207" style="zoom: 50%;" />
+<img src={require('./assets/image-20201118121839207.png').default} alt="image-20201118121839207" style={{ zoom: '50%' }} />
 
 <u>**Example 3**</u>
 
@@ -1179,7 +1178,7 @@ The filtration result is shown in the figure below.
 
 
 
-<img src="assets/image-20201118121942468.png" alt="image-20201118121942468" style="zoom: 50%;" />
+<img src={require('./assets/image-20201118121942468.png').default} alt="image-20201118121942468" style={{ zoom: '50%' }} />
 
 <u>**Example 4**</u>
 
@@ -1205,33 +1204,33 @@ The filtration result is shown in the figure below.
 
  
 
-<img src="assets/image-20201118122146630.png" alt="image-20201118122146630" style="zoom: 50%;" />
+<img src={require('./assets/image-20201118122146630.png').default} alt="image-20201118122146630" style={{ zoom: '50%' }} />
 
 
 
 ### 2.2 Data Specific Selection Tab
 
-When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  <img src="assets/x.png" alt="Step back" style="zoom: 50%;" />   button on the tab.
+When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  <img src={require('./assets/x.png').default} alt="Step back" style={{ zoom: '50%' }} />   button on the tab.
 
 
 
-![image-20201004162557687](assets/image-20201004162557687.png)
+![image-20201004162557687](./assets/image-20201004162557687.png)
 
 
 
-![image-20201004162912959](assets/image-20201004162912959.png)  <b>Smart search </b> clicking this option will pop up a type in section, where any phrase can be typed in that is being looked for. This system automatically suggests options while typing.
+![image-20201004162912959](./assets/image-20201004162912959.png)  <b>Smart search </b> clicking this option will pop up a type in section, where any phrase can be typed in that is being looked for. This system automatically suggests options while typing.
 
-![Google Search](assets/Google_Search.png)
+![Google Search](./assets/Google_Search.png)
 
 
 
-![image-20201004163033256](assets/image-20201004163033256.png) <b> Step back </b> - clicking this option will take a step back in data selections.
+![image-20201004163033256](./assets/image-20201004163033256.png) <b> Step back </b> - clicking this option will take a step back in data selections.
 
-![image-20201004163059467](assets/image-20201004163059467.png)  <b>Step forward </b> - clicking this option will take a step forward in data selections.
+![image-20201004163059467](./assets/image-20201004163059467.png)  <b>Step forward </b> - clicking this option will take a step forward in data selections.
 
-![image-20201004163129997](assets/image-20201004163129997.png)  <b> Clear all selections </b> - this option will clear every data selection made.
+![image-20201004163129997](./assets/image-20201004163129997.png)  <b> Clear all selections </b> - this option will clear every data selection made.
 
-![image-20201004163218048](assets/image-20201004163218048.png)**Bookmark** - this option is a shortcut to the users filter parameters
+![image-20201004163218048](./assets/image-20201004163218048.png)**Bookmark** - this option is a shortcut to the users filter parameters
 
 
 
@@ -1241,7 +1240,7 @@ This system will present the data, metrics and outcome of a configured rule set 
 
 
 
-<img src="assets/image-20210208122009230.png" alt="image-20210208122009230" style="zoom:67%;" />
+<img src={require('./assets/image-20210208122009230.png').default} alt="image-20210208122009230" style={{ zoom: '67%' }} />
 
 
 
@@ -1251,17 +1250,17 @@ This system will present the data, metrics and outcome of a configured rule set 
 
 ### 2.4.1 Drill Down Options
 
-Depending on the specific dashboard and widget chosen, this system allows different drill down options. The universal method is clicking over any chart, graph or table where the user will be prompted with:![Interface Graph](assets/Interface_Graph.png)
+Depending on the specific dashboard and widget chosen, this system allows different drill down options. The universal method is clicking over any chart, graph or table where the user will be prompted with:![Interface Graph](./assets/Interface_Graph.png)
 
 - **Exploration menu** - clicking this option will pop up an exploration menu. This is the place where users can adjust the graph, table or chart to their own needs. Options available for change are as follows: data to be shown, way of sorting data, presentation of given graph, chart or table, colors and legend.
 
 
 
-![Graph ](assets/Graph_menu.png)
+![Graph ](./assets/Graph_menu.png)
 
 
 
-- **Full screen** - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press<img src="assets/image-20210211181659481.png" alt="image-20210211181659481" style="zoom:50%;" />when in full screen mode.
+- **Full screen** - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press<img src={require('./assets/image-20210211181659481.png').default} alt="image-20210211181659481" style={{ zoom: '50%' }}/>when in full screen mode.
 - **Export** - Preconfigured export options:
 
   - Export as an image,
@@ -1271,11 +1270,11 @@ Depending on the specific dashboard and widget chosen, this system allows differ
   - Export data.
 
 
-![Grouping Dashboard](assets/Grouping_Dashboard.png)
+![Grouping Dashboard](./assets/Grouping_Dashboard.png)
 
 In some sections, there is a possibility to select data by choosing from drop down menus:
 
-<img src="assets/Search_Listbox.png" alt="Search_Listbox" style="zoom: 200%;" /> 
+<img src={require('./assets/Search_Listbox.png').default} alt="Search_Listbox" style={{ zoom: '200%' }} /> 
 
 This system allows users to type in a searched phrase or select it from the drop down menu. Please remember that depending on the data chosen, fields will change color according to the data availability, suggesting to users which data types are aligned.
 
@@ -1283,25 +1282,25 @@ This system allows users to type in a searched phrase or select it from the drop
 
 ### 2.4.2 Visual Data Extraction
 
-The first thing to notice when working with charts is that when users hover their mouse over any bar/data point it will show more details regarding that specific data.  ![Detail Graph Data](assets/Detail_Graph_Data.png)
+The first thing to notice when working with charts is that when users hover their mouse over any bar/data point it will show more details regarding that specific data.  ![Detail Graph Data](./assets/Detail_Graph_Data.png)
 
 
 
 When clicking on bars, they will be selected. You can click on multiple bars in order to view only them in the chart. In order to confirm the selection, please press the green button on the top right corner. If data is presented on multiple elements of the dashboard, users’ selection on one plot will impact data presentation on others according to the selection made.
 
-![Click Graph Selection](assets/Click_Graph_Selection.png)
+![Click Graph Selection](./assets/Click_Graph_Selection.png)
 
 
 
-This system has drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also a lasso selection option available in the top right corner<img src="assets/lasso.png " alt="Search_Listbox" style="zoom: 50%;"/>  This allows users to draw a line which, when passing through data it will select it accordingly.
+This system has drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also a lasso selection option available in the top right corner<img src={require('./assets/lasso.png').default} alt="Search_Listbox" style={{ zoom: '50%' }}/>  This allows users to draw a line which, when passing through data it will select it accordingly.
 
-![Line Graph Selection](assets/Line_Graph_Selection.png)
+![Line Graph Selection](./assets/Line_Graph_Selection.png)
 
-Data from graphs can be selected by clicking and dragging just below the x axis, i.e. vertically, to select narrowed, i.e. period of time.![Graph Selection](assets/Graph_Selection.png)
+Data from graphs can be selected by clicking and dragging just below the x axis, i.e. vertically, to select narrowed, i.e. period of time.![Graph Selection](./assets/Graph_Selection.png)
 
 
 
- Data can also be selected just by clicking and dragging the y axis, i.e. horizontally. This will allow to check for the details of highest data used.![Lasso Selection](assets/Lasso_Selection.png)
+ Data can also be selected just by clicking and dragging the y axis, i.e. horizontally. This will allow to check for the details of highest data used.![Lasso Selection](./assets/Lasso_Selection.png)
 
 
 
@@ -1309,7 +1308,7 @@ Data from graphs can be selected by clicking and dragging just below the x axis,
 
  Tables are the most precise way of presenting data gathered because it shows exact values and measures.
 
- ![Data Table Selection](assets/Data_Table_Selection.png)
+ ![Data Table Selection](./assets/Data_Table_Selection.png)
 
  
 
@@ -1329,7 +1328,7 @@ FlowControl actively counts the number of raw and deduplicated flows giving user
 
 
 
-![Flow stats](assets/Flow_Stats.png)
+![Flow stats](./assets/Flow_Stats.png)
 
 
 
@@ -1343,7 +1342,7 @@ This System monitors disk space of the application in real time which is crucial
 -  Free space on Database Partition.
 -  Free space on System Partition.
 
-![image-20200901123342718](assets/image-20200901123342718.png)
+![image-20200901123342718](./assets/image-20200901123342718.png)
 
 
 

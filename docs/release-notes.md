@@ -1,8 +1,7 @@
 ---
-id: Rel
-title: FlowControl System Release Notes
-sidebar_label: Release notes
-hide_title: ver. 1.6 v.1 final
+id: release-notes
+title: Release Notes
+hide_title: true
 ---
 ## Release notes
 

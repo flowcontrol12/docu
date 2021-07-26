@@ -1,8 +1,7 @@
 ---
-id: XND 
+id: xnd
 title: XND module
-sidebar_label: XND User Guide
-hide_title: ver. 1.6.0 v1 finish 
+hide_title: true
 ---
 ## 1. Performance
 
@@ -43,7 +42,7 @@ Thanks to an efficient algorithm using many network parameters, the FlowControl 
 
 
 
- <img src="assets/image-20201112123813503.png" alt="image-20201112123813503" style="zoom:67%;" />
+ <img src={require('./assets/image-20201112123813503.png').default} alt="image-20201112123813503" style={{ zoom: '67%' }} />
 
 *Fig. 2.1.1 XND groups configuration parameters*
 
@@ -55,7 +54,7 @@ The *Fig. 2.2.1* shows the operating principle and the individual analysis steps
 
  
 
- ![image-20201112124555675](assets/image-20201112124555675.png)
+ ![image-20201112124555675](./assets/image-20201112124555675.png)
 
 
 
@@ -115,7 +114,7 @@ For a DDoS attack, each set of parameters defining the target together with the 
 
 
 
-![image-20201112130154333](assets/image-20201112130154333.png)
+![image-20201112130154333](./assets/image-20201112130154333.png)
 
  *Fig. 2.5.2 Static threshold parameters configuration* 
 
@@ -161,7 +160,7 @@ The value of the **Indicator Limit** controls parameters determining how many dy
 
  
 
-![image-20201112130232708](assets/image-20201112130232708.png)
+![image-20201112130232708](./assets/image-20201112130232708.png)
 
 *Fig. 2.6.1 Dynamic threshold parameters configuration* 
 
@@ -169,7 +168,7 @@ The value of the **Indicator Limit** controls parameters determining how many dy
 
 ​	Dynamic threshold parameters are calculated using analysis behavioral mechanism for defined function groups. This mechanism uses data from time intervals preceding the analyzed sample - so-called reference data. This is base data which is used to calculate average values for a set of metrics necessary to detect DDoS attacks. A reference data is data averaged from the last fifteen minutes preceding the analyzed sample. This is used in the comparison process with the analyzed data to calculate dynamic threshold parameters. *Fig. 2.6.2* shows time intervals used to calculate dynamic threshold parameters. 
 
-<img src="assets/image-20201112130304664.png" alt="image-20201112130304664" style="zoom:80%;" />
+<img src={require('./assets/image-20201112130304664.png').default} alt="image-20201112130304664" style={{ zoom: '80%' }} />
 
 *Fig. 2.6.2 Time intervals for determining reference and analysed data*
 
@@ -206,7 +205,7 @@ The dynamic thresholds during an ongoing attack are calculated by the algorithm 
 
 
 
- <img src="assets/image-20201113144640591.png" alt="image-20201113144640591" style="zoom:67%;" />
+ <img src={require('./assets/image-20201113144640591.png').default} alt="image-20201113144640591" style={{ zoom: '67%' }} />
 
 *Fig. 3.1 DDoS attacks mitigation diagram*
 
@@ -677,7 +676,7 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
  
 
-![image-20201112130355880](assets/image-20201112130355880.png)
+![image-20201112130355880](./assets/image-20201112130355880.png)
 
 *Fig. 4.2.1 Function group configuration*
 
@@ -687,7 +686,7 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
   
 
-  ![image-20201112130435787](assets/image-20201112130435787.png)
+  ![image-20201112130435787](./assets/image-20201112130435787.png)
 
 *Fig. 4.2.2 DDoS basic configuration*
 
@@ -712,7 +711,7 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
 
 
-![image-20201112130508003](assets/image-20201112130508003.png)
+![image-20201112130508003](./assets/image-20201112130508003.png)
 
 
 
@@ -720,7 +719,7 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
  
 
- ![image-20201112130536345](assets/image-20201112130536345.png)
+ ![image-20201112130536345](./assets/image-20201112130536345.png)
 
 
 
@@ -757,7 +756,7 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
 *Click the ADD NEW button and configure router* 
 
-<img src="assets/image-20201113150507633.png" alt="image-20201113150507633" style="zoom:80%;" />
+<img src={require('./assets/image-20201113150507633.png').default} alt="image-20201113150507633" style={{ zoom: '80%' }} />
 
 | Configuration  Attribute | Description                              |
 | ------------------------ | ---------------------------------------- |
@@ -791,7 +790,7 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
 6)   Check which services are blocked by BGP FlowSpec (*Fig. 4.2.6*).
 
-![image-20201112130645504](assets/image-20201112130645504.png)
+![image-20201112130645504](./assets/image-20201112130645504.png)
 
  *Fig. 4.2.6 Displaying services blocked by* *BGB FlowSpec*
 
@@ -828,35 +827,35 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
 
 
-![image-20201113153757536](assets/image-20201113153757536.png)
+![image-20201113153757536](./assets/image-20201113153757536.png)
 
 *Fig. 5.1 DDoS Overview*
 
-  ![image-20201113153724230](assets/image-20201113153724230.png)
+  ![image-20201113153724230](./assets/image-20201113153724230.png)
 
 *Fig. 5.2 DDoS Alerts*
 
  
 
-![image-20201113153902769](assets/image-20201113153902769.png)
+![image-20201113153902769](./assets/image-20201113153902769.png)
 
 *Fig. 5.3 DDoS Deep Analysis*
 
  
 
-![image-20201113153953710](assets/image-20201113153953710.png)
+![image-20201113153953710](./assets/image-20201113153953710.png)
 
 *Fig. 5.4 DDoS Alerts Drilldown*
 
 
 
-![image-20201113154041566](assets/image-20201113154041566.png)
+![image-20201113154041566](./assets/image-20201113154041566.png)
 
 *Fig. 5.5 DDoS Statistics*
 
  
 
-![image-20201113154132670](assets/image-20201113154132670.png)
+![image-20201113154132670](./assets/image-20201113154132670.png)
 
 *Fig. 5.6 DDoS Details*
 
