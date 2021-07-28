@@ -2,7 +2,7 @@
 id: XND 
 title: XND module
 sidebar_label: XND User Guide
-hide_title: ver. 1.5.2b final 
+hide_title: ver. 1.6.0 v1 finish 
 ---
 ## 1. Performance
 
@@ -265,7 +265,6 @@ policy-options {
 >**Warning !**
 >
 The NO-VALIDATION policy causes all IP addresses sent by FlowControl to be placed in the FlowSpec table (inetflow.0), regardless of whether they are in the routing table or not. Its use is not mandatory, but it makes easier to diagnose possible BGP communication problems between FlowControl and the router.
->
 
 
 #### 3.1.1 Verifcation of BGP session between FlowControl and the router
@@ -731,13 +730,13 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
 4. Configure DDoS Mitigation (*Fig. 4.2.5*)
 
-
-
-![image-20201112130622515](assets/image-20201112130622515.png)
+![image-20210620134554280](assets/image-20210620134554280.png)
 
 *Fig. 4.2.5 FlowSpec BGP configuration*
 
- 
+
+
+**BGP NEIGHBORS**
 
 | Configuration  Attribute | Description|
 |:--------------------------------   | :-----------|
@@ -754,9 +753,9 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
 *Table 4.2.2 BGP FlowSpec configuration parameters*
 
+### 
 
-
-*5)*   *Click the ADD NEW button and configure router* 
+*Click the ADD NEW button and configure router* 
 
 <img src="assets/image-20201113150507633.png" alt="image-20201113150507633" style="zoom:80%;" />
 
@@ -770,13 +769,39 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
  
 
- 
+**MANUAL BLOK IP**
+
+*Click the ADD NEW button and configure Manual Block IP* 
+
+
+
+![image-20210620135650109](assets/image-20210620135650109.png)
+
+| Configuration  Attribute | Description                                  |
+| :----------------------- | :------------------------------------------- |
+| Dst. IP                  | Destination IP address with a mask (IP/Mask) |
+| Dst. Port                | Destination port (0-65535)                   |
+| Src. IP                  | Source IP address with a mask (IP/Mask)      |
+| Src. Port                | Source port (0-65535)                        |
+| Description              | Rule description (Text)                      |
+| User                     | Filled automatically                         |
+| Added Time               | Filled automatically                         |
+
+
 
 6)   Check which services are blocked by BGP FlowSpec (*Fig. 4.2.6*).
 
 ![image-20201112130645504](assets/image-20201112130645504.png)
 
  *Fig. 4.2.6 Displaying services blocked by* *BGB FlowSpec*
+
+
+
+
+
+![image-20210620135650109](assets/image-20210620135650109.png)
+
+
 
 
 

@@ -2,9 +2,69 @@
 id: Rel
 title: FlowControl System Release Notes
 sidebar_label: Release notes
-hide_title: ver. 1.5.2b final
+hide_title: ver. 1.6 v.1 final
 ---
 ## Release notes
+
+### FlowControl ver. 1.6
+
+1. Mapping functionality has been extended - additional fields and groups have been added.
+
+2. Additional fields support in NetFlow and IPFIX protocols (Config->Netflow->Advanced) has been added.
+
+3. New metrics Packets, Packets/s have been added to the system visualizations.
+
+4. New alarm wizard that allows the user to create advanced nested rules based on a number of parameters, fields, metrics and operators has been added.     
+
+6. Alarms views have been rebuild.
+
+7. New views MPLS and Path NAT for RAW DATA submenu have been added.
+
+8. NetFlow packets filtering utilizing a advance filter wizard based on a number of fields, parameters, metrics and operators has been added.
+
+9. System status and network alarms indicator as a dot to the right of the SYCOPE logo and as a popup with description have been added.
+
+10. Support for IPv4 and IPv6 a addressing on each interface has been added.                          
+
+11. Functionality to configure parameters of DNS lookup for the system engine has been added.                                      
+
+12. Functionality of NetFlow forward has been added.
+
+13. Funcionality to configure system data retention time based on granularity and database type has been added.
+
+14. REST API for metrics has been added.  
+
+  ​    
+
+**XNS, XND and XNR**
+
+14. Manual blocking IP function in the XND module has been added.
+
+15. New XNS rules have been added:
+
+-  Unprotected Docker Daemon
+- Unauthorized RDP from Internet
+- Unauthorized NFS Export Outside The Local Network
+- OT Device Discovered
+- Multicast DNS (mDNS) from Internet
+
+16. Threat categories, tactics and technics fields based on latest MITRE KB have been updated.
+
+17. Threat Intelligence module to import security feeds from Sycope Cyber Threat Intelligence (SCTI) has been added.
+
+18. Capacity reports in XNR module has been added.
+
+
+
+**CLI**
+
+19. Functionality to resize system log files has been added.
+
+20. Functionality to change the space reservation percentage for the disk space management process has been added.
+
+
+
+
 
 ### FlowControl ver. 1.5.2
 
@@ -178,4 +238,3 @@ hide_title: ver. 1.5.2b final
     10.5. Additional tabs for more precise analysis of DDoS attacks added, including presentation of source host data in the context of IP, Country or ASN.
     
     
-

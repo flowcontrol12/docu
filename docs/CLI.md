@@ -2,7 +2,7 @@
 id: CLI
 title: FlowControl Command Line Interface (CLI)
 sidebar_label: CLI commands
-hide_title: ver. 1.5.2b final
+hide_title: ver. 1.6.0 candidate
 ---
 
 ## 1. Access to the system Command Line Console (CLI)

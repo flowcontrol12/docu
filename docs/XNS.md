@@ -2,7 +2,7 @@
 id: XNS
 title: XNS module
 sidebar_label: XNS User Guide
-hide_title: ver. 1.5.2b final
+hide_title: ver. 1.6 v1 final
 ---
 
 
@@ -372,7 +372,6 @@ The alert menu contains a list of detected alarms along with their occurrence ti
 
 *Tab. 1.4.1 Alerts menu dashboards description*.
 
- 
 
 ![image-20201106112402471](assets/image-20201106112402471.png)
 
@@ -402,45 +401,45 @@ The Threat Detection engine generates alerts based on correlations of relevant a
 
 This section describes all rules triggered by the Threat Detection engine.
 
-| **Name**                                |
-| --------------------------------------- |
-| Abnormal DNS Query Limit                |
-| Abnormal DNS Response Limit             |
-| Abnormal flow ratios                    |
-| Brute Force Attack                      |
-| Cleartext Application (Ext->Ext)        |
-| Cleartext Application (Ext->Int)        |
-| Cleartext Application (Int->Ext)        |
-| Cleartext Application (Int->Int)        |
-| DDoS Attack Detected                    |
-| DDoS DNS Amplification Attack           |
-| DNS Transfer Limit                      |
-| DoS - ICMP Flood                        |
-| DoS - TCP Flood                         |
-| DoS - UDP Flood                         |
-| DoS Attack Detected                     |
-| High Data Transfer (Ext->Int)           |
-| High Data Transfer (Int->Ext)           |
-| High Data Transfer (Int->Int)           |
-| Horizontal Scan                         |
-| Large Size Protocol Anomaly             |
-| P2P Activity                            |
-| SPAM (Ext->Ext)                         |
-| SPAM (Ext->Int)                         |
-| SPAM (Int->Ext)                         |
-| SPAM (Int->Int)                         |
-| Suspicious Port BL                      |
-| Suspicious Port WL                      |
-| Unauthorized DHCP Activity              |
-| Unauthorized DNS Activity               |
-| Unauthorized Internet Access            |
-| Unauthorized LLMNR/NetBIOS Activity     |
-| Unauthorized MAIL Activity              |
-| Unauthorized RDP Connection             |
-| Unusually High Data Transfer (Ext->Int) |
-| Unusually High Data Transfer (Int->Ext) |
-| Vertical Scan Detected                  |
-| Virus Outbreak                          |
+| **Name**                                           |
+| -------------------------------------------------- |
+| Anormal  flows ratios                              |
+| Brute  Force Attack                                |
+| Cleartext  Application (Ext->Ext)                  |
+| Cleartext  Application (Ext->Int)                  |
+| Cleartext  Application (Int->Ext)                  |
+| Cleartext  Application (Int->Int)                  |
+| DDoS  Attack Detected                              |
+| DDoS  DNS Amplification Attack                     |
+| Horizontal  Scan                                   |
+| Unauthorized  Internet Access                      |
+| Unauthorized  DHCP Activity                        |
+| Unauthorized  DNS Activity                         |
+| Vertical  Scan Detected                            |
+| DoS  Attack Detected                               |
+| DoS -  ICMP Flood                                  |
+| DoS -  TCP Flood                                   |
+| DoS -  UDP Flood                                   |
+| Abnormal  DNS Query Limit                          |
+| Abnormal  DNS Response Limit                       |
+| DNS  Transfer Limit                                |
+| High  Data Transfer (Int->Ext)                     |
+| High  Data Transfer (Ext->Int)                     |
+| High  Data Transfer (Int->Int)                     |
+| Unusually  High Data Transfer (Int->Ext)           |
+| Unusually  High Data Transfer (Ext->Int)           |
+| P2P  Activity                                      |
+| Large  Size Protocol Anomaly                       |
+| Multicast  DNS (mDNS) from Internet                |
+| OT  Device Discovered                              |
+| SPAM  (Ext->Int)                                   |
+| SPAM  (Ext->Ext)                                   |
+| SPAM  (Int->Ext)                                   |
+| SPAM  (Int->Int)                                   |
+| Suspicious  Port BL                                |
+| Suspicious  Port WL                                |
+| Unauthorized  NFS Export Outside The Local Network |
+| Unauthorized  RDP from Internet                    |
 
 *Tab. 2.1.1 Threat Detection Rules*.
 
@@ -493,39 +492,28 @@ The Threat Intelligence of XNS consists of external and internal (custom) feeds.
 
 
 
-| Feed id                        | Name          | Category  | Score | Description                                                  | MITRE Tactic        | MITRE Techniqe             |
-| ------------------------------ | ------------- | --------- | ----- | ------------------------------------------------------------ | ------------------- | -------------------------- |
-| Spys.me_Proxy                  | Proxy         | Proxy     | 4     | The alert is triggered as a result of detection traffic with Open Proxy IP based on Spys's feed. | Command And Control | Proxy                      |
-| SSLBL_Malicious                | Suspicious IP | Malicious | 4     | The alert is triggered as a result of detection traffic with blacklisted IP based on Abuse.ch's feed. | Command And Control | Application Layer Protocol |
-| Feodotracker_Feodo             | Suspicious IP | Feodo     | 5     | The alert is triggered as a result of detection traffic with blacklisted IP based on Abuse.ch's feed. Feodo also known as Cridex or Bugat is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer. | Command And Control | Application Layer Protocol |
-| Alienvault_Malware             | Suspicious IP | Malware   | 8     | The alert is triggered as a result of detection traffic with blacklisted IP based on Alienvault's feed. | Command And Control | Application Layer Protocol |
-| Badips_Malicious               | Suspicious IP | Malicious | 4     | The alert is triggered as a result of detection traffic with blacklisted IP based on Badips's feed. Badips.com is a community based IP blacklist service. | Command And Control | Application Layer Protocol |
-| Blocklist.de_Malware           | Suspicious IP | Malware   | 4     | The alert is triggered as a result of detection traffic with blacklisted IP based on Blocklist's feed. The www.blocklist.de is a free and voluntary service provided by a Fraud/Abuse-specialist, whose servers are often attacked via SSH-, Mail-Login-, FTP-, Webserver- and other services. | Command And Control | Application Layer Protocol |
-| CINS_Malicious                 | Suspicious IP | Malicious | 6     | The alert is triggered as a result of detection traffic with blacklisted IP based on CINS's feed. The CINS Army list consists of IP addresses that meet one of two basic criteria: 1) The IP's recent Rogue Packet score factor is very poor or 2) The IP has tripped a designated number of 'trusted' alerts across a given number of our Sentinels deployed around the world. | Command And Control | Application Layer Protocol |
-| Charles_SSH                    | Suspicious IP | SSH BL    | 4     | The alert is triggered as a result of detection traffic with blacklisted IP based on Charles's feed. The feed contains IP addresses launching SSH dictionary attacks. | Command And Control | Application Layer Protocol |
-| Cybercrime-tracker.net_Malware | Suspicious IP | Malware   | 5     | The alert is triggered as a result of detection traffic with blacklisted IP based on Cybercrime-tracker's feed. | Command And Control | Application Layer Protocol |
-| TI_Dan_TOR                     | TOR Activity  | TOR       | 7     | The alert is triggered as a result of detection traffic with blacklisted IP based on Dan's feed. | Command And Control | Proxy                      |
-| COVID_03                       | Suspicious IP | Malware   | 7     | The alert is triggered as a result of detection traffic with blacklisted IP based on MalwarePatrolExport's feed. | Command And Control | Application Layer Protocol |
-| COVID_02                       | Suspicious IP | Malware   | 7     | The alert is triggered as a result of detection traffic with blacklisted IP based on Managedsentinel's feed. | Command And Control | Application Layer Protocol |
-| COVID_01                       | Suspicious IP | Malware   | 7     | The alert is triggered as a result of detection traffic with blacklisted IP based on Parthdmaniar's feed. | Command And Control | Application Layer Protocol |
-| RogueDNS                       | Suspicious IP | Rogue DNS | 5     | The alert is triggered as a result of detection traffic with blacklisted IP based on RogueDNS's feed. | Command And Control | Application Layer Protocol |
-| Talos_Intel                    | Suspicious IP | Malware   | 9     | The alert is triggered as a result of detection traffic with blacklisted IP based on Talos's sample feed. Talos's IP and Domain Data Center is the world's most comprehensive real-time threat detection network. The data is made up of daily security intelligence across millions of deployed web, email, firewall and IPS appliances. Talos detects and correlates threats in real time using the largest threat detection network in the world spanning web requests, emails, malware samples, open-source data sets, endpoint intelligence, and network intrusions. The free Talos feed contains an incomplete number of malicious IP addresses | Command And Control | Application Layer Protocol |
-| Torstatus.rueckgr.at_TOR       | TOR Activity  | TOR       | 7     | The alert is triggered as a result of detection traffic with blacklisted IP based on Torstatus's feed. | Command And Control | Proxy                      |
-| Botscout_Bot                   | Suspicious IP | Bot       | 5     | The alert is triggered as a result of detection traffic with suspicious IP based on Botscout's feed. BotScout helps prevent automated web scripts known as bots, from registering on forums, polluting databases, spreading spam, and abusing forms on web sites. They do this by tracking the names, IPs, and email addresses that bots use and logging them as unique signatures for future reference. | Command And Control | Application Layer Protocol |
+| Feed id             | Name             | Score | Description                                                  | MITRE Tactic         | MITRE Techniqe              |
+| ------------------- | ---------------- | ----- | ------------------------------------------------------------ | -------------------- | --------------------------- |
+| IP_CRYPTO_MINING    | Suspicious  IP   | 6     | The  alert is triggered as a result of detection traffic with CRYPTO MINING IP  address. | Impact               | Resource  Hijacking         |
+| IP_MALWARE          | Malicious  IP    | 10    | The  alert is triggered as a result of detection traffic with MALWARE IP address. | Command  and Control | Application  Layer Protocol |
+| IP_OPEN_DNS         | Suspicious  IP   | 3     | The  alert is triggered as a result of detection traffic with OPEN DNS IP address. | Command  and Control | Application  Layer Protocol |
+| IP_PHISHING         | Suspicious  IP   | 9     | The  alert is triggered as a result of detection traffic with PHISHING IP address. | Initial  Access      | Phishing                    |
+| IP_PROXY            | Anonymous  Proxy | 4     | The  alert is triggered as a result of detection traffic with PROXY IP address. | Command  and Control | Proxy                       |
+| IP_SCANNER          | Suspicious  IP   | 4     | The  alert is triggered as a result of detection traffic with SCANNER IP address. | Discovery            | Network  Service Scanning   |
+| IP_SPAM             | Suspicious  IP   | 5     | The  alert is triggered as a result of detection traffic with SPAM IP address. | Initial  Access      | Phishing                    |
+| IP_SYCOPE_COMMUNITY | Malicious  IP    | 8     | The  alert is triggered as a result of detection traffic with malicious IP address  noticed by Sycope Community members. | Command  and Control | Application  Layer Protocol |
+| IP_TOR              | TOR  Activity    | 7     | The  alert is triggered as a result of detection traffic with TOR IP address. | Command  and Control | Proxy                       |
 
 *Tab. 3.1.1 Threat Intelligence - External Feeds*.
 
  
 
-| Feed id                   | Name                            | Category         | Score | Description                                                  | MITRE Tactic        | MITRE Techniqe             |
-| ------------------------- | ------------------------------- | ---------------- | ----- | ------------------------------------------------------------ | ------------------- | -------------------------- |
-| ThreatIntelligence_custom | TEST                            | Impact           | 1     | Internal Threat Intelligence - Custom Feed.                  | Initial Access      | Drive-by Compromise        |
-| OpenDNS_custom            | Open DNS                        | C2               | 3     | Open DNS - Custom feed created manually.                     | Command And Control | Application Layer Protocol |
-| WhitelistIP               | Exception                       | C2               | 4     | IP Whitelist                                                 | Command And Control | Application Layer Protocol |
-| Country_custom            | Suspicious Country              | Botnet           | 6     | The Worst Botnet Countries based on custom list.             | Command And Control | Application Layer Protocol |
-| Cryptomining              | Cryptomining                    | Impact           | 6     | The feed can help with prevention cryptomining in the browser or other apllication. | Impact              | Resource Hijacking         |
-| Sunburst                  | Suspicious IP - Sunburst        | Lateral Movement | 10    | The feed contains part of hardcoded IPs which controls SUNBURST malware behaviour.; | Lateral Movement    | Remote Services            |
-| Sunburst2                 | Suspicious IP - Sunburst (Sig2) | Lateral Movement | 10    | The feed includes malicious IPs regarding the Sunburst backdoor. Attacker leverages SolarWinds supply chain to compromise multiple global victims with this backdoor. | Lateral Movement    | Remote Services            |
+| Feed id                   | Name                             | Score | Description                                                  | MITRE Tactic         | MITRE Techniqe              |
+| ------------------------- | -------------------------------- | ----- | ------------------------------------------------------------ | -------------------- | --------------------------- |
+| ThreatIntelligence_custom | Suspicious  IP                   | 8     | Internal  Threat Intelligence - Custom Feed.                 | Command  and Control | Application  Layer Protocol |
+| WhitelistIP               | Exception                        | 1     | IP  Whitelist                                                | Command  and Control | Application  Layer Protocol |
+| Country_custom            | Suspicious  Country              | 6     | The  Worst Botnet Countries based on custom list.            | Command  and Control | Application  Layer Protocol |
+| Sunburst2                 | Suspicious  IP - Sunburst (Sig2) | 10    | The  feed includes malicious IPs regarding the Sunburst backdoor. Attacker  leverages SolarWinds supply chain to compromise multiple global victims with  this backdoor. | Lateral  Movement    | Remote  Services            |
 
 *Tab. 3.1.2  Sample of Threat Intelligence - Internal Feeds*.
 

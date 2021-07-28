@@ -2,7 +2,7 @@
 id: Req
 title: FlowControl System Requirements
 sidebar_label: Requirements
-hide_title: ver. 1.5.2b final
+hide_title: ver. 1.6.0 candidate
 ---
 
 
