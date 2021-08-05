@@ -11,11 +11,11 @@ An important element of the UI is the data range tab at the top of the page that
 
 
 
-![image-20200901122011827](./assets/image-20200901122011827.png)
+![image-20200901122011827](../assets/image-20200901122011827.png)
 
 
 
-●   **Keep filters** – switching this option on, allows users to keep the filters and selections while switching between a different sections. By default, this option is turned off therefore switching to different section will reset all filters and selections. When enabled filters in different subsection views will be preserved. 
+●   **Keep filters** – switching this option on, allows users to keep the filters and selections while switching between a different sections. y this option is turned off therefore switching to different section will reset all filters and selections. When enabled filters in different subsection views will be preserved. 
 
 ●   **Start date/End date** - choose time slots for which network traffic will be shown. Increasing a time slot might influence loading time for data and statistics. 
 
@@ -72,7 +72,7 @@ Assuming that  **X1**=unix_secs, the filtration result is shown in the figure be
 
 
 
-<img src={require('./assets/image-20201118121705602.png').default} alt="image-20201118121705602" style={{ zoom: '50%' }} />
+[](../assets/image-20201118121705602.png)
 
 <u>**Example 2**</u>
 
@@ -92,7 +92,7 @@ The filtration result is shown in the figure below.
 
 
 
-<img src={require('./assets/image-20201118121839207.png').default} alt="image-20201118121839207" style={{ zoom: '50%' }} />
+[](../assets/image-20201118121839207.png)
 
 <u>**Example 3**</u>
 
@@ -114,7 +114,7 @@ The filtration result is shown in the figure below.
 
 
 
-<img src={require('./assets/image-20201118121942468.png').default} alt="image-20201118121942468" style={{ zoom: '50%' }} />
+[](../assets/image-20201118121942468.png)
 
 <u>**Example 4**</u>
 
@@ -140,33 +140,33 @@ The filtration result is shown in the figure below.
 
  
 
-<img src={require('./assets/image-20201118122146630.png').default} alt="image-20201118122146630" style={{ zoom: '50%' }} />
+[](../assets/image-20201118122146630.png)
 
 
 
 ###Data Specific Selection Tab
 
-When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  <img src={require('./assets/x.png').default} alt="Step back" style={{ zoom: '50%' }} />   button on the tab.
+When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  [](../assets/x.png)
 
 
 
-![image-20201004162557687](./assets/image-20201004162557687.png)
+![image-20201004162557687](../assets/image-20201004162557687.png)
 
 
 
-![image-20201004162912959](./assets/image-20201004162912959.png)  <b>Smart search </b> clicking this option will pop up a type in section, where any phrase can be typed in that is being looked for. This system automatically suggests options while typing.
+![image-20201004162912959](../assets/image-20201004162912959.png)  <b>Smart search </b> clicking this option will pop up a type in section, where any phrase can be typed in that is being looked for. This system automatically suggests options while typing.
 
-![Google Search](./assets/Google_Search.png)
+![Google Search](../assets/Google_Search.png)
 
 
 
-![image-20201004163033256](./assets/image-20201004163033256.png) <b> Step back </b> - clicking this option will take a step back in data selections.
+![image-20201004163033256](../assets/image-20201004163033256.png) <b> Step back </b> - clicking this option will take a step back in data selections.
 
-![image-20201004163059467](./assets/image-20201004163059467.png)  <b>Step forward </b> - clicking this option will take a step forward in data selections.
+![image-20201004163059467](../assets/image-20201004163059467.png)  <b>Step forward </b> - clicking this option will take a step forward in data selections.
 
-![image-20201004163129997](./assets/image-20201004163129997.png)  <b> Clear all selections </b> - this option will clear every data selection made.
+![image-20201004163129997](../assets/image-20201004163129997.png)  <b> Clear all selections </b> - this option will clear every data selection made.
 
-![image-20201004163218048](./assets/image-20201004163218048.png)**Bookmark** - this option is a shortcut to the users filter parameters
+![image-20201004163218048](../assets/image-20201004163218048.png)**Bookmark** - this option is a shortcut to the users filter parameters
 
 
 
@@ -176,7 +176,7 @@ This system will present the data, metrics and outcome of a configured rule set 
 
 
 
-<img src={require('./assets/image-20210208122009230.png').default} alt="image-20210208122009230" style={{ zoom: '67%' }} />
+[](../assets/image-20210208122009230.png)
 
 
 
@@ -186,17 +186,18 @@ This system will present the data, metrics and outcome of a configured rule set 
 
 #### Drill Down Options
 
-Depending on the specific dashboard and widget chosen, this system allows different drill down options. The universal method is clicking over any chart, graph or table where the user will be prompted with:![Interface Graph](./assets/Interface_Graph.png)
+Depending on the specific dashboard and widget chosen, this system allows different drill down options. The universal method is clicking over any chart, graph or table where the user will be prompted with:![Interface Graph](../assets/Interface_Graph.png)
 
 - **Exploration menu** - clicking this option will pop up an exploration menu. This is the place where users can adjust the graph, table or chart to their own needs. Options available for change are as follows: data to be shown, way of sorting data, presentation of given graph, chart or table, colors and legend.
 
 
 
-![Graph ](./assets/Graph_menu.png)
+![Graph ](../assets/Graph_menu.png)
 
 
 
-- **Full screen** - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press<img src={require('./assets/image-20210211181659481.png').default} alt="image-20210211181659481" style={{ zoom: '50%' }}/>when in full screen mode.
+- **Full screen** - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press[](../assets/image-20210211181659481.png)
+screen mode.
 - **Export** - Preconfigured export options:
 
   - Export as an image,
@@ -206,11 +207,11 @@ Depending on the specific dashboard and widget chosen, this system allows differ
   - Export data.
 
 
-![Grouping Dashboard](./assets/Grouping_Dashboard.png)
+![Grouping Dashboard](../assets/Grouping_Dashboard.png)
 
 In some sections, there is a possibility to select data by choosing from drop down menus:
 
-<img src={require('./assets/Search_Listbox.png').default} alt="Search_Listbox" style={{ zoom: '200%' }} /> 
+[](../assets/Search_Listbox.png)
 
 This system allows users to type in a searched phrase or select it from the drop down menu. Please remember that depending on the data chosen, fields will change color according to the data availability, suggesting to users which data types are aligned.
 
@@ -218,25 +219,26 @@ This system allows users to type in a searched phrase or select it from the drop
 
 #### Visual Data Extraction
 
-The first thing to notice when working with charts is that when users hover their mouse over any bar/data point it will show more details regarding that specific data.  ![Detail Graph Data](./assets/Detail_Graph_Data.png)
+The first thing to notice when working with charts is that when users hover their mouse over any bar/data point it will show more details regarding that specific data.  ![Detail Graph Data](../assets/Detail_Graph_Data.png)
 
 
 
 When clicking on bars, they will be selected. You can click on multiple bars in order to view only them in the chart. In order to confirm the selection, please press the green button on the top right corner. If data is presented on multiple elements of the dashboard, users’ selection on one plot will impact data presentation on others according to the selection made.
 
-![Click Graph Selection](./assets/Click_Graph_Selection.png)
+![Click Graph Selection](../assets/Click_Graph_Selection.png)
 
 
 
-This system has drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also a lasso selection option available in the top right corner<img src={require('./assets/lasso.png').default} alt="Search_Listbox" style={{ zoom: '50%' }}/>  This allows users to draw a line which, when passing through data it will select it accordingly.
+This system has drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also a lasso selection option available in the top right corner[](../assets/lasso.png)
+draw a line which, when passing through data it will select it accordingly.
 
-![Line Graph Selection](./assets/Line_Graph_Selection.png)
+![Line Graph Selection](../assets/Line_Graph_Selection.png)
 
-Data from graphs can be selected by clicking and dragging just below the x axis, i.e. vertically, to select narrowed, i.e. period of time.![Graph Selection](./assets/Graph_Selection.png)
+Data from graphs can be selected by clicking and dragging just below the x axis, i.e. vertically, to select narrowed, i.e. period of time.![Graph Selection](../assets/Graph_Selection.png)
 
 
 
- Data can also be selected just by clicking and dragging the y axis, i.e. horizontally. This will allow to check for the details of highest data used.![Lasso Selection](./assets/Lasso_Selection.png)
+ Data can also be selected just by clicking and dragging the y axis, i.e. horizontally. This will allow to check for the details of highest data used.![Lasso Selection](../assets/Lasso_Selection.png)
 
 
 
@@ -244,7 +246,7 @@ Data from graphs can be selected by clicking and dragging just below the x axis,
 
  Tables are the most precise way of presenting data gathered because it shows exact values and measures.
 
- ![Data Table Selection](./assets/Data_Table_Selection.png)
+ ![Data Table Selection](../assets/Data_Table_Selection.png)
 
  
 
