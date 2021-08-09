@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 ## Introduction
 
 In this document you will find information about the most important options available in the FlowControl System. How to operate with data, graphs and charts as well as a general description of options available in the system. 

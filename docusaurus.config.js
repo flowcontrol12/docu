@@ -30,19 +30,37 @@ module.exports = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           path: "./docs",
-          sidebarPath: require.resolve('./sidebars.js')
-        },
-        blog: {
-          path: "blog"
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
+        //   sidebarItemsGenerator: async function ({
+        //     defaultSidebarItemsGenerator,
+        //     numberPrefixParser,
+        //     item,
+        //     version,
+        //     docs,
+        //   }) {
+        //     // Example: return an hardcoded list of static sidebar items
+        //     console.log(defaultSidebarItemsGenerator)
+        //     console.log(numberPrefixParser)
+        //     console.log(item)
+        //     console.log(version)
+        //     console.log(docs)
+        //     return [
+        //       // {type: 'doc', id: 'doc1'},
+        //       // {type: 'doc', id: 'doc2'},
+        //     ];
+        //   },
         },
         theme: {
-          customCss: "../src/css/customTheme.css"
+          customCss: [require.resolve('./src/css/custom.css')]
         }
       }
     ]
   ],
-  plugins: [],
   themeConfig: {
+    colorMode: {
+      disableSwitch: true,
+    },
     navbar: {
       title: "flowcontrol documentation",
       logo: {
