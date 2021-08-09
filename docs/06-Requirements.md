@@ -1,14 +1,4 @@
----
-id: requirements
-title: Requirements
-hide_title: true
----
-
-
-
 With purchase of FlowControl system, you receive **OVA file** required for deployment of the software. Please ensure that the file is available for installation process.
-
-  
 
 **Server requirements**
 
@@ -24,15 +14,11 @@ The table below lists the required server hardware parameters for desired flow l
 
 *Tab.1 FlowControl hardware requirements*
 
-
-
 > **Attention**: 
 >
 > 1. System drive should be located on the SSD partition.
 > 2. Supported Hypervisor VMware ESXi 6.5+.
 > 3. Please note that all vCPUs should be divided between 2 sockets, e.g for option with 60k FPS, that has 16 vCPUs, there will be 8 vCPUs per socket.
-
-
 
 **Client workstation requirement parameters.** 
 
@@ -45,8 +31,6 @@ Any devices with the following web browsers in the latest version :
 - Edge
 
 - Opera
-
-  
 
 > **Attention:**
 >

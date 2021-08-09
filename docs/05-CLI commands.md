@@ -1,10 +1,4 @@
----
-id: cli
-title: CLI commands
-hide_title: true
----
-
-## 1. Access to the system Command Line Console (CLI)
+## Access to the system Command Line Console (CLI)
 
 If the installation and deployment have been successfully completed, configuration process can be applied. Run the virtual machine that has been created. In order to access the configuration panel press **Left Shift** button 5 times. **Cmd** console will pop up, there will be command line asking for a password.
 
@@ -12,11 +6,7 @@ If the installation and deployment have been successfully completed, configurati
 
 The system command root folder real terminal view is displayed. Some CLI commands are used to enter into the group of commands related to them.
 
-
-
-## 2. FlowControl command line interface (CLI) commands
-
-
+## FlowControl command line interface (CLI) commands
 
 After login to CLI console the status of network configuration and the list of CLI commands should be as seen in the figure below.
 
@@ -28,27 +18,15 @@ After login to CLI console the status of network configuration and the list of C
 
 ---
 
-
-
 <img src={require('./assets/image-20210204152917666.png').default} alt="image-20210204152917666" style={{ zoom: '50%' }} />
-
-
-
-
 
 In the diagram below are the CLI commands structure tree related to real console view.
 
 <img src={require('./assets/image-20210204165400298.png').default} alt="image-20210204165400298" style={{ zoom: '67%' }} />
 
-
-
 ---
 
-
-
 ### [status]
-
-
 
 The command [**status**] is used to display actual status of most important system parameters as shown below .
 
@@ -68,23 +46,13 @@ The command [**status**] is used to display actual status of most important syst
 
 [**status**- System status] - displays information stating if most important system elements should be working property.
 
- 
-
 The figure below shows the real CLI console view for [status] command.  
 
 ![image-20200818101412725](./assets/image-20200818101412725.png)
 
-
-
-
-
 ---
 
-
-
 ### [config]
-
-
 
 The [**config**] command is used to enter the group of commands allowing changes to all of the most important system network parameters as shown below.
 
@@ -92,21 +60,16 @@ The [**config**] command is used to enter the group of commands allowing changes
 
 <img src={require('./assets/image-20200812133744015.png').default} alt="image-20200812133744015" style={{ zoom: '67%' }} />
 
-
-
 [**config**-interface] - The command  [config-interface] is used to configure IP addresses for any interfaces connected to the FC system.
 
 <img src={require('./assets/image-20200812114626095.png').default} alt="image-20200812114626095" style={{ zoom: '67%' }} />
 
 <img src={require('./assets/image-20200812133929455.png').default} alt="image-20200812133929455" style={{ zoom: '80%' }} />
 
-​	
-
+​
 [**config**-interface-show] - The command [**config**-interface-show] is used to show detailed information of any network interfaces connected to FC system.
 
 <img src={require('./assets/image-20200812133840106.png').default} alt="image-20200812133840106" style={{ zoom: '80%' }} />
-
-
 
 [**config**-interface-Ethernet0] -  The command [**config**-interface-Ethernet0] is used to configure network parameters of interface Ethernet0. Either DHCP or static IP address can be configured.
 

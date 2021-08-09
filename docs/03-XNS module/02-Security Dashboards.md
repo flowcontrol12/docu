@@ -1,5 +1,3 @@
-## Security Dashboards
-
 FlowControl XNS contains four menus (*Fig. 1.1)* of views for effective analysis of detected security threats: 
 •       SOC
 •       KPIs
@@ -29,9 +27,7 @@ Each of them has a set of dedicated tabs and dashboards that are appropriately u
 
 In the following sections, individual dashboards are discussed in more detail.
 
-
-
-### SOC
+## SOC
 
 The SOC dashboards are great for security departments like SOC who deal with 24/7 security monitoring. *Tab. 1.1.1* contains a summary description of each SOC tabs.
 
@@ -43,27 +39,21 @@ The SOC dashboards are great for security departments like SOC who deal with 24/
 
 *Tab. 1.1.1 Summary description of the SOC tabs*.
 
-
-
 *Fig. 1.1.1-1.1.3* shows the individual dashboards of the SOC menu.
 
 ![image-20201106105548242](../assets/image-20201106105548242.png)
 
- *Fig. 1.1.1 SOC menu Overview dashboard.*
+*Fig. 1.1.1 SOC menu Overview dashboard.*
 
- ![image-20201106105809517](../assets/image-20201106105809517.png)
+![image-20201106105809517](../assets/image-20201106105809517.png)
 
- *Fig. 1.1.2 SOC menu TOP IPs dashboard.*
-
- 
+*Fig. 1.1.2 SOC menu TOP IPs dashboard.*
 
 ![image-20201106111000101](../assets/image-20201106111000101.png)
 
-  *Fig. 1.1.3 SOC menu TOPs dashboard.*
+*Fig. 1.1.3 SOC menu TOPs dashboard.*
 
- 
-
-### KPIs
+## KPIs
 
 The KPIs dashboards facilitate the process of monitoring security risk trends based on the threats detected in the XNS module. These indicators are presented on a weekly basis, comparing specific attributes to specific days of the week. Tracking risk trends makes it easier to make decisions regarding remedial actions, which is an added value for security managers. 
 
@@ -78,47 +68,33 @@ The indicators have been grouped into four categories: Severity, Host, Tactic an
 
 *Tab. 1.2.1 XNS KPIs individual indicators descriptions*.
 
-
-
 *Fig. 1.2.1-1.2.6* shows the individual dashboards of the KPIs menu.
 
 ![image-20201106111155361](../assets/image-20201106111155361.png)
 
- *Fig. 1.2.1 KPIs menu Risk by Severity dashboard.*
-
- 
+*Fig. 1.2.1 KPIs menu Risk by Severity dashboard.*
 
 ![image-20201106111230123](../assets/image-20201106111230123.png)
 
- *Fig. 1.2.2 KPIs menu Risk by Host dashboard.*
-
- 
+*Fig. 1.2.2 KPIs menu Risk by Host dashboard.*
 
 ![image-20201106111301518](../assets/image-20201106111301518.png)
 
- *Fig. 1.2.3  - KPIs menu Risk by Tactic / Tactic dashboard.*
-
- 
+*Fig. 1.2.3  - KPIs menu Risk by Tactic / Tactic dashboard.* 
 
 ![image-20201106111325526](../assets/image-20201106111325526.png)
 
- *Fig. 1.2.4 KPIs menu Risk by Tactic/Technique dashboard.*
-
- 
+*Fig. 1.2.4 KPIs menu Risk by Tactic/Technique dashboard.*
 
 ![image-20201106111343859](../assets/image-20201106111343859.png)
 
- *Fig. 1.2.5 KPIs menu Risk by Tactic/Alerts dashboard.* 
-
-
+*Fig. 1.2.5 KPIs menu Risk by Tactic/Alerts dashboard.* 
 
 ![image-20201106111405548](../assets/image-20201106111405548.png)
 
-  *Fig. 1.2.6 KPIs menu Risk by Module dashboard.*
+*Fig. 1.2.6 KPIs menu Risk by Module dashboard.*
 
- 
-
-### Use Cases
+## Use Cases
 
 The scenarios implemented in the XNS module facilitate the process of analysis and drawing conclusions regarding the most important aspects related to the security of the monitored organization. The Use Cases menu is divided into the following three submenus: Threat Analysis, External Threats, Internal Threats which are described in the *Tab 1.3.1*. 
 
@@ -130,9 +106,7 @@ The scenarios implemented in the XNS module facilitate the process of analysis a
 
 *Tab. 1.3.1 Use Cases submenu individual descriptions*.
 
- 
-
-#### Threat Analysis
+### Threat Analysis
 
 The Threat Analysis dashboards allow multi-level analysis of all security threats, regardless of whether they come from outside or inside the organization. They are described in the *Tab. 1.3.1.1*.
 
@@ -146,55 +120,41 @@ The Threat Analysis dashboards allow multi-level analysis of all security threat
 | BOTTOMs               | A set of views presenting information about threats in the context of the most rare parameters, e.g. Source-Destination pair of Groups, Source-Destination pair of Hosts, Applications and Alert Names. |
 | Alerts Statistics     | A scatter plot of the relationship between the number of Alert Names and Destination Hosts. |
 
- *Tab. 1.3.1.1 Threat Analysis submenu dashboard description.*
-
-
+*Tab. 1.3.1.1 Threat Analysis submenu dashboard description.*
 
 *Fig. 1.3.1.1 -1.3.1.7* Shows individual dashboards from Threat Analysis submenu.
 
- 
 
 ![image-20201106111538376](../assets/image-20201106111538376.png)
 
- *Fig. 1.3.1.1 Threat Analysis - Alerts Drilldown dashboard.*
-
- 
+*Fig. 1.3.1.1 Threat Analysis - Alerts Drilldown dashboard.* 
 
 ![image-20201106111600400](../assets/image-20201106111600400.png)
 
- *Fig. 1.3.1.2  Threat Analysis - TOP Suspicious IPs dashboard.*
-
- 
+*Fig. 1.3.1.2  Threat Analysis - TOP Suspicious IPs dashboard.*
 
 ![image-20201106111650298](../assets/image-20201106111650298.png)
 
- *Fig. 1.3.1.3 Threat Analysis - IPs Correlation dashboard.*
-
- 
+*Fig. 1.3.1.3 Threat Analysis - IPs Correlation dashboard.*
 
 ![image-20201106111709571](../assets/image-20201106111709571.png)
 
- *Fig. 1.3.1.4 Threat Analysis - Groups Correlation dashboard.*
-
- 
+*Fig. 1.3.1.4 Threat Analysis - Groups Correlation dashboard.*
 
 ![image-20201215143002272](/home/ted/ExpanDrive/OneDrive/PRACA/_1Passus/Strona dokumentacja bieżąca/v1.5.2 candidate/assets/image-20201215143002272.png) 
 
- *Fig. 1.3.1.5 Threat Analysis - Countries Correlation dashboard*
+*Fig. 1.3.1.5 Threat Analysis - Countries Correlation dashboard*
 
- ![image-20201106111928569](../assets/image-20201106111928569.png)
+![image-20201106111928569](../assets/image-20201106111928569.png)
 
- *Fig. 1.3.1.6 Threat Analysis - BOTTOMs dashboard.*
-
- 
+*Fig. 1.3.1.6 Threat Analysis - BOTTOMs dashboard.*
 
 ![image-20201106111953012](../assets/image-20201106111953012.png)
 
- *Fig. 1.3.1.7 Threat Analysis - Alerts Statistics dashboard*.
+*Fig. 1.3.1.7 Threat Analysis - Alerts Statistics dashboard*.
 
- 
 
-#### External Alerts
+### External Alerts
 
 External Threats dashboards focus on presenting artifacts related to security threats from outside the organization. *Tab. 1.3.2.1* contains descriptions of individual dashboards. 
 
@@ -206,27 +166,19 @@ External Threats dashboards focus on presenting artifacts related to security th
 
 *Tab. 1.3.2.1 Use Cases - External Threats*
 
- 
-
 ![image-20201106112051083](../assets/image-20201106112051083.png)
 
-  *Fig. 1.3.2.1 External Threats - Alerts Drilldown dashboard.*
-
- 
+*Fig. 1.3.2.1 External Threats - Alerts Drilldown dashboard.*
 
 ![image-20201106112125535](../assets/image-20201106112125535.png)
 
- *Fig. 1.3.2.2 External Threats Alerts Data Size dashboard.*
-
- 
+*Fig. 1.3.2.2 External Threats Alerts Data Size dashboard.*
 
 ![image-20201106112159510](../assets/image-20201106112159510.png)
 
- *Fig. 1.3.2.3 External Threats Alerts Map dashboard.*
+*Fig. 1.3.2.3 External Threats Alerts Map dashboard.*
 
- 
-
-#### Internal Threats
+### Internal Threats
 
 Internal Threats dashboards focus on presenting artifacts related to security threats from within the organization. *Tab. 1.3.3.1* contains descriptions of Internal Threats submenu Alerts Drilldown dashboard.
 
@@ -236,17 +188,14 @@ Internal Threats dashboards focus on presenting artifacts related to security th
 
 *Tab. 1.3.3.1 Internal Threats - Alerts Drilldown dashboard description*.
 
-
-
 In the *Fig. 1.3.3.1* you can see Alerts Drilldown dashboard.
 
 [](../assets/image-20210210104220918.png)
 
- *Fig. 1.3.3.1 Internal Threats - Alerts Drilldown dashboard.*
+*Fig. 1.3.3.1 Internal Threats - Alerts Drilldown dashboard.*
 
- 
 
-### Alerts
+## Alerts
 
 The alert menu contains a list of detected alarms along with their occurrence times and other attributes. There are two dashboards: Overview and Mitre KB that are described in the *Tab. 1.4.1* and shown in *Fig. 1.4.1-1.4.2.* 
 
@@ -260,18 +209,14 @@ The alert menu contains a list of detected alarms along with their occurrence ti
 
 ![image-20201106112402471](../assets/image-20201106112402471.png)
 
- *Fig. 1.4.1 Alerts Overview dashboards.*
-
- 
+*Fig. 1.4.1 Alerts Overview dashboards.*
 
 ![image-20201106112445004](../assets/image-20201106112445004.png)
 
- *Fig. 1.4.2 Alerts MITRE KB dashboard.*
-
- 
+*Fig. 1.4.2 Alerts MITRE KB dashboard.*
 
 If you need a full description of a given technique, use the redirect function to the appropriate page using the right mouse click on the **Id** attribute on the Alerts/MITRE KB dashboard (*Fig. 1.4.3*).
 
 ![image-20210210103933305](../assets/image-20210210103933305.png)
 
- *Fig. 1.4.3 MITRE KB - Right click function*.
+*Fig. 1.4.3 MITRE KB - Right click function*.

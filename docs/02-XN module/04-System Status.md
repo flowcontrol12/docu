@@ -1,5 +1,3 @@
-## System Status
-
 This system provides information about its current status and performance. This information is divided into two main sections, Flows and System Statistics.
 
 ### Flows Stats

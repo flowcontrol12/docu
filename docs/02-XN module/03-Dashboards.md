@@ -1,19 +1,10 @@
-
-## Dashboards
-
 This section will cover various aspects of working with selected data. We will divide this section into different aspects that FlowControl uses to interpret data from the network. This will include various graphs, charts and tables as well as best practices on how to work with the data. 
-
-
 
 ### Date Range Tab
 
 An important element of the UI is the data range tab at the top of the page that stays with the user at all times in both XN, XNS and XND tabs and XNR. By default the system shows data and statistics for the last 15 minutes after initial login. When starting work on FlowControl it is crucial to remember to change the time range accordingly. Use the data range tab in order to make  the changes listed below: 
 
-
-
 ![image-20200901122011827](../assets/image-20200901122011827.png)
-
-
 
 ●   **Keep filters** – switching this option on, allows users to keep the filters and selections while switching between a different sections. y this option is turned off therefore switching to different section will reset all filters and selections. When enabled filters in different subsection views will be preserved. 
 
@@ -27,11 +18,7 @@ An important element of the UI is the data range tab at the top of the page that
 
 ●   **Search** - specific IPv4 addresses can be searched for. Every widget will be automatically adjusted to show information regarding only the IPv4 address being searched for. 
 
-
-
 > **Note:** In order to save your preferences, please click the **APPLY** button available on right-hand side. 
-
-
 
 The FlowControl system allows advanced search with filters. The number of available filters depends on the selected database on which the filtering operation will be performed. The table below lists with a description all available filters for the given database.
 
@@ -58,13 +45,9 @@ The FlowControl system allows advanced search with filters. The number of availa
 | destination network          | dstnet             | X                        | X                                      |                                      |                               |
 | srcnet or dstnet             | net                | X                        | X                                      |                                      |                               |
 
- 
-
 The available filters can be chained together to create any complicated search. Examples of complex searches are presented below.
 
-
-
-<u>**Example 1**</u>
+**Example 1**
 
 Filter fold: unix_secs=202010261000,202010261001;
 
@@ -74,7 +57,7 @@ Assuming that  **X1**=unix_secs, the filtration result is shown in the figure be
 
 [](../assets/image-20201118121705602.png)
 
-<u>**Example 2**</u>
+**Example 2**
 
 **Filter fold:** unix_secs=202010261000,202010261001&scraddr=1.1.1.1,2.2.2.2
 
@@ -94,7 +77,7 @@ The filtration result is shown in the figure below.
 
 [](../assets/image-20201118121839207.png)
 
-<u>**Example 3**</u>
+**Example 3**
 
 **Filter fold:**  unix_secs=202010261000,202010261001&scraddr=1.1.1.1,2.2.2.2&dstaddr=3.3.3.3,4.4.4.4
 
@@ -116,7 +99,7 @@ The filtration result is shown in the figure below.
 
 [](../assets/image-20201118121942468.png)
 
-<u>**Example 4**</u>
+**Example 4**
 
 **Filter fold:** unix_secs=202010261000,202010261001&addr=1.1.1.1,2.2.2.2
 
@@ -144,7 +127,7 @@ The filtration result is shown in the figure below.
 
 
 
-###Data Specific Selection Tab
+### Data Specific Selection Tab
 
 When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  [](../assets/x.png)
 

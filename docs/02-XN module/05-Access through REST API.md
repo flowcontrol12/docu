@@ -1,10 +1,4 @@
-## Access to FlowControl data through REST API
-
-
-
 Since FolowControl version 1.6 it is possible to download data based on queries through external mechanisms - REST API.
-
-
 
 ```
 Link: 

@@ -1,10 +1,3 @@
----
-id: release-notes
-title: Release Notes
-hide_title: true
----
-## Release notes
-
 ### FlowControl ver. 1.6
 
 1. Mapping functionality has been extended - additional fields and groups have been added.
@@ -33,8 +26,6 @@ hide_title: true
 
 14. REST API for metrics has been added.  
 
-  ​    
-
 **XNS, XND and XNR**
 
 14. Manual blocking IP function in the XND module has been added.
@@ -53,21 +44,13 @@ hide_title: true
 
 18. Capacity reports in XNR module has been added.
 
-
-
 **CLI**
 
 19. Functionality to resize system log files has been added.
 
 20. Functionality to change the space reservation percentage for the disk space management process has been added.
 
-
-
-
-
 ### FlowControl ver. 1.5.2
-
-
 
 1. Added new submenus to Configuration menu with commands: Update, Backup, Restore and Logs.
 2. Added a new Total Packtes/s metric on the tab Traffic Overview in the Traffic submenu.
@@ -132,11 +115,7 @@ hide_title: true
 
     - When the Feed ID value to the Custom Feed is added, no changes is applied even though information "Success! Data has been saved correctly!" is displayed.
 
-
-
 ### FlowControl ver. 1.5.1
-
-
 
 1. A new method for entering permissions for users has been added. When creating or modifying user account, it is possible to select the "Show advanced view" to  assign permissions to individual dashboards.
 2. A possibility of hiding the date selection and reload bar by clicking on the filter icon on the top right or in the profile settings has been added.
@@ -146,8 +125,6 @@ hide_title: true
 6. Added popup showing how long the data was loaded.
 7. Added a new unit on graphs - packets/s.
 8. Added new dashboard in Raw Data submenu named Throughput based on Utilization database.
-
-
 
 **XNS module**: 
 
@@ -160,11 +137,7 @@ hide_title: true
 12. Extension of DDoS dashboards i.a. added Ratios unit to DDoS Deep Analysis dashboard.
 13. Added new feature to mitigate DDoS - RTBH (Remotely Triggered Black Hole).
 
- 
-
 ###  FlowControl ver. 1.5
-
- 
 
 1. New improved engine.
 
@@ -202,8 +175,6 @@ hide_title: true
 
    6.1.3. Automatic unit change for bytes, bits and bits/s added, e.g. kB, kb, kB/s, MB, Mb, Mb/s, GB, Gb, Gb/s, TB, Tb etc.
 
- 
-
 **XN module**: 
 
 7. Automatic ASA NSEL recognition added.
@@ -215,8 +186,6 @@ hide_title: true
    8.2. ASA submenu – added support for additional fields from NSEL: Firewall Event, Firewall Extended Event.
 
    8.3. RawData submenu– new tab added: **throughput**.
-
- 
 
 **XNS module**: 
 
@@ -235,5 +204,3 @@ hide_title: true
     10.4. There have been extended tabs allowing correlations with real traffic, e.g. displaying information about attackers in the context of IP, countries and ASN.
 
     10.5. Additional tabs for more precise analysis of DDoS attacks added, including presentation of source host data in the context of IP, Country or ASN.
-    
-    

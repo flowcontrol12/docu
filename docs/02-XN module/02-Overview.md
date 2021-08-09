@@ -1,8 +1,4 @@
-## Overview
-
 The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (**XN, XNS, XND, XNR, SYS**) and the icons in the top right corner ![image-20201004161928752](../assets/image-20201004161928752.png) (**Configuration options**). They are all vital components for working with the system, effective problem identification and data mining.
-
-
 
 ### Main
 
@@ -142,16 +138,13 @@ Below is a list of all events/alerts that are indicated by the dot:
 
 ### Configuration
 
-On the right-hand side of the system there are three drop-down menus and on[](a../ssets/image-20201119105609453.png').default}
-switch <[]((../'./assets/image-20201119105609453.png').default}
-hide t)he date selection and overload bar. The first menu, marked with this icon  ![image-20201004161928752](../assets/image-20201004161928752.png), is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with ![image-20201004162213351](../assets/image-20201004162213351.png), is available for all users. Things that can be found in this section are :
+On the right-hand side of the system there are three drop-down menus and on [](../assets/image-20201119105609453.png)
+switch [](../assets/image-20201119105609453.png) hide the date selection and overload bar. The first menu, marked with this icon ![image-20201004161928752](../assets/image-20201004161928752.png), is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with ![image-20201004162213351](../assets/image-20201004162213351.png), is available for all users. Things that can be found in this section are :
 
 - License Info,
 - User Guide,
 - Documentation,
 - About. 
-
-
 
 The license is delivered as a text file. To activate the license, the text from the delivered file must be copied into to the field “Add License” [settings menu/config/license] as below.
 
