@@ -12,13 +12,7 @@ Source: [RFC3954](https://www.ietf.org/rfc/rfc3954.txt)
 
 According to the RFC3964 FlowControl solution works as a Flow Collector which collects, analyzes and visualize the collected flows. Metrics are presented and examined from two perspectives: Network and Security giving the operator valuable input into network/application problems analysis as well as security threats hunting. 
 
-
-
-
-
-[](../assets/sycope_flowcontrol_1_5.jpg)
-
-
+![](../assets/sycope_flowcontrol_1_5.jpg)
 
 FlowControl supports the following flow protocol data sources: 
 

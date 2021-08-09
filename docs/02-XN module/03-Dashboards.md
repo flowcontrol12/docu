@@ -55,7 +55,7 @@ Assuming that  **X1**=unix_secs, the filtration result is shown in the figure be
 
 
 
-[](../assets/image-20201118121705602.png)
+![](../assets/image-20201118121705602.png)
 
 **Example 2**
 
@@ -75,7 +75,7 @@ The filtration result is shown in the figure below.
 
 
 
-[](../assets/image-20201118121839207.png)
+![](../assets/image-20201118121839207.png)
 
 **Example 3**
 
@@ -97,7 +97,7 @@ The filtration result is shown in the figure below.
 
 
 
-[](../assets/image-20201118121942468.png)
+![](../assets/image-20201118121942468.png)
 
 **Example 4**
 
@@ -123,13 +123,13 @@ The filtration result is shown in the figure below.
 
  
 
-[](../assets/image-20201118122146630.png)
+![](../assets/image-20201118122146630.png)
 
 
 
 ### Data Specific Selection Tab
 
-When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  [](../assets/x.png)
+When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  ![](../assets/x.png)
 
 
 
@@ -159,7 +159,7 @@ This system will present the data, metrics and outcome of a configured rule set 
 
 
 
-[](../assets/image-20210208122009230.png)
+![](../assets/image-20210208122009230.png)
 
 
 
@@ -179,7 +179,7 @@ Depending on the specific dashboard and widget chosen, this system allows differ
 
 
 
-- **Full screen** - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press[](../assets/image-20210211181659481.png)
+- **Full screen** - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press![](../assets/image-20210211181659481.png)
 screen mode.
 - **Export** - Preconfigured export options:
 
@@ -194,7 +194,7 @@ screen mode.
 
 In some sections, there is a possibility to select data by choosing from drop down menus:
 
-[](../assets/Search_Listbox.png)
+![](../assets/Search_Listbox.png)
 
 This system allows users to type in a searched phrase or select it from the drop down menu. Please remember that depending on the data chosen, fields will change color according to the data availability, suggesting to users which data types are aligned.
 
@@ -212,7 +212,7 @@ When clicking on bars, they will be selected. You can click on multiple bars in 
 
 
 
-This system has drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also a lasso selection option available in the top right corner[](../assets/lasso.png)
+This system has drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also a lasso selection option available in the top right corner![](../assets/lasso.png)
 draw a line which, when passing through data it will select it accordingly.
 
 ![Line Graph Selection](../assets/Line_Graph_Selection.png)

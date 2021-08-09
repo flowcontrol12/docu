@@ -6,7 +6,7 @@ FlowControl XNS contains four menus (*Fig. 1.1)* of views for effective analysis
 
 
 
-[](../assets/2020-11-06_11-02-21.png)
+![](../assets/2020-11-06_11-02-21.png)
 
 *Fig. 1.1 XNS menus*. 
 
@@ -190,7 +190,7 @@ Internal Threats dashboards focus on presenting artifacts related to security th
 
 In the *Fig. 1.3.3.1* you can see Alerts Drilldown dashboard.
 
-[](../assets/image-20210210104220918.png)
+![](../assets/image-20210210104220918.png)
 
 *Fig. 1.3.3.1 Internal Threats - Alerts Drilldown dashboard.*
 

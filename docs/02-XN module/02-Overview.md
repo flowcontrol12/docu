@@ -14,7 +14,7 @@ On the left side there are four main sections: XN, XNS, XND, XNRand SYS. Each se
 
 
 
-[](../assets/image-20210603113208677.png)
+![](../assets/image-20210603113208677.png)
 
 
 
@@ -106,7 +106,7 @@ When the color of the dot changes, a popup appears with the text describing the 
 
 
 
-[](../assets/image-20210604115202761.png)
+![](../assets/image-20210604115202761.png)
 
 
 
@@ -138,8 +138,8 @@ Below is a list of all events/alerts that are indicated by the dot:
 
 ### Configuration
 
-On the right-hand side of the system there are three drop-down menus and on [](../assets/image-20201119105609453.png)
-switch [](../assets/image-20201119105609453.png) hide the date selection and overload bar. The first menu, marked with this icon ![image-20201004161928752](../assets/image-20201004161928752.png), is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with ![image-20201004162213351](../assets/image-20201004162213351.png), is available for all users. Things that can be found in this section are :
+On the right-hand side of the system there are three drop-down menus and on ![](../assets/image-20201119105609453.png)
+switch ![](../assets/image-20201119105609453.png) hide the date selection and overload bar. The first menu, marked with this icon ![image-20201004161928752](../assets/image-20201004161928752.png), is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with ![image-20201004162213351](../assets/image-20201004162213351.png), is available for all users. Things that can be found in this section are :
 
 - License Info,
 - User Guide,
@@ -148,7 +148,7 @@ switch [](../assets/image-20201119105609453.png) hide the date selection and ove
 
 The license is delivered as a text file. To activate the license, the text from the delivered file must be copied into to the field “Add License” [settings menu/config/license] as below.
 
-[](../assets/image-20210610104831208.png)
+![](../assets/image-20210610104831208.png)
 
 
 
@@ -208,7 +208,7 @@ There are two tabs available in the Alerts menu:
 
   
 
-[](../assets/image-20210606143150166.png)
+![](../assets/image-20210606143150166.png)
 
 #### Alerts tab
 
@@ -225,13 +225,13 @@ To configure alarm in the first step, add a new alarm ADD NEW in the ALERTS tab.
 
 
 
-[](../assets/image-20210606143150166.png)
+![](../assets/image-20210606143150166.png)
 
 The wizard is started - a window appears with the first step of alarm configuration.
 
 **1. INITIAL**
 
-[](../assets/image-20210610105021901.png)
+![](../assets/image-20210610105021901.png)
 
 At this point, the system provides four fields:
 
@@ -249,7 +249,7 @@ At this point, the system provides four fields:
 
 
 
-[](../assets/image-20210609151540399.png)
+![](../assets/image-20210609151540399.png)
 
 
 
@@ -266,7 +266,7 @@ After accepting the first configuration step APPLAY, NEXT is used to start the s
 
 Each aggregation in the system has a number of parameters/fields and metrics based on which a filter can be created such as SRIP, DSTIP and so on. In this step the user can select parameters and combine them with filters and logical operators.
 
-[](../assets/image-20210609162107574.png)
+![](../assets/image-20210609162107574.png)
 
 
 
@@ -286,7 +286,7 @@ The following is a list of available aggregations with their associated paramete
 
 In turn, to each parameter/field are assigned appropriate operators such as EQUALS, NOT EQUALS, MATCHES and so on.
 
-[](../assets/image-20210610105948633.png)
+![](../assets/image-20210610105948633.png)
 
 
 
@@ -321,7 +321,7 @@ Relationships between rows can be specified using the three operators AND, OR, a
 
 
 
-[](../assets/image-20210609161613731.png)
+![](../assets/image-20210609161613731.png)
 
 
 
@@ -378,7 +378,7 @@ The window in step four shows a summary of the most important parameters for the
 - METRICS - Alert selected metric.
 - CONSECUTIVEVIOLATIONS  is equal to VIOLATION THRESHOLD - This field indicates how many intervals (minutes) the alarm parameters must be exceeded for a given alarm to be triggered.
 
-[](../assets/image-20210607121616425-3612083png")
+![](../assets/image-20210607121616425-3612083.png)
 
 
 
@@ -394,7 +394,7 @@ After confirming the configuration process with APPLY button, the configured ala
 >
 > 
 
-[](../assets/image-20210610120123071.png)
+![](../assets/image-20210610120123071.png)
 
 ![image-20210619122055677](../assets/image-20210619122055677.png)
 
@@ -406,7 +406,7 @@ After confirming the configuration process with APPLY button, the configured ala
 
   The FlowControl system allows to configure the alarm by importing a file in JSON format. The ADVANCE button opens a window with the alarm configuration in JSON format.
 
-[](../assets/image-20210607131024650.png)
+![](../assets/image-20210607131024650.png)
 
 Example script:
 
@@ -440,13 +440,13 @@ Example script:
 
 The script prepared and saved to disk as a file is imported using THE IMPORT button.
 
-[](../assets/image-20210607132739206.png)
+![](../assets/image-20210607132739206.png)
 
 
 
 After the import of the script the alarm appears in the list of created alarms. The imported alarm can be edited in the same way as the alarm created by the configurator.
 
-[](../assets/image-20210607135828431.png)
+![](../assets/image-20210607135828431.png)
 
 
 
@@ -491,7 +491,7 @@ The pane has the ability to fill in the following fields:
 
 Here is an example of a filled window with notification configuration:
 
-[](../assets/image-20210619123259600.png)
+![](../assets/image-20210619123259600.png)
 
 
 
@@ -526,7 +526,7 @@ In the **Config** section users can configure main system aspects. Options avail
 
 Basic network configuration: Hostname, DNS and IPv4, IPv6 address, DHCP and Gateway.
 
-[](../assets/image-20210603114016946.png)
+![](../assets/image-20210603114016946.png)
 
 
 
@@ -534,9 +534,9 @@ Basic network configuration: Hostname, DNS and IPv4, IPv6 address, DHCP and Gate
 
   The interface configuration is shown in the figure below:	
 
-  [](../assets/image-20210121125536344.png)
+  ![](../assets/image-20210121125536344.png)
   
-[](../assets/image-20210603114306684.png)
+![](../assets/image-20210603114306684.png)
 
 
 
@@ -544,7 +544,7 @@ Basic network configuration: Hostname, DNS and IPv4, IPv6 address, DHCP and Gate
 
  Manual or NTP server configuration.
 
-[](../assets/image-20210427100457159.png)
+![](../assets/image-20210427100457159.png)
 
 
 
@@ -554,7 +554,7 @@ System user configuration and role assignment.
 
 
 
-[](../assets/Zaznaczenie_027.png")
+![](../assets/Zaznaczenie_027.png)
 
 
 
@@ -563,7 +563,7 @@ System user configuration and role assignment.
 
 Email, Syslog and SNMP trap configuration.
 
-[](../assets/image-20210427101602703.png)
+![](../assets/image-20210427101602703.png)
 
 
 
@@ -571,7 +571,7 @@ Email, Syslog and SNMP trap configuration.
 
 SNMP pooling configuration (supported options v1/v2c/v3).
 
-[](../assets/image-20210427101948145.png)
+![](../assets/image-20210427101948145.png)
 
 
 
@@ -584,19 +584,19 @@ Configuration of NetFlow, sFlow, IPFIX, NSEL parameters.
   - SFLOW CONFIGURATION - port to receive NetFlow packets
   - SAMPLING CONFIGURATION - NetFlow sampling rate
 
-[](../assets/image-20210603123529010.png)
+![](../assets/image-20210603123529010.png)
 
 
 
 - **FLOW FILTERING**
 
-  FlowControl  allows the user to create rules to limit the data collected by the system to the collection that the user needs. Using this option saves disk space and system resources as well as helps  to analyze data by operating only filtered data – which are critical to  the user.[](../assets/image-20210603130635041.png)
+  FlowControl  allows the user to create rules to limit the data collected by the system to the collection that the user needs. Using this option saves disk space and system resources as well as helps  to analyze data by operating only filtered data – which are critical to  the user.![](../assets/image-20210603130635041.png)
   
   The system has a very flexible mechanism for creating rules. Individual rows of rules can be nested and combined using operators, depending on the user's needs and creating complex/expanded expressions.
   
   When creating a filter rule, the user can use the following parameters/fields, each of which has its own set of operators.
 
-[](../assets/image-20210604111356425.png)
+![](../assets/image-20210604111356425.png)
 
 
 
@@ -623,7 +623,7 @@ The following is a list of fields/parameters with their own operators.
 
 Relationships between rows can be specified using the three operators AND, OR, and NOT (ADD LOGICAL OPERATOR).
 
-[](../assets/image-20210604112023438.png)
+![](../assets/image-20210604112023438.png)
 
 
 
@@ -645,13 +645,13 @@ FlowFilter rule = (EXPORTERIP MATCHES 172.16.40.1) NOT (SRCIP MATCHES 192.168.1.
 
   
 
-  [](../assets/image-20210603123652909.png)
+  ![](../assets/image-20210603123652909.png)
   
   
 
 - **ADVANCED**
 
-  This menu allows configure the handling of additional fields in NetFlow and IPFIX. All additional fields are <u>available only in the RawData menu</u>. [](../assets/image-20210513112816568.png)
+  This menu allows configure the handling of additional fields in NetFlow and IPFIX. All additional fields are <u>available only in the RawData menu</u>. ![](../assets/image-20210513112816568.png)
   
   
   
@@ -722,7 +722,7 @@ The FC system can handle each of the above groups independantly by moving the co
 
 
 
-[](../assets/image-20210603123803907.png)
+![](../assets/image-20210603123803907.png)
 
 > **NOTICE**: The above fields are handled from the 1.6 version of the FlowControl system. In order to analyze the historical data collected in previous versions of the system, the handling of all additional  fields in the NETFLOW-ADVANCED must be disabled.
 
@@ -732,7 +732,7 @@ The FC system can handle each of the above groups independantly by moving the co
 
 License management.
 
-[](../assets/image-20210610104831208.png)
+![](../assets/image-20210610104831208.png)
 
 
 
@@ -740,7 +740,7 @@ License management.
 
 Application and system restart/shutdown options.
 
-[](../assets/image-20210427102433556.png)
+![](../assets/image-20210427102433556.png)
 
 
 
@@ -756,18 +756,18 @@ When the process started, its status appears in the pane and after the browser h
 
   - UPDATE - This command is used to make an update to the latest version of the system.
 
-    [](../assets/image-20210427102746614.png)
+    ![](../assets/image-20210427102746614.png)
     
-  - BACKUP - This command is used to generate backup.[](../assets/image-20210427103205758.png)
+  - BACKUP - This command is used to generate backup.![](../assets/image-20210427103205758.png)
   
-  - RESTORE - This command is used to restore the backup.[](../assets/image-20210610172617796.png)
+  - RESTORE - This command is used to restore the backup.![](../assets/image-20210610172617796.png)
   
     
 
-    After uploading the backup file, a list of elements that can be restored appears.[](../assets/image-20210610172733398.png)
+    After uploading the backup file, a list of elements that can be restored appears.![](../assets/image-20210610172733398.png)
     restore command also restores views, dashboards and bookmarks. 
 
-  - LOGS - This command is used to generate logs.[](../assets/image-20210427110121120.png)
+  - LOGS - This command is used to generate logs.![](../assets/image-20210427110121120.png)
   log collections can be generated: Basic and Support Logs. Basic type log is saved to a regular ZIP file used for basic diagnosis like: checking the execution of the backup, restore, logs, update commands or checking the logs engine. A file with the collected logs is available for download through the GUI as shown in the figure above.
 
     Support Logs option is used to generate logs for support team.
@@ -780,7 +780,7 @@ DISK-CAPACITY - This command is used to handle the length of time the data is st
 
  
 
-[](../assets/image-20210507110813479.png)
+![](../assets/image-20210507110813479.png)
 
 
 
@@ -808,7 +808,7 @@ This is DDOS attack detection based on behavioral and statistical analysis witch
 
 
 
-[](../assets/image-20201031133439696.png)
+![](../assets/image-20201031133439696.png)
 
 - BASIC CONFIGURATION. 
 - ENGINE PARAMETERS. 
@@ -856,19 +856,19 @@ The system allows mapping between internal networks into a more comprehensive co
   
   - DEVICES - rule defines a name for the IP,
   
-    [](../assets/image-20210513123212395.png)
+    ![](../assets/image-20210513123212395.png)
     
   - INTERFACES - rule defines several aspects of the Device Interface (Device IP: Interface ID,Interface Name/Description,Interface Speed),
   
-    [](../assets/image-20210513123510255.png)
+    ![](../assets/image-20210513123510255.png)
     
   - HOSTS/SERVERS - rule defines a name for the Server/HOST IP,
   
-    [](../assets/image-20210513123918253.png)
+    ![](../assets/image-20210513123918253.png)
     
   - APPLICATIONS - rule defines a name for the custom APPLICATIONS (Protocol/Port Number,Name),
   
-    [](../assets/image-20210513124500624.png)
+    ![](../assets/image-20210513124500624.png)
     
     
   
@@ -902,11 +902,11 @@ The system allows mapping between internal networks into a more comprehensive co
   
   - IP/AS NUMBER - rule defines ip address for the AS number.
   
-    [](../assets/image-20210513124218687.png)
+    ![](../assets/image-20210513124218687.png)
     
     
   
-  - AS NUMBER/AS NAME - rule defines the custom name for AS (Number, Name).[](../assets/image-20210513124542942.png)
+  - AS NUMBER/AS NAME - rule defines the custom name for AS (Number, Name).![](../assets/image-20210513124542942.png)
   
 
 
@@ -915,19 +915,19 @@ The system allows mapping between internal networks into a more comprehensive co
 
   - LOCATION - grouping based on NETWORK location (CIDR, Name, Description),
 
-    [](../assets/image-20210513124922747.png)
+    ![](../assets/image-20210513124922747.png)
     
     
 
   - FUNCTION - grouping based on NETWORK logical function (CIDR, Name, Description),
 
-    [](../assets/image-20210513125031564.png)
+    ![](../assets/image-20210513125031564.png)
     
     
 
   - BUSINESS ROLE - grouping based on NETWORK business role in Organization (CIDR, Name, Description),
 
-    [](../assets/image-20210513125123007.png)
+    ![](../assets/image-20210513125123007.png)
     
     
 
@@ -935,29 +935,29 @@ The system allows mapping between internal networks into a more comprehensive co
 
   - INTERNAL  - grouping based on internal Classless Inter-Domain Routing  (CIDR),
 
-    [](../assets/image-20210602112219619.png)
+    ![](../assets/image-20210602112219619.png)
     
     
 
   - DEVICE - grouping based on internal Classless Inter-Domain Routing  (CIDR),
 
-    [](../assets/image-20210602112656804.png)
+    ![](../assets/image-20210602112656804.png)
     
     
 
   - INTERFACE - grouping based on physical interfaces ip,
 
-    [](../assets/image-20210602113029370.png)
+    ![](../assets/image-20210602113029370.png)
     
     
 
   - APP - grouping based on applications,
 
-    [](../assets/image-20210609141455662.png)
+    ![](../assets/image-20210609141455662.png)
     
   - PROTOCOL - grouping based on protocol.
   
-    [](../assets/image-20210602114229764.png)
+    ![](../assets/image-20210602114229764.png)
     
 > **Note:** Grouping is very useful for presentation purposes as well as for implementation verification of widely used security zone segmentation concepts, utilized for both traffic filtering and risk mitigation.
 
@@ -985,13 +985,13 @@ New groupings have caused the following new fields to appear in all views in the
 
   - DEVICES - rule defines coordinates to the DEVICE IP (Device IP, Longitude, Attitude, City, Country, Country Code).
 
-    [](../assets/image-20201031135344506.png)
+    ![](../assets/image-20201031135344506.png)
     
     
   
   - HOST/SERVERS - rule defines coordinates to the HOST/SERVER IP (Host/Server IP, Longitude, Attitude, City, Country, Country Code).
   
-    [](../assets/image-20201031135431392.png)
+    ![](../assets/image-20201031135431392.png)
     
     
     
@@ -1006,12 +1006,12 @@ This system is preconfigured with four report templates which can be enabled/dis
 *  Interface Utilization - top interfaces and threshold violations,
 *  Application Servers - view on the most used application servers.
 
-[](../assets/image-20201031135555251.png)
+![](../assets/image-20201031135555251.png)
 
 
 
  Reports are run on a daily basis and the outcome is saved and visible in a list form from the UI.
 
-[](../assets/image-20201031135649051.png)
+![](../assets/image-20201031135649051.png)
 
 
