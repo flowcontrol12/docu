@@ -32,31 +32,18 @@ module.exports = {
           path: "./docs",
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-        //   sidebarItemsGenerator: async function ({
-        //     defaultSidebarItemsGenerator,
-        //     numberPrefixParser,
-        //     item,
-        //     version,
-        //     docs,
-        //   }) {
-        //     // Example: return an hardcoded list of static sidebar items
-        //     console.log(defaultSidebarItemsGenerator)
-        //     console.log(numberPrefixParser)
-        //     console.log(item)
-        //     console.log(version)
-        //     console.log(docs)
-        //     return [
-        //       // {type: 'doc', id: 'doc1'},
-        //       // {type: 'doc', id: 'doc2'},
-        //     ];
-        //   },
         },
         theme: {
-          customCss: [require.resolve('./src/css/custom.css')]
+          customCss: [
+            require.resolve('./src/css/icons.css'),
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./node_modules/@progress/kendo-theme-default/scss/icons/_index.scss'),
+          ]
         }
       }
     ]
   ],
+  plugins: ['docusaurus-plugin-sass'],
   themeConfig: {
     colorMode: {
       disableSwitch: true,
