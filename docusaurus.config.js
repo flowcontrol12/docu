@@ -46,6 +46,7 @@ module.exports = {
   plugins: ['docusaurus-plugin-sass'],
   themeConfig: {
     colorMode: {
+      defaultMode: 'light',
       disableSwitch: true,
     },
     navbar: {
