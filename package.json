@@ -1,4 +1,5 @@
 {
+  "license": "",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
