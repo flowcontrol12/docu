@@ -1,11 +1,19 @@
 :root{
-  --ifm-color-primary-lightest: #110E2A;
-  --ifm-color-primary-lighter: #0F0D25;
-  --ifm-color-primary-light: #0E0C23;
-  --ifm-color-primary: #0d0b20;
-  --ifm-color-primary-dark: #0C0A1D;
-  --ifm-color-primary-darker: #0B091B;
-  --ifm-color-primary-darkest: #090816;
+  /* --ifm-color-primary: #143dfb;
+  --ifm-color-primary-dark: #042ef0;
+  --ifm-color-primary-darker: #042be2;
+  --ifm-color-primary-darkest: #0324bb;
+  --ifm-color-primary-light: #2f53fb;
+  --ifm-color-primary-lighter: #3c5efc;
+  --ifm-color-primary-lightest: #647ffc; */
+
+  --ifm-color-primary: #070723;
+  --ifm-color-primary-dark: #060620;
+  --ifm-color-primary-darker: #06061e;
+  --ifm-color-primary-darkest: #050519;
+  --ifm-color-primary-light: #080827;
+  --ifm-color-primary-lighter: #080828;
+  --ifm-color-primary-lightest: #09092e;
 
   /* custom styles */
   --ifm-navbar-height: 50px;
@@ -15,7 +23,22 @@
   --ifm-navbar-padding-horizontal: 20px;
 
   --ifm-navbar-item-padding-vertical: 0;
-  --ifm-navbar-item-padding-horizontal: 0;
+  /* --ifm-navbar-item-padding-horizontal: 0; */
+}
+
+html[data-theme='dark'] {
+  /* any other colors you wish to overwrite */
+  --ifm-color-primary: #00c2f9;
+  --ifm-color-primary-dark: #00afe0;
+  --ifm-color-primary-darker: #00a5d4;
+  --ifm-color-primary-darkest: #0088ae;
+  --ifm-color-primary-light: #13cbff;
+  --ifm-color-primary-lighter: #1fceff;
+  --ifm-color-primary-lightest: #45d6ff;
+
+  --ifm-background-color: #19182a;
+  --ifm-navbar-background-color: #1f2030;
+  --ifm-footer-background-color: var(--ifm-navbar-background-color);
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap?text=flowcontroldocumentation);
@@ -43,5 +66,5 @@
 blockquote {
   color: #24292e;
   background-color: #adc5e2;
-  border-color: #30065d;
+  border-color: var(--ifm-color-primary);
 }

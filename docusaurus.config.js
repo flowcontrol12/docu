@@ -46,8 +46,7 @@ module.exports = {
   plugins: ['docusaurus-plugin-sass'],
   themeConfig: {
     colorMode: {
-      defaultMode: 'light',
-      disableSwitch: true,
+      respectPrefersColorScheme: true,
     },
     navbar: {
       title: "flowcontrol documentation",
