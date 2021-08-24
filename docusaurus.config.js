@@ -62,9 +62,9 @@ module.exports = {
       logo: {}
     },
     algolia: {
-      apiKey: "7b969c492579575af2e774554cd0210e",
-      indexName: "flowcontrol12",
-      algoliaOptions: {}
+      apiKey: "e5f0b82eeeb2b6133949b8f5ec121050",
+      appId: 'FQMP2SUEM9',
+      indexName: 'sycope_docs',
     }
   }
 }
