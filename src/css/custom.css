@@ -18,12 +18,9 @@
   /* custom styles */
   --ifm-navbar-height: 50px;
   --ifm-navbar-background-color: #0d0b20;
-
   --ifm-navbar-padding-vertical: 8px;
   --ifm-navbar-padding-horizontal: 20px;
-
   --ifm-navbar-item-padding-vertical: 0;
-  /* --ifm-navbar-item-padding-horizontal: 0; */
 }
 
 html[data-theme='dark'] {
@@ -39,6 +36,7 @@ html[data-theme='dark'] {
   --ifm-background-color: #19182a;
   --ifm-navbar-background-color: #1f2030;
   --ifm-footer-background-color: var(--ifm-navbar-background-color);
+  --ifm-table-stripe-background: #313248;
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap?text=flowcontroldocumentation);
@@ -67,4 +65,17 @@ blockquote {
   color: #24292e;
   background-color: #adc5e2;
   border-color: var(--ifm-color-primary);
+}
+
+.react-toggle-track {
+  background-color: var(--docsearch-searchbox-background) !important;
+}
+
+html[data-theme='dark'] .react-toggle-track {
+  background-color: #090a11 !important;
+}
+
+html[data-theme='dark'] blockquote {
+  color: white;
+  background-color: #313248
 }
