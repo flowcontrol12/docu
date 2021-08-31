@@ -1,0 +1,1051 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>XN module · flowcontrol documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Introduction"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="XN module · flowcontrol documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://flowcontrol12.github.io/"/><meta property="og:description" content="## Introduction"/><meta property="og:image" content="https://flowcontrol12.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://flowcontrol12.github.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/theme-live-codeblock.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo-sycope.svg" alt="flowcontrol documentation"/><h2 class="headerTitleWithLogo">flowcontrol documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>XN module</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Inst_g">Installation Procedure</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">XN module</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/XN">XN User Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">XNS module</h3><ul class=""><li class="navListItem"><a class="navItem" href="/XNS">XNS User Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">XND module</h3><ul class=""><li class="navListItem"><a class="navItem" href="/XND">XND User Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Command Line Interface</h3><ul class=""><li class="navListItem"><a class="navItem" href="/CLI">CLI commands</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">System Requirements</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Req">Requirements</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Release Note</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Rel">Release notes</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>In this document you will find information about the most important options available in the FlowControl System. How to operate with data, graphs and charts as well as a general description of options available in the system.</p>
+<h2><a class="anchor" aria-hidden="true" id="system-architecture"></a><a href="#system-architecture" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>System Architecture</h2>
+<blockquote>
+<p>A flow is defined as a unidirectional sequence of packets with some common properties that pass through a network device.  These collected flows are exported to an external device, the NetFlow collector.  Network flows are highly granular e.g.: flow records include details such as IP addresses, packet and byte counts, timestamps, Type of Service (ToS), application ports, input and output interfaces, etc.</p>
+</blockquote>
+<p>Source: <a href="https://www.ietf.org/rfc/rfc3954.txt">RFC3954</a></p>
+<p>According to the RFC3964 FlowControl solution works as a Flow Collector which collects, analyzes and visualize the collected flows. Metrics are presented and examined from two perspectives: Network and Security giving the operator valuable input into network/application problems analysis as well as security threats hunting.</p>
+<p><img src="assets/sycope_flowcontrol_1_5.jpg" alt="sycope_flowcontrol_1_5" style="zoom: 67%;" /></p>
+<p>FlowControl supports the following flow protocol data sources:</p>
+<ul>
+<li><p>NetFlow</p></li>
+<li><p>sFlow,</p></li>
+<li><p>IPFIX,</p></li>
+<li><p>NSEL.</p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Specific options such as NSEL (Cisco ASA) or different sampling multipliers per device must be additionally configured. System uses SNMP v1/2/3 to query devices. the above fields are handled from the ver. 1.6 of the FlowControl system. In order to analyze the historical data collected  in previous versions of the system, the handling of all additional  fields in the N Mentions must be disabled</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="1-overview"></a><a href="#1-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Overview</h2>
+<p>The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (<strong>XN, XNS, XND, XNR, SYS</strong>) and the icons in the top right corner <img src="/assets/image-20201004161928752.png" alt="image-20201004161928752"> (<strong>Configuration options</strong>). They are all vital components for working with the system, effective problem identification and data mining.</p>
+<h3><a class="anchor" aria-hidden="true" id="11-main"></a><a href="#11-main" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1 Main</h3>
+<p>On the left side there are four main sections: XN, XNS, XND, XNRand SYS. Each section consists of a menu where you will find desired information about collected data and system configuration. The main section works in hide/reveal mode. In order to show full names of the menu components, minority and majority please click on the minority sign icons ( &lt; ) located at the top left corner. In order to hide the menu, please click the minority sign icons ( &gt; ).</p>
+<p><img src="/assets/image-20210601091300274.png" alt="image-20210601091300274"></p>
+<p><img src="assets/image-20210603113208677.png" alt="image-20210603113208677" style="zoom: 67%;" /></p>
+<p>Below is presented table with general description of what can be found in each section. Elements of the main menu were emphasized, while elements of the submenu were written in plain text.</p>
+<table>
+<thead>
+<tr><th><strong>FlowControl XN</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="/assets/image-20201031140331903.png" alt="image-20201031140331903">  <u><b> NOC </b></u></td><td>General overview of network infrastructure parameters</td></tr>
+<tr><td><img src="/assets/image-20201004125605987.png" alt="image-20201004125605987">  <u><b> TOPs </b></u></td><td>Information about top talkers in the network.</td></tr>
+<tr><td><img src="/assets/image-20200911120410391.png" alt="image-20200911120410391">  <u><b> RAW Flows </b></u></td><td>Detailed information about traffic.</td></tr>
+<tr><td><img src="/assets/image-20201004153055808.png" alt="image-20201004153055808">   <strong>Raw Data</strong></td><td>Extensive information about every flow in the traffic.</td></tr>
+<tr><td><img src="/assets/image-20201004153137592.png" alt="image-20201004153137592">   <strong>ASA Devices</strong></td><td>Detailed information about flows from ASA Devices.</td></tr>
+<tr><td><img src="/assets/image-20200911120535728.png" alt="image-20200911120535728">   <u><strong>Deduplicated Flows</strong></u></td><td>Information about deduplicated flows.</td></tr>
+<tr><td><img src="/assets/image-20201004153258941.png" alt="image-20201004153258941">   <strong>Traffic</strong></td><td>Network traffic based on deduplicated flows.</td></tr>
+<tr><td><strong><img src="/assets/image-20200911120312792.png" alt="image-20200911120312792">   Applications</strong></td><td>Network traffic analysis in view of application based on deduplicated flows.</td></tr>
+<tr><td><img src="/assets/image-20201004153410486.png" alt="image-20201004153410486">  <strong>Geolocalization</strong></td><td>Maps with various geolocations.</td></tr>
+<tr><td><img src="/assets/image-20201004153449636.png" alt="image-20201004153449636"> <b> Groups </b></td><td>Flows organized into various groups, e.g. business roles, location.</td></tr>
+<tr><td><img src="/assets/image-20201004153533495-1601822806926.png" alt="image-20201004153533495">   <strong>AS Names</strong></td><td>Flows organized according to AS Names.</td></tr>
+<tr><td><img src="/assets/image-20200911120656376.png" alt="image-20200911120656376">   <u><strong>Long Term Data</strong></u></td><td>Aggregated date from previous time periods.</td></tr>
+<tr><td><img src="/assets/image-20201004153641952.png" alt="image-20201004153641952">  <strong>Last Day</strong></td><td>Aggregated data from last day.</td></tr>
+<tr><td><img src="/assets/image-20201004153740964.png" alt="image-20201004153740964">  <strong>Last Week</strong></td><td>Aggregated data from last week.</td></tr>
+<tr><td><img src="/assets/image-20201004153818558.png" alt="image-20201004153818558">  <strong>Last month</strong></td><td>Aggregate data from last month</td></tr>
+<tr><td><img src="/assets/image-20201004154607022.png" alt="image-20201004154607022"><u><b>  Alerts  </b></u></td><td>Information and details about alerts that occurred in the network.</td></tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> All views except <strong>Raw Data</strong> use deduplicated traffic. In order to see unique information about flows that may change on the flow path, e.g. QoS tags – please use <strong>Raw Data</strong> views.</p>
+</blockquote>
+<hr>
+<table>
+<thead>
+<tr><th><strong>FlowControl XNS</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="/assets/image-20201004154834424.png" alt="image-20201004154834424">  <u><b> SOC </b></u></td><td>General overview of security aspects of the network.</td></tr>
+<tr><td><img src="/assets/image-20201004154911046.png" alt="image-20201004154911046">  <u><b> KPIs </b></u></td><td>General overview of the basic values of alerts.</td></tr>
+<tr><td><img src="/assets/image-20200911121159510.png" alt="image-20200911121159510">   <u><strong>Use Cases</strong></u></td><td>Monitoring scenarios of IT security threat.</td></tr>
+<tr><td><img src="/assets/image-20201004154940655.png" alt="image-20201004154940655">  <b> Threat Analysis </b></td><td>Information on all threats.</td></tr>
+<tr><td><img src="/assets/image-20201004155011543.png" alt="image-20201004155011543">  <b> External Threats</b></td><td>Information on threats outside the customer network.</td></tr>
+<tr><td><img src="/assets/image-20201004155047164.png" alt="image-20201004155047164">  <b> Internal  Threats</b></td><td>Information on threats inside the customer network.</td></tr>
+<tr><td><img src="/assets/image-20201004155110985.png" alt="image-20201004155110985">  <u><b> Alerts  </b></u></td><td>Table with all information about alarms in the system.</td></tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr><th><strong>FlowControl XND</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="/assets/image-20200911121401384.png" alt="image-20200911121401384"> <u><b> DDOS </b></u></td><td>Information about DDoS attacks.</td></tr>
+<tr><td><img src="/assets/image-20200911121159510.png" alt="image-20200911121159510"> <u><b> Protocols</b></u></td><td>Network traffic characteristics in the context of DDoS attacks.</td></tr>
+<tr><td><img src="/assets/image-20200911121401384.png" alt="image-20200911121401384"><b> Overview </b></td><td>Network traffic characteristics in the context of protocols.</td></tr>
+<tr><td><img src="/assets/image-20200911121401384.png" alt="image-20200911121401384"> <strong>Details</strong></td><td>Detailed information about DDoS attacks.</td></tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr><th><strong>System Section</strong></th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="/assets/image-20201119104559571.png" alt="image-20201119104559571"> <strong>Audit Logs</strong></td><td>Information on users logins.</td></tr>
+<tr><td><img src="/assets/image-20201004155258797.png" alt="image-20201004155258797"><b> Flow  Stats </b></td><td>General statistics about raw and aggregated flows.</td></tr>
+<tr><td><img src="/assets/image-20201004155339267.png" alt="image-20201004155339267"><b> System  </b></td><td>Disk utilization information.</td></tr>
+</tbody>
+</table>
+<p>The <strong>DOT</strong> on the right side of the logo (as shown below) indicates the system status, in this case system events and network alerts.</p>
+<p><img src="/assets/image-20210603112227546.png" alt="image-20210603112227546"></p>
+<p>The <strong>DOT</strong> takes on four colors depending on the event/alert:</p>
+<ul>
+<li><strong>green</strong>,</li>
+<li><strong>yellow</strong>,</li>
+<li><strong>red</strong>,</li>
+<li><strong>blue</strong>.</li>
+</ul>
+<p>When the color of the dot changes, a popup appears with the text describing the event. When an event occurs, apart from the fact that it is indicated by a change of color of the dot, a window pops up in the lower right corner of the screen with information about the  event/alarm.</p>
+<p><img src="/assets/image-20210609133748318.png" alt="image-20210609133748318"></p>
+<p>Event/alarm information is also available by pointing the dot with the mouse pointer.</p>
+<p><img src="assets/image-20210604115202761.png" alt="image-20210604115202761" style="zoom: 80%;" /></p>
+<p>Below is a list of all events/alerts that are indicated by the dot:</p>
+<table>
+<thead>
+<tr><th>Message</th><th>Color</th></tr>
+</thead>
+<tbody>
+<tr><td>System does not signal any events/alerts.</td><td>green</td></tr>
+<tr><td>&quot;API for Updates status: Stopped. Try to restart web services&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;API for SNMP status: Stopped. Try to restart other services&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;API for Restarts status: Stopped. Try to restart other services&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;API for Configs status: Stopped. Try to restart web service&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;Storage Warning. Missing Database partition.&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;Storage on Database partition is less than 5GB.&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;Storage on Cache partition is less than 5GB.&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;Storage on System partition is less than 5GB.&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;Engine Restart Pending. Please restart Engine Service&quot;</td><td>yellow</td></tr>
+<tr><td>&quot;API for Authentication status: Stopped. Try to restart web services&quot;</td><td>red</td></tr>
+<tr><td>&quot;API for Reloads status: Stopped. Try to restart web services&quot;</td><td>red</td></tr>
+<tr><td>&quot;Database Services status: Stopped (Running $QlikServicesCount/8). Try to restart database&quot;</td><td>red</td></tr>
+<tr><td>&quot;Engine Fatal Error. Netflow Engine status: $Engine. Try to restart engine&quot;</td><td>red</td></tr>
+<tr><td>&quot;Storage Fatal Error. Missing Cache partition. Restart server is required.&quot;</td><td>red</td></tr>
+<tr><td>&quot;ESXi CPU Configuration Error. Logical CPUs are less than 8. There should be max 2 sockets on Esxi CPU configuration. Actual logical CPUs: $cores&quot;</td><td>red</td></tr>
+<tr><td>&quot;New Update is available for download. $updateVersion.&quot;</td><td>blue</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="12-configuration"></a><a href="#12-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2 Configuration</h3>
+<p>On the right-hand side of the system there are three drop-down menus and one switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 67%;" />. The switch <img src="assets/image-20201119105609453.png" alt="image-20201119105609453" style="zoom: 67%;" /> is used to hide the date selection and overload bar. The first menu, marked with this icon  <img src="/assets/image-20201004161928752.png" alt="image-20201004161928752">, is the settings menu available only for admin accounts. This section is described in the <em>Administration Settings</em> paragraph. The second drop-down menu, marked with <img src="/assets/image-20201004162213351.png" alt="image-20201004162213351">, is available for all users. Things that can be found in this section are :</p>
+<ul>
+<li>License Info,</li>
+<li>User Guide,</li>
+<li>Documentation,</li>
+<li>About.</li>
+</ul>
+<p>The license is delivered as a text file. To activate the license, the text from the delivered file must be copied into to the field “Add License” [settings menu/config/license] as below.</p>
+<p><img src="assets/image-20210610104831208.png" alt="image-20210610104831208" style="zoom:67%;" /></p>
+<blockquote>
+<p><strong>Important note:</strong></p>
+<p><strong>The standard license includes one administrator account and two user accounts.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Notice:</strong></p>
+<p>If there is <strong>no license</strong> in the system it is not possible to:</p>
+<ul>
+<li>add user,</li>
+<li>update software,</li>
+<li>collect Netflow.</li>
+</ul>
+</blockquote>
+<p>The user guide will redirect users to the documentation stored on the system. The about section system will take users to the general web page with information about <a href="https://www.sycope.com/">https://www.sycope.com/</a>.</p>
+<p><img src="/assets/image-20201004162331465.png" alt="image-20201004162331465">The third drop down menu, available for all users. In this menu the following things can be found:</p>
+<ul>
+<li><p>Profile</p>
+<ul>
+<li>User Settings</li>
+<li>Change Password</li>
+<li>User Time Zone</li>
+</ul></li>
+<li><p>Logout</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="13-administration-settings"></a><a href="#13-administration-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3 Administration Settings</h3>
+<p>The administrator can change and personalize various aspects of the FlowControl environment. Configuration options that can be set up in this menu are the options required to properly configure and maintain the FlowControl system.</p>
+<p>The following options are available for selection in the administration menu:</p>
+<ul>
+<li><strong>Alerts</strong></li>
+<li><strong>Config</strong></li>
+<li><strong>Security</strong></li>
+<li><strong>Mapping</strong></li>
+<li><strong>Reports</strong></li>
+</ul>
+<p><img src="/assets/image-20210624115418028.png" alt="image-20210624115418028"></p>
+<h3><a class="anchor" aria-hidden="true" id="131-alerts"></a><a href="#131-alerts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.1 Alerts</h3>
+<p>There are two tabs available in the Alerts menu:</p>
+<ul>
+<li><p><strong>Alerts</strong></p></li>
+<li><p><strong>Notifications</strong></p></li>
+</ul>
+<p><img src="assets/image-20210606143150166.png" alt="image-20210606143150166" style="zoom:50%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="1311-alerts-tab"></a><a href="#1311-alerts-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.1.1 Alerts tab</h4>
+<p>From version 1.6 FlowControl provides an advanced alarm wizard that allows the user to flexibly configure alarms based on multiple aggregations, parameters/fields, metrics, using a number of operators.</p>
+<p>The alarm configuration consists of four steps:</p>
+<ol>
+<li><strong>INITIAL</strong></li>
+<li><strong>OBJECT FILTER</strong></li>
+<li><strong>METRICS</strong></li>
+<li><strong>SUMMARY</strong></li>
+</ol>
+<p>To configure alarm in the first step, add a new alarm ADD NEW in the ALERTS tab.</p>
+<p><img src="assets/image-20210606143150166.png" alt="image-20210606143150166" style="zoom:50%;" /></p>
+<p>The wizard is started - a window appears with the first step of alarm configuration.</p>
+<p><strong>1. INITIAL</strong></p>
+<p><img src="assets/image-20210610105021901.png" alt="image-20210610105021901" style="zoom:67%;" /></p>
+<p>At this point, the system provides four fields:</p>
+<ul>
+<li>ENABLE - Alarm activation/deactivation,</li>
+<li>NAME - user assigned alarm name,</li>
+<li>DESCRIPTION - alarm description (optional),</li>
+<li>AGGREGATION - select the aggregation on which the alarm is based:
+<ul>
+<li>Conversation,</li>
+<li>Exporter,</li>
+<li>Total,</li>
+<li>Apps</li>
+<li>Ip Bidirectional,</li>
+<li>BGP AS,</li>
+<li>Interface Bidirectional.</li>
+</ul></li>
+</ul>
+<p><img src="assets/image-20210609151540399.png" alt="image-20210609151540399" style="zoom:50%;" /></p>
+<ul>
+<li><p>VIOLATION THRESHOLD - This field indicates how many intervals (minutes) the alarm parameters must be exceeded for a given alarm to be triggered.</p></li>
+<li><p>ENABLE - switch used to alarm enable/disable.</p></li>
+</ul>
+<p>After accepting the first configuration step APPLAY, NEXT is used to start the second configuration step.</p>
+<p><strong>2. OBJECT FILTER</strong></p>
+<p>Each aggregation in the system has a number of parameters/fields and metrics based on which a filter can be created such as SRIP, DSTIP and so on. In this step the user can select parameters and combine them with filters and logical operators.</p>
+<p><img src="assets/image-20210609162107574.png" alt="image-20210609162107574" style="zoom:67%;" /></p>
+<p>The following is a list of available aggregations with their associated parameters/fields and metrics.</p>
+<table>
+<thead>
+<tr><th>Agregation</th><th>Parameter/Field</th><th>Metric</th></tr>
+</thead>
+<tbody>
+<tr><td>Conversation</td><td>srcip   <br/>dstip   <br/>appport   <br/>direction   <br/>protocol</td><td>flows   <br/>packets   <br/>octets</td></tr>
+<tr><td>Exporter</td><td>exporterip   <br/>inputint   <br/>outputint   <br/>mplstoplabelexp   <br/>type   <br/>mplslabel1   <br/>mplslabel2   <br/>mplslabel3   <br/>mplslabel4   <br/>mplslabel5</td><td>flows   <br/>packets   <br/>octets</td></tr>
+<tr><td>Total</td><td>-</td><td>flows   <br/>packets   <br/>octets</td></tr>
+<tr><td>Apps</td><td>appport   <br/>direction   <br/>proto</td><td>flows   <br/>packets   <br/>octets</td></tr>
+<tr><td>IP Bidirectional</td><td>ip</td><td>octetsin   <br/>octetsout   <br/>flowsin   <br/>flowsout   <br/>packetsin   <br/>packetsout</td></tr>
+<tr><td>BGP AS</td><td>srcas <br/>dstas</td><td>flows   <br/>packets   <br/>octets</td></tr>
+<tr><td>Interface Bidirectional</td><td>exporterip <br/>int</td><td>octetsin   <br/>octetsout   <br/>flowsin   <br/>flowsout   <br/>packetsin   <br/>packetsout <br/>utilin<br/>utilout</td></tr>
+</tbody>
+</table>
+<p>In turn, to each parameter/field are assigned appropriate operators such as EQUALS, NOT EQUALS, MATCHES and so on.</p>
+<p><img src="assets/image-20210610105948633.png" alt="image-20210610105948633" style="zoom:67%;" /></p>
+<p>The following is a list of operators associated with the relevant parameters/fields:</p>
+<table>
+<thead>
+<tr><th>Parameter/Field</th><th>Operator</th></tr>
+</thead>
+<tbody>
+<tr><td>srcip</td><td>equals<br/>not equals <br/>matches <br/>contains <br/>regexp<br/>starts with<br/>not starts with<br/>ends with <br/>not ends with<br/>is in subnet <br/>is not in subnet</td></tr>
+<tr><td>dstip</td><td>equals<br/>not equals <br/>matches <br/>contains <br/>regexp<br/>starts with<br/>not starts with<br/>ends with <br/>not ends with<br/>is in subnet <br/>is not in subnet</td></tr>
+<tr><td>appport</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>direction</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>protocol</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>exporterip</td><td>equals<br/>not equals <br/>matches <br/>contains <br/>regexp<br/>starts with<br/>not starts with<br/>ends with <br/>not ends with<br/>is in subnet <br/>is not in subnet</td></tr>
+<tr><td>inputint</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>outputint</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>int</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>mplstoplabelexp</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>type</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>mplslabel1</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>mplslabel2</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>mplslabel3</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>mplslabel4</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>mplslabel5</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>srcas</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+<tr><td>dstas</td><td>lower than <br/>lower or equal than <br/>greater than<br/>greater or equal than<br/>equals<br/>not equals <br/>matches<br/>contains<br/>regexp <br/>starts with<br/>not starts with<br/>ends with<br/>not ends with</td></tr>
+</tbody>
+</table>
+<p>The system has a very flexible mechanism for creating rules. Individual rows of rules can be nested and combined using operators, depending on the user's needs and creating complex/expanded expressions.</p>
+<p>Relationships between rows can be specified using the three operators AND, OR, and NOT.</p>
+<p><img src="assets/image-20210609161613731.png" alt="image-20210609161613731" style="zoom: 67%;" /></p>
+<p>It is possible to move the rows and swap positions by clicking and holding the left mouse button on the left side of the row.</p>
+<p><img src="/assets/image-20210619114719204.png" alt="image-20210619114719204"></p>
+<p>In the example above, the logical expression for the alarm is as follows:</p>
+<p>ALARM=(DSTIP EQUALS to 192.168.10.10) AND (DSTIP EQUALS to 192.168.10.8)  OR (DSTIP EQUALS to 192.168.10.9)</p>
+<p>The third configuration step allows the user to select metrics for the filters previously configured in step two.</p>
+<p><strong>3. METRICS</strong></p>
+<p>This configuration step allows to configure the alarm triggers by specifying a metric value for a pre-selected aggregation, an alarm trigger operator, and specifying value levels for the three alarm levels.</p>
+<p><img src="/assets/image-20210619115407894.png" alt="image-20210619115407894"></p>
+<p>In this step, specify the parameters for the following fields:</p>
+<ul>
+<li>METRICS
+<ul>
+<li>flows,</li>
+<li>packets,</li>
+<li>octets.</li>
+</ul></li>
+<li>OPERATOR
+<ul>
+<li>GT - greater than,</li>
+<li>LT - lower than.</li>
+</ul></li>
+<li>MINOR - numerical value for the minor alarm threshold</li>
+<li>MAJOR - numerical value for the major alarm threshold</li>
+<li>CRITICAL  - numerical value for the critical alarm threshold</li>
+</ul>
+<p><strong>4. SUMMARY</strong></p>
+<p>The window in step four shows a summary of the most important parameters for the alarm being configured :</p>
+<ul>
+<li>NAME - Alert name.</li>
+<li>ACTIVE - status Enable/Disable.</li>
+<li>AGGRATION - Alert selected aggregation.</li>
+<li>METRICS - Alert selected metric.</li>
+<li>CONSECUTIVEVIOLATIONS  is equal to VIOLATION THRESHOLD - This field indicates how many intervals (minutes) the alarm parameters must be exceeded for a given alarm to be triggered.</li>
+</ul>
+<p><img src="assets/image-20210607121616425-3612083.png" alt="image-20210607121616425"  /></p>
+<p>After confirming the configuration process with APPLY button, the configured alarm appears in the list of created alarms.</p>
+<p><img src="/assets/image-20210619122055677.png" alt="image-20210619122055677"></p>
+<blockquote>
+<p>NOTE: After accepting the alarm configuration (APPLY), RESTART Engine Service must be performed to activate the alarm:</p>
+</blockquote>
+<p><img src="assets/image-20210610120123071.png" alt="image-20210610120123071" style="zoom:67%;" /></p>
+<p><img src="/assets/image-20210619122055677.png" alt="image-20210619122055677"></p>
+<ul>
+<li><p>ADVANCE - Configure an alarm by importing a JSON script.</p>
+<p>The FlowControl system allows to configure the alarm by importing a file in JSON format. The ADVANCE button opens a window with the alarm configuration in JSON format.</p></li>
+</ul>
+<p><img src="assets/image-20210607131024650.png" alt="image-20210607131024650" style="zoom: 67%;" /></p>
+<p>Example script:</p>
+<pre><code class="hljs css language-json">{
+  <span class="hljs-attr">"aggregation"</span>: <span class="hljs-string">"netflow.exporter_traffic"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"test alert"</span>,
+  <span class="hljs-attr">"match"</span>: {
+    <span class="hljs-attr">"$and"</span>: [
+      {
+        <span class="hljs-attr">"exporterip"</span>: {
+          <span class="hljs-attr">"$eq"</span>: <span class="hljs-string">"192.168.10.101"</span>
+        }
+      }
+    ]
+  },
+  <span class="hljs-attr">"violation"</span>: {
+    <span class="hljs-attr">"operator"</span>: <span class="hljs-string">"$gt"</span>,
+    <span class="hljs-attr">"metric"</span>: <span class="hljs-string">"flows"</span>,
+    <span class="hljs-attr">"thresholds"</span>: {
+      <span class="hljs-attr">"minor"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"critical"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"major"</span>: <span class="hljs-number">0</span>
+    }
+  },
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"import_test"</span>,
+  <span class="hljs-attr">"active"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">"consecutiveViolations"</span>: <span class="hljs-number">1</span>
+}
+</code></pre>
+<p>The script prepared and saved to disk as a file is imported using THE IMPORT button.</p>
+<p><img src="assets/image-20210607132739206.png" alt="image-20210607132739206" style="zoom: 67%;" /></p>
+<p>After the import of the script the alarm appears in the list of created alarms. The imported alarm can be edited in the same way as the alarm created by the configurator.</p>
+<p><img src="assets/image-20210607135828431.png" alt="image-20210607135828431" style="zoom: 67%;" /></p>
+<p>The current alarms status (new/ongoing/update/closed) is shown in the graphs on the XN-&gt;Alert-&gt;Overview  view.</p>
+<p><img src="/assets/image-20210620123803293.png" alt="image-20210620123803293"></p>
+<p>The current alarms status with configuration parameters is also available in tabular form shown in XN-&gt;Alert-&gt;Alert Table</p>
+<p><img src="/assets/image-20210620123939000.png" alt="image-20210620123939000"></p>
+<h4><a class="anchor" aria-hidden="true" id="1312-notification-tab"></a><a href="#1312-notification-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.1.2 Notification tab</h4>
+<p>FlowControl has extensive alarm notifications capabilities which are configured in the NOTIFICATION tab. To add a new notification, use the ADD NEW button.</p>
+<p><img src="/assets/image-20210619122523096.png" alt="image-20210619122523096"></p>
+<p>Then the Notification Configuration window opens.</p>
+<p><img src="/assets/image-20210619122618047.png" alt="image-20210619122618047"></p>
+<p>The pane has the ability to fill in the following fields:</p>
+<ul>
+<li>NAME - User-defined notification name</li>
+<li>TIME RANGE - the times when notifications are activeadresy</li>
+<li>ALERTS - Alarm(s) to be notified</li>
+<li>SOURCE - User-defined name of alarm source(s)</li>
+<li>SEVERITY
+<ul>
+<li>MINOR</li>
+<li>MAJOR</li>
+<li>CRITICAL</li>
+</ul></li>
+<li>E-MAIL RECIPENTS - e-mail addresses to which notifications should be sent</li>
+<li>ENABLE switch - enable or disable the sending of notifications to the entered e-mail addresses</li>
+<li>SYSLOG switch - enable or disable the sending of notifications to syslog</li>
+<li>VISUAL NOTIFICATION switch - enable or disable pop-up notifications</li>
+</ul>
+<p>Here is an example of a filled window with notification configuration:</p>
+<p><img src="assets/image-20210619123259600.png" alt="image-20210619123259600" style="zoom:67%;" /></p>
+<p>After the configuration is confirmed with the APPLY button, the notification appears on the list of created notifications.</p>
+<p><img src="/assets/image-20210619123406976.png" alt="image-20210619123406976"></p>
+<p>Enabling or disabling the sending of notifications to e-mail addresses and Syslog is also possible using the switches on the notification list.</p>
+<p><img src="/assets/image-20210619123710993.png" alt="image-20210619123710993"></p>
+<h3><a class="anchor" aria-hidden="true" id="132-config"></a><a href="#132-config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2 Config</h3>
+<p>In the <strong>Config</strong> section users can configure main system aspects. Options available here are:</p>
+<ul>
+<li>SYSTEM</li>
+<li>TIME</li>
+<li>USERS</li>
+<li>NOTIFICATIONS</li>
+<li>SNMP</li>
+<li>NETFLOW</li>
+<li>LICENSE</li>
+<li>OPERATIONS</li>
+<li>ADMINISTRATION</li>
+<li>DISK</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="1321-system"></a><a href="#1321-system" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.1 SYSTEM</h4>
+<p>Basic network configuration: Hostname, DNS and IPv4, IPv6 address, DHCP and Gateway.</p>
+<p><img src="assets/image-20210603114016946.png" alt="image-20210603114016946" style="zoom: 67%;" /></p>
+<ul>
+<li><p>IPCONFIG</p>
+<p>The interface configuration is shown in the figure below:</p>
+<p><img src="assets/image-20210121125536344.png" alt="image-20210121125536344" style="zoom:67%;" /></p></li>
+<li><p>LOOKUP - FlowControl system engine DNS configuration.<img src="assets/image-20210603114306684.png" alt="image-20210603114306684" style="zoom:67%;" /></p></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="1322--time"></a><a href="#1322--time" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.2  TIME</h4>
+<p>Manual or NTP server configuration.</p>
+<p><img src="assets/image-20210427100457159.png" alt="image-20210427100457159" style="zoom:67%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="1323-users"></a><a href="#1323-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.3 USERS</h4>
+<p>System user configuration and role assignment.</p>
+<p><img src="assets/Zaznaczenie_027.png" alt="Zaznaczenie_027" style="zoom:67%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="1324-notification"></a><a href="#1324-notification" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.4 NOTIFICATION</h4>
+<p>Email, Syslog and SNMP trap configuration.</p>
+<p><img src="assets/image-20210427101602703.png" alt="image-20210427101602703" style="zoom:67%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="1325-snmp"></a><a href="#1325-snmp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.5 SNMP</h4>
+<p>SNMP pooling configuration (supported options v1/v2c/v3).</p>
+<p><img src="assets/image-20210427101948145.png" alt="image-20210427101948145" style="zoom:67%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="1326-netflow"></a><a href="#1326-netflow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.6 NETFLOW</h4>
+<p>Configuration of NetFlow, sFlow, IPFIX, NSEL parameters.</p>
+<ul>
+<li><strong>CONFIGURATION</strong>
+<ul>
+<li>NETFLOW CONFIGURATION - port to receive NetFlow packets</li>
+<li>SFLOW CONFIGURATION - port to receive NetFlow packets</li>
+<li>SAMPLING CONFIGURATION - NetFlow sampling rate</li>
+</ul></li>
+</ul>
+<p><img src="assets/image-20210603123529010.png" alt="image-20210603123529010" style="zoom:67%;" /></p>
+<ul>
+<li><p><strong>FLOW FILTERING</strong></p>
+<p>FlowControl  allows the user to create rules to limit the data collected by the system to the collection that the user needs. Using this option saves disk space and system resources as well as helps  to analyze data by operating only filtered data – which are critical to  the user.<img src="assets/image-20210603130635041.png" alt="image-20210603130635041" style="zoom:67%;" /></p>
+<p>The system has a very flexible mechanism for creating rules. Individual rows of rules can be nested and combined using operators, depending on the user's needs and creating complex/expanded expressions.</p>
+<p>When creating a filter rule, the user can use the following parameters/fields, each of which has its own set of operators.</p></li>
+</ul>
+<p><img src="assets/image-20210604111356425.png" alt="image-20210604111356425" style="zoom:50%;" /></p>
+<p>The following is a list of fields/parameters with their own operators.</p>
+<table>
+<thead>
+<tr><th>Parameter/Field</th><th>Operator</th></tr>
+</thead>
+<tbody>
+<tr><td>exporterIp</td><td>matches <br/>contains <br/>regexp <br/>is in subnet <br/>is in range<br/>is in</td></tr>
+<tr><td>srcIp</td><td>matches <br/>contains <br/>regexp <br/>is in subnet <br/>is in range<br/>is in</td></tr>
+<tr><td>dstIp</td><td>matches <br/>contains <br/>regexp <br/>is in subnet <br/>is in range<br/>is in</td></tr>
+<tr><td>srcPort</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>dstPort</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>packets</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>octets</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>type</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>version</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>protocol</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>input</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>output</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>tos</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+<tr><td>tcpFlags</td><td>lower than<br/>lower or equal than   <br/>greater than   <br/>greater or equal than   <br/>equals   <br/>not equals  <br/>is in</td></tr>
+</tbody>
+</table>
+<p>Relationships between rows can be specified using the three operators AND, OR, and NOT (ADD LOGICAL OPERATOR).</p>
+<p><img src="assets/image-20210604112023438.png" alt="image-20210604112023438" style="zoom:67%;" /></p>
+<p>It is possible to move the rows and swap positions by clicking and holding the left mouse button on the left side of the row.</p>
+<p>By adding more filters and logical operator users can create complex filter expressions ( done similarly to the alert wizard).</p>
+<p><em>Example filter rule:</em></p>
+<p>FlowFilter rule = (EXPORTERIP MATCHES 172.16.40.1) NOT (SRCIP MATCHES 192.168.1.10)  NOT  (DSTIP MATCHES 10.10.10.10)</p>
+<p><img src="/assets/image-20210604112628594.png" alt="image-20210604112628594"></p>
+<ul>
+<li><strong>FLOW FORWARD</strong> - allows the NETFLOW stream to be forwarded to additional user-defined devices.</li>
+</ul>
+<p><img src="assets/image-20210603123652909.png" alt="image-20210603123652909" style="zoom:67%;" /></p>
+<ul>
+<li><p><strong>ADVANCED</strong></p>
+<p>This menu allows configure the handling of additional fields in NetFlow and IPFIX. All additional fields are <u>available only in the RawData menu</u>. <img src="assets/image-20210513112816568.png" alt="image-20210513112816568" style="zoom:67%;" /></p></li>
+</ul>
+<p>The fields are divided into the following four group:</p>
+<ul>
+<li><p><strong>MPLS</strong>,</p></li>
+<li><p><strong>EXTFIELD</strong>,</p></li>
+<li><p><strong>POSTNAT</strong>,</p></li>
+<li><p><strong>RAWS</strong>.</p></li>
+</ul>
+<blockquote>
+<p>NOTE: The system-supported additional/extended fields must be configured on devices that have the ability to transmit these data using NETFLOW, IPFIX.</p>
+</blockquote>
+<p>The <strong>MPLS</strong> group consists of the following additional fields:</p>
+<ul>
+<li><p>&quot;MPLS Top Label Exp&quot;</p></li>
+<li><p>&quot;MPLS Label 1&quot;</p></li>
+<li><p>&quot;MPLS Label 2&quot;</p></li>
+<li><p>&quot;MPLS Label 3&quot;</p></li>
+<li><p>&quot;MPLS Label 4&quot;</p></li>
+<li><p>&quot;MPLS Label 5&quot;</p></li>
+</ul>
+<p>The <strong>EXTFIELD</strong> group consists of the following additional  fields:</p>
+<ul>
+<li><p>&quot;Min Packet Length&quot;</p></li>
+<li><p>&quot;Max Packet Length&quot;</p></li>
+<li><p>&quot;Flow Label&quot;</p></li>
+<li><p>&quot;IPv6 Option Header&quot;</p></li>
+</ul>
+<p>The <strong>POSTNAT</strong> group consists of the following additional  fields:</p>
+<ul>
+<li><p>&quot;NAT Source IP&quot;</p></li>
+<li><p>&quot;NAT Source Port&quot;</p></li>
+</ul>
+<p>The <strong>RAWS</strong> group consists of the following additional fields:</p>
+<ul>
+<li><p>&quot;Raw Source Host AS Name&quot;</p></li>
+<li><p>&quot;Raw Destination Host AS Name&quot;</p></li>
+<li><p>&quot;Raw Source Host AS Number&quot;</p></li>
+<li><p>&quot;Raw Destination Host AS Number&quot;</p></li>
+</ul>
+<p>The FC system can handle each of the above groups independantly by moving the corresponding switch  in the menu NETFLOW-ADVANCED to on (blue).</p>
+<p><img src="assets/image-20210603123803907.png" alt="image-20210603123803907" style="zoom:50%;" /></p>
+<blockquote>
+<p><strong>NOTICE</strong>: The above fields are handled from the 1.6 version of the FlowControl system. In order to analyze the historical data collected in previous versions of the system, the handling of all additional  fields in the NETFLOW-ADVANCED must be disabled.</p>
+</blockquote>
+<h4><a class="anchor" aria-hidden="true" id="1327-license"></a><a href="#1327-license" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.7 LICENSE</h4>
+<p>License management.</p>
+<p><img src="assets/image-20210610104831208.png" alt="image-20210610104831208" style="zoom:67%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="1328-operations"></a><a href="#1328-operations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.8 OPERATIONS</h4>
+<p>Application and system restart/shutdown options.</p>
+<p><img src="assets/image-20210427102433556.png" alt="image-20210427102433556" style="zoom:67%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="1329-administration"></a><a href="#1329-administration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.9 ADMINISTRATION</h4>
+<p>System utilities such as update, backup, restore, logs.</p>
+<p>There are 4 processes: Update, Backup, Restore, and Logs. All processes are dependant. Only one process can be completed at a time and if one process executes it blocks the others. In case, the system support expires, these processes will be blocked.</p>
+<p>When the process started, its status appears in the pane and after the browser has been refreshed during the process, a status popup is appear</p>
+<ul>
+<li><p>ADMINISTRATION</p>
+<ul>
+<li><p>UPDATE - This command is used to make an update to the latest version of the system.</p>
+<p><img src="assets/image-20210427102746614.png" alt="image-20210427102746614" style="zoom:67%;" /></p></li>
+<li><p>BACKUP - This command is used to generate backup.<img src="assets/image-20210427103205758.png" alt="image-20210427103205758" style="zoom:67%;" /></p></li>
+<li><p>RESTORE - This command is used to restore the backup.<img src="assets/image-20210610172617796.png" alt="image-20210610172617796" style="zoom:50%;" /></p></li>
+</ul></li>
+</ul>
+<p>After uploading the backup file, a list of elements that can be restored appears.</p>
+<p><img src="assets/image-20210610172733398.png" alt="image-20210610172733398" style="zoom: 67%;" /></p>
+<p>Backup restore command also restores views, dashboards and bookmarks.</p>
+<ul>
+<li><p>LOGS - This command is used to generate logs.<img src="assets/image-20210427110121120.png" alt="image-20210427110121120" style="zoom:67%;" />Two types of log collections can be generated: Basic and Support Logs. Basic type log is saved to a regular ZIP file used for basic diagnosis like: checking the execution of the backup, restore, logs, update commands or checking the logs engine. A file with the collected logs is available for download through the GUI as shown in the figure above.</p>
+<p>Support Logs option is used to generate logs for support team.</p></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="13210-disk"></a><a href="#13210-disk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.2.10 DISK</h4>
+<p>DISK-CAPACITY - This command is used to handle the length of time the data is stored in the system depends on granulation and the type of database.</p>
+<p><img src="assets/image-20210507110813479.png" alt="image-20210507110813479" style="zoom:50%;" /></p>
+<p>The table below lists the parameters in the DISK CAPACITY window with their descriptions.</p>
+<table>
+<thead>
+<tr><th style="text-align:left">Name</th><th style="text-align:left">Description</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left">1 Day Data</td><td style="text-align:left">All databases with 1-day granularity</td></tr>
+<tr><td style="text-align:left">1 Hour Data</td><td style="text-align:left">All databases with 1-hour granularity</td></tr>
+<tr><td style="text-align:left">10 Minutes Data</td><td style="text-align:left">All databases with 10-minutes granularity</td></tr>
+<tr><td style="text-align:left">Network Alerts 1M</td><td style="text-align:left">XN module network alarms</td></tr>
+<tr><td style="text-align:left">Security Alerts 1M</td><td style="text-align:left">XNS module security alarms</td></tr>
+<tr><td style="text-align:left">DDoS Alerts 1M</td><td style="text-align:left">XND module DDoS alarms</td></tr>
+<tr><td style="text-align:left">Interfaces 1M</td><td style="text-align:left">Interface database with 1-minute granulation.</td></tr>
+<tr><td style="text-align:left">Apps 1M</td><td style="text-align:left">Application database with 1-minute granulation.</td></tr>
+<tr><td style="text-align:left">IPs 1M</td><td style="text-align:left">IP data base with 1-minute granularity.</td></tr>
+<tr><td style="text-align:left">Deduplicated 1M</td><td style="text-align:left">De-duplicated database  with 1-minute granulation</td></tr>
+<tr><td style="text-align:left">Raw 1M</td><td style="text-align:left">RAW Flows database with 1-minute granularity</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="133-ddos"></a><a href="#133-ddos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.3 DDoS</h3>
+<p>This is DDOS attack detection based on behavioral and statistical analysis witch mitigation attack module.</p>
+<p><img src="assets/image-20201031133439696.png" alt="image-20201031133439696" style="zoom:67%;" /></p>
+<ul>
+<li>BASIC CONFIGURATION.</li>
+<li>ENGINE PARAMETERS.</li>
+<li>FLOWSPEC BGP.</li>
+<li>ACTIVE ATTACKS.</li>
+</ul>
+<p><strong>XND module</strong> full description can be found in the documentation <em>XND User Guide</em> <a href="https://documentation.sycope.com/XND">https://documentation.sycope.com/XND</a></p>
+<h3><a class="anchor" aria-hidden="true" id="134-security"></a><a href="#134-security" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.4 Security</h3>
+<p>In the <strong>Security</strong> section the system allows users to review and manage security rules created according to the MITRE ATT&amp;CK methodology.</p>
+<p><img src="/assets/image-20210624171544047.png" alt="image-20210624171544047"></p>
+<p>Configuration of the security ruleset is based on three sections:</p>
+<ul>
+<li>THREAT DETECTION - Identification of different threat patterns based on proprietary Sycope created rules (this section allows rule set modification but no rule adding).</li>
+</ul>
+<ul>
+<li><p>EXTERNAL THREAT INTELLIGENCE - Identification of different threat patterns utilizing several external threat feeds (this section allows rule set modification but no rule adding).</p>
+<p>The system retrieves the feeds from the external sources at intervals of hour.</p></li>
+<li><p>INTERNAL THREAT INTELLIGENCE - Identification of the custom threat patterns configured by users.</p></li>
+</ul>
+<p><strong>XNS module</strong> full description can be found in the documentation <em>XNS User Guide</em> <a href="https://documentation.sycope.com/XNS">https://documentation.sycope.com/XNS</a></p>
+<h3><a class="anchor" aria-hidden="true" id="135-mapping"></a><a href="#135-mapping" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.5 Mapping</h3>
+<p>The system allows mapping between internal networks into a more comprehensive convention which is then used in data presentation. There are six main sections of the mapping configuration:</p>
+<ul>
+<li><p><strong>NAME</strong> - here is a possibility to  assign names to the following data objects:</p>
+<ul>
+<li><p>DEVICES - rule defines a name for the IP,</p>
+<p><img src="assets/image-20210513123212395.png" alt="image-20210513123212395" style="zoom: 50%;" /></p></li>
+<li><p>INTERFACES - rule defines several aspects of the Device Interface (Device IP: Interface ID,Interface Name/Description,Interface Speed),</p>
+<p><img src="assets/image-20210513123510255.png" alt="image-20210513123510255" style="zoom: 50%;" /></p></li>
+<li><p>HOSTS/SERVERS - rule defines a name for the Server/HOST IP,</p>
+<p><img src="assets/image-20210513123918253.png" alt="image-20210513123918253" style="zoom: 50%;" /></p></li>
+<li><p>APPLICATIONS - rule defines a name for the custom APPLICATIONS (Protocol/Port Number,Name),</p>
+<p><img src="assets/image-20210513124500624.png" alt="image-20210513124500624" style="zoom: 50%;" /></p></li>
+</ul></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Please remember that in case a NAME or any other parameter exists already and is predefined in the system ex. Application Definitions, mapping will override those values with the user defined ones.</p>
+</blockquote>
+<p>For the system, the order of default applications is as follows:</p>
+<ol>
+<li>80,HTTP,TCP</li>
+<li>443,HTTPS,TCP</li>
+<li>445,SMB,TCP</li>
+<li>22,SSH,TCP</li>
+<li>23,TELNET,TCP</li>
+<li>25,SMTP,TCP</li>
+<li>110,POP3,TCP</li>
+<li>143,IMAP4,TCP</li>
+<li>20,FTP,TCP</li>
+<li>21,FTP,TCP</li>
+<li>1194,OPENVPN,TCP</li>
+<li>5432,PostgreSQL,TCP</li>
+</ol>
+<p>If you set up your applications in Mappings, the applications will be displayed first, and then the default applications that did not match with the Mappings applications.</p>
+<p>​</p>
+<ul>
+<li><p>IP/AS NUMBER - rule defines ip address for the AS number.</p>
+<p><img src="assets/image-20210513124218687.png" alt="image-20210513124218687" style="zoom: 50%;" /></p></li>
+</ul>
+<ul>
+<li>AS NUMBER/AS NAME - rule defines the custom name for AS (Number, Name).<img src="assets/image-20210513124542942.png" alt="image-20210513124542942" style="zoom: 50%;" /></li>
+</ul>
+<ul>
+<li><p><strong>GROUPS</strong> - users can assign names to the internal networks utilizing eight grouping sets :</p>
+<ul>
+<li><p>LOCATION - grouping based on NETWORK location (CIDR, Name, Description),</p>
+<p><img src="assets/image-20210513124922747.png" alt="image-20210513124922747" style="zoom: 50%;" /></p></li>
+</ul></li>
+</ul>
+<ul>
+<li><p>FUNCTION - grouping based on NETWORK logical function (CIDR, Name, Description),</p>
+<p><img src="assets/image-20210513125031564.png" alt="image-20210513125031564" style="zoom: 50%;" /></p></li>
+</ul>
+<ul>
+<li><p>BUSINESS ROLE - grouping based on NETWORK business role in Organization (CIDR, Name, Description),</p>
+<p><img src="assets/image-20210513125123007.png" alt="image-20210513125123007" style="zoom: 50%;" /></p></li>
+</ul>
+<ul>
+<li><p>INTERNAL  - grouping based on internal Classless Inter-Domain Routing  (CIDR),</p>
+<p><img src="assets/image-20210602112219619.png" alt="image-20210602112219619" style="zoom: 50%;" /></p></li>
+</ul>
+<ul>
+<li><p>DEVICE - grouping based on internal Classless Inter-Domain Routing  (CIDR),</p>
+<p><img src="assets/image-20210602112656804.png" alt="image-20210602112656804" style="zoom: 50%;" /></p></li>
+</ul>
+<ul>
+<li><p>INTERFACE - grouping based on physical interfaces ip,</p>
+<p><img src="assets/image-20210602113029370.png" alt="image-20210602113029370" style="zoom: 50%;" /></p></li>
+</ul>
+<ul>
+<li><p>APP - grouping based on applications,</p>
+<p><img src="assets/image-20210609141455662.png" alt="image-20210609141455662" style="zoom: 50%;" /></p></li>
+<li><p>PROTOCOL - grouping based on protocol.</p>
+<p><img src="assets/image-20210602114229764.png" alt="image-20210602114229764" style="zoom: 50%;" /></p></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Grouping is very useful for presentation purposes as well as for implementation verification of widely used security zone segmentation concepts, utilized for both traffic filtering and risk mitigation.</p>
+</blockquote>
+<p>Since the release 1.6 of the FlowControl system, it has been possible to group (as above) base on:</p>
+<ul>
+<li>Device</li>
+<li>Interface</li>
+<li>App</li>
+<li>Protocol</li>
+</ul>
+<p>New groupings have caused the following new fields to appear in all views in the XN module:</p>
+<ul>
+<li>&quot;Protocol Group&quot;</li>
+<li>&quot;Source Application Group&quot;</li>
+<li>&quot;Destination Application Group&quot;</li>
+<li>&quot;Device Group&quot;</li>
+<li>&quot;Input Interface Group&quot;</li>
+<li>&quot;Output Interface Group&quot;</li>
+</ul>
+<ul>
+<li><p><strong>LOCATIONS</strong> - users can assign geographic coordinates to the following data objects:</p>
+<ul>
+<li><p>DEVICES - rule defines coordinates to the DEVICE IP (Device IP, Longitude, Attitude, City, Country, Country Code).</p>
+<p><img src="assets/image-20201031135344506.png" alt="image-20201031135344506" style="zoom:50%;" /></p></li>
+</ul></li>
+</ul>
+<ul>
+<li><p>HOST/SERVERS - rule defines coordinates to the HOST/SERVER IP (Host/Server IP, Longitude, Attitude, City, Country, Country Code).</p>
+<p><img src="assets/image-20201031135431392.png" alt="image-20201031135431392" style="zoom:50%;" /></p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="136-reports"></a><a href="#136-reports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3.6 Reports</h3>
+<p>This system is preconfigured with four report templates which can be enabled/disabled on request:</p>
+<ul>
+<li>Security Summary - summary of detected security threats from the last day,</li>
+<li>Network Traffic Report - overview of top talkers and devices,</li>
+<li>Interface Utilization - top interfaces and threshold violations,</li>
+<li>Application Servers - view on the most used application servers.</li>
+</ul>
+<p><img src="assets/image-20201031135555251.png" alt="image-20201031135555251" style="zoom:50%;" /></p>
+<p>Reports are run on a daily basis and the outcome is saved and visible in a list form from the UI.</p>
+<p><img src="assets/image-20201031135649051.png" alt="image-20201031135649051" style="zoom:50%;" /></p>
+<h2><a class="anchor" aria-hidden="true" id="2-dashboards"></a><a href="#2-dashboards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Dashboards</h2>
+<p>This section will cover various aspects of working with selected data. We will divide this section into different aspects that FlowControl uses to interpret data from the network. This will include various graphs, charts and tables as well as best practices on how to work with the data.</p>
+<h3><a class="anchor" aria-hidden="true" id="21-date-range-tab"></a><a href="#21-date-range-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1 Date Range Tab</h3>
+<p>An important element of the UI is the data range tab at the top of the page that stays with the user at all times in both XN, XNS and XND tabs and XNR. By default the system shows data and statistics for the last 15 minutes after initial login. When starting work on FlowControl it is crucial to remember to change the time range accordingly. Use the data range tab in order to make  the changes listed below:</p>
+<p><img src="/assets/image-20200901122011827.png" alt="image-20200901122011827"></p>
+<p>●   <strong>Keep filters</strong> – switching this option on, allows users to keep the filters and selections while switching between a different sections. By default, this option is turned off therefore switching to different section will reset all filters and selections. When enabled filters in different subsection views will be preserved.</p>
+<p>●   <strong>Start date/End date</strong> - choose time slots for which network traffic will be shown. Increasing a time slot might influence loading time for data and statistics.</p>
+<p>●   <strong>Last</strong> - this option will change displayed network traffic to the one from the chosen time period.</p>
+<p>●   <strong>Resolution</strong> - choose for what period of time data will be merged.</p>
+<p>●   <strong>Top flows</strong> - choose how many top flows will be shown. By default, it is 10,000 flows. Increasing flows might influence loading time for data and statistics.</p>
+<p>●   <strong>Search</strong> - specific IPv4 addresses can be searched for. Every widget will be automatically adjusted to show information regarding only the IPv4 address being searched for.</p>
+<blockquote>
+<p><strong>Note:</strong> In order to save your preferences, please click the <strong>APPLY</strong> button available on right-hand side.</p>
+</blockquote>
+<p>The FlowControl system allows advanced search with filters. The number of available filters depends on the selected database on which the filtering operation will be performed. The table below lists with a description all available filters for the given database.</p>
+<table>
+<thead>
+<tr><th>Filter description</th><th>Filer name</th><th>Database/<br />RAW flows</th><th>Database/ <br />Dedupplicated</th><th>Databese/ <br />Utilization</th><th>Database/ <br />Total traffic</th></tr>
+</thead>
+<tbody>
+<tr><td>time</td><td>unix_secs</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>byte</td><td>octets</td><td>X</td><td>X</td><td>X</td><td></td></tr>
+<tr><td>packets</td><td>packets</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>source IP address</td><td>srcaddr</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>destination IP address</td><td>dstaddr</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>scraddr or dstaddr</td><td>addr</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>protocol</td><td>proto</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>source port number</td><td>srcport</td><td>X</td><td></td><td></td><td></td></tr>
+<tr><td>destination port number</td><td>dstport</td><td>X</td><td></td><td></td><td></td></tr>
+<tr><td>srcport or dstport</td><td>port</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>direction</td><td>direction</td><td></td><td>X</td><td></td><td></td></tr>
+<tr><td>number of deduplicated Flows</td><td>counter</td><td></td><td>X</td><td></td><td></td></tr>
+<tr><td>device</td><td>dev</td><td>X</td><td></td><td>X</td><td></td></tr>
+<tr><td>input interface</td><td>inputint</td><td>X</td><td></td><td>X</td><td></td></tr>
+<tr><td>output interface</td><td>outputint</td><td>X</td><td></td><td>X</td><td></td></tr>
+<tr><td>inputint or outputint</td><td>int</td><td>X</td><td></td><td>X</td><td></td></tr>
+<tr><td>IP type of service</td><td>tos</td><td>X</td><td></td><td></td><td></td></tr>
+<tr><td>source network</td><td>srcnet</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>destination network</td><td>dstnet</td><td>X</td><td>X</td><td></td><td></td></tr>
+<tr><td>srcnet or dstnet</td><td>net</td><td>X</td><td>X</td><td></td><td></td></tr>
+</tbody>
+</table>
+<p>The available filters can be chained together to create any complicated search. Examples of complex searches are presented below.</p>
+<p><u><strong>Example 1</strong></u></p>
+<p>Filter fold: unix_secs=202010261000,202010261001;</p>
+<p>Assuming that  <strong>X1</strong>=unix_secs, the filtration result is shown in the figure below.</p>
+<p><img src="assets/image-20201118121705602.png" alt="image-20201118121705602" style="zoom: 50%;" /></p>
+<p><u><strong>Example 2</strong></u></p>
+<p><strong>Filter fold:</strong> unix_secs=202010261000,202010261001&amp;scraddr=1.1.1.1,2.2.2.2</p>
+<p>Assuming that :</p>
+<p><strong>X1</strong>=unix_secs=202010261000,202010261001;</p>
+<p><strong>X2</strong>=scraddr=1.1.1.1,2.2.2.2;</p>
+<p>then</p>
+<p><strong>X1 &amp; X2 = X3</strong>.</p>
+<p>The filtration result is shown in the figure below.</p>
+<p><img src="assets/image-20201118121839207.png" alt="image-20201118121839207" style="zoom: 50%;" /></p>
+<p><u><strong>Example 3</strong></u></p>
+<p><strong>Filter fold:</strong>  unix_secs=202010261000,202010261001&amp;scraddr=1.1.1.1,2.2.2.2&amp;dstaddr=3.3.3.3,4.4.4.4</p>
+<p>Assuming that :</p>
+<p><strong>X1</strong>= unix_secs</p>
+<p><strong>X2</strong> =srcaddr</p>
+<p><strong>X3</strong>=dstaddr</p>
+<p>then</p>
+<p><strong>X1&amp;X2&amp;X3=X5</strong></p>
+<p>The filtration result is shown in the figure below.</p>
+<p><img src="assets/image-20201118121942468.png" alt="image-20201118121942468" style="zoom: 50%;" /></p>
+<p><u><strong>Example 4</strong></u></p>
+<p><strong>Filter fold:</strong> unix_secs=202010261000,202010261001&amp;addr=1.1.1.1,2.2.2.2</p>
+<p>Assuming that :</p>
+<p><strong>X1</strong>= unix_secs</p>
+<p><strong>X2</strong> =srcaddr</p>
+<p><strong>X3</strong>=dstaddr</p>
+<p>and</p>
+<p>addr=srcaddr or dstaddr  (see table above)</p>
+<p>then</p>
+<p><strong>X1 &amp; (X2 or X3) = X5+X6+X7</strong>.</p>
+<p>The filtration result is shown in the figure below.</p>
+<p><img src="assets/image-20201118122146630.png" alt="image-20201118122146630" style="zoom: 50%;" /></p>
+<h3><a class="anchor" aria-hidden="true" id="22-data-specific-selection-tab"></a><a href="#22-data-specific-selection-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2 Data Specific Selection Tab</h3>
+<p>When creating any selections, the configuration output will be shown in a form of tabs. Each individual component of the tab can be managed separately. In order to deselect, press the  <img src="assets/x.png" alt="Step back" style="zoom: 50%;" />   button on the tab.</p>
+<p><img src="/assets/image-20201004162557687.png" alt="image-20201004162557687"></p>
+<p><img src="/assets/image-20201004162912959.png" alt="image-20201004162912959">  <b>Smart search </b> clicking this option will pop up a type in section, where any phrase can be typed in that is being looked for. This system automatically suggests options while typing.</p>
+<p><img src="/assets/Google_Search.png" alt="Google Search"></p>
+<p><img src="/assets/image-20201004163033256.png" alt="image-20201004163033256"> <b> Step back </b> - clicking this option will take a step back in data selections.</p>
+<p><img src="/assets/image-20201004163059467.png" alt="image-20201004163059467">  <b>Step forward </b> - clicking this option will take a step forward in data selections.</p>
+<p><img src="/assets/image-20201004163129997.png" alt="image-20201004163129997">  <b> Clear all selections </b> - this option will clear every data selection made.</p>
+<p><img src="/assets/image-20201004163218048.png" alt="image-20201004163218048"><strong>Bookmark</strong> - this option is a shortcut to the users filter parameters</p>
+<h3><a class="anchor" aria-hidden="true" id="23-visualization-options"></a><a href="#23-visualization-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.3 Visualization Options</h3>
+<p>This system will present the data, metrics and outcome of a configured rule set in different graphical forms according to the data granularity and metric structure. The presentation layer is configured according to the best practice in the data presentation techniques.</p>
+<p><img src="assets/image-20210208122009230.png" alt="image-20210208122009230" style="zoom:67%;" /></p>
+<h3><a class="anchor" aria-hidden="true" id="24-visualization-drill-down"></a><a href="#24-visualization-drill-down" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4 Visualization Drill Down</h3>
+<h3><a class="anchor" aria-hidden="true" id="241-drill-down-options"></a><a href="#241-drill-down-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.1 Drill Down Options</h3>
+<p>Depending on the specific dashboard and widget chosen, this system allows different drill down options. The universal method is clicking over any chart, graph or table where the user will be prompted with:<img src="/assets/Interface_Graph.png" alt="Interface Graph"></p>
+<ul>
+<li><strong>Exploration menu</strong> - clicking this option will pop up an exploration menu. This is the place where users can adjust the graph, table or chart to their own needs. Options available for change are as follows: data to be shown, way of sorting data, presentation of given graph, chart or table, colors and legend.</li>
+</ul>
+<p><img src="/assets/Graph_menu.png" alt="Graph "></p>
+<ul>
+<li><p><strong>Full screen</strong> - clicking this option, it will take user to the full screen mode of the graph, table or chart. This option is most widely used among mentioned three. This will allow to view more detailed information. In order to exit the full screen mode, press<img src="assets/image-20210211181659481.png" alt="image-20210211181659481" style="zoom:50%;" />when in full screen mode.</p></li>
+<li><p><strong>Export</strong> - Preconfigured export options:</p>
+<ul>
+<li><p>Export as an image,</p></li>
+<li><p>Export to PDF,</p></li>
+<li><p>Export data.</p></li>
+</ul></li>
+</ul>
+<p><img src="/assets/Grouping_Dashboard.png" alt="Grouping Dashboard"></p>
+<p>In some sections, there is a possibility to select data by choosing from drop down menus:</p>
+<p><img src="assets/Search_Listbox.png" alt="Search_Listbox" style="zoom: 200%;" /></p>
+<p>This system allows users to type in a searched phrase or select it from the drop down menu. Please remember that depending on the data chosen, fields will change color according to the data availability, suggesting to users which data types are aligned.</p>
+<h3><a class="anchor" aria-hidden="true" id="242-visual-data-extraction"></a><a href="#242-visual-data-extraction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.2 Visual Data Extraction</h3>
+<p>The first thing to notice when working with charts is that when users hover their mouse over any bar/data point it will show more details regarding that specific data.  <img src="/assets/Detail_Graph_Data.png" alt="Detail Graph Data"></p>
+<p>When clicking on bars, they will be selected. You can click on multiple bars in order to view only them in the chart. In order to confirm the selection, please press the green button on the top right corner. If data is presented on multiple elements of the dashboard, users’ selection on one plot will impact data presentation on others according to the selection made.</p>
+<p><img src="/assets/Click_Graph_Selection.png" alt="Click Graph Selection"></p>
+<p>This system has drop down menus on the left-hand side and at the bottom of the chart (X/Y axes). They can be adjusted (if possible) to show different data types. There is also a lasso selection option available in the top right corner<img src="assets/lasso.png " alt="Search_Listbox" style="zoom: 50%;"/>  This allows users to draw a line which, when passing through data it will select it accordingly.</p>
+<p><img src="/assets/Line_Graph_Selection.png" alt="Line Graph Selection"></p>
+<p>Data from graphs can be selected by clicking and dragging just below the x axis, i.e. vertically, to select narrowed, i.e. period of time.<img src="/assets/Graph_Selection.png" alt="Graph Selection"></p>
+<p>Data can also be selected just by clicking and dragging the y axis, i.e. horizontally. This will allow to check for the details of highest data used.<img src="/assets/Lasso_Selection.png" alt="Lasso Selection"></p>
+<h3><a class="anchor" aria-hidden="true" id="243-exact-values-search"></a><a href="#243-exact-values-search" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.4.3 Exact Values Search</h3>
+<p>Tables are the most precise way of presenting data gathered because it shows exact values and measures.</p>
+<p><img src="/assets/Data_Table_Selection.png" alt="Data Table Selection"></p>
+<p>There are two ways of selecting data in tables. The first one is by clicking on the magnifier icon next to a chosen heading, e.g. Source Host. The drop down menu will pop up where users can either search for a desired source host or by simply scrolling down and looking for it manually, then by clicking it. In order to accept the selection, press the green button. After making a selection, all data will be adjusted. The second option is to simply click the desired data in the table.</p>
+<h2><a class="anchor" aria-hidden="true" id="3-system-status"></a><a href="#3-system-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. System Status</h2>
+<p>This system provides information about its current status and performance. This information is divided into two main sections, Flows and System Statistics.</p>
+<h3><a class="anchor" aria-hidden="true" id="31-flows-stats"></a><a href="#31-flows-stats" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1 Flows Stats</h3>
+<p>FlowControl actively counts the number of raw and deduplicated flows giving users overview on the current network load of the system. This information is very useful for proper license sizing of the solution.</p>
+<p><img src="/assets/Flow_Stats.png" alt="Flow stats"></p>
+<h3><a class="anchor" aria-hidden="true" id="32-system-status"></a><a href="#32-system-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2 System Status</h3>
+<p>This System monitors disk space of the application in real time which is crucial for sizing and maintenance of the solution. Monitored disk space is divided into 3 functional sections:</p>
+<ul>
+<li>Disk Utilization.</li>
+<li>Actual Free Disk Space.</li>
+<li>Free space on Cache Partition.</li>
+<li>Free space on Database Partition.</li>
+<li>Free space on System Partition.</li>
+</ul>
+<p><img src="/assets/image-20200901123342718.png" alt="image-20200901123342718"></p>
+<h2><a class="anchor" aria-hidden="true" id="4-access-to-flowcontrol-data-through-rest-api"></a><a href="#4-access-to-flowcontrol-data-through-rest-api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Access to FlowControl data through REST API</h2>
+<p>Since FolowControl version 1.6 it is possible to download data based on queries through external mechanisms - REST API.</p>
+<pre><code class="hljs"><span class="hljs-attribute">Link</span>: 
+
+<span class="dts"><span class="hljs-symbol">https:</span><span class="hljs-comment">//[IP]/api_2</span>
+<span class="hljs-symbol">
+Method:</span>
+
+POST
+<span class="hljs-symbol">
+
+
+JSON:</span>
+{
+   <span class="hljs-string">"username"</span>:<span class="hljs-string">" "</span>,
+   <span class="hljs-string">"pass"</span>:<span class="hljs-string">" "</span>,
+   <span class="hljs-string">"method"</span>:<span class="hljs-string">"local"</span>,
+   <span class="hljs-string">"appName"</span>:<span class="hljs-string">"fcxn-tops"</span>,
+    <span class="hljs-string">"top"</span>:<span class="hljs-number">100</span>,
+   <span class="hljs-string">"aggr"</span>:<span class="hljs-string">"1MIN"</span>,
+   <span class="hljs-string">"range"</span>:<span class="hljs-string">"'202105051759','202105051759'"</span>,
+   <span class="hljs-string">"search"</span>:<span class="hljs-string">""</span>,
+   <span class="hljs-string">"appType"</span>:<span class="hljs-string">"xn"</span>,
+   <span class="hljs-string">"tz"</span>:<span class="hljs-string">"Warsaw"</span>
+}
+    
+</span></code></pre>
+<h3><a class="anchor" aria-hidden="true" id="41-available-fields-with-values-they-can-take"></a><a href="#41-available-fields-with-values-they-can-take" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4.1 Available fields with values they can take</h3>
+<ul>
+<li><p>method = 'local|ldap|radius'</p></li>
+<li><p>aggr = 'AUTO|1MIN|10MIN|1HOUR|1DAY'</p></li>
+<li><p>appType='xn'</p></li>
+<li><p>appName = 'fcxn-tops|fcxn-rawdata|fcxn-asa|fcxn-traffic|fcxn-apps|fcxn-maps|fcxn-groups|fcxn-as|fcxn-alerts'</p></li>
+<li><p>appType='xns'</p></li>
+<li><p>appName = 'fcxn-security-internal|fcxn-security-external|fcxn-security-threatanalysis|fcxn-security-alerts'</p></li>
+<li><p>appType='xnd'</p></li>
+<li><p>appName = 'fcxn-module-ddos|fcxn-ddos-protocols-details'</p></li>
+<li><p>appType='xnr'</p></li>
+<li><p>appName = 'fcxn-netim'</p></li>
+<li><p>appType='sys'</p></li>
+<li><p>appName = 'fcxn-audit-logs|fcxn-flowstats'</p></li>
+<li><p>tz = 'Abu Dhabi|Adelaide|Alaska|Amsterdam|Arizona|Astana|Athens|Atlantic Time (Canada)|Auckland|Azores|Baghdad|Baku|Bangkok|Beijing|Belgrade|Berlin|Bern|Bogota|Brasilia|Bratislava|Brisbane|Brussels|Bucharest|Budapest|Buenos Aires|Cairo|Canberra|Cape Verde Is.|Caracas|Casablanca|Central America|Central Time (US &amp; Canada)|Chennai|Chihuahua|Chongqing|Copenhagen|Darwin|Dhaka|Eastern Time (US &amp; Canada)|Edinburgh|Ekaterinburg|Fiji|Georgetown|Greenland|Greenwich Mean Time : Dublin|Guadalajara|Guam|Hanoi|Harare|Hawaii|Helsinki|Hobart|Hong Kong|Indiana (East)|International Date Line West|Irkutsk|Islamabad|Istanbul|Jakarta|Jerusalem|Kabul|Kamchatka|Karachi|Kathmandu|Kolkata|Krasnoyarsk|Kuala Lumpur|Kuwait|Kyiv|La Paz|Lima|Lisbon|Ljubljana|London|Madrid|Magadan|Mazatlan|Melbourne|Mexico City|Mid-Atlantic|Minsk|Monrovia|Monterrey|Moscow|Mountain Time (US &amp; Canada)|Mumbai|Muscat|Nairobi|New Caledonia|New Delhi|Newfoundland|Novosibirsk|Nuku'alofa|Osaka|Pacific Time (US &amp; Canada)|Paris|Perth|Port Moresby|Prague|Pretoria|Quito|Riga|Riyadh|Rome|Samoa|Santiago|Sapporo|Sarajevo|Saskatchewan|Seoul|Singapore|Skopje|Sofia|Solomon Is.|Sri Jayawardenepura|St. Petersburg|Stockholm|Sydney|Taipei|Tallinn|Tashkent|Tbilisi|Tehran|Tokyo|Urumqi|Warsaw|Wellington|West Central Africa|Vienna|Vilnius|Vladivostok|Volgograd|Yakutsk|Yerevan|Zagreb'</p>
+<p>​</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="42-available-databases-for-querying-a-specific-application"></a><a href="#42-available-databases-for-querying-a-specific-application" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4.2 Available databases for querying a specific application</h3>
+<p><strong>XN</strong></p>
+<ul>
+<li>fcxn-tops = 'HostAppTops,IntRawTops'</li>
+<li>fcxn-rawdata = 'IntRaw,IntUtil'</li>
+<li>fcxn-asa = 'IntRawASA'</li>
+<li>fcxn-traffic = 'HostApp,TotalAggrBytes'</li>
+<li>fcxn-apps = 'HostApps'</li>
+<li>fcxn-maps = 'HostApp,IntUtil'</li>
+<li>fcxn-groups = 'HostApp,TotalAggrBytes'</li>
+<li>fcxn-as = 'HostApp,TotalAggrBytes'</li>
+<li>fcxn-alerts = 'AlertHost,AlertInt'</li>
+</ul>
+<p><strong>XNS</strong></p>
+<ul>
+<li>fcxn-security-internal = 'Incidents'</li>
+<li>fcxn-security-external = 'Incidents'</li>
+<li>fcxn-security-threatanalysis = 'Incidents'</li>
+<li>fcxn-security-alerts = 'Incidents'</li>
+</ul>
+<p><strong>XND</strong></p>
+<ul>
+<li>fcxn-module-ddos = 'Incidents'</li>
+<li>fcxn-ddos-protocols-details = 'Incidents,Protocols'</li>
+</ul>
+<p><strong>XNR</strong></p>
+<ul>
+<li>fcxn-netim = ''NetIM'</li>
+</ul>
+<p><strong>SYS</strong></p>
+<ul>
+<li>fcxn-audit-logs = 'Logs'</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="43-example"></a><a href="#43-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4.3 Example</h3>
+<pre><code class="hljs">Request:
+
+{
+   <span class="hljs-string">"username"</span>:<span class="hljs-string">"admin"</span>,
+   <span class="hljs-string">"pass"</span>:<span class="hljs-string">"[password]"</span>,
+   <span class="hljs-string">"method"</span>:<span class="hljs-string">"local"</span>,
+   <span class="hljs-string">"appName"</span>:<span class="hljs-string">"fcxn-tops"</span>,
+   <span class="hljs-string">"top"</span>:1,
+   <span class="hljs-string">"aggr"</span>:<span class="hljs-string">"1MIN"</span>,
+   <span class="hljs-string">"range"</span>:<span class="hljs-string">"'202105051759','202105051759'"</span>,
+   <span class="hljs-string">"search"</span>:<span class="hljs-string">""</span>,
+   <span class="hljs-string">"appType"</span>:<span class="hljs-string">"xn"</span>,
+   <span class="hljs-string">"tz"</span>:<span class="hljs-string">"Warsaw"</span>
+}
+
+Response:
+
+{
+    <span class="hljs-string">"Status"</span>:<span class="hljs-string">"Success"</span>,
+    <span class="hljs-string">"Message"</span>:<span class="hljs-string">"Module  XN. Application FCXN-TOPS."</span>,
+    <span class="hljs-string">"Data"</span>:[
+        {
+            <span class="hljs-string">"Name"</span>:<span class="hljs-string">"HostAppTops-1MIN"</span>,
+            <span class="hljs-string">"Content"</span>:<span class="hljs-string">"{
+                "</span>Time (Host/App)<span class="hljs-string">":"</span>202105051759<span class="hljs-string">",
+                "</span>Bytes (Host/App)<span class="hljs-string">":"</span>6615615<span class="hljs-string">",
+                "</span>Packets (Host/App)<span class="hljs-string">":"</span>7593<span class="hljs-string">",
+                "</span>Source Host Name (Host/App)<span class="hljs-string">":"</span>172.16.40.75<span class="hljs-string">",
+                "</span>Destination Host Name (Host/App)<span class="hljs-string">":"</span>172.16.95.183<span class="hljs-string">",
+                "</span>Source Host (Host/App)<span class="hljs-string">":"</span>172.16.40.75<span class="hljs-string">",
+                "</span>Destination Host (Host/App)<span class="hljs-string">":"</span>172.16.95.183<span class="hljs-string">",
+                "</span>Protocol (Host/App)<span class="hljs-string">":"</span>UDP<span class="hljs-string">",
+                "</span>Application (Host/App)<span class="hljs-string">":"</span>5142<span class="hljs-string">",
+                "</span>Port (Host/App)<span class="hljs-string">":"</span>5142<span class="hljs-string">",
+                "</span>Source Host Role (Host/App)<span class="hljs-string">":"</span>Client<span class="hljs-string">",
+                "</span>Source Host ASByIP (Host/App)<span class="hljs-string">":"</span>LVLT-1<span class="hljs-string">",
+                "</span>Destination Host ASByIP (Host/App)<span class="hljs-string">":"</span><span class="hljs-string">",
+                "</span>Source Host ASN (Host/App)<span class="hljs-string">":"</span>1<span class="hljs-string">",
+                "</span>Destination Host ASN (Host/App)<span class="hljs-string">":"</span><span class="hljs-string">",
+                "</span>Protocol<span class="hljs-built_in"> Group </span>(Host/App)<span class="hljs-string">":"</span><span class="hljs-string">",
+                "</span>Source Application<span class="hljs-built_in"> Group </span>(Host/App)<span class="hljs-string">":"</span><span class="hljs-string">",
+                "</span>Destination Application<span class="hljs-built_in"> Group </span>(Host/App)<span class="hljs-string">":"</span><span class="hljs-string">"
+            }"</span>
+        },
+        {
+            <span class="hljs-string">"Name"</span>:<span class="hljs-string">"IntRawTops-1MIN"</span>,
+            <span class="hljs-string">"Content"</span>:<span class="hljs-string">"{
+                "</span>Netflow Device (Int)<span class="hljs-string">":"</span>172.16.40.1<span class="hljs-string">",
+                "</span>Device Name (Int)<span class="hljs-string">":"</span>Routert Test1<span class="hljs-string">",
+                "</span>Time (Int)<span class="hljs-string">":"</span>202105051759<span class="hljs-string">",
+                "</span>Bytes (Int)<span class="hljs-string">":"</span>6465451<span class="hljs-string">",
+                "</span>Packets (Int)<span class="hljs-string">":"</span>7464<span class="hljs-string">",
+                "</span>Input<span class="hljs-built_in"> Interface </span>(Int)<span class="hljs-string">":"</span>7<span class="hljs-string">",
+                "</span>Output<span class="hljs-built_in"> Interface </span>(Int)<span class="hljs-string">":"</span>14<span class="hljs-string">",
+                "</span>Input<span class="hljs-built_in"> Interface </span>Name (Int)<span class="hljs-string">":"</span>LAB<span class="hljs-string">",
+                "</span>Output<span class="hljs-built_in"> Interface </span>Name (Int)<span class="hljs-string">":"</span>TMP_5<span class="hljs-string">",
+                "</span>Source Host (Int)<span class="hljs-string">":"</span>172.16.40.75<span class="hljs-string">",
+                "</span>Destination Host (Int)<span class="hljs-string">":"</span>172.16.95.183<span class="hljs-string">",
+                "</span>Source Host Name (Int)<span class="hljs-string">":"</span>172.16.40.75<span class="hljs-string">",
+                "</span>Destination Host Name (Int)<span class="hljs-string">":"</span>172.16.95.183<span class="hljs-string">"
+            }"</span>
+        }
+    ]
+}<span class="hljs-string">'
+</span></code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Inst_g"><span class="arrow-prev">← </span><span>Installation Procedure</span></a><a class="docs-next button" href="/XNS"><span>XNS User Guide</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#system-architecture">System Architecture</a></li><li><a href="#1-overview">1. Overview</a><ul class="toc-headings"><li><a href="#11-main">1.1 Main</a></li><li><a href="#12-configuration">1.2 Configuration</a></li><li><a href="#13-administration-settings">1.3 Administration Settings</a></li><li><a href="#131-alerts">1.3.1 Alerts</a></li><li><a href="#132-config">1.3.2 Config</a></li><li><a href="#133-ddos">1.3.3 DDoS</a></li><li><a href="#134-security">1.3.4 Security</a></li><li><a href="#135-mapping">1.3.5 Mapping</a></li><li><a href="#136-reports">1.3.6 Reports</a></li></ul></li><li><a href="#2-dashboards">2. Dashboards</a><ul class="toc-headings"><li><a href="#21-date-range-tab">2.1 Date Range Tab</a></li><li><a href="#22-data-specific-selection-tab">2.2 Data Specific Selection Tab</a></li><li><a href="#23-visualization-options">2.3 Visualization Options</a></li><li><a href="#24-visualization-drill-down">2.4 Visualization Drill Down</a></li><li><a href="#241-drill-down-options">2.4.1 Drill Down Options</a></li><li><a href="#242-visual-data-extraction">2.4.2 Visual Data Extraction</a></li><li><a href="#243-exact-values-search">2.4.3 Exact Values Search</a></li></ul></li><li><a href="#3-system-status">3. System Status</a><ul class="toc-headings"><li><a href="#31-flows-stats">3.1 Flows Stats</a></li><li><a href="#32-system-status">3.2 System Status</a></li></ul></li><li><a href="#4-access-to-flowcontrol-data-through-rest-api">4. Access to FlowControl data through REST API</a><ul class="toc-headings"><li><a href="#41-available-fields-with-values-they-can-take">4.1 Available fields with values they can take</a></li><li><a href="#42-available-databases-for-querying-a-specific-application">4.2 Available databases for querying a specific application</a></li><li><a href="#43-example">4.3 Example</a></li></ul></li></ul></nav></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '7b969c492579575af2e774554cd0210e',
+                indexName: 'flowcontrol12',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
