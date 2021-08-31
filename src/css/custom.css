@@ -79,3 +79,7 @@ html[data-theme='dark'] blockquote {
   color: white;
   background-color: #313248
 }
+
+[class*="lastUpdated_"] {
+  display: none !important
+}
