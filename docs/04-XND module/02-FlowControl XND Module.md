@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 ### Introduction to XND Module
 
 ​	The FC XND module uses aggregated NetFlow, sFlow, NSEL data. Based on this data and parameters entered by the user, the algorithm calculates a set of data defining the target together with the attacked service and can then take action to limit the effects of the attack. DDoS attacks are detected by the XND module algorithm based on the parameters: static thresholds and dynamic thresholds.

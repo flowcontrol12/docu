@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 This section will cover various aspects of working with selected data. We will divide this section into different aspects that FlowControl uses to interpret data from the network. This will include various graphs, charts and tables as well as best practices on how to work with the data. 
 
 ### Date Range Tab

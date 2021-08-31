@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 FlowControl XNS contains four menus (*Fig. 1.1)* of views for effective analysis of detected security threats: 
 •       SOC
 •       KPIs

@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 FlowControl XNS detects and analyses security threats and anomalies in a context of the entire organization based on network metadata (NetFlow) and reputation lists. For effective detection of abnormal activities, XNS uses two engines: 
 
 •       Threat Intelligence (TI) 
@@ -48,7 +50,7 @@ MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and
 
 ![image-20201218120633426](../assets/image-20201218120633426.png)
 
-*Fig.. I.1 MITRE ATT&CK Tactics. Source: [MITRE ATT&CK.]( https:/attack.mitre.org/ )*
+*Fig. I.1 MITRE ATT&CK Tactics. Source: [MITRE ATT&CK.]( https:/attack.mitre.org/ )*
 
  
 

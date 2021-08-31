@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 ### FlowControl ver. 1.6
 
 1. Mapping functionality has been extended - additional fields and groups have been added.

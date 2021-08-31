@@ -1,6 +1,8 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 The FlowControl system in the XND module supports two features to mitigate DDoS attacks: FlowSpec and RTBH (Remotely Triggered Black Hole). Both require routers that support BGP protocol and optionally FlowSpec feature. When FlowControl detects an attack, it sends a command to the edge router(s) of the organization to block the offending traffic. Depending on the feature used, this command can be a filtering rule to place in an internal FlowSpec table or regular route to inject in the routing table. Both mechanisms work in similar way as depicted on the *Fig. 3.1*.
 
-<img src={require('../assets/image-20201113144640591.png').default} alt="image-20201113144640591" style={{ zoom: '67%' }} />
+![image-20201113144640591](../assets/image-20201113144640591.png)
 
 *Fig. 3.1 DDoS attacks mitigation diagram*
 
@@ -361,7 +363,7 @@ ip route 192.0.2.1 255.255.255.255 Null0
 >Notes:
 >
 >Both Flowcontrol and the router must be in the same AS. The RTBH feature does not work if both devices are in different AS and establish eBGP connection.
- 
+
 
 #### Verification of the BGP session between FlowControl and the router
 

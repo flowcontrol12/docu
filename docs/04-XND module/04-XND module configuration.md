@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 ### Introduction to XND configuration
 
 The following section describes the configuration procedure for the detection mechanism and prevention of DDoS attacks implemented in the XND module. This mechanism extends XNS (Security) module capabilities with advanced detection algorithms and defense mechanisms against DDoS attacks.
@@ -81,7 +83,7 @@ Detection of DDoS attacks can be performed by the security threat detection engi
 
 *Click the ADD NEW button and configure router* 
 
-<img src={require('../assets/image-20201113150507633.png').default} alt="image-20201113150507633" style={{ zoom: '80%' }} />
+![mage-20201113150507633](../assets/image-20201113150507633.png)
 
 | Configuration  Attribute | Description                              |
 | ------------------------ | ---------------------------------------- |

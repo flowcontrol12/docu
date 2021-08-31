@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 With purchase of FlowControl system, you receive **OVA file** required for deployment of the software. Please ensure that the file is available for installation process.
 
 **Server requirements**

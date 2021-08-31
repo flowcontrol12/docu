@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 Since FolowControl version 1.6 it is possible to download data based on queries through external mechanisms - REST API.
 
 ```

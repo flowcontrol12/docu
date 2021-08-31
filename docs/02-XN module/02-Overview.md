@@ -1,43 +1,37 @@
-The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (**XN, XNS, XND, XNR, SYS**) and the icons in the top right corner ![image-20201004161928752](../assets/image-20201004161928752.png) (**Configuration options**). They are all vital components for working with the system, effective problem identification and data mining.
+<!-- Wersja 1.6.1 zmienione ikonki; dopasowana rozdzielczość rysunków -->
+
+The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (**XN, XNS, XND, XNR, SYS**) and the icons in the top right corner <span style={{ fontSize: '20px' }} class="k-icon k-i-gear"></span> (**Configuration options**). They are all vital components for working with the system, effective problem identification and data mining.
 
 ### Main
 
-On the left side there are four main sections: XN, XNS, XND, XNRand SYS. Each section consists of a menu where you will find desired information about collected data and system configuration. The main section works in hide/reveal mode. In order to show full names of the menu components, minority and majority please click on the minority sign icons ( < ) located at the top left corner. In order to hide the menu, please click the minority sign icons ( > ).
+On the left side there are four main sections: XN, XNS, XND, XNR and SYS. Each section consists of a menu where you will find desired information about collected data and system configuration. The main section works in hide/reveal mode. In order to show full names of the menu components, minority and majority please click on the minority sign icons ( < ) located at the top left corner. In order to hide the menu, please click the minority sign icons ( > ).
 
 
 
 ![image-20210601091300274](../assets/image-20210601091300274.png)
 
-
-
-
-
-
-
 ![](../assets/image-20210603113208677.png)
-
-
 
 Below is presented table with general description of what can be found in each section. Elements of the main menu were emphasized, while elements of the submenu were written in plain text.
 
 | **FlowControl XN**                                           | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20201031140331903](../assets/image-20201031140331903.png)  <u><b> NOC </b></u> | General overview of network infrastructure parameters        |
-| ![image-20201004125605987](../assets/image-20201004125605987.png)  <u><b> TOPs </b></u> | Information about top talkers in the network.                |
-| ![image-20200911120410391](../assets/image-20200911120410391.png)  <u><b> RAW Flows </b></u> | Detailed information about traffic.                          |
-| ![image-20201004153055808](../assets/image-20201004153055808.png)   **Raw Data** | Extensive information about every flow in the traffic.       |
-| ![image-20201004153137592](../assets/image-20201004153137592.png)   **ASA Devices** | Detailed information about flows from ASA Devices.           |
-| ![image-20200911120535728](../assets/image-20200911120535728.png)   <u>**Deduplicated Flows**</u> | Information about deduplicated flows.                        |
-| ![image-20201004153258941](../assets/image-20201004153258941.png)   **Traffic** | Network traffic based on deduplicated flows.                 |
-| **![image-20200911120312792](../assets/image-20200911120312792.png)   Applications** | Network traffic analysis in view of application based on deduplicated flows. |
-| ![image-20201004153410486](../assets/image-20201004153410486.png)  **Geolocalization** | Maps with various geolocations.                              |
-| ![image-20201004153449636](../assets/image-20201004153449636.png) <b> Groups </b> | Flows organized into various groups, e.g. business roles, location. |
-| ![image-20201004153533495](../assets/image-20201004153533495-1601822806926.png)   **AS Names** | Flows organized according to AS Names.                       |
-| ![image-20200911120656376](../assets/image-20200911120656376.png)   <u>**Long Term Data**</u> | Aggregated date from previous time periods.                  |
-| ![image-20201004153641952](../assets/image-20201004153641952.png)  **Last Day** | Aggregated data from last day.                               |
-| ![image-20201004153740964](../assets/image-20201004153740964.png)  **Last Week** | Aggregated data from last week.                              |
-| ![image-20201004153818558](../assets/image-20201004153818558.png)  **Last month** | Aggregate data from last month                               |
-| ![image-20201004154607022](../assets/image-20201004154607022.png)<u><b>  Alerts  </b></u> | Information and details about alerts that occurred in the network. |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-track-changes-accept"></span> <u><b>NOC </b></u> | General overview of network infrastructure parameters        |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-sort-asc"></span> <u><b> TOPs </b></u> | Information about top talkers in the network.                |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-reorder"></span> <u><b>RAW Flows</b></u> | Detailed information about traffic.                          |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-eye"></span>   **Raw Data** | Extensive information about every flow in the traffic.       |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-calculator"></span> **ASA Devices** | Detailed information about flows from ASA Devices.           |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-reorder"></span>  <u>**Deduplicated Flows**</u> | Information about deduplicated flows.                        |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-filter"></span> **Traffic** | Network traffic based on deduplicated flows.                 |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-window"></span> **Applications** | Network traffic analysis in view of application based on deduplicated flows. |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-globe-outline"></span> **Geolocalization** | Maps with various geolocations.                              |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-backward-element"></span> <b> Groups </b> | Flows organized into various groups, e.g. business roles, location. |
+| <span style={{ fontSize: '24px' }} class="k-icon f-i-as-icon"></span> **AS Names** | Flows organized according to AS Names.                       |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-calendar"></span>  <u>**Long Term Data**</u> | Aggregated date from previous time periods.                  |
+| <span style={{ fontSize: '24px' }} class="k-icon f-i-last-day"></span> **Last Day** | Aggregated data from last day.                               |
+| <span style={{ fontSize: '24px' }} class="k-icon f-i-last-week"></span> **Last Week** | Aggregated data from last week.                              |
+| <span style={{ fontSize: '24px' }} class="k-icon f-i-last-month"></span> **Last month** | Aggregate data from last month                               |
+| <span style={{ fontSize: '24px' }} class="k-icon k-i-warning"></span>  <u><b>Alerts  </b></u> | Information and details about alerts that occurred in the network. |
 
 > **Note:** All views except **Raw Data** use deduplicated traffic. In order to see unique information about flows that may change on the flow path, e.g. QoS tags – please use **Raw Data** views. 
 
@@ -46,13 +40,13 @@ Below is presented table with general description of what can be found in each s
 
 | **FlowControl XNS**                                          | Description                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------ |
-| ![image-20201004154834424](../assets/image-20201004154834424.png)  <u><b> SOC </b></u> | General overview of security aspects of the network.   |
-| ![image-20201004154911046](../assets/image-20201004154911046.png)  <u><b> KPIs </b></u> | General overview of the basic values of alerts.        |
-| ![image-20200911121159510](../assets/image-20200911121159510.png)   <u>**Use Cases**</u> | Monitoring scenarios of IT security threat.            |
-| ![image-20201004154940655](../assets/image-20201004154940655.png)  <b> Threat Analysis </b> | Information on all threats.                            |
-| ![image-20201004155011543](../assets/image-20201004155011543.png)  <b> External Threats</b> | Information on threats outside the customer network.   |
-| ![image-20201004155047164](../assets/image-20201004155047164.png)  <b> Internal  Threats</b> | Information on threats inside the customer network.    |
-| ![image-20201004155110985](../assets/image-20201004155110985.png)  <u><b> Alerts  </b></u> | Table with all information about alarms in the system. |
+|<span  style={{ fontSize: '24px' }} class="k-icon k-i-track-changes-accept"></span>  <u><b> SOC </b></u> | General overview of security aspects of the network.   |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-toggle-full-screen-mode"></span> <u><b> KPIs </b></u> | General overview of the basic values of alerts.        |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-list-bulleted"></span> <u>**Use Cases**</u> | Monitoring scenarios of IT security threat.            |
+|<span style={{ fontSize: '24px' }} class="k-icon f-i-security-dashboard"></span> <b> Threat Analysis </b> | Information on all threats.                            |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-lock"></span> <b> External Threats</b> | Information on threats outside the customer network.   |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-search"></span> <b> Internal  Threats</b> | Information on threats inside the customer network.    |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-warning"></span> <u><b>Alerts  </b></u> | Table with all information about alarms in the system. |
 
 ---
 
@@ -60,10 +54,10 @@ Below is presented table with general description of what can be found in each s
 
 | **FlowControl XND**                                          | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20200911121401384](../assets/image-20200911121401384.png) <u><b> DDOS </b></u> | Information about DDoS attacks.                              |
-| ![image-20200911121159510](../assets/image-20200911121159510.png) <u><b> Protocols</b></u> | Network traffic characteristics in the context of DDoS attacks. |
-| ![image-20200911121401384](../assets/image-20200911121401384.png)<b> Overview </b> | Network traffic characteristics in the context of protocols. |
-| ![image-20200911121401384](../assets/image-20200911121401384.png) **Details** | Detailed information about DDoS attacks.                     |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-aggregate-fields"></span>  <u><b> DDOS </b></u> | Information about DDoS attacks.                              |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-list-bulleted"></span> <u><b>Protocols</b></u> | Network traffic characteristics in the context of DDoS attacks. |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-aggregate-fields"></span> <b> Overview </b> | Network traffic characteristics in the context of protocols. |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-aggregate-fields"></span> **Details** | Detailed information about DDoS attacks.                     |
 
 
 
@@ -73,9 +67,9 @@ Below is presented table with general description of what can be found in each s
 
 | **System Section**                                           | Description                                        |
 | ------------------------------------------------------------ | -------------------------------------------------- |
-| ![image-20201119104559571](../assets/image-20201119104559571.png) **Audit Logs** | Information on users logins.                       |
-| ![image-20201004155258797](../assets/image-20201004155258797.png)<b> Flow  Stats </b> | General statistics about raw and aggregated flows. |
-| ![image-20201004155339267](../assets/image-20201004155339267.png)<b> System  </b> | Disk utilization information.                      |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-thumbnails-right"></span> **Audit Logs** | Information on users logins.                       |
+|<span style={{ fontSize: '24px' }} class="k-icon f-i-flow-stats"></span>  <b> Flow  Stats </b> | General statistics about raw and aggregated flows. |
+|<span style={{ fontSize: '24px' }} class="k-icon k-i-media-manager"></span> <b> System  </b> | Disk utilization information.                      |
 
 
 
@@ -138,8 +132,7 @@ Below is a list of all events/alerts that are indicated by the dot:
 
 ### Configuration
 
-On the right-hand side of the system there are three drop-down menus and on ![](../assets/image-20201119105609453.png)
-switch ![](../assets/image-20201119105609453.png) hide the date selection and overload bar. The first menu, marked with this icon ![image-20201004161928752](../assets/image-20201004161928752.png), is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with ![image-20201004162213351](../assets/image-20201004162213351.png), is available for all users. Things that can be found in this section are :
+On the right-hand side of the system there are three drop-down menus and one switch <span style={{ fontSize: '20px' }} class="k-icon k-i-filter-clear"></span>. The switch  <span style={{ fontSize: '20px' }} class="k-icon k-i-filter-clear"></span> is used to hide the date selection and overload bar. The first menu, marked with this icon <span style={{ fontSize: '20px' }} class="k-icon k-i-gear"></span>, is the settings menu available only for admin accounts. This section is described in the *Administration Settings* paragraph. The second drop-down menu, marked with <span style={{ fontSize: '20px' }} class="k-icon k-i-comment"></span>, is available for all users. Things that can be found in this section are :
 
 - License Info,
 - User Guide,
@@ -170,7 +163,7 @@ The license is delivered as a text file. To activate the license, the text from 
 
 The user guide will redirect users to the documentation stored on the system. The about section system will take users to the general web page with information about https://www.sycope.com/.
 
-![image-20201004162331465](../assets/image-20201004162331465.png)The third drop down menu, available for all users. In this menu the following things can be found:
+ The third drop down menu <span class="k-icon k-i-user"></span>, available for all users. In this menu the following things can be found:
 
  -   Profile
 
@@ -203,7 +196,6 @@ The following options are available for selection in the administration menu:
 There are two tabs available in the Alerts menu:
 
 - **Alerts**
-
 - **Notifications**
 
   
@@ -211,7 +203,6 @@ There are two tabs available in the Alerts menu:
 ![](../assets/image-20210606143150166.png)
 
 #### Alerts tab
-
 From version 1.6 FlowControl provides an advanced alarm wizard that allows the user to flexibly configure alarms based on multiple aggregations, parameters/fields, metrics, using a number of operators.
 
 The alarm configuration consists of four steps:
@@ -536,6 +527,7 @@ Basic network configuration: Hostname, DNS and IPv4, IPv6 address, DHCP and Gate
 
   ![](../assets/image-20210121125536344.png)
   
+
 ![](../assets/image-20210603114306684.png)
 
 
@@ -761,14 +753,16 @@ When the process started, its status appears in the pane and after the browser h
   - BACKUP - This command is used to generate backup.![](../assets/image-20210427103205758.png)
   
   - RESTORE - This command is used to restore the backup.![](../assets/image-20210610172617796.png)
-  
-    
 
-    After uploading the backup file, a list of elements that can be restored appears.![](../assets/image-20210610172733398.png)
-    restore command also restores views, dashboards and bookmarks. 
+After uploading the backup file, a list of elements that can be restored appears.
+
+![](../assets/image-20210610172733398.png)
+
+Backup restore command also restores views, dashboards and bookmarks.
+
 
   - LOGS - This command is used to generate logs.![](../assets/image-20210427110121120.png)
-  log collections can be generated: Basic and Support Logs. Basic type log is saved to a regular ZIP file used for basic diagnosis like: checking the execution of the backup, restore, logs, update commands or checking the logs engine. A file with the collected logs is available for download through the GUI as shown in the figure above.
+    Two types of log collections can be generated: Basic and Support Logs. Basic type log is saved to a regular ZIP file used for basic diagnosis like: checking the execution of the backup, restore, logs, update commands or checking the logs engine. A file with the collected logs is available for download through the GUI as shown in the figure above.
 
     Support Logs option is used to generate logs for support team.
 
@@ -852,62 +846,54 @@ In the **Security** section the system allows users to review and manage securit
 
 The system allows mapping between internal networks into a more comprehensive convention which is then used in data presentation. There are six main sections of the mapping configuration:
 
-- **NAME** - here is a possibility to  assign names to the following data objects: 
-  
-  - DEVICES - rule defines a name for the IP,
-  
-    ![](../assets/image-20210513123212395.png)
-    
-  - INTERFACES - rule defines several aspects of the Device Interface (Device IP: Interface ID,Interface Name/Description,Interface Speed),
-  
-    ![](../assets/image-20210513123510255.png)
-    
-  - HOSTS/SERVERS - rule defines a name for the Server/HOST IP,
-  
-    ![](../assets/image-20210513123918253.png)
-    
-  - APPLICATIONS - rule defines a name for the custom APPLICATIONS (Protocol/Port Number,Name),
-  
-    ![](../assets/image-20210513124500624.png)
-    
-    
-  
-    > **Note:** Please remember that in case a NAME or any other parameter exists already and is predefined in the system ex. Application Definitions, mapping will override those values with the user defined ones.
-  
-    For the system, the order of default applications is as follows:
-  
-    1. 80,HTTP,TCP
-    2. 443,HTTPS,TCP
-  
-    3. 445,SMB,TCP
-  
-    4. 22,SSH,TCP
-  
-    5. 23,TELNET,TCP
-  
-    6. 25,SMTP,TCP
-    7. 110,POP3,TCP
-  
-    8. 143,IMAP4,TCP
-    9. 20,FTP,TCP
-  
-    10. 21,FTP,TCP
-    11. 1194,OPENVPN,TCP
-  
-    12. 5432,PostgreSQL,TCP
-  
-    If you set up your applications in Mappings, the applications will be displayed first, and then the default applications that did not match with the Mappings applications.
-  
-    
-  
-  - IP/AS NUMBER - rule defines ip address for the AS number.
-  
-    ![](../assets/image-20210513124218687.png)
-    
-    
-  
-  - AS NUMBER/AS NAME - rule defines the custom name for AS (Number, Name).![](../assets/image-20210513124542942.png)
-  
+**NAME** - here is a possibility to  assign names to the following data objects: 
+
+DEVICES - rule defines a name for the IP,
+
+![](../assets/image-20210513123212395.png)
+
+INTERFACES - rule defines several aspects of the Device Interface (Device IP: Interface ID,Interface Name/Description,Interface Speed),
+
+![](../assets/image-20210513123510255.png)
+
+HOSTS/SERVERS - rule defines a name for the Server/HOST IP,
+
+![](../assets/image-20210513123918253.png)
+
+APPLICATIONS - rule defines a name for the custom APPLICATIONS (Protocol/Port Number,Name),
+
+![](../assets/image-20210513124500624.png)
+
+
+
+> **Note:** Please remember that in case a NAME or any other parameter exists already and is predefined in the system ex. Application Definitions, mapping will override those values with the user defined ones.
+
+For the system, the order of default applications is as follows:
+
+1. 80,HTTP,TCP
+2. 443,HTTPS,TCP
+3. 445,SMB,TCP
+4. 22,SSH,TCP
+5. 23,TELNET,TCP
+6. 25,SMTP,TCP
+7. 110,POP3,TCP
+8. 143,IMAP4,TCP
+9. 20,FTP,TCP
+10. 21,FTP,TCP
+11. 1194,OPENVPN,TCP
+12. 5432,PostgreSQL,TCP
+
+If you set up your applications in Mappings, the applications will be displayed first, and then the default applications that did not match with the Mappings applications.
+
+
+
+IP/AS NUMBER - rule defines ip address for the AS number.
+
+![](../assets/image-20210513124218687.png)
+
+
+
+AS NUMBER/AS NAME - rule defines the custom name for AS (Number, Name).![](../assets/image-20210513124542942.png)
 
 
 
@@ -1013,5 +999,4 @@ This system is preconfigured with four report templates which can be enabled/dis
  Reports are run on a daily basis and the outcome is saved and visible in a list form from the UI.
 
 ![](../assets/image-20201031135649051.png)
-
 

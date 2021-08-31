@@ -1,3 +1,5 @@
+<!-- Wersja 1.6.1 - docusaurus 2.0 dopasowana rozdzielczość rysunków -->
+
 Below you find dashboards to help you analyze DDoS attacks
 
 | Dashboard  Name  | Description                                                  |
