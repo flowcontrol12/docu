@@ -61,10 +61,5 @@ module.exports = {
       copyright: "Copyright © 2021 Sycope",
       logo: {}
     },
-    algolia: {
-      apiKey: "e5f0b82eeeb2b6133949b8f5ec121050",
-      appId: 'FQMP2SUEM9',
-      indexName: 'sycope_docs',
-    }
   }
 }
