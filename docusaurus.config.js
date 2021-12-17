@@ -32,6 +32,12 @@ module.exports = {
           path: "./docs",
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          editCurrentVersion: true,
+          versions: {
+            current: {
+              label: '2.0',
+            },
+          },
         },
         theme: {
           customCss: [
