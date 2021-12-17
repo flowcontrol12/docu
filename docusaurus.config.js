@@ -59,7 +59,12 @@ module.exports = {
       logo: {
         src: "img/logo-sycope.svg"
       },
-      items: []
+      items: [
+        {
+          type: 'docsVersionDropdown',
+          position: "right",
+        }
+      ],
     },
     image: "img/undraw_online.svg",
     footer: {
