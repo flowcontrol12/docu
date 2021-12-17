@@ -1,0 +1,85 @@
+:root{
+  /* --ifm-color-primary: #143dfb;
+  --ifm-color-primary-dark: #042ef0;
+  --ifm-color-primary-darker: #042be2;
+  --ifm-color-primary-darkest: #0324bb;
+  --ifm-color-primary-light: #2f53fb;
+  --ifm-color-primary-lighter: #3c5efc;
+  --ifm-color-primary-lightest: #647ffc; */
+
+  --ifm-color-primary: #070723;
+  --ifm-color-primary-dark: #060620;
+  --ifm-color-primary-darker: #06061e;
+  --ifm-color-primary-darkest: #050519;
+  --ifm-color-primary-light: #080827;
+  --ifm-color-primary-lighter: #080828;
+  --ifm-color-primary-lightest: #09092e;
+
+  /* custom styles */
+  --ifm-navbar-height: 50px;
+  --ifm-navbar-background-color: #0d0b20;
+  --ifm-navbar-padding-vertical: 8px;
+  --ifm-navbar-padding-horizontal: 20px;
+  --ifm-navbar-item-padding-vertical: 0;
+}
+
+html[data-theme='dark'] {
+  /* any other colors you wish to overwrite */
+  --ifm-color-primary: #00c2f9;
+  --ifm-color-primary-dark: #00afe0;
+  --ifm-color-primary-darker: #00a5d4;
+  --ifm-color-primary-darkest: #0088ae;
+  --ifm-color-primary-light: #13cbff;
+  --ifm-color-primary-lighter: #1fceff;
+  --ifm-color-primary-lightest: #45d6ff;
+
+  --ifm-background-color: #19182a;
+  --ifm-navbar-background-color: #1f2030;
+  --ifm-footer-background-color: var(--ifm-navbar-background-color);
+  --ifm-table-stripe-background: #313248;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap?text=flowcontroldocumentation);
+
+.navbar__items {
+  height: 100%;
+}
+
+.navbar__brand {
+  flex: 1;
+}
+
+.navbar__logo {
+  height: 20.4px;
+}
+
+.navbar__title {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  height: 100%;
+}
+
+blockquote {
+  color: #24292e;
+  background-color: #adc5e2;
+  border-color: var(--ifm-color-primary);
+}
+
+.react-toggle-track {
+  background-color: var(--docsearch-searchbox-background) !important;
+}
+
+html[data-theme='dark'] .react-toggle-track {
+  background-color: #090a11 !important;
+}
+
+html[data-theme='dark'] blockquote {
+  color: white;
+  background-color: #313248
+}
+
+[class*="lastUpdated_"] {
+  display: none !important
+}

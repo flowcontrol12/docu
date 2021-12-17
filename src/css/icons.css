@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Icons';
+  src: url('/fonts/icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="f-i-"], [class*=" f-i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Icons' !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.f-i-security-dashboard:before {
+  content: "\e929";
+}
+.f-i-as-icon:before {
+  content: "\e923";
+}
+.f-i-cocpit-manager:before {
+  content: "\e924";
+}
+.f-i-flow-stats:before {
+  content: "\e925";
+}
+.f-i-last-day:before {
+  content: "\e926";
+}
+.f-i-last-week:before {
+  content: "\e927";
+}
+.f-i-last-month:before {
+  content: "\e928";
+}
+.f-i-threat-detection:before {
+  content: "\e930";
+}
+.f-i-threat-intelligence:before {
+  content: "\e931";
+}
