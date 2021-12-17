@@ -53,6 +53,14 @@ html[data-theme='dark'] {
   height: 20.4px;
 }
 
+.navbar__link {
+  color: #f5f6f7;
+}
+
+.navbar__link:hover {
+  color: #00c2f9;
+}
+
 .navbar__title {
   font-family: 'Kumbh Sans', sans-serif;
   color: #fff;
