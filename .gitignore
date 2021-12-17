@@ -21,6 +21,7 @@ yarn-error.log*
 
 # custom
 TODO.md
+.vscode
 
 # old ignore
 lib/core/metadata.js
