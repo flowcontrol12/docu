@@ -91,3 +91,7 @@ html[data-theme='dark'] blockquote {
 [class*="lastUpdated_"] {
   display: none !important
 }
+
+.alert, .alert a {
+  color: #000;
+}
