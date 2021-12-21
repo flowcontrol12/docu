@@ -32,6 +32,12 @@ module.exports = {
           path: "./docs",
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          editCurrentVersion: true,
+          versions: {
+            current: {
+              label: '2.0',
+            },
+          },
         },
         theme: {
           customCss: [
@@ -53,7 +59,12 @@ module.exports = {
       logo: {
         src: "img/logo-sycope.svg"
       },
-      items: []
+      items: [
+        {
+          type: 'docsVersionDropdown',
+          position: "right",
+        }
+      ],
     },
     image: "img/undraw_online.svg",
     footer: {
