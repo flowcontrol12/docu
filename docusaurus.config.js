@@ -1,10 +1,10 @@
 module.exports = {
-  title: "flowcontrol documentation",
+  title: "Sycope Documentation",
   tagline: "Software written By Engineers, For Engineers",
-  url: "https://flowcontrol12.github.io",
+  url: "https://documentation.sycope.com",
   baseUrl: "/",
-  organizationName: "flowcontrol12",
-  projectName: "docu",
+  organizationName: "Passus",
+  projectName: "Sycope",
   scripts: [
     "https://buttons.github.io/buttons.js"
   ],
