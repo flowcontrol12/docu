@@ -3,8 +3,8 @@ module.exports = {
   tagline: "Software written By Engineers, For Engineers",
   url: "https://documentation.sycope.com",
   baseUrl: "/",
-  organizationName: "Passus",
-  projectName: "Sycope",
+  organizationName: "flowcontrol12",
+  projectName: "docu",
   scripts: [
     "https://buttons.github.io/buttons.js"
   ],
