@@ -88,10 +88,6 @@ html[data-theme='dark'] blockquote {
   background-color: #313248
 }
 
-[class*="lastUpdated_"] {
-  display: none !important
-}
-
 .alert, .alert a {
   color: #000;
 }
