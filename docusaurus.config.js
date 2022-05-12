@@ -1,7 +1,7 @@
 module.exports = {
-  title: "flowcontrol documentation",
+  title: "Sycope Documentation",
   tagline: "Software written By Engineers, For Engineers",
-  url: "https://flowcontrol12.github.io",
+  url: "https://documentation.sycope.com",
   baseUrl: "/",
   organizationName: "flowcontrol12",
   projectName: "docu",
@@ -9,17 +9,6 @@ module.exports = {
     "https://buttons.github.io/buttons.js"
   ],
   favicon: "img/favicon.ico",
-  customFields: {
-    users: [
-      {
-        caption: "User1",
-        image: "/img/undraw_open_source.svg",
-        infoLink: "https://www.facebook.com",
-        pinned: true
-      }
-    ],
-    docsUrl: ""
-  },
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "log",
   presets: [
@@ -35,7 +24,7 @@ module.exports = {
           editCurrentVersion: true,
           versions: {
             current: {
-              label: '2.0',
+              label: '2.0 🚧',
             },
           },
         },
@@ -51,26 +40,34 @@ module.exports = {
   ],
   plugins: ['docusaurus-plugin-sass'],
   themeConfig: {
+    algolia: {
+      appId: 'VTLMOZMQ8V',
+      apiKey: 'f61edbf9bfd27250990d22a5e40b225a',
+      indexName: 'sycope',
+    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "flowcontrol documentation",
+      title: "sycope documentation",
       logo: {
         src: "img/logo-sycope.svg"
       },
       items: [
+        {
+          type: 'html',
+          position: 'right',
+          value: '<p style="margin: 0 -12px">version:</p>',
+        },
         {
           type: 'docsVersionDropdown',
           position: "right",
         }
       ],
     },
-    image: "img/undraw_online.svg",
     footer: {
       links: [],
-      copyright: "Copyright © 2021 Sycope",
-      logo: {}
+      copyright: "Copyright © 2021 Sycope"
     },
   }
 }
