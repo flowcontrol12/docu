@@ -9,17 +9,6 @@ module.exports = {
     "https://buttons.github.io/buttons.js"
   ],
   favicon: "img/favicon.ico",
-  customFields: {
-    users: [
-      {
-        caption: "User1",
-        image: "/img/undraw_open_source.svg",
-        infoLink: "https://www.facebook.com",
-        pinned: true
-      }
-    ],
-    docsUrl: ""
-  },
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "log",
   presets: [
@@ -35,7 +24,7 @@ module.exports = {
           editCurrentVersion: true,
           versions: {
             current: {
-              label: '2.0',
+              label: '2.0 🚧',
             },
           },
         },
@@ -66,16 +55,19 @@ module.exports = {
       },
       items: [
         {
+          type: 'html',
+          position: 'right',
+          value: '<p style="margin: 0 -12px">version:</p>',
+        },
+        {
           type: 'docsVersionDropdown',
           position: "right",
         }
       ],
     },
-    image: "img/undraw_online.svg",
     footer: {
       links: [],
-      copyright: "Copyright © 2021 Sycope",
-      logo: {}
+      copyright: "Copyright © 2021 Sycope"
     },
   }
 }
