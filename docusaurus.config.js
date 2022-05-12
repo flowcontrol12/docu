@@ -60,7 +60,7 @@ module.exports = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "flowcontrol documentation",
+      title: "sycope documentation",
       logo: {
         src: "img/logo-sycope.svg"
       },
