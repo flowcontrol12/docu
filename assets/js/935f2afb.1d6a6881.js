@@ -1,1 +1,0 @@
-(self.webpackChunk=self.webpackChunk||[]).push([[53],{9054:e=>{"use strict";e.exports=JSON.parse('{"pluginId":"default","version":"current","label":"2.0","banner":"unreleased","isLast":false,"docsSidebars":{"docs":[{"type":"link","label":"Coming soon","href":"/next/Coming soon"}]},"permalinkToSidebar":{"/next/Coming soon":"docs"}}')}}]);
