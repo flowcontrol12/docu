@@ -57,7 +57,7 @@ module.exports = {
         {
           type: 'html',
           position: 'right',
-          value: '<p style="margin: 0 -12px">version:</p>',
+          value: '<p style="margin: 0 -12px; color: white">version:</p>',
         },
         {
           type: 'docsVersionDropdown',
