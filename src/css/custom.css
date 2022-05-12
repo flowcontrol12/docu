@@ -1,12 +1,4 @@
 :root{
-  /* --ifm-color-primary: #143dfb;
-  --ifm-color-primary-dark: #042ef0;
-  --ifm-color-primary-darker: #042be2;
-  --ifm-color-primary-darkest: #0324bb;
-  --ifm-color-primary-light: #2f53fb;
-  --ifm-color-primary-lighter: #3c5efc;
-  --ifm-color-primary-lightest: #647ffc; */
-
   --ifm-color-primary: #070723;
   --ifm-color-primary-dark: #060620;
   --ifm-color-primary-darker: #06061e;
@@ -24,7 +16,6 @@
 }
 
 html[data-theme='dark'] {
-  /* any other colors you wish to overwrite */
   --ifm-color-primary: #00c2f9;
   --ifm-color-primary-dark: #00afe0;
   --ifm-color-primary-darker: #00a5d4;
@@ -33,6 +24,8 @@ html[data-theme='dark'] {
   --ifm-color-primary-lighter: #1fceff;
   --ifm-color-primary-lightest: #45d6ff;
 
+  /* custom styles */
+  --ifm-navbar-height: 50px;
   --ifm-background-color: #19182a;
   --ifm-navbar-background-color: #1f2030;
   --ifm-footer-background-color: var(--ifm-navbar-background-color);
@@ -53,14 +46,6 @@ html[data-theme='dark'] {
   height: 20.4px;
 }
 
-.navbar__link {
-  color: #f5f6f7;
-}
-
-.navbar__link:hover {
-  color: #00c2f9;
-}
-
 .navbar__title {
   font-family: 'Kumbh Sans', sans-serif;
   color: #fff;
@@ -75,19 +60,7 @@ blockquote {
   border-color: var(--ifm-color-primary);
 }
 
-.react-toggle-track {
-  background-color: var(--docsearch-searchbox-background) !important;
-}
-
-html[data-theme='dark'] .react-toggle-track {
-  background-color: #090a11 !important;
-}
-
 html[data-theme='dark'] blockquote {
   color: white;
   background-color: #313248
-}
-
-.alert, .alert a {
-  color: #000;
 }
