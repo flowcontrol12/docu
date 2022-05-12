@@ -67,7 +67,7 @@ module.exports = {
     },
     footer: {
       links: [],
-      copyright: "Copyright © 2021 Sycope"
+      copyright: `Copyright © ${new Date().getFullYear()} Sycope`
     },
   }
 }
