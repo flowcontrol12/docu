@@ -1,4 +1,4 @@
-This menu [Configuration>Integrations>**External Destinations**] - can be used to create …
+This menu [Configuration>Integrations>**External Destinations**] can be used to create external destination to which the system will send data.
 
 The list of **External Destinations** is in the table with the following columns:
 
@@ -25,7 +25,7 @@ For Macmon you need to fill the following form:
 
 - **Type** 
 - **Name**
-- **Active** switch button - 
+- **Active** switch button 
 - **Ip**
 - **Port**
 - **Protocol**
@@ -59,8 +59,6 @@ You can check if the configuration is correct by pressing the **Test connection 
 ---
 
 For **Syslog** you need to fill the following form:
-
-
 
 - **Type** 
 - **Name**

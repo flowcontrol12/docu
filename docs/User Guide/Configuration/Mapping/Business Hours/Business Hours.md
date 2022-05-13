@@ -1,6 +1,8 @@
-The menu (Configuration>Mapping>**Business Hours**) can be used to create a Business hour profile. 
+This menu (Configuration>Mapping>**Business Hours**) can be used to create a Business hour profile. 
 
-**Add new** button - create new **Business Hours** ==profile==
+
+
+**Add new** button - create new **Business Hours** profile.
 
 
 
@@ -14,9 +16,7 @@ There is a Table with two columns:
 - **Duplicate** - create an editable copy of the selected **Business Hours**
 - **Delete** - delete a `Business Hour ` profile
 
-
-
-To add a new **Business Hours** click  **Business Hours**  button then the wizard will appear. In the wizard window there are the following fields:
+To add a new **Business Hours** click  **New business Hours**  button then the wizard will appear. In the wizard window there are the following fields:
 
 - Name - **Business Hours** name
 

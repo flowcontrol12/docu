@@ -1,6 +1,6 @@
 # Data streams
 
-Data streams available in the system along with default fields and user created fields are located in **Dashboard>Raw Data** menu.
+Data streams available in the system with default fields and user created fields are located in **Dashboard>Raw Data** menu.
 
 The **Data streams** implemented in the system along with the available fields are listed and described below.
 
@@ -10,7 +10,44 @@ The **Data streams** implemented in the system along with the available fields a
 
 Deduplicated Netflow and Sflow records stream.
 
-
+| Name                      | NQL Name | Description |
+| ------------------------- | -------- | ----------- |
+| timestamp                 |          |             |
+| clientIp                  |          |             |
+| serverIp                  |          |             |
+| protocol                  |          |             |
+| clientPort                |          |             |
+| serverPort                |          |             |
+| application               |          |             |
+| exporterIps               |          |             |
+| interfaces                |          |             |
+| clientGroups              |          |             |
+| serverGroups              |          |             |
+| clientTcpFlags            |          |             |
+| serverTcpFlags            |          |             |
+| tosNumbers                |          |             |
+| mpls                      |          |             |
+| asNumbers                 |          |             |
+| icmpType                  |          |             |
+| clientCountry             |          |             |
+| serverCountry             |          |             |
+| activeTime                |          |             |
+| firstTimestamp            |          |             |
+| lastTimestamp             |          |             |
+| clientBytes               |          |             |
+| serverBytes               |          |             |
+| clientPackets             |          |             |
+| serverPackets             |          |             |
+| flows                     |          |             |
+| serverNetworkDelay        |          |             |
+| initialServerResponseTime |          |             |
+| clientNetworkDelay        |          |             |
+| retransmittedInPackets    |          |             |
+| retransmittedOutPackets   |          |             |
+| retransmittedInBytes      |          |             |
+| retransmittedOutBytes     |          |             |
+| maxTtl                    |          |             |
+| applicationId             |          |             |
 
 
 
@@ -20,7 +57,7 @@ Netflow 1 min aggregated by application flows stream.
 
 
 
-| Name                      | NQL Name                     | Description                                |
+| NQL Name                  | Name                         | Description                                |
 | ------------------------- | ---------------------------- | ------------------------------------------ |
 | activeTime                | Active Time                  | Active Time of unique flow (session)       |
 | clientTcpFlags            | Client TCP Flags             | TCP Flags (Client -> Sever)                |
@@ -56,7 +93,7 @@ Netflow 1 min aggregated by ASN flows stream.
 
 
 
-| Name                      | NQL Name             | Description                                |
+| NQL Name                  | Name                 | Description                                |
 | ------------------------- | -------------------- | ------------------------------------------ |
 | activeTime                | Active Time          | Active Time of unique flow (session)       |
 | flows                     | Flows                | Flows sended by Exporter                   |
@@ -88,10 +125,10 @@ Netflow 1 min aggregated by country flows stream.
 
 
 
-| Name                      | NQL Name             | Description                                |
+| NQL Name                  | Name                 | Description                                |
 | ------------------------- | -------------------- | ------------------------------------------ |
 | activeTime                | Active Time          | Active Time of unique flow (session)       |
-| countryDirection          | ?????                | ?????                                      |
+| activeTime                | Active Time          | Active Time of unique flow (session)       |
 | flows                     | Flows                | Flows sended by Exporter                   |
 | clientBytes               | Client Bytes         | Bytes (Client -> Sever)                    |
 | serverBytes               | Server Bytes         | Bytes (Sever -> Client)                    |
@@ -140,7 +177,7 @@ Netflow 1 min aggregated by group flows stream.
 | Name                      | NQL Name             | Description                                |
 | ------------------------- | -------------------- | ------------------------------------------ |
 | activeTime                | Active Time          | Active Time of unique flow (session)       |
-| groupDirection            | ?????                | ?????                                      |
+| activeTime                | Active Time          | Active Time of unique flow (session)       |
 | flows                     | Flows                | Flows sended by Exporter                   |
 | clientBytes               | Client Bytes         | Bytes (Client -> Sever)                    |
 | serverBytes               | Server Bytes         | Bytes (Sever -> Client)                    |
@@ -203,14 +240,10 @@ Netflow 1 min aggregated by top IP flows stream.
 
 
 
-<!-- dopytać Adriana co to IPS w jego excelu i czy to tu ma być -->
-
-
-
 | Name                      | NQL Name                     | Description                                |
 | ------------------------- | ---------------------------- | ------------------------------------------ |
 | activeTime                | Active Time                  | Active Time of unique flow (session)       |
-| ipDirection               | ?????                        | ?????                                      |
+| activeTime                | Active Time                  | Active Time of unique flow (session        |
 | flows                     | Flows                        | Flows sended by Exporter                   |
 | clientBytes               | Client Bytes                 | Bytes (Client -> Sever)                    |
 | serverBytes               | Server Bytes                 | Bytes (Sever -> Client)                    |
@@ -272,6 +305,8 @@ Netflow 1 min aggregated by MPLS flows stream.
 | avgClientBitsPerSecond    | Avg Client Bits/s    | Avg Bits per Interval (Client -> Sever)    |
 
 ## netflowByProtocolAggr
+
+
 
 Netflow 1 min aggregated by IP protocol flows stream.
 
@@ -365,37 +400,3 @@ Netflow 1 min aggregated.
 
 
 
-
----
-
-<!-- dopytać co z tym zrobić-->
-
-- _alerts
-
-  Alerts stream.
-
-- _auditMessage
-
-  Audit Message stream.
-
-- _metrics
-
-  System metrics stream.
-
-- _notifications
-
-  Notifications stream.
-
-- netflow
-
-  Deduplicated Netflow and Sflow records stream.
-
-- test-data
-
-  Local mock records stream
-
-- topClientIps
-
-  
-
-- tw_top15IPs

@@ -13,15 +13,15 @@ The list of **Email templates** is included in a table with the following column
 
 To add a new **Email Template** click **New email template** button then the **New email template** wizard will appear. In the wizard window there are the following fields:
 
-- Template type
+- **Template type**
   - html
 
   - text
 
-- Name - system **Email Template** name
+- **Name** - system **Email Template** name
 
-- Subject - email subject
+- **Subject** - email subject
 
-- Template body - email body
+- **Template body** - email body
 
-- Placeholders
+- **Placeholders**

@@ -1,24 +1,18 @@
-This menu [Configuration>Integrations**External Destinations**] - can be used to create …
+This menu [Configuration>NetFlow>**Netflow**] can be used to configure NetFlow parameters.
 
-
+---
 
 **Simple mode**
 
 In this menu, enter the port number for the NetFlow (**Netflow Port**), the default port is 2055.
 
-
+---
 
 **Advanced mode**
 
+**Netflow Port** - the default port is 2055
 
-
-**Netflow Port**
-
-
-
-The list of **External Destinations** is in the table with the following columns:
-
-
+The list of **Profiles** is in the table with the following columns:
 
 - **Profile** 
 - **Type**
@@ -26,8 +20,6 @@ The list of **External Destinations** is in the table with the following columns
 - **Action**
   - Edit - edit selected **Profile**
   - Delete - delete selected **Profile**
-
-
 
 To add a new **External Destinations** click **New external destinations** button then the **New external destinations** wizard will appear. 
 

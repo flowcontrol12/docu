@@ -1,6 +1,4 @@
-The Configuration>**Fields** can be used to create a custom `field` based on the selected Streams and (optional) your own mathematical function. Additionally, you can use the Mapping, too. The system includes many of the most useful predefined  `fields`  that you can use right after installing the system.
-
-
+This menu [Configuration>Object>**Fields**] can be used to create a custom `field` based on the selected Streams and (optional) your own mathematical function. Additionally, you can use the Mapping, too. The system includes many of the most useful predefined  `fields`  that you can use right after installing the system.
 
 The list of `fields`  is in the table with the following columns:
 
@@ -17,8 +15,6 @@ The list of `fields`  is in the table with the following columns:
 
 
 To add a new `Field` click **Add field** button then the field wizard will appear. In the wizard window there are the following fields:
-
-
 
 - Field name - name of the field in the system (user friendly)
 - Description - short field description

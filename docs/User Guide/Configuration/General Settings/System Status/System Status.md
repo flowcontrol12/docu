@@ -1,5 +1,4 @@
-
-**General Settings** tab provides detailed information about the parameters and status of the system
+In this menu [Configuration>General Settings >**System Status**] there are several widgets and tables with detailed information about the system parameters and status of its components, for example: free disk space, CPU load, up time and so on.
 
 There are three buttons:
 
@@ -7,31 +6,18 @@ There are three buttons:
 
 - **Restart button** - system restart
 
-  
-
 There are the following widgets:
 
 - **System Information**
-
 - **Uptime**
-
 - **Memory usage**
-
 - **OS Disk Drive**
-
 - **Datastore Disk Drive**
-
 - **CPU**
-
 - **Network Interfaces**
-
 - **Services**
-
 - **Backup**
-
 - **System logs**
-
-  
 
 ---
 
@@ -48,13 +34,15 @@ There are the following widgets:
 
 ---
 
+**CPU** - CPU load
+
+---
+
 **Memory usage** - memory usage by total, used and free
 
 ---
 
-**OS Disk Drive** - OS disk drive usage by used and total
-
-There is a table with following columns:
+**Datastore Disk Drive** there is a table with the following columns:
 
 **Name** - system directory name
 
@@ -66,13 +54,11 @@ There is a table with following columns:
 
 ---
 
-**CPU** - CPU load
+**OS Disk Drive** - OS disk drive usage by used and total
 
 ---
 
-**Network Interfaces**
-
-There is a table with the following columns:
+**Network Interfaces**  there is a table with the following columns:
 
 - *Name* - interface name
 
@@ -86,28 +72,18 @@ There is a table with the following columns:
 - *Autoconnect* 
 - *In* - number of bits per second 
 - *Out* - number of bits per second 
+- *Action* - buttons to enter *interface edit mode*
+- *Edit interface* -  there are following fields to specify:
+  - *MAC*
+  - **MTU*
+  - *Driver*
+  - *Status*
+  - *IPv4* - DHCP/Static/Disabled
+  - *IPv6* -DHCP/ Static
+  - *DNS Servers*
+  - *IP Address*
+  - *Gateway*
 
-*Action* - buttons to enter *interface edit mode*
-
-​	*Edit interface* -  there are following fields to specify:
-
-​		*MAC*
-
-​		*MTU*
-
-​		*Driver*
-
-​		*Status*
-
-​		*IPv4* - DHCP/Static/Disabled
-
-​		*IPv6* -DHCP/ Static
-
-​		*DNS Servers*
-
-​		*IP Address*
-
-​		*Gateway*
 
 ---
 
@@ -124,15 +100,15 @@ There is a table with the following columns:
 
 - Load state
 
-​	Action - buttons Stop, Restart and Show logs
+- Action - buttons Stop, Restart and Show logs
 
-Show logs button - opens the window with a table containing event Timestamp and Message related to it. Download button allows to save logs to a local disk
+- Show logs button - opens the window with a table containing event Timestamp and Message related to it. Download button allows to save logs to a local disk
 
 ---
 
 **System logs** 
 
-Generate logs button - generates a log file which is saved on the user's local disk
+- Generate logs button - generates a log file which is saved on the user's local disk
 
 ---
 

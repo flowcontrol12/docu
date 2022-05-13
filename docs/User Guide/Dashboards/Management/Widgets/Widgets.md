@@ -2,7 +2,7 @@ One of the most important elements of the system are Widgets. Widgets are design
 
 **Sycope** includes several different types of widgets, designed to fulfill different data display needs. You can add, remove, and customize widgets to personalize your dashboard, displaying just the data you need. Widgets are used to create dashboards, which are views that contain multiple widgets.
 
-
+![image-20220513113210577](assets/image-20220513113210577.png)
 
 ---
 
@@ -10,11 +10,7 @@ One of the most important elements of the system are Widgets. Widgets are design
 
 
 
-Widgets are created and edited in this menu [Dashboard>Management>**Widgets**].
-
-To add a widget, click on the **Add Widget** button, then the widget wizard will appear. The procedure for creating a widget consists of three or four steps depending on the visualization type selected in the first step.
-
-
+Widgets are created and edited in this menu [Dashboard>Management>**Widgets**]. To add a widget, click on the **Add Widget** button, then the widget wizard will appear. The procedure for creating a widget consists of three or four steps depending on the visualization type selected in the first step.
 
 The system includes the following types of visualization:
 
@@ -30,8 +26,6 @@ The system includes the following types of visualization:
 10. **KPI**
 11. **Table**
 12. **Text Image**
-
-
 
 
 
@@ -72,13 +66,13 @@ In this step, regardless of the previously selected **Type of Visualization**, t
 
 #### *Input Filter*
 
-- ​	Query - defines filtering conditions for a selected data stream
+- Query - defines filtering conditions for a selected data stream
   
   Edit filter
   
-  - ​		Field - fields available for the selected data stream
-  - ​		Operator - operator or function 
-  - ​		Value - value for which the operation is performed
+  - Field - fields available for the selected data stream
+  - Operator - operator or function 
+  - Value - value for which the operation is performed
   
 - Time range - time interval for which the query will be executed - default is 15 minutes 
 
@@ -88,26 +82,38 @@ In this step, regardless of the previously selected **Type of Visualization**, t
 
 #### *Values*
 
-These are the values that will be displayed on the ordinate axis.
+These are the values that will be displayed on a graph.
 
-- Use Function switch 
-  - Aggr
-  - Post aggr
-  - Field
+<!--**Use Function** switch--> 
+
+- <!--Aggr-->
+- <!--Post aggr-->
+- <!--Field-->
 
 - Metric - field or metric that will be displayed on the graph
 
-- Filter -  fields available for the selected data stream
+- Agreggation - list of operations to choose from available in the system
 
-- ​		Operator - operator or function 
+  - Avi - returns average of field values.
+  - Count - returns count of non empty fields.
 
-- ​		Value - value for which the operation is performed depends on the metric or field selected 
+  - First - returns value of first field returned.
 
-  - Field
-  - Operator
-  - Value
+  - Join - returns concatenated value of fields values.
 
-  
+  - Last - returns value of last field returned.
+
+  - Max - returns maximal value.
+
+  - Min - returns minimal value.
+
+  - Sum - returns sum of values.
+
+- Filter 
+  - Field - fields available for the selected data stream
+
+  - Operator - operator or function 
+  - Value - value for which the operation is performed
 
 - Custom Lebel switch - switch that allows you to use your own label
 
@@ -136,11 +142,11 @@ These are the values that will be displayed on the ordinate axis.
   - Label 
   - on/off switch
 
-- Show MIN marker  switch
+- Show MIN marker switch
 
-- Show MAX marker  switch
+- Show MAX marker switch
 
-- Show MAX line  switch
+- Show MAX line switch
 
 - Show AVG line switch
 
@@ -150,7 +156,7 @@ These are the values that will be displayed on the ordinate axis.
 
 #### *Categories*
 
-These are the values that will be displayed on the ==sprawdzić== X axis.
+In this section you configure the category against which the Values will be displayed.
 
 - Aggregation
   - Date Histogram
@@ -158,7 +164,8 @@ These are the values that will be displayed on the ==sprawdzić== X axis.
   - Terms
 - Use Function switch
   - Function - allows you to add your own function 
-- Field
+- Field - field relative to Value that will be visualized
+- Auto interval switch
 - Include null values switch
 
 
@@ -166,7 +173,17 @@ These are the values that will be displayed on the ==sprawdzić== X axis.
 
 #### Output filter
 
-Query - defines filtering conditions for an output data stream
+- Query - defines filtering conditions for previously configured **Values** and **Categories**
+
+  Edit filter
+
+  - Field - available fields 
+  - Operator - operator or function 
+  - Value - value for which the operation is performed for previously configured **FIeld**
+
+- Time range - time interval for which the query will be executed - default is 15 minutes 
+
+- Locked/Unlocked switch - blocking the Widget from changing the filter 
 
 ---
 
@@ -177,7 +194,6 @@ Here you can define how to sort the data displayed on the graph.
 - Sort field - sorted field
 - Sort direction - Asc/Desc - sorting method ascending/descending
   
-  
 
 ---
 
@@ -185,8 +201,8 @@ Here you can define how to sort the data displayed on the graph.
 
 You can specify the resolution and the direction in which the data will be presented.
 
-- Limit buckets switch - służy do wpisania limitu rozdzielczości wykresu (liczby punktów na wykresie)
-- Limit - wartość rozdzielczości, służy do wpisania limitu rozdzielczości wykresu (liczby punktów na wykresie)
+- Limit buckets switch - It is used to set the limit of values of which the chart will consist
+- Limit - limit value
 - Show from - field to specify the direction in which the data will be displayed on the chart
   - Head 
   - Tail
@@ -196,8 +212,6 @@ You can specify the resolution and the direction in which the data will be prese
 ---
 
 ---
-
-
 
 ### Option step
 
@@ -214,8 +228,6 @@ In this step, the graph parameters are defined.
 #### *Axes*
 
 Tab for configuring graph axes, where the *Value axes* area corresponds to the y-axis and *Category axes* to the x-axis
-
-
 
 - Switch axis switch - enable/disable axis Label
 
@@ -245,7 +257,7 @@ Tab for configuring graph axes, where the *Value axes* area corresponds to the y
 
 - Inverse switch - horizontal graph rotation
 
-- Show data points switch - 
+- Show data points switch  
 
   - Show value labels switch - shows values for data points
 
@@ -253,11 +265,7 @@ Tab for configuring graph axes, where the *Value axes* area corresponds to the y
 
   - Label angle (-90deg to 90deg) - label rotation angle
 
-    
-
 - Draw area switch - fill the area below the graph line with color
-
-  
 
 - Category axis (x-axis)
 
@@ -288,9 +296,9 @@ Tab for configuring graph axes, where the *Value axes* area corresponds to the y
 #### *Others*
 
 - NULL handling
-  - Show gap
-  - Connect
   - Set zero
+  - Connect
+  - Show gap
 - Show legend switch
   - Select legend position
     - Bottom
@@ -300,7 +308,33 @@ Tab for configuring graph axes, where the *Value axes* area corresponds to the y
 - Data zoom switch
 - Enable animation
 
+---
 
+#### Privacy
+
+**Privacy** - assigning privileges to the **Widget**.
+
+- Private - accessible to the owner
+
+- Public - accessible to all. 
+  - Public permissions
+    - Delete
+    - Edit
+    - Execute
+
+- Shared - accessible to one or more selected roles. Available privileges are:
+  - Delete
+
+  - Edit
+
+  - Execute
+
+  - View
+
+
+---
+
+---
 
 
 
