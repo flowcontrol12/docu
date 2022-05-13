@@ -74,13 +74,3 @@ To complete a configuration and save a Dashboard, click **Submit and close** but
 A saved dashboard is placed in the table with the list of dashboards and it is launched by clicking on its name.
 
  
-
-
-
-<!--In an open dashboard window you can:-->
-
-- <!--switch to Dashboard >Raw Data menu--> 
-- <!--apply a filter to the analyzed data-->
-- <!--specify the time interval-->
-- <!--generate a report in csv and pdf format-->
-- <!--re-edit dashboard parameters-->
