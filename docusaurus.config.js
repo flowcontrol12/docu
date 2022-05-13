@@ -69,5 +69,9 @@ module.exports = {
       links: [],
       copyright: `Copyright © ${new Date().getFullYear()} Sycope`
     },
+  },
+  i18n: {
+    defaultLocale: 'en-GB',
+    locales: ['en-GB']
   }
 }
