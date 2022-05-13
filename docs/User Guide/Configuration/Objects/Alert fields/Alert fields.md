@@ -1,6 +1,6 @@
-The Configuration>**Alert fields** can be used to create a custom `Alert fields` based on the selected Streams and (optional) your own mathematical function.  The system includes several most useful predefined  `Alert fields`  that you can use right after installing the system.
+This menu [ Configuration>Object>**Alert fields**] can be used to create a custom `Alert fields` based on the selected Streams and (optional) your own mathematical function.  The system includes several most useful predefined  `Alert fields`  that you can use right after installing the system.
 
-
+> Alert fields are only used in Alerts.
 
 The list of `Alert fields`  is in the table with the following columns:
 

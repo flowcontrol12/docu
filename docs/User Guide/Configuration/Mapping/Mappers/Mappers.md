@@ -1,6 +1,6 @@
 The menu [Configuration>Mapping>**Mappers**] can be used to create a custom Mapper for use in creating Fields.
 
-The Mapper matches the data/value in the Value field with the name in the Name field using the All or First method. The effect of the mapping is only in the GUI.
+The **Mapper** matches the data/value in the Value field with the name in the Name field using the All or First method. The effect of the mapping is only in the GUI.
 
 The list of **Mappers**  is in the table with the following columns:
 

@@ -1,7 +1,5 @@
 This menu [Configuration>Objects>**Right click actions**] can be used to enter external links that will be available after pressing right mouse button.
 
-
-
 The list of **Right click actions** is in the table with the following columns:
 
 - **Name** - unique **Right click actions** name
@@ -23,13 +21,8 @@ To add a new  **Right click actions** click **New right click actions** button t
 
 - **URL** -  **Right click actions** external link
 
-
-
-**Privacy** - assigning privileges 
-
-- Privacy - you can grant permissions for field
-
-  - Private - accessible to the owner
+- **Privacy** - assigning privileges 
+- Private - accessible to the owner
   - Public - accessible to all. 
     - Public permissions
       - Delete
@@ -37,9 +30,9 @@ To add a new  **Right click actions** click **New right click actions** button t
       - Execute
   - Shared - accessible to one or more selected roles. Available privileges are:
     - Delete
-
-    - Edit
-
-    - Execute
-
-    - View
+  
+  - Edit
+  
+  - Execute
+  
+  - View

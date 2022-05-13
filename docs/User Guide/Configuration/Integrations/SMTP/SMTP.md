@@ -3,13 +3,13 @@ This menu [Configuration>Integrations>**SMTP** ] can be used to configure SMTP s
 In order to configure the SMTP server, you need to fill in a form consisting of the following fields:
 
 - **Email** - email from which notifications will be sent
-- **Host** -  
-- **Port**  - ==?== 
-- **Username** -
+- **Host** -  host name
+- **Port**  - service port
+- **Username** 
 - **Password** 
-- **SMTP port** - 
+- **SMTP port** 
 - **Authentication** 
-  - **Use SMTP authentication** switch -
+  - **Use SMTP authentication** switch 
 - **Security**
   - **Use TLS protocol** 
 - **Transport protocol**

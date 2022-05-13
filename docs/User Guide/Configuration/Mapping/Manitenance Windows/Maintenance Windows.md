@@ -1,10 +1,6 @@
-Tis menu [Configuration>Mapping>**Maintenance Windows**] can be used to create  
-
-
+This menu [Configuration>Mapping>**Maintenance Windows**] can be used to create **Maintenance Windows profiles.**
 
 **Add new** button - create new maintenance window
-
-
 
 There is the Table with two column:
 
@@ -20,12 +16,12 @@ There is the Table with two column:
 
 To add a new **Maintenance Window** click  **New Maintenance Window**  button then the wizard will appear. In the wizard window there are the following fields:
 
-- Name - name of the field in the system (user friendly)
-- Time - short field description
+- Name - name of the field in the system
+- Time 
   - Start time
   - End time
   - Browser Time
-- Recurrence Pattern - (Daily/Weekly/Monthly/Yearly) ==???==time intervals at which the service window will be active
+- Recurrence Pattern - (Daily/Weekly/Monthly/Yearly) time intervals at which the service window will be active
 - Range of recurrence
   - No end date
   - End after
@@ -34,18 +30,15 @@ To add a new **Maintenance Window** click  **New Maintenance Window**  button th
 
 - **Select color**
 
-
-
-**Privacy** - assigning privileges 
-
-- Privacy - you can grant permissions for field
-
+- **Privacy** - assigning privileges 
   - Private - accessible to the owner
+
   - Public - accessible to all. 
     - Public permissions
       - Delete
       - Edit
       - Execute
+
   - Shared - accessible to one or more selected roles. Available privileges are:
     - Delete
 
@@ -54,3 +47,4 @@ To add a new **Maintenance Window** click  **New Maintenance Window**  button th
     - Execute
 
     - View
+

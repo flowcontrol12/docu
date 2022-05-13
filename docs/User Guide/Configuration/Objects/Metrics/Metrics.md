@@ -1,8 +1,6 @@
 This menu [Configuration>Object>**Metrics**] can be used to create custom `metrics` based on the selected Data Streams and your own Aggregation and Post Aggregation. The system includes several useful predefined  `metrics`  that you can use right after installing the system.
 
-
-
-The list of `metrics`  is in the table with the following columns: ==do zmaiany jak w email templates==
+The list of `metrics` is included in a table with the following columns:
 
 - **Name** - unique `metrics` name
 
@@ -22,11 +20,11 @@ The list of `metrics`  is in the table with the following columns: ==do zmaiany 
 
 To add a new `metric` click “**New metric**” button then the Metrics wizard will appear. In the wizard window there are the following fields:
 
-- Display name - name of the metric in the system
+- **Display name** - name of the metric in the system
 
-- Description - short metric description
+- **Description** - short metric description
 
-- Sources - the data stream (or streams) that will be used to create the metric
+- **Sources** - the data stream (or streams) that will be used to create the metric
 
   
 
@@ -34,18 +32,17 @@ To add a new `metric` click “**New metric**” button then the Metrics wizard 
 
 
 
-Use Function switch - OFF 
+**Use Function** switch - OFF 
 
-- Field - field in the selected data source
+- **Field** - field in the selected data source
 
-- Agreggation - list of mathematical operations to choose from available in the system
-
+- **Agreggation** - list of mathematical operations to choose from available in the system
   - Avi - returns average of field values.
   - Count - returns count of non empty fields.
-
+  
   - First - returns value of first field returned.
   
-  - Join - ==returns concatenated value of fields values.==xcv
+  - Join - returns concatenated value of fields values
   
   - Last - returns value of last field returned.
   
@@ -55,21 +52,20 @@ Use Function switch - OFF
   
   - Sum - returns sum of values.
 
-Use Function switch - ON
+**Use Function** switch - ON
 
-- Aggr - user-created aggregation
-- Post aggr - post aggregation that can (not required) be created by the user using the values calculated in the aggregation
-- Field -name used in mathematical operations - can be the same as **Display Name**
-- Custom label switch
-- Numbering Format
+- **Aggr** - user-created aggregation
+- **Post aggr** - post aggregation that can (not required) be created by the user using the values calculated in the aggregation
+- **Field** - name used in mathematical operations - can be the same as **Display Name**
+- **Custom label** switch
+- **Numbering Format**
   - Currency
   - Date
   - Number
   - Off
   
-- Privacy - you can grant permissions for field
-
-  - Private - accessible to the owner
+- **Privacy** - you can grant permissions for field
+- Private - accessible to the owner
   - Public - accessible to all. 
     - Public permissions
       - Delete
@@ -77,12 +73,12 @@ Use Function switch - ON
       - Execute
   - Shared - accessible to one or more selected roles. Available privileges are:
     - Delete
-
-    - Edit
-
-    - Execute
-
-    - View
+  
+  - Edit
+  
+  - Execute
+  
+  - View
 
 
 

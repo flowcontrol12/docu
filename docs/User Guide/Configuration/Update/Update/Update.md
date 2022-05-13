@@ -4,7 +4,7 @@ The first information in this window is information about the availability of a 
 
 
 
-- **Version** - Tag name with a customizable background color
+- **Version** -update version
 
 - **Release date** - the release date of a particular version of the system
 
@@ -12,11 +12,11 @@ The first information in this window is information about the availability of a 
 
 - **Size** - size of the installation file
 
-- **SHA-256** - 
+- **SHA-256**  
 
 - **Release notes** - list of changes and improvements for a given system version
 
-- **Action** - enter the tag editing window 
+- **Action**  
 
   
 

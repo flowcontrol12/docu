@@ -12,8 +12,6 @@ Dashboards consist of widgets – an object with graphical representations of sp
 
 Dashboards are created and edited in this menu: (**Dashboard>Management>Dashboard**).
 
-
-
 When you enter this menu you will see a table with default and/or previously created user Dashboards.
 
 The table contains the following fields:
@@ -33,16 +31,12 @@ The table contains the following fields:
 - Actions - actions that can be performed on the created dashboard
   - Export - save a dashboard to a file in json format
   - Edit - edit a created dashboard
-  - Duplicate - ==dodać==
+  - Duplicate - create an editable copy of the dashboard
   - Delete - delete a selected Dashboard
 
 
 
-
-
 To add  a Dashboard, click on the **Add Dashboard** button. A blank table with four rows and twelve columns will be displayed. In this space you can place widgets selected from the list by clicking Add widget.
-
-
 
 To configure the Dashboard, fill in the fields available after clicking  Preferences.
 
@@ -75,8 +69,6 @@ To configure the Dashboard, fill in the fields available after clicking  Prefere
     - View
 
 
-
-
 To complete a configuration and save a Dashboard, click **Submit and close** button.
 
 A saved dashboard is placed in the table with the list of dashboards and it is launched by clicking on its name.
@@ -85,10 +77,10 @@ A saved dashboard is placed in the table with the list of dashboards and it is l
 
 
 
-In an open dashboard window you can:
+<!--In an open dashboard window you can:-->
 
-- switch to Dashboard >Raw Data menu 
-- apply a filter to the analyzed data
-- specify the time interval
-- generate a report in csv and pdf format
-- re-edit dashboard parameters
+- <!--switch to Dashboard >Raw Data menu--> 
+- <!--apply a filter to the analyzed data-->
+- <!--specify the time interval-->
+- <!--generate a report in csv and pdf format-->
+- <!--re-edit dashboard parameters-->

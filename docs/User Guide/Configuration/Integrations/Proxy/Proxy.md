@@ -1,4 +1,4 @@
-This menu [Configuration>Integrations>**Proxy**] can be used to configure the proxy server configuration parameters with which the Sycope system will be integrated.
+This menu [Configuration>Integrations>**Proxy**] can be used to configure the proxy server parameters with which the Sycope system will be integrated.
 
 There are the following lines:
 

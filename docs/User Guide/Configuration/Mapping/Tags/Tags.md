@@ -22,7 +22,7 @@ To add a new tag click **New tag** button. After clicking button, a **Tag Proper
 
 - **Pick a color**  - field to specify the color in the tag name
 
-- **Active switch** -  button to activate the tag - status shown on Active/inactive icon in the table in the Tags menu
+- **Active switch** -  button to activate the tag - status shown on active/inactive icon in the table in the Tags menu
 
   
 
