@@ -16,7 +16,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           path: "./docs",
           sidebarPath: require.resolve('./sidebars.js'),
@@ -57,7 +57,7 @@ module.exports = {
         {
           type: 'html',
           position: 'right',
-          value: '<p style="margin: 0 -12px">version:</p>',
+          value: '<p style="margin: 0 -12px; color: white">version:</p>',
         },
         {
           type: 'docsVersionDropdown',
@@ -67,7 +67,11 @@ module.exports = {
     },
     footer: {
       links: [],
-      copyright: "Copyright © 2021 Sycope"
+      copyright: `Copyright © ${new Date().getFullYear()} Sycope`
     },
+  },
+  i18n: {
+    defaultLocale: 'en-GB',
+    locales: ['en-GB']
   }
 }

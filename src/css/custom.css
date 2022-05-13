@@ -54,6 +54,22 @@ html[data-theme='dark'] {
   height: 100%;
 }
 
+.navbar__link {
+  color: #f5f6f7;
+}
+
+.navbar__link:hover {
+  color: #00c2f9;
+}
+
+.navbar__items .clean-btn {
+  color: white;
+}
+
+.navbar__items .clean-btn:hover {
+  background: var(--ifm-color-gray-800);
+}
+
 blockquote {
   color: #24292e;
   background-color: #adc5e2;
