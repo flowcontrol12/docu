@@ -32,7 +32,7 @@ To add a new `Alert field` click **New alert field** button then the alert field
 - **Field** - field selected from the list of fields available in the selected Data stream
 - **Aggregation** - you can choose one of the functions: 
 
-  - Avi - returns average of field values.
+  - Avg - returns average of field values.
   - Count - returns count of non empty fields.
 
   - First - returns value of first field returned.
