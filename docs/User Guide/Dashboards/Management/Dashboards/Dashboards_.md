@@ -3,13 +3,9 @@ id: Dashboards_
 title: Dashboards
 ---
 
+A **Dashboard** is simply a visual representation of data designed for quick analysis of the network traffic data and informational awareness.
 
-
-
-
-A Dashboard is simply a visual representation of data designed for quick analysis of the network traffic data and informational awareness.
-
-Dashboards consist of widgets – an object with graphical representations of specific data, which can be added, edited, positioned, deleted or modified as you like. Sycope allows users to set up multiple dashboards.
+Dashboards consist of **Widgets** – an object with graphical representations of specific data, which can be added, edited, positioned, deleted or modified as you like. Sycope allows users to set up multiple dashboards.
 
 
 
@@ -19,9 +15,9 @@ Dashboards consist of widgets – an object with graphical representations of sp
 
 
 
-Dashboards are created and edited in this menu: (**Dashboard>Management>Dashboard**).
+**Dashboards** are created and edited in this menu: [Dashboard>Management>**Dashboard**].
 
-When you enter this menu you will see a table with default and/or previously created user Dashboards.
+When you enter this menu you will see a table with default and/or previously created user **Dashboards**.
 
 The table contains the following fields:
 

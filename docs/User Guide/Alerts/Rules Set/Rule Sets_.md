@@ -3,12 +3,6 @@ id: Rule Sets_
 title: Rule Sets
 ---
 
-Jednym z ważniejszych komponentów systemu  Sycope jest moduł alarmów. Moduł ten pozwala na bardzo elastyczne tworzenie Alarmów w oparciu o szereg warunków i reguł operujących na strumieniach danych znajdujących się w systemie Sycope.
-
-Syscope zawiera wiele różnych predefiniowanych alarmów stworzonych przez  zespół doświadczonych specjalistów cyberbezpieczeństwa. Reguły te mogą Stanowic szablon na podstawie którego użytkownik może tworzyć własne reguły. Reguły można tworzyć także samodzielnie bazując na wizardzie.
-
-
-
 This menu [Alerts>**Fields**] can be used to create a custom `field` based on the selected Streams and (optional) your own mathematical function. Additionally, you can use the Mapping, too. The system includes many of the most useful predefined  `fields`  that you can use right after installing the system.
 
 

@@ -42,7 +42,7 @@ To add a new `metric` click “**New metric**” button then the Metrics wizard 
 - **Field** - field in the selected data source
 
 - **Agreggation** - list of mathematical operations to choose from available in the system
-  - Avi - returns average of field values.
+  - Avg - returns average of field values.
   - Count - returns count of non empty fields.
   
   - First - returns value of first field returned.

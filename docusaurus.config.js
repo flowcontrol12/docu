@@ -22,9 +22,10 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editCurrentVersion: true,
+          lastVersion: 'current',
           versions: {
             current: {
-              label: '2.0 🚧',
+              label: '2.0',
             },
           },
         },
