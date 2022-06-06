@@ -22,22 +22,26 @@ Example 2: To create a role that can edit Widgets, the role must have the Edit a
 
 ---
 
-> **Note**
+> #### Privacy
 >
-> The user can grant permissions for selected objects in the system, for example widgets or dashboards. This is configured in the Privacy section of the object configurator. The user can grant the following access rights:
+> **Privacy** - assigning privileges to the **Widget**.
 >
-> - **Private** - accessible to the owner
+> - Private - accessible to the owner
 >
-> - **Public** - accessible to all
->- **Shared** - accessible to one or more selected roles. Available privileges are:
+> - Public - accessible to all. 
+>   - Public permissions
+>     - Delete
+>     - Edit
+>     - Execute
+>
+> - Shared - accessible to one or more selected roles. Available privileges are:
 >   - Delete
-> 
+>
 >   - Edit
+>
 >   - Execute
-> 
+>
 >   - View
-> 
->    You can assign one or more permissions at a time.
 
 ---
 
