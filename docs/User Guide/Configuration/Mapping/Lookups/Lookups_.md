@@ -5,9 +5,9 @@ title: Lookups
 
 This menu [Configuration>Mapping>**Lookups**] can be used to create custom Lookups that may be applied in different places in the system.
 
-Lookup is querying an additional database (third source) with the specified value in order to map it or complete the data in a netflow session or alert with additional information.
+Lookup is querying an additional database , CSV files or it ‘s own database with the specified value in order to map it or complete the data in a netflow session or alert with additional information. **Lookups** create their own fields in the system
 
-The list of created **Fields**  is in a table with the following columns:
+The list of created **Lookups**  is in a table with the following columns:
 
 **Name** - unique lookup name
 

@@ -1,17 +1,16 @@
----
-id: Rule Sets_
-title: Rule Sets
----
+One of the most important components of the Sycope system is alerting functionality. This functionality allows the user to flexibly build **Alerts** based on a number of conditions and rules that operate on the data streams collected by the system.
 
-This menu [Alerts>**Fields**] can be used to create a custom `field` based on the selected Streams and (optional) your own mathematical function. Additionally, you can use the Mapping, too. The system includes many of the most useful predefined  `fields`  that you can use right after installing the system.
+**Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. These rules can be used as a template from which you can create your own rules. You can also create rules on your own using the wizard.
+
+This menu [Alerts>**Rules Set**] can be used to create a custom `rule` based on the selected Streams and (optional) your own mathematical function. The system includes many of the most useful predefined  `rules`  that you can use right after installing the system.
 
 
 
 The list of **Rules** is in the table with the following columns:
 
 - **Rule name** - unique **Rule** name
-- **Rule type** -  
-- **Tactic** -  
+- **Rule type**   
+- **Tactic**   
 - **Technique**
 - **Score**
 - **Created by**
@@ -25,15 +24,6 @@ The list of **Rules** is in the table with the following columns:
   - Duplicate - create an editable copy of the selected  Rule
   - Export - export Rule to json format
   - Delete - delete
-
-
-
-The list of `fields`  is in the table with the following columns:
-
-- **Name** - unique `field` name
-- **Streams** - streams used to create  `fields` 
-- **Description** -  `field`  description entered by user
-- **Action**
 
 ---
 
@@ -184,17 +174,22 @@ Here you can define how to sort the data displayed on the graph.
 
 ## Limit
 
-==!==You can specify the resolution and the direction in which the data will be presented.
+You can specify the resolution and the direction in which the data will be presented.
 
-- Limit buckets switch - służy do wpisania limitu rozdzielczości wykresu (liczby punktów na wykresie)
-- Limit - wartość rozdzielczości, służy do wpisania limitu rozdzielczości wykresu (liczby punktów na wykresie)
+- Limit buckets switch - It is used to set the limit of values of which the chart will consist
+
+- Limit - limit value
+
 - Show from - field to specify the direction in which the data will be displayed on the chart
+
   - Head 
   - Tail
+
 - Show others switch 
+
   - Others label
 
-## Schedule
+    Schedule
 
 In this step you can specify how often the rule will be executed.
 
@@ -212,6 +207,8 @@ In this step you can specify how often the rule will be executed.
   - Major - select an operator and a value
   - Critical - select an operator and a value
 
+  
+  
   First the Critical conditions are checked, if these conditions are not met then the Major conditions are checked, and if these conditions are not met then the Minor conditions are checked.
 
 ## Actions
@@ -234,16 +231,11 @@ In this step you can specify how often the rule will be executed.
     - Action name
 
 - Threshold levels
-
   - Critical
-
   - Major 
-
   - Minor
 
     
-
-
 
 ## Privacy
 
