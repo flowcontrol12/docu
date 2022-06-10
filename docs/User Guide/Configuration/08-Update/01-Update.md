@@ -1,6 +1,5 @@
 ---
-id: Update_
-title: Update
+description: Update Tab
 ---
 
 This menu  [Configuration>Update>**Update**] can be used to manage the system version.

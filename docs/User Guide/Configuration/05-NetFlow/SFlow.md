@@ -1,6 +1,5 @@
 ---
-id: SFlow_
-title: SFlow
+description: SFlow Tab
 ---
 
 This menu [Configuration>NetFlow>**SFlow**] can be used to configure **SFlow** protocol support, in particular Port.

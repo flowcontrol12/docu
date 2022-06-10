@@ -1,6 +1,5 @@
 ---
-id: Audit Log_
-title: Audit Log
+description: Audit Log Tab
 ---
 
 This menu [Configuration>Security>**Audit Log**]  can be used to create Audit Log.

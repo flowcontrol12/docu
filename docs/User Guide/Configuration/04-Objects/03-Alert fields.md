@@ -1,6 +1,5 @@
 ---
-id: Alert fields_
-title: Alert fields
+description: Alert fields Tab
 ---
 
 This menu [ Configuration>Object>**Alert fields**] can be used to create a custom `Alert fields` based on the selected Streams and (optional) your own mathematical function.  The system includes several most useful predefined  `Alert fields`  that you can use right after installing the system.

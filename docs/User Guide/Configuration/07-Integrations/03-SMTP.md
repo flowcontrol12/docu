@@ -1,6 +1,5 @@
 ---
-id: SMTP_
-title: SMTP
+description: SMTP Tab
 ---
 
 This menu [Configuration>Integrations>**SMTP** ] can be used to configure SMTP server connection parameters.

@@ -1,6 +1,5 @@
 ---
-id: Certificates_
-title: Certificates
+description: Certificates Tab
 ---
 
 This menu [Configuration>Security>**Certificate**]  can be used to generate and edit  SSL certificates.

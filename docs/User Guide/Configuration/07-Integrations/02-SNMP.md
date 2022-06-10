@@ -1,6 +1,5 @@
 ---
-id: SNMP_
-title: SNMP
+description: SNMP Tab
 ---
 
 This menu [Configuration>Integrations>**SNMP**] can be used to configure SNMP protocol parameters.

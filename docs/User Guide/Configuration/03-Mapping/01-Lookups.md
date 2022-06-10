@@ -1,7 +1,5 @@
 ---
-id: Lookups_
-title: Lookups
-description: ""
+description: Lookups Tab
 ---
 
 This menu [Configuration>Mapping>**Lookups**] can be used to create custom Lookups that may be applied in different places in the system.

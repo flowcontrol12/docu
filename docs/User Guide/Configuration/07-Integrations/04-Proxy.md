@@ -1,6 +1,5 @@
 ---
-id: Proxy_
-title: Proxy
+description: Proxy Tab
 ---
 
 This menu [Configuration>Integrations>**Proxy**] can be used to configure the proxy server parameters with which the Sycope system will be integrated.

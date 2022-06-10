@@ -1,6 +1,5 @@
 ---
-id: Metrics_
-title: Metrics
+description: Metrics Tab
 ---
 
 This menu [Configuration>Object>**Metrics**] can be used to create custom `metrics` based on the selected Data Streams and your own Aggregation and Post Aggregation. The system includes several useful predefined  `metrics`  that you can use right after installing the system.

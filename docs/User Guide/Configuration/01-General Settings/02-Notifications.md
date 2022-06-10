@@ -1,6 +1,4 @@
 ---
-id: Notifications_
-title: Notifications
 description: Notification Tab
 ---
 

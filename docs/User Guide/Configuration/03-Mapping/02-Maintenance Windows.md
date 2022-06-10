@@ -1,7 +1,5 @@
 ---
-id: Maintenance Windows_
-title: Maintenance Windows
-description: ""
+description: Maintenance Windows Tab
 ---
 
 This menu [Configuration>Mapping>**Maintenance Windows**] can be used to create **Maintenance Windows profiles.**

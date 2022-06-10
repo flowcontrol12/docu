@@ -1,6 +1,4 @@
 ---
-id: Retention_
-title: Retention
 description: Retention Tab
 ---
 

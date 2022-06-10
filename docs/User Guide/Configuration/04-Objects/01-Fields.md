@@ -1,6 +1,5 @@
 ---
-id: Fields_
-title: Fields
+description: Fields Tab
 ---
 
 This menu [Configuration>Object>**Fields**] can be used to create a custom `field` based on the selected Streams and (optional) your own mathematical function. Additionally, you can use the Mapping, too. The system includes many of the most useful predefined  `fields`  that you can use right after installing the system.

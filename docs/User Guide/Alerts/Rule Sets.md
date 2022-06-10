@@ -1,3 +1,7 @@
+---
+description: Rule Sets Tab
+---
+
 One of the most important components of the Sycope system is alerting functionality. This functionality allows the user to flexibly build **Alerts** based on a number of conditions and rules that operate on the data streams collected by the system.
 
 **Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. These rules can be used as a template from which you can create your own rules. You can also create rules on your own using the wizard.

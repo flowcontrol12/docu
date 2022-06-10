@@ -1,7 +1,5 @@
 ---
-id: Mappers_
-title: Mappers
-description: ""
+description: Mappers Tab
 ---
 
 The menu [Configuration>Mapping>**Mappers**] can be used to create a custom Mapper for use in creating Fields.

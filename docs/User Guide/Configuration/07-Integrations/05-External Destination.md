@@ -1,3 +1,9 @@
+---
+description: External Destination Tab
+---
+
+
+
 This menu [Configuration>Integrations>**External Destinations**] can be used to create external destination to which the system will send data.
 
 The list of **External Destinations** is in the table with the following columns:

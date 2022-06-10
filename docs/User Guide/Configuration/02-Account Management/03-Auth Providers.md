@@ -1,6 +1,4 @@
 ---
-id: Auth Providers_
-title: Auth Providers
 description: Auth Providers Tab
 ---
 

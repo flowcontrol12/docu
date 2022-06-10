@@ -1,6 +1,5 @@
 ---
-id: NTP_
-title: NTP
+description: NTP Tab
 ---
 
 In this menu [Configuration>Integrations>**NTP**] the system time settings are placed.

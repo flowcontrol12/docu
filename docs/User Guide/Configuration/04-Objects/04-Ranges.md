@@ -1,6 +1,5 @@
 ---
-id: Ranges_
-title: Ranges
+description: Ranges Tab
 ---
 
 This menu [Configuration>Objects>**Ranges**] can be used to create custom data ranges based on fields from selected data sources.

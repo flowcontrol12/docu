@@ -1,6 +1,5 @@
 ---
-id: Netflow_
-title: Netflow
+description: Netflow Tab
 ---
 
 This menu [Configuration>NetFlow>**Netflow**] can be used to configure NetFlow parameters.

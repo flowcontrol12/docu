@@ -1,6 +1,5 @@
 ---
-id: Right click actions_
-title: Right click actions
+description: Right click actions Tab
 ---
 
 This menu [Configuration>Objects>**Right click actions**] can be used to enter external links that will be available after pressing right mouse button.
