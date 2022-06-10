@@ -7,7 +7,7 @@ In this menu [Alerts>**Alerts Table**] there is a table with a list of all the a
 
 
 | Field name                      | Field type    |
-| -------------------------------- | ----------------- |
+| :------------------------------- | :---------------- |
 |	Id											| Basic |
 | timestamp                    | Basic         |
 | alertRuleType                | Basic         |
