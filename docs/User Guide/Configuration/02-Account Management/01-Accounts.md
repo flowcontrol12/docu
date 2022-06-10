@@ -1,3 +1,9 @@
+---
+description: Accounts Tab
+---
+
+
+
 This menu [Configuration>Accounts Management>**Accounts**] can be used to manage users in the system.
 
 After installation there are two predefined accounts **admin** and **user**, both can be edited by the user.

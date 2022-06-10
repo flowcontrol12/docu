@@ -1,6 +1,7 @@
 ---
 id: Auth Providers_
 title: Auth Providers
+description: Auth Providers Tab
 ---
 
 This menu [Configuration>Account Management>**Auth Providers**] can be used to configure  Authentication Provider. Currently the system allows to use only a Microsoft AD as an Auth provider.

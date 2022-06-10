@@ -1,6 +1,7 @@
 ---
 id: System Status_
 title: System Status
+description: System Status Tab
 ---
 
 In this menu [Configuration>General Settings >**System Status**] there are several widgets and tables with detailed information about the system parameters and status of its components, for example: free disk space, CPU load, up time and so on.

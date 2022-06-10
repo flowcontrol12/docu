@@ -1,6 +1,7 @@
 ---
 id: Retention_
 title: Retention
+description: Retention Tab
 ---
 
 This menu [Configuration>General Settings >**Retention**] can be used to manage data retention. 

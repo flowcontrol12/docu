@@ -1,6 +1,7 @@
 ---
 id: User Roles_
 title: User Roles
+description: User Roles Tab
 ---
 
 This menu [Configuration>Account Management>**User Roles**] can be used to manage users roles in the System.

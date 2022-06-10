@@ -1,6 +1,7 @@
 ---
 id: Business Hours_
 title: Business Hours
+description: ""
 ---
 
 This menu (Configuration>Mapping>**Business Hours**) can be used to create a Business hour profile. 

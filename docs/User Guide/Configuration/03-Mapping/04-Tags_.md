@@ -1,6 +1,7 @@
 ---
 id: Tags_
 title: Tags
+description: ""
 ---
 
 This menu [Configuration>Mapping>**Tags**] can be used to create custom tags that can be used across the Sycope system.
