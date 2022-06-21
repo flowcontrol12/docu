@@ -18,13 +18,13 @@ The tables below are lists of required server hardware parameters for desired fl
 
 
 
-| Base OS **\*** | Basic  | Small  |
-| -------------- | ------ | ------ |
-| CPU cores      | 8      | 16     |
-| RAM            | 16 GB  | 32 GB  |
-| **Storage**    |        |        |
-| OS disk        | 500 GB | 500 GB |
-| Data disk      | 300 GB | 600 GB |
+| Base OS **\*** | Basic  | Small   |
+| -------------- | ------ | ------- |
+| CPU cores      | 8 pcs. | 16 pcs. |
+| RAM            | 16 GB  | 32 GB   |
+| **Storage**    |        |         |
+| OS disk        | 500 GB | 500 GB  |
+| Data disk      | 300 GB | 600 GB  |
 
 **\*** Minimum requirements for Proof of Concept. Any production environment requires additional resources based on number and types of modules 
 
@@ -34,44 +34,43 @@ The tables below are lists of required server hardware parameters for desired fl
 
 
 
-| VISIBILITY  module | Basic                    | Small                    |
-| ------------------ | ------------------------ | ------------------------ |
-| CPU cores          | +8                       | +16                      |
-| RAM                | +2 GB                    | +4 GB                    |
-| **Storage**        |                          |                          |
-| OS disk            | + 450 GB                 | + 900 GB                 |
-| Data disk          | customer specificication | customer specificication |
-| LAN Interfaces     | 2x1 Gbit/s               | 2x1 Gbit/s               |
+| VISIBILITY  module | Basic      | Small      |
+| ------------------ | ---------- | ---------- |
+| CPU cores          | +8 pcs.    | +16 pcs.   |
+| RAM                | +2 GB      | +4 GB      |
+| **Storage**        |            |            |
+| Data disk          | 450 GB     | 900 GB     |
+| LAN Interfaces     | 2x1 Gbit/s | 2x1 Gbit/s |
+|                    |            |            |
 
 ---
 
-| SECURITY module | Basic                    | Small                    |
-| --------------- | ------------------------ | ------------------------ |
-| CPU cores       | +2                       | +4                       |
-| RAM             | +2 GB                    | +4 GB                    |
-| **Storage**     |                          |                          |
-| OS disk         | customer specificication | customer specificication |
-| Data disk       | customer specificication | customer specificication |
-| LAN Interfaces  | 2x1 Gbit/s               | 2x1 Gbit/s               |
+| SECURITY module | Basic                  | Small                  |
+| --------------- | ---------------------- | ---------------------- |
+| CPU cores       | +2                     | +4                     |
+| RAM             | +2 GB                  | +4 GB                  |
+| **Storage**     |                        |                        |
+| Data disk       | customer specification | customer specification |
+| LAN Interfaces  | 2x1 Gbit/s             | 2x1 Gbit/s             |
+|                 |                        |                        |
 
 ---
 
-| PERFORMANCE module | Basic                    | Small                    |
-| ------------------ | ------------------------ | ------------------------ |
-| CPU cores          | +2                       | +4                       |
-| RAM                | +2 GB                    | +4 GB                    |
-| Storage            |                          |                          |
-| OS disk            | customer specificication | customer specificication |
-| Data disk          | customer specificication | customer specificication |
-| LAN Interfaces     | 2x1 Gbit/s               | 2x1 Gbit/s               |
+| PERFORMANCE module | Basic                  | Small                  |
+| ------------------ | ---------------------- | ---------------------- |
+| CPU cores          | +2 pcs.                | +4 pcs.                |
+| RAM                | +2 GB                  | +4 GB                  |
+| **Storage**        |                        |                        |
+| Data disk          | customer specification | customer specification |
+| LAN Interfaces     | 2x1 Gbit/s             | 2x1 Gbit/s             |
 
 ---
 
-| Resources for the user who will use all modules | Basic   | Small |
-| ----------------------------------------------- | ------- | ----- |
-| CPU cores                                       | 20      | 40    |
-| RAM                                             | 22 GB   | 44 GB |
-| Storage                                         | 1,25 TB | 2 TB  |
+| Resources for all modules users | Basic   | Small   |
+| ------------------------------- | ------- | ------- |
+| CPU cores                       | 20 pcs. | 40 pcs. |
+| RAM                             | 22 GB   | 44 GB   |
+| Storage                         | 1,25 TB | 2 TB    |
 
 <br />
 
