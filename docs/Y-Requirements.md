@@ -47,7 +47,7 @@ The tables below are lists of required server hardware parameters for desired fl
 
 | SECURITY module | Basic                  | Small                  |
 | --------------- | ---------------------- | ---------------------- |
-| CPU cores       | +2                     | +4                     |
+| CPU cores       | +2 pcs.                | +4 pcs.                |
 | RAM             | +2 GB                  | +4 GB                  |
 | **Storage**     |                        |                        |
 | Data disk       | customer specification | customer specification |
