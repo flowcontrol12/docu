@@ -6,67 +6,67 @@ In this menu [Alerts>**Alerts Table**] there is a table with a list of all the a
 
 
 
-| Field name                      | Field type    |
-| -------------------------------- | ----------------- |
-|	Id											| Basic |
-| timestamp                    | Basic         |
-| alertRuleType                | Basic         |
-| alertName                    | Basic         |
-| alertRuleId                  | Basic         |
-| alertDescription             | Basic         |
-| alertSeverity                | Basic         |
-| alertThresholdLevel          | Basic         |
-| alertTags                    | Basic         |
-| alertMitreTactic             | Basic         |
-| alertMitreTechnique          | Basic         |
-| alertMitreTechniqueId        | Basic         |
-| alertMitreSubtechnique       | Basic         |
-| alertCorrelations            | Basic         |
-| alertMitigationSystem        | Incident Handling |
-| alertMitigationIpField       | Incident Handling |
-| rawData                      | Incident Handling |
-| alertAck                     | Incident Handling |
-| alertAckUser                 | Incident Handling |
-| alertAckLastUpdate           | Incident Handling |
-| alertFalsePositive           | Incident Handling |
-| alertFalsePositiveUser       | Incident Handling |
-| alertFalsePositiveLastUpdate | Incident Handling |
-| alertComment                 | Incident Handling |
-| alertCommentUser             | Incident Handling |
-| alertCommentLastUpdate       | Incident Handling |
-| clientIp                     | Other         |
-| clientPort                   | Other         |
-| clientTcpFlags               | Other         |
-| clientGroups                 | Other         |
-| clientCountry                | Other         |
-| clientMac                    | Other         |
-| clientHostname               | Other         |
-| serverIp                     | Other         |
-| serverPort                   | Other         |
-| serverTcpFlags               | Other         |
-| serverGroups                 | Other         |
-| serverCountry                | Other         |
-| serverMac                    | Other         |
-| serverHostname               | Other         |
-| user                         | Other         |
-| uniqueClientIPs              | Other         |
-| uniqueServerIPs              | Other         |
-| uniqueServerPorts            | Other         |
-| uniqueClientASNs             | Other         |
-| uniqueServerASNs             | Other         |
-| uniqueClientCountries        | Other         |
-| uniqueServerCountries        | Other         |
-| _bpf                         | Other         |
-| _bpp                         | Other         |
-| _bytes                       | Other         |
-| _flows                       | Other         |
-| _packets                     | Other         |
-| _ppf                         | Other         |
-| _pps                         | Other         |
-| _syn                         | Other         |
-| _uniqueASNs                  | Other         |
-| _uniqueClientIPs             | Other         |
-| _uniqueServerIPs             | Other         |
-| _uniqueServerPort            | Other             |
+| Field  Name              | NQL Name                     | Description                                |
+| ------------------------ | ---------------------------- | :----------------------------------------- |
+| Alert Id                 | id                           | Alert Identifier                           |
+| Time                     | timestamp                    | Alert Time                                 |
+| Rule Type                | alertRuleType                | Rule Type                                  |
+| Alert Name               | alertName                    | Alert Name                                 |
+| Rule Id                  | alertRuleId                  | Rule Identifier                            |
+| Alert  Description       | alertDescription             | Alert Description                          |
+| Alert Severity           | alertSeverity                | Alert Severity                             |
+| Threshold  Level         | alertThresholdLevel          | Threshold Level  (Criticial, Major, Minor) |
+| Alert Tags               | alertTags                    | Tags                                       |
+| Mitre Tactic             | alertMitreTactic             | Mitre ATT&CK  Tactic                       |
+| Mitre  Technique         | alertMitreTechnique          | Mitre ATT&CK  Technique Id                 |
+| Mitre  Technique Id      | alertMitreTechniqueId        | Mitre ATT&CK  Technique Id                 |
+| Mitre  Subtechnique      | alertMitreSubtechnique       | Mitre ATT&CK  Subtechnique                 |
+| Correlations             | alertCorrelations            | Rule Correlations                          |
+| Mitigation  System       | alertMitigationSystem        | Mitigation System                          |
+| Mitigation IP            | alertMitigationIpField       | Mitigation IP                              |
+| Raw Data                 | rawData                      | Raw Data                                   |
+| ACK                      | alertAck                     | Setting the  Acknowledge flag              |
+| ACK User                 | alertAckUser                 | User updating the  Acknowledge flag        |
+| ACK Time                 | alertAckLastUpdate           | Acknowledge flag  update Time              |
+| False Positive           | alertFalsePositive           | Alert handling False  Positive flag        |
+| FP User                  | alertFalsePositiveUser       | User updating the  False Positive flag     |
+| FP Time                  | alertFalsePositiveLastUpdate | False Positive flag  update time           |
+| Comment                  | alertComment                 | Comment                                    |
+| Commented User           | alertCommentUser             | User updating a  comment                   |
+| Comment Time             | alertCommentLastUpdate       | Comment update time                        |
+| Client IP                | clientIp                     | Client IP                                  |
+| Client Port              | clientPort                   | Client Port                                |
+| Client TCP  Flags        | clientTcpFlags               | Client TCP Flags                           |
+| Client Group             | clientGroups                 | Client Group                               |
+| Client Country           | clientCountry                | Client Country                             |
+| Client Mac               | clientMac                    | Client Mac                                 |
+| Client  Hostname         | clientHostname               | Client Hostname                            |
+| Server IP                | serverIp                     | Server IP                                  |
+| Server Port              | serverPort                   | Server Port                                |
+| Server TCP  Flags        | serverTcpFlags               | Server TCP Flags                           |
+| Server Group             | serverGroups                 | Server Group                               |
+| Server Country           | serverCountry                | Server Country                             |
+| Server Mac               | serverMac                    | Server Mac                                 |
+| Server  Hostname         | serverHostname               | Server Hostname                            |
+| Username                 | user                         | Username                                   |
+| Unique Client IPs        | uniqueClientIPs              | Unique Client IPs                          |
+| Unique Server  IPs       | uniqueServerIPs              | Unique Server IPs                          |
+| Unique Server  Ports     | uniqueServerPorts            | Unique Server Ports                        |
+| Unique Client  ASNs      | uniqueClientASNs             | Unique Client ASNs                         |
+| Unique Server  ASNs      | uniqueServerASNs             | Unique Server ASNs                         |
+| Unique Client  Countries | uniqueClientCountries        | Unique Client Countries                    |
+| Unique Server  Countries | uniqueServerCountries        | Unique Server Countries                    |
+| BPF                      | _bpf                         | Bytes Per Flow                             |
+| BPP                      | _bpp                         | Bytes Per Packet                           |
+| Bytes                    | _bytes                       | Sum Bytes                                  |
+| Flows                    | _flows                       | Sum Flows                                  |
+| Packets                  | _packets                     | Sum Packets                                |
+| PPF                      | _ppf                         | Packets Per Flow                           |
+| PPS                      | _pps                         | Packets Per Second                         |
+| SYN                      | _syn                         | Count of SYN flags                         |
+| Unique ASN               | _uniqueASNs                  | Unique Count of ASNs                       |
+| Unique  ClientIPs        | _uniqueClientIPs             | Unique Count of  Client IPs                |
+| Unique  ServerIPs        | _uniqueServerIPs             | Unique Count of  Server IPs                |
+| Unique Server  Ports     | _uniqueServerPort            | Unique Count of  Server Port               |
 
  
