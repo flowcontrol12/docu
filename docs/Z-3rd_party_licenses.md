@@ -1,8 +1,8 @@
 ---
 id: Z-3rd_party_licenses
-title: Third party software component/licenses
+title: 3rd Party Licenses
 ---
 
 
 
-# Third party software component/licenses
+# 3rd Party Licenses
