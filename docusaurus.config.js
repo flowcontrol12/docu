@@ -25,7 +25,7 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.027',
+              label: '2.0.27',
             },
           },
         },
