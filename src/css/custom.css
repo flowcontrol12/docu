@@ -80,3 +80,10 @@ html[data-theme='dark'] blockquote {
   color: white;
   background-color: #313248
 }
+
+/* full width table */
+table {
+  display: table !important;
+  table-layout: fixed !important;
+  width: 100%;
+}
