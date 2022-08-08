@@ -26,7 +26,7 @@ In our example, we are using **Vmware ESXi v. 6.5** so we download an image name
 
 :::tip
 
-If you have a VMware ESXi version for which there is no image on the Sycope Portal, you can use a tool provided by vmware https://developer.vmware.com/web/tool/4.4.0/ovf that allows you to import and export OVF packages to and from many VMware products.
+If you have a VMware ESXi version for which there is no image on the **Sycope Portal**, you can use a tool provided by vmware https://developer.vmware.com/web/tool/4.4.0/ovf that allows you to import and export OVF packages to and from many VMware products.
 
 :::
 
@@ -67,7 +67,7 @@ In order to perform the successful installation, please **follow below steps**:
 
 ##  3. IP address, DNS Server and Gateway  configuration
 
-The Sycope to activate requires a connection to the **Internet**, so it is necessary to configure the appropriate **DNS Server** address,  **IP** address and **Gateway** address.
+For operation of the system it is necessary to configure the network parameters so you need to configure the appropriate **DNS Server** address,  **IP** address and **Gateway** address.
 
 When the installation process is complete, please start the installed system and then **log in** using the **ESXi Console**.
 
@@ -75,17 +75,17 @@ When the installation process is complete, please start the installed system and
 
 :::info
 
-The Sycope default password and username for the VMware Console:
+The **Sycope** default password and username for the **VMware Console**:
 
-user: admin
+**user:** admin
 
-password: admin123
+**password:** admin123
 
 :::
 
 :::danger
 
-It is highly recommended to change default password !!!
+**It is highly recommended to change default password !!!**
 
 :::
 
@@ -98,8 +98,6 @@ After logging into the system via the **VMware Console**, select the **Network I
 ![image-20220803202853796](assets_inst_g/image-20220803202853796.png)
 
 
-
-After entering the appropriate values and pressing **Apply**, you need to **reboot** the machine for the changes to take effect.
 
 
 
@@ -119,21 +117,35 @@ To activate the Sycope system follow the steps below.
 
 :::info
 
-The Sycope default password and username for www interface:
+The **Sycope** default password and username for **www interface**:
 
-user: admin
+**user:** admin
 
-password: qwerty
+**password:** qwerty
 
 :::
 
 :::danger
 
-It is highly recommended to change default password !!!
+**It is highly recommended to change default password !!!**
 
 :::
 
 4. Generate License request. To do this, go to the **License tab** then click **Generate** and fill out the form with exactly the same information as the **Company info** form on the **Sycope Portal**. After entering the information, click **Generate** on the form and then copy the generated **License request**.
+
+:::caution
+
+The information entered in the **License request** form **<u>must be</u>** identical to that in the **Company info** form on the **Sycope Portal**. Any change or mistake will result in rejection of the request. If the **License request** was **rejected**, correct the data and renew the **License request** by clicking the **Renew** button.
+
+
+
+
+
+![image-20220808102754121](assets/image-20220808102754121.png)
+
+:::
+
+
 
 ![](assets_inst_g/image-20220803204235897.png)
 
