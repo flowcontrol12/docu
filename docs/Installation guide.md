@@ -83,12 +83,6 @@ The **Sycope** default password and username for the **VMware Console**:
 
 :::
 
-:::danger
-
-**It is highly recommended to change default password !!!**
-
-:::
-
 After logging into the system via the **VMware Console**, select the **Network Interfaces Tab** and then change the settings of the selected Interface.
 
 ![image-20220803195326060](assets_inst_g/image-20220803195326060.png)
