@@ -40,7 +40,21 @@ module.exports = {
     ]
   ],
   plugins: ['docusaurus-plugin-sass'],
+  themes: ['docusaurus-theme-search-typesense'],
   themeConfig: {
+    typesense: {
+      typesenseCollectionName: 'sycope',
+      typesenseServerConfig: {
+        nodes: [
+          {
+            host: 'localhost',
+            port: 8108,
+            protocol: 'http',
+          },
+        ],
+        apiKey: 'xyz',
+      },
+    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
