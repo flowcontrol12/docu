@@ -41,11 +41,6 @@ module.exports = {
   ],
   plugins: ['docusaurus-plugin-sass'],
   themeConfig: {
-    algolia: {
-      appId: 'VTLMOZMQ8V',
-      apiKey: 'f61edbf9bfd27250990d22a5e40b225a',
-      indexName: 'sycope',
-    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
