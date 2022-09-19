@@ -47,12 +47,12 @@ module.exports = {
       typesenseServerConfig: {
         nodes: [
           {
-            host: 'localhost',
+            host: '3.120.250.128',
             port: 8108,
             protocol: 'http',
           },
         ],
-        apiKey: 'xyz',
+        apiKey: 'ybLwdZl0Nxr2M9gzSqRzXwmI',
       },
     },
     colorMode: {
