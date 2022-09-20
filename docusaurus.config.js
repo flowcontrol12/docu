@@ -40,11 +40,20 @@ module.exports = {
     ]
   ],
   plugins: ['docusaurus-plugin-sass'],
+  themes: ['docusaurus-theme-search-typesense'],
   themeConfig: {
-    algolia: {
-      appId: 'VTLMOZMQ8V',
-      apiKey: 'f61edbf9bfd27250990d22a5e40b225a',
-      indexName: 'sycope',
+    typesense: {
+      typesenseCollectionName: 'sycope',
+      typesenseServerConfig: {
+        nodes: [
+          {
+            host: '3.120.250.128',
+            port: 8108,
+            protocol: 'http',
+          },
+        ],
+        apiKey: 'ybLwdZl0Nxr2M9gzSqRzXwmI',
+      },
     },
     colorMode: {
       respectPrefersColorScheme: true,

@@ -1,3 +1,15 @@
+# DocSearch
+
+Run typesense with API first
+```console
+docker run -p 8108:8108 -v /tmp/typesense:/data typesense/typesense:0.23.1 --data-dir /data --api-key=xyz --enable-cors
+```
+
+Then scrape documentation and populate API
+```console
+docker run -p 8080:80 -it --env-file=./typesense.env -e "CONFIG=$(cat ./typesense.json | jq -r tostring)" typesense/docsearch-scraper
+```
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
