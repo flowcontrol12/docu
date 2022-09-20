@@ -1,8 +1,3 @@
----
-id: User interface_
-title: User Interface
----
-
 ## Main window
 
 After logging into the system the **Main window** looks like this:

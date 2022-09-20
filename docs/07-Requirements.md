@@ -1,9 +1,3 @@
----
-id: Y-Requirements
-title: Requirements
-
----
-
 ## Collector hardware requirements
 
 The tables below are lists of required server hardware parameters for desired flow limits.

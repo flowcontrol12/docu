@@ -1,8 +1,3 @@
----
-id: X-Release_notes_v2.0.26
-title: Release notes
----
-
 ### Added:
 
 - New fields in netflow Data Stream - clientASNumber, serverAsNumber, clientFunction, serverFunction, clientLocation, serverLocation, clientRole, serverRole
