@@ -12,12 +12,6 @@ The first information in this window is information about the availability of a 
 
 - **Release date** - the release date of a particular version of the system
 
-- **Filename** 
-
-- **Size** - size of the installation file
-
-- **SHA-256**  
-
 - **Release notes** - list of changes and improvements for a given system version
 
 - **Action**  

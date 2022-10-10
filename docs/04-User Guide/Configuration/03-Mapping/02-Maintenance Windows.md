@@ -20,13 +20,13 @@ There is the Table with two column:
 
 To add a new **Maintenance Window** click  **New Maintenance Window**  button then the wizard will appear. In the wizard window there are the following fields:
 
-- Name - name of the field in the system
-- Time 
+- **Name** - name of the field in the system
+- **Time** 
   - Start time
   - End time
   - Browser Time
-- Recurrence Pattern - (Daily/Weekly/Monthly/Yearly) time intervals at which the service window will be active
-- Range of recurrence
+- **Recurrence Pattern** - (Daily/Weekly/Monthly/Yearly) time intervals at which the service window will be active
+- **Range of recurrence**
   - No end date
   - End after
     - occurences

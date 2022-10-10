@@ -8,6 +8,7 @@ There are the following lines:
 
 - **Proxy active** switch - activate/deactivate proxy support 
 - **Username** - proxy user name
+- **Password** - proxy user password
 - **Port** - service port
 - **Host** - proxy server IP address
 

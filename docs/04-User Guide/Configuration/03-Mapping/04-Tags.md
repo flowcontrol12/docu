@@ -10,6 +10,9 @@ The list of created tags is in the table that has the following columns:
 - **Color** - Tag color
 - **Description** - Short tag description
 - **Status** - active/inactive
+- **Used in Dashboards** - list of **Dashboards** in which the **Tag** was used
+- **Used in Widgets** - list of **Widgets** in which the **Tag** was used
+- **Used in Rules** - list of **Rules** in which the **Tag** was used
 - **Action**
   - Edit - edit Tag
   - Duplicate -  creating an editable copy of the selected **Tag**

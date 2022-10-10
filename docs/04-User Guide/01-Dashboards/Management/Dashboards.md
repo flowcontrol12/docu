@@ -21,27 +21,32 @@ When you enter this menu you will see a table with default and/or previously cre
 
 The table contains the following fields:
 
-- Select - checkbox button - to select Dashboard for further editing 
-- Favourite - star icon -  to add to favorites
-- Home - home icon - to add to start screen
-- Name - Dashboard name
-- Tags - Dashboard assignment tags
-- Description - short dashboard description
-- Privilege 
-- Shared
-- Created By
-- Creation Time
-- Modified By
-- Modification Time
-- Actions - actions that can be performed on the created dashboard
+- **Select** - checkbox button - to select Dashboard for further editing 
+- **Favorites** - star icon -  to add to favorites
+- **Home** - home icon - to add to start screen
+- **Name** - Dashboard name
+- **Tags** - Dashboard assignment tags
+- **Description** - short dashboard description
+- **Privacy** - privacy status icon
+- **Shared** - name of the user who shared the Dashboard
+- **Created By** - name of the user who created the Dashboard
+- **Creation Time** - creation time
+- **Modified By** - name of the user who last modified the Dashboard
+- **Modification Time** - last modification time
+- **In groups** - names of a groups of dashboards the Dashboard belongs to
+- **Actions** - actions that can be performed on the created dashboard
   - Export - save a dashboard to a file in json format
   - Edit - edit a created dashboard
   - Duplicate - create an editable copy of the dashboard
   - Delete - delete a selected Dashboard
 
+To add  a Dashboard, click on the **Add Dashboard** button and fill:
 
+- **Name** - Dashboard name
+- **Description** - short Dashboard description
+- **Tags**
 
-To add  a Dashboard, click on the **Add Dashboard** button. A blank table with four rows and twelve columns will be displayed. In this space you can place widgets selected from the list by clicking Add widget.
+ Then blank table with four rows and twelve columns will be displayed. In this space you can place widgets selected from the list by clicking Add widget.
 
 To configure the Dashboard, fill in the fields available after clicking  Preferences.
 

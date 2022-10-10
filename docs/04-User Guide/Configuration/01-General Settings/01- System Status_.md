@@ -6,11 +6,11 @@ description: System Status Tab
 
 In this menu [Configuration>General Settings >**System Status**] there are several widgets and tables with detailed information about the system parameters and status of its components, for example: free disk space, CPU load, up time and so on.
 
-There are three buttons:
+There are two buttons:
 
-- **Shute down button** - system shutdown
+- **Shutdown ** - system shutdown
 
-- **Restart button** - system restart
+- **Restart** - system restart
 
 There are the following widgets:
 

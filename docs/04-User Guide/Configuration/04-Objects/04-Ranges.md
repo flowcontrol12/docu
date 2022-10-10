@@ -10,6 +10,8 @@ The table with the Ranges list contains the following columns:
 - **Name** - Range name
 - **Field** - field from the data source selected during configuration
 - **Ranges** - list of ranges names used to create this range
+- **Privacy** - privacy status icon
+- **Shared** - name of the user who shared the Metric
 - **Action**
   - Edit - editing an existing Range
   - Delete - deleting Range
