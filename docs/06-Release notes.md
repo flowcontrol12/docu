@@ -1,4 +1,6 @@
-# Release notes ver. 2.0.29
+# Release notes
+
+### ver. 2.0.29
 
 - Sytem update module mandatory fix. Please update to 2.1.0.0 afterwards.
 
@@ -9,7 +11,7 @@
 
 ---
 
-# Release notes ver. 2.0.27
+###  ver. 2.0.27
 
 ### Added:
 
