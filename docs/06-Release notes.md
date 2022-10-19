@@ -1,3 +1,16 @@
+# Release notes ver. 2.0.29
+
+- Sytem update module mandatory fix. Please update to 2.1.0.0 afterwards.
+
+
+
+
+
+
+---
+
+# Release notes ver. 2.0.27
+
 ### Added:
 
 - New fields in netflow Data Stream - clientASNumber, serverAsNumber, clientFunction, serverFunction, clientLocation, serverLocation, clientRole, serverRole
