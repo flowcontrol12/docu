@@ -1,10 +1,88 @@
 # Release notes
 
+### ver. 2.1.0
+
+- Added a **suggestion engine** that in real time assists the user during the construction of NQL queriess. Syntax highlighting functionality gives clear insight into the query.
+
+  ![coloring_syntax](assets_release/coloring_syntax.jpg)
+
+- Added **Drill down** functionality, which simplifies the analysis and provides a quick insight into the layers of the analyzed issue. The user can define objects that will be called by the **Drill down** button. This action is fully configurable, and filters applied to the main object are transferred to the objects defined in the **Drill down** action.
+
+  ![drilldown](assets_release/drilldown.jpg)
+
+- Added a quick insight into the statistics of the analyzed stream for ten thousands of lines available with one click.
+
+  ![statistics](assets_release/statistics.jpg)
+
+- Added four new types of **Widgets** to increase the possibilities of graphical data presentation. These **Widgets** are:
+
+  - **Map**,
+  - **Tree Map**,
+  - **Radar**,
+  - **Filters**.
+
+  ![new_widgets](assets_release/new_widgets.jpg)
+
+- Added **Dashboard Groups**, which allow to assign a **Dashboard** to a group or multiple groups. The user can create any number of groups in the system, depending on his needs and preferences. This increases productivity and improves the ease of use of **Dashboards**.
+
+  ![grouping](assets_release/grouping.jpg)
+
+- Added option to arrange menu in horizontal position. 
+
+  ![horizontal_menu](assets_release/horizontal_menu.jpg)
+
+- Added histogram in alerts and notifications view.![Alert_table](assets_release/Alert_table.jpg)
+
+- Added support for "empty fields" including filtering. 
+
+  ![empty_fields](assets_release/empty_fields.jpg)
+
+- Added new system for creating reports.
+
+- Added flow forward functionality.
+
+- Added names to favorite filters.
+
+- Added functionality multiport NetFlow collection. 
+
+- Added tags to groups and lookups.
+
+- Added new aggregations for performance licenses:
+
+  - HTTP METHOD,
+
+  - HTTP RETURN CODE,
+  - HTTP USER AGENT,
+  - DNS QUERY TYPE,
+  - DNS RETURN CODE.
+
+- Added caching of NQL query results.
+
+- Added local filtering - applied only to the widget called from drill down button.
+
+- Added percentile aggregation which returns vale below which a X percentage of data falls.  
+
+- Added SNMP trap support.
+
+- Added multi/simple mode functionality on charts in widgets.
+
+- Added functionality to use custom units.
+
+- Added functionality (+/-) on flyout Alerts / Advanced View on single field.
+
+- Added default sorting in object tables by creation time.
+
+- Unified views:  raw data, alerts, notifications, auditlog.
+
+- Many fixes and improvements in operators and filtering.
+
+- Added flout “What new”.
+
+---
+
 ### ver. 2.0.29
 
 - Sytem update module mandatory fix. Please update to 2.1.0.0 afterwards.
-
-
 
 
 

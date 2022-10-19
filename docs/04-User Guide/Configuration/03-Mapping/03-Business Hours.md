@@ -8,11 +8,13 @@ This menu (Configuration>Mapping>**Business Hours**) can be used to create a Bus
 
 **Add new** button - create new **Business Hours** profile.
 
-
-
-There is a Table with two columns:
+There is a Table with columns:
 
 **Name** - Name of the `Business Hour` profile
+
+**Privacy** - privacy status icon
+
+**Shared** - users who shared the object
 
 **Actions**
 

@@ -8,9 +8,11 @@ This menu [Configuration>Integrations>**External Destinations**] can be used to 
 
 The list of **External Destinations** is in the table with the following columns:
 
-- **Name** -**External Destinations** name.
+- **Name** - External Destinations name.
 - **Status**
 - **Type** - template type - Html or Text.
+- **Privacy**
+- **Shared**
 - **Action**
   - Edit - edit an existing **Email Template**
   - Duplicate - can be used as a template for a new template
@@ -20,14 +22,15 @@ The list of **External Destinations** is in the table with the following columns
 
 To add a new **External Destinations** click **New external destinations** button then the **New external destinations** wizard will appear. 
 
-At first, you have to choose the type of **External Destination**. There are currently two types of external destinations available:
+At first, you have to choose the type of **External Destination**. There are currently three types of external destinations available:
 
-- Macmon,
-- Syslog.
+- **Macmon**,
+- **SNMP Trap Sender**,
+- **Syslog**.
 
 ---
 
-For Macmon you need to fill the following form:
+For **Macmon** you need to fill the following form:
 
 - **Type** 
 - **Name**
@@ -64,11 +67,49 @@ You can check if the configuration is correct by pressing the **Test connection 
 
 ---
 
+For **SNMP Trap Sender** you need to fill the following form:
+
+- **Type** 
+- **Name**
+- **Active** switch button 
+- **Deastinations**
+  - Host
+  - Port
+  - Protocol
+    - TCP
+    - UDP
+
+- **SNMP Version**
+  - V1
+  - V2C
+  - V3
+- **Privacy** - assigning privileges 
+  - Private - accessible to the owner
+
+  - Public - accessible to all. 
+    - Public permissions
+      - Delete
+      - Edit
+      - Execute
+
+  - Shared - accessible to one or more selected roles. Available privileges are:
+    - Delete
+
+    - Edit
+
+    - Execute
+
+    - View
+
+
+
+---
+
 For **Syslog** you need to fill the following form:
 
 - **Type** 
 - **Name**
-- **Active** switch button - 
+- **Active** switch button 
 - **Deastinations**
   - Host
   - Port

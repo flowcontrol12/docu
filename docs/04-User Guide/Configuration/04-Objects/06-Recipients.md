@@ -8,6 +8,7 @@ The list of `Recipients`  is in the table with the following columns:
 
 - **Name** - unique `Recipient`  name
 - **Email** -  `Recipient` email address 
+- **Assigned tasks**
 - **Action**
   - Edit - editing an existing  `Recipient`
   - Duplicate - creating an editable copy of the selected  `Recipient`
@@ -18,5 +19,15 @@ To add a new `Recipient` click **New recipient** button then the wizard will app
 - **Name** - name of the alert field in the system (user friendly)
 
 - **Email** - short field description
+
+- **Report options**
+
+  - Html/Text
+
+- **Interval**
+
+  - Asap/Every hour/Never/Once a day/Once a week
+
+  
 
   

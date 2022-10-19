@@ -15,7 +15,7 @@ In order to configure the SMTP server, you need to fill in a form consisting of 
 - **Authentication** 
   - **Use SMTP authentication** switch 
 - **Security**
-  - **Use TLS protocol** 
+  - **Use TLS protocol** switch
 - **Transport protocol**
   - smtp
 - **Connection timeout in seconds**

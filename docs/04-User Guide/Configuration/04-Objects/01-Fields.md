@@ -9,6 +9,13 @@ The list of `fields`  is in the table with the following columns:
 - **Name** - unique `field` name
 - **Streams** - streams used to create  `fields` 
 - **Description** -  `field`  description entered by user
+- **Privacy** - privacy status icon
+- **Created By** - name of the user who created the Field
+- **Creation Time** - creation time
+- **Modified By** - name of the user who last modified the Field
+- **Modification Time** - last modification time
+- **Shared** - name of the user who shared the Field
+- **Used in** - objects in the System where the Field was used
 - **Action**
   - Duplicate -  creating an editable copy of the selected  `field`
 
@@ -20,37 +27,39 @@ The list of `fields`  is in the table with the following columns:
 
 To add a new `Field` click **Add field** button then the field wizard will appear. In the wizard window there are the following fields:
 
-- Field name - name of the field in the system (user friendly)
-- Description - short field description
-- Sources - the data stream (or streams) that will be used to create Field
+- **Field name** - NQL name
+- **Description** - short field description
+- **Display name** - name of the field in the system (user friendly)
 
 ---
 
-Use Function switch - OFF 
-
-- Field - field selected from the set of fields available in the selected Data stream
+- **Sources** - the data stream (or streams) that will be used to create Field
 
 ---
 
-Use Function switch - ON
+**Use Function switch** - **OFF** 
 
-- Field - name used in mathematical operations - can be the same as **Display Name**
-- Function - mathematical operation on fields from selected Data streams
+- **Field** - field selected from the set of fields available in the selected Data stream
 
 ---
 
-- Mappers - you can add mappers from the list available to map field values
+**Use Function switch - ON**
 
-- Custom label 
+- **Field** - name used in mathematical operations - can be the same as **Display Name**
+- **Function** - mathematical operation on fields from selected Data streams
 
-- Number Formatting
+---
+
+- **Mappers** - you can add mappers from the list available to map field values
+
+- **Number Formatting**
   
   - Currency
   - Date
   - Number
   - Off
   
-- Privacy - you can grant permissions for field
+- **Privacy** - you can grant permissions for field
 
   - Private - accessible to the owner
   - Public - accessible to all

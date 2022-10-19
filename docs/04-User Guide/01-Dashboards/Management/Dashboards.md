@@ -5,38 +5,33 @@ title: Dashboards
 
 A **Dashboard** is simply a visual representation of data designed for quick analysis of the network traffic data and informational awareness.
 
-Dashboards consist of **Widgets** – an object with graphical representations of specific data, which can be added, edited, positioned, deleted or modified as you like. Sycope allows users to set up multiple dashboards.
+**Dashboards** consist of **Widgets** – an object with graphical representations of specific data, which can be added, edited, positioned, deleted or modified as you like. Sycope allows users to set up multiple **Dashboards**. 
 
+**Dashboards** can be combined into **groups** depending on the user's needs, and a single one can belong to multiple groups.
 
+**Dashboards** are created and edited in the menu (Dashboard>Management>**Dashboard**).
 
----
-
-# Adding  a Dashboard
-
-
-
-**Dashboards** are created and edited in this menu: [Dashboard>Management>**Dashboard**].
-
-When you enter this menu you will see a table with default and/or previously created user **Dashboards**.
+When you enter this menu you will see a table with default and/or previously created user Dashboards.
 
 The table contains the following fields:
 
-- Select - checkbox button - to select Dashboard for further editing 
-- Favourite - star icon -  to add to favorites
-- Home - home icon - to add to start screen
-- Name - Dashboard name
-- Tags - Dashboard assignment tags
-- Description - short dashboard description
-- Privilege 
-- Shared
-- Created By
-- Creation Time
-- Modified By
-- Modification Time
-- Actions - actions that can be performed on the created dashboard
-  - Export - save a dashboard to a file in json format
-  - Edit - edit a created dashboard
-  - Duplicate - create an editable copy of the dashboard
+- **Select** - checkbox button - to select for further editing 
+- **Favourite** - star icon -  to add to favorites
+- **Home** - home icon - to add to start screen
+- **Name** - unique Dashboard name
+- **Tags** - assigned tags
+- **Description** - short Dashboard description
+- **Privacy** - privacy status icon
+- **Shared** - name of the user who shared the Dashboard
+- **Created By** - name of the user who created the Dashboard
+- **Creation Time** - creation time
+- **Modified By** - name of the user who last modified the Dashboard
+- **Modification Time** - last modification time
+- **In group** -  group/groups to which the Dashboard belongs
+- Actions - actions that can be performed on the created Dashboard
+  - Duplicate - create an editable copy of the Dashboard
+  - Export - save a Dashboard to a file in json format
+  - Edit - edit a created Dashboard
   - Delete - delete a selected Dashboard
 
 

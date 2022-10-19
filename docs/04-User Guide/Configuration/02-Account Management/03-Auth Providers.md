@@ -11,8 +11,10 @@ The list of `Auth Providers`  is contained in a table which has the following co
 - **Status**  
 - **Host**  
 - **Port** 
-- **Domain** -
-- **SSL**  
+- **Domain** 
+- **Security**
+- **Privacy**
+- **Shared**
 - **Actions**
   - **Edit** - edit an existing `User`  
   - **Change** password - change `User` password  
@@ -22,14 +24,18 @@ The list of `Auth Providers`  is contained in a table which has the following co
 
 To add a new `Auth provider`  click **New auth provider** button then fill in the form:
 
-- **Type** - now Ad only
-- **Name** - Ad provider name 
+- **Type** - now AD only
+- **Name** - AD provider name 
 - **Active** switch button  
 - **Host** - host IP address
 - **Port** - service port number  
 - **Domain** - AD domain name
-- **SSL** switch button  
-- **Default role**  
+- **User base dn** 
+- **Group base dn** 
+- **Security**
+  - SSL
+  - TLS
+- **Default role**
 - **Roles map**
   - Ad role
   - System role

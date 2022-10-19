@@ -2,78 +2,22 @@
 description: Rule Sets Tab
 ---
 
-One of the most important components of the Sycope system is alerting functionality. This functionality allows the user to flexibly build **Alerts** based on a number of conditions and rules that operate on the data streams collected by the system.
-
-**Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. These rules can be used as a template from which you can create your own rules. You can also create rules on your own using the wizard.
-
-This menu [Alerts>**Rules Set**] can be used to create a custom `rule` based on the selected Streams and (optional) your own mathematical function. The system includes many of the most useful predefined  `rules`  that you can use right after installing the system.
+The menu [Alerts>**Rules Set**] can be used to create a custom `rule` based on the selected Streams and (optional) your own mathematical function. The system includes many of the most useful predefined  `rules`  that you can use right after installing the system.
 
 
 
 The list of **Rules** is in the table with the following columns:
 
 - **Rule name** - unique **Rule** name
-- **Rule type**   
-- **Tactic**   
-- **Technique**
-- **Score**
-- **Created by**
-- **Creation Time**
-- **Modified By**
-- **Modification Time**
-- **Tags**
-- **Active**
-- **Action**
-  - Edit - edit an existing  Rule
-  - Duplicate - create an editable copy of the selected  Rule
-  - Export - export Rule to json format
-  - Delete - delete
-
----
-
-# Adding custom rule
-
-Alarm rules are created and edited in this menu [Alerts>**Rule Set**].
-
-To add a new **Alert rule**, click on the **New rule** button, then the wizard will appear. 
-
-The rule configuration wizard consists of the following sections:
-
-- **General**
-- **Stream**
-- **Input Filter**
-- **Values**
-- **Categories**
-- **Output filter**
-- **Sorting**
-- **Limit**
-- **Schedule**
-- **Thresholds**
-- **Actions**
-- **Privacy**
-
-
-
-## General section
-
-- **Active/Inactive** switch - Activating or deactivating the current rule.
-
-- **Rule Type** - allows you to assign one of the three alarm types associated with the area you want to alarm.
-
+- **Rule type** - specified by the user
   - Performance,
 
   - Security,
 
   - Visibility.
-
-- Name -  rule name
-
-- Tags - [Configuration>Mapping>**Tags**]
-
-- Description - Description of the rule that can be entered by the user.
-
-- Score, Severity - alarm severity on a scale of 1- 10 where:
-
+- **Tactic** -  specified in MITRE ATT&CK® https://attack.mitre.org
+- **Technique** - specified in MITRE ATT&CK® https://attack.mitre.org
+- **Score** - alert severity on a scale of 1- 10 where:
   - score 1-2  means “info”
 
   - score 3-4 means “low”
@@ -83,184 +27,28 @@ The rule configuration wizard consists of the following sections:
   - score 7-8 means “high”
 
   - Score 9-10 means “critical”
+- **Created by** - name of the user who created the Rule
+- **Creation Time** - creation time
+- **Modified By** - name of the user who last modified the Dashboard
+- **Modification Time** -  last modification time
+- **Tags** - assigned tags
+- **Active** - status active/inactive
+- **Privacy** - privacy status icon
+- **Shared** - name of the user who shared the Rule
+- **Action**
+  - Edit - edit an existing  Rule
+  - Duplicate - create an editable copy of the selected  Rule
+  - Export - export Rule to json format
+  - Delete - delete
 
-  
+---
 
-## Stream section
+To add a new **Alert rule**, click on the **New rule** button and choose one of the methods to create a rule:
 
-Source - data stream used by the rule
+- **From scratch** - you create a rule from scratch based on the built-in wizard,
+- **From template** - you create a rule based on one of the many built-in templates.
 
 
 
-## Filter section
-
-- Query - filter for the selected data stream
-- Time range - the time range on which the rule will operate
-
-
-
-## Values section
-
-- Use Function switch 
-
-  - Aggr
-
-  - Post aggr
-
-  - Field
-
-- Metric - field or metric that will be displayed on the graph
-
-- Agreggation - list of operations to choose 
-
-  - Avi - returns average of field values.
-  - Count - returns count of non empty fields.
-
-  - First - returns value of first field returned.
-
-  - Join - returns concatenated value of fields values.
-
-  - Last - returns value of last field returned.
-
-  - Max - returns maximal value.
-
-  - Min - returns minimal value.
-
-  - Sum - returns sum of values.
-
-
-
-## Categories
-
-- **Agreggation** - list of operations to choose 
-
-  - Avi - returns average of field values.
-
-  - Count - returns count of non empty fields.
-
-
-  - First - returns value of first field returned.
-
-
-  - Join - returns concatenated value of fields values.
-
-
-  - Last - returns value of last field returned.
-
-
-  - Max - returns maximal value.
-
-
-  - Min - returns minimal value.
-
-
-  - Sum - returns sum of values.
-
-- **Use Function** switch - allows the user to use his own function
-
-- **Field** - you can choose from a list: field, metrics, lookup, mapper
-
-
-
-## Output filter
-
-- **Query**- you can create a filter for selected Metrics and Fields in the Values and Categories section. 
-
-## Sorting
-
-Here you can define how to sort the data displayed on the graph.
-
-- Sort field - sorted field
-
-- Sort direction - Asc/Desc - sorting method ascending/descending
-
-  
-
-## Limit
-
-You can specify the resolution and the direction in which the data will be presented.
-
-- Limit buckets switch - It is used to set the limit of values of which the chart will consist
-
-- Limit - limit value
-
-- Show from - field to specify the direction in which the data will be displayed on the chart
-
-  - Head 
-  - Tail
-
-- Show others switch 
-
-  - Others label
-
-    Schedule
-
-In this step you can specify how often the rule will be executed.
-
-- Interval - Set number in units  Min/Hours/Days/Weeks/Months/Years defining the time interval.
-- Throttling in minutes
-- Indexed fields  
-
-
-
-## Thresholds
-
-- Value
-
-  - Minor - select an operator and a value
-  - Major - select an operator and a value
-  - Critical - select an operator and a value
-
-  
-  
-  First the Critical conditions are checked, if these conditions are not met then the Major conditions are checked, and if these conditions are not met then the Minor conditions are checked.
-
-## Actions
-
-- **Type**
-
-  - Index
-    - Index
-      - alerts
-  - Mail
-    - Send mail switch
-    - Recivers
-    - Template
-  - Syslog
-    - Syslog profile
-  - Third party system
-    - External system
-      - MACMON
-    - Instance name
-    - Action name
-
-- Threshold levels
-  - Critical
-  - Major 
-  - Minor
-
-    
-
-## Privacy
-
-
-
-**Privacy** - assigning privileges 
-
-- Private - accessible to the owner
-
-- Public - accessible to all. 
-  - Public permissions
-    - Delete
-    - Edit
-    - Execute
-
-- Shared - accessible to one or more selected roles. Available privileges are:
-  - Delete
-
-  - Edit
-
-  - Execute
-
-  - View
+The **Rule** can also be imported from a file in json format. To do this, use the **Import rule** button.
 

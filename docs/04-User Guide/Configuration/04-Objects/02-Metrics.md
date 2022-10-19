@@ -12,6 +12,20 @@ The list of `metrics` is included in a table with the following columns:
 
 - **Description** -  `metrics`  description entered by user
 
+- **Privacy** - privacy status icon
+
+- **Created By** - name of the user who created the Metric
+
+- **Creation Time** - creation time
+
+- **Modified By** - name of the user who last modified the Metric
+
+- **Modification Time** - last modification time
+
+- **Shared** - name of the user who shared the Metric
+
+- **Used in** - objects in the System where the Metric was used
+
 - **Action**
 
   - Duplicate -  creating an editable copy of the selected  `metric`
@@ -24,17 +38,18 @@ The list of `metrics` is included in a table with the following columns:
 
 To add a new `metric` click “**New metric**” button then the Metrics wizard will appear. In the wizard window there are the following fields:
 
-- **Display name** - name of the metric in the system
+- **Display name** - NQL name
 
 - **Description** - short metric description
 
+- **Display name** - name of the field in the system (user friendly)
+
+
+---
+
 - **Sources** - the data stream (or streams) that will be used to create the metric
 
-  
-
 > When creating a metric, you can add multiple data streams.
-
-
 
 **Use Function** switch - OFF 
 
@@ -54,20 +69,22 @@ To add a new `metric` click “**New metric**” button then the Metrics wizard 
   
   - Min - returns minimal value.
   
+  - Percentile - returns value below a X percentage of data falls.
+  
   - Sum - returns sum of values.
+  
+  - Unique Count - returns countn of unique non empty fields
 
 **Use Function** switch - ON
 
 - **Aggr** - user-created aggregation
 - **Post aggr** - post aggregation that can (not required) be created by the user using the values calculated in the aggregation
 - **Field** - name used in mathematical operations - can be the same as **Display Name**
-- **Custom label** switch
 - **Numbering Format**
   - Currency
   - Date
   - Number
   - Off
-  
 - **Privacy** - you can grant permissions for field
 - Private - accessible to the owner
   - Public - accessible to all. 

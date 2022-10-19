@@ -6,13 +6,25 @@ This menu [Configuration>Mapping>**Lookups**] can be used to create custom Looku
 
 Lookup is querying an additional database , CSV files or it ‘s own database with the specified value in order to map it or complete the data in a netflow session or alert with additional information. **Lookups** create their own fields in the system
 
-The list of created **Lookups**  is in a table with the following columns:
+The **Lookups** created in the system are listed in a table with the following columns:
 
 **Name** - unique lookup name
 
 **Status** - lookup status Active/Inactive
 
-**Type** - Lookup type. There are five predefined types of lookups in the system: Asn, Country, CSV file, CSV file subnet, SNMP Interface.
+**Type** - Lookup type. There are five predefined types of lookups in the system: Asn, Country, CSV file, CSV file subnet, SNMP Interface
+
+**Privacy** - privacy status icon
+
+**Created By** - name of the user who created the lookup
+
+**Modified By** - name of the user who last modified the lookup
+
+**Modification Time** - last modification time
+
+**Shared** - users who shared the object
+
+**Tags** - assigned tags
 
 **Action** 
 
@@ -30,15 +42,14 @@ The list of created **Lookups**  is in a table with the following columns:
 
 As it was written above, the system implements seven predefined types of lookups which are listed in the table below.
 
-| Lookup type     | Input keys | Output keys                                                |
-| :-------------- | :--------- | :--------------------------------------------------------- |
-| Asn             | ip         | as.number, as.org                                          |
-| Compound        |            |                                                            |
-| Country         | ip         | continent.code, continent.name, country.name, country.code |
-| CSV file        |            |                                                            |
-| CSV file subnet |            |                                                            |
-| SNMP Interface  |            |                                                            |
-| Subnet          |            |                                                            |
+| Lookup type    | Input keys | Output keys                                                |
+| :------------- | :--------- | :--------------------------------------------------------- |
+| Asn            | ip         | as.number, as.org                                          |
+| Compound       |            |                                                            |
+| Country        | ip         | continent.code, continent.name, country.name, country.code |
+| CSV file       |            |                                                            |
+| SNMP Interface |            |                                                            |
+| Subnet         |            |                                                            |
 
 ---
 
@@ -47,23 +58,17 @@ Pressing the **New lookup** button starts the wizard to create a **Lookup**.
 For example, to create CSV file type **Lookup**, perform the following steps:
 
 - In the first window, specify the type (see table above)
-
 - Enter a name for the Lookup
-
 - Data file
 
   - Edit csv button 
     - File preview
-
     - Specify Delimeter, Quote Chart and Escape character (Default values are [comma, quotation mark, quotation mark]
-
     - Choose the previously prepared CSV file and load it. Then confirm the operation by pressing the Apply file button.
 
+---
 
-
-
-
-​	**Privacy** - assigning privileges 
+**Privacy** - assigning privileges 
 
 - Privacy - you can grant permissions for field
 
