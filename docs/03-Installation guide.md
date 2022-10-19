@@ -6,6 +6,12 @@ This document describes step by step installation and configuration process of S
 
 For additional resources and information, please visit Sycope LLC website at www.sycope.com.
 
+:::caution
+
+The **2.0.29** version is the lowest version of the **Sycope** from which you can perform **update** to **2.1.0** version.
+
+:::
+
 ## 1. Image download
 
 To download the Sycope system image, log in to the Sycope Portal https://portal.sycope.com. 
