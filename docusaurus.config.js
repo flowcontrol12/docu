@@ -47,9 +47,9 @@ module.exports = {
       typesenseServerConfig: {
         nodes: [
           {
-            host: '3.120.250.128',
-            port: 8108,
-            protocol: 'http',
+            host: 'd3tcn89uq3a6bs.cloudfront.net',
+            port: 443,
+            protocol: 'https',
           },
         ],
         apiKey: 'ybLwdZl0Nxr2M9gzSqRzXwmI',
