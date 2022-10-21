@@ -7,7 +7,7 @@ docker run -p 8108:8108 -v /tmp/typesense:/data typesense/typesense:0.23.1 --dat
 
 Then scrape documentation and populate API
 ```console
-docker run -p 8080:80 -it --env-file=./typesense.env -e "CONFIG=$(cat ./typesense.json | jq -r tostring)" typesense/docsearch-scraper
+docker run -p 8080:8080 -it --env-file=./.env -e "CONFIG=$(cat ./typesense.json | jq -r tostring)" typesense/docsearch-scraper
 ```
 
 # Website
