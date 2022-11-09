@@ -2,8 +2,6 @@
 description: External Destination Tab
 ---
 
-
-
 This menu [Configuration>Integrations>**External Destinations**] can be used to create external destination to which the system will send data.
 
 The list of **External Destinations** is in the table with the following columns:
@@ -17,8 +15,6 @@ The list of **External Destinations** is in the table with the following columns
   - Edit - edit an existing **Email Template**
   - Duplicate - can be used as a template for a new template
   - Delete - delete  Email Templates.
-
-
 
 To add a new **External Destinations** click **New external destinations** button then the **New external destinations** wizard will appear. 
 
