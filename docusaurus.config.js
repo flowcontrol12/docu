@@ -56,6 +56,7 @@ module.exports = {
       },
     },
     colorMode: {
+      defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
     navbar: {
@@ -83,5 +84,10 @@ module.exports = {
   i18n: {
     defaultLocale: 'en-GB',
     locales: ['en-GB']
-  }
+  },
+  stylesheets: [{
+    href: '/css/theme-dark.css',
+    id: 'prime-theme',
+  }],
+  scripts: [ '/js/prime-theme.js' ],
 }
