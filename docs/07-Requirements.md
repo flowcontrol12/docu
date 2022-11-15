@@ -60,11 +60,11 @@ The tables below are lists of required server hardware parameters for desired fl
 
 ---
 
-| Resources for all modules users | Basic   | Small   |
-| ------------------------------- | ------- | ------- |
-| CPU cores                       | 20 pcs. | 40 pcs. |
-| RAM                             | 22 GB   | 44 GB   |
-| Storage                         | 1,25 TB | 2 TB    |
+| Resources for all modules | Basic   | Small   |
+| ------------------------- | ------- | ------- |
+| CPU cores                 | 20 pcs. | 40 pcs. |
+| RAM                       | 22 GB   | 44 GB   |
+| Storage                   | 1,25 TB | 2 TB    |
 
 <br />
 
