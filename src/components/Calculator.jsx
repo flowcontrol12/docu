@@ -4,6 +4,7 @@ import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import React, { useState, useEffect }from 'react';
 import { Button } from 'primereact/button';
+import { Checkbox } from 'primereact/checkbox';
 import { Column } from 'primereact/column';
 import { DataTable } from 'primereact/datatable';
 import { Dropdown } from 'primereact/dropdown';
@@ -35,6 +36,7 @@ export default function Calculator() {
   const [alert, setAlert] = useState();
   const [daily, setDaily] = useState();
   const [values, setValues] = useState([]);
+  const [isPerformance, setIsPerformance] = useState(true)
 
   const reset = () => {
     setValues([
@@ -47,31 +49,16 @@ export default function Calculator() {
     setAlert(300);
     setNetflow(300);
     setFps(optionFps[0].value);
+    setIsPerformance(true);
   }
 
   useEffect(() => reset(), []);
-
-  const retentionTemplate = (rowData) => (
-    <div className="p-inputgroup">
-      <InputNumber
-        value={rowData.retention}
-        onValueChange={(e) => {
-          setValues(values.map(value => {
-            if (value.stream === rowData.stream) {
-              value.retention = e.value
-            }
-            return value;
-          }))
-        }}
-        placeholder="Retention" />
-      <span className="p-inputgroup-addon">{rowData.frame}</span>
-    </div>
-  )
 
   const addMetric = number => formatter.format(metric == 'GB' ? (number / 1000000000) : number) + ' ' + metric;
 
   const calculate = (rowData) => {
     const { stream } = rowData
+    if (stream === 'Aggregations (performance)' && !isPerformance) return 0;
     switch(stream) {
       case 'Netflows':                    return rowData.retention * netflow * parseInt(fps) * 60 * 60;
       case 'Alerts':                      return rowData.retention * alert * daily * 60 * 60;
@@ -79,6 +66,47 @@ export default function Calculator() {
       case 'Aggregations (performance)':  return rowData.retention * aggreagations[stream][fps];
       default: return 0;
     }
+  }
+
+  const checkboxTemplate = (rowData) => {
+    if (rowData.stream !== 'Aggregations (performance)') {
+      return <Checkbox checked={true} disabled></Checkbox>;
+    }
+    return <Checkbox onChange={e => setIsPerformance(e.checked)} checked={isPerformance}></Checkbox>;
+  }
+
+  const streamTemplate = (rowData) => {
+    if (rowData.stream === 'Aggregations (performance)') {
+      return <span style={{ cursor: 'pointer'}} onClick={() => setIsPerformance(!isPerformance)}>{rowData.stream}</span>
+    }
+    return <span>{rowData.stream}</span>
+  }
+
+  const retentionTemplate = (rowData) => {
+    if (rowData.stream === 'Aggregations (performance)' && !isPerformance) {
+      return (
+        <div className="p-inputgroup">
+          <InputNumber value={0} disabled />
+          <span className="p-inputgroup-addon">{rowData.frame}</span>
+        </div>
+      )
+    }    
+    return (
+      <div className="p-inputgroup">
+        <InputNumber
+          value={rowData.retention}
+          onValueChange={(e) => {
+            setValues(values.map(value => {
+              if (value.stream === rowData.stream) {
+                value.retention = e.value
+              }
+              return value;
+            }))
+          }}
+          placeholder="Retention" />
+        <span className="p-inputgroup-addon">{rowData.frame}</span>
+      </div>
+    );
   }
 
   const volumeTemplate = (rowData) => (
@@ -106,14 +134,15 @@ export default function Calculator() {
     <div id="calculator">
       <DataTable value={values} header={header} footer={footer} size="large">
         <Column
-          field="stream"
-          header="Stream"></Column>
+          headerStyle={{ width: '3rem'}}
+          body={checkboxTemplate}></Column>
+        <Column
+          header="Stream"
+          body={streamTemplate}></Column>
         <Column
           header="Retention"
-          field="retention"
           body={retentionTemplate}></Column>
         <Column
-          field="volume"
           header="Volume"
           body={volumeTemplate}></Column>
       </DataTable>
