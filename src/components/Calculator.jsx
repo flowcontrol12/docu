@@ -12,7 +12,18 @@ import { SelectButton } from 'primereact/selectbutton';
 
 const width = '300px';
 const formatter = new Intl.NumberFormat();
-const aggreagations = (fps) => fps == '60000' ? 4000000000 : 3000000000;
+const aggreagations = {
+  'Aggregations (visiblity)': {
+    '120000': 39160000000,
+    '60000': 21929600000,
+    '30000': 12531200000,
+  },
+  'Aggregations (performance)': {
+    '120000': 12332124160,
+    '60000': 4932849664,
+    '30000': 3946279731,
+  }
+}
 
 export default function Calculator() {
   const optionFps = [{ label: 'Medium - 60,000 FPS', value: '60000' }, { label: 'Low - 30,000 FPS', value: '30000' }];
@@ -27,9 +38,10 @@ export default function Calculator() {
 
   const reset = () => {
     setValues([
-      { stream: 'Netflows', retention: 24, frame: 'hours' },
-      { stream: 'Alerts', retention: 720, frame: 'hours' },
-      { stream: 'Aggregations', retention: 90, frame: 'days' },
+      { stream: 'Netflows',                   retention: 24, frame: 'hours' },
+      { stream: 'Alerts',                     retention: 720, frame: 'hours' },
+      { stream: 'Aggregations (visiblity)',   retention: 90, frame: 'days' },
+      { stream: 'Aggregations (performance)', retention: 90, frame: 'days' },
     ]);
     setDaily(100);
     setAlert(300);
@@ -53,23 +65,25 @@ export default function Calculator() {
         }}
         placeholder="Retention" />
       <span className="p-inputgroup-addon">{rowData.frame}</span>
-      {/* <Button style={{width: '60px'}} className="p-button-outlined" label={rowData.frame} /> */}
     </div>
   )
 
+  const addMetric = number => formatter.format(metric == 'GB' ? (number / 1000000000) : number) + ' ' + metric;
+
   const calculate = (rowData) => {
-    let volume = 0;
-    switch(rowData.stream) {
-      case 'Netflows': volume = netflow * parseInt(fps) * 60 * 60 * rowData.retention; break;
-      case 'Alerts': volume = alert * daily * 60 * 60 * rowData.retention; break;
-      case 'Aggregations': volume = rowData.retention * aggreagations(fps); break;
+    const { stream } = rowData
+    switch(stream) {
+      case 'Netflows':                    return rowData.retention * netflow * parseInt(fps) * 60 * 60;
+      case 'Alerts':                      return rowData.retention * alert * daily * 60 * 60;
+      case 'Aggregations (visiblity)':    return rowData.retention * aggreagations[stream][fps];
+      case 'Aggregations (performance)':  return rowData.retention * aggreagations[stream][fps];
+      default: return 0;
     }
-    return metric == 'GB' ? (volume / 1000000000) : volume;
   }
 
   const volumeTemplate = (rowData) => (
     <div className="p-text-right">
-      {formatter.format(calculate(rowData)) + ' ' + metric}
+      {addMetric(calculate(rowData))}
     </div>
   );
 
@@ -83,8 +97,8 @@ export default function Calculator() {
   const total = values.map(calculate).reduce((p, c) => p + c, 0);
   const footer = (
     <div className="p-d-flex p-jc-between">
-      <h3 style={{ color: 'var(--text-color)' }}>TOTAL</h3>
-      <h3 style={{ color: 'var(--text-color)' }}>{formatter.format(total)} {metric}</h3>
+      <h2 style={{ color: 'var(--text-color)' }}>TOTAL</h2>
+      <h2 style={{ color: 'var(--text-color)' }}>{addMetric(total)}</h2>
     </div>
   )
 
@@ -115,31 +129,24 @@ export default function Calculator() {
       {advanced && (
         <div className="p-mt-5">
           <div className="p-field p-grid">
-            <label style={{ width }} className="p-col-fixed">Single Netflow Size</label>
+            <label style={{ width }} className="p-col-fixed">Single Netflow size</label>
             <div className="p-col p-inputgroup">
               <InputNumber placeholder="Single Netflow Size" value={netflow} onValueChange={(e) => setNetflow(e.value)} />
               <span className="p-inputgroup-addon">Bytes</span>
             </div>
           </div>
           <div className="p-field p-grid">
-            <label style={{ width }} className="p-col-fixed">Single Alert Size</label>
+            <label style={{ width }} className="p-col-fixed">Single Alert size</label>
             <div className="p-col p-inputgroup">
               <InputNumber placeholder="Single Alert Size" value={alert} onValueChange={(e) => setAlert(e.value)} />
               <span className="p-inputgroup-addon">Bytes</span>
             </div>
           </div>
           <div className="p-field p-grid">
-            <label style={{ width }} className="p-col-fixed">Daily Alert Number</label>
+            <label style={{ width }} className="p-col-fixed">Daily Alert number</label>
             <div className="p-col p-inputgroup">
               <InputNumber placeholder="Daily Alert Number" value={daily} onValueChange={(e) => setDaily(e.value)} />
-              <span className="p-inputgroup-addon">Per Minute</span>
-            </div>
-          </div>
-          <div className="p-field p-grid">
-            <label style={{ width }} className="p-col-fixed">Aggreagations Per Day</label>
-            <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Aggreagations Per Day" disabled value={aggreagations(fps)} />
-              <span className="p-inputgroup-addon">Bytes</span>
+              <span className="p-inputgroup-addon">Per minute</span>
             </div>
           </div>
         </div>
