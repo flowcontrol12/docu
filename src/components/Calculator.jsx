@@ -20,8 +20,8 @@ const aggreagations = {
     '30000': 12531200000,
   },
   'Aggregations (performance)': {
-    '120000': 12332124160,
-    '60000': 4932849664,
+    '120000': 13811979059,
+    '60000': 5524791624,
     '30000': 3946279731,
   }
 }
@@ -40,10 +40,10 @@ export default function Calculator() {
 
   const reset = () => {
     setValues([
-      { stream: 'Netflows',                   retention: 24, frame: 'hours' },
-      { stream: 'Alerts',                     retention: 720, frame: 'hours' },
-      { stream: 'Aggregations (visiblity)',   retention: 90, frame: 'days' },
-      { stream: 'Aggregations (performance)', retention: 90, frame: 'days' },
+      { stream: 'Netflows',                   retention: 1, frame: 'hours' },
+      { stream: 'Alerts',                     retention: 24, frame: 'hours' },
+      { stream: 'Aggregations (visiblity)',   retention: 1, frame: 'days' },
+      { stream: 'Aggregations (performance)', retention: 1, frame: 'days' },
     ]);
     setDaily(100);
     setAlert(300);
