@@ -42,6 +42,10 @@ module.exports = {
   plugins: ['docusaurus-plugin-sass'],
   themes: ['docusaurus-theme-search-typesense'],
   themeConfig: {
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 6,
+    },
     typesense: {
       typesenseCollectionName: 'sycope',
       typesenseServerConfig: {
