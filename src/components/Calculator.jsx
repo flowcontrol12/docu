@@ -29,7 +29,7 @@ const aggreagations = {
 export default function Calculator() {
   const optionFps = [{ label: 'Medium - 60,000 FPS', value: '60000' }, { label: 'Low - 30,000 FPS', value: '30000' }];
   const optionMetric = [{ label: 'Gigabyte', value: 'GB' }, { label: 'Byte', value: 'B' }];
-  const [advanced, setAdvanced] = useState(true);
+  const [advanced, setAdvanced] = useState(false);
   const [fps, setFps] = useState(optionFps[0].value);
   const [metric, setMetric] = useState(optionMetric[0].value);
   const [netflow, setNetflow] = useState();
