@@ -28,10 +28,10 @@ const aggreagations = {
 
 export default function Calculator() {
   const optionFps = [{ label: 'Medium - 60,000 FPS', value: '60000' }, { label: 'Low - 30,000 FPS', value: '30000' }];
-  const optionMetric = [{ label: 'Gigabyte', value: 'GB' }, { label: 'Byte', value: 'B' }];
+  const optionMetric = [{ label: 'Terabyte', value: 'TB' }, { label: 'Gigabyte', value: 'GB' }, { label: 'Byte', value: 'B' }];
   const [advanced, setAdvanced] = useState(false);
   const [fps, setFps] = useState(optionFps[0].value);
-  const [metric, setMetric] = useState(optionMetric[0].value);
+  const [metric, setMetric] = useState(optionMetric[1].value);
   const [netflow, setNetflow] = useState();
   const [alert, setAlert] = useState();
   const [daily, setDaily] = useState();
@@ -54,7 +54,16 @@ export default function Calculator() {
 
   useEffect(() => reset(), []);
 
-  const addMetric = number => formatter.format(metric == 'GB' ? (number / 1000000000) : number) + ' ' + metric;
+  const addMetric = number => {
+    let value = number;
+    if (metric === 'GB') {
+      value = number / 1000000000;
+    }
+    if (metric === 'TB') {
+      value = number / 1000000000000;
+    }
+    return formatter.format(value) + ' ' + metric;
+  }
 
   const calculate = (rowData) => {
     const { stream } = rowData
