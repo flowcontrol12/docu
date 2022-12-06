@@ -8,11 +8,13 @@
   --ifm-color-primary-lightest: #09092e;
 
   /* custom styles */
+  --ifm-link-color: #0088ae;
   --ifm-navbar-height: 50px;
   --ifm-navbar-background-color: #0d0b20;
   --ifm-navbar-padding-vertical: 8px;
   --ifm-navbar-padding-horizontal: 20px;
   --ifm-navbar-item-padding-vertical: 0;
+
 }
 
 html[data-theme='dark'] {
