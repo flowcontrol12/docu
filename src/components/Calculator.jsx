@@ -79,7 +79,7 @@ export default function Calculator() {
 
   const checkboxTemplate = (rowData) => {
     if (rowData.stream !== 'Aggregations (performance)') {
-      return <Checkbox checked={true} disabled></Checkbox>;
+      return null;
     }
     return <Checkbox onChange={e => setIsPerformance(e.checked)} checked={isPerformance}></Checkbox>;
   }
