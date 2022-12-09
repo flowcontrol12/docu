@@ -194,14 +194,14 @@ export default function Calculator() {
           <div className="p-field p-grid">
             <label style={{ width }} className="p-col-fixed">Deduplication level</label>
             <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Daily Alert Number" value={deduplication} onValueChange={(e) => setDeduplication(e.value)} />
+              <InputNumber placeholder="Deduplication level" value={deduplication} onValueChange={(e) => setDeduplication(e.value)} />
               <span className="p-inputgroup-addon"></span>
             </div>
           </div>
           <div className="p-field p-grid">
             <label style={{ width }} className="p-col-fixed">Visibility Aggregations values’ uniqueness</label>
             <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Daily Alert Number" value={aggreagation} onValueChange={(e) => setAggregation(e.value)} />
+              <InputNumber placeholder="Visibility Aggregations values’ uniqueness" value={aggreagation} onValueChange={(e) => setAggregation(e.value)} />
               <span className="p-inputgroup-addon"></span>
             </div>
           </div>
