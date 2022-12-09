@@ -11,7 +11,7 @@ import { Dropdown } from 'primereact/dropdown';
 import { InputNumber } from 'primereact/inputnumber';
 import { SelectButton } from 'primereact/selectbutton';
 
-const width = '300px';
+const width = '350px';
 const formatter = new Intl.NumberFormat();
 const aggreagations = {
   'Aggregations (visiblity)': {
@@ -30,26 +30,30 @@ export default function Calculator() {
   const optionFps = [{ label: 'Medium - 60,000 FPS', value: '60000' }, { label: 'Low - 30,000 FPS', value: '30000' }];
   const optionMetric = [{ label: 'Terabyte', value: 'TB' }, { label: 'Gigabyte', value: 'GB' }, { label: 'Byte', value: 'B' }];
   const [advanced, setAdvanced] = useState(false);
-  const [fps, setFps] = useState(optionFps[0].value);
   const [metric, setMetric] = useState(optionMetric[1].value);
+  const [fps, setFps] = useState(optionFps[0].value);
   const [netflow, setNetflow] = useState();
   const [alert, setAlert] = useState();
   const [daily, setDaily] = useState();
-  const [values, setValues] = useState([]);
+  const [deduplication, setDeduplication] = useState();
+  const [aggreagation, setAggregation] = useState();
   const [isPerformance, setIsPerformance] = useState(true)
+  const [values, setValues] = useState([]);
 
   const reset = () => {
+    setFps(optionFps[0].value);
+    setNetflow(300);
+    setAlert(300);
+    setDaily(100);
+    setDeduplication(4);
+    setAggregation(2);
+    setIsPerformance(true);
     setValues([
       { stream: 'Netflows',                   retention: 1, frame: 'hours' },
       { stream: 'Alerts',                     retention: 24, frame: 'hours' },
       { stream: 'Aggregations (visiblity)',   retention: 1, frame: 'days' },
       { stream: 'Aggregations (performance)', retention: 1, frame: 'days' },
     ]);
-    setDaily(100);
-    setAlert(300);
-    setNetflow(300);
-    setFps(optionFps[0].value);
-    setIsPerformance(true);
   }
 
   useEffect(() => reset(), []);
@@ -69,9 +73,9 @@ export default function Calculator() {
     const { stream } = rowData
     if (stream === 'Aggregations (performance)' && !isPerformance) return 0;
     switch(stream) {
-      case 'Netflows':                    return rowData.retention * netflow * parseInt(fps) * 60 * 60;
+      case 'Netflows':                    return (rowData.retention * netflow * parseInt(fps) * 60 * 60) / parseInt(deduplication);
       case 'Alerts':                      return rowData.retention * alert * daily * 60 * 60;
-      case 'Aggregations (visiblity)':    return rowData.retention * aggreagations[stream][fps];
+      case 'Aggregations (visiblity)':    return (rowData.retention * aggreagations[stream][fps]) / parseInt(aggreagation);
       case 'Aggregations (performance)':  return rowData.retention * aggreagations[stream][fps];
       default: return 0;
     }
@@ -185,6 +189,20 @@ export default function Calculator() {
             <div className="p-col p-inputgroup">
               <InputNumber placeholder="Daily Alert Number" value={daily} onValueChange={(e) => setDaily(e.value)} />
               <span className="p-inputgroup-addon">Per minute</span>
+            </div>
+          </div>
+          <div className="p-field p-grid">
+            <label style={{ width }} className="p-col-fixed">Deduplication level</label>
+            <div className="p-col p-inputgroup">
+              <InputNumber placeholder="Daily Alert Number" value={deduplication} onValueChange={(e) => setDeduplication(e.value)} />
+              <span className="p-inputgroup-addon"></span>
+            </div>
+          </div>
+          <div className="p-field p-grid">
+            <label style={{ width }} className="p-col-fixed">Visibility Aggregations values’ uniqueness</label>
+            <div className="p-col p-inputgroup">
+              <InputNumber placeholder="Daily Alert Number" value={aggreagation} onValueChange={(e) => setAggregation(e.value)} />
+              <span className="p-inputgroup-addon"></span>
             </div>
           </div>
         </div>
