@@ -1,3 +1,45 @@
+:::info
+
+**We require/recommend the following:**
+
+- Set the active time-out setting for flows to 60 seconds (mandatory)
+- Set the inactive time-out setting for flows to 15 seconds (mandatory)
+- Synchronize devices with an NTP source (mandatory)
+- Configure devices that support NetFlow with no aggregation. Sycope recommends that you configure Netflow with no sampling if possible
+- Configure devices that support sFlow with the lowest possible sampling rate
+- When you use NetFlow v5, make sure to add the *ip route-cache flow* (or appropriate) command for all active interfaces and VLANs (sub interfaces) in addition to the ones you regularly use. NetFlow v5 is typically ingress only, you can calculate egress only by aggregating ingress from the opposing interfaces.
+- NetFlow v9 supports ingress and egress NetFlow. Sycope recommends *ip flow ingress* on all interfaces. Mixing ingress and egress on multiple interfaces and a single device is not recommended.
+
+:::
+
+:::info
+
+**The Sycope does not use the field:**
+
+`DIRECTION  61  1  Flow direction: 0 - ingress flow, 1 - egress flow`
+
+**Source:** https://www.cisco.com/en/US/technologies/tk648/tk362/technologies_white_paper09186a00800a3db9.html
+
+:::note
+
+**Ingress vs. Egress Differences**
+
+NetFlow v9 Ingress is collected on traffic going into (i.e. inBound) an interface. This is how NetFlow v5 collects data. To figure out outBound traffic volume, ingress must be collected on all interfaces and the reporting software then displays outbound traffic. What goes in must go out, right? Ya, usually.
+
+NetFlow v9 Egress is collected on traffic going out (i.e. outBound) of an interface. Generally, it is used in combination with Ingress, but it doesn’t have to be.
+
+NetFlow v9 supports ingress and egress NetFlow. In most installations, ingress flows enabled on all the interfaces of the switch or router will deliver on the information we need. Here are a few reasons to use Egress Flows:
+
+In WAN compression environments (e.g. Cisco WAAS, Riverbed, etc.), we need to see traffic after it was compressed. Using Ingress flows causes an over stated outbound utilization on the WAN interface. Egress flows are calculated after compression.
+
+In multicast environments, ingress multicast flows have a destination interface of 0 because the router doesn’t know what interface they will go out until after it processes the datagrams. Exporting egress flows delivers the destination interface and as a result multiple flows are exported if the flow is headed for multiple interfaces.
+
+When exporting NetFlow on only one interface of the router or switch. Enabling both on a single interface means that all traffic in and out is exported in NetFlow datagrams.
+
+**Source :** https://kb.paessler.com/en/topic/20823-what-are-the-right-netflow-settings-ingress-vs-egress
+
+:::
+
 ## Collector hardware requirements
 
 The tables below are lists of required server hardware parameters for desired flow limits.

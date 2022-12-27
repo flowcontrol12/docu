@@ -134,9 +134,9 @@ In this step, the graph parameters are defined.
 
 #### *Limit*
 
-- Hide if too much records - resolution limit (points on the chart), after exceeding the message set in the Message field (*Message if too much records* )  will be displayed. 
+- Hide if too many records - resolution limit (points on the chart), after exceeding the message set in the Message field (*Message if too many records* )  will be displayed. 
   - Limit - limit value
-  - Message if too much records - message when *Limit* value is exceeded
+  - Message if too many records - message when the *Limit* value is exceeded
 
 ---
 
@@ -234,7 +234,7 @@ Tab for configuring graph axes, where the *Value axes* area corresponds to the y
 - **Public** - accessible to all but You can grand permission:
   - **DELETE**
   - **EDIT**
-- **Shared** - accessible to one or more selected roles. Available privileges are:
+- **Shared** - accessible to one or more selected User roles. Available privileges are:
   - **Delete**
   - **Edit**
   - **View**
@@ -283,7 +283,7 @@ Available by clicking ![image-20221202112041813](assets/image-20221202112041813.
      - Prc
      - Sum
    
-   - **Margin(%)** - percentage deviation for the calculated value
+   - **Deviation(%)** - percentage deviation for the calculated value
    
 - **Range area** - two values are determined - a "tunnel" is created between them on the graph
 
@@ -294,11 +294,11 @@ Available by clicking ![image-20221202112041813](assets/image-20221202112041813.
      - Prc
      - Sum
 
-   - **Area ceiling margin (%)** - percentage deviation for the ceil calculated value
+   - **Top deviation(%)** - percentage deviation for the ceil calculated value
 
-   - **Area floor function** - measure used to determine the floor threshold value
+   - **Bottom deviation function** - measure used to determine the floor threshold value
 
-   - **Area floor margin (%)** - percentage deviation for the ceil calculated value
+   - **Bottom deviation(%)** - percentage deviation for the ceil calculated value
 
 
 
@@ -423,9 +423,9 @@ Available by clicking ![image-20221202111441566](assets/image-20221202111441566.
    - **Line Margin(%)** - percentage deviation for the calculated value
 
 - **Range area** - two values are determined - a "tunnel" is created between them on the graph
-- **Area ceiling margin (%)** - percentage deviation for the ceil calculated value
+- **Top deviation(%)** - percentage deviation for the ceil calculated value
   
-- **Area floor margin (%)** - percentage deviation for the ceil calculated value
+- **Bottom deviation(%)** - percentage deviation for the ceil calculated value
 
 
 
@@ -529,9 +529,9 @@ Available by clicking ![image-20221202111441566](assets/image-20221202111441566.
       
 - **Display name** - name of the Field/Metric that will be shown on the chart, it can be changed with the **Use Custom** switch
 - **Filtered by**
-  - **Field** -  here select **Field** or **Metric** for previously selected **Source**
-  - **Operator** - here choose a mathematical operator for example =, != , > ....
-  - **Value** - here enter the value 
+  - **Field** -  here, select **Field** or **Metric** for the previously selected **Source**
+  - **Operator** - here, choose a mathematical operator, for example =, != , > ....
+  - **Value** - here, enter the value 
   - **Query Builder** - using this option, you can create your own advanced filter using the **Query Builder** wizard
 
 
@@ -546,7 +546,7 @@ Available by clicking ![image-20221202111441566](assets/image-20221202111441566.
 
 ### Scatter {#Scatter}
 
-[Back to widgets list](#widgets-add)
+[Back to the widgets list](#widgets-add)
 
 ### Bar {#Bar}
 

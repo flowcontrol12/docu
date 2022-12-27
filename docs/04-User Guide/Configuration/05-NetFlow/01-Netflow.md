@@ -16,36 +16,63 @@ In this menu, enter the port number for the NetFlow (**Netflow Port**), the defa
 
 ## Advanced mode
 
+Available when the **Show advanced options switch** is activated.
+
 **Netflow Ports** - the default port is 2055. You can change it or add a new port by pressing the plus button.
 
-**New profile** - with this button you can add a new Netflow profile. When creating it you have to complete the following elements:
+---
+
+### Traffic profiles
+
+**New profile** - you can add a new Netflow profile with this button. When creating it, you have to complete the following elements:
 
 - **Name** - profile name.
+
 - **Source type**
   - **asa**
   - **default**
   - **nbox**
+  
+- **Select custom fields** - here you can select from the table custom Netflow fields.
+
 - **Apply to exporters** - here you can assign a profile to the exporter.
-- **Select non-standard fields** - here you can select non-standard Netflow fields.
+
+  
 
 The list of created **Profiles** is in the table with the following columns:
 
 - **Profile** - profile name.
 - **Type** - exporter type [**default**, **asa**, **nbox**].
-- **Exporters IP** - exporter ip adress.
+- **Exporters IP** - exporter IP address.
 - **Action**
   - Edit - edit selected **Profile**.
-  - Delete - delete selected **Profile**.
+  - Delete - delete the selected **Profile**.
 
-**Add exporter** - you can add an exporter.
+---
 
-![image-20221108114643380](Netflow_assets/image-20221108114643380.png)
+### Exporters IP
 
-The **Add exporter** section lists exporters with provided NetFlow templates and NetFlow fields.
+**Add exporter** - here you can manually add an exporter.  After clicking, a new row will be added to the table where you need to complete the **IP address** and assign Trafic profiles. 
 
-![image-20221109142047764](Netflow_assets/image-20221109142047764.png)
+![image-20221214092320005](assets_01-Netflow/image-20221214092320005.png)
 
-![image-20221109142201952](Netflow_assets/image-20221109142201952.png)
+After completing and pressing the **Save** button new exporter will be added to the System.
+
+![image-20221214093119222](assets_01-Netflow/image-20221214093119222.png)
+
+
+
+---
+
+### Custom fields
+
+
+
+
+
+---
+
+### Custom pre aggrs
 
 ---
 
