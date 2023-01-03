@@ -1,3 +1,7 @@
+---
+description: Diagnostic Tab
+---
+
 In this menu [Configuration>General Settings >**Diagnostics**] there are several network tools.
 
 
