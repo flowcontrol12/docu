@@ -51,18 +51,17 @@ In the wizard window, there are the following fields:
 
 ---
 
-- **Privacy** - you can grant permissions for **Report filter**
-  
+- **Privacy** - you can grant permissions for a **Report filter**
   - **Private** - accessible to the owner
-  - **Public** - accessible to all but You can grant permission:
+  - **Public** - visible to all, but You can grant permission:
     - **DELETE**
     - **EDIT**
-  - **Shared** - accessible to one or more selected roles. Available privileges are:
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
     - **Delete**
     - **Edit**
     - **View**
-  
-  
+
+
 
 
 

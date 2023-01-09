@@ -42,7 +42,9 @@ To add a Dashboard, click on the **Add Dashboard** button. A blank table with fo
 To configure the Dashboard, fill in the fields available after clicking  Preferences.
 
 - Name - Dashboard name
+
 - Description - short dashboard description
+
 - Tag - you can add tags related to the Dashboard being created
 
 - **Grid config** **section** - to configure the grid on which Widgets will be placed
@@ -51,6 +53,7 @@ To configure the Dashboard, fill in the fields available after clicking  Prefere
   - Compact
     - None/Horizontal/vertical
   - Disable animations switch
+  
 - **Print config section** 
   - Type
     - Standard 
@@ -58,16 +61,21 @@ To configure the Dashboard, fill in the fields available after clicking  Prefere
       - Format  - page size
       - Orientation - page orientation - Landscape/Portrait
       - DPI - resolution in DPI
-- **Privacy**
+  
+- **Privacy** - you can grant permissions for a **Dashboard**
+  
   - **Private** - accessible to the owner
-  - **Public** - accessible to all
-  - **Shared** - accessible to one or more selected roles. Available privileges are:
-    - Delete
+  
+  
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
 
-    - Edit
-    - Execute
-
-    - View
+  
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**
 
 
 To complete a configuration and save a Dashboard, click **Submit and close** button.

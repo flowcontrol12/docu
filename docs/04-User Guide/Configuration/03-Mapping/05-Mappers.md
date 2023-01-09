@@ -28,18 +28,15 @@ The **Mappers** created in the system are listed in a table with the following c
 To add a new mapper click **New mapper** button. After clicking on the button, a configuration window appears with the following fields:
 
 - **Display name** - Mapper name
-
 - **Match method** 
 
   - Bit masked number
   - Equals
   - Regular expression
-
 - **Match method**  
 
   - All
   - First
-
 - **Items**
   - Edit csv button 
     - File preview
@@ -48,28 +45,16 @@ To add a new mapper click **New mapper** button. After clicking on the button, a
 
     - Choose the previously prepared CSV file and load it. Then confirm the operation by pressing Apply file button.
 
-  
 
 - **Privacy** - assigning privileges 
 
-  - Private - accessible to the owner
+  - **Private** - accessible to the owner
 
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
 
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
-
-    - Edit
-
-    - Execute
-
-    - View
-
-
-
-
-
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**

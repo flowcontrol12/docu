@@ -51,28 +51,25 @@ To add a new `Field` click **Add field** button then the field wizard will appea
 ---
 
 - **Mappers** - you can add mappers from the list available to map field values
-
 - **Number Formatting**
   
   - Currency
   - Date
   - Number
   - Off
-  
-- **Privacy** - you can grant permissions for field
 
-  - Private - accessible to the owner
-  - Public - accessible to all
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
+- **Privacy** - assigning privileges 
 
-    - Edit
+  - **Private** - accessible to the owner
 
-    - Execute
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
 
-    - View
-
-  
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**
 
 
 

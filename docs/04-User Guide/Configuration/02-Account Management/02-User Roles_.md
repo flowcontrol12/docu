@@ -94,16 +94,11 @@ In this section, you can assign **Users** to **User Roles**.
 ## Privacy
 
 **Privacy** - you can grant permissions for a User Role
-
 - **Private** - accessible to the owner
-
 - **Public** - visible to all, but You can grant permission:
-
 - - **DELETE**
   - **EDIT**
-
 - Shared - accessible to one or more selected **User roles**. Available privileges are:
-
 - - **Delete**
   - **Edit**
   - **View**

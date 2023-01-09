@@ -20,25 +20,17 @@ To configure the FTP server, you need to fill in a form consisting of the follow
 
 ---
 
-**Privacy** - assigning privileges to the **FTP server**.
-
+**Privacy** - assigning privileges 
 - **Private** - accessible to the owner
-
-- **Public** - accessible to all but You can grant permission:
+- **Public** - visible to all, but You can grant permission:
   - **DELETE**
   - **EDIT**
-- **Shared** - accessible to one or more selected User roles. Available privileges are:
+- Shared - accessible to one or more selected **User roles**. Available privileges are:
   - **Delete**
   - **Edit**
   - **View**
 
-
-
- 
-
-
-
-![image-20221227110510567](assets_06-FTP/image-20221227110510567.png)
+ ![image-20221227110510567](assets_06-FTP/image-20221227110510567.png)
 
 
 

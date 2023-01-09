@@ -29,6 +29,7 @@ To add a new `Alert field` click **New alert field** button then the alert field
 - **Use Function switch** - allows to enable a mode that allows you to use your own expression to create the field 
 
 - **Field** - field selected from the list of fields available in the selected Data stream
+
 - **Aggregation** - you can choose one of the functions: 
 
   - Avg - returns average of field values.
@@ -51,25 +52,24 @@ To add a new `Alert field` click **New alert field** button then the alert field
   - Number
   - Off
 
-- **Privacy** - you can grant permissions for field.
+- **Privacy** - assigning privileges 
 
-  - Private - accessible to the owner
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
+  - **Private** - accessible to the owner
 
-    - Edit
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
 
-    - Execute
-
-    - View
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**
 
 
+> 
+>
 > At the bottom of the form there is information on which alarm uses created **Alert field**
+> 
 
 
 
