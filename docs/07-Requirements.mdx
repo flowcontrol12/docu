@@ -12,33 +12,7 @@
 
 :::
 
-:::info
 
-**The Sycope does not use the field:**
-
-`DIRECTION  61  1  Flow direction: 0 - ingress flow, 1 - egress flow`
-
-**Source:** https://www.cisco.com/en/US/technologies/tk648/tk362/technologies_white_paper09186a00800a3db9.html
-
-:::note
-
-**Ingress vs. Egress Differences**
-
-NetFlow v9 Ingress is collected on traffic going into (i.e., inBound) an interface. This is how NetFlow v5 collects data. To figure out outBound traffic volume, ingress must be collected on all interfaces, and the reporting software then displays outbound traffic. What goes in must go out, right? Ya, usually.
-
-NetFlow v9 Egress is collected on traffic going out (i.e., outBound) of an interface. Generally, it is used in combination with Ingress, but it doesn’t have to be.
-
-NetFlow v9 supports ingress and egress NetFlow. In most installations, ingress flows enabled on all the interfaces of the switch or router will deliver on the information we need. Here are a few reasons to use Egress Flows:
-
-In WAN compression environments (e.g., Cisco WAAS, Riverbed, etc.), we need to see traffic after it was compressed. Using Ingress flows causes an over stated outbound utilization on the WAN interface. Egress flows are calculated after compression.
-
-In multicast environments, ingress multicast flows have a destination interface of 0 because the router doesn’t know what interface they will go out until after it processes the datagrams. Exporting egress flows delivers the destination interface, and as a result, multiple flows are exported if the flow is headed for multiple interfaces.
-
-When exporting NetFlow on only one interface of the router or switch. Enabling both on a single interface means that all traffic in and out is exported in NetFlow datagrams.
-
-**Source:** https://kb.paessler.com/en/topic/20823-what-are-the-right-netflow-settings-ingress-vs-egress
-
-:::
 
 ## Collector hardware requirements
 
@@ -54,15 +28,15 @@ The tables below are lists of required server hardware parameters for desired fl
 
 
 
-| Base OS     | Basic                                                  | Small                                                  | Medium                                             | Big                                                |
-| ----------- | ------------------------------------------------------ | ------------------------------------------------------ | -------------------------------------------------- | -------------------------------------------------- |
-| CPU cores   | 22 pcs.                                                | 36 pcs.                                                | 48 pcs.                                            | 64 pcs.                                            |
-| RAM         | 22 GB                                                  | 36 GB                                                  | 48 GB                                              | 96 GB                                              |
-| **Storage** |                                                        |                                                        |                                                    |                                                    |
-| OS disk     | 128 GB (recommended SSD drives)                        | 128 GB (recommended SSD drives)                        | 128 GB (SSD disks required)                        | 128 GB (SSD disks required)                        |
-| Data disk   | at the customer's discretion* (recommended SSD drives) | at the customer's discretion* (recommended SSD drives) | at the customer's discretion* (SSD disks required) | at the customer's discretion* (SSD disks required) |
+| Base OS     | Basic                                                 | Small                                                 | Medium                                             | Big                                                |
+| ----------- | ----------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| CPU cores   | 22 pcs.                                               | 36 pcs.                                               | 48 pcs.                                            | 64 pcs.                                            |
+| RAM         | 22 GB                                                 | 36 GB                                                 | 48 GB                                              | 96 GB                                              |
+| **Storage** |                                                       |                                                       |                                                    |                                                    |
+| OS disk     | 128 GB (recommended SSD disks)                        | 128 GB (recommended SSD disks )                       | 128 GB (SSD disks required)                        | 128 GB (SSD disks required)                        |
+| Data disk   | at the customer's discretion* (recommended SSD disks) | at the customer's discretion* (recommended SSD disks) | at the customer's discretion* (SSD disks required) | at the customer's discretion* (SSD disks required) |
 
-**\*** the number of disks is strictly dependent on the needs and requirements of the user in terms of storage time for various types of data and the amount of traffic generated by the analyzed network infrastructure
+**\*** size of the Data Disk is is strictly dependent on the needs and requirements of the user in terms of storage time for various types of data and the amount of traffic generated by the analyzed network infrastructure
 
 ---
 
