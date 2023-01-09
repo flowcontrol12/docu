@@ -27,21 +27,18 @@ To add a new Ranges click “**Add ranges**” button. After clicking on the but
 
 Using the **Add range** button multiple number of ranges can be added as required.
 
+- **Privacy** - assigning privileges 
 
+  - **Private** - accessible to the owner
 
-- **Privacy** - you can grant permissions for **range**
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
 
-  - Private - accessible to the owner
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
-    - Edit
-    - Execute
-    - View
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**
 
 
 

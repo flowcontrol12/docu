@@ -59,24 +59,17 @@ To add a new **Business Hours** click  **New business Hours**  button then the w
 
 - **Advanced mode**
   - Select days of the week with the start and end time for each
-
 - **Select color**
 
 - **Privacy** - assigning privileges 
 
-  - Private - accessible to the owner
+  - **Private** - accessible to the owner
 
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
 
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
-
-    - Edit
-
-    - Execute
-
-    - View
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**

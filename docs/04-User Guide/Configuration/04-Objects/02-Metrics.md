@@ -85,21 +85,19 @@ To add a new `metric` click “**New metric**” button then the Metrics wizard 
   - Date
   - Number
   - Off
-- **Privacy** - you can grant permissions for field
-- Private - accessible to the owner
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
-  
-  - Edit
-  
-  - Execute
-  
-  - View
+
+- **Privacy** - assigning privileges 
+
+  - **Private** - accessible to the owner
+
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
+
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**
 
 
 

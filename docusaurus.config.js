@@ -44,7 +44,7 @@ module.exports = {
   themeConfig: {
     tableOfContents: {
       minHeadingLevel: 2,
-      maxHeadingLevel: 6,
+      maxHeadingLevel: 3,
     },
     typesense: {
       typesenseCollectionName: 'sycope',

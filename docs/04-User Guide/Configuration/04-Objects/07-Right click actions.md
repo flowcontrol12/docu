@@ -24,21 +24,14 @@ The list of **Right click actions** is in the table with the following columns:
 To add a new  **Right click actions** click **New right click actions** button then the wizard will appear. In the wizard window there are the following fields:
 
 - **Name** - name of the  **Right click actions**
-
 - **URL** -  **Right click actions** external link
 
 - **Privacy** - assigning privileges 
-- Private - accessible to the owner
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
-  
-  - Edit
-  
-  - Execute
-  
-  - View
+  - **Private** - accessible to the owner
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**

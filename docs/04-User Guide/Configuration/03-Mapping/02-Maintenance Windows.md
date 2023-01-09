@@ -31,24 +31,18 @@ To add a new **Maintenance Window** click  **New Maintenance Window**  button th
   - End after
     - occurences
   - End by - end date
-
 - **Select color**
 
 - **Privacy** - assigning privileges 
-  - Private - accessible to the owner
 
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
+  - **Private** - accessible to the owner
 
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
+  - **Public** - visible to all, but You can grant permission:
+    - **DELETE**
+    - **EDIT**
 
-    - Edit
-
-    - Execute
-
-    - View
+  - Shared - accessible to one or more selected **User roles**. Available privileges are:
+    - **Delete**
+    - **Edit**
+    - **View**
 

@@ -1,88 +1,84 @@
+:::info
+
+**We require/recommend the following:**
+
+- Set the active time-out setting for flows to 60 seconds (mandatory)
+- Set the inactive time-out setting for flows to 15 seconds (mandatory)
+- Synchronize devices with an NTP source (mandatory)
+- Configure devices that support NetFlow with no aggregation. Sycope recommends that you configure Netflow with no sampling if possible
+- Configure devices that support sFlow with the lowest possible sampling rate
+- When you use NetFlow v5, make sure to add the *ip route-cache flow* (or appropriate) command for all active interfaces and VLANs (sub interfaces) in addition to the ones you regularly use. NetFlow v5 is typically ingress only, you can calculate egress only by aggregating ingress from the opposing interfaces.
+- NetFlow v9 supports ingress and egress NetFlow. Sycope recommends *ip flow ingress* on all interfaces. Mixing ingress and egress on multiple interfaces and a single device is not recommended.
+
+:::
+
+:::info
+
+**The Sycope does not use the field:**
+
+`DIRECTION  61  1  Flow direction: 0 - ingress flow, 1 - egress flow`
+
+**Source:** https://www.cisco.com/en/US/technologies/tk648/tk362/technologies_white_paper09186a00800a3db9.html
+
+:::note
+
+**Ingress vs. Egress Differences**
+
+NetFlow v9 Ingress is collected on traffic going into (i.e., inBound) an interface. This is how NetFlow v5 collects data. To figure out outBound traffic volume, ingress must be collected on all interfaces, and the reporting software then displays outbound traffic. What goes in must go out, right? Ya, usually.
+
+NetFlow v9 Egress is collected on traffic going out (i.e., outBound) of an interface. Generally, it is used in combination with Ingress, but it doesn’t have to be.
+
+NetFlow v9 supports ingress and egress NetFlow. In most installations, ingress flows enabled on all the interfaces of the switch or router will deliver on the information we need. Here are a few reasons to use Egress Flows:
+
+In WAN compression environments (e.g., Cisco WAAS, Riverbed, etc.), we need to see traffic after it was compressed. Using Ingress flows causes an over stated outbound utilization on the WAN interface. Egress flows are calculated after compression.
+
+In multicast environments, ingress multicast flows have a destination interface of 0 because the router doesn’t know what interface they will go out until after it processes the datagrams. Exporting egress flows delivers the destination interface, and as a result, multiple flows are exported if the flow is headed for multiple interfaces.
+
+When exporting NetFlow on only one interface of the router or switch. Enabling both on a single interface means that all traffic in and out is exported in NetFlow datagrams.
+
+**Source:** https://kb.paessler.com/en/topic/20823-what-are-the-right-netflow-settings-ingress-vs-egress
+
+:::
+
 ## Collector hardware requirements
 
 The tables below are lists of required server hardware parameters for desired flow limits.
 
 
 
-|                             | Basic                 | Small                 |
-| --------------------------- | :-------------------- | --------------------- |
-| Max number of flows         | 30k flow/s            | 60k flow/s            |
-| Max number of data  sources | unlimited             | unlimited             |
-| Supported VM Systems        | VMWare 6.5 and higher | VMWare 6.5 and higher |
+|                             | Basic                           | Small                           | Medium                          | Big                             |
+| --------------------------- | :------------------------------ | ------------------------------- | ------------------------------- | ------------------------------- |
+| Max number of flows         | 30k flow/s                      | 60k flow/s                      | 120k flow/s                     | 250k flow/s                     |
+| Max number of data  sources | unlimited                       | unlimited                       | unlimited                       | unlimited                       |
+| Supported VM Systems        | VMWare 7 and higher recommended | VMWare 7 and higher recommended | VMWare 7 and higher recommended | VMWare 7 and higher recommended |
 
 
 
-| Base OS **\*** | Basic  | Small   |
-| -------------- | ------ | ------- |
-| CPU cores      | 8 pcs. | 16 pcs. |
-| RAM            | 16 GB  | 32 GB   |
-| **Storage**    |        |         |
-| OS disk        | 128 GB | 128 GB  |
-| Data disk      | 300 GB | 600 GB  |
+| Base OS     | Basic                                                  | Small                                                  | Medium                                             | Big                                                |
+| ----------- | ------------------------------------------------------ | ------------------------------------------------------ | -------------------------------------------------- | -------------------------------------------------- |
+| CPU cores   | 22 pcs.                                                | 36 pcs.                                                | 48 pcs.                                            | 64 pcs.                                            |
+| RAM         | 22 GB                                                  | 36 GB                                                  | 48 GB                                              | 96 GB                                              |
+| **Storage** |                                                        |                                                        |                                                    |                                                    |
+| OS disk     | 128 GB (recommended SSD drives)                        | 128 GB (recommended SSD drives)                        | 128 GB (SSD disks required)                        | 128 GB (SSD disks required)                        |
+| Data disk   | at the customer's discretion* (recommended SSD drives) | at the customer's discretion* (recommended SSD drives) | at the customer's discretion* (SSD disks required) | at the customer's discretion* (SSD disks required) |
 
-**\*** Minimum requirements for Proof of Concept. Any production environment requires additional resources based on number and types of modules 
-
----
-
-**Resources for licensed modules**  
-
-
-
-| VISIBILITY  module | Basic      | Small      |
-| ------------------ | ---------- | ---------- |
-| CPU cores          | +8 pcs.    | +16 pcs.   |
-| RAM                | +2 GB      | +4 GB      |
-| **Storage**        |            |            |
-| Data disk          | 450 GB     | 900 GB     |
-| LAN Interfaces     | 2x1 Gbit/s | 2x1 Gbit/s |
-|                    |            |            |
+**\*** the number of disks is strictly dependent on the needs and requirements of the user in terms of storage time for various types of data and the amount of traffic generated by the analyzed network infrastructure
 
 ---
 
-| SECURITY module | Basic                  | Small                  |
-| --------------- | ---------------------- | ---------------------- |
-| CPU cores       | +2 pcs.                | +4 pcs.                |
-| RAM             | +2 GB                  | +4 GB                  |
-| **Storage**     |                        |                        |
-| Data disk       | customer specification | customer specification |
-| LAN Interfaces  | 2x1 Gbit/s             | 2x1 Gbit/s             |
-|                 |                        |                        |
-
----
-
-| PERFORMANCE module | Basic                  | Small                  |
-| ------------------ | ---------------------- | ---------------------- |
-| CPU cores          | +2 pcs.                | +4 pcs.                |
-| RAM                | +2 GB                  | +4 GB                  |
-| **Storage**        |                        |                        |
-| Data disk          | customer specification | customer specification |
-| LAN Interfaces     | 2x1 Gbit/s             | 2x1 Gbit/s             |
-
----
-
-| Resources for all modules | Basic   | Small   |
-| ------------------------- | ------- | ------- |
-| CPU cores                 | 20 pcs. | 40 pcs. |
-| RAM                       | 22 GB   | 44 GB   |
-| Storage                   | 1,25 TB | 2 TB    |
-
-<br />
-
-<br />
-
-:::tip
+:::info
 
 
-While we do our best to represent the data as fairly and accurately as possible (interal tests), your environment may experience different limits.
+While we do our best to represent the data as fairly and accurately as possible (internal tests), your environment may experience different limits.
 
-1. Raw estimate is that ~60k fps should generate around 300 GB/day.
-2. In custom dashboard configurations we recommend to add (best performance) up to 12 widgets per single dashboard.
-3. Software image has by default : 128GB System and 128GB Data plus default retention policy configured. Please modify those before any production installation. 					
+1. We conducted performance tests using the latest generation processors with clock speeds above 3.5 GHz.
+2. In custom dashboard configurations, we recommend to add (best performance) up to 12 widgets per single dashboard.
+3. Software image has by default: 128GB System and 128GB Data plus default retention policy configured. Please modify those before any production installation. 					
 :::
 
 ## Probe hardware requirements 
 
-Probe is available as a license for Virtual or Hardware Appliance. The performance of the Probe depends on the hardware resources. Please see below the requirements depends on the traffic through out to monitor: 
+The probe is available as a license for Virtual or Hardware Appliances. The performance of the Probe depends on the hardware resources. Please see below the requirements depending on the traffic through out to monitor: 
 
 | Traffic           | < 100 Mbps | Between 100 Mbps and 1 Gbps | Between 1 and 10 Gbps | Above 10 Gbps     |
 | ----------------- | ---------- | --------------------------- | --------------------- | ----------------- |
@@ -97,9 +93,9 @@ Probe is available as a license for Virtual or Hardware Appliance. The performan
 
 ### Retention calculator
 
-:::danger
+:::caution
 
-**Under development !!!** Please do not use the **calculator** yet.
+We have done our best to make the calculator as close as possible to the real environment, but you should remember that this is only an estimation. **Please use it with caution.**
 
 :::
 

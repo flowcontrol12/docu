@@ -70,22 +70,14 @@ For example, to create CSV file type **Lookup**, perform the following steps:
 
 **Privacy** - assigning privileges 
 
-- Privacy - you can grant permissions for field
-
-  - Private - accessible to the owner
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
-
-    - Edit
-
-    - Execute
-
-    - View
+- **Private** - accessible to the owner
+- **Public** - visible to all, but You can grant permission:
+  - **DELETE**
+  - **EDIT**
+- Shared - accessible to one or more selected **User roles**. Available privileges are:
+  - **Delete**
+  - **Edit**
+  - **View**
 
 
 
