@@ -32,7 +32,7 @@
 
 ---
 
-- Added support for 120 fps and 250 fps.
+- Added support for 120k fps and 250k fps.
   
 - Added options to backup data and system settings.
   
