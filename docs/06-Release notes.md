@@ -1,6 +1,6 @@
 # Release notes
 
-### ver. 2.2.0
+### ver. 2.2.1
 
 - Added Baseline (dynamic threshold) functionality that allows the user to compare the same metric/field at different time offsets on a single **Widget** to perform comparative analysis in different time windows.
 
