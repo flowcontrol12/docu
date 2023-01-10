@@ -56,7 +56,7 @@ module.exports = {
             protocol: 'https',
           },
         ],
-        apiKey: 'H4D37xPCcJPAUgYnpN6eRFeP0jkGmoY5',
+        apiKey: 'D5NUrSaftlDWzLgbuMjsnMhufGk1I8D4',
       },
     },
     colorMode: {
