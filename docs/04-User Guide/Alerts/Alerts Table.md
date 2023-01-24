@@ -5,7 +5,7 @@ One of the most important components of the Sycope system is alerting functional
 
 **Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. These rules can be used as a template from which you can create your own rules. You can also create rules on your own using the wizard.
 
-In this menu [Alerts>**Alerts Table**] there is a table with a list of all the alarms that are included in the system. Within each Alarm is a column of fields which, depending on user preference, can be made visible. This are listed below.
+In this menu [Alerts>**Alerts Table**] there is a table with a list of all the alarms that are included in the system. Within each Alarm is a column of fields which, depending on user preference, can be made visible. These are listed below.
 
 
 
