@@ -6,12 +6,6 @@ This document describes step by step installation and configuration process of S
 
 For additional resources and information, please visit Sycope LLC website at www.sycope.com.
 
-:::caution
-
-The **2.0.29** version is the lowest version of the **Sycope** from which you can perform **update** to **2.1.0** version.
-
-:::
-
 ## 1. Image download
 
 To download the Sycope system image, log in to the Sycope Portal https://portal.sycope.com. 
@@ -32,28 +26,28 @@ In our example, we are using **Vmware ESXi v. 6.5** so we download an image name
 
 :::tip
 
-If you have a VMware ESXi version for which there is no image on the **Sycope Portal**, you can use a tool provided by vmware https://developer.vmware.com/web/tool/4.4.0/ovf that allows you to import and export OVF packages to and from many VMware products.
+If you have a VMware ESXi version for which there is no image on the **Sycope Portal**, you can use a tool provided by VMware https://developer.vmware.com/web/tool/4.4.0/ovf that allows you to import and export OVF packages to and from many VMware products.
 
 :::
 
 ## 2. Deployment
 
-In order to perform the successful installation, please **follow below steps**:
+To perform the successful installation, please **follow the below steps**:
 
 1.  Log in to VMWare ESXi.
 
 ![image-20220803150226858](assets_inst_g/image-20220803150226858.png)
 
-2. From **Navigator Menu** go to **Virtual Machines**. Click on **Create / Register VM**. Pop up window will show up with few steps to be completed.
+2. From **Navigator Menu** go to **Virtual Machines**. Click on **Create / Register VM**. Pop-up window will show up with a few steps to be completed.
 3. Select **Deploy a virtual machine from OVF or OVA file**, and then click **Next**.
 
 ![image-20220803151347322](assets_inst_g/image-20220803151347322.png)
 
-4. Enter a name of virtual appliance you want to create. Browse the OVA file by clicking on blue parallelogram or drag and drop on it. Click **Next**,
+4. Enter the name of the virtual appliance you want to create. Browse the OVA file by clicking on the blue parallelogram or drag and drop on it. Click **Next**,
 
 ![image-20220803151528004](assets_inst_g/image-20220803151528004.png)
 
-5. Choose desired datastore that will hold the FlowControl XN files. Click **Next**.
+5. Choose the desired datastore that will hold the FlowControl XN files. Click **Next**.
 
 ![image-20220803151658214](assets_inst_g/image-20220803151658214.png)
 
@@ -65,7 +59,7 @@ In order to perform the successful installation, please **follow below steps**:
 
 
 
-7. After completing all previous steps, pop up window will show up, summarizing all information about the virtual machine that has been created. Click **Finish** in order to start a deployment process.
+7. After completing all previous steps, a pop up window will show up, summarizing all information about the virtual machine that has been created. Click **Finish** to start a deployment process.
 
 ![image-20220803152021413](assets_inst_g/image-20220803152021413.png)
 
@@ -73,7 +67,7 @@ In order to perform the successful installation, please **follow below steps**:
 
 ##  3. IP address, DNS Server and Gateway  configuration
 
-For operation of the system it is necessary to configure the network parameters so you need to configure the appropriate **DNS Server** address,  **IP** address and **Gateway** address.
+For the operation of the system, it is necessary to configure the network parameters, so you need to configure the appropriate **DNS Server** address,  **IP** address, and **Gateway** address.
 
 When the installation process is complete, please start the installed system and then **log in** using the **ESXi Console**.
 
@@ -103,7 +97,7 @@ After logging into the system via the **VMware Console**, select the **Network I
 
 ## 4. System activation
 
-To activate the Sycope system follow the steps below.
+To activate the Sycope system, follow the steps below.
 
 1. Log in to the **Sycope Portal** https://portal.sycope.com  and check if you have an active **template** where you can make an upload license request.
 
@@ -117,7 +111,7 @@ To activate the Sycope system follow the steps below.
 
 :::info
 
-The **Sycope** default password and username for **www interface**:
+The **Sycope** default password and username for the **www interface**:
 
 **user:** admin
 
@@ -127,15 +121,15 @@ The **Sycope** default password and username for **www interface**:
 
 :::danger
 
-**It is highly recommended to change default password !!!**
+**It is highly recommended to change the default password !!!**
 
 :::
 
-4. Generate License request. To do this, go to the **License tab** then click **Generate** and fill out the form with exactly the same information as the **Company info** form on the **Sycope Portal**. After entering the information, click **Generate** on the form and then copy the generated **License request**.
+4. Generate License request. To do this, go to the **License tab**, click Generate, and fill out the form with exactly the same information as the Company info on the **Sycope Portal**. After entering the information, click **Generate** on the form and copy the generated **License request**.
 
 :::caution
 
-The information entered in the **License request** form **<u>must be</u>** identical to that in the **Company info** form on the **Sycope Portal**. Any change or mistake will result in rejection of the request. If the **License request** was **rejected**, correct the data and renew the **License request** by clicking the **Renew** button.
+The information entered in the **License request** form **<u>must be</u>** identical to that in the **Company info** form on the **Sycope Portal**. Any change or mistake will result in the rejection of the request. If the **License request** was **rejected**, correct the data and renew the **License request** by clicking the **Renew** button.
 
 
 
@@ -169,7 +163,7 @@ The information entered in the **License request** form **<u>must be</u>** ident
 
 
 
-6. When the **license request** is approved by Sycope Teem the license status on Sycope Portal will change to **activated**. Click the **Activation token** icon and save the contents of the window to the clipboard.
+6. When the **license request** is approved by Sycope Team, the license status on Sycope Portal will change to **activated**. Click the **Activation token** icon and save the contents of the window to the clipboard.
 
 
 
@@ -183,7 +177,7 @@ The information entered in the **License request** form **<u>must be</u>** ident
 
 
 
-7. Go to the **web browser** window and log back into the **Sycope** system. Go to the **License tab**, paste the **Activation token** into the **Activation Code field** and click **Verify**. If everything was done correctly, the message **Success license activated will appear**.
+7. Go to the **web browser** window and log back into the **Sycope** system. Go to the **License tab**, paste the **Activation token** into the **Activation Code field** and click **Verify**. If everything is done correctly, the message **Success license activated will appear**.
 
    
 
@@ -193,7 +187,7 @@ The information entered in the **License request** form **<u>must be</u>** ident
 
    
 
-8. Go to system by clicking **Go to app**. **The Sycope** system is ready for use :)
+8. Go to the system by clicking **Go to app**. **The Sycope** system is ready for use :)
 
 ![image-20220804141644212](assets_inst_g/image-20220804141644212.png)
 
@@ -205,7 +199,7 @@ The information entered in the **License request** form **<u>must be</u>** ident
 
 :::caution
 
-After activation, the System needs about 15 minutes to start collecting data
+After activation, the System needs about 15 minutes to start collecting data.
 
 :::
 
