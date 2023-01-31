@@ -1,3 +1,7 @@
+---
+description: Unexpected increase in the number of flows rule example.
+---
+
 # Using baseline in a rule - Unexpected increase in # of flows rule example
 
 We want to create a **Rule** that uses baseline functionality. For this purpose, we will analyze the rule implemented in the system by default - **Unexpected increase in # of flows rule. ** It detects an unexpected increase in the number of flows based on the baseline for the last hour.
