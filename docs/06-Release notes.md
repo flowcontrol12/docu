@@ -1,5 +1,47 @@
 # Release notes
 
+### ver. 2.2.2.4
+
+#### New Features
+
+- Statistics flyout - option to export to csv and pdf
+- ESXi console - option to change admin password
+- Netflow collection - option to assign profile to all exporters (check box) 
+- Baseline configuration - option to lock baseline against search bar filter
+- SNMP lookup - MD5 and SHA1 allowed in SNMP
+
+#### Fixes
+
+- Operation of the cron GUI elements (weekly was misinterpreted)
+- Full screen mode for dashboards
+- Privacy section in Dashboard edit is now visible even when the user is not an owner
+- Auto-commit (indexes)
+- Memory leak in collectors 
+- Custom NetFlow fields not assigned to a profile
+- Handling a devel license on a new machine
+- Timeshift in recurrent baseline
+- No license error in forwarder functionality
+- Duplicate dashboards have empty Widgets
+- NQL query disappears from built-in collectors
+- Local search in bookmark’s flyout
+- Queries issue for 10 min aggregation
+- INIT time
+- User GUI profile elements
+- Maintenance window GUI rendering
+- Description changing in the custom aggregation
+- NQL coloring memory leaks in tables
+- Resolution of autodetection issue in baseline configuration
+- Baseline rendering description in Widget 
+- Dashboards export option
+- GUI elements - icons styling and search bar hiding option on Dashboards
+
+#### Other Changes
+
+- Null fields and no field are treated the same way now
+- The value of the maxTime parameter for default retention policies for alerts and notification partitions is now seven days
+
+
+
 ### ver. 2.2.1
 
 - Added Baseline (dynamic threshold) functionality that allows the user to compare the same metric/field at different time offsets on a single **Widget** to perform comparative analysis in different time windows.
