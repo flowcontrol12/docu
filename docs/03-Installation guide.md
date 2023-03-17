@@ -139,7 +139,15 @@ The information entered in the **License request** form **<u>must be</u>** ident
 
 :::
 
+:::caution
 
+**Renew license dialog** deletes the current license key and generates a new license request for a new serial number. Please remember that a unique serial number is created for each license request and can not be used in the license renewal process.
+
+
+
+![image-20230317114303040](assets_03-Installation%20guide/image-20230317114303040.png)
+
+:::
 
 ![](assets_inst_g/image-20220803204235897.png)
 
