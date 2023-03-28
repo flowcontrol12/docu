@@ -86,7 +86,7 @@ For example, to create CSV file type **Lookup**, perform the following steps:
 # Country and asn Lookup
 
 The lookup which can be used to search data in the "GeoLite2-ASN.mmdb" and  "GeoLite2-Country.mmdb" files.
-The lookup enables to search dates from "BGP Autonomous System" ("GeoLite2-ASN.mmdb") and "Country" ("GeoLite2-Country.mmdb") by ip key.
+The lookup enables to search of dates from "BGP Autonomous System" ("GeoLite2-ASN.mmdb") and "Country" ("GeoLite2-Country.mmdb") by ip key.
 
 ### Input keys
 
@@ -130,7 +130,7 @@ The lookup enables to search dates from "BGP Autonomous System" ("GeoLite2-ASN.m
 
 
 
-# CSV File Lookup:
+# CSV File Lookup
 
 The lookup is created with a given csv file as a data source for search. 
 

@@ -816,7 +816,7 @@ Result for `set...` stored in `collData1` collector:
 }
 ```
 
-Reslult for `aggr...` stored in `collData2` collector:
+Result for `aggr...` stored in `collData2` collector:
 
 ```json
 {
@@ -2144,7 +2144,7 @@ Result:
 	   _firstServerPort=first(serverPort) by clientIp as clientIp, serverIp as serverIp, serverPort as serverPort unwind=true 
 ```
 
-Reslut:
+Result:
 
 ```json
 {
@@ -2200,7 +2200,7 @@ Reslut:
 | limit 100 
 ```
 
-Reslut:
+Result:
 
 ```json
 {
@@ -2256,7 +2256,7 @@ Reslut:
 | limit 1000
 ```
 
-Reslut:
+Result:
 
 ```json
 {
