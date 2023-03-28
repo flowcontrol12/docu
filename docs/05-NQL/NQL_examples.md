@@ -199,9 +199,7 @@ Result:
 4. **aggr**
 
    The data contains several values of the `Balance` and `PD` fields for a person at different `ts` times. 
-   We want to display only one object for each person. To do this, we need to aggregate the data by full name (``fullName` field),
-   taking the maximum values of the `Balance` and `PD` fields.
-   The value of the fullName field by which we aggregate will be stored in the aggregation field `_id``.
+   We want to display only one object for each person. To do this, we need to aggregate the data by full name (`fullName` field), taking the maximum values of the `Balance` and `PD` fields. The value of the fullName field by which we aggregate will be stored in the aggregation field `_id`.
 
 ```
 aggr fName=first(fName), lName=first(lName), ctry=first(ctry), age=first(age), docs=first(docs), host=first(host), PD=max(PD), Balance=max(balance) by fullName 
@@ -694,7 +692,7 @@ Result:
 
 ### Scenario
 
-Add a new `fullName` field to all objects, sort, and display it, and in parallel perform data aggregation. To do this, perform three NQLs.
+Add a new `fullName` field to all objects, sort and display it, and in parallel perform data aggregation. To do this, perform three NQLs.
 
 ### NQL Query
 
@@ -764,11 +762,11 @@ Result:
 
 2. **coll**
 
-   The previously created data collector `collTestData` is to be the data source for the next step NQL.
+   The previously created data collector `collTestData` is the data source for the next step NQL.
 
 3. **fork**
 
-   On the data from the collector `collTestData` perform two NQLs in parallel:`set...` and `aggr...`.
+   On the data from the collector `collTestData` perform two NQLs in parallel: `set...` and `aggr...`.
    Each of them stores its results to the newly created collectors `collData1` and `collData1`.
 
 

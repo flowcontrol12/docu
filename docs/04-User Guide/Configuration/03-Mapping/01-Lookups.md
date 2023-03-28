@@ -144,7 +144,7 @@ The description of the lookup.
 
 ### Edit file
 
-In the csv file, the data will be searched in by keys.
+In the csv file, the data will be searched by keys.
 
 Adding the file, you must set four parameters:
 
@@ -220,7 +220,7 @@ Mark a lookup with specified tags.
 
 ***Example***
 
-We want to create a lookup "ColorsAndBirds" with a content of data from two "simple" lookups files, "Colors" and "Birds". 
+We want to create a lookup "ColorsAndBirds" with a content of data from two "simple" lookup files, "Colors" and "Birds". 
 
 The content of the lookup csv file "Colors":
 
@@ -242,7 +242,7 @@ The content of the lookup csv file "Birds":
 
 
 
-The lookup will have two keys "ip" and "name". We identified data (values) for those columns in "Colors" and "Birds" under the different columns names, so we need a mapping between a source column name and a lookup column.
+The lookup will have two keys "ip" and "name. We identified data (values) for those columns in "Colors" and "Birds" under the different column names, so we need a mapping between a source column name and a lookup column.
 The mapping is optional, a key is not mapped in a specified lookup, then the search by the key for that lookup will be ignored.
 
 Mapping:
