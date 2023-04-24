@@ -16,11 +16,17 @@ There are the following lines:
 
 
 
+:::caution
 
+Correct configuration of the proxy service in this menu will ensure correct communication with the **license server.**
 
+:::
 
+:::danger
 
+If you use a proxy service in your network you must exclude from it  https://updates.sycope.com website, otherwise the Sycope live update and security feed live update services will not work.
 
+:::
 
 
 
