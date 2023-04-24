@@ -1,5 +1,19 @@
 # Release notes
 
+### ver. 2.2.3
+
+#### Fixes
+
+- Order of arguments in the like() function has been changed
+- Set command can use all functions that return arguments of type boolean
+- SNMPv3 protocol support and improvements
+- Improved and optimized the calculation of the preAggre function 
+- Better handling of corrupted data
+- Top/rare functions are now more optimally calculated
+- Improved performance when displaying fields (no flushing after every field)
+- Unpredictable behavior of the system when email address (mailConfigured settings) was not configured
+- Decoder metrics fields order
+
 ### ver. 2.2.2.4
 
 #### New Features
