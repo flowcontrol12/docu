@@ -14,7 +14,7 @@
 - Unpredictable behavior of the system when email address (mailConfigured settings) was not configured
 - Decoder metrics fields order
 
-### ver. 2.2.2.4
+### ver. 2.2.2
 
 #### New Features
 
