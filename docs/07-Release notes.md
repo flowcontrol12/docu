@@ -1,16 +1,17 @@
 # Release notes
 
-:::info
+---
 
+**Note!**
 We kindly inform you that this update affects the standard system content, especially the one from the Security module. Therefore, if you created custom security rules please double check if they are working properly. If you like any old security dashboards please duplicate those before the update.
 
-:::
+---
 
 ### ver. 2.3
 
 - Added a new functionality called **User Scripts** which allows for automatic communication by POST json message with external systems using the **REST Client**. This allows for sending **Alerts** to external systems and applications![user_scripts](assets_07-Release%20notes/user_scripts.jpg)
 
-- Added a new functionality of **Advanced Custom Aggregations**. Being an evolution of creating **Custom Aggregations**, the Advanced ones can be used to set a dynamic key field value and any metric for them. The Aggregations can subsequently be freely edited, duplicated, exported and deleted, coming together with a **new analyzer tool** 
+- Added a new functionality of **Advanced Custom Aggregations**. Being an evolution of creating **Custom Aggregations**, the Advanced ones can be used to set a dynamic key field value and any metric for them (for performance reasons, max recommended value equals 3) and any metric (for performance reasons, max recommended value equals 6). 
 
   ![custom_advanced_aggregation](assets_07-Release%20notes/custom_advanced_aggregation.jpg)
 

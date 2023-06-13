@@ -1,28 +1,24 @@
----
-description: Retention Tab
----
-
 # Retention
 
-This menu [Configuration>General Settings >**Retention**] can be used to manage data retention. 
+The [**Configuration>General Settings >Retention**] menu can be used to manage data retention. 
 
-![image-20230103132255855](assets_05-Retention/image-20230103132255855.png)
+![image-20230607095210551](assets_05-Retention/image-20230607095210551.png)
 
 The Retention Mechanism allows automated management of data life, considering factors such as performance and data size.
 
-Data streams are stored on partitions, of which there are four types in the system:
+Data streams are stored on partitions of which there are four types in the system:
 
 - **Hot** - data just written, updated - maximum read and write speeds, high disk
   utilization.
-- **Warm** - deferred data that are no longer written while they can be read and searched.
+- **Warm** - deferred data that is no longer written while they can be read and searched.
 - **Cold** - low read and speed, low disk utilization.
 - **Delete** - data to be deleted.
 
 ![image-20221025092205878](assets_05-Retention/image-20221025092205878.png)
 
-You can change the storage location of a particular **Data Stream** in the context of the partition type. The **maxTime** parameter is used for this, and it is the maximum time after which the partition type will be changed to another.
+You can change the storage location of a particular **Data Stream** in the context of the partition type. The **maxTime** parameter is used for this purpose and it is the maximum time after which the partition type will be changed to another.
 
-When the maxTime condition is met, the partition type is changed in the following order:
+When the **maxTime** condition is met, the partition type is changed in the following order:
 
 ![image-20221025093248674](assets_05-Retention/image-20221025093248674.png)
 
@@ -38,19 +34,21 @@ It is impossible to change partitions for a particular data stream from a type w
 
 ## Retention policy
 
-Data retention takes place in the system based on user-configurable **Retention policies**. It is required to define at least two types of partitions for the policy. Policies are executed periodically in the order specified in the **Priority** field. The moment of execution is indicated by the fields **Time to next execution**. The value in the **Priority** field must be between 1-100, where 1 is the highest priority, and 100 is the lowest. When creating policies, care should be taken to ensure that policies do not overlap or duplicate because any policy defined will be executed.
+Data retention takes place in the system based on user-configurable **Retention policies**. It is required to define at least two types of partitions for the policy. Policies are executed periodically in the order specified in the **Priority** field. The moment of execution is indicated by the **Time to next execution** field. The value in the **Priority** field must be within the range of 1-100, where 1 is the highest priority, and 100 is the lowest. When creating policies, care should be taken to ensure that policies do not overlap or duplicate because all defined policies will be executed.
 
 
 
 :::caution
 
-The system, after the installation, has two built-in **Retention policies**. Please check them out and adjust them to your needs. They can be used as a template to create new user policies.
-
-![image-20221025100215166](assets_05-Retention/image-20221025100215166.png)
+If you operate the maxTime parameter in hourly units, the system since version 2.3 stores data up to 1 hour longer, for example: 1 Hour Hot + 1 Hour Warm means that data is stored minimum 2 hours and maximum 3 hours.
 
 :::
 
+:::caution
 
+After the installation, the system has four built-in **Retention policies**. Please check them and adjust them to your needs. They can be used as a template to create new user policies.
+
+:::
 
 :::danger
 
@@ -58,45 +56,59 @@ If you do not define a **Delete** partition in the **Retention policy** the data
 
 :::
 
-
-
 ### Default Retention policy
 
-#### 1. Build-in policy parameters for the netflow data stream.
+#### 1. Built-in policy parameters for the netflow data stream.
 
-| Partition type | maxTime  |
-| -------------- | -------- |
-| Hot            | 1 week   |
-| Warm           | 4 days   |
-| Cold           | 10 hours |
-| Delete         | 1 hour   |
+| Partition type | maxTime |
+| -------------- | ------- |
+| Hot            | 1 hour  |
+| Warm           | 1 hour  |
+| Cold           | -       |
+| Delete         | 1 hour  |
 
-This means that the data from the **netflow** stream are stored in the system for 11 days and 11 hours, with the first week the data stored with the **Hot** index, and the next four days set aside with the **Warm** index. Next, 10 hours with a Cold index. The last hour before complete erasure, the data has a **Delete** status.
-
-![image-20221025101002886](assets_05-Retention/image-20221025101002886.png)
+This means that the data from the **netflow** stream is stored in the system for 2 hours, within the first hour the data wille be stored with the **Hot** index, and within the next hour - with the **Warm** index. In the last hour the data will have the **Delete** status, which means that only certain metadata will still be stored and it is not possible to restore the original data to the system.
 
 
 
-#### 2. Build-in policy parameters for the selected aggregated data stream.
+#### 2. Built-in policy parameters for the aggregated data stream.
 
-| Partition type | maxTime     |
-| -------------- | ----------- |
-| Hot            | 1 day       |
-| Warm           | 2 days      |
-| Cold           | not created |
-| Delete         | 1 day       |
+| Partition type | maxTime |
+| -------------- | ------- |
+| Hot            | 1 day   |
+| Warm           | -       |
+| Cold           | -       |
+| Delete         | 1 day   |
 
-This means that the data from the above-mentioned aggregated streams are stored in the system for four days, with the first two days, the data stored with the **Hot** index, and the next two days set aside with the **Warm** index. The data has a Delete index status on the last day before the complete erasure.
+This means that the data from the above-mentioned aggregated streams is stored in the system for 1 day, with the **Hot** index. On the second day, the data will have the **Delete** status, which means that only certain metadata will still be stored and it is not possible to restore the original data to the system.
+
+#### 3. Built-in policy parameters for the alerts.
+
+| Partition type | maxTime |
+| -------------- | ------- |
+| Hot            | 1 week  |
+| Warm           | -       |
+| Cold           | -       |
+| Delete         | 1 day   |
+
+This means that the alerts are stored in the system for 1 week, with the **Hot** index. After one week, the data will have the **Delete** status for 1 day, which means that only certain metadata will be stored and it is not possible to restore the original data to the system.
+
+#### 4. Built-in policy parameters for audit messages, metrics and notifications.
+
+| Partition type | maxTime |
+| -------------- | ------- |
+| Hot            | 1 month |
+| Warm           | 1 month |
+| Cold           | -       |
+| Delete         | -       |
+
+This means that the data is stored in the system for 2 months. First the first one with the **Hot** index and the second one with the **Warm** status. 
 
 
 
-![image-20221025092205878](assets_05-Retention/image-20221025092205878.png)
+## Disk usage
 
-
-
-## Disc usage
-
-In this section, a table indicates how much space each data takes up in the system.
+In this section, the table indicates how much space the data takes up in the system.
 
 
 

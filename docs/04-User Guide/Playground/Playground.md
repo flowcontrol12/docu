@@ -36,7 +36,9 @@ In this mode, you can enter the NQL code "by hand" or copy it from the ready exa
 
 The `Source in nql` switch in enabled mode means that the `Query` field contains the full NQL code, along with the specified source. Disabling it makes it necessary to select the data source from the drop-down menu and the NQL code itself in the `Query` field must start with another command after selecting the source (you should omit the `source` command in this case).
 
-<u>**Example**</u>
+
+
+**<u>Example</u>**
 
 NQL code with the `Source in nql` switch enabled can look like this:
 
