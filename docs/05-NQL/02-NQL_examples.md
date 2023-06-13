@@ -31,9 +31,11 @@ src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",")  | w
 
 Below is a step-by-step explanation of the NQL Query.
 
-1. **records**
+1. **src stream="testdata"**
 
 Get the objects from the test database.  
+
+`src stream="testdata"` 
 
 Result:  	
 
@@ -92,7 +94,7 @@ Result:
 Add a new field containing first and last names separated by a comma.
 
 ```
-set fullName = concat(fName, lName, delimiter=",")
+src stream="testdata" | set fullName = concat(fName, lName, delimiter=",")
 ```
 
 Result:  	
@@ -155,7 +157,7 @@ Result:
 Select only those people who belong to the `IT` department.
 
 ```
-where dep="IT"
+src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | where dep="IT"
 ```
 
 Result:  	
@@ -202,7 +204,7 @@ Result:
    In this example, only one object for each person will be displayed. To do this, you need to aggregate the data by full name (`fullName` field), taking the maximum values of the `Balance` and `PD` fields. The value of the fullName field by which the aggregation will be done will be stored in the aggregation field `_id`.
 
 ```
-aggr fName=first(fName), lName=first(lName), ctry=first(ctry), age=first(age), docs=first(docs), host=first(host), PD=max(PD), Balance=max(balance) by fullName 
+src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | where dep="IT" | aggr fName=first(fName), lName=first(lName), ctry=first(ctry), age=first(age), docs=first(docs), host=first(host), PD=max(PD), Balance=max(balance) by fullName 
 ```
 
 Result:  	
@@ -249,7 +251,7 @@ Result:
    Sort the results by the age of the people starting with the oldest (desc).
 
 ```
-sort age desc
+src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | where dep="IT" | aggr fName=first(fName), lName=first(lName), ctry=first(ctry), age=first(age), docs=first(docs), host=first(host), PD=max(PD), Balance=max(balance) by fullName | sort age desc
 ```
 
 
@@ -258,7 +260,7 @@ sort age desc
    Select the first ten people from a previously sorted list.
 
 ```
-limit 10
+src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | where dep="IT" | aggr fName=first(fName), lName=first(lName), ctry=first(ctry), age=first(age), docs=first(docs), host=first(host), PD=max(PD), Balance=max(balance) by fullName | sort age desc | limit 10
 ```
 
 Result:  
@@ -356,7 +358,7 @@ Below is a step-by-step explanation of the NQL Query.
    Sort collections by `ts` field from the largest value (desc).
 
 ```
-sort ts desc
+src stream="testdata"  | sort ts desc
 ```
 
 
@@ -368,7 +370,7 @@ sort ts desc
 
 
 ```
-aggr latestBalance=first(balance),latestPD=first(PD)  by fName, lName unwind=true
+src stream="testdata"  | sort ts desc | aggr latestBalance=first(balance),latestPD=first(PD)  by fName, lName unwind=true
 ```
 
 Result:
@@ -434,6 +436,8 @@ Below is a step-by-step explanation of the NQL Query.
 
 Prepare a collector with test data.
 
+`src stream="testdata"  | dst "collTestData"`
+
 Result:
 
 ```json
@@ -474,11 +478,15 @@ Result:
 
 2. **coll `collTestData`**
 
-Get the test data from the `collTestData` collector 
+Get the t
+
+`coll "collTestData"`
 
 3. **fork**
 
 Execute two NQLs in parallel.
+
+`coll "collTestData" |  fork ( set fullName=concat(fName, " ", lName) | dst "data3"), ( aggr latestTs=max(ts)by fName, lName unwind=true | dst "data4") `
 
 3.1 **set, dst** 
 
@@ -556,9 +564,13 @@ Result:
 
 Get the test data from the "data3" collector .
 
+`coll "data3"`
+
 5. **set, valColl**
 
 To all objects from the "data3" collector add the `latestTs`  field of which the value is taken for each person from the "data4" collector .
+
+`coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName})`
 
 Result:
 
@@ -607,9 +619,13 @@ Result:
 From the previously prepared set of objects (people), select only those for which `latestTs` equals `ts`. 
 These are the objects containing the most recent (latest) `PD` and `balance` values. 
 
+`coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName}) |  where $eq(latestTs,ts)` 
+
 7. **sort**
 
 Sort the result.
+
+`coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName}) |  where $eq(latestTs,ts) |  sort fullName`
 
 Result:
 
@@ -685,6 +701,8 @@ Below is a step-by-step explanation of the NQL Query.
 
    Store all objects from `testdata` in a new collector with the `collTestData` identifier.
 
+`src stream="testdata"  |  dst "collTestData" `
+
 Result:
 
 ```json
@@ -727,11 +745,14 @@ Result:
 
    The previously created  `collTestData` data collector is the data source for the next step NQL.
 
+`coll "collTestData"`
+
 3. **fork**
 
    On the data from the `collTestData` collector perform two NQLs in parallel: `set...` and `aggr...`.
    Each of them stores its results in the newly created `collData1` and `collData1` collectors.
 
+`coll "collTestData" |  fork (set fullName=concat(fName, " ", lName) | limit 100 | dst "collData1"), ( aggr fieldsCount=sum(age) by fName,lName maxBuckets=2 | dst "collData2")  `
 
 Result for `set...` stored in `collData1` collector:
 
@@ -797,10 +818,14 @@ Result for `aggr...` stored in `collData2` collector:
 4. **coll**
 
    The result of the NQL ("set...") from the previous step stored in the `collData1` collector is the data source for the next NQL.
+   
+   `coll "collData1"`
 
 5. **sort**
 
    Sort the data from the `collData1` collector and display the result.  
+
+   `coll "collData1" |  sort fullName`
 
 Result:
 
@@ -871,12 +896,18 @@ Below is a step-by-step explanation of the NQL Query.
 
 1. Calculate the average balance value for a person and save it in the `avgBalance` field.
 
+`src stream="testdata" |  aggr avgBalance=avg(balance) by fName, lName unwind=true`
+
 2. Save the results to the collector with the `avgBalanceColl` id. 
+
+`src stream="testdata" |  aggr avgBalance=avg(balance) by fName, lName unwind=true |  dst "avgBalanceColl`
+
 
 3. For each person from the `testdata` collection, add the `avgBalance` field whose value is taken from the `avgBalanceColl` collector 
    from the `avgBalance` field of the object selected in this collector after the filter
    `avgBalanceColl.fName = testdata.fName and avgBalanceColl.lName = testdata.lName`.
 
+`src stream="testdata" |  set avgBalance=valColl("avgBalanceColl", "avgBalance", {"fName":fName, "lName":lName}) ` 
 
 ```json
 [
@@ -930,6 +961,8 @@ src stream="netflow"  | isIp(clientIp) | aggr countClientIp=count(clientIp) by c
 Below is a step-by-step explanation of the NQL Query.
 
 1. Get the data from the netflow stream.
+
+`src stream="netflow"`
 
 Result (first two objects):
 
@@ -1034,11 +1067,11 @@ Result (first two objects):
 
 2. Select only those objects in which the `clientIp` field contains the current value ip4 or ip6.
 
-`| isIp(clientIp)`
+`src stream="netflow" | isIp(clientIp)`
 
 3. Calculate the number of objects for each client ip.
 
-`| aggr countClientIp=count(clientIp) by clientIp as client unwind=true`
+`src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true`
 
 Result (first three values):
 
@@ -1062,7 +1095,11 @@ Result (first three values):
 
 4. Sort the results from the largest value of `countClientIp`.
 
+`src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true | sort countClientIp desc`
+
 5. Select the first 5 objects from the result.
+
+`src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true | sort countClientIp desc | limit 5`
 
 Result:
 
@@ -1106,7 +1143,6 @@ src stream="netflowByProtocolAggr"
 | aggr sumClientBytes=sum(clientBytes),sumServerBytes=sum(serverBytes),sumClientPackets=sum(clientPackets),sumServerPackets=sum(serverPackets),sumFlows=sum(flows) by protocol as protocolName unwind=true 
 | set _sumBytes1=add(sumClientBytes,sumServerBytes),_sumClientBitsPerSecond4=div(mul(sumClientBytes,8),60),_sumServerBitsPerSecond5=div(mul(sumServerBytes,8),60),_sumPacketsPerSecond6=div(add(sumClientPackets,sumServerPackets),60),_sumFlowsPerSecond7=div(sumFlows, 60) 
 | fork (aggr _sumBytes1=sum(_sumBytes1), _sumClientBytes2=sum(sumClientBytes), _sumServerBytes3=sum(sumServerBytes), _sumClientBitsPerSecond4=sum(_sumClientBitsPerSecond4),_sumServerBitsPerSecond5=sum(_sumServerBitsPerSecond5), _sumPacketsPerSecond6=sum(_sumPacketsPerSecond6), _sumFlowsPerSecond7=sum(_sumFlowsPerSecond7), total=count(1) | set protocolName="Total", _isTotalRow=true), (sort _sumBytes1 desc | limit 10) 
-
 ```
 
 ### Description
@@ -1171,13 +1207,12 @@ Result:
    Set `unwind=true` then the value of the `protocol` field will be in the resulting object in the `protocolName` field, otherwise the value will be returned in the `_id:[<protocol>]` field. 
 
 ```
-| aggr sumClientBytes=sum(clientBytes),
+src stream="netflowByProtocolAggr" | aggr sumClientBytes=sum(clientBytes),
        sumServerBytes=sum(serverBytes), 
 	   sumClientPackets=sum(clientPackets),
 	   sumServerPackets=sum(serverPackets), 
 	   sumFlows=sum(flows) 
   by protocol as protocolName unwind=true 
-  
 ```
 
 Result:
@@ -1237,6 +1272,8 @@ Result:
 `_sumFlowsPerSecond7 = sumFlows / 60`
 
 ```
+src stream="netflowByProtocolAggr" 
+| aggr sumClientBytes=sum(clientBytes),sumServerBytes=sum(serverBytes),sumClientPackets=sum(clientPackets),sumServerPackets=sum(serverPackets),sumFlows=sum(flows) by protocol as protocolName unwind=true 
 | set _sumBytes1=add(sumClientBytes,sumServerBytes), 
       _sumClientBitsPerSecond4=div(mul(sumClientBytes,8),60), 
 	  _sumServerBitsPerSecond5=div(mul(sumServerBytes,8),60), 
@@ -1316,7 +1353,7 @@ Result:
 ]
 ```
 
-4. Show results.
+4. Add object with totals.
 
 Show ten aggregation results by protocol from the highest value of the sum of the
 `sumClientBytes` and `sumServerBytes `fields and one object containing all the summed values (total) of the fields
@@ -1324,6 +1361,9 @@ Show ten aggregation results by protocol from the highest value of the sum of th
 
 
 ```
+src stream="netflowByProtocolAggr" 
+| aggr sumClientBytes=sum(clientBytes),sumServerBytes=sum(serverBytes),sumClientPackets=sum(clientPackets),sumServerPackets=sum(serverPackets),sumFlows=sum(flows) by protocol as protocolName unwind=true 
+| set _sumBytes1=add(sumClientBytes,sumServerBytes),_sumClientBitsPerSecond4=div(mul(sumClientBytes,8),60),_sumServerBitsPerSecond5=div(mul(sumServerBytes,8),60),_sumPacketsPerSecond6=div(add(sumClientPackets,sumServerPackets),60),_sumFlowsPerSecond7=div(sumFlows, 60) 
 | fork (aggr _sumBytes1=sum(_sumBytes1), 
              _sumClientBytes2=sum(sumClientBytes), 
 			 _sumServerBytes3=sum(sumServerBytes), 
@@ -1334,7 +1374,8 @@ Show ten aggregation results by protocol from the highest value of the sum of th
 			 total=count(1) | set protocolName="Total", _isTotalRow=true), (sort _sumBytes1 desc | limit 10) 
 ```
 
-Result:
+
+5. Result.
 
 The first object in the following list (`protocolName: Total`) contains a summary (total) of values.
 
@@ -1506,6 +1547,8 @@ Result:
 In addition, the data from the country field is combined, so as to show a list of countries in a given time interval (`countries` variable) and the beginning and end of a given time interval (`mintimestamp, maxtimestamp` variables).
 
 ```
+src stream ="netflowByCountryAggr" 
+| set sumClientBytesAndServerBytes = add(clientBytes, serverBytes) 
 | timeAggr dcCountry0=dc(country),
 	avgSumClientBytesAndServerBytes=avg(sumClientBytesAndServerBytes),
 	sum1 = sum(sumClientBytesAndServerBytes),
@@ -1558,6 +1601,9 @@ Result:
 3. Convert variables containing a `timestamp` value to a readable text value.
 
 ```
+src stream ="netflowByCountryAggr" 
+| set sumClientBytesAndServerBytes = add(clientBytes, serverBytes) 
+| timeAggr dcCountry0=dc(country),avgSumClientBytesAndServerBytes=avg(sumClientBytesAndServerBytes),countries=join(country),   mintimestamp=min(timestamp),maxtimestamp=max(timestamp) on timestamp interval="3h" 
 | set timestampStr=tsToStr(_bucket),
 	mintimestampStr=tsToStr(mintimestamp),
 	maxtimestampStr=tsToStr(maxtimestamp)
@@ -1616,7 +1662,13 @@ Result:
 
 4. Remove the fields you do not want to display from the result .
 
-`| project -dcCountry0, -mintimestamp, -maxtimestamp, -_bucket`
+```
+src stream ="netflowByCountryAggr" 
+ | set sumClientBytesAndServerBytes = add(clientBytes, serverBytes) 
+ | timeAggr dcCountry0=dc(country),avgSumClientBytesAndServerBytes=avg(sumClientBytesAndServerBytes),countries=join(country),   mintimestamp=min(timestamp),maxtimestamp=max(timestamp) on timestamp interval="3h" 
+ | set timestampStr=tsToStr(_bucket),mintimestampStr=tsToStr(mintimestamp),maxtimestampStr=tsToStr(maxtimestamp)
+ | project -dcCountry0, -mintimestamp, -maxtimestamp, -_bucket
+```
 
 Result:
 
@@ -1671,7 +1723,6 @@ src stream="alerts"
              (aggr by clientIp as clientIp unwind=true maxBuckets=20) unwind=true 
  | sort countAlertName0 desc 
  | limit 480
-
 ```
 
 
@@ -1793,6 +1844,8 @@ Result:
 2. Calculate the number of alerts in groups by time bucket `1m` (one month) and `clientIp` value.
 
 ```
+src stream="alerts" 
+ | valInColl(clientIp, "top10ClientIpLast15Minute_Alerts", "clientIp") 
  | splitAggr countAlertName0=count(alertName) 
            (timeAggr on timestamp interval="1m" dir="desc" bucketAlias="srcEventTimestamp"), 
            (aggr by clientIp as clientIp unwind=true maxBuckets=20) unwind=true 
@@ -1875,8 +1928,13 @@ Result for `splitAggr`:
 3. Sort the objects by the number of alerts and show the first 480 objects
 
 ```
-| sort countAlertName0 desc 
-| limit 480
+src stream="alerts" 
+ | valInColl(clientIp, "top10ClientIpLast15Minute_Alerts", "clientIp") 
+ | splitAggr countAlertName0=count(alertName) 
+             (timeAggr on timestamp interval="1m" dir="desc" bucketAlias="srcEventTimestamp"), 
+             (aggr by clientIp as clientIp unwind=true maxBuckets=20) unwind=true 
+ | sort countAlertName0 desc 
+ | limit 480
 ```
 
 Result:
@@ -1941,7 +1999,7 @@ Below is a step-by-step explanation of the NQL Query.
 
 ```
 src stream="netflow" 
-| in(serverPort,[21,22,23,25,69,80,88,110,119,139,143,161,220,389,443,445,512,513,636,995,1433,1521,2002,3306,3389,3690,4000,4899,5038,5060,5222,5432,5631,5900,5985,5986,6667]) 
+ | in(serverPort,[21,22,23,25,69,80,88,110,119,139,143,161,220,389,443,445,512,513,636,995,1433,1521,2002,3306,3389,3690,4000,4899,5038,5060,5222,5432,5631,5900,5985,5986,6667]) 
 ```
 
 Result:
@@ -2043,7 +2101,9 @@ Result:
 2. Select the first values of the ` _clientIp, _firstClientCountry, _firstClientFunction, _serverIp, _firstServerCountry, _firstServerFunction, _firstClientIp, _firstServerIp, _firstServerPort`  fields for the given `clientIp, serverIp` i `serverPort` groups and the calculation of the number of objects in these groups (`_countSessions`).
 
 ```
-| aggr _countSessions=count(timestamp), 
+src stream="netflow" 
+ | in(serverPort,[21,22,23,25,69,80,88,110,119,139,143,161,220,389,443,445,512,513,636,995,1433,1521,2002,3306,3389,3690,4000,4899,5038,5060,5222,5432,5631,5900,5985,5986,6667]) 
+ | aggr _countSessions=count(timestamp), 
        _clientIp=first(clientIp), 
 	   _firstClientCountry=first(clientCountry), 
 	   _firstClientFunction=first(clientFunction), 
@@ -2100,9 +2160,22 @@ Result:
 
 3. Sort the results by the` _countSessions` field in descending order and select the first 100 objects. 
 
+
 ```
-| sort _countSessions desc 
-| limit 100 
+src stream="netflow" 
+ | in(serverPort,[21,22,23,25,69,80,88,110,119,139,143,161,220,389,443,445,512,513,636,995,1433,1521,2002,3306,3389,3690,4000,4899,5038,5060,5222,5432,5631,5900,5985,5986,6667]) 
+ | aggr _countSessions=count(timestamp), 
+       _clientIp=first(clientIp), 
+	   _firstClientCountry=first(clientCountry), 
+	   _firstClientFunction=first(clientFunction), 
+	   _serverIp=first(serverIp), 
+	   _firstServerCountry=first(serverCountry), 
+	   _firstServerFunction=first(serverFunction), 
+	   _firstClientIp=first(clientIp),
+	   _firstServerIp=first(serverIp), 
+	   _firstServerPort=first(serverPort) by clientIp as clientIp, serverIp as serverIp, serverPort as serverPort unwind=true 
+ | sort _countSessions desc 
+ | limit 100 
 ```
 
 Result:
@@ -2151,8 +2224,22 @@ Result:
 4. Add the `_firstClientAsn` and `_firstServerAsn` fields  whose values are selected from the `ip-as` and `ip-as` files (lookups), from the `name` field for conditions: `ip=_clientIp` oraz `ip=_serverIp`. Get the first 1000 objects.
 
 ```
-| set _firstClientAsn=lookup("ip-as","name", {"ip": _clientIp} ), _firstServerAsn=lookup("ip-as","name", {"ip": _serverIp} ) 
-| limit 1000
+src stream="netflow" 
+ | in(serverPort,[21,22,23,25,69,80,88,110,119,139,143,161,220,389,443,445,512,513,636,995,1433,1521,2002,3306,3389,3690,4000,4899,5038,5060,5222,5432,5631,5900,5985,5986,6667]) 
+ | aggr _countSessions=count(timestamp), 
+       _clientIp=first(clientIp), 
+	   _firstClientCountry=first(clientCountry), 
+	   _firstClientFunction=first(clientFunction), 
+	   _serverIp=first(serverIp), 
+	   _firstServerCountry=first(serverCountry), 
+	   _firstServerFunction=first(serverFunction), 
+	   _firstClientIp=first(clientIp),
+	   _firstServerIp=first(serverIp), 
+	   _firstServerPort=first(serverPort) by clientIp as clientIp, serverIp as serverIp, serverPort as serverPort unwind=true 
+ | sort _countSessions desc 
+ | limit 100 
+ | set _firstClientAsn=lookup("ip-as","name", {"ip": _clientIp} ), _firstServerAsn=lookup("ip-as","name", {"ip": _serverIp} ) 
+ | limit 1000
 ```
 
 Result:
