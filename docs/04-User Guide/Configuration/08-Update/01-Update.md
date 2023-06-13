@@ -8,7 +8,7 @@ The first information in this window is information about the availability of a 
 
 
 
-- **Version** -update version
+- **Version** - update version
 
 - **Release date** - the release date of a particular version of the system
 
