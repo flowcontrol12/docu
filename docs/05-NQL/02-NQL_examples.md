@@ -478,9 +478,12 @@ Result:
 
 2. **coll `collTestData`**
 
+
 Get the t
 
 `coll "collTestData"`
+=======
+Get the test data from the `collTestData` collector 
 
 3. **fork**
 
@@ -564,13 +567,18 @@ Result:
 
 Get the test data from the "data3" collector .
 
+
 `coll "data3"`
+
 
 5. **set, valColl**
 
 To all objects from the "data3" collector add the `latestTs`  field of which the value is taken for each person from the "data4" collector .
 
+
 `coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName})`
+=======
+
 
 Result:
 
@@ -701,7 +709,10 @@ Below is a step-by-step explanation of the NQL Query.
 
    Store all objects from `testdata` in a new collector with the `collTestData` identifier.
 
+
 `src stream="testdata"  |  dst "collTestData" `
+=======
+
 
 Result:
 
@@ -745,7 +756,10 @@ Result:
 
    The previously created  `collTestData` data collector is the data source for the next step NQL.
 
+
 `coll "collTestData"`
+=======
+
 
 3. **fork**
 
@@ -820,10 +834,12 @@ Result for `aggr...` stored in `collData2` collector:
    The result of the NQL ("set...") from the previous step stored in the `collData1` collector is the data source for the next NQL.
    
    `coll "collData1"`
+=======
 
 5. **sort**
 
    Sort the data from the `collData1` collector and display the result.  
+
 
    `coll "collData1" |  sort fullName`
 
@@ -896,6 +912,7 @@ Below is a step-by-step explanation of the NQL Query.
 
 1. Calculate the average balance value for a person and save it in the `avgBalance` field.
 
+
 `src stream="testdata" |  aggr avgBalance=avg(balance) by fName, lName unwind=true`
 
 2. Save the results to the collector with the `avgBalanceColl` id. 
@@ -908,6 +925,14 @@ Below is a step-by-step explanation of the NQL Query.
    `avgBalanceColl.fName = testdata.fName and avgBalanceColl.lName = testdata.lName`.
 
 `src stream="testdata" |  set avgBalance=valColl("avgBalanceColl", "avgBalance", {"fName":fName, "lName":lName}) ` 
+
+=======
+2. Save the results to the collector with the `avgBalanceColl` id. 
+
+3. For each person from the `testdata` collection, add the `avgBalance` field whose value is taken from the `avgBalanceColl` collector 
+   from the `avgBalance` field of the object selected in this collector after the filter
+   `avgBalanceColl.fName = testdata.fName and avgBalanceColl.lName = testdata.lName`.
+
 
 ```json
 [
@@ -963,6 +988,10 @@ Below is a step-by-step explanation of the NQL Query.
 1. Get the data from the netflow stream.
 
 `src stream="netflow"`
+=======
+
+1. Get the data from the netflow stream.
+
 
 Result (first two objects):
 
@@ -1100,6 +1129,11 @@ Result (first three values):
 5. Select the first 5 objects from the result.
 
 `src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true | sort countClientIp desc | limit 5`
+
+=======
+
+5. Select the first 5 objects from the result.
+
 
 Result:
 
@@ -1375,8 +1409,10 @@ src stream="netflowByProtocolAggr"
 ```
 
 
+
 5. Result.
 
+=======
 The first object in the following list (`protocolName: Total`) contains a summary (total) of values.
 
 ```json
