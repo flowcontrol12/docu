@@ -3,13 +3,13 @@ description: Alerts Table Tab
 ---
 In this menu [Alerts>**Alerts Table**] there is a table with a list of all triggered alerts.
 
-The **Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. In this menu there is a table with a list of **triggered Alerts** that have been defined in **the System**. If the table is empty it means that no Alerts have been triggered. Alert parameters are configured in the menu [Alerts>**Rule Set**].
+The **Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. In this menu, there is a table with a list of **triggered Alerts** that have been defined in **the System**. If the table is empty it means that no Alerts have been triggered. Alert parameters are configured in the menu [Alerts>**Rule Set**].
 
 ## Introduction
 
 At the top of the window is the standard search bar, time ranges menu, etc., these elements are described in [User Interface](https://documentation.sycope.com/User%20interface) .
 
-Above the table there is a time chart on which the number of triggered alerts in a unit of time is shown in the form of bars. 
+Above the table, there is a time chart on which the number of triggered alerts in a unit of time is shown in the form of bars. 
 
 ![image-20230620105007698](assets_Alerts%20Table/image-20230620105007698.png)
 
