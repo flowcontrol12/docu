@@ -1,13 +1,102 @@
 ---
 description: Alerts Table Tab
 ---
-One of the most important components of the Sycope system is alerting functionality. This functionality allows the user to flexibly build **Alerts** based on a number of conditions and rules that operate on the data streams collected by the system.
+In this menu [Alerts>**Alerts Table**] there is a table with a list of all triggered alerts.
 
-**Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. These rules can be used as a template from which you can create your own rules. You can also create rules on your own using the wizard.
+The **Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. In this menu there is a table with a list of **triggered Alerts** that have been defined in **the System**. If the table is empty it means that no Alerts have been triggered. Alert parameters are configured in the menu [Alerts>**Rule Set**].
 
-In this menu [Alerts>**Alerts Table**] there is a table with a list of all the alarms that are included in the system. Within each Alarm is a column of fields which, depending on user preference, can be made visible. These are listed below.
+## Introduction
+
+At the top of the window is the standard search bar, time ranges menu, etc., these elements are described in [User Interface](https://documentation.sycope.com/User%20interface) .
+
+Above the table there is a time chart on which the number of triggered alerts in a unit of time is shown in the form of bars. 
+
+![image-20230620105007698](assets_Alerts%20Table/image-20230620105007698.png)
+
+By default, the Alerts table displays 9 columns, but which columns should be visible can be changed in the drop-down menu.
+
+![image-20230620104631231](assets_Alerts%20Table/image-20230620104631231.png)
+
+## Advanced View
+
+After selecting a particular row by clicking on the row or check box in the first column of the table, a menu with **Advanced View** opens. All the variables and values associated with a given alert are available here.
+
+![image-20230620111226371](assets_Alerts%20Table/image-20230620111226371.png)
+
+By selecting a larger number of rows in the **Advanced View** menu, corresponding tabs appear.
+
+![image-20230620111512587](assets_Alerts%20Table/image-20230620111512587.png)
+
+## Action button menu
+
+The `Action` button is available for the selected row, which can be used to perform the following actions:
+
+- Mark as ACK - setting the Acknowledge flag
+- Mark as NEW - unsetting the Acknowledge flag
+- Mark as False Positive - setting the False Positive flag
+- Unmark False Positive - unsetting the False Positive flag
+- Add comment - add your own comment
 
 
+
+![image-20230620111330553](assets_Alerts%20Table/image-20230620111330553.png)
+
+## Right Click Menu
+
+After mouse right click on a row, a `Right Click` menu with the following options is available:
+
+- Action
+  - Mark as ACK - setting the Acknowledge flag
+  - Mark as NEW - unsetting the Acknowledge flag
+  - Mark as False Positive - setting the False Positive flag
+  - Unmark False Positive - unsetting the False Positive flag
+  - Add comment - add your own comment
+  - Add value to input filters - add the value to the input filter of the alert rule
+  - Add value to output filters -  add the value to the output filter of the alert rule
+  - Add value to lookup - add the value to a lookup
+- Rest Client - sending alert to another system using the REST CLIENT functionality 
+- Resolve
+  - RIPE - search in the RIPE database 
+  - DNS for all values - resolve DNS for all IP address in the table
+  - DNS - resolve DNS for the selected IP address
+  - Ns lookup - query a DNS Domain Name Server to lookup to find DNS Records and IP address information
+- Net mask Search - access to quick IP mask filter
+- Tools
+  - Ping - simple PING tool
+- Mitigation
+  - Block host by IP - address blocking when the system is integrated with the MACMON probe
+- Custom - you can create Your own `Right Click` action configured in the menu [[Confoguration>Objects>Right Click Actions]](http://localhost:3000/User%20Guide/Configuration/Objects/Right%20click%20actions)
+
+
+
+![image-20230620114012061](assets_Alerts%20Table/image-20230620114012061.png)
+
+## Settings menu
+
+Settings menu is available by pressing the icon ![image-20230630130509063](assets_Alerts%20Table/image-20230630130509063.png).
+
+![image-20230630132659466](assets_Alerts%20Table/image-20230630132659466.png)
+
+The following actions are available here:
+
+- **Server sorting** switch 
+  - **off** - sorting is performed on records previously retrieved by the browser from the database (limited to 1000 records)
+  - **on** - sorting is performed on the database and then retrieved by the browser (limited to 1000 records)
+
+- **Export as** 
+
+  - **CSV** - export alerts to CSV files which are displayed in the table (limited to 1000 records)
+  - **PDF** - export alerts to PDF files which are displayed in the table (limited to 1000 records)
+  - **PNG** - export alerts to PNG files which are displayed in the table (limited to 1000 records)
+  - **Full CSV Export** - export all alerts that are in the System (database)
+
+  
+
+
+
+## Alerts Table fields description
+
+In the table below are descriptions of the most important fields that are available for display in the Alerts table.
 
 | Field  Name              | NQL Name                     | Description                                |
 | ------------------------ | ---------------------------- | :----------------------------------------- |
