@@ -3,11 +3,108 @@ description: Data streams Tab
 ---
 # Data streams
 
+In this menu [Dashboard>**Raw Data**] there is a table with a list of all triggered alerts.
+
 Data streams available in the system with default fields and user created fields are located in [Dashboard>**Raw Data**] menu.
+
+## Introduction
+
+At the top of the window is the standard search bar, time ranges menu, etc., these elements are described in [User Interface](https://documentation.sycope.com/User%20interface) .
+
+This view displays the `netflow` stream by default. To change it to another one, you need to do it in searchbar.
+
+![image-20230705095859385](assets_Data_streams/image-20230705095859385.png)
+
+Above the table is a graph on which the number of records recorded in the system in a unit of time is shown in bars on the timeline.  In the table, the individual rows show the fields available for a given record in the selected data stream.
+
+![image-20230705095247961](assets_Data_streams/image-20230705095247961.png)
+
+:::info
+
+In the table, for better readability of the data, the number of records displayed was limited to 1000.
+
+:::
+
+Which columns are displayed in the table is configured in the drop-down menu.
+
+![image-20230706093915267](assets_Data_streams/image-20230706093915267.png)
+
+In the System, data streams are stored for a certain period of time, which is configured in the [Retention](https://documentation.sycope.com/User%20Guide/Configuration/General%20Settings/Retention) menu. For performance and resource reasons, the ` netflow ` stream is usually kept the shortest. You can see the range of available data on the chart by selecting a time period longer than the one configured in [Retention](https://documentation.sycope.com/User%20Guide/Configuration/General%20Settings/Retention) for a given data stream. In our case, netflow is stored for up to 3 hours.
+
+![image-20230706103925486](assets_Data_streams/image-20230706103925486.png)
+
+Setting the time range to ` Last 12 hours ` in blue we see the records available, in gray the number of records that were available in the `netflow` stream while now this information is stored in the aggregated stream. 
+
+For aggregated streams, you have the ability to select time resolution (auto/1 minute/10 minutes/1 hour/1 day) and you can select data due to traffic from the client or from the server (both/client/server).
+
+![image-20230706111224833](assets_Data_streams/image-20230706111224833.png)
+
+![image-20230706111459110](assets_Data_streams/image-20230706111459110.png)
+
+## Advanced View
+
+After selecting a particular row by clicking on the row, a menu with **Advanced View** opens. All the variables, fields and values associated with a given record are available here.
+
+![image-20230706094203389](assets_Data_streams/image-20230706094203389.png)
+
+![image-20230706094301239](assets_Data_streams/image-20230706094301239.png)
+
+When you select more rows in the table the corresponding tabs will appear in the  **Advanced View** menu.
+
+![image-20230706094507196](assets_Data_streams/image-20230706094507196.png)
+
+## Right Click Menu
+
+After mouse right click on a row, a `Right Click` menu with the following options is available:
+
+![image-20230705094519836](assets_Data_streams/image-20230705094519836.png)
+
+- Action
+  - Add value to lookup - add the value to a lookup
+- Rest Client - sending alert to another system using the REST CLIENT functionality 
+- Resolve
+  - RIPE - search in the RIPE database 
+  - DNS for all values - resolve DNS for all IP addresses in the table
+  - DNS - resolve DNS for the selected IP address
+  - Ns lookup - query a DNS Domain Name Server to lookup to find DNS Records and IP address information
+- Net mask Search - access to quick IP network mask filter
+- Tools
+  - Ping - simple PING tool
+- Mitigation
+  - Block host by IP - address blocking when the system is integrated with the MACMON probe
+- Custom - you can create Your own `Right Click` action configured in the menu [[Confoguration>Objects>Right Click Actions]](http://localhost:3000/User%20Guide/Configuration/Objects/Right%20click%20actions)
+
+
+
+## Settings menu
+
+Settings menu is available by pressing the icon ![image-20230630130509063](assets_Data_streams/image-20230630130509063.png).
+
+![image-20230630132659466](assets_Data_streams/image-20230630132659466.png)
+
+The following actions are available here:
+
+- **Server sorting** switch 
+
+  - **off** - sorting is performed on records previously retrieved by the browser from the database (limited to 1000 records)
+  - **on** - sorting is performed on the database and then retrieved by the browser (limited to 1000 records)
+
+- **Export as** 
+
+  - **CSV** - export alerts to CSV files which are displayed in the table (limited to 1000 records)
+  - **PDF** - export alerts to PDF files which are displayed in the table (limited to 1000 records)
+  - **PNG** - export alerts to PNG files which are displayed in the table (limited to 1000 records)
+  - **Full CSV Export** - export all alerts that are in the System (database)
+
+  
+
+
+
+## System Data streams
 
 The **Data streams** implemented in the system along with the available fields are listed and described below.
 
-## netflow
+### netflow
 
 Deduplicated Netflow and Sflow records stream.
 
@@ -97,13 +194,7 @@ Deduplicated Netflow and Sflow records stream.
 | APPLICATION_ID             | Application ID               | Application ID                                  |
 | APPL_LATENCY_MS            | Initial Server Response Time | Initial Server Response Time                    |
 
-
-
-
-
-
-
-## netflowTotalAggr
+### netflowTotalAggr
 
 | Field Name           | NQL Field                 | Description                                |
 | :------------------- | :------------------------ | :----------------------------------------- |
@@ -135,7 +226,7 @@ Deduplicated Netflow and Sflow records stream.
 
 
 
-## netflowByIfcAggr
+### netflowByIfcAggr
 
 Netflow 1 min aggregated by interface flows stream.
 
@@ -171,7 +262,7 @@ Netflow 1 min aggregated by interface flows stream.
 
 
 
-## netflowByAppAggr
+### netflowByAppAggr
 
 Netflow 1 min aggregated by application flows stream.
 
@@ -219,7 +310,7 @@ Netflow 1 min aggregated by application flows stream.
 
 
 
-## netflowByAsnAggr
+### netflowByAsnAggr
 
 Netflow 1 min aggregated by ASN flows stream.
 
@@ -261,7 +352,7 @@ Netflow 1 min aggregated by ASN flows stream.
 
 ---
 
-## netflowByGroupAggr
+### netflowByGroupAggr
 
 Netflow 1 min aggregated by group flows stream.
 
@@ -302,7 +393,7 @@ Netflow 1 min aggregated by group flows stream.
 
 
 
-## Group Function
+### Group Function
 
 | Field Name        | NQL Name               | Description                                                  |
 | ----------------- | ---------------------- | :----------------------------------------------------------- |
@@ -334,7 +425,7 @@ Netflow 1 min aggregated by group flows stream.
 
 
 
-## Group Role
+### Group Role
 
 
 
@@ -375,7 +466,7 @@ Netflow 1 min aggregated by group flows stream.
 
 
 
-## netflowByCountryAggr
+### netflowByCountryAggr
 
 Netflow 1 min aggregated by country flows stream.
 
@@ -413,7 +504,7 @@ Netflow 1 min aggregated by country flows stream.
 | Packets/s            | packetsPerSecond          | Packets per Active Time                    |
 | Bits/s               | bitsPerSecond             | Bits per Active Time                       |
 
-## netflowByExporterAggr
+### netflowByExporterAggr
 
 Netflow 1 min aggregated by exporter flows stream.
 
@@ -437,7 +528,7 @@ Netflow 1 min aggregated by exporter flows stream.
 
 
 
-## netflowByIpAggr
+### netflowByIpAggr
 
 Netflow 1 min aggregated by top IP flows stream.
 
@@ -494,7 +585,7 @@ Netflow 1 min aggregated by top IP flows stream.
 
 
 
-## netflowByMplsAggr
+### netflowByMplsAggr
 
 Netflow 1 min aggregated by MPLS flows stream.
 
@@ -528,7 +619,7 @@ Netflow 1 min aggregated by MPLS flows stream.
 | Packets/s            | packetsPerSecond          | Packets per Active Time                    |
 | Bits/s               | bitsPerSecond             | Bits per Active Time                       |
 
-## netflowByProtocolAggr
+### netflowByProtocolAggr
 
 
 
@@ -565,7 +656,7 @@ Netflow 1 min aggregated by IP protocol flows stream.
 | Packets/s            | packetsPerSecond          | Packets per Active Time                    |
 | Bits/s               | bitsPerSecond             | Bits per Active Time                       |
 
-## netflowByTosAggr
+### netflowByTosAggr
 
 Netflow 1 min aggregated by TOS flows stream.
 
@@ -602,7 +693,7 @@ Netflow 1 min aggregated by TOS flows stream.
 
 
 
-## alerts
+### alerts
 
 Alerts stream.
 
