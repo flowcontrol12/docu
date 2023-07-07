@@ -1,8 +1,6 @@
 # Examples of rule creation - simple way
 
-A simple method of a rule creation existing templates to design custom rules.
-
-In our example, we will configure a **Rule** based on the **DoS attack template**.
+A simple method of a rule creation existing templates to design custom rules. In our example, we will configure a **Rule** based on the **DoS attack template**.
 
 ## Implementation
 
@@ -22,7 +20,7 @@ In our example, we will use the **DoS Attack** template. After selecting the tem
 
 ## Overview of the rule template section
 
-### I. Simple options
+### Simple options
 
 1. The **General** section contains general rule settings, such as the name, description, severity, or ATT&CK MITRE tactics and technique, for example.
 
@@ -44,17 +42,15 @@ In our example, we will use the **DoS Attack** template. After selecting the tem
 
   
   
-
   Definitions of metrics are located in the [**Configuration->Objects->Metrics**]. The **Sum Bytes metric** calculates the total number of bytes in both directions (client <-> server).  ![image-20220809164501712](assets_alert_rule_f_temp/image-20220809164501712.png)
-
- The **Sum Packets metric** calculates the total number of packets in both directions (client <-> server).
-![image-20220809164608485](assets_alert_rule_f_temp/image-20220809164608485.png)
-
-The **Count Sessions metric** calculates the number of sessions.
-
+  
+  The **Sum Packets metric** calculates the total number of packets in both directions (client <-> server).
+  ![image-20220809164608485](assets_alert_rule_f_temp/image-20220809164608485.png)
+  
+  The **Count Sessions metric** calculates the number of sessions.
    ![image-20220809164704475](assets_alert_rule_f_temp/image-20220809164704475.png)
 
-5. The **Categories** section defines fields by which the data are grouped. In this case, we are interested in grouping by the **Client IP**, **Server IP**, **Server Port**, **Client AS Name**, **Client Country**, **Server AS Name**, **Server Country** fields. We want to monitor DoS attacks on specific servers, so we need to group data by these fields.
+5. The **Categories** section defines fields by which the data are grouped. In this case, we are interested in grouping by the **Client IP**, **Server IP**, **Server Port**, **Client AS Name**, **Client Country**, **Server AS Name**, **Server Country** fields. We want to monitor DoS attacks on specific servers, so we need to group data by these fields.
 
    ![image-20230626150613226](assets_Rule%20from%20template/image-20230626150613226.png)
 
@@ -75,7 +71,7 @@ The **Count Sessions metric** calculates the number of sessions.
 
 ---
 
-### II. Advanced option
+###  Advanced option
 
 Clicking on the show advanced option switch gives you access to advanced template options.
 

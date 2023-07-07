@@ -29,13 +29,10 @@ When clicked, a rule creator window appears in which the system indicates which 
 4. In the **Values** section, we select the fields for which we want to set thresholds for anomaly detection. In our case these are: **Unique Server IPs** and **Count Sessions**. 
 
    ![image-20230626111221948](assets_Alert%20rule%20from%20scratch/image-20230626111221948.png)
+      These metrics are predefined, and you can preview it in [**Configuration->Objects ->Metrics**].
+      ![image-20220809111545608](assets_Alert%20rule%20from%20scratch/image-20220809111545608.png)![image-20220809111522406](assets_Alert%20rule%20from%20scratch/image-20220809111522406.png)
 
-
-   
-   These metrics are predefined, and you can preview it in [**Configuration->Objects ->Metrics**].
-   ![image-20220809111545608](assets_Alert%20rule%20from%20scratch/image-20220809111545608.png)![image-20220809111522406](assets_Alert%20rule%20from%20scratch/image-20220809111522406.png)
-
-   In case you want to use a custom metric, you can create one from the [**Values -> Add new metric**] , or you can go to [**Configuration->Objects -> Metrics**].
+   In case you want to use a custom metric, you can create one from the [**Values -> Add new metric**], or you can go to [**Configuration->Objects -> Metrics**].
 ![image-20230626111334670](assets_Alert%20rule%20from%20scratch/image-20230626111334670.png)
 
 5. In the **Categories** section, we set grouping by Client IP and Server Port, because we want to detect a situation where an infected host (Client IP) communicates with multiple servers (Unique Server IPs) on a given port (Server Port).

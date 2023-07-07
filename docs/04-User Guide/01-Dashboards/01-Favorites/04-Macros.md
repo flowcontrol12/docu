@@ -14,7 +14,7 @@ In order to use a macro, remember to precede and end its name with a `$` sign.
 
 
 
-### Example1:
+### Example 1:
 
 Having an NQL with a macro called MACRO1 to which the value **MACRO1=sometext** is assigned,
 
