@@ -33,11 +33,10 @@ Below is a step-by-step explanation of the NQL Query.
 
 1. **src stream="testdata"**
 
-Get the objects from the test database.  
+   Get the objects from the test database.  
+   `src stream="testdata"` 
 
-`src stream="testdata"` 
-
-Result:  	
+   Result:  	
 
 ```json
 {
@@ -91,7 +90,7 @@ Result:
 
 2. **concat**
 
-Add a new field containing first and last names separated by a comma.
+   Add a new field containing first and last names separated by a comma.
 
 ```
 src stream="testdata" | set fullName = concat(fName, lName, delimiter=",")
@@ -154,13 +153,13 @@ Result:
 
 3. **where**
 
-Select only those people who belong to the `IT` department.
+   Select only those people who belong to the `IT` department.
 
 ```
 src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | where dep="IT"
 ```
 
-Result:  	
+​		Result:  	
 
 ```json
 {
@@ -207,7 +206,7 @@ Result:
 src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | where dep="IT" | aggr fName=first(fName), lName=first(lName), ctry=first(ctry), age=first(age), docs=first(docs), host=first(host), PD=max(PD), Balance=max(balance) by fullName 
 ```
 
-Result:  	
+​		Result:  	
 
 ```json
 {
@@ -263,7 +262,7 @@ src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | wh
 src stream="testdata"  | set fullName = concat(fName, lName, delimiter=",") | where dep="IT" | aggr fName=first(fName), lName=first(lName), ctry=first(ctry), age=first(age), docs=first(docs), host=first(host), PD=max(PD), Balance=max(balance) by fullName | sort age desc | limit 10
 ```
 
-Result:  
+​		Result:  
 
 ```json
 [
@@ -373,7 +372,7 @@ src stream="testdata"  | sort ts desc
 src stream="testdata"  | sort ts desc | aggr latestBalance=first(balance),latestPD=first(PD)  by fName, lName unwind=true
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -432,13 +431,13 @@ coll "data3" |  set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName
 
 Below is a step-by-step explanation of the NQL Query.
 
-1. **dst `collTestData`** 	
+1. **dst `collTestData`** 
 
-Prepare a collector with test data.
+   Prepare a collector with test data.
 
-`src stream="testdata"  | dst "collTestData"`
+​		`src stream="testdata"  | dst "collTestData"`
 
-Result:
+​		Result:
 
 ```json
 [
@@ -478,15 +477,15 @@ Result:
 
 2. **coll `collTestData`**
 
-Get the t
-
-`coll "collTestData"`
+   Get the test data from the "colltestData" collector .
+   
+   `coll "collTestData"`
 
 3. **fork**
 
-Execute two NQLs in parallel.
+   Execute two NQLs in parallel.
 
-`coll "collTestData" |  fork ( set fullName=concat(fName, " ", lName) | dst "data3"), ( aggr latestTs=max(ts)by fName, lName unwind=true | dst "data4") `
+   `coll "collTestData" |  fork ( set fullName=concat(fName, " ", lName) | dst "data3"), ( aggr latestTs=max(ts)by fName, lName unwind=true | dst "data4") `
 
 3.1 **set, dst** 
 
@@ -562,17 +561,17 @@ Result:
 
 4. **coll "data3"**
 
-Get the test data from the "data3" collector .
+   Get the test data from the "data3" collector .
 
-`coll "data3"`
+   `coll "data3"`
 
 5. **set, valColl**
 
-To all objects from the "data3" collector add the `latestTs`  field of which the value is taken for each person from the "data4" collector .
+   To all objects from the "data3" collector add the `latestTs`  field of which the value is taken for each person from the "data4" collector .
 
-`coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName})`
+   `coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName})`
 
-Result:
+   Result:
 
 ```json
 [
@@ -616,18 +615,18 @@ Result:
 
 6. **where**
 
-From the previously prepared set of objects (people), select only those for which `latestTs` equals `ts`. 
-These are the objects containing the most recent (latest) `PD` and `balance` values. 
+   From the previously prepared set of objects (people), select only those for which `latestTs` equals `ts`. 
+   These are the objects containing the most recent (latest) `PD` and `balance` values. 
 
-`coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName}) |  where $eq(latestTs,ts)` 
+   `coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName}) |  where $eq(latestTs,ts)` 
 
 7. **sort**
 
-Sort the result.
+   Sort the result.
 
-`coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName}) |  where $eq(latestTs,ts) |  sort fullName`
+   `coll "data3" | set latestTs=valColl("data4", "latestTs", {"fName":fName, "lName":lName}) |  where $eq(latestTs,ts) |  sort fullName`
 
-Result:
+   Result:
 
 ```json
 [
@@ -700,10 +699,10 @@ Below is a step-by-step explanation of the NQL Query.
 1. **dst**
 
    Store all objects from `testdata` in a new collector with the `collTestData` identifier.
-
-`src stream="testdata"  |  dst "collTestData" `
-
-Result:
+   
+   `src stream="testdata"  |  dst "collTestData" `
+   
+   Result:
 
 ```json
 [
@@ -744,17 +743,17 @@ Result:
 2. **coll**
 
    The previously created  `collTestData` data collector is the data source for the next step NQL.
-
-`coll "collTestData"`
+   
+   `coll "collTestData"`
 
 3. **fork**
 
    On the data from the `collTestData` collector perform two NQLs in parallel: `set...` and `aggr...`.
    Each of them stores its results in the newly created `collData1` and `collData1` collectors.
-
-`coll "collTestData" |  fork (set fullName=concat(fName, " ", lName) | limit 100 | dst "collData1"), ( aggr fieldsCount=sum(age) by fName,lName maxBuckets=2 | dst "collData2")  `
-
-Result for `set...` stored in `collData1` collector:
+   
+   `coll "collTestData" |  fork (set fullName=concat(fName, " ", lName) | limit 100 | dst "collData1"), ( aggr fieldsCount=sum(age) by fName,lName maxBuckets=2 | dst "collData2")  `
+   
+   Result for `set...` stored in `collData1` collector:
 
 ```json
 [
@@ -826,8 +825,8 @@ Result for `aggr...` stored in `collData2` collector:
    Sort the data from the `collData1` collector and display the result.  
 
    `coll "collData1" |  sort fullName`
-
-Result:
+   
+   Result:
 
 ```json
 [
@@ -869,7 +868,7 @@ Result:
 ]
 ```
 
-In this example, the data from the aggregation is ignored in further processing and not displayed at the end.
+​	In this example, the data from the aggregation is ignored in further processing and not displayed at the end.
 
 
 
@@ -896,18 +895,18 @@ Below is a step-by-step explanation of the NQL Query.
 
 1. Calculate the average balance value for a person and save it in the `avgBalance` field.
 
-`src stream="testdata" |  aggr avgBalance=avg(balance) by fName, lName unwind=true`
+   `src stream="testdata" |  aggr avgBalance=avg(balance) by fName, lName unwind=true`
 
 2. Save the results to the collector with the `avgBalanceColl` id. 
 
-`src stream="testdata" |  aggr avgBalance=avg(balance) by fName, lName unwind=true |  dst "avgBalanceColl`
+   `src stream="testdata" |  aggr avgBalance=avg(balance) by fName, lName unwind=true |  dst "avgBalanceColl`
 
 
 3. For each person from the `testdata` collection, add the `avgBalance` field whose value is taken from the `avgBalanceColl` collector 
    from the `avgBalance` field of the object selected in this collector after the filter
    `avgBalanceColl.fName = testdata.fName and avgBalanceColl.lName = testdata.lName`.
-
-`src stream="testdata" |  set avgBalance=valColl("avgBalanceColl", "avgBalance", {"fName":fName, "lName":lName}) ` 
+   
+   `src stream="testdata" |  set avgBalance=valColl("avgBalanceColl", "avgBalance", {"fName":fName, "lName":lName}) ` 
 
 ```json
 [
@@ -962,9 +961,9 @@ Below is a step-by-step explanation of the NQL Query.
 
 1. Get the data from the netflow stream.
 
-`src stream="netflow"`
+   `src stream="netflow"`
 
-Result (first two objects):
+   Result (first two objects):
 
 ```json
 [
@@ -1067,13 +1066,13 @@ Result (first two objects):
 
 2. Select only those objects in which the `clientIp` field contains the current value ip4 or ip6.
 
-`src stream="netflow" | isIp(clientIp)`
+   `src stream="netflow" | isIp(clientIp)`
 
 3. Calculate the number of objects for each client ip.
 
-`src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true`
+   `src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true`
 
-Result (first three values):
+   Result (first three values):
 
 ```json
 [
@@ -1095,13 +1094,13 @@ Result (first three values):
 
 4. Sort the results from the largest value of `countClientIp`.
 
-`src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true | sort countClientIp desc`
+   `src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true | sort countClientIp desc`
 
 5. Select the first 5 objects from the result.
 
-`src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true | sort countClientIp desc | limit 5`
+   `src stream="netflow" | isIp(clientIp) | aggr countClientIp=count(clientIp) by clientIp as client unwind=true | sort countClientIp desc | limit 5`
 
-Result:
+   Result:
 
 ```json
 [
@@ -1151,11 +1150,9 @@ Below is a step-by-step explanation of the NQL Query.
 
 1. Select the data from the `netflowByProtocolAggr` stream.
 
-```
-src stream="netflowByProtocolAggr" 
-```
+   `src stream="netflowByProtocolAggr" `
 
-Result:
+   Result:
 
 ```json
 [
@@ -1215,7 +1212,7 @@ src stream="netflowByProtocolAggr" | aggr sumClientBytes=sum(clientBytes),
   by protocol as protocolName unwind=true 
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1264,12 +1261,12 @@ Result:
 
 3. Add fields whose values are the result of the following arithmetic expressions:
 
-`_sumBytes1 = sumClientBytes + sumServerBytes`
-`_sumClientBitsPerSecond4 = (sumClientBytes * 8) / 60`
-`_sumServerBitsPerSecond5 = (sumServerBytes * 8) / 60`
-`_sumPacketsPerSecond6 = (sumClientPackets + sumServerPackets) / 60`
-`_sumFlowsPerSecond7 = sumFlows / 60`
-`_sumFlowsPerSecond7 = sumFlows / 60`
+   `_sumBytes1 = sumClientBytes + sumServerBytes`
+   `_sumClientBitsPerSecond4 = (sumClientBytes * 8) / 60`
+   `_sumServerBitsPerSecond5 = (sumServerBytes * 8) / 60`
+   `_sumPacketsPerSecond6 = (sumClientPackets + sumServerPackets) / 60`
+   `_sumFlowsPerSecond7 = sumFlows / 60`
+   `_sumFlowsPerSecond7 = sumFlows / 60`
 
 ```
 src stream="netflowByProtocolAggr" 
@@ -1281,7 +1278,7 @@ src stream="netflowByProtocolAggr"
 	  _sumFlowsPerSecond7=div(sumFlows, 60) 	 
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1355,9 +1352,9 @@ Result:
 
 4. Add object with totals.
 
-Show ten aggregation results by protocol from the highest value of the sum of the
-`sumClientBytes` and `sumServerBytes `fields and one object containing all the summed values (total) of the fields
-`_sumBytes1, sumClientBytes, sumServerBytes, _sumClientBitsPerSecond4, _sumServerBitsPerSecond5 and _sumPacketsPerSecond6, _sumFlowsPerSecond7`.
+   Show ten aggregation results by protocol from the highest value of the sum of the
+   `sumClientBytes` and `sumServerBytes `fields and one object containing all the summed values (total) of the fields
+   `_sumBytes1, sumClientBytes, sumServerBytes, _sumClientBitsPerSecond4, _sumServerBitsPerSecond5 and _sumPacketsPerSecond6, _sumFlowsPerSecond7`.
 
 
 ```
@@ -1377,7 +1374,7 @@ src stream="netflowByProtocolAggr"
 
 5. Result.
 
-The first object in the following list (`protocolName: Total`) contains a summary (total) of values.
+   The first object in the following list (`protocolName: Total`) contains a summary (total) of values.
 
 ```json
 [
@@ -1484,11 +1481,11 @@ src stream ="netflowByCountryAggr"
 
 Below is a step-by-step explanation of the NQL Query.
 
-1. Select the data from the `netflowByCountryAggr` stream and calculate the sum of `clientBytes + serverBytes`
+1. Select the data from the `netflowByCountryAggr` stream and calculate the sum of `clientBytes + serverBytes``
 
-`src stream ="netflowByCountryAggr" | set sumClientBytesAndServerBytes = add(clientBytes, serverBytes) `
+    ``src stream ="netflowByCountryAggr" | set sumClientBytesAndServerBytes = add(clientBytes, serverBytes) `
 
-Result:
+   Result:
 
 ```json
 [
@@ -1544,7 +1541,7 @@ Result:
 
 2. Calculate the average value over a 3-hour interval and save it to the `avgSumClientBytesAndServerBytes` variable.
 
-In addition, the data from the country field is combined, so as to show a list of countries in a given time interval (`countries` variable) and the beginning and end of a given time interval (`mintimestamp, maxtimestamp` variables).
+   In addition, the data from the country field is combined, so as to show a list of countries in a given time interval (`countries` variable) and the beginning and end of a given time interval (`mintimestamp, maxtimestamp` variables).
 
 ```
 src stream ="netflowByCountryAggr" 
@@ -1559,7 +1556,7 @@ src stream ="netflowByCountryAggr"
 ```
 
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1609,7 +1606,7 @@ src stream ="netflowByCountryAggr"
 	maxtimestampStr=tsToStr(maxtimestamp)
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1670,7 +1667,7 @@ src stream ="netflowByCountryAggr"
  | project -dcCountry0, -mintimestamp, -maxtimestamp, -_bucket
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1739,7 +1736,7 @@ src stream="alerts"
  | valInColl(clientIp, "top10ClientIpLast15Minute_Alerts", "clientIp") 
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1858,7 +1855,7 @@ src stream="alerts"
            (timeAggr on timestamp interval="1m" dir="desc" bucketAlias="srcEventTimestamp")           
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1881,7 +1878,7 @@ Result:
            (aggr by clientIp as clientIp unwind=true maxBuckets=20) unwind=true 
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -1937,7 +1934,7 @@ src stream="alerts"
  | limit 480
 ```
 
-Result:
+​		Result:
 
 ```json
 [
@@ -2002,7 +1999,7 @@ src stream="netflow"
  | in(serverPort,[21,22,23,25,69,80,88,110,119,139,143,161,220,389,443,445,512,513,636,995,1433,1521,2002,3306,3389,3690,4000,4899,5038,5060,5222,5432,5631,5900,5985,5986,6667]) 
 ```
 
-Result:
+​		Result:
 
 ```json
 [

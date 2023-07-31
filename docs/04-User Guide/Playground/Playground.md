@@ -8,24 +8,30 @@ For learning purposes, we have prepared a special test stream called `testdata` 
 
 The **Playground** is accessible from the **Dashboards** menu but also from the **Search Bar**.
 
-![image-20230524094810761](assets_doc-playground/image-20230524094810761.png)
+![image-20230731110438707](assets_Playground/image-20230731110438707.png)
 
-![menu master](assets_doc-playground/playground-menu.png)
+![menu master](assets_Playground/playground-menu.png)
 
 
 
 The **Playground's** main window looks like in the image below:
 
-![menu master](assets_doc-playground/playground-main.png)
+![image-20230731105234533](assets_Playground/image-20230731105234533.png)
+
+#### Stats tab
+
+In the Stats tab you will find the statistics of the query.
+
+![image-20230731105823000](assets_Playground/image-20230731105823000.png)
 
 ## Read-only mode
 
-When launched, the **Playground** components are in read-only mode. This means that the NQL that shows up in the **Query** field is built through the **Search Bar** at the top of the window. By changing the data source with the ![menu master](assets_doc-playground/playground-searchbar-source.png) option
-or by adding more filters via the ![menu master](assets_doc-playground/playground-filtrbutton.png) icon they will be added to the created NQL.
+When launched, the **Playground** components are in read-only mode. This means that the NQL that shows up in the **Query** field is built through the **Search Bar** at the top of the window. By changing the data source with the ![menu master](assets_Playground/playground-searchbar-source.png) option
+or by adding more filters via the ![image-20230731110008339](assets_Playground/image-20230731110008339.png) icon they will be added to the created NQL.
 
-![menu master](assets_doc-playground/playground-searchbar.png)
+![menu master](assets_Playground/playground-searchbar.png)
 
-To execute the NQL code, click on the `Test` button. The result will be shown in two variants: as a table (`Table`) and in JSON format (`Raw`). When selecting a table, there is an option to select the columns to be shown. It is also possible to export the table by clicking ![menu master](assets_doc-playground/playground-table-export.png). 
+To execute the NQL code, click on the `Test` button. The result will be shown in two variants: as a table (`Table`) and in JSON format (`Raw`). When selecting a table, there is an option to select the columns to be shown. It is also possible to export the table by clicking ![menu master](assets_Playground/playground-table-export.png). 
 
 
 
@@ -40,14 +46,12 @@ The `Source in nql` switch in enabled mode means that the `Query` field contains
 
 **<u>Example</u>**
 
-NQL code with the `Source in nql` switch enabled can look like this:
+​	NQL code with the `Source in nql` switch enabled can look like this:
 
-`src stream="alerts" | alertSeverity = "High" and alertComment = null | sort timestamp | limit 100`
+​	```src stream="alerts" | alertSeverity = "High" and alertComment = null | sort timestamp | limit 100```
 
-natomiast przy wyłączonym `Source in nql` i z wybranym źródłem "alerts" w polu wyboru źródła, musi być taki:
+​	When the `Source in nql` switch is disabled and the `alerts` source is selected in the source selection field, it must look like this:
 
-When the `Source in nql` switch is disabled and the `alerts` source is selected in the source selection field, it must look like this:
+​	`alertSeverity = "High" and alertComment = null | sort timestamp | limit 100`
 
-`alertSeverity = "High" and alertComment = null | sort timestamp | limit 100`
-
-In both cases, after clicking on the `Test` button, the results should be the same.
+​	In both cases, after clicking on the `Test` button, the results should be the same.
