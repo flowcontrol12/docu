@@ -14,11 +14,13 @@ The first information in this window is information about the availability of a 
 
 - **Release notes** - list of changes and improvements for a given system version
 
-- **Action**  
+- **Action** - clicking the Install button starts the installation of the system update
 
   
 
 Below is the section **System revision history** with the **Rollback** button used to restore the previous version of the system.
+
+![image-20230801130615497](assets_01-Update/image-20230801130615497.png)
 
 
 
