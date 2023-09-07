@@ -1,3 +1,7 @@
+---
+sidebar_class_name: hidden
+---
+
 # Sycope Probe User Guide
 
 Release 5.1.1 June 2023
