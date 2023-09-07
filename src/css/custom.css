@@ -71,6 +71,9 @@ html[data-theme='dark'] {
 .navbar__items .clean-btn:hover {
   background: var(--ifm-color-gray-800);
 }
+.hidden {
+  display: none !important;
+  }
 
 blockquote {
   color: #24292e;
