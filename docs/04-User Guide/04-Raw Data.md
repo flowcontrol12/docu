@@ -1,11 +1,9 @@
 ---
-description: Data streams Tab
+description: Raw Data
 ---
-# Data streams
+# Raw Data
 
-In the [**Dashboard>Raw Data**] menu there is a table with a list of all triggered alerts.
-
-The data streams available in the system with default fields and user created fields are located in the [**Dashboard>Raw Data**] menu.
+The data streams available in the system with default fields and user created fields are located in the [**Raw Data**] menu.
 
 ## Introduction
 

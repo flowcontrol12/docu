@@ -1,9 +1,9 @@
 ---
-description: Alerts Table Tab
+description: Alerts
 ---
-In the [**Alerts>Alerts Table**] menu there is a table with a list of all triggered alerts.
+In the [**Alerts**] menu there is a table with a list of all triggered alerts.
 
-The **Sycope** system includes many predefined **Alerts** created by a team of cybersecurity experts. This menu contains a table with a list of **triggered Alerts** that have been defined in **the System**. If the table is empty it means that no Alerts have been triggered. Alert parameters are configured in the menu [**Alerts>Rule Set**].
+The **Sycope** system includes many predefined **Alerts** created by a team of cybersecurity experts. This menu contains a table with a list of **triggered Alerts** that have been defined in **the System**. If the table is empty it means that no Alerts have been triggered. Alert parameters are configured in the menu [**Management>Rules**].
 
 ## Introduction
 
@@ -11,21 +11,23 @@ At the top of the window is the standard search bar, time ranges menu, etc. Thes
 
 Above the table there is a time chart in which the number of triggered alerts in a unit of time is shown in the form of bars. 
 
-![image-20230620105007698](assets_Alerts%20Table/image-20230620105007698.png)
+![image-20230913120428733](assets_03-Alerts/image-20230913120428733.png)
+
+
 
 By default, the Alerts table displays 9 columns, but you can change which columns should be visible by using the drop-down menu.
 
-![image-20230620104631231](assets_Alerts%20Table/image-20230620104631231.png)
+![image-20230620104631231](assets_03-Alerts/image-20230620104631231.png)
 
 ## Advanced View
 
 After selecting a particular row by clicking on the row or check box in the first column of the table, a menu with options for the **Advanced View** opens. All the variables and values associated with a given alert are available here.
 
-![image-20230620111226371](assets_Alerts%20Table/image-20230620111226371.png)
+![image-20230620111226371](assets_03-Alerts/image-20230620111226371.png)
 
 When selecting a larger number of rows in the **Advanced View** menu, corresponding tabs will appear.
 
-![image-20230620111512587](assets_Alerts%20Table/image-20230620111512587.png)
+![image-20230620111512587](assets_03-Alerts/image-20230620111512587.png)
 
 ## Action button menu
 
@@ -39,7 +41,7 @@ The `Action` button is available for the selected row, which can be used to perf
 
 
 
-![image-20230620111330553](assets_Alerts%20Table/image-20230620111330553.png)
+![image-20230620111330553](assets_03-Alerts/image-20230620111330553.png)
 
 ## Right Click Menu
 
@@ -69,13 +71,13 @@ After right-clicking on a row, a `Right Click` menu with the following options w
 
 
 
-![image-20230620114012061](assets_Alerts%20Table/image-20230620114012061.png)
+![image-20230620114012061](assets_03-Alerts/image-20230620114012061.png)
 
 ## Settings menu
 
-The settings menu is available by pressing the ![image-20230630130509063](assets_Alerts%20Table/image-20230630130509063.png) icon.
+The settings menu is available by pressing the ![image-20230630130509063](assets_03-Alerts/image-20230630130509063.png) icon.
 
-![image-20230630132659466](assets_Alerts%20Table/image-20230630132659466.png)
+![image-20230630132659466](assets_03-Alerts/image-20230630132659466.png)
 
 The following actions are available here:
 

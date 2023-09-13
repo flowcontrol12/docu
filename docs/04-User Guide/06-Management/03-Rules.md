@@ -1,10 +1,10 @@
 ---
-description: Rule Sets Tab
+description: Rules
 ---
 
 # Rules
 
-The menu [Alerts>**Rules Set**] can be used to create a custom `rule` based on the selected Streams and (optional) your own mathematical function. The system includes many of the most useful predefined rules you can use right after installing the system. This functionality allows the user to flexibly build **Alerts** based on a number of conditions and rules that operate on the data streams collected by the system.
+The menu [**Management>Rules**] can be used to create a custom `rule` based on the selected Streams and (optional) your own mathematical function. The system includes many of the most useful predefined rules you can use right after installing the system. This functionality allows the user to flexibly build **Alerts** based on a number of conditions and rules that operate on the data streams collected by the system.
 
 **Sycope** includes many predefined **Alerts** created by a team of cybersecurity experts. These rules can be used as a template from which you can create your own rules. You can also create rules on your own using the wizard.
 

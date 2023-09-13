@@ -1,11 +1,11 @@
 ---
-description: Reports Tab
+description: Reports
 ---
-This menu [Dashboards->Management->**Reports**] can be used to create `reports`. Reports in the system are built based on **Dashboards**. Still, it is necessary to define a filter for the report (**Report filter** - [Dashboard>Management->**Report filters**] tab) to specify the **time range** to be analyzed in the report. In addition to specifying a time range in the filter report, you can create advanced NQL expressions that operate on selected data streams.
+This menu [**Management>Reports>Reports**] can be used to create `reports`. Reports in the system are built based on **Dashboards**. Still, it is necessary to define a filter for the report (**Report filter** - [Management>Reports>**Report filters**] tab) to specify the **time range** to be analyzed in the report. In addition to specifying a time range in the filter report, you can create advanced NQL expressions that operate on selected data streams.
 
 :::caution
 
-To create a new report, you must first create a **Dashboard** ([Dashboards->Management->**Dashboard**] tab), which will be the **type of report** on which it will be based.
+To create a new report, you must first create a **Dashboard** ([**Management>Dashboard**] tab), which will be the **type of report** on which it will be based.
 
 :::
 

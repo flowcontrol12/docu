@@ -1,6 +1,6 @@
 # Macros
 
-The [**Dashboards->Favorites->Macros**] menu can be used to configure custom NQL language macros in the form of various variables.
+The [**Management->Favorites->Macros**] menu can be used to configure custom NQL language macros in the form of various variables.
 
 A Macro is used to substitute a string of characters into an NQL expression using a variable.
 
@@ -46,13 +46,15 @@ Result: `src stream="netflow" | fork (aggr clientIpCount = count(clientIpCount))
 
 ## Macro definition in the Sycope
 
-In order to define a new macro or edit an existing one, you must select the "Macros" tab in the [**Dashboards->Favorities**].
+In order to define a new macro or edit an existing one, you must select the "Macros" tab in the [**Management->Favorites->Macros**].
 
-![menu master](assets_04-Macros/nql-macro-main.png)
+![image-20230913122140406](assets_02-Macros/image-20230913122140406.png)
+
+
 
 The `New Macro` button is used for adding a new macro.
 
-![menu master](assets_04-Macros/nql-macro-edit.png)
+![menu master](assets_02-Macros/nql-macro-edit.png)
 
 Parameters:
 

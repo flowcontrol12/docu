@@ -13,7 +13,7 @@ The **Sycope** includes many different types of widgets designed to fulfill diff
 
 ## Adding custom widgets {#widgets-add}
 
-Widgets are created and edited in this menu [Dashboard>Management>**Widgets**]. To add a widget, click the Add Widget button, and the widget wizard will appear. Creating a widget consists of three or four steps, depending on the visualization type selected in the first step.
+Widgets are created and edited in this menu [**Management>Widgets**]. To add a widget, click the Add Widget button, and the widget wizard will appear. Creating a widget consists of three or four steps, depending on the visualization type selected in the first step.
 
 The system includes the following types of visualization:
 
@@ -33,7 +33,8 @@ The system includes the following types of visualization:
 14. [Text Image](#Text)
 15. [Filters](#Filters)
 16. [Radar](#Radar)
-17. [Threat Trajectory](#Threat)
+17. [Threat Trajector](#Threat)
+18. [Heatmap](#Threat)
 
 
 
@@ -705,5 +706,12 @@ Available by clicking ![image-20221202111441566](assets_02-Widgets/image-2022120
 
 [Back to the widgets list](#widgets-add)
 
+---
+
+### Heatmap{#Heat}
+
+![image-20230913121522281](assets_02-Widgets/image-20230913121522281.png)
 
 
+
+[Back to the widgets list](#widgets-add)

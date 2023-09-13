@@ -2,16 +2,20 @@
 
 After logging into the system the **Main window** will have the following view:
 
-![image-20230605144009596](assets_02-User%20interface/image-20230605144009596.png)
-In the home view you can add any **Dashboard** that is in the system by clicking the home icon in the [**Dashboards>Management>Dashboard**] menu and will be shown when the system is started.
+![image-20230913123707054](assets_02-User%20interface/image-20230913123707054.png)
 
-![image-20230605154204319](assets_02-User%20interface/image-20230605154204319.png)
+
+In the home view you can add any **Dashboard** that is in the system by clicking the home icon in the [**Management>Dashboard**] menu and will be shown when the system is started.
+
+![image-20230913123913781](assets_02-User%20interface/image-20230913123913781.png)
+
+
 
 ## Menus
 
 In the GUI interface of the Sycope system we can distinguish two areas:
 
-- **Top menu**
+- **Top menu** - on the top
 - **Main menu** - on the left 
 
 ---

@@ -1,7 +1,7 @@
 ---
 description: Report filters Tab
 ---
-This menu [Dashboards->Management->**Report filters**] can be used to create a `report filter`. These are needed to create reports; you configure here, for example, a time filter that defines the **Time range** for the generated report, but not only that.
+This menu [**Management>Reports>Report filters**] can be used to create a `report filter`. These are needed to create reports; you configure here, for example, a time filter that defines the **Time range** for the generated report, but not only that.
 
 :::info
 

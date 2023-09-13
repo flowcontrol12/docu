@@ -1,4 +1,4 @@
-# Alerts
+# User Guide
 
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';
