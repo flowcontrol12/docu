@@ -1,3 +1,6 @@
+---
+description: Macros Tab
+---
 # Macros
 
 The [**Management->Favorites->Macros**] menu can be used to configure custom NQL language macros in the form of various variables.

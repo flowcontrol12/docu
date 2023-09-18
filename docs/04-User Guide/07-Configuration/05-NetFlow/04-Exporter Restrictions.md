@@ -1,3 +1,6 @@
+---
+description: Exporter Restrictions Tab
+---
 # Exporter Restrictions
 
 This menu [Configuration>NetFlow>**Exporter Restrictions**] can be used to configure NetFlow Exporter Restriction group functionality.

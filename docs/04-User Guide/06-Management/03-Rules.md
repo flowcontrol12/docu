@@ -1,5 +1,5 @@
 ---
-description: Rules
+description: Rules Tab
 ---
 
 # Rules

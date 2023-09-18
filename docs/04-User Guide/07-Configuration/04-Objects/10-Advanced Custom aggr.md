@@ -1,3 +1,6 @@
+---
+description: Advanced Custom Aggregations Tab
+---
 # Advanced Custom Aggregations
 
 The [**Configuration->Objects->Advanced Custom Aggregations**] menu can be used to create custom aggregations.

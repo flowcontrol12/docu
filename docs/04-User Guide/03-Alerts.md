@@ -7,9 +7,7 @@ The **Sycope** system includes many predefined **Alerts** created by a team of c
 
 ## Introduction
 
-At the top of the window is the standard search bar, time ranges menu, etc. These elements are described in [User Interface](https://documentation.sycope.com/User%20interface).
-
-Above the table there is a time chart in which the number of triggered alerts in a unit of time is shown in the form of bars. 
+At the top of the window is the standard search bar, time ranges menu, etc. These elements are described in [User Interface](https://documentation.sycope.com/User%20interface). Above the table there is a time chart in which the number of triggered alerts in a unit of time is shown in the form of bars. 
 
 ![image-20230913120428733](assets_03-Alerts/image-20230913120428733.png)
 

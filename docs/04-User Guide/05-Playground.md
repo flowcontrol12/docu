@@ -1,3 +1,6 @@
+---
+description:  Playground Tab
+---
 # Playground
 
 The **Playground** functionality is used to test the **NQL** language. You can now easily test how your search bar query looks and what results it produces. 
@@ -8,30 +11,28 @@ For learning purposes, we have prepared a special test stream called `testdata` 
 
 The **Playground** is accessible from the **Dashboards** menu but also from the **Search Bar**.
 
-![image-20230731110438707](assets_Playground/image-20230731110438707.png)
+![image-20230913152841383](assets_05-Playground/image-20230913152841383.png)
 
-![menu master](assets_Playground/playground-menu.png)
-
-
+![image-20230913152947700](assets_05-Playground/image-20230913152947700.png)
 
 The **Playground's** main window looks like in the image below:
 
-![image-20230731105234533](assets_Playground/image-20230731105234533.png)
+![image-20230731105234533](assets_05-Playground/image-20230731105234533.png)
 
 #### Stats tab
 
 In the Stats tab you will find the statistics of the query.
 
-![image-20230731105823000](assets_Playground/image-20230731105823000.png)
+![image-20230731105823000](assets_05-Playground/image-20230731105823000.png)
 
 ## Read-only mode
 
-When launched, the **Playground** components are in read-only mode. This means that the NQL that shows up in the **Query** field is built through the **Search Bar** at the top of the window. By changing the data source with the ![menu master](assets_Playground/playground-searchbar-source.png) option
-or by adding more filters via the ![image-20230731110008339](assets_Playground/image-20230731110008339.png) icon they will be added to the created NQL.
+When launched, the **Playground** components are in read-only mode. This means that the NQL that shows up in the **Query** field is built through the **Search Bar** at the top of the window. By changing the data source with the ![menu master](assets_05-Playground/playground-searchbar-source.png) option
+or by adding more filters via the ![image-20230731110008339](assets_05-Playground/image-20230731110008339.png) icon they will be added to the created NQL.
 
-![menu master](assets_Playground/playground-searchbar.png)
+![menu master](assets_05-Playground/playground-searchbar.png)
 
-To execute the NQL code, click on the `Test` button. The result will be shown in two variants: as a table (`Table`) and in JSON format (`Raw`). When selecting a table, there is an option to select the columns to be shown. It is also possible to export the table by clicking ![menu master](assets_Playground/playground-table-export.png). 
+To execute the NQL code, click on the `Test` button. The result will be shown in two variants: as a table (`Table`) and in JSON format (`Raw`). When selecting a table, there is an option to select the columns to be shown. It is also possible to export the table by clicking ![menu master](assets_05-Playground/playground-table-export.png). 
 
 
 

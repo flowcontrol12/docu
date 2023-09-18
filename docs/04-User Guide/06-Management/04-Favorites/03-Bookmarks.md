@@ -1,5 +1,5 @@
 ---
-description: Favorites Bookmarks Tab
+description: Bookmarks Tab
 ---
 
 This menu [**Dashboards>Favorites>Bookmarks**] can be used to store favorite Bookmarks.

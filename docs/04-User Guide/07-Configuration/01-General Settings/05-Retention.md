@@ -1,8 +1,9 @@
+---
+description: Retention Tab
+---
 # Retention
 
-The [**Configuration>General Settings >Retention**] menu can be used to manage data retention. 
-
-![image-20230607095210551](assets_05-Retention/image-20230607095210551.png)
+The [**Configuration>General Settings >Retention**] menu can be used to manage data retention. ![Retention_24](assets_05-Retention/Retention_24.png)
 
 The Retention Mechanism allows automated management of data life, considering factors such as performance and data size.
 
@@ -40,7 +41,7 @@ Data retention takes place in the system based on user-configurable **Retention 
 
 :::caution
 
-If you operate the maxTime parameter in hourly units, the system since version 2.3 stores data up to 1 hour longer, for example: 1 Hour Hot + 1 Hour Warm means that data is stored minimum 2 hours and maximum 3 hours.
+If you operate the maxTime parameter in hourly units, the system since version 2.3 stores data up to 1 hour longer, for example: 1 Hour Hot + 1 Hour Warm means that data is stored a **minimum** 2 hours and a **maximum** 3 hours.
 
 :::
 
@@ -65,24 +66,36 @@ If you do not define a **Delete** partition in the **Retention policy** the data
 | Hot            | 1 hour  |
 | Warm           | 1 hour  |
 | Cold           | -       |
-| Delete         | 1 hour  |
+| Delete         | 2 days  |
 
-This means that the data from the **netflow** stream is stored in the system for 2 hours, within the first hour the data wille be stored with the **Hot** index, and within the next hour - with the **Warm** index. In the last hour the data will have the **Delete** status, which means that only certain metadata will still be stored and it is not possible to restore the original data to the system.
+This means that the data from the **netflow** stream is stored in the system for two hours, within the first hour the data will be stored with the **Hot** index, and within the next hour - with the **Warm** index. Than the data will have the **Delete** status for two days, which means that only certain metadata will still be stored and it is not possible to restore the original data to the System.
 
+:::danger
 
+Please do **not change** the data storage **time (maxTime)** on the **Hot** partition for the **netflow** data stream. Changes may affect system stability and performance and may cause data loss.
+Please use **Warm** and **Cold** partitions for flexible data space management.
+
+:::
 
 #### 2. Built-in policy parameters for the aggregated data stream.
 
 | Partition type | maxTime |
 | -------------- | ------- |
 | Hot            | 1 day   |
-| Warm           | -       |
+| Warm           | 6 days  |
 | Cold           | -       |
 | Delete         | 1 day   |
 
-This means that the data from the above-mentioned aggregated streams is stored in the system for 1 day, with the **Hot** index. On the second day, the data will have the **Delete** status, which means that only certain metadata will still be stored and it is not possible to restore the original data to the system.
+This means that the data from the above-mentioned aggregated streams is stored in the system for seven days, within the first day the data will be stored with the **Hot** index, and within the next six days - with the **Warm** index. After seven days, the data will have the **Delete** status for one day, which means that only certain metadata will still be stored and it is not possible to restore the original data to the system.
 
-#### 3. Built-in policy parameters for the alerts.
+:::danger
+
+Please do **not change** the data storage **time (maxTime)** on the **Hot** partition for the **aggregated data streams**. Changes may affect system stability and performance and may cause data loss.
+Please use **Warm** and **Cold** partitions for flexible data space management.
+
+:::
+
+#### 3. Built-in policy parameters for the alerts and notifications.
 
 | Partition type | maxTime |
 | -------------- | ------- |
@@ -91,18 +104,29 @@ This means that the data from the above-mentioned aggregated streams is stored i
 | Cold           | -       |
 | Delete         | 1 day   |
 
-This means that the alerts are stored in the system for 1 week, with the **Hot** index. After one week, the data will have the **Delete** status for 1 day, which means that only certain metadata will be stored and it is not possible to restore the original data to the system.
+This means that the alerts are stored in the system for one week, with the **Hot** index. After one week, the data will have the **Delete** status for one day, which means that only certain metadata will be stored and it is not possible to restore the original data to the System.
 
-#### 4. Built-in policy parameters for audit messages, metrics and notifications.
+#### 4. Built-in policy parameters for audit messages.
 
 | Partition type | maxTime |
 | -------------- | ------- |
 | Hot            | 1 month |
-| Warm           | 1 month |
+| Warm           | -       |
 | Cold           | -       |
-| Delete         | -       |
+| Delete         | 1 month |
 
-This means that the data is stored in the system for 2 months. First the first one with the **Hot** index and the second one with the **Warm** status. 
+This means that the data is stored in the system for one month. After one month, the data will have the **Delete** status for one month, which means that only certain metadata will be stored and it is not possible to restore the original data to the System.
+
+#### 5. Built-in policy parameters for metrics.
+
+| Partition type | maxTime  |
+| -------------- | -------- |
+| Hot            | 1 day    |
+| Warm           | 2 months |
+| Cold           | -        |
+| Delete         | 1 day    |
+
+This means that the data is stored in the system for two months and one day. First one day with the **Hot** index and the second two months with the **Warm** status. After two months and one day, the data will have the **Delete** status for one day, which means that only certain metadata will be stored and it is not possible to restore the original data to the System.
 
 
 
