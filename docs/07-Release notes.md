@@ -1,128 +1,117 @@
 # Release notes
 
-:::info
+---
 
-We kindly inform you that this update affects the standard system content, especially the one from the Security module. Therefore, if you created custom security rules please double check if they are working properly. If you like any old security dashboards please duplicate those before the update.
+**Note!**
+We kindly inform you that this update affects the standard system content. We have rebuilt components for the following Dashboard groups: DNS, HTTP, Groups and Countries. If you wish to keep any old Dashboards or their components, please duplicate them before updating. As a result, the data disk capacity requirements have been changed - now it is 180 GB.
 
-:::
+---
 
-### ver. 2.3
+### ver. 2.4
 
-- Added a new functionality called **User Scripts** which allows for automatic communication by POST json message with external systems using the **REST Client**. This allows for sending **Alerts** to external systems and applications![user_scripts](assets_07-Release%20notes/user_scripts.jpg)
+- Refreshed the scenarios for Dashboard Groups: DNS, HTTP, Groups and Countries
 
-- Added a new functionality of **Advanced Custom Aggregations**. Being an evolution of creating **Custom Aggregations**, the Advanced ones can be used to set a dynamic key field value and any metric for them (for performance reasons, max recommended value equals 3) and any metric (for performance reasons, max recommended value equals 6). 
+  We have refreshed the scenarios for **Dashboard Groups**: **DNS, HTTP, Groups** and **Countries**. Now the data on these Dashboards is presented based on specially created and configured **Filtering Widgets**. As a result, we have achieved consistency in the presentation of data on individual widgets and tabs within a Dashboard Group. All widgets within the refreshed groups from now on have a **Drilldown** option allowing the user to quickly delve into the data analysis.
 
-  ![custom_advanced_aggregation](assets_07-Release%20notes/custom_advanced_aggregation.jpg)
+  All this is so that the user can easily **perform troubleshooting** based on data from **multiple data streams**, among other things.
 
-  
-  
-- Added a new functionality called the **Playground**. The User can now easily test the NQL queries, the looks and functioning of the search bar query, as well as the produced results. This can be achieved through plain NQL code written from scratch or with the examples provided here: https://documentation.sycope.com/NQL/NQL_examples. 
-  
-  ![playground](assets_07-Release%20notes/playground.jpg)
-  
-- The **Rule Creator** has been expanded and improved. The **Thresholds** section has become a simple graphical wizard which allows the user to create groups for better graphical representation of data. The **Rule Creator** has also been equipped with the **Preview** tab for previewing the created **Threshold** elements in text form
+  ![optimised_dashboards](assets_07-Release%20notes/optimised_dashboards.jpg)
 
-  ![rule_creator](assets_07-Release%20notes/rule_creator.jpg)
+- Added a new menu layout and visual elements
 
-- The **Search bar** operation has been simplified. The User can now view the selected elements in convenient, editable tiles
+  We have refreshed the **visual elements** and **simplified the navigation** in the System so that the user can get to the needed options in the system faster. To this end, we have highlighted critical elements of the interface so that they are at hand, which greatly simplifies navigation in the system. To improve the clarity of the system, we have used new sets of icons.
 
-  ![simplified_searchbar](assets_07-Release%20notes/simplified_searchbar.jpg)
+  ![refreshed_navigation](assets_07-Release%20notes/refreshed_navigation.jpg)
 
-- Added a functionality of NQL Macros which are a type of user-defined NQL variables
+- Added a new way to set up a service access procedure on demand (no port forward required)
 
-- Added system favorite filters which have been developed by our engineers and are available out of the box   
+  We have improved the **service access procedure on demand** (**Maintenance mode**), now the user does not need to reconfigure his network edge devices. The process itself consists of only two steps: in the first step the user sends the **challenge key** to support and in the second one he enters the **response key** sent back. After clicking the `Connect` button, the TCP connection on port 443 to the AWS instance (supportaccess.sycope.com) is established for the time specified in the **Active time** field. The user can terminate the connection at any time by clicking the **Disconnect** button.
 
-- Added new, predefined time ranges
+  ![maintenance_mode](assets_07-Release%20notes/maintenance_mode.jpg)
 
-- Added predefined baselines
+- Added a new, more user-friendly way to activate the System or add the license to the System
 
-- Added the ability to easily create rules based on a widget
+  We have improved the process of obtaining a license and activating the system by adding the **Auto mode**. In this mode the whole procedure comes down to entering the **License serial number** and **Company ID** and pressing the `Get license` button. If the server is connected to the Internet and the credentials have been entered correctly, the system is ready for use after a while.
 
-- Added a new top bar
+  ![autolicensing](assets_07-Release%20notes/autolicensing.jpg)
 
-- Added aggregation - unwinding of a collection
+- Added *[Nql user manual](https://documentation.sycope.com/NQL/NQL%20documentation)* to the documentation page
 
-- Added names and descriptions of placeholders in e-mail templates
+  We have added an [NQL User manual](https://documentation.sycope.com/NQL/NQL%20documentation) to our website. This is a detailed documentation of the query language which contains descriptions of all **commands** and **functions**, including **syntax** and **parameters**. To the descriptions we have added numerous examples of use which are based on test data included by default in the System. This allows the user to check and test the operation of the commands and functions in practice right after installing Sycope.
 
-- Added live preview of e-mail templates
+  ![user_manual](assets_07-Release%20notes/user_manual.jpg)
 
-- Added the ability to use placeholders in text e-mail mode - hints
+- Added a new way to filter data in tables - plus/minus/filter(modal)
 
-- Added new placeholders, e.g. links to raw data view with provided reasons for generated alerts
+- Added unwind functions for Widget and rule wizards for collection type fields
 
-- Added Tag lookup - searching tags according to names instead of IDs
+- Added an icon for Widgets that warns and informs about errors, such as reaching defined limits
 
-- Added division of comparison operators into simple and advanced
+- Added the possibility to display messages in place of the Widget when the amount of input data exceeds the defined limit
 
-- Added new drilldown option – substitution of widgets
+- Added additional options for coloring data in Widgets including tables (by metric, by ranges, by thresholds)
 
-- Added ability of establishing an ad hoc locked state for a widget
+- Added new options for creating and saving Widgets from the wizard (Save as new and add to Dashboard, Create/Save and add to dashboard)
 
-- Added Baseline based on collectors
+- Added new options for creating and saving Widgets from the Dashboard edit menu (Save as new and add to Dashboard, Create/Save and add to dashboard)
 
-- Added deactivation option (turning on/off) of the custom fields
+- Added new options in the Dashboard settings menu (Open in modal, Duplicate, Add to another Dashboard)
 
-- Added filters based on saved fields (based on lookups)
+- Added the ability to edit fields and metrics from the the Widget and Rule wizard
 
-- Added Heatmap Widget
+- Added warning messages to the filter creator with suggestions when the wrong operator is selected 
 
-- Added DNS resolve per widget
+- Added `Unapplicable` sections to the filter creator when selecting an operator
 
-- Added Labels on a single axis in the radar graph
+- Added descriptions of operators to the filter creator
 
-- Added Global info about a required restart
+- Added a new TOS Precedence operator
 
-- Added Widget "quick" options in the widget card 
+- Added the option to save table configurations (order, visibility, column widths) in user preferences 
 
-- Added lookups import
+- Added the ability to display threshold values (baselines) in table cells 
 
-- Added export of collectors and retention
+- Added icons to indicate the different types of fields in the table
 
-- Added hover for the top menu
+- Added the ability to display field names from the database in the table
 
-- Added internal scroll in the wizards
+- Changed the appearance of flyout - removed order numbers
 
-- Added privacy settings for user account object 
+- Added coloring in thresholds to help navigate between logical containers in the Rules section
 
-- Added axis configuration on graphs
+- Added icons for fields (fields in baseline, enumeration fields, metrics) in the Rules section
 
-- Added a new type of the Scatter graph
+- Added labels in widgets indicating the baseline set 
 
-- Added Join Categories option in grid charts
+- Added the ability to add a custom label for the baseline
 
-- Added Full CSV Export
+- Added new modal design for filtering data in the Searchbar
 
-- Added limits per category
+- Added prompts for macros in the Searchbar
 
-- Added a value option to lookup from the context menu
+- Added a preview option of macro definitions on the hoover tooltip in the Searchbar
 
-- Added a value option to input/output filters in alerts from the context menu
+- Added the ability to block filters added in simple mode in the Searchbar
 
-- Added dependence from the GUI heartbeat for Collectors
+- Added the ability to control the size of the node for the graph Widget
 
-- Added transferring of the tabs to the side menu + drag&drop
-
-- Added the Keep Filters option in the statistics
-
-- Added temporary turning off/deactivation of a rule - in relation to service windows
-
-- Added advanced options to the widget filter
-
-- Added the ability in the tables to change the default stream while filtering
-
-- Added the ability in the tables to define if it is possible to add data from a given column to the filter with the use of the plus button
-
-  
-
-#### Other Changes
-
-- Change of the layout for the baseline configuration
-- Change of the manner of highlighting an element of a widget
-- Drag&drop in the tabs instead of arrows in the wizard -> targeted for the side list instead of tabs
-
-
+- In the time filter, periods longer than 24 hours are based on closed time intervals
 
 #### Fixes
 
-- Better hints in the NQL fields (in the saved fields, saved metrics and the wizard)
+- Problem with custom SSL certificate browser validation 
+
+- Operation of overlapping in subnet lookup
+
+- Problem with increasing space on data disk storage 
+
+- Problem with sharing Traffic Profiles configuration with other users
+
+- Problem with changing the time zone
+
+  
+
+  
+
+ 
 
