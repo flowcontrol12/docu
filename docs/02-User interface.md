@@ -2,16 +2,20 @@
 
 After logging into the system the **Main window** will have the following view:
 
-![image-20230605144009596](assets_02-User%20interface/image-20230605144009596.png)
-In the home view you can add any **Dashboard** that is in the system by clicking the home icon in the [**Dashboards>Management>Dashboard**] menu and will be shown when the system is started.
+![image-20230913123707054](assets_02-User%20interface/image-20230913123707054.png)
 
-![image-20230605154204319](assets_02-User%20interface/image-20230605154204319.png)
+
+In the home view you can add any **Dashboard** that is in the system by clicking the home icon in the [**Management>Dashboard**] menu and will be shown when the system is started.
+
+![image-20230913123913781](assets_02-User%20interface/image-20230913123913781.png)
+
+
 
 ## Menus
 
 In the GUI interface of the Sycope system we can distinguish two areas:
 
-- **Top menu**
+- **Top menu** - on the top
 - **Main menu** - on the left 
 
 ---
@@ -151,7 +155,9 @@ The **Profile Menu** allows you to change the system password.
 
 The **Personal Settings** allow you to personalize selected system parameters.
 
-![image-20230606111014711](assets_02-User%20interface/image-20230606111014711.png)
+![image-20230913153917238](assets_02-User%20interface/image-20230913153917238.png)
+
+
 
   ![image-20220518145827250](assets/image-20220518145827250.png) - is used to log out of the system.
 
@@ -166,12 +172,14 @@ The **Main menu** is located in the left sidebar. This sidebar can be rolled up 
 Starting from the top, the left sidebar contains:
 
 - The icon area with system notifications
+
 - Main menu with a sub-menu
+
 - The "Whats new?" menu with a description of key changes for the current version of the System
 
+  ![image-20230913154154279](assets_02-User%20interface/image-20230913154154279.png)
 
-
-![image-20230605162949962](assets_02-User%20interface/image-20230605162949962.png)
+  
 
 
 
@@ -179,23 +187,21 @@ The main menu consists of the following submenus and tabs:
 
 - **Home**
 - **Dashboard**
-
+- **Alerts**
+- **Raw Data**
+- **Playground**
+- Management
+  - Dashboard tab
+  - Widgets tab
+  - Rules tab
   - Favorites
-    - Dashboard tab
-    - Widgets tab
     - Filters tab
     - Macros tab
     - Bookmarks tab
-  - Raw Data
-  - Management
-    - Dashboard tab
-    - Widgets tab
+  - Reports
     - Reports tab
     - Report Filters tab 
-- **Alerts**
-
-  - Rules Set
-  - Alerts Table
+  
 - **Configuration**
 
   - General Settings
@@ -244,7 +250,6 @@ The main menu consists of the following submenus and tabs:
     - Update tab
     - About tab
   - Licenses
-- **Playground**
 
 
 ---
@@ -351,9 +356,9 @@ A list of favorite filters is available at the beginning of the search bar.
 
 ![image-20230606152801298](assets_02-User%20interface/image-20230606152801298.png)
 
-The list of favorite filters can be edited in the menu [**Dashboards>Favorites>Filters**].
+The list of favorite filters can be edited in the menu [**Management>Favorites>Filters**].
 
-![image-20230606152938795](assets_02-User%20interface/image-20230606152938795.png)
+![image-20230913154915906](assets_02-User%20interface/image-20230913154915906.png)
 
 ### Graph
 
