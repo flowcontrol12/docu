@@ -1,11 +1,8 @@
 # Release notes
+:::info **Note**
 
----
-
-**Note!**
 We kindly inform you that this update affects the standard system content. We have rebuilt components for the following Dashboard groups: DNS, HTTP, Groups and Countries. If you wish to keep any old Dashboards or their components, please duplicate them before updating. As a result, the data disk capacity requirements have been changed - now it is 180 GB.
-
----
+:::
 
 ### ver. 2.4
 
