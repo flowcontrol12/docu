@@ -1260,7 +1260,7 @@ The command performs several aggregations, with each subsequent aggregation bein
 #### Syntax
 
 ```
-| splitAggr field1=funkcja_agregujaca(streamField1) [, ... fieldN=funkcja_agregujaca(streamFieldN)] ({subAggr1}), ({subAggr2}), [, ... ({aubAggr3})] [unwind={boolean}] 
+| splitAggr field1=aggregate_function(streamField1) [, ... fieldN=aggregate_function(streamFieldN)] ({subAggr1}), ({subAggr2}), [, ... ({aubAggr3})] [unwind={boolean}] 
 ```
 
 #### Parameters
@@ -1268,7 +1268,7 @@ The command performs several aggregations, with each subsequent aggregation bein
 | Parameter Name | Required/not required; Field type | Description |
 | --------------- | ----------------- | ---- |
 | field1             | Yes;  string | Name of the field to which the result will be assigned |
-| funkcja_agregująca | Yes; Funkcja | One of the aggregate functions, accumulators for example: count,avg,dc etc.... |
+| aggregate_function | Yes; function | One of the aggregate functions, accumulators for example: count,avg,dc etc.... |
 | streamField1       | Yes;  string | The field whose values will be aggregated |
 | subAggr            | Yes;  string | Sub-aggregation. A minimum of two must be defined. |
 | uwind              | Yes; boolean | Unwound values |
@@ -1343,7 +1343,7 @@ An command that aggregates data using an aggregating function (accumulator). Ret
 
 #### Syntax
 ```
-| timeAggr field1=funkcja_agregujaca(field2) [on field5] [by field3[, field4]] [interval={timespan}] [dir={dir}] [maxBuckets={number}] [bucketAlias={string}] [unwind={bool}]
+| timeAggr field1=aggregate_function(field2) [on field5] [by field3[, field4]] [interval={timespan}] [dir={dir}] [maxBuckets={number}] [bucketAlias={string}] [unwind={bool}]
 ```
 
 #### Parameters
@@ -1351,7 +1351,7 @@ An command that aggregates data using an aggregating function (accumulator). Ret
 | Parameter Name | Required/not required; Field type | Description |
 | --------------- | ----------------- | ---- |
 | field1             | Yes;  string | Name of the field to which the result will be assigned. |
-| funkcja_agregująca | Yes; function | One of the aggregate functions, accumulators for example: count,avg,dc etc... |
+| aggregate_function | Yes; function | One of the aggregate functions, accumulators for example: count,avg,dc etc... |
 | filed2             | Yes;  string | The field whose values will be aggregated. |
 | by field3 ,field4  | Yes;  string | Value grouping field(s). |
 | on field5          | Yes;  string | The field from which time is taken for counting buckets, by default it is the timestamp field. |
