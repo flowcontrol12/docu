@@ -1368,51 +1368,51 @@ An command that aggregates data using an aggregating function (accumulator). Ret
 
 
 ```
-src stream="testdata" | timeAggr  sredniaWieku=avg(age), liczbaOsob=count(age) on ts interval="1d" | set dateTime=tsToStr(_bucket) | sort _bucket
+src stream="testdata" | timeAggr  avgAge=avg(age), cnt=count(age) on ts interval="1d" | set dateTime=tsToStr(_bucket) | sort _bucket
 ```
 
 Result:
 ```json
 [
 	{
-		"sredniaWieku": 39.5,
-		"liczbaOsob": 30,
+		"avgAge": 39.5,
+		"cnt": 30,
 		"_bucket": 1672531200000,
 		"dateTime": "2023-01-01 00:00:00.000"
 	},
 	{
-		"sredniaWieku": 42.46153846153846,
-		"liczbaOsob": 26,
+		"avgAge": 42.46153846153846,
+		"cnt": 26,
 		"_bucket": 1672617600000,
 		"dateTime": "2023-01-02 00:00:00.000"
 	},
 	{
-		"sredniaWieku": 43.28947368421053,
-		"liczbaOsob": 38,
+		"avgAge": 43.28947368421053,
+		"cnt": 38,
 		"_bucket": 1672704000000,
 		"dateTime": "2023-01-03 00:00:00.000"
 	},
 	{
-		"sredniaWieku": 42.125,
-		"liczbaOsob": 32,
+		"avgAge": 42.125,
+		"cnt": 32,
 		"_bucket": 1672790400000,
 		"dateTime": "2023-01-04 00:00:00.000"
 	},
 	{
-		"sredniaWieku": 39.121212121212128,
-		"liczbaOsob": 33,
+		"avgAge": 39.121212121212128,
+		"cnt": 33,
 		"_bucket": 1672876800000,
 		"dateTime": "2023-01-05 00:00:00.000"
 	},
 	{
-		"sredniaWieku": 43.0,
-		"liczbaOsob": 36,
+		"avgAge": 43.0,
+		"cnt": 36,
 		"_bucket": 1672963200000,
 		"dateTime": "2023-01-06 00:00:00.000"
 	},
 	{
-		"sredniaWieku": 40.97674418604651,
-		"liczbaOsob": 43,
+		"avgAge": 40.97674418604651,
+		"cnt": 43,
 		"_bucket": 1673049600000,
 		"dateTime": "2023-01-07 00:00:00.000"
 	},
