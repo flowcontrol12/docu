@@ -1275,7 +1275,7 @@ The command performs several aggregations, with each subsequent aggregation bein
 
 
 
-####Example 1. Average balance for a given country and department
+#### Example 1. Average balance for a given country and department
 
 In this example, the calculation of values uses two pipelines made with the fork command that return the same result. The first, using the splitAggr command, initially sums (performs an aggregation) the values of the "balance" field for a given country (ctry), 
 and then on the result obtained, sums (performs an aggregation) the values of "balance" for departments. The result is stored in the "sumBytes0" field.
@@ -1434,9 +1434,6 @@ The now() function is used to retrieve the timestamp in the GMT+00 time zone at 
 ```
 now() : long
 ```
-
-|      |      |      |
-| ---- | ---- | ---- |
 
 #### Return value
 
