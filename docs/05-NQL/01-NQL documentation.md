@@ -4,7 +4,7 @@ This document describes the NQL query language.
 
 ## Glossary
 
-|                   | Description                                                  |
+| Term              | Description                                                  |
 | ----------------- | ------------------------------------------------------------ |
 | field             | Key-value pair, a way of storing information, e.g. name=John. In special cases, it is allowed to store an empty value in the field. It is not possible to create a field with an empty/undefined key. The value of the field for a specific data type. |
 | object            | A collection of fields that form the basic unit of data storage. It has mandatory/system fields. A blank document has only mandatory/system fields. |
@@ -14,8 +14,8 @@ This document describes the NQL query language.
 | stream            | Data source. Generates (on demand or continuously) a sequence of objects (collection) of a specific type (origin). |
 | command           | Processes a set of data (collections) coming from the input and passes the output result. Commands can be more than one and can form a so-called pipe: source1 \| command1 \| command2 \| .... commandN. Each command has an input and an output of data (collections). The input of a command is a sequence of input objects (collection) which are the result (output) of the previous command or stream. The result of a command is a collection of output objects. A special type of command is a stream, which has only an output. |
 | pipe (nql)        | A sequence of commands that process collections of objects results in the processing of data sets originating "on the left side" and passes the results "to the right". A pipeline is defined by an nql expression. |
-| argN              | A function's Nth argument. |
-| kwarg             | A function's argument in format `key=value`. |
+| argN              | A function's Nth argument.                                   |
+| kwarg             | A function's argument in format `key=value`.                 |
 
 
 
