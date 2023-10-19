@@ -2,74 +2,104 @@
 description: Business Hours Tab
 ---
 
+# Business Hours
+
 This menu (Configuration>Mapping>**Business Hours**) can be used to create a Business hour profile. 
 
+The **Business Hours** is a system function that allows users to define and set specific time ranges to represent  "working" hours. Primarily utilized for informational purposes, once established and color-selected, these hours will be visually represented on graphs. This feature works kind of like the **Maintenance Windows** feature, but it can't block alerts and usually repeats the set dates.
 
+![maintenancewindow-1](assets_03-Business%20Hours/maintenancewindow-1.png)
+
+:::info
+
+In order for the defined **Business hours** windows to be visible on the chart, the **Business hours** option must be enabled in the time range menu.
+
+![image-20231009112501374](assets_03-Business%20Hours/image-20231009112501374.png)
+
+:::
+
+In the menu, there is a table with **Business Hours** profiles created in the System, which contains the following columns:
 
 **Add new** button - create new **Business Hours** profile.
 
 There is a Table with columns:
 
-**Name** - Name of the `Business Hour` profile
+**Name** - Name of the `Business Hours` profile
 
 **Privacy** - privacy status icon
 
 **Shared** - users who shared the object
 
-**Actions**
+**Actions** - possible actions
 
-- **Edit** - opens a window to edit `Business Hour` profile for the current column
-- **Duplicate** - create an editable copy of the selected **Business Hours**
-- **Delete** - delete a `Business Hour ` profile
+- **Edit** - opens a window to edit `Business Hours` profile for the current column
+- **Duplicate** - duplicates the  `Business Hours ` in the current column
+- **Delete** - deletes the  `Business Hours ` in the current column
 
-To add a new **Business Hours** click  **New business Hours**  button then the wizard will appear. In the wizard window there are the following fields:
+
+
+![image-20231009114429599](assets_03-Business%20Hours/image-20231009114429599.png)
+
+---
+
+## Business Hours creation wizard
+
+To add a new **Business Hours** click  **Add business hours** button then the wizard will appear. 
+
+![image-20231009113438249](assets_03-Business%20Hours/image-20231009113438249.png)
+
+
+
+In the wizard window there are the following fields:
 
 - Name - **Business Hours** name
 
 ---
 
 - **Simple mode**
-  - Select days of the week
-  - Start time
-  - End time
-  - Browser Time
-
-- **Select color**
+  - The days of the week when business hours should apply.
+  - Start time - business hours start time
+  - End time - business hours end time
+  - Browser Time - time zone taken from a browser
 
 - **Privacy** - assigning privileges 
-
-  - Private - accessible to the owner
-
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit
-      - Execute
-
-  - Shared - accessible to one or more selected roles. Available privileges are:
-    - Delete
-
-    - Edit
-
-    - Execute
-
-    - View
+  - **Private** - accessible to the owner
+  
+  - **Public** - visible to all, but You can grant permission: **delete**/**edit**
+  
+  - **Shared** - accessible to one or more selected **User roles**. Available privileges are: **delete**/**edit**
 
 ---
 
 - **Advanced mode**
-  - Select days of the week with the start and end time for each
+  
+  ![image-20231009114051976](assets_03-Business%20Hours/image-20231009114051976.png)
+  
+  - The days of the week when business hours should apply with the start, end time and time zone for each
 - **Select color**
 
 - **Privacy** - assigning privileges 
 
   - **Private** - accessible to the owner
 
-  - **Public** - visible to all, but You can grant permission:
-    - **DELETE**
-    - **EDIT**
+  - **Public** - visible to all, but You can grant permission: **delete**/**edit**
+  
+  - **Shared** - accessible to one or more selected **User roles**. Available privileges are: **delete**/**edit**
 
-  - Shared - accessible to one or more selected **User roles**. Available privileges are:
-    - **Delete**
-    - **Edit**
-    - **View**
+## Example of creating a Business hours
+
+1. Click  **Add business hours** button and fill in the fields in the wizard.
+
+![image-20231009114703633](assets_03-Business%20Hours/image-20231009114703633.png)
+
+2. Click `Save` and see if a new **Business hours** appears in the list
+
+![image-20231009114917106](assets_03-Business%20Hours/image-20231009114917106.png)
+
+3. Go to, for example, the **Raw data** menu and check the **Business hours** option in the **Time range** menu
+
+   ![image-20231009115142776](assets_03-Business%20Hours/image-20231009115142776.png)
+
+4. If all the steps have been done correctly you can see the created **Business hours** on the chart
+
+![image-20231009115601871](assets_03-Business%20Hours/image-20231009115601871.png)
