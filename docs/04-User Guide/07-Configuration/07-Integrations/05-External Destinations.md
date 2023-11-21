@@ -4,18 +4,20 @@ description: External Destination Tab
 
 The [**Configuration>Integrations>External Destinations**] menu can be used to configure the external destination to which the system will send data.
 
+![image-20231116092501520](assets_05-External%20Destinations/image-20231116092501520.png)
+
 The list of **External Destinations** is presented in a table with the following columns:
 
-- **Name** - External Destinations name.
+- **Name** - External Destinations name
 - **Status** - active/inactive
-- **Type** - template type - HTML or Text.
-- **Privacy** - 
-- **Shared** - 
-- **Action** - 
-  - Edit - edit an existing object
-  - Duplicate - duplicate object, can be used as a template for a new object
-  - Export - export to JSON
-  - Delete - delete an object
+- **Type** - template type - HTML or Text
+- **Privacy** - information about object permissions in the context of roles
+- **Shared** - information about access to the object in the context of roles
+- **Action** - possible actions
+  - **Edit** - edit an existing object
+  - **Duplicate** - duplicate object, can be used as a template for a new object
+  - **Export** - export to JSON
+  - **Delete** - delete an object
 
 To add a new **External Destination** click the **New external destinations** button and the **New external destinations** wizard will appear. 
 

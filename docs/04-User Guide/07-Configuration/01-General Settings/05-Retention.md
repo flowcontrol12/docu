@@ -13,11 +13,15 @@ Data streams are stored on partitions of which there are four types in the syste
   utilization.
 - **Warm** - deferred data that is no longer written while they can be read and searched.
 - **Cold** - low read and speed, low disk utilization.
-- **Delete** - data to be deleted.
+- **Delete** - data to be deleted. The **Delete** partition has been hidden and is available after using the **Show advanced option** switch. 
 
-![image-20221025092205878](assets_05-Retention/image-20221025092205878.png)
 
-You can change the storage location of a particular **Data Stream** in the context of the partition type. The **maxTime** parameter is used for this purpose and it is the maximum time after which the partition type will be changed to another.
+
+![image-20231109103755050](assets_05-Retention/image-20231109103755050.png)
+
+![image-20231109105658135](assets_05-Retention/image-20231109105658135.png)
+
+You can change the storage location of a particular **Data Stream** in the context of the partition type. The **maxTime** parameter is used for this purpose and it is the **<u>minimum</u>** time after which the partition type will be changed to another.
 
 When the **maxTime** condition is met, the partition type is changed in the following order:
 

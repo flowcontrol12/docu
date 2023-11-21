@@ -4,21 +4,21 @@ title: System Status
 description: System Status Tab
 ---
 
-In this menu [Configuration>General Settings >**System Status**], there are several widgets and tables with detailed information about the system parameters and status of its components, for example, free disk space, CPU load, up time, and so on.
+In the [**Configuration>General Settings >System Status**] menu, there are several widgets and tables with detailed information about the system parameters and status of its components, for example, free disk space, CPU load, up time and so on.
 
 ![image-20230801185803986](assets_01-System%20Status_/image-20230801185803986.png)
 
-There are tree buttons:
+In the main window, there are tree buttons available:
 
 - **Shutdown ** - system shutdown
 
-- **Factory Reset** - restore the System to factory settings (except for network settings which remain unchanged)
+- **Factory Reset** - restore the System to factory settings (except for the network settings which remain unchanged)
 
 - **Restart** - system restart
 
 ![image-20230801185843978](assets_01-System%20Status_/image-20230801185843978.png)
 
-There are the following widgets:
+There are also the following widgets:
 
 - **System Information**
 
@@ -106,7 +106,7 @@ There are the following widgets:
   - Sub state 
   - Load state
   - Action - buttons Stop, Restart and Show logs
-  - Show logs button - opens the window with a table containing the event Timestamp and Message related to it. The download button allows you to save logs to a local disk.
+  - Show logs button - opens the window with a table containing the event Timestamps and Message related to it. The download button allows you to save logs to a local disk.
   
     ![image-20230801191341313](assets_01-System%20Status_/image-20230801191341313.png)
   

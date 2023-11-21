@@ -6,7 +6,7 @@ description: Dashboard Tab
 
 A **Dashboard** is a visual representation of data designed for quick analysis of the network traffic data and for informational awareness.
 
-**Dashboards** consist of **Widgets** – objects with a graphical representation of specific data which can be added, edited, positioned, deleted or modified as you like. Sycope allows users to set up multiple **Dashboards**. 
+**Dashboards** consist of **Widgets** – objects with a graphical representation of specific data which can be added, edited, positioned, deleted or modified as you like. The Sycope system allows users to set up multiple **Dashboards**. 
 
 **Dashboards** can be combined into **groups** depending on the user's needs while a single **Dashboard** can belong to multiple **groups**.
 
@@ -14,15 +14,15 @@ A number of **Dashboard groups** created by our specialists to implement selecte
 
 **Dashboards** and **Dashboards groups**, both built-in and user-created, are available for use in the **[Dashboard]** menu.
 
-![image-20230918093631288](assets_02-Dashboards/image-20230918093631288.png)
+![image-20231114100559352](assets_02-Dashboards/image-20231114100559352.png)
 
-In this menu there is a table with all Dashboards and groups of dasboards that are available in the system and above the table there is a top menu.
+In this menu, there is a table with all Dashboards and groups of dashboards that are available in the system and above the table there is a top menu.
 
 In the top menu, there are the following options:
 
 #### Favorites
 
-![image-20230918094101602](assets_02-Dashboards/image-20230918094101602.png) - two icons with which you can reduce the list of Dashbords/Dashboard groups and display only those marked as favorites. To add Dashboard/Dashboard group to favorites, just click the icon ![image-20230918094601972](assets_02-Dashboards/image-20230918094601972.png)in the Dashboards table. The white-filled ![image-20230918094537202](assets_02-Dashboards/image-20230918094537202.png)icon indicates that the Dashboard or Dashboard group has been correctly added to favorites. 
+![image-20230918094101602](assets_02-Dashboards/image-20230918094101602.png) - two icons with which you can reduce the list of Dashboards/Dashboard groups and display only those marked as favorites. To add a Dashboard/Dashboard group to favorites, just click the ![image-20230918094601972](assets_02-Dashboards/image-20230918094601972.png)icon in the Dashboards table. The white-filled ![image-20230918094537202](assets_02-Dashboards/image-20230918094537202.png)icon indicates that the Dashboard or Dashboard group has been correctly added to favorites. 
 
 #### Dashboard Groups
 
@@ -38,15 +38,15 @@ To switch the table to the Dashboard groups view, click the Dashboard groups ico
 
 ##### Add/Edit Dashboard Group
 
-To add a new **Dashboard group** or edit an existing one, go to **[Management>Dashboards**]. You can do it in the main menu or by clicking the settings icon ![image-20230918111141704](assets_02-Dashboards/image-20230918111141704.png).
+To add a new **Dashboard group** or edit an existing one, go to **[Management>Dashboards**]. You can do it in the main menu or by clicking the ![image-20230918111141704](assets_02-Dashboards/image-20230918111141704.png)settings icon.
 
 ![image-20230919114822710](assets_02-Dashboards/image-20230919114822710.png)
 
-Click `Add dashboard` and select `Add dashboard group`.
+Click the `Add dashboard` button and select `Add dashboard group`.
 
 ![image-20230919115006635](assets_02-Dashboards/image-20230919115006635.png)
 
-The Dashboard Group Wizard window  with the following fields will appear:
+The Dashboard Group Wizard window with the following fields will appear:
 
 ![image-20230919115333860](assets_02-Dashboards/image-20230919115333860.png)
 
@@ -68,16 +68,17 @@ The Dashboard Group Wizard window  with the following fields will appear:
 - **Privacy** - you can grant permissions for a Widget
 
   - **Private** - accessible to the owner
-  - **Public** - visible to all, but You can grant permission:
+  - **Public** - visible to all, but you can grant permission to:
     - **delete**
     - **edit**
-  - **Shared** - accessible to one or more selected **User roles**. Available privileges are:
+  - **Shared** - accessible to one or more selected **User roles**. The available privileges are:
     - **delete**
     - **edit**
 
-Once the fields are filled in correctly and the save button is clicked, the **Dashboard group** will be created and added to the list of available groups in the System.
+- Once the fields are filled in correctly and the save button is clicked, the **Dashboard group** will be created and added to the list of available groups in the System.
 
-![image-20230919121916226](assets_02-Dashboards/image-20230919121916226.png)
+- ![image-20230919121916226](assets_02-Dashboards/image-20230919121916226.png)
+
 
 ![image-20230919122043539](assets_02-Dashboards/image-20230919122043539.png)
 
@@ -87,7 +88,7 @@ To **edit** a **Dashboard group**, click the `Edit` icon in the **Action** colum
 
 #### Displayed columns
 
-You can customize how many and what columns in the table will be displayed.
+You can customize the number and type of columns which will be displayed in the table.
 
 ![image-20230918104725441](assets_02-Dashboards/image-20230918104725441.png)
 
@@ -112,7 +113,7 @@ The following columns are available:
 
 #### Settings
 
-![image-20230918111141704](assets_02-Dashboards/image-20230918111141704.png) - by clicking on this icon and selecting `Manage dashboard` you will be redirected to **[Management>Dashboards]** where you can create, edit, import and delete Dashboard/Dashboard groups
+![image-20230918111141704](assets_02-Dashboards/image-20230918111141704.png) - by clicking on this icon and selecting `Manage dashboard` you will be redirected to **[Management>Dashboards]** where you can create, edit, import and delete Dashboards/Dashboard groups
 
 ![image-20230918112140167](assets_02-Dashboards/image-20230918112140167.png)
 

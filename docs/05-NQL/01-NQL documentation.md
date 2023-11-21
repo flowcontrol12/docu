@@ -43,8 +43,7 @@ This document describes the NQL query language.
 | object             | A type which means that a variable or function has a one of the types described above. |
 | logical_expression | A boolean expression which returns a value of boolean type.  |
 
-
-Notice: the operators or functions aare to perform an internal conversion of types so that while creating a query there is no need to provide the NQL with the types each time. 
+Notice: the operators or functions are to perform an internal conversion of types so that while creating a query there is no need to provide the NQL with the types each time. 
 In the absence of a "logically" reasonable manner of procedure, the function/expression treats the data as String (default form). 
 
 For example:
@@ -193,7 +192,7 @@ The command feeds NQL with objects taken from the collector with the given ID.
 
 #### Syntax
 
-``` coll {id} [bunchSize={liczba}] ```
+``` coll {id} [bunchSize={number}] ```
 
 
 #### Parameters
@@ -307,7 +306,7 @@ Result:
 #### Example 2
 
 ```
-src stream="testdata" | project fName as imie 
+src stream="testdata" | project fName as Name 
 ```
 
 Input: 
@@ -320,7 +319,7 @@ Input:
 Result:
 
 ```
-{"**imie**": "Jake","lName": "White","dep": "IT","ctry": "FR"},... 
+{"**fName**": "Jake","lName": "White","dep": "IT","ctry": "FR"},... 
 ```
 
 
@@ -348,32 +347,32 @@ Result:
 
 Renaming fields in the object and removing the docs field.
 ```
-src stream="testdata" | project -docs, fName as Imie, lName as Nazwisko, dep as Departament, ctry as Kraj, age as Wiek, ts as TimeStamp, PD as ProbalilityOfDefault, balance as BalancePLN | limit 2
+src stream="testdata" | project -docs, fName as Name, lName as LastName, dep as Department, ctry as Country, age as Age, ts as TimeStamp, PD as ProbalilityOfDefault, balance as BalancePLN | limit 2
 ```
 
 Result:
 ```json
 [
 	{
-		"Nazwisko": "White",
-		"Imie": "Jake",
+		"LastName": "White",
+		"Name": "Jake",
 		"ProbalilityOfDefault": 0.27245159724157366,
-		"Kraj": "US",
+		"Country": "US",
 		"host": "www.linkedin.com",
 		"BalancePLN": 3366.13,
-		"Departament": "HR",
-		"Wiek": 26,
+		"Department": "HR",
+		"Age": 26,
 		"TimeStamp": 1675164610825
 	},
 	{
-		"Nazwisko": "Magenta",
-		"Imie": "Jack",
+		"LastName": "Magenta",
+		"Name": "Jack",
 		"ProbalilityOfDefault": 0.2100865387760955,
-		"Kraj": "DE",
+		"Country": "DE",
 		"host": "www.facebook.com",
 		"BalancePLN": 103.09,
-		"Departament": "HR",
-		"Wiek": 40,
+		"Department": "HR",
+		"Age": 40,
 		"TimeStamp": 1675163862053
 	}
 ]
@@ -892,7 +891,7 @@ The command filters the input objects with the specified logical filter (logical
 
 | Logical operators | Example |
 | ------------------ | -------- |
-| AND  ($and)        | a=1 AND b=2|
+| AND ($and)        | a=1 AND b=2|
 | OR ($or)           | a=1 AND ( b=2 OR b=3) |
 | NOT ($not)         | NOT a=1 AND NOT b=2 |
 
@@ -920,6 +919,9 @@ The command filters the input objects with the specified logical filter (logical
 
 If you use the operators "=","!=",">=",">","<=" and "<", there must be a constant value or a regular expression on the right side of the operator, for example `fName="John"` - right, `lName=/J.*n$/` - right,  `fName=lName` - wrong, `age>PD` - wrong.
 
+The `AND`, `OR` and `NOT` operators have a priorities like `+` (plus) and `*` (multiplication) execution in arithmetic math expressions where `AND` is equal to `*` and `OR` is `+`.
+
+For example, we have an expression `a=1 OR b=2 AND NOT c=3 OR d=4`. Then first, the 'NOT c=3' will be executed and result stored in hidden valiable ret1, then the 'b=2 AND ret1' and result stored in ret2 and finally the 'a=1 OR ret2 OR d=4' expression.
 
 
 #### Example 1
@@ -1045,7 +1047,7 @@ The value of the grouping field "dep" is returned in an array in the "_id" field
 
 Taking the maximum and minimum age of people in each department.
 
-Unlike Example 1, here there is an unwinding to the aggregation field rather than the `\_id` array.
+Unlike Example 1, here there is an unwinding to the aggregation field rather than the `_id` array.
 
 ```
 src stream="testdata" | aggr maxAge=max(age), minAge=min(age) by dep unwind=true
@@ -1470,7 +1472,7 @@ timestamp(year, month, day, hour, minute, second [, offset=int]) : long
 | month           | Yes;  int | Month |
 | day             | Yes;  int | Day |
 | hour            | Yes;  int | Hour |
-| minute          | Yes;  int | Minutę |
+| minute          | Yes;  int | Minute |
 | second          | Yes;  int | Second |
 | offset          | Yes;  int | Time offset related to time zone. Note: offset/100 = hours, offset %100 = minutes. Accepts values in the range &lt;-1200,1400&gt;. |
 
@@ -3065,7 +3067,7 @@ If a number type is passed, the corresponding text representation will be return
 
 | Example | Result |
 | -------- | ----- |
-| `lower("CAT is WILD.")`  | "car is wild" |
+| `lower("CAT is WILD.")`  | "cat is wild." |
 
 
 
@@ -3100,7 +3102,7 @@ If a number type is passed, the corresponding text representation will be return
 
 | Example | Result |
 | -------- | ----- |
-| `lower("CAT is WILD.")`  | "ALA MA KOTA" |
+| `lower("CAT is WILD.")`  | "CAT IS WILD." |
 
 
 
@@ -3514,8 +3516,7 @@ toIp(string agr1 [, type=string]) : object
 
 #### Return value
 
-The function returns an object representation of the IP address in the format specified by the kwarg type.   
-The function returns an int[] object if the argument type is not specified.
+The function returns an object representation of the IP address in the format specified by the kwarg type.   śThe function returns an int[] object if the argument type is not specified.
 
  
 
@@ -3860,9 +3861,9 @@ This example presents a lookup named "geoIp1" which contains two columns, "ip" a
 | `lookup("noSuchLookup", "country", {"ip": ipField})`     | null |
 | `lookup("geoIp1", "noSuchColumn", {"ip": ipField})`      | null |
 | `lookup("geoIp1", "country", {"noSuchColumn": ipField})` | null |
-| `lookup("groups", "name", {"ip": "172.16.0.1"}, default="brak wyniku")` | "private-group" |
-| `lookup("groups", "name", {"ip": "1.2.3.4"}, default="brak wyniku")` | "no result" |
-| `lookup("groups", "name", {"ip": "1.2.3.4"}, default="brak wyniku" defaultToKey=true)` | "no result" |
+| `lookup("groups", "name", {"ip": "172.16.0.1"}, default="no result ")` | "private-group" |
+| `lookup("groups", "name", {"ip": "1.2.3.4"}, default="no result ")` | "no result" |
+| `lookup("groups", "name", {"ip": "1.2.3.4"}, default="no result " defaultToKey=true)` | "no result" |
 | `lookup("groups", "name", {"ip": "1.2.3.4"}, defaultToKey=true)` | "1.2.3.4" |
 | `lookup("groups", "name", {"ip": ["1.2.3.4", "172.16.0.1"]}, defaultToKey=true unwind="ip")` | ["1.2.3.4", "private-group"] |
 | `lookup("groups", "name", {"ip": ["1.2.3.4", "172.16.0.1"]}, unwind="ip")` | [null, "private-group"] |
@@ -4260,7 +4261,7 @@ The function returns a value from the `collection` at a given `index` or null if
 
 #### Example 1
 
-| Example | Retult |
+| Example | Result |
 | -------- | ----- |
 | `get(0, [10,20,30])` | 10 |
 | `get(1, [10,20,30])` | 20 |

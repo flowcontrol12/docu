@@ -15,6 +15,16 @@
 
 ---
 
+:::info
+
+Test data were implemented into the Sycope system in the form of the **testdata** stream. It is simple data that are easily accessible after installing the system and may be used for the purpose of learning and performing the examples included in the documentation.
+
+Please note that the test data has a **time stamp** within the period from **2023-01-01 to 2023-01-31** and therefore proper settings of the **time filter** should be used.
+
+:::
+
+
+
 ## Example 1
 
 ### Scenario

@@ -2,7 +2,7 @@
 
 
 
-This document describes the step-by-step installation and configuration process of Sycope 2.X on VMWare ESXi version 7.0+.	
+This document describes the step-by-step installation and configuration process of Sycope 2.X on VMware ESXi version 7.0+.	
 
 For additional resources and information, please visit Sycope LLC website at www.sycope.com.
 
@@ -18,15 +18,15 @@ After logging in, go to the Images menu where you will find system images that y
 
 ![image-20230908100238278](assets_03-Installation%20guide/image-20230908100238278.png)
 
-Download the image that suits you by clicking the icon to its right.
+Download the image that suits you by clicking the `Download file` icon to its right.
 
 
 
-In this example, **Vmware ESXi v.7.0** will be used, so download the image named **Sycope_2.3.0.28.2-vm7.0u2.ova** where **“vm7.0”** means that it is created just for this version of the system.
+In this example, **VMware ESXi v.7.0** will be used, so download the image named **Sycope_2.3.0.28.2-vm7.0u2.ova** where **“vm7.0”** means that it is created just for this version of the system.
 
 :::tip
 
-If you have a VMware ESXi version, for which there is no image on the **Sycope Portal**, you can use a tool provided by VMware https://developer.vmware.com/web/tool/4.4.0/ovf that allows you to import and export OVF packages to and from many VMware products.
+If you have a VMware ESXi version, for which there is no image on the **Sycope Portal**, you can use a tool provided by VMware (https://developer.VMware.com/web/tool/4.4.0/ovf) that allows you to import and export OVF packages to and from many VMware products.
 
 :::
 
@@ -34,7 +34,7 @@ If you have a VMware ESXi version, for which there is no image on the **Sycope P
 
 To perform a successful installation, please **follow the steps below**:
 
-1.  Log in to VMWare ESXi.
+1.  Log in to VMware ESXi.
 
 ![image-20220803150226858](assets_03-Installation%20guide/image-20220803150226858.png)
 
@@ -44,7 +44,7 @@ To perform a successful installation, please **follow the steps below**:
 
    ![image-20230908103200429](assets_03-Installation%20guide/image-20230908103200429.png)
 
-4. Enter the name of the virtual appliance you want to create. Browse the OVA file by clicking on the blue parallelogram or drag and drop on it. Click **Next**,
+4. Enter the name of the virtual appliance you want to create. Browse the OVA file by clicking on the blue rectangle or drag and drop on it. Click **Next**,
 
    ![image-20230908103340238](assets_03-Installation%20guide/image-20230908103340238.png)
 
@@ -60,15 +60,15 @@ To perform a successful installation, please **follow the steps below**:
 
    ![image-20230908103652800](assets_03-Installation%20guide/image-20230908103652800.png)
 
-7. After completing all the previous steps, a pop up window will show up summarizing all the information about the virtual machine that has been created. Click **Finish** to start the deployment process.
+7. After completing all the previous steps, a pop-up window will show up summarizing all the information about the virtual machine that has been created. Click **Finish** to start the deployment process.
 
    ![image-20230908103809459](assets_03-Installation%20guide/image-20230908103809459.png)
 
 
 
-##  3. IP address, DNS Server and Gateway  configuration
+##  3. IP address, DNS Server and Gateway configuration
 
-For the operation of the system, it is necessary to configure the network parameters, so you need to configure the appropriate **DNS Server** address,  **IP** address, and **Gateway** address.
+For the operation of the system, it is necessary to configure the network parameters, so you need to configure the appropriate **DNS Server** address, **IP** address, and **Gateway** address.
 
 When the installation process is complete, please start the installed system and then **log in** using the **ESXi Console**.
 
@@ -78,7 +78,7 @@ When the installation process is complete, please start the installed system and
 
 :::info
 
-The **Sycope** default password and username for the **VMware Console**:
+The **Sycope** default password and username for the the **VMware Console**:
 
 **user:** admin
 
@@ -96,7 +96,7 @@ After logging into the system via the **VMware Console**, select the **Network I
 
 ## 4. Let’s start
 
-After completing all the above steps, if the configuration has been done correctly you can log into the System using a web browser. 
+After completing all the above steps, if the configuration has been done correctly, you can log into the System using a web browser. 
 
 :::info
 
@@ -116,8 +116,7 @@ The **Sycope** default password and username for the **www interface**:
 
 
 
-In a situation where we have a fresh system after installation, the Sycope application is in an unactivated state. After launching it and logging in, there will be a
-"jump-start" form will appear.
+In case of a fresh system after installation, the Sycope application is in an unactivated state. After launching it and logging in, a "jump-start" form will appear.
 
 ![maintenancemode-jumpstart](assets_03-Installation%20guide/maintenancemode-jumpstart.png)
 
@@ -130,7 +129,7 @@ In order to run the system in standard mode, you need to configure the following
 
 ### 4.1 NTP Configuration
 
-This tab is used to set basic parameters related to date and time setting. 
+This tab is used to set basic parameters related to the date and time settings. 
 
 ![maintenancemode-ntpcofig](assets_03-Installation%20guide/maintenancemode-ntpcofig.png)
 
@@ -150,14 +149,13 @@ There are two modes of system activation:
 
 #### 4.2.1 Automatic process
 
-The automatic activation process can be executed after the **first** initial installation of the system. In this method, the process of entering company data, generating a request, activating on portal.sycope.com and uploading a license is done
-automatically in the background.
+The automatic activation process can be executed after the **first** initial installation of the system. In this method, the process of entering company data, generating a request, activating on portal.sycope.com and uploading a license is done automatically in the background.
 
 ![image-20230908125416319](assets_03-Installation%20guide/image-20230908125416319.png)
 
 In order to be able to activate the System in this mode, the following conditions must be met:
 
-- You must have **License serial number** and **Company ID** - you will get them from Sycope support
+- You must have the **License serial number** and the **Company ID** - you will get them from the Sycope support
 - the server on which you install the Sycope system must have **Internet** access on **port 443** to the **updates.sycope.com** domain
 
 
@@ -177,7 +175,7 @@ In order to be able to activate the System in this mode, the following condition
 
 To activate the Sycope system in this mode, follow the steps below:
 
-1. Log in to the **Sycope Portal** https://portal.sycope.com  and check if you have an active **template** where you can make an upload license request.
+1. Log in to the **Sycope Portal** https://portal.sycope.com and check if you have an active **template** where you can make an upload license request.
 
 ![image-20220804122508219](assets_03-Installation%20guide/image-20220804122508219-4416602.png)
 
@@ -233,7 +231,7 @@ The **Renew license dialogue** deletes the current license key and generates a n
 
 ![image-20220804130154256](assets_03-Installation%20guide/image-20220804130154256.png)
 
-5. Go to the **Sycope Portal** again click the **Upload license request** icon and paste in the contents of the **License request.** Then click **Send**. A **wait_for_admin** status will appear next to the license. 
+5. Go to the **Sycope Portal** again, click the **Upload license request** icon and paste in the contents of the **License request.** Then click **Send**. A **wait_for_admin** status will appear next to the license. 
 
 
 
@@ -261,7 +259,7 @@ The **Renew license dialogue** deletes the current license key and generates a n
 
 
 
-7. Go to the **web browser** window and log back into the **Sycope** system. Go to the **License tab**, paste the **Activation token** into the **Activation Code field** and click **Verify**. If everything is done correctly, a  License activated successfully message will appear.
+7. Go to the **web browser** window and log back into the **Sycope** system. Go to the **License tab**, paste the **Activation token** into the **Activation Code field** and click **Verify**. If everything is done correctly, a **License activated successfully** message will appear.
 
    
 

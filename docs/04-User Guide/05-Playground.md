@@ -27,8 +27,7 @@ In the Stats tab you will find the statistics of the query.
 
 ## Read-only mode
 
-When launched, the **Playground** components are in read-only mode. This means that the NQL that shows up in the **Query** field is built through the **Search Bar** at the top of the window. By changing the data source with the ![menu master](assets_05-Playground/playground-searchbar-source.png) option
-or by adding more filters via the ![image-20230731110008339](assets_05-Playground/image-20230731110008339.png) icon they will be added to the created NQL.
+When launched, the **Playground** components are in read-only mode. This means that the NQL that shows up in the **Query** field is built through the **Search Bar** at the top of the window. By changing the data source with the ![menu master](assets_05-Playground/playground-searchbar-source.png) option or by adding more filters via the ![image-20230731110008339](assets_05-Playground/image-20230731110008339.png) icon they will be added to the created NQL.
 
 ![menu master](assets_05-Playground/playground-searchbar.png)
 

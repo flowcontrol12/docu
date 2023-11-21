@@ -7,7 +7,7 @@ The main purpose of the search bar field is to create a filter for data originat
 
 ![menu master](assets_04-Searchbar/searchbar.png)
 
-The search bar is available in each view of the Sycope application that presents data, for example, the "Dashboard", "Playground", "Raw Data, and so on."
+The search bar is available in each view of the Sycope application that presents data, for example, in the "Dashboard", "Playground", "Raw Data", and so on.
 
 The filter of the search bar filters the data displayed in the view elements (graphs, tables). Even if you switch to different views, the search bar keeps the defined filter.
 
@@ -21,7 +21,7 @@ After selecting the data source from the "combobox" field
 
 you can move on to creating/filling in the NQL phrase defining your data filter.
 
-You have to options to choose from:
+You have two options to choose from:
 
 - Creating a filtering expression using a wizard, with the ![menu master](assets_04-Searchbar/searchbar-filtr-button.png) button 
   
@@ -46,7 +46,7 @@ By using the wizard, you can create the filtering expression in a window with ch
 | Filter by - Write value     | Filter value. |
 | Filter by - Null            | Should be checked if you want the value to be null. |
 
-Depending on the selected field, you can enter the values "by hand" in the "Write value" field or select them from a list of values available for that field. In some cases, after selecting the field and the appropriate operator or function, the value field will turn into a list of available options for that combination of field and operator. For example: 
+Depending on the selected field, you can either enter the values "by hand" in the "Write value" field or select them from a list of values available for that field. In some cases, after selecting the field and the appropriate operator or function, the value field will turn into a list of available options for that combination of field and operator. For example: 
 
 ![menu master](assets_04-Searchbar/searchbar-addfilter-value1.png)
 
@@ -66,7 +66,7 @@ After confirming, the search bar will be switched into `Advanced` mode. This hap
 
 If you need to see in detail what type of NQL is being generated under the "tiles" of the filter, you can switch to the "Playground" view (![image-20230801153411926](assets_04-Searchbar/image-20230801153411926.png) button -> Playground).
 
-Here, with the `Edit query` option disabled, you can simultaneously see the filtering expression in the search bar in the form of "tiles" as well as the corresponding NQL expression in the `Query` field.
+Here, with the `Edit query` option disabled, you can simultaneously see the filtering expression in the search bar in the form of "tiles", as well as the corresponding NQL expression in the `Query` field.
 
 ---
 
@@ -92,11 +92,11 @@ The complete NQL code starts with providing the data source, for example: `src s
 
 `src stream="testdata" | where country="DE" and dep="HR" | project +fName, +lName | sort fName`
 
-An element of the search bar field is a field of data source selection from a drop-down list. That is why after making the selection, you only need to enter the remaining part of the NQL expression in the text field, that is:
+An element of the search bar field is a field of data source selection from a drop-down list. That is why after making the selection, you only need to enter the remaining part of the NQL expression from the example in the text field, that is:
 
 `where country="DE" and dep="HR" | project +fName, +lName | sort fName`
 
-from the example. It does not need to be only an NQL filter but also other available commands and functions.
+It does not need to be exclusively an NQL filter but also other available commands and functions can be used.
 
 While creating an expression in the search bar with the use of the "Filter Menu" or "Select Filters" wizards (icons `+/` in the text field, on the right side), you can generate the part of the NQL that is the `where` command.
 
@@ -108,7 +108,7 @@ If the objects of the selected data source have a `timestamp` time field, then e
 
 ![menu master](assets_04-Searchbar/searchbar-time-filter.png).
 
-The filter will not be displayed in the filtering expression of the search bar field nor in the NQL displayed in `Advanced` mode but it will be applied in each date query sent to the Backend. If the source objects do not have a `timestamp` field, the filtering by time range will be ignored.
+The filter will not be displayed in the filtering expression of the search bar field nor in the NQL displayed in the `Advanced` mode but it will be applied in each date query sent to the Backend. If the source objects do not have a `timestamp` field, the filtering by time range will be ignored.
 
 
 
