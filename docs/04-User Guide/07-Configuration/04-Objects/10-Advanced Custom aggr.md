@@ -36,16 +36,15 @@ The following table describes the parameters that are available in the creator:
 
 
 
-| Field                          | Description                                                  |
-| ------------------------------ | ------------------------------------------------------------ |
-| Name                           | The name of the created/edited aggregation that will appear in the aggregation list table. |
-| Stream                         | Selecting the data source for aggregation.                   |
-| Engine name                    | Selecting the process feeding the aggregation.               |
-| Index                          | The name of the pre-aggregation as a data source. In the system, the data from it will be available under this name. |
-| Filters                        | A filter in NQL format that will filter the data passed from the "Stream" for aggregation. |
-| Key fields                     | List of data fields from the source after which the aggregation of the indicated fields will be performed. It defines a group of values in a Metric fields. |
-| Metric fields                  | The fields whose values will be aggregated by the defined "Key fields". For each field, we can select the aggregation function in the "Deduplication strategy" field. |
-| Unwind by key field (optional) | If the key fields in an array (collection), then aggregation will be done after the field values will by unwinded. |
+| Field         | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
+| Name          | The name of the created/edited aggregation that will appear in the aggregation list table. |
+| Stream        | Selecting the data source for aggregation.                   |
+| Engine name   | Selecting the process feeding the aggregation.               |
+| Index         | The name of the pre-aggregation as a data source. In the system, the data from it will be available under this name. |
+| Filters       | A filter in NQL format that will filter the data passed from the "Stream" for aggregation. |
+| Key fields    | List of data fields from the source after which the aggregation of the indicated fields will be performed. It defines a group of values in a Metric fields. |
+| Metric fields | The fields whose values will be aggregated by the defined "Key fields". For each field, we can select the aggregation function in the "Deduplication strategy" field. |
 
 **Stream**
 
