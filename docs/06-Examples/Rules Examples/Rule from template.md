@@ -1,3 +1,7 @@
+---
+slug: /Examples/Rules-Examples/Simple
+---
+
 # Examples of rule creation - simple way
 
 A simple method of a rule creation existing templates to design custom rules. In our example, we will configure a **Rule** based on the **DoS attack template**.

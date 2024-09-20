@@ -28,6 +28,14 @@ The list of **Rules** is in the table with the following columns:
   - Third party system -  information about the triggering of the alarm will be sent to the external systems see [External Destinations](/User-Guide/Settings/General/Integrations/External-Destinations)
     - MACMON
     - REST Client
+
+      :::tip
+      You can configure rules to trigger actions that call external APIs. For more details, refer to the following resources:
+  
+      - [Configuration of REST API Client](/User-Guide/Settings/General/Integrations/External-Destinations#rest-client) in [External Destinations](/User-Guide/Settings/General/Integrations/External-Destinations)
+      - [Example of REST API Integration in Advanced Rule tutorial](/Examples/Rules-Examples/Advanced)  
+      :::
+
 - **Tactic** -  specified in MITRE ATT&CK® https://attack.mitre.org
 - **Technique** - specified in MITRE ATT&CK® https://attack.mitre.org
 - **Score** - alert severity on a scale of 1- 10 where:
@@ -50,3 +58,9 @@ The list of **Rules** is in the table with the following columns:
   - Export - export Rule to JSON format
   - Delete - delete Rule
 
+
+## Examples
+
+:::info
+Step-by-step instructions on how to create a rule can be found in section [Rules Examples](/Examples/Rules-Examples).
+:::

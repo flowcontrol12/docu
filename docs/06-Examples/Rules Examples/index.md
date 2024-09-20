@@ -1,3 +1,7 @@
+---
+slug: /Examples/Rules-Examples
+---
+
 # Rules Examples
 
 ```mdx-code-block
