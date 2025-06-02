@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Introduction/Workflows/Analysis",
+  "id": "version-3.0.0/Introduction/Workflows/Analysis",
+  "title": "Analysis",
+  "description": "Context Menu (Right Click Menu)",
+  "source": "@site/versioned_docs/version-3.0.0/01-Introduction/02-Workflows/03-Analysis.md",
+  "sourceDirName": "01-Introduction/02-Workflows",
+  "slug": "/Introduction/Workflows/Analysis",
+  "permalink": "/3.0.0/Introduction/Workflows/Analysis",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Data Selection",
+    "permalink": "/3.0.0/Introduction/Workflows/Data-Selection"
+  },
+  "next": {
+    "title": "Dashboards and Widgets",
+    "permalink": "/3.0.0/Introduction/Dashboards-and-Widgets"
+  }
+}

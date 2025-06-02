@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Fields Examples/index",
+  "id": "version-3.0.0/Examples/Fields Examples/index",
+  "title": "Fields Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/06-Examples/Fields Examples/index.md",
+  "sourceDirName": "06-Examples/Fields Examples",
+  "slug": "/Examples/Fields Examples/",
+  "permalink": "/3.0.0/Examples/Fields Examples/",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Create a Custom Dashboard",
+    "permalink": "/3.0.0/Examples/Create-Custom-Dashboard"
+  },
+  "next": {
+    "title": "Example of field creation - bytes field",
+    "permalink": "/3.0.0/Examples/Fields Examples/Fields - creation example"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/NQL documentation",
+  "id": "version-2.4/NQL/NQL documentation",
+  "title": "NQL User Manual",
+  "description": "This document describes the NQL query language.",
+  "source": "@site/versioned_docs/version-2.4/05-NQL/01-NQL documentation.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/NQL documentation",
+  "permalink": "/2.4/NQL/NQL documentation",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Licenses",
+    "permalink": "/2.4/User Guide/Configuration/Licenses"
+  },
+  "next": {
+    "title": "NQL CheatSheet",
+    "permalink": "/2.4/NQL/nql_cheat_sheet"
+  }
+}

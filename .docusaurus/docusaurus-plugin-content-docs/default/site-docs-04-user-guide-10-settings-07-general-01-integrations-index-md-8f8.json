@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/index",
+  "id": "User-Guide/Settings/General/Integrations/index",
+  "title": "Integrations",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/01-Integrations/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations",
+  "permalink": "/User-Guide/Settings/General/Integrations",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1717586417,
+  "formattedLastUpdatedAt": "5 Jun 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "General",
+    "permalink": "/User-Guide/Settings/General"
+  },
+  "next": {
+    "title": "NTP",
+    "permalink": "/User-Guide/Settings/General/Integrations/NTP"
+  }
+}

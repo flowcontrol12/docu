@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Security/Users/index",
+  "id": "User-Guide/Settings/Security/Users/index",
+  "title": "Users",
+  "description": "This menu [Settings > Security > Users] can be used to manage users in the system. After installing the system, You have one predefined account: admin.",
+  "source": "@site/docs/04-User-Guide/10-Settings/05-Security/01-Users/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/05-Security/01-Users",
+  "slug": "/User-Guide/Settings/Security/Users",
+  "permalink": "/User-Guide/Settings/Security/Users",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Security/Users",
+    "addressMatch": "panel/security/users"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security",
+    "permalink": "/User-Guide/Settings/Security"
+  },
+  "next": {
+    "title": "Roles",
+    "permalink": "/User-Guide/Settings/Security/Roles"
+  }
+}

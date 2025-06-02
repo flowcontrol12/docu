@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Rules Examples/index",
+  "id": "version-3.0.0/Examples/Rules Examples/index",
+  "title": "Rules Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/06-Examples/Rules Examples/index.md",
+  "sourceDirName": "06-Examples/Rules Examples",
+  "slug": "/Examples/Rules-Examples",
+  "permalink": "/3.0.0/Examples/Rules-Examples",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Rules-Examples"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example of Metric creation - simple metric",
+    "permalink": "/3.0.0/Examples/Metrics Examples/Metrics - creation example"
+  },
+  "next": {
+    "title": "Examples of alert rule creation - advanced way",
+    "permalink": "/3.0.0/Examples/Rules-Examples/Advanced"
+  }
+}

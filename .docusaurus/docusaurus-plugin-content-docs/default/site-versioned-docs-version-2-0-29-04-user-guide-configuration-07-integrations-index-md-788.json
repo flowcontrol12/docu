@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Integrations/index",
+  "id": "version-2.0.29/User Guide/Configuration/Integrations/index",
+  "title": "Integrations",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.29/04-User Guide/Configuration/07-Integrations/index.md",
+  "sourceDirName": "04-User Guide/Configuration/07-Integrations",
+  "slug": "/User Guide/Configuration/Integrations/",
+  "permalink": "/2.0.29/User Guide/Configuration/Integrations/",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Audit Log",
+    "permalink": "/2.0.29/User Guide/Configuration/Security/Audit Log"
+  },
+  "next": {
+    "title": "NTP",
+    "permalink": "/2.0.29/User Guide/Configuration/Integrations/NTP"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/NetFlow/index",
+  "id": "version-2.2.3/User Guide/Configuration/NetFlow/index",
+  "title": "NetFlow",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.3/04-User Guide/Configuration/05-NetFlow/index.md",
+  "sourceDirName": "04-User Guide/Configuration/05-NetFlow",
+  "slug": "/User Guide/Configuration/NetFlow/",
+  "permalink": "/2.2.3/User Guide/Configuration/NetFlow/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Report schedule",
+    "permalink": "/2.2.3/User Guide/Configuration/Objects/Report schedule"
+  },
+  "next": {
+    "title": "Netflow",
+    "permalink": "/2.2.3/User Guide/Configuration/NetFlow/Netflow"
+  }
+}

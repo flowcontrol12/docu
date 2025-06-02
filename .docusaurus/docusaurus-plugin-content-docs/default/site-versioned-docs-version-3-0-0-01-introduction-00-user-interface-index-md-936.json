@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Introduction/User-Interface/index",
+  "id": "version-3.0.0/Introduction/User-Interface/index",
+  "title": "User Interface",
+  "description": "A brief introduction to the Sycope System main elements.",
+  "source": "@site/versioned_docs/version-3.0.0/01-Introduction/00-User-Interface/index.md",
+  "sourceDirName": "01-Introduction/00-User-Interface",
+  "slug": "/Introduction/User-Interface",
+  "permalink": "/3.0.0/Introduction/User-Interface",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Introduction/User-Interface"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/3.0.0/"
+  },
+  "next": {
+    "title": "Built-in Content",
+    "permalink": "/3.0.0/Introduction/Built-in-Content"
+  }
+}

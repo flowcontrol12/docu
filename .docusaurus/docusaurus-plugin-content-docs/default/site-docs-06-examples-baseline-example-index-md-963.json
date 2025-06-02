@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Baseline Example/index",
+  "id": "Examples/Baseline Example/index",
+  "title": "Baseline Examples",
+  "description": "",
+  "source": "@site/docs/06-Examples/Baseline Example/index.md",
+  "sourceDirName": "06-Examples/Baseline Example",
+  "slug": "/Examples/Baseline Example/",
+  "permalink": "/Examples/Baseline Example/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1680017400,
+  "formattedLastUpdatedAt": "28 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Pivot Table",
+    "permalink": "/Examples/Pivot-Table"
+  },
+  "next": {
+    "title": "Using baseline in a rule - Unexpected increase in # of flows rule example",
+    "permalink": "/Examples/Baseline Example/Using baseline in a rule"
+  }
+}

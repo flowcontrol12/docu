@@ -1,0 +1,26 @@
+{
+  "unversionedId": "User interface",
+  "id": "version-2.1.0/User interface",
+  "title": "User interface",
+  "description": "Main window",
+  "source": "@site/versioned_docs/version-2.1.0/02-User interface.md",
+  "sourceDirName": ".",
+  "slug": "/User interface",
+  "permalink": "/2.1.0/User interface",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/2.1.0/"
+  },
+  "next": {
+    "title": "Installation guide",
+    "permalink": "/2.1.0/Installation guide"
+  }
+}

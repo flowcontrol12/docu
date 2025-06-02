@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Widget-Examples/Widget-Example-Advanced/index",
+  "id": "Examples/Widget-Examples/Widget-Example-Advanced/index",
+  "title": "Widget Advanced Example: Total Traffic Bytes 15 min.",
+  "description": "In this example, we will create a widget showing total traffic bytes over the last 15 minutes.",
+  "source": "@site/docs/06-Examples/Widget-Examples/02-Widget-Example-Advanced/index.md",
+  "sourceDirName": "06-Examples/Widget-Examples/02-Widget-Example-Advanced",
+  "slug": "/Examples/Widget-Example-Advanced",
+  "permalink": "/Examples/Widget-Example-Advanced",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Widget-Example-Advanced"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Widget Example: Alerts in the last 24 hours",
+    "permalink": "/Examples/Widget-Example-Simple"
+  },
+  "next": {
+    "title": "Troubleshooting",
+    "permalink": "/Troubleshooting"
+  }
+}

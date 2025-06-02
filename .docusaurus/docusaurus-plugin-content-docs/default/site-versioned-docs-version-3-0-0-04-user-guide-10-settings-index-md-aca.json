@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/index",
+  "id": "version-3.0.0/User-Guide/Settings/index",
+  "title": "Settings",
+  "description": "Access Settings by clicking on the Gear icon in the Top Bar.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings",
+  "slug": "/User-Guide/Settings",
+  "permalink": "/3.0.0/User-Guide/Settings",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notifications",
+    "permalink": "/3.0.0/User-Guide/Notifications"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration"
+  }
+}

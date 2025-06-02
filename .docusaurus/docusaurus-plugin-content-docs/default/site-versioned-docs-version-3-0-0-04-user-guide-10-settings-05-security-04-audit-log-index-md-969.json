@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Security/Audit-Log/index",
+  "id": "version-3.0.0/User-Guide/Settings/Security/Audit-Log/index",
+  "title": "Audit Log",
+  "description": "This menu [Settings > Security > Audit Log]  can be used to create Audit Log.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/05-Security/04-Audit-Log/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/05-Security/04-Audit-Log",
+  "slug": "/User-Guide/Settings/Security/Audit-Log",
+  "permalink": "/3.0.0/User-Guide/Settings/Security/Audit-Log",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Security/Audit-Log",
+    "addressMatch": "panel/security/audit-log"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Authentication Providers",
+    "permalink": "/3.0.0/User-Guide/Settings/Security/Authentication-Providers"
+  },
+  "next": {
+    "title": "Certificates",
+    "permalink": "/3.0.0/User-Guide/Settings/Security/Certificates"
+  }
+}

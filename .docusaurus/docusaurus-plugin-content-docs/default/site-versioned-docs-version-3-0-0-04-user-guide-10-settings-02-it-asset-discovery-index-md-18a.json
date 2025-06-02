@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/IT-Asset-Discovery/index",
+  "id": "version-3.0.0/User-Guide/Settings/IT-Asset-Discovery/index",
+  "title": "IT Asset Discovery",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/02-IT-Asset-Discovery/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/02-IT-Asset-Discovery",
+  "slug": "/User-Guide/Settings/IT-Asset-Discovery",
+  "permalink": "/3.0.0/User-Guide/Settings/IT-Asset-Discovery",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/IT-Asset-Discovery"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "User Indexes",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Objects/User-Indexes"
+  },
+  "next": {
+    "title": "Asset Discovery Settings",
+    "permalink": "/3.0.0/User-Guide/Settings/IT-Asset-Discovery/Asset-Discovery-Settings"
+  }
+}

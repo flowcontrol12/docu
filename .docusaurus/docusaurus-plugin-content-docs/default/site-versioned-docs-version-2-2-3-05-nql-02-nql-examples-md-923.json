@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/NQL_examples",
+  "id": "version-2.2.3/NQL/NQL_examples",
+  "title": "NQL query examples",
+  "description": "Glossary",
+  "source": "@site/versioned_docs/version-2.2.3/05-NQL/02-NQL_examples.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/NQL_examples",
+  "permalink": "/2.2.3/NQL/NQL_examples",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "NQL CheatSheet",
+    "permalink": "/2.2.3/NQL/nql_cheat_sheet"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/2.2.3/Examples/"
+  }
+}

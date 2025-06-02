@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Collector - creation example",
+  "id": "Examples/Collector - creation example",
+  "title": "Collector Creation Example",
+  "description": "Collector is a type of database (data stream) for which we can configure a process that periodically queries for specific data. The data acquired by the process feeds the Collector database. Collector data can be used in two ways:",
+  "source": "@site/docs/06-Examples/Collector - creation example.md",
+  "sourceDirName": "06-Examples",
+  "slug": "/Examples/Collector-Creation-Example",
+  "permalink": "/Examples/Collector-Creation-Example",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/Examples/Collector-Creation-Example"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Using baseline in a widget - Security Alerts Widget example",
+    "permalink": "/Examples/Baseline Example/Using baseline in a widget"
+  },
+  "next": {
+    "title": "Dashboard Examples",
+    "permalink": "/Examples/Dashboard-Examples"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Alerts",
+  "id": "version-2.4/User Guide/Alerts",
+  "title": "Alerts",
+  "description": "Alerts",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/03-Alerts.md",
+  "sourceDirName": "04-User Guide",
+  "slug": "/User Guide/Alerts",
+  "permalink": "/2.4/User Guide/Alerts",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Alerts"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboards",
+    "permalink": "/2.4/User Guide/Dashboards_"
+  },
+  "next": {
+    "title": "Raw Data",
+    "permalink": "/2.4/User Guide/Raw Data"
+  }
+}

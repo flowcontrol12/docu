@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Integrations/SNMP",
+  "id": "version-2.0/User Guide/Configuration/Integrations/SNMP",
+  "title": "SNMP",
+  "description": "SNMP Tab",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Configuration/07-Integrations/02-SNMP.md",
+  "sourceDirName": "User Guide/Configuration/07-Integrations",
+  "slug": "/User Guide/Configuration/Integrations/SNMP",
+  "permalink": "/2.0/User Guide/Configuration/Integrations/SNMP",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "SNMP Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "NTP",
+    "permalink": "/2.0/User Guide/Configuration/Integrations/NTP"
+  },
+  "next": {
+    "title": "SMTP",
+    "permalink": "/2.0/User Guide/Configuration/Integrations/SMTP"
+  }
+}

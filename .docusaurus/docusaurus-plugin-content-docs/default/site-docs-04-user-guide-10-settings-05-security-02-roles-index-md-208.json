@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Security/Roles/index",
+  "id": "User-Guide/Settings/Security/Roles/index",
+  "title": "Roles",
+  "description": "This menu [Settings > Security > Roles] can be used to manage users roles in the System.",
+  "source": "@site/docs/04-User-Guide/10-Settings/05-Security/02-Roles/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/05-Security/02-Roles",
+  "slug": "/User-Guide/Settings/Security/Roles",
+  "permalink": "/User-Guide/Settings/Security/Roles",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Security/Roles",
+    "addressMatch": "panel/security/roles"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Users",
+    "permalink": "/User-Guide/Settings/Security/Users"
+  },
+  "next": {
+    "title": "Authentication Providers",
+    "permalink": "/User-Guide/Settings/Security/Authentication-Providers"
+  }
+}

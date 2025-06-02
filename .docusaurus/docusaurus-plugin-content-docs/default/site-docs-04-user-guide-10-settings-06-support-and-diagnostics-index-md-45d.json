@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/Support-and-Diagnostics/index",
+  "id": "User-Guide/Settings/Support-and-Diagnostics/index",
+  "title": "Support & Diagnostics",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/06-Support-and-Diagnostics/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/06-Support-and-Diagnostics",
+  "slug": "/User-Guide/Settings/Support-and-Diagnostics",
+  "permalink": "/User-Guide/Settings/Support-and-Diagnostics",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1717586417,
+  "formattedLastUpdatedAt": "5 Jun 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Support-and-Diagnostics"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Certificates",
+    "permalink": "/User-Guide/Settings/Security/Certificates"
+  },
+  "next": {
+    "title": "System Status",
+    "permalink": "/User-Guide/Settings/Support-and-Diagnostics/System-Status"
+  }
+}

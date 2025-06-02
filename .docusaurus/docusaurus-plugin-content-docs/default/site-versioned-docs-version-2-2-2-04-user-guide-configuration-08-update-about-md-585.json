@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User Guide/Configuration/Update/About",
+  "id": "version-2.2.2/User Guide/Configuration/Update/About",
+  "title": "About",
+  "description": "About Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Configuration/08-Update/About.md",
+  "sourceDirName": "04-User Guide/Configuration/08-Update",
+  "slug": "/User Guide/Configuration/Update/About",
+  "permalink": "/2.2.2/User Guide/Configuration/Update/About",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "frontMatter": {
+    "description": "About Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Update",
+    "permalink": "/2.2.2/User Guide/Configuration/Update/Update"
+  },
+  "next": {
+    "title": "Licenses",
+    "permalink": "/2.2.2/User Guide/Configuration/Licenses"
+  }
+}

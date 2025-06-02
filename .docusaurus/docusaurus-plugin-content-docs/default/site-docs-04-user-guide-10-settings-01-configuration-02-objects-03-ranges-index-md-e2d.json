@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/Ranges/index",
+  "id": "User-Guide/Settings/Configuration/Objects/Ranges/index",
+  "title": "Ranges",
+  "description": "This menu [Settings > Configuration > Objects > Ranges] can be used to create custom data ranges based on fields from selected data sources.",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/02-Objects/03-Ranges/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/03-Ranges",
+  "slug": "/User-Guide/Settings/Configuration/Objects/Ranges",
+  "permalink": "/User-Guide/Settings/Configuration/Objects/Ranges",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/Ranges",
+    "addressMatch": "panel/saved-fields/ranges"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Metrics",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Metrics"
+  },
+  "next": {
+    "title": "Collectors",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Collectors"
+  }
+}

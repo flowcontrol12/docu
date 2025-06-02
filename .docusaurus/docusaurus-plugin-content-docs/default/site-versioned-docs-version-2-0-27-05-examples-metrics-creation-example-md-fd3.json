@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Metrics - creation example",
+  "id": "version-2.0.27/Examples/Metrics - creation example",
+  "title": "Example of Metric creation - simple metric",
+  "description": "A Metric is a function that aggregates a given field and is used in Widgets and Alerts. Defining Metrics makes our work easier we can use them multiple times in different places in the system, for example, when creating a Dashboard composed of several Widgets that use the same Metric. Then, instead of creating the same Metric several times, you define the Metric once in metrics menu and just select it in Widgets without having to create and format it again.",
+  "source": "@site/versioned_docs/version-2.0.27/05-Examples/Metrics - creation example.md",
+  "sourceDirName": "05-Examples",
+  "slug": "/Examples/Metrics - creation example",
+  "permalink": "/2.0.27/Examples/Metrics - creation example",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example of Metric creation - advanced metric - use function option",
+    "permalink": "/2.0.27/Examples/Metrics - advance creation example"
+  },
+  "next": {
+    "title": "Examples of rule creation - simple way",
+    "permalink": "/2.0.27/Examples/Rule from template"
+  }
+}

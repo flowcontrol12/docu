@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Introduction/Built-in-Content/index",
+  "id": "Introduction/Built-in-Content/index",
+  "title": "Built-in Content",
+  "description": "Built-in Dashboards",
+  "source": "@site/docs/01-Introduction/01-Built-in-Content/index.md",
+  "sourceDirName": "01-Introduction/01-Built-in-Content",
+  "slug": "/Introduction/Built-in-Content",
+  "permalink": "/Introduction/Built-in-Content",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Introduction/Built-in-Content",
+    "addressMatch": "panel/dashboards-simple"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "User Interface",
+    "permalink": "/Introduction/User-Interface"
+  },
+  "next": {
+    "title": "Workflows",
+    "permalink": "/Introduction/Workflows"
+  }
+}

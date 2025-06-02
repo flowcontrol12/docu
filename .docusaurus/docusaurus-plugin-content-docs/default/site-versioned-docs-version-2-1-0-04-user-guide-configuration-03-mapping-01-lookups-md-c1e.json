@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Mapping/Lookups",
+  "id": "version-2.1.0/User Guide/Configuration/Mapping/Lookups",
+  "title": "Lookups",
+  "description": "Lookups Tab",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/03-Mapping/01-Lookups.md",
+  "sourceDirName": "04-User Guide/Configuration/03-Mapping",
+  "slug": "/User Guide/Configuration/Mapping/Lookups",
+  "permalink": "/2.1.0/User Guide/Configuration/Mapping/Lookups",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "Lookups Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Mapping",
+    "permalink": "/2.1.0/User Guide/Configuration/Mapping/"
+  },
+  "next": {
+    "title": "Maintenance Windows",
+    "permalink": "/2.1.0/User Guide/Configuration/Mapping/Maintenance Windows"
+  }
+}

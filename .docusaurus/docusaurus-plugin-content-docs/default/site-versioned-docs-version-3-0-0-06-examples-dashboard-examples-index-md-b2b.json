@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Dashboard-Examples/index",
+  "id": "version-3.0.0/Examples/Dashboard-Examples/index",
+  "title": "Dashboard Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/06-Examples/Dashboard-Examples/index.md",
+  "sourceDirName": "06-Examples/Dashboard-Examples",
+  "slug": "/Examples/Dashboard-Examples",
+  "permalink": "/3.0.0/Examples/Dashboard-Examples",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Dashboard-Examples"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example of Collector creation",
+    "permalink": "/3.0.0/Examples/Collector - creation example"
+  },
+  "next": {
+    "title": "Create a Custom Dashboard",
+    "permalink": "/3.0.0/Examples/Create-Custom-Dashboard"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User Guide/Alerts/Alerts Table",
+  "id": "version-2.2.2/User Guide/Alerts/Alerts Table",
+  "title": "Alerts Table",
+  "description": "Alerts Table Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Alerts/Alerts Table.md",
+  "sourceDirName": "04-User Guide/Alerts",
+  "slug": "/User Guide/Alerts/Alerts Table",
+  "permalink": "/2.2.2/User Guide/Alerts/Alerts Table",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "frontMatter": {
+    "description": "Alerts Table Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Alerts",
+    "permalink": "/2.2.2/User Guide/Alerts/"
+  },
+  "next": {
+    "title": "Rules",
+    "permalink": "/2.2.2/User Guide/Alerts/Rule Sets"
+  }
+}

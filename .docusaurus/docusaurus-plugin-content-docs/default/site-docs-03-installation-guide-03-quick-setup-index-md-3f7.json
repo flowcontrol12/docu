@@ -1,0 +1,29 @@
+{
+  "unversionedId": "Installation-Guide/Quick-Setup/index",
+  "id": "Installation-Guide/Quick-Setup/index",
+  "title": "Quick Setup",
+  "description": "Quick Setup",
+  "source": "@site/docs/03-Installation-Guide/03-Quick-Setup/index.md",
+  "sourceDirName": "03-Installation-Guide/03-Quick-Setup",
+  "slug": "/Installation-Guide/Quick-Setup",
+  "permalink": "/Installation-Guide/Quick-Setup",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "description": "Quick Setup",
+    "slug": "/Installation-Guide/Quick-Setup",
+    "addressMatch": "docsKey=quickSetup"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Let's Start",
+    "permalink": "/Installation-Guide/Lets-Start"
+  },
+  "next": {
+    "title": "User Guide",
+    "permalink": "/User-Guide"
+  }
+}

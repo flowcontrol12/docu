@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Dashboards/Management/Report filters",
+  "id": "version-2.2.3/User Guide/Dashboards/Management/Report filters",
+  "title": "Report filters",
+  "description": "Report filters Tab",
+  "source": "@site/versioned_docs/version-2.2.3/04-User Guide/01-Dashboards/03-Management/04-Report filters.md",
+  "sourceDirName": "04-User Guide/01-Dashboards/03-Management",
+  "slug": "/User Guide/Dashboards/Management/Report filters",
+  "permalink": "/2.2.3/User Guide/Dashboards/Management/Report filters",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "description": "Report filters Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Reports",
+    "permalink": "/2.2.3/User Guide/Dashboards/Management/Reports"
+  },
+  "next": {
+    "title": "Alerts",
+    "permalink": "/2.2.3/User Guide/Alerts/"
+  }
+}

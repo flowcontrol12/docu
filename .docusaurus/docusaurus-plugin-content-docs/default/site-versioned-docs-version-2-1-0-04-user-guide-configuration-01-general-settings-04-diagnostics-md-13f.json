@@ -1,0 +1,26 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/Diagnostics",
+  "id": "version-2.1.0/User Guide/Configuration/General Settings/Diagnostics",
+  "title": "Diagnostics",
+  "description": "In this menu [Configuration>General Settings >Diagnostics] there are several network tools.",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/01-General Settings/04-Diagnostics.md",
+  "sourceDirName": "04-User Guide/Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/Diagnostics",
+  "permalink": "/2.1.0/User Guide/Configuration/General Settings/Diagnostics",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Maintenance Mode",
+    "permalink": "/2.1.0/User Guide/Configuration/General Settings/Maintenance Mode"
+  },
+  "next": {
+    "title": "Retention",
+    "permalink": "/2.1.0/User Guide/Configuration/General Settings/Retention"
+  }
+}

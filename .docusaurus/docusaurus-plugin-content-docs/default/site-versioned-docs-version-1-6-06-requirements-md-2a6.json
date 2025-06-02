@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Requirements",
+  "id": "version-1.6/Requirements",
+  "title": "Requirements",
+  "description": "With purchase of FlowControl system, you receive OVA file required for deployment of the software. Please ensure that the file is available for installation process.",
+  "source": "@site/versioned_docs/version-1.6/06-Requirements.md",
+  "sourceDirName": ".",
+  "slug": "/Requirements",
+  "permalink": "/1.6/Requirements",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "CLI commands",
+    "permalink": "/1.6/CLI commands"
+  },
+  "next": {
+    "title": "Release notes",
+    "permalink": "/1.6/Release notes"
+  }
+}

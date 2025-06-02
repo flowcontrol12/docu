@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User Guide/Configuration/Account Management/User Roles_",
+  "id": "version-2.1.0/User Guide/Configuration/Account Management/User Roles_",
+  "title": "User Roles",
+  "description": "User Roles Tab",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/02-Account Management/02-User Roles_.md",
+  "sourceDirName": "04-User Guide/Configuration/02-Account Management",
+  "slug": "/User Guide/Configuration/Account Management/User Roles_",
+  "permalink": "/2.1.0/User Guide/Configuration/Account Management/User Roles_",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "User Roles_",
+    "title": "User Roles",
+    "description": "User Roles Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Accounts",
+    "permalink": "/2.1.0/User Guide/Configuration/Account Management/Accounts"
+  },
+  "next": {
+    "title": "Auth Providers",
+    "permalink": "/2.1.0/User Guide/Configuration/Account Management/Auth Providers"
+  }
+}

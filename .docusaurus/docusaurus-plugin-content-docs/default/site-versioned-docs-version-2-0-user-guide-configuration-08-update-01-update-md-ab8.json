@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Update/Update",
+  "id": "version-2.0/User Guide/Configuration/Update/Update",
+  "title": "Update",
+  "description": "Update Tab",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Configuration/08-Update/01-Update.md",
+  "sourceDirName": "User Guide/Configuration/08-Update",
+  "slug": "/User Guide/Configuration/Update/Update",
+  "permalink": "/2.0/User Guide/Configuration/Update/Update",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "Update Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Update",
+    "permalink": "/2.0/User Guide/Configuration/Update/"
+  },
+  "next": {
+    "title": "About",
+    "permalink": "/2.0/User Guide/Configuration/Update/About"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Rules Examples/Rule from template",
+  "id": "version-2.2.2/Examples/Rules Examples/Rule from template",
+  "title": "Examples of rule creation - simple way",
+  "description": "A simple method of a rule creation existing templates to design custom rules.",
+  "source": "@site/versioned_docs/version-2.2.2/06-Examples/Rules Examples/Rule from template.md",
+  "sourceDirName": "06-Examples/Rules Examples",
+  "slug": "/Examples/Rules Examples/Rule from template",
+  "permalink": "/2.2.2/Examples/Rules Examples/Rule from template",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples of alert rule creation - advanced way",
+    "permalink": "/2.2.2/Examples/Rules Examples/Alert rule from scratch"
+  },
+  "next": {
+    "title": "Widgets Examples",
+    "permalink": "/2.2.2/Examples/Widgets Examples/"
+  }
+}

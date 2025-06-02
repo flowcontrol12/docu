@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User-Guide/Configuration/Shortcuts-Bookmarks-and-Drilldowns/index",
+  "id": "User-Guide/Configuration/Shortcuts-Bookmarks-and-Drilldowns/index",
+  "title": "Shortcuts (Bookmarks & Drilldowns)",
+  "description": "Introduction",
+  "source": "@site/docs/04-User-Guide/08-Configuration/04-Shortcuts-Bookmarks-and-Drilldowns/index.md",
+  "sourceDirName": "04-User-Guide/08-Configuration/04-Shortcuts-Bookmarks-and-Drilldowns",
+  "slug": "/User-Guide/Configuration/Shortcuts",
+  "permalink": "/User-Guide/Configuration/Shortcuts",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "toc_min_heading_level": 2,
+    "toc_max_heading_level": 6,
+    "slug": "/User-Guide/Configuration/Shortcuts",
+    "addressMatch": "panel/shortcuts"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Rules",
+    "permalink": "/User-Guide/Configuration/Rules"
+  },
+  "next": {
+    "title": "Filters",
+    "permalink": "/User-Guide/Configuration/Filters"
+  }
+}

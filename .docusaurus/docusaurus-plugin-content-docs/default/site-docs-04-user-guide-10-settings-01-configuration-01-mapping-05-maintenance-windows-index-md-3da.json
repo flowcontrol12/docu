@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Mapping/Maintenance-Windows/index",
+  "id": "User-Guide/Settings/Configuration/Mapping/Maintenance-Windows/index",
+  "title": "Maintenance Windows",
+  "description": "The [Settings > Configuration > Mapping > Maintenance Windows] menu can be used to create Maintenance Window profiles.",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/01-Mapping/05-Maintenance-Windows/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/01-Mapping/05-Maintenance-Windows",
+  "slug": "/User-Guide/Settings/Configuration/Mapping/Maintenance-Windows",
+  "permalink": "/User-Guide/Settings/Configuration/Mapping/Maintenance-Windows",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Mapping/Maintenance-Windows",
+    "addressMatch": "panel/mapping/maintenance-windows"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Macros",
+    "permalink": "/User-Guide/Configuration/Mapping/Macros"
+  },
+  "next": {
+    "title": "Business Hours",
+    "permalink": "/User-Guide/Settings/Configuration/Mapping/Business-Hours"
+  }
+}

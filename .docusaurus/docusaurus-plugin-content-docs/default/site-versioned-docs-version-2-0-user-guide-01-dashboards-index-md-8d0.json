@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Dashboards/index",
+  "id": "version-2.0/User Guide/Dashboards/index",
+  "title": "Dashboard",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0/User Guide/01-Dashboards/index.md",
+  "sourceDirName": "User Guide/01-Dashboards",
+  "slug": "/User Guide/Dashboards/",
+  "permalink": "/2.0/User Guide/Dashboards/",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "User Interface",
+    "permalink": "/2.0/User interface_"
+  },
+  "next": {
+    "title": "Raw Data",
+    "permalink": "/2.0/User Guide/Dashboards/Raw Data/"
+  }
+}

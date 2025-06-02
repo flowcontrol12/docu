@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Miscellaneous/index",
+  "id": "User-Guide/Miscellaneous/index",
+  "title": "Miscellaneous",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/11-Miscellaneous/index.md",
+  "sourceDirName": "04-User-Guide/11-Miscellaneous",
+  "slug": "/User-Guide/Miscellaneous",
+  "permalink": "/User-Guide/Miscellaneous",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Miscellaneous"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "About",
+    "permalink": "/User-Guide/Settings/General/About"
+  },
+  "next": {
+    "title": "User Interface",
+    "permalink": "/User-Guide/Miscellaneous/User-Interface"
+  }
+}

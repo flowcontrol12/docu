@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XND module/DDoS Dashboards",
+  "id": "version-1.6/XND module/DDoS Dashboards",
+  "title": "DDoS Dashboards",
+  "description": "Below you find dashboards to help you analyze DDoS attacks",
+  "source": "@site/versioned_docs/version-1.6/04-XND module/05-DDoS Dashboards.md",
+  "sourceDirName": "04-XND module",
+  "slug": "/XND module/DDoS Dashboards",
+  "permalink": "/1.6/XND module/DDoS Dashboards",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "XND module configuration",
+    "permalink": "/1.6/XND module/XND module configuration"
+  },
+  "next": {
+    "title": "CLI commands",
+    "permalink": "/1.6/CLI commands"
+  }
+}

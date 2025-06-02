@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Support-and-Diagnostics/Remote-Support/index",
+  "id": "version-3.0.0/User-Guide/Settings/Support-and-Diagnostics/Remote-Support/index",
+  "title": "Remote Support",
+  "description": "[Settings > Support & Diagnostics > Remote Support] menu can be used to assign temporary controlled support access to the system via SSH protocol.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/06-Support-and-Diagnostics/03-Remote-Support/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/06-Support-and-Diagnostics/03-Remote-Support",
+  "slug": "/User-Guide/Settings/Support-and-Diagnostics/Remote-Support",
+  "permalink": "/3.0.0/User-Guide/Settings/Support-and-Diagnostics/Remote-Support",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Support-and-Diagnostics/Remote-Support",
+    "addressMatch": "panel/support-and-diagnostics/remote-support"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Diagnostics",
+    "permalink": "/3.0.0/User-Guide/Settings/Support-and-Diagnostics/Diagnostics"
+  },
+  "next": {
+    "title": "Backup & Restore",
+    "permalink": "/3.0.0/User-Guide/Settings/Support-and-Diagnostics/Backup-and-Restore"
+  }
+}

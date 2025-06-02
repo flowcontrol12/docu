@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Ranges",
+  "id": "version-2.4/User Guide/Configuration/Objects/Ranges",
+  "title": "Ranges",
+  "description": "Ranges Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/04-Objects/04-Ranges.md",
+  "sourceDirName": "04-User Guide/07-Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Ranges",
+  "permalink": "/2.4/User Guide/Configuration/Objects/Ranges",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "description": "Ranges Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Metrics",
+    "permalink": "/2.4/User Guide/Configuration/Objects/Metrics"
+  },
+  "next": {
+    "title": "Collectors",
+    "permalink": "/2.4/User Guide/Configuration/Objects/Collectors"
+  }
+}

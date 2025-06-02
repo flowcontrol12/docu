@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Playground/index",
+  "id": "User-Guide/Playground/index",
+  "title": "Playground",
+  "description": "Playground Tab",
+  "source": "@site/docs/04-User-Guide/07-Playground/index.md",
+  "sourceDirName": "04-User-Guide/07-Playground",
+  "slug": "/User-Guide/Playground",
+  "permalink": "/User-Guide/Playground",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "description": "Playground Tab",
+    "slug": "/User-Guide/Playground",
+    "addressMatch": "panel/playground"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Asset Discovery",
+    "permalink": "/User-Guide/Asset-Discovery"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/User-Guide/Configuration"
+  }
+}

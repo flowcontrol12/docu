@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Introduction/index",
+  "id": "Introduction/index",
+  "title": "Introduction",
+  "description": "Sycope is a network monitoring tool using real-time flow analysis, enriched with business context to help businesses assess their performance and protect the IT infrastructure. It records, processes, and analyzes all parameters contained in flows, enhanced by SNMP, geolocation and security feeds. With a sharp-looking, intuitive, multi-purpose GUI which corresponds to its inner workings, driven by our own NQL, Sycope presents itself as a versatile and highly customizable tool for your flow control needs.",
+  "source": "@site/docs/01-Introduction/index.md",
+  "sourceDirName": "01-Introduction",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "User Interface",
+    "permalink": "/Introduction/User-Interface"
+  }
+}

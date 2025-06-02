@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Mapping/index",
+  "id": "version-2.2.1/User Guide/Configuration/Mapping/index",
+  "title": "Mapping",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/03-Mapping/index.md",
+  "sourceDirName": "04-User Guide/Configuration/03-Mapping",
+  "slug": "/User Guide/Configuration/Mapping/",
+  "permalink": "/2.2.1/User Guide/Configuration/Mapping/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Auth Providers",
+    "permalink": "/2.2.1/User Guide/Configuration/Account Management/Auth Providers"
+  },
+  "next": {
+    "title": "Lookups",
+    "permalink": "/2.2.1/User Guide/Configuration/Mapping/Lookups"
+  }
+}

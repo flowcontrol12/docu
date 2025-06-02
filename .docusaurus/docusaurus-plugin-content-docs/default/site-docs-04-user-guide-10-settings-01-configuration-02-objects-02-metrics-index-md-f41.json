@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/Metrics/index",
+  "id": "User-Guide/Settings/Configuration/Objects/Metrics/index",
+  "title": "Metrics",
+  "description": "This menu [Settings > Configuration > Objects > Metrics] can be used to create custom metrics based on the selected Data Streams and your own Aggregation and Post Aggregation. The system includes several useful predefined  metrics  that you can use right after installing the system.",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/02-Objects/02-Metrics/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/02-Metrics",
+  "slug": "/User-Guide/Settings/Configuration/Objects/Metrics",
+  "permalink": "/User-Guide/Settings/Configuration/Objects/Metrics",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/Metrics",
+    "addressMatch": "panel/saved-fields/metrics"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Fields",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Fields"
+  },
+  "next": {
+    "title": "Ranges",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Ranges"
+  }
+}

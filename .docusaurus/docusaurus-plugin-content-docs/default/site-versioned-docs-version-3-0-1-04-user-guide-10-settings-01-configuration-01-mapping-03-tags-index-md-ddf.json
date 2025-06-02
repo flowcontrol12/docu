@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Mapping/Tags/index",
+  "id": "version-3.0.1/User-Guide/Settings/Configuration/Mapping/Tags/index",
+  "title": "Tags",
+  "description": "This menu [Settings > Configuration > Mapping > Tags] can be used to create custom tags that can be used across the Sycope system.",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/10-Settings/01-Configuration/01-Mapping/03-Tags/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/01-Mapping/03-Tags",
+  "slug": "/User-Guide/Settings/Configuration/Mapping/Tags",
+  "permalink": "/3.0.1/User-Guide/Settings/Configuration/Mapping/Tags",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Mapping/Tags",
+    "addressMatch": "panel/mapping/tags"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Mappers",
+    "permalink": "/3.0.1/User-Guide/Settings/Configuration/Mapping/Mappers"
+  },
+  "next": {
+    "title": "Macros",
+    "permalink": "/3.0.1/User-Guide/Configuration/Mapping/Macros"
+  }
+}

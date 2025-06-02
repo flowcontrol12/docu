@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Raw-Data/index",
+  "id": "version-3.0.0/User-Guide/Raw-Data/index",
+  "title": "Raw Data",
+  "description": "Raw Data",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/04-Raw-Data/index.md",
+  "sourceDirName": "04-User-Guide/04-Raw-Data",
+  "slug": "/User-Guide/Raw-Data",
+  "permalink": "/3.0.0/User-Guide/Raw-Data",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "description": "Raw Data",
+    "slug": "/User-Guide/Raw-Data",
+    "addressMatch": "panel/raw-data"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Quick Analysis",
+    "permalink": "/3.0.0/User-Guide/Quick-Analysis"
+  },
+  "next": {
+    "title": "Alerts",
+    "permalink": "/3.0.0/User-Guide/Alerts"
+  }
+}

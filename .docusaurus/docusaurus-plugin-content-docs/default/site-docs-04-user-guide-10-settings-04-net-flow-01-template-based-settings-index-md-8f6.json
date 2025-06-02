@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/Template-Based-Settings/index",
+  "id": "User-Guide/Settings/NetFlow/Template-Based-Settings/index",
+  "title": "Template Based Settings",
+  "description": "This menu [Settings > NetFlow > Template Based Settings] can be used to configure advanced NetFlow parameters.",
+  "source": "@site/docs/04-User-Guide/10-Settings/04-NetFlow/01-Template-Based-Settings/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/01-Template-Based-Settings",
+  "slug": "/User-Guide/Settings/NetFlow/Template-Based-Settings",
+  "permalink": "/User-Guide/Settings/NetFlow/Template-Based-Settings",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow/Template-Based-Settings",
+    "addressMatch": "panel/config-sources/netflow"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "General",
+    "permalink": "/User-Guide/Settings/NetFlow/General"
+  },
+  "next": {
+    "title": "Advanced Custom Aggregations",
+    "permalink": "/User-Guide/Settings/NetFlow/Advanced-Custom-Aggregations"
+  }
+}

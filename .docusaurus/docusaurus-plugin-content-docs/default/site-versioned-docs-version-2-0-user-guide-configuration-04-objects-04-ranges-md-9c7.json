@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Ranges",
+  "id": "version-2.0/User Guide/Configuration/Objects/Ranges",
+  "title": "Ranges",
+  "description": "Ranges Tab",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Configuration/04-Objects/04-Ranges.md",
+  "sourceDirName": "User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Ranges",
+  "permalink": "/2.0/User Guide/Configuration/Objects/Ranges",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "description": "Ranges Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Alert fields",
+    "permalink": "/2.0/User Guide/Configuration/Objects/Alert fields"
+  },
+  "next": {
+    "title": "Collectors",
+    "permalink": "/2.0/User Guide/Configuration/Objects/Collectors"
+  }
+}

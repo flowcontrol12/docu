@@ -1,0 +1,26 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/Retention",
+  "id": "version-2.1.0/User Guide/Configuration/General Settings/Retention",
+  "title": "Retention",
+  "description": "This menu [Configuration>General Settings >Retention] can be used to manage data retention.",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/01-General Settings/05-Retention.md",
+  "sourceDirName": "04-User Guide/Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/Retention",
+  "permalink": "/2.1.0/User Guide/Configuration/General Settings/Retention",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Diagnostics",
+    "permalink": "/2.1.0/User Guide/Configuration/General Settings/Diagnostics"
+  },
+  "next": {
+    "title": "Account Management",
+    "permalink": "/2.1.0/User Guide/Configuration/Account Management/"
+  }
+}

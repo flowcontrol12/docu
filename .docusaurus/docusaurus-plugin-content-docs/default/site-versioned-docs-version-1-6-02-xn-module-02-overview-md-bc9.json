@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XN module/Overview",
+  "id": "version-1.6/XN module/Overview",
+  "title": "Overview",
+  "description": "The main option to configure the solution is the web GUI. The most important thing to notice when working with the FlowControl System are the menus on the left-hand side (XN, XNS, XND, XNR, SYS) and the icons in the top right corner  (Configuration options). They are all vital components for working with the system, effective problem identification and data mining.",
+  "source": "@site/versioned_docs/version-1.6/02-XN module/02-Overview.md",
+  "sourceDirName": "02-XN module",
+  "slug": "/XN module/Overview",
+  "permalink": "/1.6/XN module/Overview",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/1.6/"
+  },
+  "next": {
+    "title": "Dashboards",
+    "permalink": "/1.6/XN module/Dashboards"
+  }
+}

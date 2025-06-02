@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Fields",
+  "id": "version-2.4/User Guide/Configuration/Objects/Fields",
+  "title": "Fields",
+  "description": "Fields Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/04-Objects/01-Fields.md",
+  "sourceDirName": "04-User Guide/07-Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Fields",
+  "permalink": "/2.4/User Guide/Configuration/Objects/Fields",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "Fields Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Objects",
+    "permalink": "/2.4/User Guide/Configuration/Objects/"
+  },
+  "next": {
+    "title": "Metrics",
+    "permalink": "/2.4/User Guide/Configuration/Objects/Metrics"
+  }
+}

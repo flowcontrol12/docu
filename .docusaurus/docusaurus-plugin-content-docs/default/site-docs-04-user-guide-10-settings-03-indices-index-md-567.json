@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/Indices/index",
+  "id": "User-Guide/Settings/Indices/index",
+  "title": "Indices",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/03-Indices/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/03-Indices",
+  "slug": "/User-Guide/Settings/Indices",
+  "permalink": "/User-Guide/Settings/Indices",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1717586417,
+  "formattedLastUpdatedAt": "5 Jun 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Indices"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "DNS Resolver Rules",
+    "permalink": "/User-Guide/Settings/IT-Asset-Discovery/DNS-Resolver-Rules"
+  },
+  "next": {
+    "title": "Retention",
+    "permalink": "/User-Guide/Settings/Indices/Retention"
+  }
+}

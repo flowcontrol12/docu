@@ -1,0 +1,29 @@
+{
+  "unversionedId": "Troubleshooting",
+  "id": "version-3.0.1/Troubleshooting",
+  "title": "Troubleshooting",
+  "description": "Troubleshooting Tab",
+  "source": "@site/versioned_docs/version-3.0.1/07-Troubleshooting.md",
+  "sourceDirName": ".",
+  "slug": "/Troubleshooting",
+  "permalink": "/3.0.1/Troubleshooting",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "description": "Troubleshooting Tab",
+    "slug": "Troubleshooting"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Widget Advanced Example: Total Traffic Bytes 15 min.",
+    "permalink": "/3.0.1/Examples/Widget-Example-Advanced"
+  },
+  "next": {
+    "title": "Release Notes",
+    "permalink": "/3.0.1/Release-Notes"
+  }
+}

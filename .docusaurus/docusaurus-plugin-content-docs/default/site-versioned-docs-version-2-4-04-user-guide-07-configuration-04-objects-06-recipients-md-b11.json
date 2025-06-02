@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Recipients",
+  "id": "version-2.4/User Guide/Configuration/Objects/Recipients",
+  "title": "Recipients",
+  "description": "Recipients Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/04-Objects/06-Recipients.md",
+  "sourceDirName": "04-User Guide/07-Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Recipients",
+  "permalink": "/2.4/User Guide/Configuration/Objects/Recipients",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "description": "Recipients Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Collectors",
+    "permalink": "/2.4/User Guide/Configuration/Objects/Collectors"
+  },
+  "next": {
+    "title": "Right click actions",
+    "permalink": "/2.4/User Guide/Configuration/Objects/Right click actions"
+  }
+}

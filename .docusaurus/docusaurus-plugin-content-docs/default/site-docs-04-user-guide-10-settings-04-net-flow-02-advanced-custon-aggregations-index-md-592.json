@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/Advanced-Custon-Aggregations/index",
+  "id": "User-Guide/Settings/NetFlow/Advanced-Custon-Aggregations/index",
+  "title": "Advanced Custom Aggregations",
+  "description": "The [Settings > NetFlow > Advanced Custom Aggregations]  menu can be used to create custom aggregations.",
+  "source": "@site/docs/04-User-Guide/10-Settings/04-NetFlow/02-Advanced-Custon-Aggregations/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/02-Advanced-Custon-Aggregations",
+  "slug": "/User-Guide/Settings/NetFlow/Advanced-Custom-Aggregations",
+  "permalink": "/User-Guide/Settings/NetFlow/Advanced-Custom-Aggregations",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow/Advanced-Custom-Aggregations",
+    "addressMatch": "panel/config-sources/analyzer.analyzer"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Template Based Settings",
+    "permalink": "/User-Guide/Settings/NetFlow/Template-Based-Settings"
+  },
+  "next": {
+    "title": "SFlow & JFlow",
+    "permalink": "/User-Guide/Settings/NetFlow/SFlow-and-JFlow"
+  }
+}

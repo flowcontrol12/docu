@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/Security/index",
+  "id": "version-3.0.0/User-Guide/Settings/Security/index",
+  "title": "Security",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/05-Security/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/05-Security",
+  "slug": "/User-Guide/Settings/Security",
+  "permalink": "/3.0.0/User-Guide/Settings/Security",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Security"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Forwarding",
+    "permalink": "/3.0.0/User-Guide/Settings/NetFlow/Forwarding"
+  },
+  "next": {
+    "title": "Users",
+    "permalink": "/3.0.0/User-Guide/Settings/Security/Users"
+  }
+}

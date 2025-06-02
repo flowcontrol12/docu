@@ -1,0 +1,30 @@
+{
+  "unversionedId": "Multitenancy/index",
+  "id": "version-3.0.0/Multitenancy/index",
+  "title": "Multitenancy",
+  "description": "General Information about the Sycope Multitenancy System",
+  "source": "@site/versioned_docs/version-3.0.0/12-Multitenancy/index.md",
+  "sourceDirName": "12-Multitenancy",
+  "slug": "/Multitenancy",
+  "permalink": "/3.0.0/Multitenancy",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "toc_min_heading_level": 2,
+    "toc_max_heading_level": 4,
+    "slug": "/Multitenancy",
+    "addressMatch": "panel/tenants-board"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Sycope Probe User Guide",
+    "permalink": "/3.0.0/Sycope_Probe"
+  },
+  "next": {
+    "title": "3rd Party Licenses",
+    "permalink": "/3.0.0/3rdpartylicenses"
+  }
+}

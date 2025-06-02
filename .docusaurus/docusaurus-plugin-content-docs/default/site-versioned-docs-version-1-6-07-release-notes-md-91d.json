@@ -1,0 +1,22 @@
+{
+  "unversionedId": "Release notes",
+  "id": "version-1.6/Release notes",
+  "title": "Release notes",
+  "description": "FlowControl ver. 1.6",
+  "source": "@site/versioned_docs/version-1.6/07-Release notes.md",
+  "sourceDirName": ".",
+  "slug": "/Release notes",
+  "permalink": "/1.6/Release notes",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Requirements",
+    "permalink": "/1.6/Requirements"
+  }
+}

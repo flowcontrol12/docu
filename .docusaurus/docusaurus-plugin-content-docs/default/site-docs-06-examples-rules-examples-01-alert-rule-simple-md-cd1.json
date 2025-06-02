@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Examples/Rules Examples/Alert-Rule-Simple",
+  "id": "Examples/Rules Examples/Alert-Rule-Simple",
+  "title": "Examples of rule creation - simple way",
+  "description": "A simple method of a rule creation existing templates to design custom rules. In our example, we will configure a Rule based on the DoS attack template.",
+  "source": "@site/docs/06-Examples/Rules Examples/01-Alert-Rule-Simple.md",
+  "sourceDirName": "06-Examples/Rules Examples",
+  "slug": "/Examples/Rules-Examples/Simple",
+  "permalink": "/Examples/Rules-Examples/Simple",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/Examples/Rules-Examples/Simple"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Rules Examples",
+    "permalink": "/Examples/Rules-Examples"
+  },
+  "next": {
+    "title": "Examples of alert rule creation - advanced way",
+    "permalink": "/Examples/Rules-Examples/Advanced"
+  }
+}

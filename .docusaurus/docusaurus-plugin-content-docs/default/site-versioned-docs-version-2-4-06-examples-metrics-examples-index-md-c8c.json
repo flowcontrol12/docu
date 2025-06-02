@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Metrics Examples/index",
+  "id": "version-2.4/Examples/Metrics Examples/index",
+  "title": "Metrics Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.4/06-Examples/Metrics Examples/index.md",
+  "sourceDirName": "06-Examples/Metrics Examples",
+  "slug": "/Examples/Metrics Examples/",
+  "permalink": "/2.4/Examples/Metrics Examples/",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example of advanced field creation - use of mapper - Application Name",
+    "permalink": "/2.4/Examples/Fields Examples/Fields advanced - creation example"
+  },
+  "next": {
+    "title": "Example of Metric creation - advanced metric - use function option",
+    "permalink": "/2.4/Examples/Metrics Examples/Metrics - advance creation example"
+  }
+}

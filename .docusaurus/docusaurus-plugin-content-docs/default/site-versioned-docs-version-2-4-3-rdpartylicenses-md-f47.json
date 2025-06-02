@@ -1,0 +1,21 @@
+{
+  "unversionedId": "3rdpartylicenses",
+  "id": "version-2.4/3rdpartylicenses",
+  "title": "3rd Party Licenses",
+  "description": "|      | Module                                        | Additional requirements                                      |",
+  "source": "@site/versioned_docs/version-2.4/3rdpartylicenses.md",
+  "sourceDirName": ".",
+  "slug": "/3rdpartylicenses",
+  "permalink": "/2.4/3rdpartylicenses",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Sycope Probe User Guide",
+    "permalink": "/2.4/Sycope_Probe"
+  }
+}

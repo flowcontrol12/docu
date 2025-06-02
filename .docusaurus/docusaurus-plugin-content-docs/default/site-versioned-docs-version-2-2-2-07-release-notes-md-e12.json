@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Release notes",
+  "id": "version-2.2.2/Release notes",
+  "title": "Release notes",
+  "description": "ver. 2.2.2.4",
+  "source": "@site/versioned_docs/version-2.2.2/07-Release notes.md",
+  "sourceDirName": ".",
+  "slug": "/Release notes",
+  "permalink": "/2.2.2/Release notes",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples of widget creation - advanced widget",
+    "permalink": "/2.2.2/Examples/Widgets Examples/Widget Total Traffic 15min"
+  },
+  "next": {
+    "title": "Requirements",
+    "permalink": "/2.2.2/Requirements"
+  }
+}

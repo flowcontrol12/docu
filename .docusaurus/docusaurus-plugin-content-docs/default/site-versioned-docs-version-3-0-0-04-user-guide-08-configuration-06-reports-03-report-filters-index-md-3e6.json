@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Configuration/Reports/Report-Filters/index",
+  "id": "version-3.0.0/User-Guide/Configuration/Reports/Report-Filters/index",
+  "title": "Report Filters",
+  "description": "This menu [Configuration > Reports > Report filters] can be used to create a report filter. These are needed to create reports; you configure here, for example, a time filter that defines the Time range for the generated report, but not only that.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/08-Configuration/06-Reports/03-Report-Filters/index.md",
+  "sourceDirName": "04-User-Guide/08-Configuration/06-Reports/03-Report-Filters",
+  "slug": "/User-Guide/Configuration/Reports/Report-Filters",
+  "permalink": "/3.0.0/User-Guide/Configuration/Reports/Report-Filters",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Configuration/Reports/Report-Filters",
+    "addressMatch": "panel/reports/report-filters"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Report Schedule",
+    "permalink": "/3.0.0/User-Guide/Configuration/Reports/Report-Schedule"
+  },
+  "next": {
+    "title": "Recipients",
+    "permalink": "/3.0.0/User-Guide/Configuration/Reports/Recipients"
+  }
+}

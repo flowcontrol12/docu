@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/External-Destinations",
+  "id": "User-Guide/Settings/General/Integrations/External-Destinations",
+  "title": "External Destinations",
+  "description": "The [Settings > General > Integrations > External Destinations] menu can be used to configure the external destination to which the system will send data.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/01-Integrations/05-External-Destinations.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations/External-Destinations",
+  "permalink": "/User-Guide/Settings/General/Integrations/External-Destinations",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations/External-Destinations",
+    "addressMatch": "panel/integrations/destination.external"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Proxy",
+    "permalink": "/User-Guide/Settings/General/Integrations/Proxy"
+  },
+  "next": {
+    "title": "FTP",
+    "permalink": "/User-Guide/Settings/General/Integrations/FTP"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/index",
+  "id": "version-2.2.1/User Guide/Configuration/index",
+  "title": "Configuration",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/index.md",
+  "sourceDirName": "04-User Guide/Configuration",
+  "slug": "/User Guide/Configuration/",
+  "permalink": "/2.2.1/User Guide/Configuration/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Rules",
+    "permalink": "/2.2.1/User Guide/Alerts/Rule Sets"
+  },
+  "next": {
+    "title": "General Settings",
+    "permalink": "/2.2.1/User Guide/Configuration/General Settings/"
+  }
+}

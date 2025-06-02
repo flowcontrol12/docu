@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Support-and-Diagnostics/Diagnostics/index",
+  "id": "User-Guide/Settings/Support-and-Diagnostics/Diagnostics/index",
+  "title": "Diagnostics",
+  "description": "[Settings > Support & Diagnostics > Diagnostics] menu, there are several network tools.",
+  "source": "@site/docs/04-User-Guide/10-Settings/06-Support-and-Diagnostics/02-Diagnostics/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/06-Support-and-Diagnostics/02-Diagnostics",
+  "slug": "/User-Guide/Settings/Support-and-Diagnostics/Diagnostics",
+  "permalink": "/User-Guide/Settings/Support-and-Diagnostics/Diagnostics",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Support-and-Diagnostics/Diagnostics",
+    "addressMatch": "panel/support-and-diagnostics/diagnostics"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notifications",
+    "permalink": "/User-Guide/Settings/Support-and-Diagnostics/Notifications"
+  },
+  "next": {
+    "title": "Remote Support",
+    "permalink": "/User-Guide/Settings/Support-and-Diagnostics/Remote-Support"
+  }
+}

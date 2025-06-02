@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/NetFlow/Forwarding",
+  "id": "version-2.2.1/User Guide/Configuration/NetFlow/Forwarding",
+  "title": "Forwarding",
+  "description": "Forwarding Tab",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/05-NetFlow/03-Forwarding.md",
+  "sourceDirName": "04-User Guide/Configuration/05-NetFlow",
+  "slug": "/User Guide/Configuration/NetFlow/Forwarding",
+  "permalink": "/2.2.1/User Guide/Configuration/NetFlow/Forwarding",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Forwarding Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SFlow",
+    "permalink": "/2.2.1/User Guide/Configuration/NetFlow/SFlow"
+  },
+  "next": {
+    "title": "Exporter Groups",
+    "permalink": "/2.2.1/User Guide/Configuration/NetFlow/Exporter Groups"
+  }
+}

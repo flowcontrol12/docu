@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Security/index",
+  "id": "version-2.2.1/User Guide/Configuration/Security/index",
+  "title": "Security",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/06-Security/index.md",
+  "sourceDirName": "04-User Guide/Configuration/06-Security",
+  "slug": "/User Guide/Configuration/Security/",
+  "permalink": "/2.2.1/User Guide/Configuration/Security/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Exporter Groups",
+    "permalink": "/2.2.1/User Guide/Configuration/NetFlow/Exporter Groups"
+  },
+  "next": {
+    "title": "Certificates",
+    "permalink": "/2.2.1/User Guide/Configuration/Security/Certificates"
+  }
+}

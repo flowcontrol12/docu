@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Mapping/Lookups/index",
+  "id": "version-3.0.1/User-Guide/Settings/Configuration/Mapping/Lookups/index",
+  "title": "Lookups",
+  "description": "This menu [Settings > Configuration > Mapping > Lookups] can be used to create custom Lookups that may be applied in different places in the system.",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/10-Settings/01-Configuration/01-Mapping/01-Lookups/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/01-Mapping/01-Lookups",
+  "slug": "/User-Guide/Settings/Configuration/Mapping/Lookups",
+  "permalink": "/3.0.1/User-Guide/Settings/Configuration/Mapping/Lookups",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Mapping/Lookups",
+    "addressMatch": "panel/mapping/lookup.lookup"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Mapping",
+    "permalink": "/3.0.1/User-Guide/Settings/Configuration/Mapping"
+  },
+  "next": {
+    "title": "Mappers",
+    "permalink": "/3.0.1/User-Guide/Settings/Configuration/Mapping/Mappers"
+  }
+}

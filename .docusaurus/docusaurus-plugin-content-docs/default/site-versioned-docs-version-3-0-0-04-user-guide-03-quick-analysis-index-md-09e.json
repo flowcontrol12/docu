@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User-Guide/Quick-Analysis/index",
+  "id": "version-3.0.0/User-Guide/Quick-Analysis/index",
+  "title": "Quick Analysis",
+  "description": "Quick Analysis is a tool for quickly browsing and visualizing data in a simplified manner when we need specific information but don't know where to find it in the system, or when we don't have time to create separate Dashboards or Widgets.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/03-Quick-Analysis/index.md",
+  "sourceDirName": "04-User-Guide/03-Quick-Analysis",
+  "slug": "/User-Guide/Quick-Analysis",
+  "permalink": "/3.0.0/User-Guide/Quick-Analysis",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "toc_min_heading_level": 2,
+    "toc_max_heading_level": 6,
+    "slug": "/User-Guide/Quick-Analysis",
+    "addressMatch": "panel/raw-data/statistics"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboards",
+    "permalink": "/3.0.0/User-Guide/Dashboards"
+  },
+  "next": {
+    "title": "Raw Data",
+    "permalink": "/3.0.0/User-Guide/Raw-Data"
+  }
+}

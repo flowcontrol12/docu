@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Security/Certificates/index",
+  "id": "User-Guide/Settings/Security/Certificates/index",
+  "title": "Certificates",
+  "description": "This menu [Settings > Security > Certificates]  can be used to generate and edit SSL certificates for the Sycope application web server.",
+  "source": "@site/docs/04-User-Guide/10-Settings/05-Security/05-Certificates/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/05-Security/05-Certificates",
+  "slug": "/User-Guide/Settings/Security/Certificates",
+  "permalink": "/User-Guide/Settings/Security/Certificates",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Security/Certificates",
+    "addressMatch": "panel/security/certificates"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Audit Log",
+    "permalink": "/User-Guide/Settings/Security/Audit-Log"
+  },
+  "next": {
+    "title": "Support & Diagnostics",
+    "permalink": "/User-Guide/Settings/Support-and-Diagnostics"
+  }
+}

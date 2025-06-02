@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Quick-Setup/index",
+  "id": "version-3.0.0/User-Guide/Settings/Configuration/Quick-Setup/index",
+  "title": "Quick Setup",
+  "description": "Quick Setup",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/01-Configuration/00-Quick-Setup/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/00-Quick-Setup",
+  "slug": "/User-Guide/Settings/Configuration/Quick-Setup",
+  "permalink": "/3.0.0/User-Guide/Settings/Configuration/Quick-Setup",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "description": "Quick Setup",
+    "slug": "/User-Guide/Settings/Configuration/Quick-Setup"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration"
+  },
+  "next": {
+    "title": "Mapping",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping"
+  }
+}

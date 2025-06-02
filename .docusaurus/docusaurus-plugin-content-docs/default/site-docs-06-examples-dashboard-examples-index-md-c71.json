@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Dashboard-Examples/index",
+  "id": "Examples/Dashboard-Examples/index",
+  "title": "Dashboard Examples",
+  "description": "",
+  "source": "@site/docs/06-Examples/Dashboard-Examples/index.md",
+  "sourceDirName": "06-Examples/Dashboard-Examples",
+  "slug": "/Examples/Dashboard-Examples",
+  "permalink": "/Examples/Dashboard-Examples",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Dashboard-Examples"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Collector Creation Example",
+    "permalink": "/Examples/Collector-Creation-Example"
+  },
+  "next": {
+    "title": "Create a Custom Dashboard",
+    "permalink": "/Examples/Create-Custom-Dashboard"
+  }
+}

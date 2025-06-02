@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/index",
+  "id": "version-2.4/Examples/index",
+  "title": "Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.4/06-Examples/index.md",
+  "sourceDirName": "06-Examples",
+  "slug": "/Examples/",
+  "permalink": "/2.4/Examples/",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Search bar",
+    "permalink": "/2.4/NQL/Searchbar"
+  },
+  "next": {
+    "title": "Baseline Examples",
+    "permalink": "/2.4/Examples/Baseline Example/"
+  }
+}

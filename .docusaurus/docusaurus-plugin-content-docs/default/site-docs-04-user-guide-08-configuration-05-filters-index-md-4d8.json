@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Configuration/Filters/index",
+  "id": "User-Guide/Configuration/Filters/index",
+  "title": "Filters",
+  "description": "Favorites Filters Tab",
+  "source": "@site/docs/04-User-Guide/08-Configuration/05-Filters/index.md",
+  "sourceDirName": "04-User-Guide/08-Configuration/05-Filters",
+  "slug": "/User-Guide/Configuration/Filters",
+  "permalink": "/User-Guide/Configuration/Filters",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "description": "Favorites Filters Tab",
+    "slug": "/User-Guide/Configuration/Filters",
+    "addressMatch": "panel/filters"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Shortcuts (Bookmarks & Drilldowns)",
+    "permalink": "/User-Guide/Configuration/Shortcuts"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/User-Guide/Configuration/Reports"
+  }
+}

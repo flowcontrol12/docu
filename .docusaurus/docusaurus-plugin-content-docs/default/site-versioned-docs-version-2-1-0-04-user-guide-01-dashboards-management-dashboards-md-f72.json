@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Dashboards/Management/Dashboards_",
+  "id": "version-2.1.0/User Guide/Dashboards/Management/Dashboards_",
+  "title": "Dashboards",
+  "description": "A Dashboard is simply a visual representation of data designed for quick analysis of the network traffic data and informational awareness.",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/01-Dashboards/Management/Dashboards.md",
+  "sourceDirName": "04-User Guide/01-Dashboards/Management",
+  "slug": "/User Guide/Dashboards/Management/Dashboards_",
+  "permalink": "/2.1.0/User Guide/Dashboards/Management/Dashboards_",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "frontMatter": {
+    "id": "Dashboards_",
+    "title": "Dashboards"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Management",
+    "permalink": "/2.1.0/User Guide/Dashboards/Management/"
+  },
+  "next": {
+    "title": "Widgets",
+    "permalink": "/2.1.0/User Guide/Dashboards/Management/Widgets"
+  }
+}

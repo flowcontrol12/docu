@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/NetFlow/SFlow",
+  "id": "version-2.1.0/User Guide/Configuration/NetFlow/SFlow",
+  "title": "SFlow",
+  "description": "SFlow Tab",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/05-NetFlow/02-SFlow.md",
+  "sourceDirName": "04-User Guide/Configuration/05-NetFlow",
+  "slug": "/User Guide/Configuration/NetFlow/SFlow",
+  "permalink": "/2.1.0/User Guide/Configuration/NetFlow/SFlow",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "SFlow Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Netflow",
+    "permalink": "/2.1.0/User Guide/Configuration/NetFlow/Netflow"
+  },
+  "next": {
+    "title": "Forwarding",
+    "permalink": "/2.1.0/User Guide/Configuration/NetFlow/Forwarding"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Email Templates",
+  "id": "version-2.0.27/User Guide/Configuration/Objects/Email Templates",
+  "title": "Email Templates",
+  "description": "Email Templates Tab",
+  "source": "@site/versioned_docs/version-2.0.27/04-User Guide/Configuration/04-Objects/08-Email Templates.md",
+  "sourceDirName": "04-User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Email Templates",
+  "permalink": "/2.0.27/User Guide/Configuration/Objects/Email Templates",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "description": "Email Templates Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Right click actions",
+    "permalink": "/2.0.27/User Guide/Configuration/Objects/Right click actions"
+  },
+  "next": {
+    "title": "NetFlow",
+    "permalink": "/2.0.27/User Guide/Configuration/NetFlow/"
+  }
+}

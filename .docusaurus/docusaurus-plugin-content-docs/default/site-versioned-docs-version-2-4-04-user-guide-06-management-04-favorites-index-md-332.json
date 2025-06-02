@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Management/Favorites/index",
+  "id": "version-2.4/User Guide/Management/Favorites/index",
+  "title": "Favorites",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/04-Favorites/index.md",
+  "sourceDirName": "04-User Guide/06-Management/04-Favorites",
+  "slug": "/User Guide/Management/Favorites/",
+  "permalink": "/2.4/User Guide/Management/Favorites/",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Rules",
+    "permalink": "/2.4/User Guide/Management/Rules"
+  },
+  "next": {
+    "title": "Filters",
+    "permalink": "/2.4/User Guide/Management/Favorites/Filters"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Account Management/Auth Providers",
+  "id": "version-2.2.3/User Guide/Configuration/Account Management/Auth Providers",
+  "title": "Auth Providers",
+  "description": "Auth Providers Tab",
+  "source": "@site/versioned_docs/version-2.2.3/04-User Guide/Configuration/02-Account Management/03-Auth Providers.md",
+  "sourceDirName": "04-User Guide/Configuration/02-Account Management",
+  "slug": "/User Guide/Configuration/Account Management/Auth Providers",
+  "permalink": "/2.2.3/User Guide/Configuration/Account Management/Auth Providers",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Auth Providers Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "User Roles",
+    "permalink": "/2.2.3/User Guide/Configuration/Account Management/User Roles_"
+  },
+  "next": {
+    "title": "Mapping",
+    "permalink": "/2.2.3/User Guide/Configuration/Mapping/"
+  }
+}

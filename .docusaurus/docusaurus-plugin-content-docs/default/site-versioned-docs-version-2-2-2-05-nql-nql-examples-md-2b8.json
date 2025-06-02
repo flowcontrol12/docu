@@ -1,0 +1,25 @@
+{
+  "unversionedId": "NQL/NQL_examples",
+  "id": "version-2.2.2/NQL/NQL_examples",
+  "title": "NQL query examples",
+  "description": "Glossary",
+  "source": "@site/versioned_docs/version-2.2.2/05-NQL/NQL_examples.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/NQL_examples",
+  "permalink": "/2.2.2/NQL/NQL_examples",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Licenses",
+    "permalink": "/2.2.2/User Guide/Configuration/Licenses"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/2.2.2/Examples/"
+  }
+}

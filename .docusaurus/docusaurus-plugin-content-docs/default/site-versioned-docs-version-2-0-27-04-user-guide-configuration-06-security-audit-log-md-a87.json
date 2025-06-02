@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User Guide/Configuration/Security/Audit Log",
+  "id": "version-2.0.27/User Guide/Configuration/Security/Audit Log",
+  "title": "Audit Log",
+  "description": "Audit Log Tab",
+  "source": "@site/versioned_docs/version-2.0.27/04-User Guide/Configuration/06-Security/Audit Log.md",
+  "sourceDirName": "04-User Guide/Configuration/06-Security",
+  "slug": "/User Guide/Configuration/Security/Audit Log",
+  "permalink": "/2.0.27/User Guide/Configuration/Security/Audit Log",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {
+    "description": "Audit Log Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Certificates",
+    "permalink": "/2.0.27/User Guide/Configuration/Security/Certificates"
+  },
+  "next": {
+    "title": "Integrations",
+    "permalink": "/2.0.27/User Guide/Configuration/Integrations/"
+  }
+}

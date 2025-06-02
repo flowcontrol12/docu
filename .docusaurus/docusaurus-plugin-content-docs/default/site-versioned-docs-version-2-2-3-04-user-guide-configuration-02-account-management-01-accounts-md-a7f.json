@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Account Management/Accounts",
+  "id": "version-2.2.3/User Guide/Configuration/Account Management/Accounts",
+  "title": "Accounts",
+  "description": "Accounts Tab",
+  "source": "@site/versioned_docs/version-2.2.3/04-User Guide/Configuration/02-Account Management/01-Accounts.md",
+  "sourceDirName": "04-User Guide/Configuration/02-Account Management",
+  "slug": "/User Guide/Configuration/Account Management/Accounts",
+  "permalink": "/2.2.3/User Guide/Configuration/Account Management/Accounts",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "Accounts Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Account Management",
+    "permalink": "/2.2.3/User Guide/Configuration/Account Management/"
+  },
+  "next": {
+    "title": "User Roles",
+    "permalink": "/2.2.3/User Guide/Configuration/Account Management/User Roles_"
+  }
+}

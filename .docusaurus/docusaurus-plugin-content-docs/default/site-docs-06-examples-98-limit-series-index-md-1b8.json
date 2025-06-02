@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Examples/Limit-Series/index",
+  "id": "Examples/Limit-Series/index",
+  "title": "Limit Series",
+  "description": "Limit Series",
+  "source": "@site/docs/06-Examples/98-Limit-Series/index.md",
+  "sourceDirName": "06-Examples/98-Limit-Series",
+  "slug": "/Examples/Limit-Series",
+  "permalink": "/Examples/Limit-Series",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "description": "Limit Series",
+    "slug": "/Examples/Limit-Series"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Asset Discovery - SQL Example",
+    "permalink": "/Examples/Asset-Discovery-SQL-Example"
+  },
+  "next": {
+    "title": "Pivot Table",
+    "permalink": "/Examples/Pivot-Table"
+  }
+}

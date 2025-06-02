@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Management/Widgets",
+  "id": "version-2.4/User Guide/Management/Widgets",
+  "title": "Widgets",
+  "description": "Widgets Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/02-Widgets.md",
+  "sourceDirName": "04-User Guide/06-Management",
+  "slug": "/User Guide/Management/Widgets",
+  "permalink": "/2.4/User Guide/Management/Widgets",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Widgets Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboards",
+    "permalink": "/2.4/User Guide/Management/Dashboards_"
+  },
+  "next": {
+    "title": "Rules",
+    "permalink": "/2.4/User Guide/Management/Rules"
+  }
+}

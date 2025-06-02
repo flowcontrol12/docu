@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/index",
+  "id": "User-Guide/Settings/Configuration/Objects/index",
+  "title": "Objects",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/02-Objects/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects",
+  "slug": "/User-Guide/Settings/Configuration/Objects",
+  "permalink": "/User-Guide/Settings/Configuration/Objects",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1717586417,
+  "formattedLastUpdatedAt": "5 Jun 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Business Hours",
+    "permalink": "/User-Guide/Settings/Configuration/Mapping/Business-Hours"
+  },
+  "next": {
+    "title": "Fields",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Fields"
+  }
+}

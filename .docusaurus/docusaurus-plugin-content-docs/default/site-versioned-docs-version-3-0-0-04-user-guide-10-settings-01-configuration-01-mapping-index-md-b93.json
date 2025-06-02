@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Mapping/index",
+  "id": "version-3.0.0/User-Guide/Settings/Configuration/Mapping/index",
+  "title": "Mapping",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/01-Configuration/01-Mapping/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/01-Mapping",
+  "slug": "/User-Guide/Settings/Configuration/Mapping",
+  "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Mapping"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Quick Setup",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Quick-Setup"
+  },
+  "next": {
+    "title": "Lookups",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping/Lookups"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Baseline Example/Using baseline in a rule",
+  "id": "Examples/Baseline Example/Using baseline in a rule",
+  "title": "Using baseline in a rule - Unexpected increase in # of flows rule example",
+  "description": "Unexpected increase in the number of flows rule example.",
+  "source": "@site/docs/06-Examples/Baseline Example/Using baseline in a rule.md",
+  "sourceDirName": "06-Examples/Baseline Example",
+  "slug": "/Examples/Baseline Example/Using baseline in a rule",
+  "permalink": "/Examples/Baseline Example/Using baseline in a rule",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1680017400,
+  "formattedLastUpdatedAt": "28 Mar 2023",
+  "frontMatter": {
+    "description": "Unexpected increase in the number of flows rule example."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Baseline Examples",
+    "permalink": "/Examples/Baseline Example/"
+  },
+  "next": {
+    "title": "Using baseline in a widget - Security Alerts Widget example",
+    "permalink": "/Examples/Baseline Example/Using baseline in a widget"
+  }
+}

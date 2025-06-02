@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Alerts/Alerts Table",
+  "id": "version-2.0/User Guide/Alerts/Alerts Table",
+  "title": "Alerts Table",
+  "description": "One of the most important components of the Sycope system is alerting functionality. This functionality allows the user to flexibly build Alerts based on a number of conditions and rules that operate on the data streams collected by the system.",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Alerts/Alerts Table.md",
+  "sourceDirName": "User Guide/Alerts",
+  "slug": "/User Guide/Alerts/Alerts Table",
+  "permalink": "/2.0/User Guide/Alerts/Alerts Table",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Alerts",
+    "permalink": "/2.0/User Guide/Alerts/"
+  },
+  "next": {
+    "title": "Rule Sets",
+    "permalink": "/2.0/User Guide/Alerts/Rule Sets"
+  }
+}

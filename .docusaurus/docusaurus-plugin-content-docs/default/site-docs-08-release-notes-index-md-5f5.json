@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Release-Notes/index",
+  "id": "Release-Notes/index",
+  "title": "Release Notes",
+  "description": "ver. 3.1.0",
+  "source": "@site/docs/08-Release-Notes/index.md",
+  "sourceDirName": "08-Release-Notes",
+  "slug": "/Release-Notes",
+  "permalink": "/Release-Notes",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/Release-Notes"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Troubleshooting",
+    "permalink": "/Troubleshooting"
+  },
+  "next": {
+    "title": "Requirements",
+    "permalink": "/Requirements"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/IT-Asset-Discovery/DNS-Resolver-Rules/index",
+  "id": "version-3.0.1/User-Guide/Settings/IT-Asset-Discovery/DNS-Resolver-Rules/index",
+  "title": "DNS Resolver Rules",
+  "description": "The [Settings > IT Asset Discovery > DNS Resolver Rules] menu can be used to define and manage DNS Rules as well as DNS Servers. Asset Discovery functionality includes support for multiple DNS Servers and assigning them to different subnets.",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/10-Settings/02-IT-Asset-Discovery/02-DNS-Resolver-Rules/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/02-IT-Asset-Discovery/02-DNS-Resolver-Rules",
+  "slug": "/User-Guide/Settings/IT-Asset-Discovery/DNS-Resolver-Rules",
+  "permalink": "/3.0.1/User-Guide/Settings/IT-Asset-Discovery/DNS-Resolver-Rules",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/IT-Asset-Discovery/DNS-Resolver-Rules",
+    "addressMatch": "panel/inventory/dns-resolver"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Traffic Rule Profiles",
+    "permalink": "/3.0.1/User-Guide/Settings/IT-Asset-Discovery/Traffic-Rule-Profiles"
+  },
+  "next": {
+    "title": "Indices",
+    "permalink": "/3.0.1/User-Guide/Settings/Indices"
+  }
+}

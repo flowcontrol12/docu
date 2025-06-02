@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XNS module/Security Dashboards",
+  "id": "version-1.6/XNS module/Security Dashboards",
+  "title": "Security Dashboards",
+  "description": "FlowControl XNS contains four menus (Fig. 1.1) of views for effective analysis of detected security threats:",
+  "source": "@site/versioned_docs/version-1.6/03-XNS module/02-Security Dashboards.md",
+  "sourceDirName": "03-XNS module",
+  "slug": "/XNS module/Security Dashboards",
+  "permalink": "/1.6/XNS module/Security Dashboards",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/1.6/XNS module/Introduction"
+  },
+  "next": {
+    "title": "Threat Detection",
+    "permalink": "/1.6/XNS module/Threat Detection"
+  }
+}

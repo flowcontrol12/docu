@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Dashboard-Examples/Custom-Dashboard/index",
+  "id": "version-3.0.0/Examples/Dashboard-Examples/Custom-Dashboard/index",
+  "title": "Create a Custom Dashboard",
+  "description": "This tutorial provides information on how to create our own simple dashboard.",
+  "source": "@site/versioned_docs/version-3.0.0/06-Examples/Dashboard-Examples/01-Custom-Dashboard/index.md",
+  "sourceDirName": "06-Examples/Dashboard-Examples/01-Custom-Dashboard",
+  "slug": "/Examples/Create-Custom-Dashboard",
+  "permalink": "/3.0.0/Examples/Create-Custom-Dashboard",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Create-Custom-Dashboard"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboard Examples",
+    "permalink": "/3.0.0/Examples/Dashboard-Examples"
+  },
+  "next": {
+    "title": "Fields Examples",
+    "permalink": "/3.0.0/Examples/Fields Examples/"
+  }
+}

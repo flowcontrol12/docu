@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Account Management/index",
+  "id": "version-2.0.27/User Guide/Configuration/Account Management/index",
+  "title": "Account Management",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.27/04-User Guide/Configuration/02-Account Management/index.md",
+  "sourceDirName": "04-User Guide/Configuration/02-Account Management",
+  "slug": "/User Guide/Configuration/Account Management/",
+  "permalink": "/2.0.27/User Guide/Configuration/Account Management/",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Retention",
+    "permalink": "/2.0.27/User Guide/Configuration/General Settings/Retention"
+  },
+  "next": {
+    "title": "Accounts",
+    "permalink": "/2.0.27/User Guide/Configuration/Account Management/Accounts"
+  }
+}

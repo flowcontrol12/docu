@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Installation-Guide/Lets-Start/index",
+  "id": "Installation-Guide/Lets-Start/index",
+  "title": "Let's Start",
+  "description": "After completing all previous steps, if the configuration has been done correctly, you can log into the System using a web browser.",
+  "source": "@site/docs/03-Installation-Guide/02-Lets-Start/index.md",
+  "sourceDirName": "03-Installation-Guide/02-Lets-Start",
+  "slug": "/Installation-Guide/Lets-Start",
+  "permalink": "/Installation-Guide/Lets-Start",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/Installation-Guide/Lets-Start"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Deployment",
+    "permalink": "/Installation-Guide/Deployment"
+  },
+  "next": {
+    "title": "Quick Setup",
+    "permalink": "/Installation-Guide/Quick-Setup"
+  }
+}

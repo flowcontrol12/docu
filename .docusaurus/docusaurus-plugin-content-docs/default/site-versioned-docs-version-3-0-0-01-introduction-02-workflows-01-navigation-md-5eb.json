@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Introduction/Workflows/Navigation",
+  "id": "version-3.0.0/Introduction/Workflows/Navigation",
+  "title": "Navigation",
+  "description": "Below you can find the most important tips, that will allow you to navigate the Sycope system quickly and accurately.",
+  "source": "@site/versioned_docs/version-3.0.0/01-Introduction/02-Workflows/01-Navigation.md",
+  "sourceDirName": "01-Introduction/02-Workflows",
+  "slug": "/Introduction/Workflows/Navigation",
+  "permalink": "/3.0.0/Introduction/Workflows/Navigation",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Workflows",
+    "permalink": "/3.0.0/Introduction/Workflows"
+  },
+  "next": {
+    "title": "Data Selection",
+    "permalink": "/3.0.0/Introduction/Workflows/Data-Selection"
+  }
+}

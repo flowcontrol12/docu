@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/SNMP",
+  "id": "User-Guide/Settings/General/Integrations/SNMP",
+  "title": "SNMP Server",
+  "description": "The [Settings > General > Integrations > SNMP Server] menu can be used to configure SNMP protocol parameters.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/01-Integrations/02-SNMP.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations/SNMP",
+  "permalink": "/User-Guide/Settings/General/Integrations/SNMP",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations/SNMP",
+    "addressMatch": "panel/integrations/snmp"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "NTP",
+    "permalink": "/User-Guide/Settings/General/Integrations/NTP"
+  },
+  "next": {
+    "title": "SMPT",
+    "permalink": "/User-Guide/Settings/General/Integrations/SMPT"
+  }
+}

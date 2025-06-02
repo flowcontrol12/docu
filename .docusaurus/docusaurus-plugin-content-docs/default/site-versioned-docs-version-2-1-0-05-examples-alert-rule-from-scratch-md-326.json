@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Alert rule from scratch",
+  "id": "version-2.1.0/Examples/Alert rule from scratch",
+  "title": "Examples of alert rule creation - advanced way",
+  "description": "The advanced method of creating a Rule is to design it from scratch. In our example, we will create a rule named Virus Outbreak to detect malware spreading. Detection of such a case can be realized by detecting the communication of one workstation with many others in a short period of time. So let's proceed to create such a rule from scratch.",
+  "source": "@site/versioned_docs/version-2.1.0/05-Examples/Alert rule from scratch.md",
+  "sourceDirName": "05-Examples",
+  "slug": "/Examples/Alert rule from scratch",
+  "permalink": "/2.1.0/Examples/Alert rule from scratch",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples",
+    "permalink": "/2.1.0/Examples/"
+  },
+  "next": {
+    "title": "Example of Collector creation",
+    "permalink": "/2.1.0/Examples/Collector - creation example"
+  }
+}

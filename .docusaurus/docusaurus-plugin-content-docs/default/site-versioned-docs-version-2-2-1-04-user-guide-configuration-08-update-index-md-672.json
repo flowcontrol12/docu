@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Update/index",
+  "id": "version-2.2.1/User Guide/Configuration/Update/index",
+  "title": "Update",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/08-Update/index.md",
+  "sourceDirName": "04-User Guide/Configuration/08-Update",
+  "slug": "/User Guide/Configuration/Update/",
+  "permalink": "/2.2.1/User Guide/Configuration/Update/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "FTP",
+    "permalink": "/2.2.1/User Guide/Configuration/Integrations/FTP"
+  },
+  "next": {
+    "title": "Update",
+    "permalink": "/2.2.1/User Guide/Configuration/Update/Update"
+  }
+}

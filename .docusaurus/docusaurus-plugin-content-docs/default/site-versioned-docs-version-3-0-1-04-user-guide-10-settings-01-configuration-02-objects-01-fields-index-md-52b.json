@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/Fields/index",
+  "id": "version-3.0.1/User-Guide/Settings/Configuration/Objects/Fields/index",
+  "title": "Fields",
+  "description": "This menu [Settings > Configuration > Objects > Fields] can be used to create a custom field based on the selected Streams and (optional) your own mathematical function. Additionally, you can use the Mapping, too. The system includes many of the most useful predefined  fields  that you can use right after installing the system.",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/10-Settings/01-Configuration/02-Objects/01-Fields/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/01-Fields",
+  "slug": "/User-Guide/Settings/Configuration/Objects/Fields",
+  "permalink": "/3.0.1/User-Guide/Settings/Configuration/Objects/Fields",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/Fields",
+    "addressMatch": "panel/saved-fields/dimensions"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Objects",
+    "permalink": "/3.0.1/User-Guide/Settings/Configuration/Objects"
+  },
+  "next": {
+    "title": "Metrics",
+    "permalink": "/3.0.1/User-Guide/Settings/Configuration/Objects/Metrics"
+  }
+}

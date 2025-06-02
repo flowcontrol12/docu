@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/Forwarding/index",
+  "id": "version-3.0.1/User-Guide/Settings/NetFlow/Forwarding/index",
+  "title": "Forwarding",
+  "description": "Overview",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/10-Settings/04-NetFlow/99-Forwarding/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/99-Forwarding",
+  "slug": "/User-Guide/Settings/NetFlow/Forwarding",
+  "permalink": "/3.0.1/User-Guide/Settings/NetFlow/Forwarding",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow/Forwarding",
+    "addressMatch": "panel/config-sources/forwarder.forwarder"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Exporter Restrictions",
+    "permalink": "/3.0.1/User-Guide/Settings/NetFlow/Exporter-Restrictions"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/3.0.1/User-Guide/Settings/Security"
+  }
+}

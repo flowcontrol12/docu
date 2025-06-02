@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Management/Rules",
+  "id": "version-2.4/User Guide/Management/Rules",
+  "title": "Rules",
+  "description": "Rules Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/03-Rules.md",
+  "sourceDirName": "04-User Guide/06-Management",
+  "slug": "/User Guide/Management/Rules",
+  "permalink": "/2.4/User Guide/Management/Rules",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Rules Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Widgets",
+    "permalink": "/2.4/User Guide/Management/Widgets"
+  },
+  "next": {
+    "title": "Favorites",
+    "permalink": "/2.4/User Guide/Management/Favorites/"
+  }
+}

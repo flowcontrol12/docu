@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Configuration/index",
+  "id": "version-3.0.0/User-Guide/Configuration/index",
+  "title": "Configuration",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/08-Configuration/index.md",
+  "sourceDirName": "04-User-Guide/08-Configuration",
+  "slug": "/User-Guide/Configuration",
+  "permalink": "/3.0.0/User-Guide/Configuration",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Configuration"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Playground",
+    "permalink": "/3.0.0/User-Guide/Playground"
+  },
+  "next": {
+    "title": "Widgets",
+    "permalink": "/3.0.0/User-Guide/Configuration/Widgets"
+  }
+}

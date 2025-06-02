@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/NQL_examples",
+  "id": "version-2.4/NQL/NQL_examples",
+  "title": "NQL query examples",
+  "description": "Glossary",
+  "source": "@site/versioned_docs/version-2.4/05-NQL/04-NQL_examples.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/NQL_examples",
+  "permalink": "/2.4/NQL/NQL_examples",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Built-in filters",
+    "permalink": "/2.4/NQL/Built-in filters"
+  },
+  "next": {
+    "title": "Search bar",
+    "permalink": "/2.4/NQL/Searchbar"
+  }
+}

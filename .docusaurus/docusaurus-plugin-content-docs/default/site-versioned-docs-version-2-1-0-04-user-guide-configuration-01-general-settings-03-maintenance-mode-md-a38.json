@@ -1,0 +1,26 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/Maintenance Mode",
+  "id": "version-2.1.0/User Guide/Configuration/General Settings/Maintenance Mode",
+  "title": "Maintenance Mode",
+  "description": "This menu [Configuration>General Settings >Maintenance Mode] can be used to is used to assign temporary controlled support access to the system via ssh protocol .",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/01-General Settings/03-Maintenance Mode.md",
+  "sourceDirName": "04-User Guide/Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/Maintenance Mode",
+  "permalink": "/2.1.0/User Guide/Configuration/General Settings/Maintenance Mode",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notifications",
+    "permalink": "/2.1.0/User Guide/Configuration/General Settings/Notifications"
+  },
+  "next": {
+    "title": "Diagnostics",
+    "permalink": "/2.1.0/User Guide/Configuration/General Settings/Diagnostics"
+  }
+}

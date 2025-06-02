@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Updates/Index",
+  "id": "User-Guide/Settings/General/Updates/Index",
+  "title": "Updates",
+  "description": "This menu  [Settings > General > Updates] can be used to manage the system version.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/02-Updates/Index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/02-Updates",
+  "slug": "/User-Guide/Settings/General/Updates",
+  "permalink": "/User-Guide/Settings/General/Updates",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Updates",
+    "addressMatch": "panel/general/update"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "FTP",
+    "permalink": "/User-Guide/Settings/General/Integrations/FTP"
+  },
+  "next": {
+    "title": "License",
+    "permalink": "/User-Guide/Settings/General/License"
+  }
+}

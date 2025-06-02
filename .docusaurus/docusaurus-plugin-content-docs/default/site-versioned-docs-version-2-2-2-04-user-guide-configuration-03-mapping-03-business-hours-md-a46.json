@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Mapping/Business Hours",
+  "id": "version-2.2.2/User Guide/Configuration/Mapping/Business Hours",
+  "title": "Business Hours",
+  "description": "Business Hours Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Configuration/03-Mapping/03-Business Hours.md",
+  "sourceDirName": "04-User Guide/Configuration/03-Mapping",
+  "slug": "/User Guide/Configuration/Mapping/Business Hours",
+  "permalink": "/2.2.2/User Guide/Configuration/Mapping/Business Hours",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Business Hours Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Maintenance Windows",
+    "permalink": "/2.2.2/User Guide/Configuration/Mapping/Maintenance Windows"
+  },
+  "next": {
+    "title": "Tags",
+    "permalink": "/2.2.2/User Guide/Configuration/Mapping/Tags"
+  }
+}

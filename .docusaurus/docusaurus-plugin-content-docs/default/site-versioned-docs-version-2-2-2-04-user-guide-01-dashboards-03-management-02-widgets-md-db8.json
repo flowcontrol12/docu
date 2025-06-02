@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Dashboards/Management/Widgets",
+  "id": "version-2.2.2/User Guide/Dashboards/Management/Widgets",
+  "title": "Widgets",
+  "description": "Widgets Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/01-Dashboards/03-Management/02-Widgets.md",
+  "sourceDirName": "04-User Guide/01-Dashboards/03-Management",
+  "slug": "/User Guide/Dashboards/Management/Widgets",
+  "permalink": "/2.2.2/User Guide/Dashboards/Management/Widgets",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Widgets Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboards",
+    "permalink": "/2.2.2/User Guide/Dashboards/Management/Dashboards_"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/2.2.2/User Guide/Dashboards/Management/Reports"
+  }
+}

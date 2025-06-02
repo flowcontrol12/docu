@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/Exporter-Restrictions/index",
+  "id": "User-Guide/Settings/NetFlow/Exporter-Restrictions/index",
+  "title": "Exporter Restrictions",
+  "description": "Exporter Restrictions Tab",
+  "source": "@site/docs/04-User-Guide/10-Settings/04-NetFlow/05-Exporter-Restrictions/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/05-Exporter-Restrictions",
+  "slug": "/User-Guide/Settings/NetFlow/Exporter-Restrictions",
+  "permalink": "/User-Guide/Settings/NetFlow/Exporter-Restrictions",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "description": "Exporter Restrictions Tab",
+    "slug": "/User-Guide/Settings/NetFlow/Exporter-Restrictions",
+    "addressMatch": "/panel/config-sources/exporter-groups"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SFlow & JFlow",
+    "permalink": "/User-Guide/Settings/NetFlow/SFlow-and-JFlow"
+  },
+  "next": {
+    "title": "DataBridge",
+    "permalink": "/User-Guide/Settings/NetFlow/DataBridge"
+  }
+}

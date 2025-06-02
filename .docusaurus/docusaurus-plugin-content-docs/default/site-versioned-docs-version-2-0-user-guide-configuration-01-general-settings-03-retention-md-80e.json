@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/Retention",
+  "id": "version-2.0/User Guide/Configuration/General Settings/Retention",
+  "title": "Retention",
+  "description": "Retention Tab",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Configuration/01-General Settings/03-Retention.md",
+  "sourceDirName": "User Guide/Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/Retention",
+  "permalink": "/2.0/User Guide/Configuration/General Settings/Retention",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Retention Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notifications",
+    "permalink": "/2.0/User Guide/Configuration/General Settings/Notifications"
+  },
+  "next": {
+    "title": "Account Management",
+    "permalink": "/2.0/User Guide/Configuration/Account Management/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Mapping/Mappers",
+  "id": "version-2.0.29/User Guide/Configuration/Mapping/Mappers",
+  "title": "Mappers",
+  "description": "Mappers Tab",
+  "source": "@site/versioned_docs/version-2.0.29/04-User Guide/Configuration/03-Mapping/05-Mappers.md",
+  "sourceDirName": "04-User Guide/Configuration/03-Mapping",
+  "slug": "/User Guide/Configuration/Mapping/Mappers",
+  "permalink": "/2.0.29/User Guide/Configuration/Mapping/Mappers",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "description": "Mappers Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Tags",
+    "permalink": "/2.0.29/User Guide/Configuration/Mapping/Tags"
+  },
+  "next": {
+    "title": "Objects",
+    "permalink": "/2.0.29/User Guide/Configuration/Objects/"
+  }
+}

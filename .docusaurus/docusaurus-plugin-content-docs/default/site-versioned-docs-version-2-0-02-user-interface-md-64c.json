@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User interface_",
+  "id": "version-2.0/User interface_",
+  "title": "User Interface",
+  "description": "Main window",
+  "source": "@site/versioned_docs/version-2.0/02-User interface_.md",
+  "sourceDirName": ".",
+  "slug": "/User interface_",
+  "permalink": "/2.0/User interface_",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "User interface_",
+    "title": "User Interface"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/2.0/"
+  },
+  "next": {
+    "title": "Dashboard",
+    "permalink": "/2.0/User Guide/Dashboards/"
+  }
+}

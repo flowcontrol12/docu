@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Licenses",
+  "id": "version-2.0.29/User Guide/Configuration/Licenses",
+  "title": "Licenses",
+  "description": "Licenses",
+  "source": "@site/versioned_docs/version-2.0.29/04-User Guide/Configuration/10-Licenses.md",
+  "sourceDirName": "04-User Guide/Configuration",
+  "slug": "/User Guide/Configuration/Licenses",
+  "permalink": "/2.0.29/User Guide/Configuration/Licenses",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "description": "Licenses"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "About",
+    "permalink": "/2.0.29/User Guide/Configuration/Update/About"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/2.0.29/Examples/"
+  }
+}

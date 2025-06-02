@@ -1,0 +1,26 @@
+{
+  "unversionedId": "User Guide/Dashboards/Favorites/Macros",
+  "id": "version-2.3/User Guide/Dashboards/Favorites/Macros",
+  "title": "Macros",
+  "description": "The [Dashboards->Favorites->Macros] menu can be used to configure custom NQL language macros in the form of various variables.",
+  "source": "@site/versioned_docs/version-2.3/04-User Guide/01-Dashboards/01-Favorites/04-Macros.md",
+  "sourceDirName": "04-User Guide/01-Dashboards/01-Favorites",
+  "slug": "/User Guide/Dashboards/Favorites/Macros",
+  "permalink": "/2.3/User Guide/Dashboards/Favorites/Macros",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Filters",
+    "permalink": "/2.3/User Guide/Dashboards/Favorites/Filters"
+  },
+  "next": {
+    "title": "Bookmarks",
+    "permalink": "/2.3/User Guide/Dashboards/Favorites/Bookmarks"
+  }
+}

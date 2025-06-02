@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/Color-Palettes/index",
+  "id": "User-Guide/Settings/Configuration/Objects/Color-Palettes/index",
+  "title": "Color Palettes",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/02-Objects/07-Color-Palettes/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/07-Color-Palettes",
+  "slug": "/User-Guide/Settings/Configuration/Objects/Color-Palettes",
+  "permalink": "/User-Guide/Settings/Configuration/Objects/Color-Palettes",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/Color-Palettes",
+    "addressMatch": "panel/saved-fields/color-palettes"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Column Profiles",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Column-Profiles"
+  },
+  "next": {
+    "title": "User Indexes",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/User-Indexes"
+  }
+}

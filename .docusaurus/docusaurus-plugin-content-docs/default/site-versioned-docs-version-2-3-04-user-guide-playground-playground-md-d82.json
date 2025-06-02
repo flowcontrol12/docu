@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Playground/Playground",
+  "id": "version-2.3/User Guide/Playground/Playground",
+  "title": "Playground",
+  "description": "The Playground functionality is used to test the NQL language. You can now easily test how your search bar query looks and what results it produces.",
+  "source": "@site/versioned_docs/version-2.3/04-User Guide/Playground/Playground.md",
+  "sourceDirName": "04-User Guide/Playground",
+  "slug": "/User Guide/Playground/",
+  "permalink": "/2.3/User Guide/Playground/",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Licenses",
+    "permalink": "/2.3/User Guide/Configuration/Licenses"
+  },
+  "next": {
+    "title": "NQL User Manual",
+    "permalink": "/2.3/NQL/NQL documentation"
+  }
+}

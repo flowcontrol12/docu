@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XNS module/Threat Detection",
+  "id": "version-1.6/XNS module/Threat Detection",
+  "title": "Threat Detection",
+  "description": "Threat Detection",
+  "source": "@site/versioned_docs/version-1.6/03-XNS module/03-Threat Detection.md",
+  "sourceDirName": "03-XNS module",
+  "slug": "/XNS module/Threat Detection",
+  "permalink": "/1.6/XNS module/Threat Detection",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security Dashboards",
+    "permalink": "/1.6/XNS module/Security Dashboards"
+  },
+  "next": {
+    "title": "Threat Intelligence Engine",
+    "permalink": "/1.6/XNS module/Threat Intelligence Engine"
+  }
+}

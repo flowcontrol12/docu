@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Metrics",
+  "id": "version-2.2.2/User Guide/Configuration/Objects/Metrics",
+  "title": "Metrics",
+  "description": "Metrics Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Configuration/04-Objects/02-Metrics.md",
+  "sourceDirName": "04-User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Metrics",
+  "permalink": "/2.2.2/User Guide/Configuration/Objects/Metrics",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Metrics Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Fields",
+    "permalink": "/2.2.2/User Guide/Configuration/Objects/Fields"
+  },
+  "next": {
+    "title": "Alert fields",
+    "permalink": "/2.2.2/User Guide/Configuration/Objects/Alert fields"
+  }
+}

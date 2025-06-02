@@ -1,0 +1,29 @@
+{
+  "unversionedId": "API-Documentation/index",
+  "id": "API-Documentation/index",
+  "title": "API Documentation",
+  "description": "Introduction",
+  "source": "@site/docs/90-API-Documentation/index.md",
+  "sourceDirName": "90-API-Documentation",
+  "slug": "/API-Documentation",
+  "permalink": "/API-Documentation",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "toc_min_heading_level": 2,
+    "toc_max_heading_level": 4,
+    "slug": "/API-Documentation"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Multitenancy",
+    "permalink": "/Multitenancy"
+  },
+  "next": {
+    "title": "3rd Party Licenses",
+    "permalink": "/3rdpartylicenses"
+  }
+}

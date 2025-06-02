@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/Proxy",
+  "id": "User-Guide/Settings/General/Integrations/Proxy",
+  "title": "Proxy",
+  "description": "The [Settings > General > Integrations > Proxy] menu can be used to configure the proxy server parameters with which the Sycope system will be integrated.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/01-Integrations/04-Proxy.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations/Proxy",
+  "permalink": "/User-Guide/Settings/General/Integrations/Proxy",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations/Proxy",
+    "addressMatch": "panel/integrations/proxy"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SMPT",
+    "permalink": "/User-Guide/Settings/General/Integrations/SMPT"
+  },
+  "next": {
+    "title": "External Destinations",
+    "permalink": "/User-Guide/Settings/General/Integrations/External-Destinations"
+  }
+}

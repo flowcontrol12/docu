@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User-Guide/Configuration/Widgets",
+  "id": "version-3.0.1/User-Guide/Configuration/Widgets",
+  "title": "Widgets",
+  "description": "Widgets Tab",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/08-Configuration/02-Widgets.md",
+  "sourceDirName": "04-User-Guide/08-Configuration",
+  "slug": "/User-Guide/Configuration/Widgets",
+  "permalink": "/3.0.1/User-Guide/Configuration/Widgets",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Widgets Tab",
+    "slug": "/User-Guide/Configuration/Widgets",
+    "addressMatch": "panel/visualizations"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/3.0.1/User-Guide/Configuration"
+  },
+  "next": {
+    "title": "Rules",
+    "permalink": "/3.0.1/User-Guide/Configuration/Rules"
+  }
+}

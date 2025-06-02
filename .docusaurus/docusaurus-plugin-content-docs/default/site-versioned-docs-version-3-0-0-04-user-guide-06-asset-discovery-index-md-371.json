@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User-Guide/Asset-Discovery/index",
+  "id": "version-3.0.0/User-Guide/Asset-Discovery/index",
+  "title": "Asset Discovery",
+  "description": "Asset Discovery is an independent module created to facilitate inventory management, focusing on devices, their usage, the connections between them and to/from the external hosts.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/06-Asset-Discovery/index.md",
+  "sourceDirName": "04-User-Guide/06-Asset-Discovery",
+  "slug": "/User-Guide/Asset-Discovery",
+  "permalink": "/3.0.0/User-Guide/Asset-Discovery",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "toc_min_heading_level": 2,
+    "toc_max_heading_level": 5,
+    "slug": "/User-Guide/Asset-Discovery",
+    "addressMatch": "panel/asset-discovery"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Alerts",
+    "permalink": "/3.0.0/User-Guide/Alerts"
+  },
+  "next": {
+    "title": "Playground",
+    "permalink": "/3.0.0/User-Guide/Playground"
+  }
+}

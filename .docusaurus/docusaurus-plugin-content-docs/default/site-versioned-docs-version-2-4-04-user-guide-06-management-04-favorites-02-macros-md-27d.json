@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Management/Favorites/Macros",
+  "id": "version-2.4/User Guide/Management/Favorites/Macros",
+  "title": "Macros",
+  "description": "Macros Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/04-Favorites/02-Macros.md",
+  "sourceDirName": "04-User Guide/06-Management/04-Favorites",
+  "slug": "/User Guide/Management/Favorites/Macros",
+  "permalink": "/2.4/User Guide/Management/Favorites/Macros",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Macros Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Filters",
+    "permalink": "/2.4/User Guide/Management/Favorites/Filters"
+  },
+  "next": {
+    "title": "Bookmarks",
+    "permalink": "/2.4/User Guide/Management/Favorites/Bookmarks"
+  }
+}

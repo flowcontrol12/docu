@@ -1,0 +1,22 @@
+{
+  "unversionedId": "Installation",
+  "id": "version-1.6/Installation",
+  "title": "Installation",
+  "description": "Introduction",
+  "source": "@site/versioned_docs/version-1.6/01-Installation.md",
+  "sourceDirName": ".",
+  "slug": "/Installation",
+  "permalink": "/1.6/Installation",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "next": {
+    "title": "Introduction",
+    "permalink": "/1.6/"
+  }
+}

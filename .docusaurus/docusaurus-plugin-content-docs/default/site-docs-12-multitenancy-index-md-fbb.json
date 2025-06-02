@@ -1,0 +1,30 @@
+{
+  "unversionedId": "Multitenancy/index",
+  "id": "Multitenancy/index",
+  "title": "Multitenancy",
+  "description": "General Information about the Sycope Multitenancy System",
+  "source": "@site/docs/12-Multitenancy/index.md",
+  "sourceDirName": "12-Multitenancy",
+  "slug": "/Multitenancy",
+  "permalink": "/Multitenancy",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "toc_min_heading_level": 2,
+    "toc_max_heading_level": 4,
+    "slug": "/Multitenancy",
+    "addressMatch": "panel/tenants-board"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Sycope Probe User Guide",
+    "permalink": "/Sycope_Probe"
+  },
+  "next": {
+    "title": "API Documentation",
+    "permalink": "/API-Documentation"
+  }
+}

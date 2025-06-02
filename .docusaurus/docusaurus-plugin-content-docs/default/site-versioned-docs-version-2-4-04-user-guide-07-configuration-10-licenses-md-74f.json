@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Licenses",
+  "id": "version-2.4/User Guide/Configuration/Licenses",
+  "title": "Licenses",
+  "description": "Licenses",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/10-Licenses.md",
+  "sourceDirName": "04-User Guide/07-Configuration",
+  "slug": "/User Guide/Configuration/Licenses",
+  "permalink": "/2.4/User Guide/Configuration/Licenses",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "description": "Licenses"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "About",
+    "permalink": "/2.4/User Guide/Configuration/Update/About"
+  },
+  "next": {
+    "title": "NQL User Manual",
+    "permalink": "/2.4/NQL/NQL documentation"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User Guide/Configuration/NetFlow/Netflow",
+  "id": "version-2.0.29/User Guide/Configuration/NetFlow/Netflow",
+  "title": "Netflow",
+  "description": "Netflow Tab",
+  "source": "@site/versioned_docs/version-2.0.29/04-User Guide/Configuration/05-NetFlow/Netflow.md",
+  "sourceDirName": "04-User Guide/Configuration/05-NetFlow",
+  "slug": "/User Guide/Configuration/NetFlow/Netflow",
+  "permalink": "/2.0.29/User Guide/Configuration/NetFlow/Netflow",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {
+    "description": "Netflow Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "NetFlow",
+    "permalink": "/2.0.29/User Guide/Configuration/NetFlow/"
+  },
+  "next": {
+    "title": "SFlow",
+    "permalink": "/2.0.29/User Guide/Configuration/NetFlow/SFlow"
+  }
+}

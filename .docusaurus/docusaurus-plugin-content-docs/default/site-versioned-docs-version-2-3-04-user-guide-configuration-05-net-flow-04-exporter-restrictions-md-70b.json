@@ -1,0 +1,26 @@
+{
+  "unversionedId": "User Guide/Configuration/NetFlow/Exporter Restrictions",
+  "id": "version-2.3/User Guide/Configuration/NetFlow/Exporter Restrictions",
+  "title": "Exporter Restrictions",
+  "description": "This menu [Configuration>NetFlow>Exporter Restrictions] can be used to configure NetFlow Exporter Restriction group functionality.",
+  "source": "@site/versioned_docs/version-2.3/04-User Guide/Configuration/05-NetFlow/04-Exporter Restrictions.md",
+  "sourceDirName": "04-User Guide/Configuration/05-NetFlow",
+  "slug": "/User Guide/Configuration/NetFlow/Exporter Restrictions",
+  "permalink": "/2.3/User Guide/Configuration/NetFlow/Exporter Restrictions",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Forwarding",
+    "permalink": "/2.3/User Guide/Configuration/NetFlow/Forwarding"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/2.3/User Guide/Configuration/Security/"
+  }
+}

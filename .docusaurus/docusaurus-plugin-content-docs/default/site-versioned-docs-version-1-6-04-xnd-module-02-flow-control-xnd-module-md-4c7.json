@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XND module/FlowControl XND Module",
+  "id": "version-1.6/XND module/FlowControl XND Module",
+  "title": "FlowControl XND Module",
+  "description": "Introduction to XND Module",
+  "source": "@site/versioned_docs/version-1.6/04-XND module/02-FlowControl XND Module.md",
+  "sourceDirName": "04-XND module",
+  "slug": "/XND module/FlowControl XND Module",
+  "permalink": "/1.6/XND module/FlowControl XND Module",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Performance",
+    "permalink": "/1.6/XND module/Performance"
+  },
+  "next": {
+    "title": "DDoS Mitigation",
+    "permalink": "/1.6/XND module/DDoS Mitigation"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Installation guide",
+  "id": "version-2.0.29/Installation guide",
+  "title": "Installation guide",
+  "description": "This document describes step by step installation and configuration process of Sycope 2.X on VMWare ESXi version 6.5+.",
+  "source": "@site/versioned_docs/version-2.0.29/03-Installation guide.md",
+  "sourceDirName": ".",
+  "slug": "/Installation guide",
+  "permalink": "/2.0.29/Installation guide",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "User interface",
+    "permalink": "/2.0.29/User interface"
+  },
+  "next": {
+    "title": "Dashboard",
+    "permalink": "/2.0.29/User Guide/Dashboards/"
+  }
+}

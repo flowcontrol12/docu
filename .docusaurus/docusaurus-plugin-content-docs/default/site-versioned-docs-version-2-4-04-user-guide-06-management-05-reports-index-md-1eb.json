@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Management/Reports/index",
+  "id": "version-2.4/User Guide/Management/Reports/index",
+  "title": "Reports",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/05-Reports/index.md",
+  "sourceDirName": "04-User Guide/06-Management/05-Reports",
+  "slug": "/User Guide/Management/Reports/",
+  "permalink": "/2.4/User Guide/Management/Reports/",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Bookmarks",
+    "permalink": "/2.4/User Guide/Management/Favorites/Bookmarks"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/2.4/User Guide/Management/Reports/Reports"
+  }
+}

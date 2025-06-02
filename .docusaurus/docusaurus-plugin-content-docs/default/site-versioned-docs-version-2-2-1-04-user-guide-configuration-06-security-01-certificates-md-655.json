@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Security/Certificates",
+  "id": "version-2.2.1/User Guide/Configuration/Security/Certificates",
+  "title": "Certificates",
+  "description": "Certificates Tab",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/06-Security/01-Certificates.md",
+  "sourceDirName": "04-User Guide/Configuration/06-Security",
+  "slug": "/User Guide/Configuration/Security/Certificates",
+  "permalink": "/2.2.1/User Guide/Configuration/Security/Certificates",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "Certificates Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security",
+    "permalink": "/2.2.1/User Guide/Configuration/Security/"
+  },
+  "next": {
+    "title": "Audit Log",
+    "permalink": "/2.2.1/User Guide/Configuration/Security/Audit Log"
+  }
+}

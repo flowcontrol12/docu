@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Widgets/Widget Total Traffic 15min",
+  "id": "version-2.0.27/Examples/Widgets/Widget Total Traffic 15min",
+  "title": "Examples of widget creation - advanced widget",
+  "description": "Total traffic Bytes 15min - example assumption",
+  "source": "@site/versioned_docs/version-2.0.27/05-Examples/Widgets/Widget Total Traffic 15min.md",
+  "sourceDirName": "05-Examples/Widgets",
+  "slug": "/Examples/Widgets/Widget Total Traffic 15min",
+  "permalink": "/2.0.27/Examples/Widgets/Widget Total Traffic 15min",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples of widget creation - simple widget",
+    "permalink": "/2.0.27/Examples/Widgets/Widget KPI Alerts last 24h"
+  },
+  "next": {
+    "title": "Release notes",
+    "permalink": "/2.0.27/Release notes"
+  }
+}

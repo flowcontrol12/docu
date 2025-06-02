@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/index",
+  "id": "version-2.1.0/Examples/index",
+  "title": "Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.1.0/05-Examples/index.md",
+  "sourceDirName": "05-Examples",
+  "slug": "/Examples/",
+  "permalink": "/2.1.0/Examples/",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Licenses",
+    "permalink": "/2.1.0/User Guide/Configuration/Licenses"
+  },
+  "next": {
+    "title": "Examples of alert rule creation - advanced way",
+    "permalink": "/2.1.0/Examples/Alert rule from scratch"
+  }
+}

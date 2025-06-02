@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XN module/System Status",
+  "id": "version-1.6/XN module/System Status",
+  "title": "System Status",
+  "description": "This system provides information about its current status and performance. This information is divided into two main sections, Flows and System Statistics.",
+  "source": "@site/versioned_docs/version-1.6/02-XN module/04-System Status.md",
+  "sourceDirName": "02-XN module",
+  "slug": "/XN module/System Status",
+  "permalink": "/1.6/XN module/System Status",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboards",
+    "permalink": "/1.6/XN module/Dashboards"
+  },
+  "next": {
+    "title": "Access through REST API",
+    "permalink": "/1.6/XN module/Access through REST API"
+  }
+}

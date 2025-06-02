@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Collectors",
+  "id": "version-2.3/User Guide/Configuration/Objects/Collectors",
+  "title": "Collectors",
+  "description": "Collectors Tab",
+  "source": "@site/versioned_docs/version-2.3/04-User Guide/Configuration/04-Objects/05-Collectors.md",
+  "sourceDirName": "04-User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Collectors",
+  "permalink": "/2.3/User Guide/Configuration/Objects/Collectors",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "description": "Collectors Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ranges",
+    "permalink": "/2.3/User Guide/Configuration/Objects/Ranges"
+  },
+  "next": {
+    "title": "Recipients",
+    "permalink": "/2.3/User Guide/Configuration/Objects/Recipients"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Asset-Discovery-Examples/SQL-Example/index",
+  "id": "version-3.0.0/Examples/Asset-Discovery-Examples/SQL-Example/index",
+  "title": "Asset Discovery - SQL Example",
+  "description": "Traffic Rule Profiles can be used to define Client subnets and Server subnets with port ranges for services. Depending on the specific use case, both fields support “any” keyword.",
+  "source": "@site/versioned_docs/version-3.0.0/06-Examples/00-Asset-Discovery-Examples/00-SQL-Example/index.md",
+  "sourceDirName": "06-Examples/00-Asset-Discovery-Examples/00-SQL-Example",
+  "slug": "/Examples/Asset-Discovery-SQL-Example",
+  "permalink": "/3.0.0/Examples/Asset-Discovery-SQL-Example",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Asset-Discovery-SQL-Example"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Asset Discovery Examples",
+    "permalink": "/3.0.0/Examples/Asset-Discovery"
+  },
+  "next": {
+    "title": "Baseline Examples",
+    "permalink": "/3.0.0/Examples/Baseline Example/"
+  }
+}

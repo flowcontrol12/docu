@@ -1,0 +1,23 @@
+{
+  "unversionedId": "3rdpartylicenses",
+  "id": "version-3.0.0/3rdpartylicenses",
+  "title": "3rd Party Licenses",
+  "description": "|      | Module                                        | Additional requirements                                      |",
+  "source": "@site/versioned_docs/version-3.0.0/3rdpartylicenses.md",
+  "sourceDirName": ".",
+  "slug": "/3rdpartylicenses",
+  "permalink": "/3.0.0/3rdpartylicenses",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/3rdpartylicenses"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Multitenancy",
+    "permalink": "/3.0.0/Multitenancy"
+  }
+}

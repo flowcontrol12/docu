@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Introduction/Streams/index",
+  "id": "Introduction/Streams/index",
+  "title": "Streams",
+  "description": "What are Streams?",
+  "source": "@site/docs/01-Introduction/04-Streams/index.md",
+  "sourceDirName": "01-Introduction/04-Streams",
+  "slug": "/Introduction/Streams",
+  "permalink": "/Introduction/Streams",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Introduction/Streams"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboards and Widgets",
+    "permalink": "/Introduction/Dashboards-and-Widgets"
+  },
+  "next": {
+    "title": "Installation Guide",
+    "permalink": "/Installation-Guide"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Dashboards/Raw Data/index",
+  "id": "version-2.0.27/User Guide/Dashboards/Raw Data/index",
+  "title": "Raw Data",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.27/04-User Guide/01-Dashboards/01-Raw Data/index.md",
+  "sourceDirName": "04-User Guide/01-Dashboards/01-Raw Data",
+  "slug": "/User Guide/Dashboards/Raw Data/",
+  "permalink": "/2.0.27/User Guide/Dashboards/Raw Data/",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dashboard",
+    "permalink": "/2.0.27/User Guide/Dashboards/"
+  },
+  "next": {
+    "title": "Data streams",
+    "permalink": "/2.0.27/User Guide/Dashboards/Raw Data/Data_streams"
+  }
+}

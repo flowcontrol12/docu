@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/Searchbar",
+  "id": "version-3.0.1/NQL/Searchbar",
+  "title": "Search bar",
+  "description": "The main purpose of the search bar field is to create a filter for data originating from a selected source.",
+  "source": "@site/versioned_docs/version-3.0.1/05-NQL/05-Searchbar.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/Searchbar",
+  "permalink": "/3.0.1/NQL/Searchbar",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "NQL query examples",
+    "permalink": "/3.0.1/NQL/NQL_examples"
+  },
+  "next": {
+    "title": "Examples",
+    "permalink": "/3.0.1/Examples/"
+  }
+}

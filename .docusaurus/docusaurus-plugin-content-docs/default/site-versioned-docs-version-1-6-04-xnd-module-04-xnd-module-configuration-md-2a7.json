@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XND module/XND module configuration",
+  "id": "version-1.6/XND module/XND module configuration",
+  "title": "XND module configuration",
+  "description": "Introduction to XND configuration",
+  "source": "@site/versioned_docs/version-1.6/04-XND module/04-XND module configuration.md",
+  "sourceDirName": "04-XND module",
+  "slug": "/XND module/XND module configuration",
+  "permalink": "/1.6/XND module/XND module configuration",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "DDoS Mitigation",
+    "permalink": "/1.6/XND module/DDoS Mitigation"
+  },
+  "next": {
+    "title": "DDoS Dashboards",
+    "permalink": "/1.6/XND module/DDoS Dashboards"
+  }
+}

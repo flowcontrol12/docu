@@ -1,0 +1,26 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Advanced Custom aggr",
+  "id": "version-2.3/User Guide/Configuration/Objects/Advanced Custom aggr",
+  "title": "Advanced Custom Aggregations",
+  "description": "The [Configuration->Objects->Advanced Custom Aggregations] menu can be used to create custom aggregations.",
+  "source": "@site/versioned_docs/version-2.3/04-User Guide/Configuration/04-Objects/10-Advanced Custom aggr.md",
+  "sourceDirName": "04-User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Advanced Custom aggr",
+  "permalink": "/2.3/User Guide/Configuration/Objects/Advanced Custom aggr",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Report schedule",
+    "permalink": "/2.3/User Guide/Configuration/Objects/Report schedule"
+  },
+  "next": {
+    "title": "NetFlow",
+    "permalink": "/2.3/User Guide/Configuration/NetFlow/"
+  }
+}

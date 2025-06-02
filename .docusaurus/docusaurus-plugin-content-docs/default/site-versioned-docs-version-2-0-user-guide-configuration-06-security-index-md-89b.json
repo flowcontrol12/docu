@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Security/index",
+  "id": "version-2.0/User Guide/Configuration/Security/index",
+  "title": "Security",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Configuration/06-Security/index.md",
+  "sourceDirName": "User Guide/Configuration/06-Security",
+  "slug": "/User Guide/Configuration/Security/",
+  "permalink": "/2.0/User Guide/Configuration/Security/",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "SFlow",
+    "permalink": "/2.0/User Guide/Configuration/NetFlow/SFlow"
+  },
+  "next": {
+    "title": "Certificates",
+    "permalink": "/2.0/User Guide/Configuration/Security/Certificates"
+  }
+}

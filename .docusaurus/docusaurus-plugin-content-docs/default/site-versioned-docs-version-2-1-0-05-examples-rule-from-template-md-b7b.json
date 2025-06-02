@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Rule from template",
+  "id": "version-2.1.0/Examples/Rule from template",
+  "title": "Examples of rule creation - simple way",
+  "description": "A simple method of a rule creation existing templates to design custom rules.",
+  "source": "@site/versioned_docs/version-2.1.0/05-Examples/Rule from template.md",
+  "sourceDirName": "05-Examples",
+  "slug": "/Examples/Rule from template",
+  "permalink": "/2.1.0/Examples/Rule from template",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example of Metric creation - simple metric",
+    "permalink": "/2.1.0/Examples/Metrics - creation example"
+  },
+  "next": {
+    "title": "Widgets Examples",
+    "permalink": "/2.1.0/Examples/Widgets/"
+  }
+}

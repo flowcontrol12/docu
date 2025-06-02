@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/SNMP",
+  "id": "version-3.0.0/User-Guide/Settings/General/Integrations/SNMP",
+  "title": "SNMP",
+  "description": "The [Settings > General > Integrations > SNMP] menu can be used to configure SNMP protocol parameters.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/07-General/01-Integrations/02-SNMP.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations/SNMP",
+  "permalink": "/3.0.0/User-Guide/Settings/General/Integrations/SNMP",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations/SNMP",
+    "addressMatch": "panel/integrations/snmp"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "NTP",
+    "permalink": "/3.0.0/User-Guide/Settings/General/Integrations/NTP"
+  },
+  "next": {
+    "title": "SMPT",
+    "permalink": "/3.0.0/User-Guide/Settings/General/Integrations/SMPT"
+  }
+}

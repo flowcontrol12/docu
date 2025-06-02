@@ -1,0 +1,26 @@
+{
+  "unversionedId": "CLI commands",
+  "id": "version-1.6/CLI commands",
+  "title": "CLI commands",
+  "description": "Access to the system Command Line Console (CLI)",
+  "source": "@site/versioned_docs/version-1.6/05-CLI commands.md",
+  "sourceDirName": ".",
+  "slug": "/CLI commands",
+  "permalink": "/1.6/CLI commands",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "DDoS Dashboards",
+    "permalink": "/1.6/XND module/DDoS Dashboards"
+  },
+  "next": {
+    "title": "Requirements",
+    "permalink": "/1.6/Requirements"
+  }
+}

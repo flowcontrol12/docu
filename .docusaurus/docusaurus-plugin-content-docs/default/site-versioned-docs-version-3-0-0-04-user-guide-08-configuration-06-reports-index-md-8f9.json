@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Configuration/Reports/index",
+  "id": "version-3.0.0/User-Guide/Configuration/Reports/index",
+  "title": "Reports",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/08-Configuration/06-Reports/index.md",
+  "sourceDirName": "04-User-Guide/08-Configuration/06-Reports",
+  "slug": "/User-Guide/Configuration/Reports",
+  "permalink": "/3.0.0/User-Guide/Configuration/Reports",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Configuration/Reports"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Filters",
+    "permalink": "/3.0.0/User-Guide/Configuration/Filters"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/3.0.0/User-Guide/Configuration/Reports/Reports"
+  }
+}

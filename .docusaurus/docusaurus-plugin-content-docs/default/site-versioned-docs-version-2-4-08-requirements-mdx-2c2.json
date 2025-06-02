@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Requirements",
+  "id": "version-2.4/Requirements",
+  "title": "Requirements",
+  "description": "We require/recommend the following:",
+  "source": "@site/versioned_docs/version-2.4/08-Requirements.mdx",
+  "sourceDirName": ".",
+  "slug": "/Requirements",
+  "permalink": "/2.4/Requirements",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 8,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Release notes",
+    "permalink": "/2.4/Release notes"
+  },
+  "next": {
+    "title": "Sycope Probe User Guide",
+    "permalink": "/2.4/Sycope_Probe"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Management/Favorites/Filters",
+  "id": "version-2.4/User Guide/Management/Favorites/Filters",
+  "title": "Filters",
+  "description": "Favorites Filters Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/04-Favorites/01-Filters.md",
+  "sourceDirName": "04-User Guide/06-Management/04-Favorites",
+  "slug": "/User Guide/Management/Favorites/Filters",
+  "permalink": "/2.4/User Guide/Management/Favorites/Filters",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "Favorites Filters Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Favorites",
+    "permalink": "/2.4/User Guide/Management/Favorites/"
+  },
+  "next": {
+    "title": "Macros",
+    "permalink": "/2.4/User Guide/Management/Favorites/Macros"
+  }
+}

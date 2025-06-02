@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Integrations/NTP",
+  "id": "version-2.1.0/User Guide/Configuration/Integrations/NTP",
+  "title": "NTP",
+  "description": "NTP Tab",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/07-Integrations/01-NTP.md",
+  "sourceDirName": "04-User Guide/Configuration/07-Integrations",
+  "slug": "/User Guide/Configuration/Integrations/NTP",
+  "permalink": "/2.1.0/User Guide/Configuration/Integrations/NTP",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "NTP Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Integrations",
+    "permalink": "/2.1.0/User Guide/Configuration/Integrations/"
+  },
+  "next": {
+    "title": "SNMP",
+    "permalink": "/2.1.0/User Guide/Configuration/Integrations/SNMP"
+  }
+}

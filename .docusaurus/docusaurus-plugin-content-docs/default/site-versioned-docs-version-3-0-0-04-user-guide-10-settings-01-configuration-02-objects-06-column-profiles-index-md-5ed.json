@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/Column-Profiles/index",
+  "id": "version-3.0.0/User-Guide/Settings/Configuration/Objects/Column-Profiles/index",
+  "title": "Column Profiles",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/01-Configuration/02-Objects/06-Column-Profiles/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/06-Column-Profiles",
+  "slug": "/User-Guide/Settings/Configuration/Objects/Column-Profiles",
+  "permalink": "/3.0.0/User-Guide/Settings/Configuration/Objects/Column-Profiles",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/Column-Profiles",
+    "addressMatch": "panel/saved-fields/column-profiles"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Email Templates",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Objects/Email-Templates"
+  },
+  "next": {
+    "title": "User Indexes",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Objects/User-Indexes"
+  }
+}

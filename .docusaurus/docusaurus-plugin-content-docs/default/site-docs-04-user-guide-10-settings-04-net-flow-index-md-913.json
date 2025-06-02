@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/index",
+  "id": "User-Guide/Settings/NetFlow/index",
+  "title": "NetFlow",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/04-NetFlow/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow",
+  "slug": "/User-Guide/Settings/NetFlow",
+  "permalink": "/User-Guide/Settings/NetFlow",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1717586417,
+  "formattedLastUpdatedAt": "5 Jun 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Retention",
+    "permalink": "/User-Guide/Settings/Indices/Retention"
+  },
+  "next": {
+    "title": "General",
+    "permalink": "/User-Guide/Settings/NetFlow/General"
+  }
+}

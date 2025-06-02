@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/Backup and Restore",
+  "id": "version-2.2.2/User Guide/Configuration/General Settings/Backup and Restore",
+  "title": "Backup and Restore",
+  "description": "Backup and Restore Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Configuration/01-General Settings/06-Backup and Restore.md",
+  "sourceDirName": "04-User Guide/Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/Backup and Restore",
+  "permalink": "/2.2.2/User Guide/Configuration/General Settings/Backup and Restore",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "description": "Backup and Restore Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Retention",
+    "permalink": "/2.2.2/User Guide/Configuration/General Settings/Retention"
+  },
+  "next": {
+    "title": "Account Management",
+    "permalink": "/2.2.2/User Guide/Configuration/Account Management/"
+  }
+}

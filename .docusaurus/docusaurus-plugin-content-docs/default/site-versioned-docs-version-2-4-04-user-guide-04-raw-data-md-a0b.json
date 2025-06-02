@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Raw Data",
+  "id": "version-2.4/User Guide/Raw Data",
+  "title": "Raw Data",
+  "description": "Raw Data",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/04-Raw Data.md",
+  "sourceDirName": "04-User Guide",
+  "slug": "/User Guide/Raw Data",
+  "permalink": "/2.4/User Guide/Raw Data",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "description": "Raw Data"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Alerts",
+    "permalink": "/2.4/User Guide/Alerts"
+  },
+  "next": {
+    "title": "Playground",
+    "permalink": "/2.4/User Guide/Playground"
+  }
+}

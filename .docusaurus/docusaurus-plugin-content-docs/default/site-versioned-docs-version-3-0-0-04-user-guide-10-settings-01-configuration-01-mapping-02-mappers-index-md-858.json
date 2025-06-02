@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Mapping/Mappers/index",
+  "id": "version-3.0.0/User-Guide/Settings/Configuration/Mapping/Mappers/index",
+  "title": "Mappers",
+  "description": "This menu [Settings > Configuration > Mapping > Mappers] can be used to create a custom Mapper for use in creating Fields.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/01-Configuration/01-Mapping/02-Mappers/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/01-Mapping/02-Mappers",
+  "slug": "/User-Guide/Settings/Configuration/Mapping/Mappers",
+  "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping/Mappers",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Mapping/Mappers",
+    "addressMatch": "panel/mapping/mappers"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Lookups",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping/Lookups"
+  },
+  "next": {
+    "title": "Tags",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping/Tags"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/SMTP",
+  "id": "User-Guide/Settings/General/Integrations/SMTP",
+  "title": "SMPT",
+  "description": "The [Settings > General > Integrations > SMPT] menu can be used to configure SMTP server connection parameters.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/01-Integrations/03-SMTP.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations/SMPT",
+  "permalink": "/User-Guide/Settings/General/Integrations/SMPT",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations/SMPT",
+    "addressMatch": "panel/integrations/smtp"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SNMP Server",
+    "permalink": "/User-Guide/Settings/General/Integrations/SNMP"
+  },
+  "next": {
+    "title": "Proxy",
+    "permalink": "/User-Guide/Settings/General/Integrations/Proxy"
+  }
+}

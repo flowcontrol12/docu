@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Tips/Filtering/index",
+  "id": "version-3.0.1/User-Guide/Tips/Filtering/index",
+  "title": "Filtering",
+  "description": "By using a single Filter you can also create more advanced filtration with the use of operators listed in the table below.",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/12-Tips/01-Filtering/index.md",
+  "sourceDirName": "04-User-Guide/12-Tips/01-Filtering",
+  "slug": "/User-Guide/Tips/Filtering/",
+  "permalink": "/3.0.1/User-Guide/Tips/Filtering/",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "addressMatch": "docsKey=simpleFilters"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Filters",
+    "permalink": "/3.0.1/User-Guide/Miscellaneous/Filters"
+  },
+  "next": {
+    "title": "NQL User Manual",
+    "permalink": "/3.0.1/NQL/NQL documentation"
+  }
+}

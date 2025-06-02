@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Introduction/Workflows/index",
+  "id": "version-3.0.0/Introduction/Workflows/index",
+  "title": "Workflows",
+  "description": "This section is designed to help you navigate the system with ease and boost your productivity. We have divided this part of the documentation in accordance to the types of activities that are performed during daily work with the system.",
+  "source": "@site/versioned_docs/version-3.0.0/01-Introduction/02-Workflows/index.md",
+  "sourceDirName": "01-Introduction/02-Workflows",
+  "slug": "/Introduction/Workflows",
+  "permalink": "/3.0.0/Introduction/Workflows",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Introduction/Workflows"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Built-in Content",
+    "permalink": "/3.0.0/Introduction/Built-in-Content"
+  },
+  "next": {
+    "title": "Navigation",
+    "permalink": "/3.0.0/Introduction/Workflows/Navigation"
+  }
+}

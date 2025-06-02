@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Y-Requirements",
+  "id": "version-2.0/Y-Requirements",
+  "title": "Requirements",
+  "description": "Collector hardware requirements",
+  "source": "@site/versioned_docs/version-2.0/Y-Requirements.md",
+  "sourceDirName": ".",
+  "slug": "/Y-Requirements",
+  "permalink": "/2.0/Y-Requirements",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "frontMatter": {
+    "id": "Y-Requirements",
+    "title": "Requirements"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Licenses",
+    "permalink": "/2.0/User Guide/Configuration/Licenses"
+  }
+}

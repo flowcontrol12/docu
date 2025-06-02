@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Requirements",
+  "id": "version-2.3/Requirements",
+  "title": "Requirements",
+  "description": "We require/recommend the following:",
+  "source": "@site/versioned_docs/version-2.3/08-Requirements.mdx",
+  "sourceDirName": ".",
+  "slug": "/Requirements",
+  "permalink": "/2.3/Requirements",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "sidebarPosition": 8,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Release notes",
+    "permalink": "/2.3/Release notes"
+  },
+  "next": {
+    "title": "3rd Party Licenses",
+    "permalink": "/2.3/3rdpartylicenses"
+  }
+}

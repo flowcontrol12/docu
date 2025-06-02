@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XN module/Dashboards",
+  "id": "version-1.6/XN module/Dashboards",
+  "title": "Dashboards",
+  "description": "This section will cover various aspects of working with selected data. We will divide this section into different aspects that FlowControl uses to interpret data from the network. This will include various graphs, charts and tables as well as best practices on how to work with the data.",
+  "source": "@site/versioned_docs/version-1.6/02-XN module/03-Dashboards.md",
+  "sourceDirName": "02-XN module",
+  "slug": "/XN module/Dashboards",
+  "permalink": "/1.6/XN module/Dashboards",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/1.6/XN module/Overview"
+  },
+  "next": {
+    "title": "System Status",
+    "permalink": "/1.6/XN module/System Status"
+  }
+}

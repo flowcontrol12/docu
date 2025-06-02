@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Fields Examples/index",
+  "id": "version-2.2.3/Examples/Fields Examples/index",
+  "title": "Fields Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.3/06-Examples/Fields Examples/index.md",
+  "sourceDirName": "06-Examples/Fields Examples",
+  "slug": "/Examples/Fields Examples/",
+  "permalink": "/2.2.3/Examples/Fields Examples/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example of Collector creation",
+    "permalink": "/2.2.3/Examples/Collector - creation example"
+  },
+  "next": {
+    "title": "Example of field creation - bytes field",
+    "permalink": "/2.2.3/Examples/Fields Examples/Fields - creation example"
+  }
+}

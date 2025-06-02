@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Management/Favorites/Bookmarks",
+  "id": "version-2.4/User Guide/Management/Favorites/Bookmarks",
+  "title": "Bookmarks",
+  "description": "Bookmarks Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/04-Favorites/03-Bookmarks.md",
+  "sourceDirName": "04-User Guide/06-Management/04-Favorites",
+  "slug": "/User Guide/Management/Favorites/Bookmarks",
+  "permalink": "/2.4/User Guide/Management/Favorites/Bookmarks",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Bookmarks Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Macros",
+    "permalink": "/2.4/User Guide/Management/Favorites/Macros"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/2.4/User Guide/Management/Reports/"
+  }
+}

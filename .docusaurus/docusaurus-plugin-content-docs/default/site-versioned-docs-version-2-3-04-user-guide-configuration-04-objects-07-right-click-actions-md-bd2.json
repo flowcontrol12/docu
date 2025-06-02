@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Right click actions",
+  "id": "version-2.3/User Guide/Configuration/Objects/Right click actions",
+  "title": "Right click actions",
+  "description": "Right click actions Tab",
+  "source": "@site/versioned_docs/version-2.3/04-User Guide/Configuration/04-Objects/07-Right click actions.md",
+  "sourceDirName": "04-User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Right click actions",
+  "permalink": "/2.3/User Guide/Configuration/Objects/Right click actions",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "description": "Right click actions Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Recipients",
+    "permalink": "/2.3/User Guide/Configuration/Objects/Recipients"
+  },
+  "next": {
+    "title": "Email Templates",
+    "permalink": "/2.3/User Guide/Configuration/Objects/Email Templates"
+  }
+}

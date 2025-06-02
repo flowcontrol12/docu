@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Advanced Custom aggr",
+  "id": "version-2.4/User Guide/Configuration/Objects/Advanced Custom aggr",
+  "title": "Advanced Custom Aggregations",
+  "description": "Advanced Custom Aggregations Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/04-Objects/10-Advanced Custom aggr.md",
+  "sourceDirName": "04-User Guide/07-Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Advanced Custom aggr",
+  "permalink": "/2.4/User Guide/Configuration/Objects/Advanced Custom aggr",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "description": "Advanced Custom Aggregations Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Report schedule",
+    "permalink": "/2.4/User Guide/Configuration/Objects/Report schedule"
+  },
+  "next": {
+    "title": "NetFlow",
+    "permalink": "/2.4/User Guide/Configuration/NetFlow/"
+  }
+}

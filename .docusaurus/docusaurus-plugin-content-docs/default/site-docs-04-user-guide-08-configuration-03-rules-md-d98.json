@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User-Guide/Configuration/Rules",
+  "id": "User-Guide/Configuration/Rules",
+  "title": "Rules",
+  "description": "Rules Tab",
+  "source": "@site/docs/04-User-Guide/08-Configuration/03-Rules.md",
+  "sourceDirName": "04-User-Guide/08-Configuration",
+  "slug": "/User-Guide/Configuration/Rules",
+  "permalink": "/User-Guide/Configuration/Rules",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Rules Tab",
+    "slug": "/User-Guide/Configuration/Rules",
+    "addressMatch": "panel/rules-set"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Widgets",
+    "permalink": "/User-Guide/Configuration/Widgets"
+  },
+  "next": {
+    "title": "Shortcuts (Bookmarks & Drilldowns)",
+    "permalink": "/User-Guide/Configuration/Shortcuts"
+  }
+}

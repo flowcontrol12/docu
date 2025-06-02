@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/nql_cheat_sheet",
+  "id": "version-2.2.3/NQL/nql_cheat_sheet",
+  "title": "NQL CheatSheet",
+  "description": "Commands",
+  "source": "@site/versioned_docs/version-2.2.3/05-NQL/01-nql_cheat_sheet.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/nql_cheat_sheet",
+  "permalink": "/2.2.3/NQL/nql_cheat_sheet",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Licenses",
+    "permalink": "/2.2.3/User Guide/Configuration/Licenses"
+  },
+  "next": {
+    "title": "NQL query examples",
+    "permalink": "/2.2.3/NQL/NQL_examples"
+  }
+}

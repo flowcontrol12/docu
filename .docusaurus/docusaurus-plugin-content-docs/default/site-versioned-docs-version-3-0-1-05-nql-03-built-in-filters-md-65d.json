@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/Built-in filters",
+  "id": "version-3.0.1/NQL/Built-in filters",
+  "title": "Built-in filters",
+  "description": "Filters that have been built into the System are shown in the table below.",
+  "source": "@site/versioned_docs/version-3.0.1/05-NQL/03-Built-in filters.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/Built-in filters",
+  "permalink": "/3.0.1/NQL/Built-in filters",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "NQL CheatSheet",
+    "permalink": "/3.0.1/NQL/nql_cheat_sheet"
+  },
+  "next": {
+    "title": "NQL query examples",
+    "permalink": "/3.0.1/NQL/NQL_examples"
+  }
+}

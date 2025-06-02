@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Integrations/External Destination",
+  "id": "version-2.0.29/User Guide/Configuration/Integrations/External Destination",
+  "title": "External Destination",
+  "description": "External Destination Tab",
+  "source": "@site/versioned_docs/version-2.0.29/04-User Guide/Configuration/07-Integrations/05-External Destination.md",
+  "sourceDirName": "04-User Guide/Configuration/07-Integrations",
+  "slug": "/User Guide/Configuration/Integrations/External Destination",
+  "permalink": "/2.0.29/User Guide/Configuration/Integrations/External Destination",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "description": "External Destination Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Proxy",
+    "permalink": "/2.0.29/User Guide/Configuration/Integrations/Proxy"
+  },
+  "next": {
+    "title": "Update",
+    "permalink": "/2.0.29/User Guide/Configuration/Update/"
+  }
+}

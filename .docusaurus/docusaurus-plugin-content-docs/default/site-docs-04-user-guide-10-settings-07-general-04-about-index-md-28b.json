@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/General/About/index",
+  "id": "User-Guide/Settings/General/About/index",
+  "title": "About",
+  "description": "In this menu  [Settings > General > About] you can find information about the version of the components installed in the system, such as: GUI, API, OS, Licenses.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/04-About/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/04-About",
+  "slug": "/User-Guide/Settings/General/About",
+  "permalink": "/User-Guide/Settings/General/About",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/About",
+    "addressMatch": "panel/general/about"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "License",
+    "permalink": "/User-Guide/Settings/General/License"
+  },
+  "next": {
+    "title": "Miscellaneous",
+    "permalink": "/User-Guide/Miscellaneous"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/NetFlow/Exporter Groups",
+  "id": "version-2.2.2/User Guide/Configuration/NetFlow/Exporter Groups",
+  "title": "Exporter Groups",
+  "description": "Exporter Groups Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Configuration/05-NetFlow/04-Exporter Groups.md",
+  "sourceDirName": "04-User Guide/Configuration/05-NetFlow",
+  "slug": "/User Guide/Configuration/NetFlow/Exporter Groups",
+  "permalink": "/2.2.2/User Guide/Configuration/NetFlow/Exporter Groups",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "description": "Exporter Groups Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Forwarding",
+    "permalink": "/2.2.2/User Guide/Configuration/NetFlow/Forwarding"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/2.2.2/User Guide/Configuration/Security/"
+  }
+}

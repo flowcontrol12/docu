@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/SFlow/index",
+  "id": "User-Guide/Settings/NetFlow/SFlow/index",
+  "title": "SFlow & JFlow",
+  "description": "This menu [Settings > NetFlow > SFlow & JFlow] can be used to configure SFlow & JFlow protocol support, in particular Port.",
+  "source": "@site/docs/04-User-Guide/10-Settings/04-NetFlow/03-SFlow/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/03-SFlow",
+  "slug": "/User-Guide/Settings/NetFlow/SFlow-and-JFlow",
+  "permalink": "/User-Guide/Settings/NetFlow/SFlow-and-JFlow",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow/SFlow-and-JFlow",
+    "addressMatch": "panel/config-sources/sflow"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Advanced Custom Aggregations",
+    "permalink": "/User-Guide/Settings/NetFlow/Advanced-Custom-Aggregations"
+  },
+  "next": {
+    "title": "Exporter Restrictions",
+    "permalink": "/User-Guide/Settings/NetFlow/Exporter-Restrictions"
+  }
+}

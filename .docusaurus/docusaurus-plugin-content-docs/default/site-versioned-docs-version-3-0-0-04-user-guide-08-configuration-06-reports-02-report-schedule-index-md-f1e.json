@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Configuration/Reports/Report-Schedule/index",
+  "id": "version-3.0.0/User-Guide/Configuration/Reports/Report-Schedule/index",
+  "title": "Report Schedule",
+  "description": "This menu [Configuration > Reports > Report schedule]  can be used to configure all aspects related to sending reports, such as frequency, recipient, or report content (appropriate templates).",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/08-Configuration/06-Reports/02-Report-Schedule/index.md",
+  "sourceDirName": "04-User-Guide/08-Configuration/06-Reports/02-Report-Schedule",
+  "slug": "/User-Guide/Configuration/Reports/Report-Schedule",
+  "permalink": "/3.0.0/User-Guide/Configuration/Reports/Report-Schedule",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Configuration/Reports/Report-Schedule",
+    "addressMatch": "panel/reports/report-tasks"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Reports",
+    "permalink": "/3.0.0/User-Guide/Configuration/Reports/Reports"
+  },
+  "next": {
+    "title": "Report Filters",
+    "permalink": "/3.0.0/User-Guide/Configuration/Reports/Report-Filters"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Mapping/Tags",
+  "id": "version-2.0.27/User Guide/Configuration/Mapping/Tags",
+  "title": "Tags",
+  "description": "Tags Tab",
+  "source": "@site/versioned_docs/version-2.0.27/04-User Guide/Configuration/03-Mapping/04-Tags.md",
+  "sourceDirName": "04-User Guide/Configuration/03-Mapping",
+  "slug": "/User Guide/Configuration/Mapping/Tags",
+  "permalink": "/2.0.27/User Guide/Configuration/Mapping/Tags",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "description": "Tags Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Business Hours",
+    "permalink": "/2.0.27/User Guide/Configuration/Mapping/Business Hours"
+  },
+  "next": {
+    "title": "Mappers",
+    "permalink": "/2.0.27/User Guide/Configuration/Mapping/Mappers"
+  }
+}

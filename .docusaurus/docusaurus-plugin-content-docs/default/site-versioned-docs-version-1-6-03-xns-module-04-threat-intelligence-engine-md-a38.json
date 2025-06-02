@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XNS module/Threat Intelligence Engine",
+  "id": "version-1.6/XNS module/Threat Intelligence Engine",
+  "title": "Threat Intelligence Engine",
+  "description": "Threat Intelligence Engine",
+  "source": "@site/versioned_docs/version-1.6/03-XNS module/04-Threat Intelligence Engine.md",
+  "sourceDirName": "03-XNS module",
+  "slug": "/XNS module/Threat Intelligence Engine",
+  "permalink": "/1.6/XNS module/Threat Intelligence Engine",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Threat Detection",
+    "permalink": "/1.6/XNS module/Threat Detection"
+  },
+  "next": {
+    "title": "Performance",
+    "permalink": "/1.6/XND module/Performance"
+  }
+}

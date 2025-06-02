@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Miscellaneous/User-Interface/index",
+  "id": "version-3.0.0/User-Guide/Miscellaneous/User-Interface/index",
+  "title": "User Interface",
+  "description": "Detailed description.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/11-Miscellaneous/00-User-Interface/index.md",
+  "sourceDirName": "04-User-Guide/11-Miscellaneous/00-User-Interface",
+  "slug": "/User-Guide/Miscellaneous/User-Interface",
+  "permalink": "/3.0.0/User-Guide/Miscellaneous/User-Interface",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Miscellaneous/User-Interface"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Miscellaneous",
+    "permalink": "/3.0.0/User-Guide/Miscellaneous"
+  },
+  "next": {
+    "title": "Filters",
+    "permalink": "/3.0.0/User-Guide/Miscellaneous/Filters"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/General/index",
+  "id": "User-Guide/Settings/NetFlow/General/index",
+  "title": "General",
+  "description": "This menu [Settings > NetFlow > General] can be used to configure NetFlow parameters.",
+  "source": "@site/docs/04-User-Guide/10-Settings/04-NetFlow/01-General/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/01-General",
+  "slug": "/User-Guide/Settings/NetFlow/General",
+  "permalink": "/User-Guide/Settings/NetFlow/General",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow/General",
+    "addressMatch": "panel/config-sources/netflow-general"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "NetFlow",
+    "permalink": "/User-Guide/Settings/NetFlow"
+  },
+  "next": {
+    "title": "Template Based Settings",
+    "permalink": "/User-Guide/Settings/NetFlow/Template-Based-Settings"
+  }
+}

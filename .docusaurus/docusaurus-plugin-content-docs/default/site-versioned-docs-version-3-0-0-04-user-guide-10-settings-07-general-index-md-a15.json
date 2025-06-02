@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/General/index",
+  "id": "version-3.0.0/User-Guide/Settings/General/index",
+  "title": "General",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/07-General/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General",
+  "slug": "/User-Guide/Settings/General",
+  "permalink": "/3.0.0/User-Guide/Settings/General",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Backup & Restore",
+    "permalink": "/3.0.0/User-Guide/Settings/Support-and-Diagnostics/Backup-and-Restore"
+  },
+  "next": {
+    "title": "Integrations",
+    "permalink": "/3.0.0/User-Guide/Settings/General/Integrations"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/Alert fields",
+  "id": "version-2.2.3/User Guide/Configuration/Objects/Alert fields",
+  "title": "Alert fields",
+  "description": "Alert fields Tab",
+  "source": "@site/versioned_docs/version-2.2.3/04-User Guide/Configuration/04-Objects/03-Alert fields.md",
+  "sourceDirName": "04-User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/Alert fields",
+  "permalink": "/2.2.3/User Guide/Configuration/Objects/Alert fields",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.3",
+  "lastUpdatedAt": 1686667651,
+  "formattedLastUpdatedAt": "13 Jun 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Alert fields Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Metrics",
+    "permalink": "/2.2.3/User Guide/Configuration/Objects/Metrics"
+  },
+  "next": {
+    "title": "Ranges",
+    "permalink": "/2.2.3/User Guide/Configuration/Objects/Ranges"
+  }
+}

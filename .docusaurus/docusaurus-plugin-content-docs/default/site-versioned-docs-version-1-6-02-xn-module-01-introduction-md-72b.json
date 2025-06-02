@@ -1,0 +1,28 @@
+{
+  "unversionedId": "XN module/Introduction",
+  "id": "version-1.6/XN module/Introduction",
+  "title": "Introduction",
+  "description": "In this document you will find information about the most important options available in the FlowControl System. How to operate with data, graphs and charts as well as a general description of options available in the system.",
+  "source": "@site/versioned_docs/version-1.6/02-XN module/01-Introduction.md",
+  "sourceDirName": "02-XN module",
+  "slug": "/",
+  "permalink": "/1.6/",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/1.6/Installation"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/1.6/XN module/Overview"
+  }
+}

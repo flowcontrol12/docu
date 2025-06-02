@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XNS module/Introduction",
+  "id": "version-1.6/XNS module/Introduction",
+  "title": "Introduction",
+  "description": "FlowControl XNS detects and analyses security threats and anomalies in a context of the entire organization based on network metadata (NetFlow) and reputation lists. For effective detection of abnormal activities, XNS uses two engines:",
+  "source": "@site/versioned_docs/version-1.6/03-XNS module/01-Introduction.md",
+  "sourceDirName": "03-XNS module",
+  "slug": "/XNS module/Introduction",
+  "permalink": "/1.6/XNS module/Introduction",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Access through REST API",
+    "permalink": "/1.6/XN module/Access through REST API"
+  },
+  "next": {
+    "title": "Security Dashboards",
+    "permalink": "/1.6/XNS module/Security Dashboards"
+  }
+}

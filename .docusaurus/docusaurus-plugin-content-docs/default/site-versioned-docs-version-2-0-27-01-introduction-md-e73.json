@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Introduction",
+  "id": "version-2.0.27/Introduction",
+  "title": "Introduction",
+  "description": "Introduction",
+  "source": "@site/versioned_docs/version-2.0.27/01-Introduction.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/2.0.27/",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "User interface",
+    "permalink": "/2.0.27/User interface"
+  }
+}

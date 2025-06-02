@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Account Management/index",
+  "id": "version-2.2.1/User Guide/Configuration/Account Management/index",
+  "title": "Account Management",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/02-Account Management/index.md",
+  "sourceDirName": "04-User Guide/Configuration/02-Account Management",
+  "slug": "/User Guide/Configuration/Account Management/",
+  "permalink": "/2.2.1/User Guide/Configuration/Account Management/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Backup and Restore",
+    "permalink": "/2.2.1/User Guide/Configuration/General Settings/Backup and Restore"
+  },
+  "next": {
+    "title": "Accounts",
+    "permalink": "/2.2.1/User Guide/Configuration/Account Management/Accounts"
+  }
+}

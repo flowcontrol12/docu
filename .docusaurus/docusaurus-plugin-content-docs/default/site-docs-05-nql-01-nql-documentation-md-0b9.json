@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/NQL documentation",
+  "id": "NQL/NQL documentation",
+  "title": "NQL User Manual",
+  "description": "This document describes the NQL query language.",
+  "source": "@site/docs/05-NQL/01-NQL documentation.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/NQL documentation",
+  "permalink": "/NQL/NQL documentation",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Filtering",
+    "permalink": "/User-Guide/Tips/Filtering"
+  },
+  "next": {
+    "title": "NQL CheatSheet",
+    "permalink": "/NQL/nql_cheat_sheet"
+  }
+}

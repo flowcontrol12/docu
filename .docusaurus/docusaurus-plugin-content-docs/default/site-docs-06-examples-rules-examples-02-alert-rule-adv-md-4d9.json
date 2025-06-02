@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Examples/Rules Examples/Alert-Rule-Adv",
+  "id": "Examples/Rules Examples/Alert-Rule-Adv",
+  "title": "Examples of alert rule creation - advanced way",
+  "description": "The advanced method of creating a Rule is to design it from scratch. In our example, we will create a rule named Virus Outbreak to detect malware spreading. Detection of such a case can be realized by detecting the communication of one workstation with many others in a short period of time. So let's proceed to create such a rule from scratch.",
+  "source": "@site/docs/06-Examples/Rules Examples/02-Alert-Rule-Adv.md",
+  "sourceDirName": "06-Examples/Rules Examples",
+  "slug": "/Examples/Rules-Examples/Advanced",
+  "permalink": "/Examples/Rules-Examples/Advanced",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "slug": "/Examples/Rules-Examples/Advanced"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples of rule creation - simple way",
+    "permalink": "/Examples/Rules-Examples/Simple"
+  },
+  "next": {
+    "title": "Widget Examples",
+    "permalink": "/Examples/Widget-Examples"
+  }
+}

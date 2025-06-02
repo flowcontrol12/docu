@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Rules Examples/Rule from template",
+  "id": "version-3.0.0/Examples/Rules Examples/Rule from template",
+  "title": "Examples of rule creation - simple way",
+  "description": "A simple method of a rule creation existing templates to design custom rules. In our example, we will configure a Rule based on the DoS attack template.",
+  "source": "@site/versioned_docs/version-3.0.0/06-Examples/Rules Examples/Rule from template.md",
+  "sourceDirName": "06-Examples/Rules Examples",
+  "slug": "/Examples/Rules-Examples/Simple",
+  "permalink": "/3.0.0/Examples/Rules-Examples/Simple",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Rules-Examples/Simple"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples of alert rule creation - advanced way",
+    "permalink": "/3.0.0/Examples/Rules-Examples/Advanced"
+  },
+  "next": {
+    "title": "Widget Examples",
+    "permalink": "/3.0.0/Examples/Widget-Examples"
+  }
+}

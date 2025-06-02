@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/System Status_",
+  "id": "version-2.0.27/User Guide/Configuration/General Settings/System Status_",
+  "title": "System Status",
+  "description": "System Status Tab",
+  "source": "@site/versioned_docs/version-2.0.27/04-User Guide/Configuration/01-General Settings/01- System Status_.md",
+  "sourceDirName": "04-User Guide/Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/System Status_",
+  "permalink": "/2.0.27/User Guide/Configuration/General Settings/System Status_",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "System Status_",
+    "title": "System Status",
+    "description": "System Status Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "General Settings",
+    "permalink": "/2.0.27/User Guide/Configuration/General Settings/"
+  },
+  "next": {
+    "title": "Notifications",
+    "permalink": "/2.0.27/User Guide/Configuration/General Settings/Notifications"
+  }
+}

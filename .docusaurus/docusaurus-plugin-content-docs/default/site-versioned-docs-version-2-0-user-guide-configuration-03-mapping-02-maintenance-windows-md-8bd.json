@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Mapping/Maintenance Windows",
+  "id": "version-2.0/User Guide/Configuration/Mapping/Maintenance Windows",
+  "title": "Maintenance Windows",
+  "description": "Maintenance Windows Tab",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Configuration/03-Mapping/02-Maintenance Windows.md",
+  "sourceDirName": "User Guide/Configuration/03-Mapping",
+  "slug": "/User Guide/Configuration/Mapping/Maintenance Windows",
+  "permalink": "/2.0/User Guide/Configuration/Mapping/Maintenance Windows",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Maintenance Windows Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Lookups",
+    "permalink": "/2.0/User Guide/Configuration/Mapping/Lookups"
+  },
+  "next": {
+    "title": "Business Hours",
+    "permalink": "/2.0/User Guide/Configuration/Mapping/Business Hours"
+  }
+}

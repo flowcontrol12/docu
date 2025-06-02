@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Miscellaneous/Filters/index",
+  "id": "version-3.0.1/User-Guide/Miscellaneous/Filters/index",
+  "title": "Filters",
+  "description": "The filters function is a special Widget (Filters Widget) allowing for the creation of a preliminary filter for each field in the selected data stream and the placing it in the Dashboard. By creating a Filters Widget for the key fields, you can drastically simplify the process of data analysis and therefore raise its effectiveness. This is due to the fact that the utilized filters are always available and can be connected with each other creating longer query strings.",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/11-Miscellaneous/01-Filters/index.md",
+  "sourceDirName": "04-User-Guide/11-Miscellaneous/01-Filters",
+  "slug": "/User-Guide/Miscellaneous/Filters",
+  "permalink": "/3.0.1/User-Guide/Miscellaneous/Filters",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Miscellaneous/Filters"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "User Interface",
+    "permalink": "/3.0.1/User-Guide/Miscellaneous/User-Interface"
+  },
+  "next": {
+    "title": "Filtering",
+    "permalink": "/3.0.1/User-Guide/Tips/Filtering/"
+  }
+}

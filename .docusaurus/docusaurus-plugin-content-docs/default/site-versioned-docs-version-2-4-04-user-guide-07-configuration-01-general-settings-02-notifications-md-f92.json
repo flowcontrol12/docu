@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/Notifications",
+  "id": "version-2.4/User Guide/Configuration/General Settings/Notifications",
+  "title": "Notifications",
+  "description": "Notification Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/01-General Settings/02-Notifications.md",
+  "sourceDirName": "04-User Guide/07-Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/Notifications",
+  "permalink": "/2.4/User Guide/Configuration/General Settings/Notifications",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Notification Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "System Status",
+    "permalink": "/2.4/User Guide/Configuration/General Settings/System Status_"
+  },
+  "next": {
+    "title": "Maintenance Mode",
+    "permalink": "/2.4/User Guide/Configuration/General Settings/Maintenance Mode"
+  }
+}

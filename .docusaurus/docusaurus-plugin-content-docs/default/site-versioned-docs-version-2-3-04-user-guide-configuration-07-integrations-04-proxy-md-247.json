@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Integrations/Proxy",
+  "id": "version-2.3/User Guide/Configuration/Integrations/Proxy",
+  "title": "Proxy",
+  "description": "Proxy Tab",
+  "source": "@site/versioned_docs/version-2.3/04-User Guide/Configuration/07-Integrations/04-Proxy.md",
+  "sourceDirName": "04-User Guide/Configuration/07-Integrations",
+  "slug": "/User Guide/Configuration/Integrations/Proxy",
+  "permalink": "/2.3/User Guide/Configuration/Integrations/Proxy",
+  "draft": false,
+  "tags": [],
+  "version": "2.3",
+  "lastUpdatedAt": 1695227583,
+  "formattedLastUpdatedAt": "20 Sept 2023",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "description": "Proxy Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "SMTP",
+    "permalink": "/2.3/User Guide/Configuration/Integrations/SMTP"
+  },
+  "next": {
+    "title": "External Destinations",
+    "permalink": "/2.3/User Guide/Configuration/Integrations/External Destinations"
+  }
+}

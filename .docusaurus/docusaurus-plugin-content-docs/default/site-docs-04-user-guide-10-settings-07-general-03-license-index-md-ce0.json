@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/General/License/index",
+  "id": "User-Guide/Settings/General/License/index",
+  "title": "License",
+  "description": "This menu  [Settings > General > License] can be used to manage a system the licenses.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/03-License/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/03-License",
+  "slug": "/User-Guide/Settings/General/License",
+  "permalink": "/User-Guide/Settings/General/License",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/License",
+    "addressMatch": "panel/general/licenses"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Updates",
+    "permalink": "/User-Guide/Settings/General/Updates"
+  },
+  "next": {
+    "title": "About",
+    "permalink": "/User-Guide/Settings/General/About"
+  }
+}

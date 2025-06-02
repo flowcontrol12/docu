@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/NetFlow/index",
+  "id": "version-3.0.0/User-Guide/Settings/NetFlow/NetFlow/index",
+  "title": "NetFlow",
+  "description": "This menu [Settings > NetFlow > Netflow] can be used to configure NetFlow parameters.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/04-NetFlow/01-NetFlow/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/01-NetFlow",
+  "slug": "/User-Guide/Settings/NetFlow/NetFlow",
+  "permalink": "/3.0.0/User-Guide/Settings/NetFlow/NetFlow",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow/NetFlow",
+    "addressMatch": "panel/config-sources/netflow"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "NetFlow",
+    "permalink": "/3.0.0/User-Guide/Settings/NetFlow"
+  },
+  "next": {
+    "title": "Advanced Custom Aggregations",
+    "permalink": "/3.0.0/User-Guide/Settings/NetFlow/Advanced-Custom-Aggregations"
+  }
+}

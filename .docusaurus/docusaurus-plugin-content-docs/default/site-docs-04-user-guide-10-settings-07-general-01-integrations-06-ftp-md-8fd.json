@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/FTP",
+  "id": "User-Guide/Settings/General/Integrations/FTP",
+  "title": "FTP",
+  "description": "This menu  [Settings > General > Integrations > FTP] can be used to configure FTP server connection parameters. FTP server configuration is necessary for the process of creating system backups.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/01-Integrations/06-FTP.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations/FTP",
+  "permalink": "/User-Guide/Settings/General/Integrations/FTP",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations/FTP",
+    "addressMatch": "panel/integrations/transfer.file"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "External Destinations",
+    "permalink": "/User-Guide/Settings/General/Integrations/External-Destinations"
+  },
+  "next": {
+    "title": "Updates",
+    "permalink": "/User-Guide/Settings/General/Updates"
+  }
+}

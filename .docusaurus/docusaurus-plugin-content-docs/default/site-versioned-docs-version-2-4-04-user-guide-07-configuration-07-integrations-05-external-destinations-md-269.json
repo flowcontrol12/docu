@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Integrations/External Destinations",
+  "id": "version-2.4/User Guide/Configuration/Integrations/External Destinations",
+  "title": "External Destinations",
+  "description": "External Destination Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/07-Integrations/05-External Destinations.md",
+  "sourceDirName": "04-User Guide/07-Configuration/07-Integrations",
+  "slug": "/User Guide/Configuration/Integrations/External Destinations",
+  "permalink": "/2.4/User Guide/Configuration/Integrations/External Destinations",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "description": "External Destination Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Proxy",
+    "permalink": "/2.4/User Guide/Configuration/Integrations/Proxy"
+  },
+  "next": {
+    "title": "FTP",
+    "permalink": "/2.4/User Guide/Configuration/Integrations/FTP"
+  }
+}

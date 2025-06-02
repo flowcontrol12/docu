@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User Guide/Alerts/Rule Sets",
+  "id": "version-2.0/User Guide/Alerts/Rule Sets",
+  "title": "Rule Sets",
+  "description": "Rule Sets Tab",
+  "source": "@site/versioned_docs/version-2.0/User Guide/Alerts/Rule Sets.md",
+  "sourceDirName": "User Guide/Alerts",
+  "slug": "/User Guide/Alerts/Rule Sets",
+  "permalink": "/2.0/User Guide/Alerts/Rule Sets",
+  "draft": false,
+  "tags": [],
+  "version": "2.0",
+  "lastUpdatedAt": 1658849434,
+  "formattedLastUpdatedAt": "26 Jul 2022",
+  "frontMatter": {
+    "description": "Rule Sets Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Alerts Table",
+    "permalink": "/2.0/User Guide/Alerts/Alerts Table"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/2.0/User Guide/Configuration/"
+  }
+}

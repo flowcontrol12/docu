@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Management/Reports/Report filters",
+  "id": "version-2.4/User Guide/Management/Reports/Report filters",
+  "title": "Report filters",
+  "description": "Report filters Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/05-Reports/02-Report filters.md",
+  "sourceDirName": "04-User Guide/06-Management/05-Reports",
+  "slug": "/User Guide/Management/Reports/Report filters",
+  "permalink": "/2.4/User Guide/Management/Reports/Report filters",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "description": "Report filters Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Reports",
+    "permalink": "/2.4/User Guide/Management/Reports/Reports"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/2.4/User Guide/Configuration/"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Baseline Example/Using baseline in a widget",
+  "id": "version-3.0.1/Examples/Baseline Example/Using baseline in a widget",
+  "title": "Using baseline in a widget - Security Alerts Widget example",
+  "description": "We want to create a Widget that uses baseline functionality. For this purpose we will analyze the widget which is implemented in the system by default - Security Alerts Baseline Widget. It shows the number of security alerts in the context o a configured baseline.",
+  "source": "@site/versioned_docs/version-3.0.1/06-Examples/Baseline Example/Using baseline in a widget.md",
+  "sourceDirName": "06-Examples/Baseline Example",
+  "slug": "/Examples/Baseline Example/Using baseline in a widget",
+  "permalink": "/3.0.1/Examples/Baseline Example/Using baseline in a widget",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Using baseline in a rule - Unexpected increase in # of flows rule example",
+    "permalink": "/3.0.1/Examples/Baseline Example/Using baseline in a rule"
+  },
+  "next": {
+    "title": "Example of Collector creation",
+    "permalink": "/3.0.1/Examples/Collector - creation example"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/General/Integrations/NTP",
+  "id": "User-Guide/Settings/General/Integrations/NTP",
+  "title": "NTP",
+  "description": "In the [Settings > General > Integrations > NTP] menu, the System time settings are placed.",
+  "source": "@site/docs/04-User-Guide/10-Settings/07-General/01-Integrations/01-NTP.md",
+  "sourceDirName": "04-User-Guide/10-Settings/07-General/01-Integrations",
+  "slug": "/User-Guide/Settings/General/Integrations/NTP",
+  "permalink": "/User-Guide/Settings/General/Integrations/NTP",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/General/Integrations/NTP",
+    "addressMatch": "panel/integrations/ntp"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Integrations",
+    "permalink": "/User-Guide/Settings/General/Integrations"
+  },
+  "next": {
+    "title": "SNMP Server",
+    "permalink": "/User-Guide/Settings/General/Integrations/SNMP"
+  }
+}

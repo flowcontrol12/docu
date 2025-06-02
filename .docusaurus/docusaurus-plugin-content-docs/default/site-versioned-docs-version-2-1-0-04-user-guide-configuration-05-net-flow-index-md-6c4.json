@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/NetFlow/index",
+  "id": "version-2.1.0/User Guide/Configuration/NetFlow/index",
+  "title": "NetFlow",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/05-NetFlow/index.md",
+  "sourceDirName": "04-User Guide/Configuration/05-NetFlow",
+  "slug": "/User Guide/Configuration/NetFlow/",
+  "permalink": "/2.1.0/User Guide/Configuration/NetFlow/",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Email Templates",
+    "permalink": "/2.1.0/User Guide/Configuration/Objects/Email Templates"
+  },
+  "next": {
+    "title": "Netflow",
+    "permalink": "/2.1.0/User Guide/Configuration/NetFlow/Netflow"
+  }
+}

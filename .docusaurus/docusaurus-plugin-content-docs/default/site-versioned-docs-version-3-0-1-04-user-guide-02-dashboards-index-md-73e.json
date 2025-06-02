@@ -1,0 +1,33 @@
+{
+  "unversionedId": "User-Guide/Dashboards/Dashboards",
+  "id": "version-3.0.1/User-Guide/Dashboards/Dashboards",
+  "title": "Dashboards",
+  "description": "Dashboard Tab",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/02-Dashboards/index.md",
+  "sourceDirName": "04-User-Guide/02-Dashboards",
+  "slug": "/User-Guide/Dashboards",
+  "permalink": "/3.0.1/User-Guide/Dashboards",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "id": "Dashboards",
+    "title": "Dashboards",
+    "description": "Dashboard Tab",
+    "slug": "/User-Guide/Dashboards",
+    "toc_min_heading_level": 2,
+    "toc_max_heading_level": 4,
+    "addressMatch": "panel/dashboards"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Home",
+    "permalink": "/3.0.1/User-Guide/Home"
+  },
+  "next": {
+    "title": "Quick Analysis",
+    "permalink": "/3.0.1/User-Guide/Quick-Analysis"
+  }
+}

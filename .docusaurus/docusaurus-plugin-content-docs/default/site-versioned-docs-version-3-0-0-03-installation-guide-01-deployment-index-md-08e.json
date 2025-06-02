@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Installation-Guide/Deployment/index",
+  "id": "version-3.0.0/Installation-Guide/Deployment/index",
+  "title": "Deployment",
+  "description": "This document describes the step-by-step installation and configuration process of Sycope 2.X on VMware ESXi version 7.0+.",
+  "source": "@site/versioned_docs/version-3.0.0/03-Installation-Guide/01-Deployment/index.md",
+  "sourceDirName": "03-Installation-Guide/01-Deployment",
+  "slug": "/Installation-Guide/Deployment",
+  "permalink": "/3.0.0/Installation-Guide/Deployment",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Installation-Guide/Deployment"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Installation Guide",
+    "permalink": "/3.0.0/Installation-Guide"
+  },
+  "next": {
+    "title": "Let's Start",
+    "permalink": "/3.0.0/Installation-Guide/Lets-Start"
+  }
+}

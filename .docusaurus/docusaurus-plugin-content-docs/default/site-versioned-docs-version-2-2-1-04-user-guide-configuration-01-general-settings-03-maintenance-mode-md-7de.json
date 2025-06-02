@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/General Settings/Maintenance Mode",
+  "id": "version-2.2.1/User Guide/Configuration/General Settings/Maintenance Mode",
+  "title": "Maintenance Mode",
+  "description": "Maintenance  Tab",
+  "source": "@site/versioned_docs/version-2.2.1/04-User Guide/Configuration/01-General Settings/03-Maintenance Mode.md",
+  "sourceDirName": "04-User Guide/Configuration/01-General Settings",
+  "slug": "/User Guide/Configuration/General Settings/Maintenance Mode",
+  "permalink": "/2.2.1/User Guide/Configuration/General Settings/Maintenance Mode",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Maintenance  Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notifications",
+    "permalink": "/2.2.1/User Guide/Configuration/General Settings/Notifications"
+  },
+  "next": {
+    "title": "Diagnostics",
+    "permalink": "/2.2.1/User Guide/Configuration/General Settings/Diagnostics"
+  }
+}

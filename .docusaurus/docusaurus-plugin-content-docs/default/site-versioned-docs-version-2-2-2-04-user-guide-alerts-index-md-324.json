@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Alerts/index",
+  "id": "version-2.2.2/User Guide/Alerts/index",
+  "title": "Alerts",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Alerts/index.md",
+  "sourceDirName": "04-User Guide/Alerts",
+  "slug": "/User Guide/Alerts/",
+  "permalink": "/2.2.2/User Guide/Alerts/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Report filters",
+    "permalink": "/2.2.2/User Guide/Dashboards/Management/Report filters"
+  },
+  "next": {
+    "title": "Alerts Table",
+    "permalink": "/2.2.2/User Guide/Alerts/Alerts Table"
+  }
+}

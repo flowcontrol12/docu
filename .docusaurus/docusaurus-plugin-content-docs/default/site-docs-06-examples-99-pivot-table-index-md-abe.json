@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Examples/Pivot-Table/index",
+  "id": "Examples/Pivot-Table/index",
+  "title": "Pivot Table",
+  "description": "Pivot Table",
+  "source": "@site/docs/06-Examples/99-Pivot-Table/index.md",
+  "sourceDirName": "06-Examples/99-Pivot-Table",
+  "slug": "/Examples/Pivot-Table",
+  "permalink": "/Examples/Pivot-Table",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "description": "Pivot Table",
+    "slug": "/Examples/Pivot-Table"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Limit Series",
+    "permalink": "/Examples/Limit-Series"
+  },
+  "next": {
+    "title": "Baseline Examples",
+    "permalink": "/Examples/Baseline Example/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Support-and-Diagnostics/System-Status/index",
+  "id": "User-Guide/Settings/Support-and-Diagnostics/System-Status/index",
+  "title": "System Status",
+  "description": "In the [Settings > Support & Diagnostics > System Status] menu, there are several widgets and tables with detailed information about the system parameters and status of its components, for example, free disk space, CPU load, up time and so on.",
+  "source": "@site/docs/04-User-Guide/10-Settings/06-Support-and-Diagnostics/00-System-Status/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/06-Support-and-Diagnostics/00-System-Status",
+  "slug": "/User-Guide/Settings/Support-and-Diagnostics/System-Status",
+  "permalink": "/User-Guide/Settings/Support-and-Diagnostics/System-Status",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Support-and-Diagnostics/System-Status",
+    "addressMatch": "panel/support-and-diagnostics/system-status"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Support & Diagnostics",
+    "permalink": "/User-Guide/Settings/Support-and-Diagnostics"
+  },
+  "next": {
+    "title": "Notifications",
+    "permalink": "/User-Guide/Settings/Support-and-Diagnostics/Notifications"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Mapping/Macros/index",
+  "id": "version-3.0.0/User-Guide/Settings/Configuration/Mapping/Macros/index",
+  "title": "Macros",
+  "description": "Macros Tab",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/01-Configuration/01-Mapping/04-Macros/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/01-Mapping/04-Macros",
+  "slug": "/User-Guide/Configuration/Mapping/Macros",
+  "permalink": "/3.0.0/User-Guide/Configuration/Mapping/Macros",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "description": "Macros Tab",
+    "slug": "/User-Guide/Configuration/Mapping/Macros",
+    "addressMatch": "panel/mapping/macros"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Tags",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping/Tags"
+  },
+  "next": {
+    "title": "Maintenance Windows",
+    "permalink": "/3.0.0/User-Guide/Settings/Configuration/Mapping/Maintenance-Windows"
+  }
+}

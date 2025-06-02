@@ -1,0 +1,23 @@
+{
+  "unversionedId": "95-3rdpartylicenses/index",
+  "id": "95-3rdpartylicenses/index",
+  "title": "3rd Party Licenses",
+  "description": "|      | Module                                        | Additional requirements                                      |",
+  "source": "@site/docs/95-3rdpartylicenses/index.md",
+  "sourceDirName": "95-3rdpartylicenses",
+  "slug": "/3rdpartylicenses",
+  "permalink": "/3rdpartylicenses",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/3rdpartylicenses"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "API Documentation",
+    "permalink": "/API-Documentation"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "NQL/nql_cheat_sheet",
+  "id": "version-3.0.0/NQL/nql_cheat_sheet",
+  "title": "NQL CheatSheet",
+  "description": "Commands",
+  "source": "@site/versioned_docs/version-3.0.0/05-NQL/02-nql_cheat_sheet.md",
+  "sourceDirName": "05-NQL",
+  "slug": "/NQL/nql_cheat_sheet",
+  "permalink": "/3.0.0/NQL/nql_cheat_sheet",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "NQL User Manual",
+    "permalink": "/3.0.0/NQL/NQL documentation"
+  },
+  "next": {
+    "title": "Built-in filters",
+    "permalink": "/3.0.0/NQL/Built-in filters"
+  }
+}

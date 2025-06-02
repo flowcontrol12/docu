@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Widgets Examples/Widget KPI Alerts last 24h",
+  "id": "version-2.4/Examples/Widgets Examples/Widget KPI Alerts last 24h",
+  "title": "Examples of widget creation - simple widget",
+  "description": "Number of security incidents in last 24h - example assumptions",
+  "source": "@site/versioned_docs/version-2.4/06-Examples/Widgets Examples/Widget KPI Alerts last 24h.md",
+  "sourceDirName": "06-Examples/Widgets Examples",
+  "slug": "/Examples/Widgets Examples/Widget KPI Alerts last 24h",
+  "permalink": "/2.4/Examples/Widgets Examples/Widget KPI Alerts last 24h",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Widgets Examples",
+    "permalink": "/2.4/Examples/Widgets Examples/"
+  },
+  "next": {
+    "title": "Examples of widget creation - advanced widget",
+    "permalink": "/2.4/Examples/Widgets Examples/Widget Total Traffic 15min"
+  }
+}

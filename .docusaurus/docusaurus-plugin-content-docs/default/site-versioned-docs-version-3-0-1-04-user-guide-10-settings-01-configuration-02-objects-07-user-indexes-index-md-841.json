@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/User-Indexes/index",
+  "id": "version-3.0.1/User-Guide/Settings/Configuration/Objects/User-Indexes/index",
+  "title": "User Indexes",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/10-Settings/01-Configuration/02-Objects/07-User-Indexes/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/07-User-Indexes",
+  "slug": "/User-Guide/Settings/Configuration/Objects/User-Indexes",
+  "permalink": "/3.0.1/User-Guide/Settings/Configuration/Objects/User-Indexes",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/User-Indexes"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Column Profiles",
+    "permalink": "/3.0.1/User-Guide/Settings/Configuration/Objects/Column-Profiles"
+  },
+  "next": {
+    "title": "IT Asset Discovery",
+    "permalink": "/3.0.1/User-Guide/Settings/IT-Asset-Discovery"
+  }
+}

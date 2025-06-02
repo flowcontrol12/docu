@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/User-Indexes/index",
+  "id": "User-Guide/Settings/Configuration/Objects/User-Indexes/index",
+  "title": "User Indexes",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/02-Objects/08-User-Indexes/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/08-User-Indexes",
+  "slug": "/User-Guide/Settings/Configuration/Objects/User-Indexes",
+  "permalink": "/User-Guide/Settings/Configuration/Objects/User-Indexes",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/User-Indexes"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Color Palettes",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Color-Palettes"
+  },
+  "next": {
+    "title": "IT Asset Discovery",
+    "permalink": "/User-Guide/Settings/IT-Asset-Discovery"
+  }
+}

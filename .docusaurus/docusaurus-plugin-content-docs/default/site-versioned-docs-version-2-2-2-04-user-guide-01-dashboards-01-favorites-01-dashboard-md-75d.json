@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Dashboards/Favorites/Dashboard",
+  "id": "version-2.2.2/User Guide/Dashboards/Favorites/Dashboard",
+  "title": "Dashboard",
+  "description": "Favorites Dashboard Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/01-Dashboards/01-Favorites/01-Dashboard.md",
+  "sourceDirName": "04-User Guide/01-Dashboards/01-Favorites",
+  "slug": "/User Guide/Dashboards/Favorites/Dashboard",
+  "permalink": "/2.2.2/User Guide/Dashboards/Favorites/Dashboard",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "description": "Favorites Dashboard Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Favorites",
+    "permalink": "/2.2.2/User Guide/Dashboards/Favorites/"
+  },
+  "next": {
+    "title": "Widgets",
+    "permalink": "/2.2.2/User Guide/Dashboards/Favorites/Widgets"
+  }
+}

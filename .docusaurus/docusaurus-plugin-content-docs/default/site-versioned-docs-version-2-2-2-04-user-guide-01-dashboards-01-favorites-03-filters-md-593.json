@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Dashboards/Favorites/Filters",
+  "id": "version-2.2.2/User Guide/Dashboards/Favorites/Filters",
+  "title": "Filters",
+  "description": "Favorites Filters Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/01-Dashboards/01-Favorites/03-Filters.md",
+  "sourceDirName": "04-User Guide/01-Dashboards/01-Favorites",
+  "slug": "/User Guide/Dashboards/Favorites/Filters",
+  "permalink": "/2.2.2/User Guide/Dashboards/Favorites/Filters",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "description": "Favorites Filters Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Widgets",
+    "permalink": "/2.2.2/User Guide/Dashboards/Favorites/Widgets"
+  },
+  "next": {
+    "title": "Bookmarks",
+    "permalink": "/2.2.2/User Guide/Dashboards/Favorites/Bookmarks"
+  }
+}

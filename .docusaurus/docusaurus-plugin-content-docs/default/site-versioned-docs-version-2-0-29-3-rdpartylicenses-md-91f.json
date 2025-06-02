@@ -1,0 +1,21 @@
+{
+  "unversionedId": "3rdpartylicenses",
+  "id": "version-2.0.29/3rdpartylicenses",
+  "title": "3rd Party Licenses",
+  "description": "|      | Module                                        | Additional requirements                                      |",
+  "source": "@site/versioned_docs/version-2.0.29/3rdpartylicenses.md",
+  "sourceDirName": ".",
+  "slug": "/3rdpartylicenses",
+  "permalink": "/2.0.29/3rdpartylicenses",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Requirements",
+    "permalink": "/2.0.29/Requirements"
+  }
+}

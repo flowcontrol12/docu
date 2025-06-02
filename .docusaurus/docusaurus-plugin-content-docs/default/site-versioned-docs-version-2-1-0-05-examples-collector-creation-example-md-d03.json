@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Collector - creation example",
+  "id": "version-2.1.0/Examples/Collector - creation example",
+  "title": "Example of Collector creation",
+  "description": "Collector is a type of database (data stream) for which we can configure a process that periodically queries for specific data. The data acquired by the process feeds the Collector database. Collector data can be used in two ways:",
+  "source": "@site/versioned_docs/version-2.1.0/05-Examples/Collector - creation example.md",
+  "sourceDirName": "05-Examples",
+  "slug": "/Examples/Collector - creation example",
+  "permalink": "/2.1.0/Examples/Collector - creation example",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples of alert rule creation - advanced way",
+    "permalink": "/2.1.0/Examples/Alert rule from scratch"
+  },
+  "next": {
+    "title": "Example of field creation - bytes field",
+    "permalink": "/2.1.0/Examples/Fields - creation example"
+  }
+}

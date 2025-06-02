@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Objects/Column-Profiles/index",
+  "id": "User-Guide/Settings/Configuration/Objects/Column-Profiles/index",
+  "title": "Column Profiles",
+  "description": "",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/02-Objects/06-Column-Profiles/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/02-Objects/06-Column-Profiles",
+  "slug": "/User-Guide/Settings/Configuration/Objects/Column-Profiles",
+  "permalink": "/User-Guide/Settings/Configuration/Objects/Column-Profiles",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Objects/Column-Profiles",
+    "addressMatch": "panel/saved-fields/column-profiles"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Email Templates",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Email-Templates"
+  },
+  "next": {
+    "title": "Color Palettes",
+    "permalink": "/User-Guide/Settings/Configuration/Objects/Color-Palettes"
+  }
+}

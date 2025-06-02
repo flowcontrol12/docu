@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Requirements",
+  "id": "version-2.0.29/Requirements",
+  "title": "Requirements",
+  "description": "Collector hardware requirements",
+  "source": "@site/versioned_docs/version-2.0.29/07-Requirements.md",
+  "sourceDirName": ".",
+  "slug": "/Requirements",
+  "permalink": "/2.0.29/Requirements",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Release notes",
+    "permalink": "/2.0.29/Release notes"
+  },
+  "next": {
+    "title": "3rd Party Licenses",
+    "permalink": "/2.0.29/3rdpartylicenses"
+  }
+}

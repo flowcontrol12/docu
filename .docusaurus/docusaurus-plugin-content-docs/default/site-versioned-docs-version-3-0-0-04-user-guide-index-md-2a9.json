@@ -1,0 +1,27 @@
+{
+  "unversionedId": "User-Guide/index",
+  "id": "version-3.0.0/User-Guide/index",
+  "title": "User Guide",
+  "description": "Welcome to the Sycope User Guide! This guide is designed to help you understand and effectively use the Sycope system, a powerful tool for network performance monitoring and security management. Whether you are a new user or an experienced IT professional, this guide will provide you with the information and resources needed to navigate and leverage Sycope's features to optimize your network operations.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/index.md",
+  "sourceDirName": "04-User-Guide",
+  "slug": "/User-Guide",
+  "permalink": "/3.0.0/User-Guide",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Quick Setup",
+    "permalink": "/3.0.0/Installation-Guide/Quick-Setup"
+  },
+  "next": {
+    "title": "Home",
+    "permalink": "/3.0.0/User-Guide/Home"
+  }
+}

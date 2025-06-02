@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Security/index",
+  "id": "version-2.1.0/User Guide/Configuration/Security/index",
+  "title": "Security",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.1.0/04-User Guide/Configuration/06-Security/index.md",
+  "sourceDirName": "04-User Guide/Configuration/06-Security",
+  "slug": "/User Guide/Configuration/Security/",
+  "permalink": "/2.1.0/User Guide/Configuration/Security/",
+  "draft": false,
+  "tags": [],
+  "version": "2.1.0",
+  "lastUpdatedAt": 1673276180,
+  "formattedLastUpdatedAt": "9 Jan 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Forwarding",
+    "permalink": "/2.1.0/User Guide/Configuration/NetFlow/Forwarding"
+  },
+  "next": {
+    "title": "Certificates",
+    "permalink": "/2.1.0/User Guide/Configuration/Security/Certificates"
+  }
+}

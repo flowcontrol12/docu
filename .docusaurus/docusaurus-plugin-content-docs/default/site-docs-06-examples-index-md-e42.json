@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/index",
+  "id": "Examples/index",
+  "title": "Examples",
+  "description": "",
+  "source": "@site/docs/06-Examples/index.md",
+  "sourceDirName": "06-Examples",
+  "slug": "/Examples/",
+  "permalink": "/Examples/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1680017400,
+  "formattedLastUpdatedAt": "28 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Search bar",
+    "permalink": "/NQL/Searchbar"
+  },
+  "next": {
+    "title": "Asset Discovery Examples",
+    "permalink": "/Examples/Asset-Discovery"
+  }
+}

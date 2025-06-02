@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Management/index",
+  "id": "version-2.4/User Guide/Management/index",
+  "title": "Management",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/index.md",
+  "sourceDirName": "04-User Guide/06-Management",
+  "slug": "/User Guide/Management/",
+  "permalink": "/2.4/User Guide/Management/",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Playground",
+    "permalink": "/2.4/User Guide/Playground"
+  },
+  "next": {
+    "title": "Dashboards",
+    "permalink": "/2.4/User Guide/Management/Dashboards_"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Widget-Examples/index",
+  "id": "Examples/Widget-Examples/index",
+  "title": "Widget Examples",
+  "description": "",
+  "source": "@site/docs/06-Examples/Widget-Examples/index.md",
+  "sourceDirName": "06-Examples/Widget-Examples",
+  "slug": "/Examples/Widget-Examples",
+  "permalink": "/Examples/Widget-Examples",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Widget-Examples"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples of alert rule creation - advanced way",
+    "permalink": "/Examples/Rules-Examples/Advanced"
+  },
+  "next": {
+    "title": "Widget Example: Alerts in the last 24 hours",
+    "permalink": "/Examples/Widget-Example-Simple"
+  }
+}

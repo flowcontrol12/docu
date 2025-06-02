@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/Fields - creation example",
+  "id": "version-2.0.27/Examples/Fields - creation example",
+  "title": "Example of field creation - bytes field",
+  "description": "Creating a new field is nothing more than mathematical operations on one or more fields in a single row of the database and saving the result under the new field name.",
+  "source": "@site/versioned_docs/version-2.0.27/05-Examples/Fields - creation example.md",
+  "sourceDirName": "05-Examples",
+  "slug": "/Examples/Fields - creation example",
+  "permalink": "/2.0.27/Examples/Fields - creation example",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.27",
+  "lastUpdatedAt": 1666174171,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example of Collector creation",
+    "permalink": "/2.0.27/Examples/Collector - creation example"
+  },
+  "next": {
+    "title": "Example of advanced field creation - use of mapper - Application Name",
+    "permalink": "/2.0.27/Examples/Fields advanced - creation example"
+  }
+}

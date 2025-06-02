@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Examples/index",
+  "id": "version-2.2.1/Examples/index",
+  "title": "Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.1/05-Examples/index.md",
+  "sourceDirName": "05-Examples",
+  "slug": "/Examples/",
+  "permalink": "/2.2.1/Examples/",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.1",
+  "lastUpdatedAt": 1678707866,
+  "formattedLastUpdatedAt": "13 Mar 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Licenses",
+    "permalink": "/2.2.1/User Guide/Configuration/Licenses"
+  },
+  "next": {
+    "title": "Baseline Examples",
+    "permalink": "/2.2.1/Examples/Baseline Example/"
+  }
+}

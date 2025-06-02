@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Examples/Asset-Discovery-Examples/index",
+  "id": "version-3.0.0/Examples/Asset-Discovery-Examples/index",
+  "title": "Asset Discovery Examples",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/06-Examples/00-Asset-Discovery-Examples/index.md",
+  "sourceDirName": "06-Examples/00-Asset-Discovery-Examples",
+  "slug": "/Examples/Asset-Discovery",
+  "permalink": "/3.0.0/Examples/Asset-Discovery",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/Examples/Asset-Discovery"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Examples",
+    "permalink": "/3.0.0/Examples/"
+  },
+  "next": {
+    "title": "Asset Discovery - SQL Example",
+    "permalink": "/3.0.0/Examples/Asset-Discovery-SQL-Example"
+  }
+}

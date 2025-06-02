@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/NetFlow/DataBridge/index",
+  "id": "User-Guide/Settings/NetFlow/DataBridge/index",
+  "title": "DataBridge",
+  "description": "Data Bridge Server options to link Sycope systems.",
+  "source": "@site/docs/04-User-Guide/10-Settings/04-NetFlow/06-DataBridge/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/04-NetFlow/06-DataBridge",
+  "slug": "/User-Guide/Settings/NetFlow/DataBridge",
+  "permalink": "/User-Guide/Settings/NetFlow/DataBridge",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/NetFlow/DataBridge",
+    "addressMatch": "panel/config-sources/sycope-format-tcp"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Exporter Restrictions",
+    "permalink": "/User-Guide/Settings/NetFlow/Exporter-Restrictions"
+  },
+  "next": {
+    "title": "Forwarding",
+    "permalink": "/User-Guide/Settings/NetFlow/Forwarding"
+  }
+}

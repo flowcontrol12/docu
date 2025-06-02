@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/Objects/index",
+  "id": "version-2.0.29/User Guide/Configuration/Objects/index",
+  "title": "Objects",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.29/04-User Guide/Configuration/04-Objects/index.md",
+  "sourceDirName": "04-User Guide/Configuration/04-Objects",
+  "slug": "/User Guide/Configuration/Objects/",
+  "permalink": "/2.0.29/User Guide/Configuration/Objects/",
+  "draft": false,
+  "tags": [],
+  "version": "2.0.29",
+  "lastUpdatedAt": 1666178777,
+  "formattedLastUpdatedAt": "19 Oct 2022",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Mappers",
+    "permalink": "/2.0.29/User Guide/Configuration/Mapping/Mappers"
+  },
+  "next": {
+    "title": "Fields",
+    "permalink": "/2.0.29/User Guide/Configuration/Objects/Fields"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Support-and-Diagnostics/Backup-and-Restore/index",
+  "id": "version-3.0.1/User-Guide/Settings/Support-and-Diagnostics/Backup-and-Restore/index",
+  "title": "Backup & Restore",
+  "description": "This menu [Settings > Support & Diagnostics > Backup & Restore] can be used for managing backups.",
+  "source": "@site/versioned_docs/version-3.0.1/04-User-Guide/10-Settings/06-Support-and-Diagnostics/04-Backup-and-Restore/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/06-Support-and-Diagnostics/04-Backup-and-Restore",
+  "slug": "/User-Guide/Settings/Support-and-Diagnostics/Backup-and-Restore",
+  "permalink": "/3.0.1/User-Guide/Settings/Support-and-Diagnostics/Backup-and-Restore",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Support-and-Diagnostics/Backup-and-Restore",
+    "addressMatch": "panel/support-and-diagnostics/backup-and-restore"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Remote Support",
+    "permalink": "/3.0.1/User-Guide/Settings/Support-and-Diagnostics/Remote-Support"
+  },
+  "next": {
+    "title": "General",
+    "permalink": "/3.0.1/User-Guide/Settings/General"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "User Guide/Configuration/index",
+  "id": "version-2.4/User Guide/Configuration/index",
+  "title": "Configuration",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/07-Configuration/index.md",
+  "sourceDirName": "04-User Guide/07-Configuration",
+  "slug": "/User Guide/Configuration/",
+  "permalink": "/2.4/User Guide/Configuration/",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Report filters",
+    "permalink": "/2.4/User Guide/Management/Reports/Report filters"
+  },
+  "next": {
+    "title": "General Settings",
+    "permalink": "/2.4/User Guide/Configuration/General Settings/"
+  }
+}

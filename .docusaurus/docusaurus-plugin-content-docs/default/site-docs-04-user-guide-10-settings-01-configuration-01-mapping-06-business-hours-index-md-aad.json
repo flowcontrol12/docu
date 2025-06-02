@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Configuration/Mapping/Business-Hours/index",
+  "id": "User-Guide/Settings/Configuration/Mapping/Business-Hours/index",
+  "title": "Business Hours",
+  "description": "The [Settings > Configuration > Mapping > Business Hours] can be used to create a Business hour profile.",
+  "source": "@site/docs/04-User-Guide/10-Settings/01-Configuration/01-Mapping/06-Business-Hours/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/01-Configuration/01-Mapping/06-Business-Hours",
+  "slug": "/User-Guide/Settings/Configuration/Mapping/Business-Hours",
+  "permalink": "/User-Guide/Settings/Configuration/Mapping/Business-Hours",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Configuration/Mapping/Business-Hours",
+    "addressMatch": "panel/mapping/business-hours"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Maintenance Windows",
+    "permalink": "/User-Guide/Settings/Configuration/Mapping/Maintenance-Windows"
+  },
+  "next": {
+    "title": "Objects",
+    "permalink": "/User-Guide/Settings/Configuration/Objects"
+  }
+}

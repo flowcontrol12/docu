@@ -1,0 +1,26 @@
+{
+  "unversionedId": "XND module/Performance",
+  "id": "version-1.6/XND module/Performance",
+  "title": "Performance",
+  "description": "DDoS attacks (Distributed Denial of Service) are currently among the most popular and most simple attacks used by cybercriminals. Their goal is to disrupt the network infrastructure or the running application – “the victim of the attack”, by sending massive amounts of data packets. This threat affects all service sectors on the internet. Modern attacks of DDoS require the use of thousands of devices organized into so-called botnets. DDoS attacks usually result in financial and image losses.",
+  "source": "@site/versioned_docs/version-1.6/04-XND module/01-Performance.md",
+  "sourceDirName": "04-XND module",
+  "slug": "/XND module/Performance",
+  "permalink": "/1.6/XND module/Performance",
+  "draft": false,
+  "tags": [],
+  "version": "1.6",
+  "lastUpdatedAt": 1639746315,
+  "formattedLastUpdatedAt": "17 Dec 2021",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Threat Intelligence Engine",
+    "permalink": "/1.6/XNS module/Threat Intelligence Engine"
+  },
+  "next": {
+    "title": "FlowControl XND Module",
+    "permalink": "/1.6/XND module/FlowControl XND Module"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User Guide/Configuration/Integrations/FTP",
+  "id": "version-2.2.2/User Guide/Configuration/Integrations/FTP",
+  "title": "FTP",
+  "description": "FTP Tab",
+  "source": "@site/versioned_docs/version-2.2.2/04-User Guide/Configuration/07-Integrations/06-FTP.md",
+  "sourceDirName": "04-User Guide/Configuration/07-Integrations",
+  "slug": "/User Guide/Configuration/Integrations/FTP",
+  "permalink": "/2.2.2/User Guide/Configuration/Integrations/FTP",
+  "draft": false,
+  "tags": [],
+  "version": "2.2.2",
+  "lastUpdatedAt": 1682340126,
+  "formattedLastUpdatedAt": "24 Apr 2023",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "description": "FTP Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "External Destinations",
+    "permalink": "/2.2.2/User Guide/Configuration/Integrations/External Destinations"
+  },
+  "next": {
+    "title": "Update",
+    "permalink": "/2.2.2/User Guide/Configuration/Update/"
+  }
+}

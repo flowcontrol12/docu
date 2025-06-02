@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Installation-Guide/index",
+  "id": "Installation-Guide/index",
+  "title": "Installation Guide",
+  "description": "Installation Guide",
+  "source": "@site/docs/03-Installation-Guide/index.md",
+  "sourceDirName": "03-Installation-Guide",
+  "slug": "/Installation-Guide",
+  "permalink": "/Installation-Guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1717586417,
+  "formattedLastUpdatedAt": "5 Jun 2024",
+  "frontMatter": {
+    "description": "Installation Guide",
+    "slug": "/Installation-Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Streams",
+    "permalink": "/Introduction/Streams"
+  },
+  "next": {
+    "title": "Deployment",
+    "permalink": "/Installation-Guide/Deployment"
+  }
+}

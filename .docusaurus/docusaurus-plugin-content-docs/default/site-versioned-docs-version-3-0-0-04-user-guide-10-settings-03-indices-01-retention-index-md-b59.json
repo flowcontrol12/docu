@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Indices/Retention/index",
+  "id": "version-3.0.0/User-Guide/Settings/Indices/Retention/index",
+  "title": "Retention",
+  "description": "The [Settings > Indices > Retention] menu can be used to manage data retention.",
+  "source": "@site/versioned_docs/version-3.0.0/04-User-Guide/10-Settings/03-Indices/01-Retention/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/03-Indices/01-Retention",
+  "slug": "/User-Guide/Settings/Indices/Retention",
+  "permalink": "/3.0.0/User-Guide/Settings/Indices/Retention",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.0",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Indices/Retention",
+    "addressMatch": "panel/indices/index.retentionPolicy"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Indices",
+    "permalink": "/3.0.0/User-Guide/Settings/Indices"
+  },
+  "next": {
+    "title": "NetFlow",
+    "permalink": "/3.0.0/User-Guide/Settings/NetFlow"
+  }
+}

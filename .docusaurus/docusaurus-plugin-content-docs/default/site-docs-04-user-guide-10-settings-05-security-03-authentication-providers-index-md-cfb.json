@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Settings/Security/Authentication-Providers/index",
+  "id": "User-Guide/Settings/Security/Authentication-Providers/index",
+  "title": "Authentication Providers",
+  "description": "This menu [Settings > Security > Authentication Providers] can be used to configure  Authentication Provider. Currently the system allows to use only a Microsoft AD as an Auth provider.",
+  "source": "@site/docs/04-User-Guide/10-Settings/05-Security/03-Authentication-Providers/index.md",
+  "sourceDirName": "04-User-Guide/10-Settings/05-Security/03-Authentication-Providers",
+  "slug": "/User-Guide/Settings/Security/Authentication-Providers",
+  "permalink": "/User-Guide/Settings/Security/Authentication-Providers",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Settings/Security/Authentication-Providers",
+    "addressMatch": "panel/security/auth.provider"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Roles",
+    "permalink": "/User-Guide/Settings/Security/Roles"
+  },
+  "next": {
+    "title": "Audit Log",
+    "permalink": "/User-Guide/Settings/Security/Audit-Log"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "User-Guide/Configuration/Reports/Reports/index",
+  "id": "User-Guide/Configuration/Reports/Reports/index",
+  "title": "Reports",
+  "description": "This menu [Configuration > Reports] can be used to create reports. Reports in the system are built based on Dashboards. Still, it is necessary to define a filter for the report (Report filter - [Configuration > Reports > Report filters] tab) to specify the time range to be analyzed in the report. In addition to specifying a time range in the filter report, you can create advanced NQL expressions that operate on selected data streams.",
+  "source": "@site/docs/04-User-Guide/08-Configuration/06-Reports/01-Reports/index.md",
+  "sourceDirName": "04-User-Guide/08-Configuration/06-Reports/01-Reports",
+  "slug": "/User-Guide/Configuration/Reports/Reports",
+  "permalink": "/User-Guide/Configuration/Reports/Reports",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1731926806,
+  "formattedLastUpdatedAt": "18 Nov 2024",
+  "frontMatter": {
+    "slug": "/User-Guide/Configuration/Reports/Reports",
+    "addressMatch": "panel/reports/report-templates"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Reports",
+    "permalink": "/User-Guide/Configuration/Reports"
+  },
+  "next": {
+    "title": "Report Schedule",
+    "permalink": "/User-Guide/Configuration/Reports/Report-Schedule"
+  }
+}

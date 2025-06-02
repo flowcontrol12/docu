@@ -1,0 +1,30 @@
+{
+  "unversionedId": "User Guide/Management/Dashboards_",
+  "id": "version-2.4/User Guide/Management/Dashboards_",
+  "title": "Dashboards",
+  "description": "Dashboard Tab",
+  "source": "@site/versioned_docs/version-2.4/04-User Guide/06-Management/01-Dashboards.md",
+  "sourceDirName": "04-User Guide/06-Management",
+  "slug": "/User Guide/Management/Dashboards_",
+  "permalink": "/2.4/User Guide/Management/Dashboards_",
+  "draft": false,
+  "tags": [],
+  "version": "2.4",
+  "lastUpdatedAt": 1700558829,
+  "formattedLastUpdatedAt": "21 Nov 2023",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "Dashboards_",
+    "title": "Dashboards",
+    "description": "Dashboard Tab"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Management",
+    "permalink": "/2.4/User Guide/Management/"
+  },
+  "next": {
+    "title": "Widgets",
+    "permalink": "/2.4/User Guide/Management/Widgets"
+  }
+}

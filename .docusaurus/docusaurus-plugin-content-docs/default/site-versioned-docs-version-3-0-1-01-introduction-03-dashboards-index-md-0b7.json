@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Introduction/Dashboards/index",
+  "id": "version-3.0.1/Introduction/Dashboards/index",
+  "title": "Dashboards and Widgets",
+  "description": "The Sycope system is structured as follows. The basic element that enables further construction is the widget, which allows us to present data from the system in many ways. We can place and position widgets on dashboards. In turn, we can combine dashboards into groups to make it easier to navigate between them. Here is a brief introduction to these building blocks.",
+  "source": "@site/versioned_docs/version-3.0.1/01-Introduction/03-Dashboards/index.md",
+  "sourceDirName": "01-Introduction/03-Dashboards",
+  "slug": "/Introduction/Dashboards-and-Widgets",
+  "permalink": "/3.0.1/Introduction/Dashboards-and-Widgets",
+  "draft": false,
+  "tags": [],
+  "version": "3.0.1",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "slug": "/Introduction/Dashboards-and-Widgets"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Analysis",
+    "permalink": "/3.0.1/Introduction/Workflows/Analysis"
+  },
+  "next": {
+    "title": "Streams",
+    "permalink": "/3.0.1/Introduction/Streams"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "unversionedId": "User-Guide/Home/index",
+  "id": "User-Guide/Home/index",
+  "title": "Home",
+  "description": "Home Tab",
+  "source": "@site/docs/04-User-Guide/01-Home/index.md",
+  "sourceDirName": "04-User-Guide/01-Home",
+  "slug": "/User-Guide/Home",
+  "permalink": "/User-Guide/Home",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1748871614,
+  "formattedLastUpdatedAt": "2 Jun 2025",
+  "frontMatter": {
+    "description": "Home Tab",
+    "slug": "/User-Guide/Home",
+    "addressMatch": "panel/home"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "User Guide",
+    "permalink": "/User-Guide"
+  },
+  "next": {
+    "title": "Dashboards",
+    "permalink": "/User-Guide/Dashboards"
+  }
+}
