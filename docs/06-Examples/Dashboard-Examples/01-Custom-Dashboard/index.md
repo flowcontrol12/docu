@@ -7,7 +7,13 @@ slug: /Examples/Create-Custom-Dashboard
 This tutorial provides information on how to create our own simple dashboard.  
 We will use the previously created [simple](/Examples/Widget-Example-Simple) and [advanced](/Examples/Widget-Example-Advanced) widgets.
 
-Let's start by selecting **`[Menu > Dashboards]`** and clicking **`Add Dashboard`** button.
+Let's start by selecting **`[Menu > Dashboards > Full dashboards list]`**,
+
+![Full dashboards list](assets/full-dashboards-list.png)
+
+and clicking **`Add Dashboard`** button.
+
+![Add Dashboard](assets/add-dashboard.png)
 
 Name our new dashboard and proceed by clicking `Apply`.
 

@@ -7,7 +7,7 @@ addressMatch: panel/alerts
 # Alerts
 
 
-In the [**Alerts**] menu there is a table with a list of all triggered alerts.
+In the **`[Alerts]`** menu there is a table with a list of all triggered alerts.
 
 The **Sycope** system includes many predefined **Alerts** created by a team of cybersecurity experts. This menu contains a table with a list of **triggered Alerts** that have been defined in **the System**. If the table is empty it means that no Alerts have been triggered. Alert parameters are configured in the menu **[Configuration > Rules]**.
 
@@ -17,9 +17,7 @@ At the top of the window is the standard search bar, time ranges menu, etc. Thes
 
 ![image-20230913120428733](assets_03-Alerts/image-20230913120428733.png)
 
-
-
-By default, the Alerts table displays 9 columns, but you can change which columns should be visible by using the drop-down menu.
+By default, the Alerts table displays some columns, but you can change which columns should be visible by using the drop-down menu.
 
 ![image-20230620104631231](assets_03-Alerts/image-20230620104631231.png)
 
@@ -29,6 +27,10 @@ After selecting a particular row by clicking on the row or check box in the firs
 
 ![image-20230620111226371](assets_03-Alerts/image-20230620111226371.png)
 
+It is also possible to hide variables with empty values and improve the clarity of the visible data by selecting **`Hide empty rows`** option.
+
+![Hide Empty Rows](assets_03-Alerts/hide-empty-rows.png)
+
 When selecting a larger number of rows in the **Advanced View** menu, corresponding tabs will appear.
 
 ![image-20230620111512587](assets_03-Alerts/image-20230620111512587.png)
@@ -37,13 +39,20 @@ When selecting a larger number of rows in the **Advanced View** menu, correspond
 
 The `Action` button is available for the selected row, which can be used to perform the following actions:
 
-- Mark as ACK - setting the Acknowledged flag
-- Mark as NEW - removing the Acknowledged flag
-- Mark as False Positive - setting the False Positive flag
-- Unmark as False Positive - removing the False Positive flag
-- Add comment - add your own comment
-
-
+- **Status** - set the alert’s current state
+  - New
+  - Acknowledged
+  - Assigned
+  - In Progress
+  - Pending
+  - Resolved
+- **Classification** - choose the alert’s verdict category
+  - null
+  - Info
+  - True Positive
+  - False Positive
+- **Assign to user** – pick a user to own this alert
+- **Add comment** – create or edit a comment inline
 
 ![image-20230620111330553](assets_03-Alerts/image-20230620111330553.png)
 
@@ -51,29 +60,63 @@ The `Action` button is available for the selected row, which can be used to perf
 
 After right-clicking on a row, a `Right Click` menu with the following options will become available:
 
-- Action
-  - Mark as ACK - setting the Acknowledge flag
-  - Mark as NEW - removing the Acknowledge flag
-  - Mark as False Positive - setting the False Positive flag
-  - Unmark as False Positive - removing the False Positive flag
-  - Add comment - add your own comment
-  - Add value to input filters - add the value to the input filter of the alert rule
-  - Add value to output filters - add the value to the output filter of the alert rule
-  - Add value to lookup - add the value to a lookup
-- Rest Client - sending alert to another system using the REST CLIENT functionality 
-- Resolve
-  - RIPE - search in the RIPE database 
+- **Copy**
+- **Quick Actions** – common triage tasks inline
+- **Investigate in Raw Data** – inspect the raw event payload
+- **Go to rule** – jump to the triggering rule’s definition
+- **Drilldown** – [read more](/User-Guide/Configuration/Shortcuts#drilldown)
+- **Actions**
+  - Contextual analysis
+  - Search in lookups
+  - Check value in lookup
+  - Add value to lookup
+  - Add all values to profile rule
+  - Add value to profile rule
+  - Add value to input filters
+  - Add value to output filters
+- **Send externally** – push this alert to external systems
+  - Block host by IP
+  - Rest Client
+  - IP Reputation – menu with external tools (Displayed only when an IP address is clicked)
+- **Show** (Displayed only when an IP address is clicked)
+  - Only public IPs
+  - Only private IPs
+  - Net Mask
+  - Resolved DNS for all values
+  - Resolved DNS
+- **Tools** (Displayed only when an IP address is clicked)
+  - Ping
+
+<!-- - **Copy**
+- **Alert reason details (raw data)**
+- **Go to rule**
+- [**Drilldown**](/User-Guide/Configuration/Shortcuts#drilldown)
+- **Actions**
+  - **Mark as acknowledged** - setting the Acknowledge flag
+  - **Mark as new** - removing the Acknowledge flag
+  - **Mark as False Positive** - setting the False Positive flag
+  - **Unmark as False Positive** - removing the False Positive flag
+  - **Add comment** - add your own comment
+  - **Add value to input filters** - add the value to the input filter of the alert rule
+  - **Add value to output filters** - add the value to the output filter of the alert rule
+  - **Add value to lookup** - add the value to a lookup
+- **Rest Client** - sending alert to another system using the REST CLIENT functionality 
+- **Resolve**
+  - **Ns lookup** - query a DNS Domain Name Server to the lookup to find DNS Records and IP address information
+- **Asset Traffic Rule Profiles**
+  - **Add all values to profile rule**
+  - **Add value to profile rule** -->
+
+<!-- - RIPE - search in the RIPE database 
   - DNS for all values - resolve DNS for all IP address in the table
-  - DNS - resolve DNS for the selected IP address
-  - Ns lookup - query a DNS Domain Name Server to the lookup to find DNS Records and IP address information
-- Net mask Search - access to quick IP mask filter
-- Tools
+  - DNS - resolve DNS for the selected IP address -->
+
+<!-- - **Net mask Search** - access to quick IP mask filter
+- **Tools**
   - Ping - simple PING tool
-- Mitigation
+- **Mitigation**
   - Block host by IP - address blocking when the system is integrated with the MACMON probe
-- Custom - you can create your own Right Click actions configured in the menu [**`[Drilldowns]`**](/User-Guide/Configuration/Shortcuts#drilldown)
-
-
+- **Custom** - you can create your own Right Click actions configured in the menu [**`[Drilldowns]`**](/User-Guide/Configuration/Shortcuts#drilldown) -->
 
 ![image-20230620114012061](assets_03-Alerts/image-20230620114012061.png)
 
@@ -85,21 +128,26 @@ The settings menu is available by pressing the ![image-20230630130509063](assets
 
 The following actions are available here:
 
-- **Server sorting** switch 
+<!-- - **Server sorting** switch 
   
   - **off** - sorting is performed on records previously retrieved by the browser from the database (limited to 1000 records)
-  - **on** - sorting is performed on the database and then retrieved by the browser (limited to 1000 records)
+  - **on** - sorting is performed on the database and then retrieved by the browser (limited to 1000 records) -->
   
-- **Export as** 
+- **Settings**
+  - **Manage rules**
+  - **Export as** 
+    - **CSV** - export alerts to CSV files which are displayed in the table (limited to 1000 records)
+    - **CSV (full data)** - export all alerts that are in the System (database)
+    - **PDF** - export alerts to PDF files which are displayed in the table (limited to 1000 records)
+    - **JSON (widget object)** - export a widget
 
-  - **CSV** - export alerts to CSV files which are displayed in the table (limited to 1000 records)
-  - **PDF** - export alerts to PDF files which are displayed in the table (limited to 1000 records)
-  - **PNG** - export alerts to PNG files which are displayed in the table (limited to 1000 records)
-  - **Full CSV Export** - export all alerts that are in the System (database)
+<!-- - **PNG** - export alerts to PNG files which are displayed in the table (limited to 1000 records) -->
 
+- **Customize**
+  - **Show raw field names**
+  - **Sorting on server side**
+  - **Hide empty columns**
   
-
-
 
 ## Alerts Table fields description
 
@@ -133,6 +181,8 @@ In the table below are descriptions of the most important fields that are availa
 | Comment                 | alertComment                 | Comment                                  |
 | Commented User          | alertCommentUser             | User updating a comment                  |
 | Comment Time            | alertCommentLastUpdate       | Comment update time                      |
+| Classification          | alertClassification          | Verdict category of the alert             |
+| Classification Time     | alertClassificationLastUpdate| Timestamp of the most recent classification change|
 | Client IP               | clientIp                     | Client IP                                |
 | Client Port             | clientPort                   | Client Port                              |
 | Client TCP Flags        | clientTcpFlags               | Client TCP Flags                         |
@@ -147,6 +197,9 @@ In the table below are descriptions of the most important fields that are availa
 | Server Country          | serverCountry                | Server Country                           |
 | Server Mac              | serverMac                    | Server Mac                               |
 | Server Hostname         | serverHostname               | Server Hostname                          |
+| Status                  | alertStatus                  | Current alert state                       |
+| Status Time             | alertStatusLastUpdate        | Timestamp of the most recent status change|
+| User                    | alertUser                    | User assigned to investigate this alert   |
 | Username                | user                         | Username                                 |
 | Unique Client IPs       | uniqueClientIPs              | Unique Client IPs                        |
 | Unique Server IPs       | uniqueServerIPs              | Unique Server IPs                        |

@@ -3,9 +3,9 @@ slug: /User-Guide/Settings/General/Integrations/SNMP
 addressMatch: panel/integrations/snmp
 ---
 
-# SNMP
+# SNMP Server
 
-The **[Settings > General > Integrations > SNMP]** menu can be used to configure SNMP protocol parameters.
+The **[Settings > General > Integrations > SNMP Server]** menu can be used to configure SNMP protocol parameters.
 
 ![image-20231116085639702](assets_02-SNMP/image-20231116085639702.png)
 

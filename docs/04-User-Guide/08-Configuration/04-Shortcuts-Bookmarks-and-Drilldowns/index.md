@@ -27,9 +27,9 @@ For a quick and easy access to availabale **Bookmarks** and **Drilldowns** from 
 
 #### Access the `Shortcuts (Bookmarks & Drilldowns)` Section
 
-Access the Shortcuts section via **[Configuration > Favorites]** which automatically takes us to the **Shortcuts (Bookmarks & Drilldowns)** tab.
+Access the Shortcuts section via **[Configuration > Shortcuts]** which takes us to the **Shortcuts (Bookmarks & Drilldowns)** table. Here user can **Add shortcut**, whether it is a Bookmark or a Drilldown.
 
-![Configuration > Favorites](assets/conf-fav.png)
+![Configuration > Shortcuts](assets/conf-fav.png)
 
 ### Adding New Bookmark
 
@@ -49,13 +49,16 @@ We set the **Name** and **Folder** where we want the bookmark to be saved, then 
 
 Navigate to **[Configuration > Favorites]** and click `Add shortcut`.
 
-![Add Shortcut](assets/add-shortcut.png)
+![Add Shortcut](assets/conf-fav.png)
 
 - Fill in the fields **Name** and **Description**.
 - In the **Go to** section, specify the type:
   - **Url** - for an external webpage address or an internal link within Sycope.
-  - **Dashboard** - choose the dashboard to which it should navigate.
-  - **Widget** - select the widget to which it should navigate.
+  - **Widget** - select a widget to which it should navigate.
+  - **Dashboard** - choose a dashboard to which it should navigate.
+  - **Dashboard group** - choose a dashboard group to which it should navigate.
+  - **REST API** - select a REST API [External Destination](/User-Guide/Settings/General/Integrations/External-Destinations#rest-client) to interact with
+  - **Nql resolve** - perform custom NQL Query
 - In the **Show as** section:
   - **Bookmark**
   - **Drilldown (in context menu)** - more about [Drilldown](#drilldown)
@@ -92,7 +95,7 @@ Notice the autmatically applied IP address filter in the **Top bar**.
 
 Two equivalent ways to add a **Drilldown**:
 - By clicking on the `Bookmark Icon`, then `Three dots` and `Add bookmark`
-- or navigate to **[Configuration > Favorites]** and click `Add shortcut`
+- or navigate to **[Configuration > Shortcuts]** and click `Add shortcut`
 
 The third option for convenience is to add a drilldown from the context menu by right-clicking:
 
@@ -102,8 +105,11 @@ Next, in the opened window, similarly to [creating a **Bookmark** in Advanced Wa
 - Fill in the fields **Name** and **Description**.
 - In the **Go to** section, specify the type:
   - **Url** - for an external webpage address or an internal link within Sycope.
-  - **Dashboard** - choose the dashboard to which it should navigate.
-  - **Widget** - select the widget to which it should navigate.
+  - **Widget** - select a widget to which it should navigate.
+  - **Dashboard** - choose a dashboard to which it should navigate.
+  - **Dashboard group** - choose a dashboard group to which it should navigate.
+  - **REST API** - select a REST API [External Destination](/User-Guide/Settings/General/Integrations/External-Destinations#rest-client) to interact with
+  - **Nql resolve** - perform custom NQL Query
 - In the **Show as** section:
   - **Bookmark** - more about [Bookmark](#bookmark)
   - **Drilldown (in context menu)**  
@@ -119,22 +125,22 @@ This time, we'll focus on selecting **Drilldown**, which extends the **Add bookm
 In this example, we are creating a drilldown that, when clicking on a field with an IP address, displays a widget presenting the table with details for applications running on specified host.
 
 - Begin by adding a new drilldown.
-  - Navigate to **[Configuration > Favorites]** and click `Add shortcut`.
+  - Navigate to **[Configuration > Shortcuts]** and click `Add shortcut`.
   - Fill in the fields.
-    - **Name**: ***app_details_table***
+    - **Name**: ***top_app***
     - In the **Go to** section, select the type ***Widget***.
-      - Select the widget: ***Applications Details Table***.
+      - Select the widget: ***Top Applications***.
     - In the **Show as** section mark ***Drilldown (in context menu)***.
     - In the **Available for** select ***Types***.
       - And in **Available for types** choose ***ip***.
   - Finally click on `Save` button.
 
-![Drilldown for App Details Table](assets/app-details-drilldown.png)
+![Drilldown for Top Applications](assets/app-details-drilldown.png)
 
 Now let's test our new drilldown in action.
 
 - Navigate to `[Menu > Raw Data]`.
-- Right-click on a field with selected Cilent, then ***Drilldown*** and ***app_details_table***.
+- Right-click on a field with selected Cilent, then ***Drilldown*** and ***top_app***.
 
 ![Right-Click on Selected Client](assets/right-click-on-client.png)
 
@@ -147,7 +153,7 @@ Now let's test our new drilldown in action.
 The next example demonstrates a drilldown for a selected field type with the country name.  
 Invoking the drilldown will display traffic details for the selected country.
 
-- Navigate to **[Configuration > Favorites]** and click `Add shortcut`.
+- Navigate to **[Configuration > Shortcuts]** and click `Add shortcut`.
 - Fill in the fields.
   - **Name**: ***country_traffic***.
   - In the **Go to** section, select the type ***Widget***.
@@ -155,14 +161,10 @@ Invoking the drilldown will display traffic details for the selected country.
   - In the **Show as** section mark ***Drilldown (in context menu)***.
   - In the **Available for** select ***Fields***.
     - And in **Available for fields** as a **Source** choose ***Netflow*** > ***netflow***.
-
-    ![Source Netflow > neftlow](assets/source-netflow.png)
-
     - In the **Field name** search for ***country*** and mark ***Client Country*** and ***Server Country***.
-
-    ![Field name: search 'country'](assets/field-name-country.png)
-
     - Finally: `Save`.
+
+![Countries Traffic Details Drilldown](assets/country_traffic.png)
 
 - To test this drilldown naviagte to `[Menu > Raw Data]` and make sure that the columns **Client Country** and **Server Contry** are selected and visible.
 
@@ -175,3 +177,38 @@ Invoking the drilldown will display traffic details for the selected country.
 - This drilldown will be visible every time we right-click on the fields **Client Country** or **Server Country** in the NetFlow stream. Invoking it will open a window with ***Countries Traffic Details*** widget for selected country symbol.
 
 ![Countries Traffic Details Widget Window](assets/window-countries-traffic.png)
+
+
+## NQL Resolve
+
+***NQL Resolve*** is an additional feature available in the **Context Menu** under **Actions**. By selecting **`Add NQL Resolve`**, users can create new shortcuts using custom NQL queries. 
+
+![NQL Resolve](assets/image_1.png)
+
+By default, the wizard assists in creating a search shortcut using existing Lookups. Users can specify the Lookup name, a single input key, and multiple output keys. The input key refers to any value found within the system, such as an IP address displayed in table widgets. The output keys correspond to the records retrieved from the specified Lookup.
+
+An additional required setting is **Available for Types**, which enables filtering of new actions based on the selected value from the system - such as **IP address**, **Subnet**, **string**, or other data types. Users can also define where the action will be visible: within the **Drilldown** context menu, **Bookmarks**, or both.
+
+Further customization options include the ability to assign Groups, set Privacy levels, and add Tags for better organization and control. 
+
+![NQL Resolve](assets/image_2.png)
+
+The result of an **NQL Resolve** action will be displayed in a dedicated window. Below is an example using the **groups-app** Lookup. 
+
+![NQL Resolve](assets/image_3.png)
+
+When the wizard is set to **Use Function**, users can define a custom NQL query. To utilize a system value, the user must define it using the format **{param}**. The results of the query will then be displayed accordingly. 
+
+![NQL Resolve](assets/image_4.png)
+
+All newly created **NQL Resolve** shortcuts with the **Drilldown** option enabled will be automatically added to the **Context Menu** and the **Actions** list. An example of this is shown below for the **Check Defined Apps** action. 
+
+![NQL Resolve](assets/image_5.png)
+
+Users can manage all NQL Resolve actions from the **[Configuration > Shortcuts]** page.
+
+![NQL Resolve](assets/image_6.png)
+
+***
+
+\* This product includes GeoLite2 Data created by MaxMind, available from https://www.maxmind.com.

@@ -23,7 +23,7 @@ You can generate or upload an SSL certificate in the system using three buttons:
 
 - **Download CSR** button
 
-  Downloads the generated CSR in PEM format. The downloaded file is used to create the certificate and should be sent to the Sycope support team to generate the certificate.
+  Downloads the generated CSR in PEM format. The downloaded file is used to create the certificate and should be sent to appropriate Certificate Authority (CA) to generate the certificate.
 
 - **Upload signed cert** button
 

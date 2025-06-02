@@ -31,6 +31,16 @@ And use the `Search Field` bar to find the necessary dashboard.
 
 ![Search Field](assets/search-field.png)
 
+Many **Built-in Dashboards** include a special widget for quickly applying filters.  
+This allows you to easily adjust the visible data according to your specific needs.
+
+For example, in the case below, we can easily choose to display connections to public servers only.
+
+![Filter Widget](assets/filter-widget.png)
+
+Some dashboards that process large volumes of data are optimized for narrower time ranges or filtered datasets. When loading these dashboards, you may see a pop-up message suggesting that you can reduce the time range or apply data filters to significantly improve system performance.
+
+![Speed Up](assets/speed-up.png)
 
 ### Create and Configure a Dashboard
 

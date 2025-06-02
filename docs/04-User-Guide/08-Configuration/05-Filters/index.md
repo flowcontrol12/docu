@@ -6,7 +6,7 @@ addressMatch: panel/filters
 
 # Filters
 
-The **[Configuration > Favorites > Filters]** menu can be used to edit and store favorite Filters (Queries).
+The **[Configuration > Filters]** menu can be used to edit and store favorite Filters (Queries).
 
 Frequently used filters/queries can be saved in the system and then opened via the **Search Bar**, with the **Favorite Filters** pop-up menu. ![image-20231031095928004](assets_01-Filters/image-20231031095928004.png)
 
@@ -18,7 +18,7 @@ Additionally to the filters created by the user, the System includes ready-made,
 
 A list of all the built-in filters in the System is located in the [Build-in filters](/NQL/Built-in%20filters) table.
 
-In the **[Configuration > Favorites > Filters]** menu, you can find a table with a list of user-created filters.
+In the **[Configuration > Filters]** menu, you can find a table with a list of user-created filters.
 
 ![image-20231031115104087](assets_01-Filters/image-20231031115104087.png)
 
@@ -39,9 +39,9 @@ The table includes the following columns:
 
 
 
-## Creating a filter via the **[Configuration > Favorites > Filters]** menu
+## Creating a filter via the **[Configuration > Filters]** menu
 
-In order to create a filter in the  **[Configuration > Favorites > Filters]** menu, you must use the `Add filter`  button.
+In order to create a filter in the  **[Configuration > Filters]** menu, you must use the `Add filter`  button.
 
 ![image-20231031121744904](assets_01-Filters/image-20231031121744904.png)
 
@@ -133,11 +133,11 @@ For a filter created in such a way (regardless of whether it was the first or th
 
 ![image-20231031131326466](assets_01-Filters/image-20231031131326466.png)
 
-Then, fill out the appropriate fields just as in the method explained earlier for entering the filter from the **[Configuration > Favorites > Filters]** menu. 
+Then, fill out the appropriate fields just as in the method explained earlier for entering the filter from the **[Configuration > Filters]** menu. 
 
 ![image-20231031131549593](assets_01-Filters/image-20231031131549593.png)
 
-After clicking on the **Create** button, the filter will appear in the **Favorite Filters** menu, as well as in the list of filters in the table of the **[Configuration > Favorites > Filters]** menu.
+After clicking on the **Create** button, the filter will appear in the **Favorite Filters** menu, as well as in the list of filters in the table of the **[Configuration > Filters]** menu.
 
 ![image-20231031131802390](assets_01-Filters/image-20231031131802390.png)
 
@@ -145,6 +145,6 @@ At the same time, the icon in the task bar will change its status and clicking i
 
 ![image-20231031131944294](assets_01-Filters/image-20231031131944294.png)
 
-Therefore, the Favorite Filter can be removed from the level of the **Search Bar** with the use of this icon, as well as in the **[Configuration > Favorites > Filters]** menu by using the **Delete** button located in the table, in the **Action** column.
+Therefore, the Favorite Filter can be removed from the level of the **Search Bar** with the use of this icon, as well as in the **[Configuration > Filters]** menu by using the **Delete** button located in the table, in the **Action** column.
 
 ![image-20231031132321834](assets_01-Filters/image-20231031132321834.png)

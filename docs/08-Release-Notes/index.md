@@ -5,6 +5,170 @@ slug: /Release-Notes
 
 # Release Notes
 
+## ver. 3.1.0
+
+### New Reporting System
+A major upgrade to the internal reporting engine for more flexibility, better performance, and an improved user experience.
+
+### New REST API
+Upgraded API provides full control over request content and structure, unlocking third-party integrations.
+
+#### Starting with Zabbix and Suricata
+Including ready-to-use scripts and dedicated dashboards.
+
+### Custom Streams via API
+Create and manage custom data streams, including data injection, directly through the REST API.
+
+### User-Defined Metrics
+Define and inject custom metrics into the assetDeviceMetrics index via API.
+
+### Right-click Menu
+New structure for right-click menus with logical grouping, quick filters, and better access to actions.  
+Define custom shortcuts in the context menu for frequently used actions or lookups.
+
+#### Contextual Analysis
+Perform data exploration in just a few clicks — right-click on any value and instantly apply filters to dig into the context.
+
+#### Quick Actions
+Quick Actions are now directly available in context menus, offering greater user control and customization.
+
+### Dashboard Improvements
+- Contextual filtering widgets in detail dashboards
+- Mandatory filter enforcement on selected dashboards
+- Hidden main menu by default to increase workspace
+
+### Pivot Table Widget
+Pivot tables are now available as widgets in Sycope. Dynamically group, filter, and analyze data using a flexible interface.
+
+### User Query History
+Quickly access and reuse recent operations using the new History panel accessible from the search bar.
+
+### Hiding Empty Values
+Automatically hide columns with only null or empty values to improve clarity. Available in tables and advanced views. Fully configurable.
+
+### Lookup Enhancements
+- Create new lookups manually without needing a CSV file.
+- Edit headers, reorder columns, and search values.
+- Append entries or purge entire lookups via API.
+- Use the new CSV editor to manually adjust lookup files or import/export them with ease.
+- LookupSearchIPFunction for advanced IP Lookups
+
+### New Shortcut Type for Dynamic Lookups and NQL Queries
+- Enables querying a user-defined lookup.
+- Runs a custom NQL query defined by the user.
+- Uses the $param placeholder to dynamically insert values from a table or widget.
+- Supports context-aware actions directly within the interface.
+
+### Alert Manager
+Improved alert handling and actions. REST actions now support templated messages and dual serialization.
+
+### Asset Discovery Enhancements
+
+#### Custom Asset Metrics 
+Sycope API now supports saving custom metrics to the Asset Discovery stream, enabling the storage of historical statistics or dynamic inventory data directly linked to your assets. This functionality facilitates seamless integration with third-party systems, such as CMDBs, where time-stamped data is essential. Examples and implementation guides are available in our public repository. 
+
+#### Drilldown for Asset Device View
+A new drilldown action **Asset Device View** enables access to detailed information and statistics for a specific asset based on its IP address. This functionality is available from any dashboard or directly within the Asset Discovery module. This feature provides data related to the asset’s configuration, inventory, and network traffic, allowing for more in-depth analysis of individual endpoints or servers.
+
+### Other Changes
+
+- Optimizations
+    - SubPipe performance tuning.
+    - Optimized NQL queue handling.
+    - Index optimizer simplification.
+
+- Widget Wizard Redesign
+
+- Time Picker Enhancements
+    - Quick-select options like “Last 15 minutes”, “1h”, “1 day”, and a redesigned time range editor.
+
+- Visual Enhancements
+    - Color-coding values in tables.
+
+- Internal Changes
+    - Unified DNS Resolutions.
+    - Refactored validation for config-element operations.
+    - Improved handling of alert-related REST actions and template messages.
+    - Enhanced support for IPv6 in SubnetFTree modules.
+    - Fixes for tenantStatusHistory state transitions.
+
+- User preferences can now control left-click behavior in tables (e.g. add to filter instead of showing record details).
+- Improved system update process.
+- Web URLs displayed in tables are now clickable.
+- New option in table headers and stats sections allows you to add a filter to the global search bar without specifying a value.
+
+
+## ver. 3.0.1
+
+### Refresh many configuration views like Netflow, Support & Diagnostics, General.  
+
+### Application field removed from netflow stream.  
+
+### Fix the problem with netflow forwarder.  
+
+### Fix the problem with data collectors.  
+
+### Improve database query performance.  
+
+### Upgrade many internal libraries.  
+
+### Improve many internal processes.  
+
+### Fix the problem with opening dashboards from the drilldown menu.  
+
+### Other Changes
+
+- Add tooltips for active/inactive status dots.  
+
+- Kpi more than one drilldown.  
+
+- Show all selected tags in form tags info.  
+
+- New table search mode (global search).  
+
+- Auto select profile in Raw-Data.  
+
+- User custom color palettes – also for static values.  
+
+- CSV editors - trimming of entered values.  
+
+- Change assigning exporter groups to roles.  
+
+- Fix drilldown hide conditions.  
+
+- Highlight search texts in tables.  
+
+- Highlight search texts in dropdowns.  
+
+- Fix saving empty proxy username.  
+
+- Added disable cache switch in playground.  
+
+- Enable using saved fields in save fields.  
+
+- Remove empty auto-column from table widgets, make last column auto resizable.  
+
+- Add create collector from widget wizard.  
+
+- Enable create alert from widget.  
+
+- Added edit sub lookup from compond lookup form.  
+
+- Added icons to graph nodes.  
+
+- Added "show other" to limit series section.  
+
+- Added min and max aggregation default value.  
+
+- Import traffic profiles with rules.  
+
+- Added Asset discovery alert type.  
+
+- Limit raw data columns to 60.  
+
+- Update the print styles for the charts.
+
+
 ## ver. 3.0
 
 ### Built-in Content
@@ -90,7 +254,7 @@ Our **Quick Setup** wizard now provides suggestions and auto-completion, where a
 The data can also be imported in CSV format by using prepared templates as a starting point.
 
 
-### Smart calcualtor for easier retention configuration
+### Smart calculator for easier retention configuration
 
 ![Prediction](assets/wn2_prediction.png)
 

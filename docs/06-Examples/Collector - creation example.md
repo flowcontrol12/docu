@@ -1,4 +1,8 @@
-# Example of Collector creation
+---
+slug: /Examples/Collector-Creation-Example
+---
+
+# Collector Creation Example
 
 **Collector** is a type of database (data stream) for which we can configure a process that periodically queries for specific data. The data acquired by the process feeds the **Collector** database. **Collector** data can be used in two ways:
 

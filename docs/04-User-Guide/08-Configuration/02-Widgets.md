@@ -37,6 +37,7 @@ The system includes the following types of visualization:
 15. [Radar](#Radar)
 16. [Threat Trajector](#Threat)
 17. [Heatmap](#Threat)
+18. [Pivot Table](#Pivot)
 
 
 
@@ -707,5 +708,17 @@ Available by clicking ![image-20221202111441566](assets_02-Widgets/image-2022120
 ![image-20230913121522281](assets_02-Widgets/image-20230913121522281.png)
 
 
+
+[Back to the widgets list](#widgets-add)
+
+---
+
+### Pivot Table {#Pivot}
+
+![Pivot Table](assets_02-Widgets/pivot-table.png)
+
+:::info
+Examples of creating a Pivot Table widget can be found [here](/Examples/Pivot-Table)
+:::
 
 [Back to the widgets list](#widgets-add)

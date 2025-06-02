@@ -489,10 +489,10 @@ ___
 
 ___
 
-**SFlow**
+**SFlow & JFlow**
     
-Configuration of the "SFlow" service
-Access to operations regarding management of the SFlow (SFLOW)
+Configuration of the "SFlow & JFlow" service
+Access to operations regarding management of the SFlow & JFlow
 
 ![menu master](assets_02-User%20Roles_/sflow.png)
 

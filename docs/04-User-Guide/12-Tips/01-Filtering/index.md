@@ -1,4 +1,5 @@
 ---
+slug: /User-Guide/Tips/Filtering
 addressMatch: docsKey=simpleFilters
 ---
 

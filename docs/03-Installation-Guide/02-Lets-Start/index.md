@@ -8,9 +8,12 @@ slug: /Installation-Guide/Lets-Start
 After completing all previous steps, if the configuration has been done correctly, you can log into the System using a web browser. 
 
 :::info
-The **Sycope** default password and username for the **www interface**:
-**user:** admin
-**password:** qwerty
+The **Sycope** default password and username for the **www interface**:  
+
+**user:** admin  
+
+**password:** qwerty  
+
 :::
 
 :::danger
@@ -21,7 +24,7 @@ In case of a fresh system after installation, the Sycope application is in an un
 
 ## **Welcome**  
 
-The ***Let's Start*** screen appears upon the first login to the machine and is used to fill in basic system options. The minimum requirement is to fill in the [license information4*2#license). The completion of other information is optional but recommended for smooth system operation.
+The ***Let's Start*** screen appears upon the first login to the machine and is used to fill in basic system options. The minimum requirement is to fill in the [license information](#license). The completion of other information is optional but recommended for smooth system operation.
 
 ![Let's Start](assets/lets-start.png)
 
@@ -195,6 +198,8 @@ More information on this topic can be found at [Multitenancy](/Multitenancy) and
 ## **Set Sycope admin password**
 
 Changing the password for the system administrator.
+
+![Set Sycope admin password](assets/set-pass.png)
 
 ## **Summary**
 

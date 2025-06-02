@@ -10,129 +10,86 @@ This menu **[Settings > Configuration > Mapping > Lookups]** can be used to crea
 
 Lookup is querying an additional database , CSV files, or it‘s own database with the specified value in order to map it or complete the data in a netflow session or alert with additional information. **Lookups** create their own fields in the system
 
+![Mapping - Lookups](assets_01-Lookups/lookups.png)
+
 The **Lookups** created in the system are listed in a table with the following columns:
+- **Name** - unique lookup name
+- **Status** - lookup status Active/Inactive
+- **Type** - Lookup type. There are five predefined types of lookups in the system: Asn, Country, CSV file, CSV file subnet, SNMP Interface
+- **Privacy** - privacy status icon
+- **Description** - lookup description
+- **Shared** - users who shared the object
+- **Tags** - assigned tags
+- **Row Actions** 
+  - Edit - edit Lookup
+  - Duplicate -  creating an editable copy of the selected
+  - Export - export Lookup
+  - Delete - delete Lookup
 
-**Name** - unique lookup name
+Additional columns can be displayed by clicking on the Columns options.
 
-**Status** - lookup status Active/Inactive
+![Additional Columns](assets_01-Lookups/additional-columns.png)
 
-**Type** - Lookup type. There are five predefined types of lookups in the system: Asn, Country, CSV file, CSV file subnet, SNMP Interface
+- **Created By** - the name of the user who created the lookup
+- **Creation Time** - time of creation
+- **Modified By** - the name of the user who last modified the lookup
+- **Modification Time** - last modification time
+- **Uses lookups**
+- **Used in Compound**
 
-**Privacy** - privacy status icon
-
-**Created By** - the name of the user who created the lookup
-
-**Modified By** - the name of the user who last modified the lookup
-
-**Modification Time** - last modification time
-
-**Shared** - users who shared the object
-
-**Tags** - assigned tags
-
-**Action** 
-
-- Edit - edit Lookup
-- Duplicate -  creating an editable copy of the selected
-- Delete - delete Lookup
-
-:::info
+<!-- :::info
 
 The **Action** button does not appear for system preinstalled objects.
 
-:::
+::: -->
 
----
+## Lookup Types
 
-As it was written above, the system implements six predefined types of lookups, which are listed in the table below.
+The Sycope System implements predefined types of lookups, which are listed in the table below.
 
-| Lookup type    | Input keys | Output keys                                                | Description                                                  |
+<!-- | Lookup type    | Input keys | Output keys                                                | Description                                                  |
 | :------------- | :--------- | :--------------------------------------------------------- | ------------------------------------------------------------ |
 | Asn            | ip         | as.number, as.org                                          | A system lookup for mapping IP Addresses to AS Names and AS Numbers. |
 | Compound       |            |                                                            | A lookup that contains data from other lookups.              |
 | Country        | ip         | continent.code, continent.name, country.name, country.code | A system lookup for mapping IP Addresses to Country.         |
 | CSV file       |            |                                                            | A lookup built on the basis of the content of the.csv file.  |
 | SNMP Interface |            |                                                            | A system lookup based on SNMP poller designed for mapping Exporter IP and Exporter Interface to Interface Name, Interface Speed, Interface Description, Device Name, Device Description, Device Location. |
-| Subnet         |            |                                                            | A lookup based on CSV and designed for grouping CIDR.        |
+| Subnet         |            |                                                            | A lookup based on CSV and designed for grouping CIDR.        | -->
 
----
+| Lookup type    | Description                                                  |
+| :------------- | ------------------------------------------------------------ |
+| Compound       | A lookup that contains data from other lookups.              |
+| CSV file       | A lookup built on the basis of the content of the.csv file.  |
+| Subnet         | A lookup based on CSV and designed for grouping CIDR.        |
 
-Pressing the **New lookup** button starts the wizard to create a **Lookup**.
+## Add a Lookup
+
+Pressing the **Add lookup** button starts the wizard to create a **Lookup**.
+
+![alt text](assets_01-Lookups/add-lookup.png)
 
 For example, to create CSV file type **Lookup**, perform the following steps:
 
 - In the first window, specify the type (see table above)
+
+  ![lookup-csv](assets_01-Lookups/lookup-csv.png)
+
 - Enter a name for the Lookup
+
+  ![Lookup Name](assets_01-Lookups/lookup-name.png)
+
 - Data file
+  - After clicking the **`Edit CSV`** button, you can **import** and **export** a CSV file.  
+  
+  It's also possible to edit the file manually. You can add rows and columns and modify its entries.
 
-  - Edit csv button 
-    - File preview
-    - Specify Delimeter, Quote Chart and Escape character (Default values are [comma, quotation mark, quotation mark]
-    - Choose the previously prepared CSV file and load it. Then confirm the operation by pressing the Apply file button.
+  ![alt text](assets_01-Lookups/edit-csv.png)
 
----
-
-**Privacy** - assigning privileges 
-
-- **Private** - accessible to the owner
-- **Public** - visible to all, but You can grant permission:
-  - **DELETE**
-  - **EDIT**
-- Shared - accessible to one or more selected **User roles**. Available privileges are:
-  - **Delete**
-  - **Edit**
-  - **View**
-
----
-
-# Country and asn Lookup
-
-The lookup which can be used to search data in the "GeoLite2-ASN.mmdb" and  "GeoLite2-Country.mmdb" files.
-The lookup enables to search of dates from "BGP Autonomous System" ("GeoLite2-ASN.mmdb") and "Country" ("GeoLite2-Country.mmdb") by ip key.
-
-### Input keys
-
-| Key name | Type      | Description |
-| -------- | --------- | ----------- |
-| IP       | IpAddress |             |
+- **Privacy** - gives options to assigning privileges 
+- **Tags** - manages tags
 
 
-
-### Output keys for Country
-
-| Key name                 | Type            | Description                           |
-| ------------------------ | --------------- | ------------------------------------- |
-| continent                | Continent       | Full Continent object (MaxMind)       |
-| continent.code           | String          | Continent code                        |
-| continent.name           | String          | Continent full name                   |
-| country                  | Country         | Full Country object (MaxMind)         |
-| country.name             | String          | Country full name                     |
-| country.code             | String          | Country code                          |
-| registered.country       | Country         | ull Country object (MaxMind)          |
-| registered.country.code  | String          |                                       |
-| registered.country.name  | String          |                                       |
-| represented.country      | Country         | ull Country object (MaxMind)          |
-| represented.country.name | String          |                                       |
-| represented.country.code | String          |                                       |
-| full.response            | CountryResponse | Full CountryResponse object (MaxMind) |
-
-### Output keys for ASN
-
-| Key name      | Type        | Description                                            |
-| ------------- | ----------- | ------------------------------------------------------ |
-| as.number     | int         | AS Number                                              |
-| as.org        | String      | The name of the organization assigned to the AS number |
-| full.response | AsnResponse | Full CountryResponse object (AsnResponse)              |
-
-
-![country lookup](assets_01-Lookups/country-lookup-sample1.png)
-
-
-***
-
-
-
-# CSV File Lookup
+## CSV File Lookup
 
 The lookup is created with a given csv file as a data source for search. 
 
@@ -183,10 +140,7 @@ Mark a lookup with a specified tag.
 
 
 
-
-***
-
-# Compound Lookup
+## Compound Lookup
 
 Add/Edit a new lookup of type compound, which searches by key(s) executing a sequence of one or many lookups.
 The data of the first key found is returned, so the order of added lookups is important. 
@@ -275,9 +229,84 @@ so, if for example, the lookup key is "192.168.0.23","Green", then we get data f
 
 
 
-***
 
-# SNMP Interface Lookup:
+## Subnet Lookup
+
+Lookup checking whether an IP address belongs to a subnet. The data is loaded from a CSV file where the first column contains the subnet definitions.
+
+### Name
+
+The lookup name.
+
+### Description
+
+The description of the lookup.
+
+### Mode
+
+| Parameter   | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| overlapping | The subnets can be comprised in itself and the result is a list of all matched to the IP. The list can be empty. |
+| proper      | The subnets can't be comprised, and the result is exactly one found subnet or null. |
+
+
+### Input keys
+
+| Key name                   | Type                      | Description                                              |
+| -------------------------- | ------------------------- | -------------------------------------------------------- |
+| the first column of a file | Mixed (IpAddress, String) | Requires to be a valid representation of the IP address. |
+
+### Output keys
+
+The output keys depend on the columns in the input CSV file.
+
+| Key name | Type | Description |
+| -------- | ---- | ----------- |
+
+
+## Country and ASN Lookup
+
+The lookup which can be used to search data in the "GeoLite2-ASN.mmdb" and  "GeoLite2-Country.mmdb" files.
+The lookup enables to search of dates from "BGP Autonomous System" ("GeoLite2-ASN.mmdb") and "Country" ("GeoLite2-Country.mmdb") by ip key.
+
+This product includes GeoLite2 Data created by MaxMind, available from https://www.maxmind.com.
+
+### Input keys
+
+| Key name | Type      | Description |
+| -------- | --------- | ----------- |
+| IP       | IpAddress |             |
+
+
+
+### Output keys for Country
+
+| Key name                 | Type            | Description                           |
+| ------------------------ | --------------- | ------------------------------------- |
+| continent                | Continent       | Full Continent object (MaxMind)       |
+| continent.code           | String          | Continent code                        |
+| continent.name           | String          | Continent full name                   |
+| country                  | Country         | Full Country object (MaxMind)         |
+| country.name             | String          | Country full name                     |
+| country.code             | String          | Country code                          |
+| registered.country       | Country         | ull Country object (MaxMind)          |
+| registered.country.code  | String          |                                       |
+| registered.country.name  | String          |                                       |
+| represented.country      | Country         | ull Country object (MaxMind)          |
+| represented.country.name | String          |                                       |
+| represented.country.code | String          |                                       |
+| full.response            | CountryResponse | Full CountryResponse object (MaxMind) |
+
+### Output keys for ASN
+
+| Key name      | Type        | Description                                            |
+| ------------- | ----------- | ------------------------------------------------------ |
+| as.number     | int         | AS Number                                              |
+| as.org        | String      | The name of the organization assigned to the AS number |
+| full.response | AsnResponse | Full CountryResponse object (AsnResponse)              |
+
+
+## SNMP Interface Lookup
 
 The lookup with a data source from SNMP
 
@@ -318,55 +347,9 @@ The description of the lookup.
 
 
 
+<!-- ## Lookup examples
 
-***
-
-
-
-# Subnet Lookup:
-
-Lookup checking whether an IP address belongs to a subnet. The data is loaded from a CSV file where the first column contains the subnet definitions.
-
-### Name
-
-The lookup name.
-
-## Description
-
-The description of the lookup.
-
-### Mode
-
-| Parameter   | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| overlapping | The subnets can be comprised in itself and the result is a list of all matched to the IP. The list can be empty. |
-| proper      | The subnets can't be comprised, and the result is exactly one found subnet or null. |
-
-
-## Input keys
-
-| Key name                   | Type                      | Description                                              |
-| -------------------------- | ------------------------- | -------------------------------------------------------- |
-| the first column of a file | Mixed (IpAddress, String) | Requires to be a valid representation of the IP address. |
-
-### Output keys
-
-The output keys depend on the columns in the input CSV file.
-
-| Key name | Type | Description |
-| -------- | ---- | ----------- |
-
-
-
-
-
-
-
----
-
-# Lookup examples
-
-## CSV File Lookup example
+### CSV File Lookup example
 
 
 
@@ -419,9 +402,7 @@ The output keys depend on the columns in the input CSV file.
 
 
 
----
-
-## Subnet Lookup example
+### Subnet Lookup Example
 
 ![image-20230328114543952](assets_01-Lookups/image-20230328114543952.png)
 
@@ -429,12 +410,25 @@ The output keys depend on the columns in the input CSV file.
 
 ![image-20230328114558038](assets_01-Lookups/image-20230328114558038.png)
 
----
 
-## SNMP interface Lookup example
+
+### SNMP interface Lookup example
 
 ![image-20230328114625831](assets_01-Lookups/image-20230328114625831.png)
 
 ![image-20230328114638384](assets_01-Lookups/image-20230328114638384.png)
 
-![image-20230328114648390](assets_01-Lookups/image-20230328114648390.png)
+![image-20230328114648390](assets_01-Lookups/image-20230328114648390.png) -->
+
+## Deep Search
+
+Deep Search functionality enables users to efficiently search across all defined Lookups. 
+Accessible via the Lookups section in Settings, Deep Search supports two value formats: **IP** and **Text**.
+
+![Deep Search](assets_01-Lookups/ds_1.png)
+
+When using the **IP** format, system identifies both individual IP addresses and any subnets containing the specified address. The **Text** format allows users to search for all entries containing a specific string. The search results display all relevant Lookup names, along with direct access to their defined parameters, the matched value, and its type.
+
+Additionally, users can utilize the **Edit** function to immediately highlight and focus on the specific Lookup row returned by the search. Clicking the **`Apply File`** button will save all changes.
+
+![Deep Search](assets_01-Lookups/ds_2.png)

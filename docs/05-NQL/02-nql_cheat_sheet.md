@@ -28,14 +28,14 @@
 | **unwind**   | unwind {field} [includeEmpty=true/false]                     | The command unwinds the collection values for the {field} field. A new object is created for each value. The record remains unchanged if the {field} is not a collection. | src stream="netflow" \| unwind exporterIps                   |
 | **fields**   | fields [maxFields={number}] [maxTuples={number} ] [topCount={number} ] [maxDistinctValuesPerField={number} ] | The command is used to display information about fields. It counts fields, unique values and collects the most common values. | src stream="netflow" \| fields maxFields=10                  |
 
-### Agregations
+### Aggregations
 
 | Command name  | Syntax                                                       | Description                                                  | Example                                                      |
 | ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **aggr**      | aggr {field}={aggregation_function}(...) [,{fieldN}={aggregation_functionN},...] [by {grouping_field}[, {grouping_field}, ...]] [unwind=true/false] [maxBuckets={number}] | Aggregates data using an aggregation function, producing a single result for a collection of objects or its subset. Multiple aggregation functions can be used with the `aggr` command on several fields, but regular functions cannot be combined. | src stream="netflow" \| aggr maxTimeStamp = max(timestamp) by clientIp unwind=true |
 | **rangeAggr** | rangeAggr {field}={aggregation_function}({field}) [on {field}] [by {field}[, {field}]] ranges="1-5,5-10" [bucketAlias={string}] [unwind=true/false] | Aggregates data for specified subsets defined by a range of values. | src stream="netflow" \| rangeAggr valuesCount=count(clientBytes), maxBalance=max(clientBytes) on clientBytes by clientIp ranges="0-5000,8000-10000" |
 | **splitAggr** | splitAggr {field}={aggregation_function}({streamField}) [, ... {fieldN}={aggregation_functionN}({streamFieldN})] ({subAggr1}), ({subAggr2}), [, ... ({subAggrN})] [unwind=true/false] | Performs multiple aggregations, where each subsequent one is performed in the context of the previous one. | src stream="netflow" \| splitAggr sumBytes0=sum(clientBytes) (aggr by clientIp unwind=true),(aggr by serverIp unwind=true)) |
-| **timeAggr**  | timeAggr {field}={aggregation_function}({field}) [on {field}] [by {field}[, {field}]] [interval={timespan}] [dir={dir}] [maxBuckets={number}] [bucketAlias={string}] [unwind=true/false] | An operator that aggregates data using an aggregate(accumulator) function. <br/>Returns results for specific subsets of data defined as time periods. <br/>It is primarily used to create graphs where one of the axes corresponds to time. | src stream="netflow" \| timeAggr avgClientBytes=avg(clientBytes), cntClientBytes=count(clientBytes) on timestamp interval="1d" \| set dateTime=tsToStr(_bucket) \| sort _bucket |
+| **timeAggr**  | timeAggr {field}={aggregation_function}({field}) [on {field}] [by {field}[, {field}]] [interval={timespan}] [dir={dir}] [maxBuckets={number}] [bucketAlias={string}] [unwind=true/false] | An operator that aggregates data using an aggregate(accumulator) function. <br/>Returns results for specific subsets of data defined as time periods. <br/>It is primarily used to create graphs where one of the axes corresponds to time. | src stream="netflow" \| timeAggr avgClientBytes=avg(clientBytes), cntClientBytes=count(clientBytes) on timestamp interval="1d" \| set dateTime=timestampToStr(_bucket) \| sort _bucket |
 
 ---
 
@@ -43,27 +43,29 @@
 
 ### Dates and times functions
 
-| Function name                                                | Description                                                  | Example                                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **now**() : long                                             | Creates a timestamp in GMT+00 time zone from the time of the call | records {"n":"0"} \|  set funResult = now() \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **timestamp**(int yy, int mm, int dd, int hh24, int mi, int sec [, offset={int}]) : long | Calculates the timestamp for the given values of year, month, day, hour, minute and second. | records {"n":"0"} \|  set funResult = timestamp(1995,10,13,12,15,20) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **addMonths**(long ts, int  n) : long                        | Adds n months to the ts timestamp.                           | records {"n":"0"} \|  set funResult = addMonths(now(),1) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **addYears**(long ts, int n)  : long                         | Adds n years to the ts timestamp.                            | records {"n":"0"} \|  set funResult = addYears(now(),1) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **addDays**(long ts, int n)  : long                          | Adds n days to the ts timestamp.                             | records {"n":"0"} \|  set funResult = addDays(now(),1) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **addHours**(long ts, int n)  : long                         | Adds n hours to the ts timestamp.                            | records {"n":"0"} \|  set funResult = addHours(now(),1) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **addMinutes**(long arg1, int arg2) : long                   | Adds n minutes to the ts timestamp.                          | records {"n":"0"} \|  set funResult = addMinutes(now(),1) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **addSeconds**(long arg1, int arg2) : long                   | Adds n seconds to the ts timestamp.                          | records {"n":"0"} \|  set funResult = addSeconds(now(),1) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **addMillis**(long arg1, int  arg2) : long                   | Adds n milliseconds to the ts timestamp.                     | records {"n":"0"} \|  set funResult = addMillis(now(),1000) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **getYear**(long arg1) : int                                 | Returns the year from the given ts timestamp.                | records {"n":"0"} \|  set funResult = getYear(now())  \| project +funResult \| limit 1 |
-| **getMonth**(long arg1) :  int                               | Returns the month from the given ts timestamp.               | records {"n":"0"} \|  set funResult = getMonth(now())  \| project +funResult \| limit 1 |
-| **getDay**(long arg1) : int                                  | Returns the number of the day of the month from the given ts timestamp. | records {"n":"0"} \|  set funResult = getDay(now())  \| project +funResult \| limit 1 |
-| **getDayOfWeek**(long timestamp) : int                       | Returns the number of the day of the week from the given ts timestamp. | records {"n":"0"} \|  set funResult = getDayOfWeek(now())  \| project +funResult \| limit 1 |
-| **getHour**(long timestamp)  : int                           | Returns the hour from the given ts timestamp.                | records {"n":"0"} \|  set funResult = getHour(now())  \| project +funResult \| limit 1 |
-| **getMinute**(long timestamp) : int                          | Returns the minute from the given ts timestamp.              | records {"n":"0"} \|  set funResult = getMinute(now())  \| project +funResult \| limit 1 |
-| **getSecond**(long timestamp) : int                          | Returns the second from the given ts timestamp.              | records {"n":"0"} \|  set funResult = getSecond(now())  \| project +funResult \| limit 1 |
-| **tsToStr**(long arg [, format={string}] [, zone={string}]) : string | Returns the ts timestamp as a formatted date.                | records {"n":"0"} \|  set funResult = now() \| set funResultStr=tsToStr(funResult) \| project +funResultStr \| limit 1 |
-| **tsParse**(string arg [, format={string}] [, zone={string}]) : long | For the given arg (formatted date and time), returns the timestamp value. | records {"n":"0"} \|  set funResult = tsParse("2021-06-09 15:12:10", format="yyyy-MM-dd HH:mm:ss" zone="Poland")  \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
-| **tsOffset**(long ts, int n)  : long                         | Returns the ts timestamp offset by n.                        | records {"n":"0"} \|  set funResult = tsOffset(now(),10) \| set funResultStr=tsToStr(funResult) \| project +funResult, +funResultStr \| limit 1 |
+| Function name                                                                             | Description                                                                                 | Example                                                                                           |
+|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **now**() : long                                                                          | Creates a timestamp in GMT+00 time zone from the time of the call                           | records {} \| set result = now() \| set resultStr=timestampToStr(result)                          |
+| **timestamp**(int yy, int mm, int dd, int hh24, int mi, int sec [, zone={string}]) : long | Calculates the timestamp for the given values of year, month, day, hour, minute and second. | records {} \| set result = timestamp(1995,10,13,12,15,20) \| set resultStr=timestampToStr(result) |
+| **addMonths**(long ts, int  n) : long                                                     | Adds n months to the ts timestamp.                                                          | records {} \| set result = addMonths(now(),1) \| set resultStr=timestampToStr(result)             |
+| **addYears**(long ts, int n)  : long                                                      | Adds n years to the ts timestamp.                                                           | records {} \| set result = addYears(now(),1) \| set resultStr=timestampToStr(result)              |
+| **addDays**(long ts, int n)  : long                                                       | Adds n days to the ts timestamp.                                                            | records {} \| set result = addDays(now(),1) \| set resultStr=timestampToStr(result)               |
+| **addHours**(long ts, int n)  : long                                                      | Adds n hours to the ts timestamp.                                                           | records {} \| set result = addHours(now(),1) \| set resultStr=timestampToStr(result)              |
+| **addMinutes**(long ts, int n) : long                                                     | Adds n minutes to the ts timestamp.                                                         | records {} \| set result = addMinutes(now(),1) \| set resultStr=timestampToStr(result)            |
+| **addSeconds**(long ts, int n) : long                                                     | Adds n seconds to the ts timestamp.                                                         | records {} \| set result = addSeconds(now(),1) \| set resultStr=timestampToStr(result)            |
+| **addMillis**(long ts, int  n) : long                                                     | Adds n milliseconds to the ts timestamp.                                                    | records {} \| set result = addMillis(now(),1000) \| set resultStr=timestampToStr(result)          |
+| **year**(long ts [, zone={string}]) : int                                                 | Returns the year from the given ts timestamp.                                               | records {} \| set result = getYear(now())                                                         |
+| **month**(long ts [, zone={string}]) :  int                                               | Returns the month from the given ts timestamp.                                              | records {} \| set result = getMonth(now())                                                        |
+| **day**(long ts [, zone={string}]) : int                                                  | Returns the the day of the month from the given ts timestamp.                               | records {} \| set result = getDay(now())                                                          |
+| **dayOfWeek**(long ts [, zone={string}]) : int                                            | Returns the the day of the week from the given ts timestamp.                                | records {} \| set result = getDayOfWeek(now())                                                    |
+| **hour**(long ts [, zone={string}])  : int                                                | Returns the hour from the given ts timestamp.                                               | records {} \| set result = getHour(now())                                                         |
+| **minute**(long ts [, zone={string}]) : int                                               | Returns the minute from the given ts timestamp.                                             | records {} \| set result = getMinute(now())                                                       |
+| **second**(long ts [, zone={string}]) : int                                               | Returns the second from the given ts timestamp.                                             | records {} \| set result = getSecond(now())                                                       |
+| **timestampToStr**(long arg [, format={string}] [, zone={string}]) : string               | Returns the ts timestamp as a formatted date.                                               | records {} \| set result = now() \| set resultStr=timestampToStr(result)                          |
+| **isDateTimeBetween**(long ts, string begin, string end [, zone={string}])  : boolean     | Returns true if timestamp is between begin and end.                                         | records {} \| set result = isDatetimeBetween(now(), "2024-11-10 08:00:00", "2024-12-30 09:10:00") |
+| **isTimeBetween**(long ts, string begin, string end [, zone={string}])  : boolean         | Returns true if timestamp is between begin and end.                                         | records {} \| set result = isDatetimeBetween(now(), "08:00:00", "09:10:00")                       |
+| **isWeekendDay**(long ts [, zone={string}])  : boolean                                    | Returns true if timestamp belongs to weekend day.                                           | records {} \| set result = isWeekendDay(now(), "08:00:00", "09:10:00")                            |
+| **isWorkingDay**(long ts [, zone={string}])  : boolean                                    | Returns true if timestamp belongs to working day.                                           | records {} \| set result = isWorkingDay(now(), "08:00:00", "09:10:00")                            |
 
 ---
 
@@ -101,7 +103,7 @@
 
 ---
 
-### String fuctions
+### String functions
 
 | Function name                                                | Description                                                  | Example                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -123,7 +125,7 @@
 
 ---
 
-### Aggregator (Acumulator) functions
+### Aggregator (Accumulator) functions
 
 | Function name                        | Description                                                                       | Example                                                      |
 | ------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -139,7 +141,7 @@
 | **prc**(field_name [, percentile={double}]) | The percentile/100  order quantile for each unique key defined by the `BY` clause of the `AGGR`  command group. | src stream="netflow" \| aggr clientBytesPrc = prc(clientBytes) by clientIp unwind=true |
 | **prc95**(field_name)                       | The quantile of 95/100  for each unique key defined by the `BY` clause of the `AGGR` command group.             | src stream="netflow" \| aggr clientBytesPrc = prc95(clientBytes) by clientIp unwind=true |
 
-**Note**: The aggregation functions cannot be combined with ordinary functions in aggregations. For example, the command `src stream ="netflowByCountryAggr" | aggr mintimestamp=tsToStr(min(timestamp))`, in which you want to retrieve the minimum (min) value of the timestamp field and immediately convert the result to text form (`tsToStr`), will not work. Instead, you can use the set command: `src stream ="netflowByCountryAggr" | aggr mintimestamp=min(timestamp) | set mintimestampStr=tsToStr(mintimestamp)`.
+**Note**: The aggregation functions cannot be combined with ordinary functions in aggregations. For example, the command `src stream ="netflowByCountryAggr" | aggr mintimestamp=timestampToStr(min(timestamp))`, in which you want to retrieve the minimum (min) value of the timestamp field and immediately convert the result to text form (`timestampToStr`), will not work. Instead, you can use the set command: `src stream ="netflowByCountryAggr" | aggr mintimestamp=min(timestamp) | set mintimestampStr=timestampToStr(mintimestamp)`.
 
 ---
 
@@ -209,52 +211,26 @@
 
 | Logical operators | Example |
 | ------------------ | -------- |
-| **AND** or **and** |src stream="alerts" \|where $eq(alertSeverity,"Medium") AND alertFlagThresholdLevel="Crirical"|
-| **OR** or **or** |src stream="alerts" \|where eq(alertSeverity,"Medium") OR eq(alertSeverity,"Hight")|
+| **AND** or **and** |src stream="alerts" \| where $eq(alertSeverity,"Medium") AND alertFlagThresholdLevel="Critical"|
+| **OR** or **or** |src stream="alerts" \| where eq(alertSeverity,"Medium") OR eq(alertSeverity,"High")|
 | **NOT** or **not**         | src stream="alerts" \| where not alertSeverity="Medium" |
 
 | Comparison operators or function   | Description                          | Example          |
 | ---------------------------------- | -------------------------------------| ----------------- |
-| **=** or **eq** |(Equal) Checks if two values are equal. Returns true if they are and false otherwise.|src stream="alerts" \|where eq(alertSeverity,"Medium")|
+| **=** or **eq** |(Equal) Checks if two values are equal. Returns true if they are and false otherwise.|src stream="alerts" \| where eq(alertSeverity,"Medium")|
 | **!=** or **neq**                 | (Not Equal) Checks if two values are not equal. Returns true if they are not equal and false otherwise. | src stream="alerts" \| where alertSeverity != "Medium" |
 | **>** or **gt**                   | (Greater Than) Checks if the first value is greater than the second value. Returns true if it is and false otherwise. | src stream="alerts" \| where _avgClientBitsPerSecond > 9000 |
-| **>=** or **gte**  |(Greater Than or Equal To) Checks if the first value is greater than or equal to the second value. Returns true if it is and false otherwise.|src stream="alerts" \|where gte(_avgClientBitsPerSecond,1000)|
+| **>=** or **gte**  |(Greater Than or Equal To) Checks if the first value is greater than or equal to the second value. Returns true if it is and false otherwise.|src stream="alerts" \| where gte(_avgClientBitsPerSecond,1000)|
 | **<** or **lt**                   | (Less Than) Checks if the first value is lower than the second value. Returns true if it is and false otherwise. | src stream="alerts" \| where _avgClientBitsPerSecond < 1000 |
 | **>=** or **lte**                 | (Less Than or Equal To) Checks if the first value is lower than or equal to the second value. Returns true if it is and false otherwise. | src stream="alerts" \| where _avgClientBitsPerSecond >= 1000 |
-| **contains**(arg1,arg2)  |Returns true if `arg1` contains the string `arg2`.|src stream="alerts" \|where contains(alertFlagThresholdLevel, "Critic")|
-| **not_contains**(arg1,arg2) |Returns true if `arg1` does not contain the string `arg2`.|rc stream="alerts" \|where not_contains(alertName, "Test")|
-| **startsWith**(arg1,arg2) |Returns true if `arg1` starts with the `arg2` string.|src stream="alerts" \|where startsWith(alertRuleType, "Vis")|
-| **endsWith**(arg1,arg2) |Returns true if `arg1` ends with the `arg2` string.|src stream="alerts" \|where endsWith(alertRuleType, "ity")|
-| **isEmpty**(arg1) |Returns true if `arg1` is empty.|src stream="alerts" \|where isEmpty(alertRuleType)|
-| **isNotEmpty**(arg1) |Returns true if `arg1` is not empty.|src stream="alerts" \|where $isNotEmpty(alertRuleType)|
-| **in**(arg1,arg2) |Returns true if `arg1` is in the `arg2` collection.| src stream="alerts" \| where $in(alertFlagThresholdLevel, ["Crirical", "Minor"]) |
-| **notIn**(arg1,arg2)  |Returns true if `arg1` is not in the `arg2` collection.|src stream="alerts" \|where notIn(alertFlagThresholdLevel, ["Crirical", "Minor"])|
+| **contains**(arg1,arg2)  |Returns true if `arg1` contains the string `arg2`.|src stream="alerts" \| where contains(alertFlagThresholdLevel, "Critic")|
+| **not_contains**(arg1,arg2) |Returns true if `arg1` does not contain the string `arg2`.|src stream="alerts" \| where not_contains(alertName, "Test")|
+| **startsWith**(arg1,arg2) |Returns true if `arg1` starts with the `arg2` string.|src stream="alerts" \| where startsWith(alertRuleType, "Vis")|
+| **endsWith**(arg1,arg2) |Returns true if `arg1` ends with the `arg2` string.|src stream="alerts" \| where endsWith(alertRuleType, "ity")|
+| **isEmpty**(arg1) |Returns true if `arg1` is empty.|src stream="alerts" \| where isEmpty(alertRuleType)|
+| **isNotEmpty**(arg1) |Returns true if `arg1` is not empty.|src stream="alerts" \| where $isNotEmpty(alertRuleType)|
+| **in**(arg1,arg2) |Returns true if `arg1` is in the `arg2` collection.| src stream="alerts" \| where $in(alertFlagThresholdLevel, ["Critical", "Minor"]) |
+| **notIn**(arg1,arg2)  |Returns true if `arg1` is not in the `arg2` collection.|src stream="alerts" \| where notIn(alertFlagThresholdLevel, ["Critical", "Minor"])|
 | **~=** or **like**(arg1,arg2) | Returns true if `arg1` matches the `arg2` pattern.| src stream="alerts" \| where alertFlagThresholdLevel~="Critic*" |
 | **=/regexp/** or **regex**(arg1,arg2)  | Returns true if `arg1` contains the `arg2` regular expression pattern.|src stream="alerts" \| where alertFlagThresholdLevel=/Critic.*/ |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

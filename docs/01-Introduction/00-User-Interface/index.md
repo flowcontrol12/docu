@@ -26,9 +26,23 @@ The next element is [**`Configuration`**](/User-Guide/Configuration), where we f
 
 The **`Search Bar`** is located at the top of the window.  
 It includes **Stream** selection, a **filtering** information window with options to add and modify filters. Remember that the set filters are saved and remain active as you navigate through the system.  
-Further to the right is the **Time Bar**, where we set the desired time range for a presented data, whether it's 15 minutes, 24 hours, or any custom choice.
 
 ![Search Bar](assets/search-bar.png)
+
+Further to the right is the **Time Bar**, where we set the desired time range for a presented data. When hovered over, quick time range selection options appear — you can instantly set the range to the last 15 minutes, 1 hour, 1 day or 7 days. Clicking on the [time range options](/User-Guide/Miscellaneous/User-Interface#time-ranges) opens the detailed time settings.
+
+![Time Picker](assets/time-picker.png)
+
+### History
+
+A special icon located in the Search Bar provides access to the **History** of operations performed in the Sycope System.
+
+![History](assets/History-Icon.png)
+
+When clicked, a window opens displaying a list of recently performed operations.  
+From here, you can copy a previously used query (available in the **Query** column) or jump directly to the corresponding view by clicking the shortcut icon in the **Go to** column.
+
+![History](assets/History-Window.png)
 
 
 ## Settings

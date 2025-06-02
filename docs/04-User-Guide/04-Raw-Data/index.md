@@ -59,6 +59,10 @@ After selecting a particular row by clicking on the row, a menu with **Advanced 
 
 ![Advanced](assets/Advanced.png)
 
+Here, just like in the table, we can use the **`Hide empty values`** option to hide variables with empty values and improve the clarity of the visible data.
+
+![Hide Empty Values](assets/hide-empty-values-adv.png)
+
 When you select more rows in the table, the corresponding tabs will appear in the **Advanced View** menu.
 
 ![Advanced-Rows](assets/Advanced-Rows.png)
@@ -103,6 +107,9 @@ The following actions are available here:
 - **Customize**
   - **Show raw field names**
   - **Sorting on server side**
+  - **Hide empty values**  
+  When enabled, this feature improves table clarity by automatically hiding columns in which all rows contain empty values.
+  ![Hide Empty Values](assets/hide-empty-values.png)
 
 
 ## System Data streams
@@ -324,7 +331,7 @@ Netflow 1 min aggregated by HTTP user agent flows stream.
 
 #### netflow
 
-Deduplicated Netflow and Sflow records stream.
+Deduplicated Netflow and SFlow & JFlow records stream.
 
 | Display Name                 | NQL Name                         | Description                                              |
 | ---------------------------- | -------------------------------- | -------------------------------------------------------- |
@@ -930,3 +937,6 @@ Test index account.
 | lName        | lName     |             |
 | Time         | timestamp |             |
 
+
+---
+\* This product includes GeoLite2 Data created by MaxMind, available from https://www.maxmind.com.
