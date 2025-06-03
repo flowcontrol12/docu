@@ -13,18 +13,23 @@ A major upgrade to the internal reporting engine for more flexibility, better pe
 ### New REST API
 Upgraded API provides full control over request content and structure, unlocking third-party integrations.
 
+![New REST API](assets/01_02_entry.png)
+
 #### Starting with Zabbix and Suricata
-Including ready-to-use scripts and dedicated dashboards.
+Including dedicated dashboards and ready-to-use scripts, available through [our public repository](https://github.com/SycopeSolutions/).
+
+![Zabbix and Suricata](assets/01_03_entry.png)
 
 ### Custom Streams via API
 Create and manage custom data streams, including data injection, directly through the REST API.
 
-### User-Defined Metrics
-Define and inject custom metrics into the assetDeviceMetrics index via API.
+![Custom Streams](assets/01_01_entry.png)
 
 ### Right-click Menu
 New structure for right-click menus with logical grouping, quick filters, and better access to actions.  
 Define custom shortcuts in the context menu for frequently used actions or lookups.
+
+![Context Menu](assets/02_entry.png)
 
 #### Contextual Analysis
 Perform data exploration in just a few clicks — right-click on any value and instantly apply filters to dig into the context.
@@ -40,11 +45,17 @@ Quick Actions are now directly available in context menus, offering greater user
 ### Pivot Table Widget
 Pivot tables are now available as widgets in Sycope. Dynamically group, filter, and analyze data using a flexible interface.
 
+![Pivot Table](assets/03_entry.png)
+
 ### User Query History
 Quickly access and reuse recent operations using the new History panel accessible from the search bar.
 
+![History](assets/04_entry.png)
+
 ### Hiding Empty Values
 Automatically hide columns with only null or empty values to improve clarity. Available in tables and advanced views. Fully configurable.
+
+![Hide Empty](assets/05_entry.png)
 
 ### Lookup Enhancements
 - Create new lookups manually without needing a CSV file.
@@ -52,6 +63,14 @@ Automatically hide columns with only null or empty values to improve clarity. Av
 - Append entries or purge entire lookups via API.
 - Use the new CSV editor to manually adjust lookup files or import/export them with ease.
 - LookupSearchIPFunction for advanced IP Lookups
+
+![Lookup](assets/10_entry.png)
+
+#### Deep Search
+
+The new Deep Search functionality enables users to efficiently search across all defined Lookups.
+
+![Deep Search](assets/09_entry.png)
 
 ### New Shortcut Type for Dynamic Lookups and NQL Queries
 - Enables querying a user-defined lookup.
@@ -61,6 +80,12 @@ Automatically hide columns with only null or empty values to improve clarity. Av
 
 ### Alert Manager
 Improved alert handling and actions. REST actions now support templated messages and dual serialization.
+
+![Alert Manager](assets/07_entry.png)
+
+The CTI module has been upgraded with new and refreshed threat intelligence feeds, powered by a redesigned mechanism that ensures richer source diversity and higher reliability.  
+
+![alt text](assets/06_entry.png)
 
 ### Asset Discovery Enhancements
 
