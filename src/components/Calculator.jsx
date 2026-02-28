@@ -99,7 +99,7 @@ export default function Calculator() {
     if (rowData.stream === 'Aggregations (performance)' && !isPerformance) {
       return (
         <div className="p-inputgroup">
-          <InputNumber value={0} disabled />
+          <InputNumber min={0} value={0} disabled />
           <span className="p-inputgroup-addon">{rowData.frame}</span>
         </div>
       )
@@ -107,6 +107,7 @@ export default function Calculator() {
     return (
       <div className="p-inputgroup">
         <InputNumber
+          min={0}
           value={rowData.retention}
           onValueChange={(e) => {
             setValues(values.map(value => {
@@ -173,35 +174,35 @@ export default function Calculator() {
           <div className="p-field p-grid">
             <label style={{ width }} className="p-col-fixed">Single Netflow size</label>
             <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Single Netflow Size" value={netflow} onValueChange={(e) => setNetflow(e.value)} />
+              <InputNumber min={0} placeholder="Single Netflow Size" value={netflow} onValueChange={(e) => setNetflow(e.value)} />
               <span className="p-inputgroup-addon">Bytes</span>
             </div>
           </div>
           <div className="p-field p-grid">
             <label style={{ width }} className="p-col-fixed">Single Alert size</label>
             <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Single Alert Size" value={alert} onValueChange={(e) => setAlert(e.value)} />
+              <InputNumber min={0} placeholder="Single Alert Size" value={alert} onValueChange={(e) => setAlert(e.value)} />
               <span className="p-inputgroup-addon">Bytes</span>
             </div>
           </div>
           <div className="p-field p-grid">
             <label style={{ width }} className="p-col-fixed">Daily Alert number</label>
             <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Daily Alert Number" value={daily} onValueChange={(e) => setDaily(e.value)} />
+              <InputNumber min={0} placeholder="Daily Alert Number" value={daily} onValueChange={(e) => setDaily(e.value)} />
               <span className="p-inputgroup-addon">Per minute</span>
             </div>
           </div>
           <div className="p-field p-grid">
             <label style={{ width }} className="p-col-fixed">Deduplication level</label>
             <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Deduplication level" value={deduplication} onValueChange={(e) => setDeduplication(e.value)} />
+              <InputNumber min={0} placeholder="Deduplication level" value={deduplication} onValueChange={(e) => setDeduplication(e.value)} />
               <span className="p-inputgroup-addon"></span>
             </div>
           </div>
           <div className="p-field p-grid">
             <label style={{ width }} className="p-col-fixed">Visibility Aggregations values’ uniqueness</label>
             <div className="p-col p-inputgroup">
-              <InputNumber placeholder="Visibility Aggregations values’ uniqueness" value={aggreagation} onValueChange={(e) => setAggregation(e.value)} />
+              <InputNumber min={0} placeholder="Visibility Aggregations values’ uniqueness" value={aggreagation} onValueChange={(e) => setAggregation(e.value)} />
               <span className="p-inputgroup-addon"></span>
             </div>
           </div>
