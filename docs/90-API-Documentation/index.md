@@ -265,7 +265,7 @@ request.json()["data"]
 #### Modify an Index
 
 You can modify an index by adding new fields or updating existing ones.  
-However, updates are limited to the **description** and **displayName** properties — the **name**, **sortable**, and **type** of a field cannot be changed.  
+However, updates are limited to the **description** and **displayName** properties - the **name**, **sortable**, and **type** of a field cannot be changed.  
 Additionally, it's not possible to remove fields that already exist in the index.
 
 In the example below, we add a new field named **test_additional_column**.  
@@ -360,7 +360,7 @@ To do this, just create a payload with the data you want to send and submit it.
 Use the example as a reference.
 
 :::info
-Remember that data can only be injected into **custom indexes** — the system will not allow you to add data to built-in indexes, such as **netflow**.
+Remember that data can only be injected into **custom indexes** - the system will not allow you to add data to built-in indexes, such as **netflow**.
 :::
 
 ```python
@@ -425,7 +425,7 @@ The data was sent successfully, and we can now view it in Sycope:
 
 #### Delete an Index
 
-Deleting an index is quite straightforward — all you need is to send the appropriate request with an index ID.
+Deleting an index is quite straightforward - all you need is to send the appropriate request with an index ID.
 
 ```python
 INDEX_ID = "65ac6a43-8173bfdf-d1815c2c"

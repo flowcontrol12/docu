@@ -95,7 +95,9 @@ When the **REST Client** is selected as the External destination, a window with 
 - **Headers** - HTTP header parameters sending in the request to the server.
 - **Authorization** - Authorization type when accessing the server. Options to choose from: no authorization (noAuth), authorization by user and password (basicAuth) and authorization by token (bearerToken).
 - **Options** - SSL protocol use on/off switch
-- **Custom Payload** - feature for advanced users, that allows to create custom REST API payloads using predefined placeholders for data from the Sycope system
+- **Custom Payload** - feature for advanced users, that allows to create custom REST API payloads using predefined placeholders for data from the Sycope system 
+    - All common alert fields are available in the Placeholders menu
+    - All additional fields can be referenced using the syntax `[(${result.FIELDNAME)]`, for example `[(${result.clientIp)]`
 
 ![Custom Payload](assets_05-External%20Destinations/custom-payload.png)
 
@@ -150,30 +152,33 @@ For the **SNMP Trap Receiver** you need to fill the following form:
 
 ## Syslog
 
-The communication with an external Syslog-ng server. This server is one of the system tools and is used for registering of events (alerts) coming mainly from the system sources, network tools, as well as the application via the TCP or UDP network protocols. In this case, the registered alerts will be sourced from the Sycope.
+The communication with an external Syslog-ng server. This server is one of the system tools and is used for registering of events (alerts) coming mainly from the system sources, network tools, as well as the application via the TCP or UDP network protocols. In this case, the registered alerts will be sourced from the Sycope. 
 
-
-For the **Syslog** you need to fill the following form:
+For the Syslog you need to fill the following form: 
 
 ![Syslog](assets_05-External%20Destinations/Syslog.png)
 
-- **Type**  - "Syslog"
+- **Type** - "Syslog"
 - **Name** - External destination connection name
 - **Active** - communication status, active/inactive
-- **Destinations**
-  - Host - Syslog server IP address
-  - Port - Syslog server port (standard 514)
-  - Protocol - the protocol with which the notifications will be sent.
-    - TCP
-    - UDP
+- **Encoder** - Message format encoder selection. Available options: 
+    - **CEF** - Common Event Format, industry-standard log format for security events
+    - **CEFLegacy** - Legacy Common Event Format version for compatibility with older SIEM systems
+- **Destinations** 
+    - **Host** - Syslog server IP address
+    - **Port** - Syslog server port (standard 514)
+    - **Protocol** - the protocol with which the notifications will be sent. 
+        - TCP
+        - UDP
 - **Privacy** - assigning privileges 
-  - Private - accessible to the owner
-  - Public - accessible to all. 
-    - Public permissions
-      - Delete
-      - Edit     
-  - Shared - accessible to one or more selected roles. The available privileges are:
+    - **Private** - accessible to the owner
+    - **Public** - accessible to all. 
+        - Public permissions 
+            - Delete
+            - Edit
+- **Shared** - accessible to one or more selected roles. The available privileges are: 
     - Delete
-    - Edit    
+    - Edit
     - View
+- **Tags** - adding tags
 

@@ -5,6 +5,209 @@ slug: /Release-Notes
 
 # Release Notes
 
+## ver. 3.2.0
+
+### External Destinations / REST Client
+
+![REST Client](assets/320_01_entry.png)
+
+- Ad-hoc invocation from the context menu with an `alertIds` field for filtering displayed actions
+- Group division in the context menu - ability to create query groups for organizing endpoints
+- Automatic URI splitting into parts (protocol, host, port, path) when pasting into the form
+- **RestAudit** - new stream with REST Client request and response history
+- Custom metrics - adding custom meta-sets and metrics to the stream via API
+- Fixes: authentication, parameter encoding, double serialization
+
+### Asset Discovery
+
+![Asset Discovery](assets/320_05_entry.png)
+
+- Collecting information about IP addresses in the network based on NetFlow
+- Cataloging IP addresses, assigning to groups, resolving DNS names
+- Dependency views between IPs
+- Information: private/public IPs, countries, groups
+- Integration with lookups used in NetFlow
+- Asset Discovery streams:
+  - **Assets** - IP addresses with metadata
+  - **Client-server connections** - aggregated flows (client → server, protocol, port)
+- Ability to define security policy rules (e.g., "DMZ should not communicate with network X")
+- **Asset Metrics** - IP visibility metrics in a given time block, collected every 10 minutes
+- Ability to add custom metrics via API (creating a meta-set, data with a custom timestamp)
+
+### Alerts
+
+![Alerts](assets/320_04_entry.png)
+
+- **Historical Alerts** - running alerts retroactively, checking how an alert would have behaved in the past
+- Timepicker in alert preview - selecting a time range for the preview
+
+### Custom Streams
+
+- Aggregation by fields from lookups (not just simple fields as before)
+- Example: aggregation by country code from a lookup instead of by IP
+- Preparation for future features: dynamic updating of lookups from external sources, aggregates by application name
+
+### Permissions and Authorization
+
+- Removal of the "Public" permission - by default, new objects are shared with the Users group with view permission
+- Basic auth + service accounts - enabled for all users (targeted for more extensive configuration in the future)
+- **SSO** - new authorization with JWT support (for internal services integration)
+
+### Integrations
+
+![GUI Improvements](assets/320_03_entry.png)
+
+![Third-Party Integrations](assets/320_06_entry.png)
+
+![Integrations](assets/320_02_entry.png)
+
+- OAuth2 for emails - new mail settings form
+- Ability to configure multiple FTP servers
+- Ability to configure SFTP servers + backup to SFTP
+- **Reports** - actions in schedules:
+  - Send by email
+  - Upload to FTP server
+  - Upload to SFTP server
+
+### Probe Management
+
+- Probe configuration from the Sycope GUI (previously unavailable)
+- nprobe form - all-in-one configuration for the built-in nprobe probe
+
+### Interactive Dashboards
+
+#### Dashboard - General
+
+- Dashboard background - ability to add graphics
+- Filter enforcement - pulsing borders when data is loading, a screen with a filter suggestion when no data is available
+- New grid type - keep-aspect
+- Changed object management - top bar, editing/moving frames
+- Responsiveness - refined resolution changes, panels scale across different screens
+
+#### Spot (new object type)
+
+- Layer overlaid on all views
+- Binding by link to a widget or frame
+- Icon with upload capability
+- Color and size change based on metric value
+- Pulsing when thresholds are exceeded
+
+#### Frames
+
+- Element grouping
+- Ability to overlay layers
+
+### Widgets
+
+#### General Changes
+
+- Hiding badges (source, time range) - appear on hover
+- Rich tooltips
+- Enforced filtering at the widget definition level
+- Changing widget type during editing
+- Switches on charts - one chart with the ability to switch between metrics
+
+#### Rich Text
+
+- Font selection
+- Flexible font size adjustment (with px precision)
+- Embedding external objects: graphics, iframes, external placeholders (JSON/XML)
+
+#### Table
+
+- Table header coloring by series
+
+#### Graph
+
+- Label coloring by dimensions
+
+#### New KPI
+
+- Displaying multiple metrics
+- Icon upload
+- Min/Max values
+- Sparkline
+- Performance Indicators
+- Pulsing numbers and borders when conditions are exceeded
+- Appearance configuration (font size for number and unit)
+- Responsiveness
+
+#### Grid Charts
+
+- Separate legend for metrics and buckets
+- Switching/enabling/disabling metrics for multiple data series
+
+#### New Gauge
+
+- New widget type
+
+### Charts and Queries
+
+- **Auto-bucketing** - two options:
+  - **Optimal** - default, higher accuracy (e.g., every 5 minutes for 3h)
+  - **Fast** - wider buckets, faster rendering (uses aggregates, e.g., 10-minute)
+- **Search history** - saves specific dates and minutes (not relative), opens in a new window
+- Manual sampling configuration
+
+### Formatting and Encoders
+
+- New CEF encoder for Syslog - compliant with the standard
+- URL formatting with special characters in REST API
+
+### Metrics and Backend
+
+#### EventBus
+
+- Added Router
+- New blocking policies
+
+#### Metrics
+
+- Separate metrics module
+- Metrics poller
+- **SNMPPoller** - support for versions v1, v2, v3
+- New metric: pipelineExecutor
+- Sending metrics over Netty - integration with Ambience
+
+### New Dashboards
+- Device Detection View
+- Device Detection History
+
+### New Alerts
+
+Unknown Device Detected,
+Watch Device Detected,
+High IP Count on Device,
+IP Address Conflict,
+Data Staging Detection,
+IRC Traffic Detected,
+Long-Duration Session,
+Proxy/SOCKS Traffic Detected,
+Repeated Connection (C2 Polling),
+Suspicious Small Payload Beaconing,
+Kerberos Traffic to External,
+LDAP to External,
+RDP Brute Force (Slow),
+SSH Brute Force (Slow),
+High Connection Failure Rate,
+Multiple Protocols Same Destination,
+NetBIOS/SMB Discovery,
+Abnormal Upload/Download Ratio,
+FTP Data Exfiltration,
+Large Data Upload to External,
+Crypto Mining Pool Connection,
+Database Port Exposed to Internet,
+Telnet to External,
+Web Shell Activity Pattern
+
+### Bug Fixes
+
+- RestClient - fix for authentication, parameter encoding, double serialization
+- Fix for ignoring indexes with corrupted meta
+- WhereIndexQueryOptimizer - fix for nested pipeline filters (first on indexed field, second not indexed)
+- Pipeline profiling
+
+
 ## ver. 3.1.0
 
 ### New Reporting System
@@ -32,7 +235,7 @@ Define custom shortcuts in the context menu for frequently used actions or looku
 ![Context Menu](assets/02_entry.png)
 
 #### Contextual Analysis
-Perform data exploration in just a few clicks — right-click on any value and instantly apply filters to dig into the context.
+Perform data exploration in just a few clicks - right-click on any value and instantly apply filters to dig into the context.
 
 #### Quick Actions
 Quick Actions are now directly available in context menus, offering greater user control and customization.

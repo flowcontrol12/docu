@@ -220,5 +220,6 @@ In the table below are descriptions of the most important fields that are availa
 | Unique ClientIPs        | _uniqueClientIPs             | Unique Count of Client IPs               |
 | Unique ServerIPs        | _uniqueServerIPs             | Unique Count of Server IPs               |
 | Unique Server Ports     | _uniqueServerPort            | Unique Count of Server Port              |
+| REST API Response | restApiResponse | Stores the last API response associated with a specific alert |
 
  

@@ -38,3 +38,5 @@ website/i18n/*
 docs/NOTEBOOK_UPDATE_CONFIG_JSON.ipynb
 notebook*.ipynb
 embedded_docs/*
+backup_images/*
+docs/changes*

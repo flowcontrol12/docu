@@ -386,7 +386,7 @@ The command truncates collections of output objects to a specified number of obj
 
 #### Syntax
 ```
-| limit [{offset},] {limit}
+| limit [{offset},] {limit} by {fieldName}
 ```
 
 
@@ -396,6 +396,7 @@ The command truncates collections of output objects to a specified number of obj
 | -------------- | --------------------------------- | ------------------------------------------------------------ |
 | offset         | No,  int                          | The position from which objects will be returned.            |
 | limit          | Yes,  int or constant value "ALL" | Limit of objects that will be returned in the result.  The value can be a number or the ALL keyword can be used. |
+| fieldName         | No, string                          | Parameter used to search unique fields in the defined limit.            |
 
 
 
@@ -908,8 +909,6 @@ The command filters the input objects with the specified logical filter (logical
 | $not_contains        | $not_contains(fName,"org") |
 | $startsWith          | $contains(fName,"Ja") |
 | $endsWith            | $contains(fName,"ke") |
-| $isEmpty             | $isEmpty(fName) |
-| $isNotEmpty          | $isNotEmpty(fName) |
 | $isNull              | $isNull(fName) |
 | $isNotNull           | $isNotNull(fName) |
 | $in                  | $in(fName,["Jake", "George"]) |

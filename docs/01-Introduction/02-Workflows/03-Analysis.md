@@ -30,8 +30,8 @@ The right-click menu is divided into options and sections:
 - [**Drilldown**](#drilldowns) -  Allows you to explore data in greater detail by navigating to more specific views based on selected values.
 - [**Actions**](#actions) - Executes actions within the Sycope system - for example, it allows you to perform ad hoc Contextual Analysis or check information using a Lookup.
 - **Send externally** - Redirects to external resources or performs a query to external services.
-- [**Show**](#show) - Applies predefined filters to the visible data — for example, show only private IP addresses.
-- **Tools** - Triggers actions in external programs — for example, executes a ping and displays the result.
+- [**Show**](#show) - Applies predefined filters to the visible data - for example, show only private IP addresses.
+- **Tools** - Triggers actions in external programs - for example, executes a ping and displays the result.
 
 ### Quick Actions
 
@@ -91,7 +91,7 @@ On the left side of the screen, a table appears with the filtered data based on 
 
 ![Data Visualization](assets/Contextual-Analysis-Col.png)
 
-By clicking the plus icon next to the Columns section, you can add additional data fields — for example, port numbers.  
+By clicking the plus icon next to the Columns section, you can add additional data fields - for example, port numbers.  
 The table updates automatically to reflect the changes.
 
 Finally, if you think your analysis could be useful in the future, you can save it as a widget by clicking **`Save as Widget`**.

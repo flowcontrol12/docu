@@ -29,7 +29,7 @@ It includes **Stream** selection, a **filtering** information window with option
 
 ![Search Bar](assets/search-bar.png)
 
-Further to the right is the **Time Bar**, where we set the desired time range for a presented data. When hovered over, quick time range selection options appear — you can instantly set the range to the last 15 minutes, 1 hour, 1 day or 7 days. Clicking on the [time range options](/User-Guide/Miscellaneous/User-Interface#time-ranges) opens the detailed time settings.
+Further to the right is the **Time Bar**, where we set the desired time range for a presented data. When hovered over, quick time range selection options appear - you can instantly set the range to the last 15 minutes, 1 hour, 1 day or 7 days. Clicking on the [time range options](/User-Guide/Miscellaneous/User-Interface#time-ranges) opens the detailed time settings.
 
 ![Time Picker](assets/time-picker.png)
 

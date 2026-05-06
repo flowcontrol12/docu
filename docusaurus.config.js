@@ -25,7 +25,7 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '3.1.0',
+              label: '3.2.0',
             },
           },
         },
@@ -93,5 +93,5 @@ module.exports = {
     href: '/css/theme-dark.css',
     id: 'prime-theme',
   }],
-  scripts: [ '/js/prime-theme.js' ],
+  scripts: ['/js/prime-theme.js'],
 }
